@@ -1,0 +1,121 @@
+{
+    "errors": [
+        {
+            "errorCode": "PARTIAL_CONTENT",
+            "description": [
+                "PO not found in delivery : [8458708681]"
+            ]
+        }
+    ],
+    "delivery": {
+        "deliveryNumber": 95257628,
+        "statusInformation": {
+            "status": "WORKING",
+            "operationalStatus": "WRK",
+            "statusReasonCode": [
+                "WORKING"
+            ]
+        }
+    },
+    "shipments": [
+        {
+            "documentId": "7200006306006_20191106_719468_VENDOR_US",
+            "shipmentNumber": "7200006306006",
+            "documentType": "ASN",
+            "documentRevision": 0,
+            "documentIngestTime": "2020-09-30T19:02:43.774Z",
+            "shipmentDate": "2020-09-30",
+            "source": {
+                "globalLocationNumber": "0069382035222",
+                "number": "6938",
+                "numberType": "WALMART",
+                "countryCode": "US",
+                "shipperId": "492918",
+                "shipperName": "Walmart"
+            },
+            "destination": {
+                "globalLocationNumber": "0078742035222",
+                "type": "DC",
+                "number": 6001,
+                "countryCode": "US"
+            },
+            "shipmentDetail": {
+                "trailerNumber": "T127265756094",
+                "trailerSealNumber": "SL8132816",
+                "billOfLadingNumber": "6938-88528711",
+                "loadNumber": "52177784",
+                "shippingDate": "2019-01-08",
+                "freightPayment": "PP",
+                "carrierId": "WM",
+                "carrierTrackingId": "WM"
+            }
+        }
+    ],
+    "packs": [
+        {
+            "packNumber": "00106001147924939996",
+            "palletNumber": "00100700370738704928",
+            "invoice": {
+                "invoiceNumber": "32899000132"
+            },
+            "auditDetail": {
+                "auditRequired": false
+            },
+            "handledOnBehalfOf": {
+                "type": "DC",
+                "number": 6001,
+                "countryCode": "US"
+            },
+            "legacyDetail": {
+                "packType": "UNKNOWN",
+                "labelType": "UNKNOWN"
+            },
+            "items": [
+                {
+                    "reportedProductId": "3802309",
+                    "reportedProductIdType": "IN",
+                    "itemNumber": 562947293,
+                    "gtin": "00368645481548",
+                    "warehouseCaseGtin": "00368645481548",
+                    "vendorCaseGtin": "10368645481545",
+                    "vendorId": "53717",
+                    "itemDescription": "ATORVASTATIN 20MG        ",
+                    "itemDepartment": "38",
+                    "itemDivision": "786",
+                    "itemOnFileStatus": "ON_FILE",
+                    "assortmentType": "UNKNOWN",
+                    "documentSequenceNumber": 1,
+                    "purchaseOrder": {
+                        "orderNumber": "bcf6a98a-1000-41c6-af17-e3c2b71f5c01",
+                        "poDate": "2020-06-22",
+                        "poLineNumber": 3,
+                        "poNumber": "8458708681",
+                        "poType": "DC_TO_DC_TRANSFER",
+                        "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+                        "poPoLineCount": 2
+                    },
+                    "inventoryDetail": {
+                        "reportedQuantity": 360.0,
+                        "reportedUom": "EA",
+                        "derivedQuantity": 360.0,
+                        "derivedUom": "EA",
+                        "warehouseCaseQuantity": 360,
+                        "vendorCaseQuantity": 360
+                    },
+                    "upc": "10368645481545",
+                    "nationalDrugCodeN2": "5007957666",
+                    "nationalDrugCodeN4": "50079057666",
+                    "purchaseCode": "DIR",
+                    "isDSCSAExempt": "NO",
+                    "manufactureDetails": [
+                        {
+                            "lotNumber": "201210",
+                            "expirationDate": "2021-08-19"
+                        }
+                    ]
+                }
+            ],
+            "shipmentNumber": "7200006306006"
+        }
+    ]
+}

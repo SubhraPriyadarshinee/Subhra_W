@@ -1,0 +1,11 @@
+{
+  "messageId": "b514d5e8-4401-4c0f-9083-78a44f39c08f",
+  "locations": [
+    {
+      "type": "error",
+      "code": "GLS-SMRT-SLOTING-400",
+      "desc": "High Watermark level is not defined for the item",
+      "markInventoryStatus": "AVAILABLE_NON_PICKABLE"
+    }
+  ]
+}

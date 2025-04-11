@@ -1,0 +1,60 @@
+html {
+    height: 100%;
+}
+body {
+    position:absolute;
+    top: 2px;
+    bottom:5rem;
+    right:0;
+    left:0;
+    margin: 2% 8%;
+    /*background: linear-gradient(160.42deg, #017ACD 0%, #73B1AA 100%);*/
+    background: #017ACD;
+    /*overflow: hidden*/
+}
+button {
+    margin-top: 1.8%;
+    background-color: #017ACD;
+}
+form {
+    margin-top: 5%;
+}
+
+.card-report {
+    background: #ffffff;
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-report .card-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.card-report .card-body {
+    padding: 6rem;
+}
+.table-data {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 4%;
+}
+.wd-8 {
+    width: 8rem;
+}
+.spinner-center {
+    display: none;
+    margin-left: 49%;
+    margin-top: 5%
+}
+.md-top {
+    margin-top: 5%;
+}
+.md-top-sm {
+    margin-top: 2rem;
+}
+.float-left {
+    float:left;
+}

@@ -1,0 +1,11 @@
+{
+  "id" : 1,
+  "parentTrackingId" : null,
+  "trackingId" : "5512098217046",
+  "gtin" : "00604015693198",
+  "itemTrackerCode" : "SERIAL_NUMBER_MISMATCH",
+  "createUser" : "sysadmin",
+  "createTs" : "2020-10-23T16:12:28.219Z",
+  "facilityCountryCode": "US",
+  "facilityNum" : 9074
+}

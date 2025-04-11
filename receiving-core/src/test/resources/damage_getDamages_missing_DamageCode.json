@@ -1,0 +1,29 @@
+[
+    {
+        "deliveryNumber": "9967271326",
+        "poNumber": "9164390046",
+        "poLineNumber": 1,
+        "itemNumber": "550211956",
+        "quantity": 5,
+        "uom": "ZA",
+        "claimType": "CARRIER"
+    },
+    {
+        "deliveryNumber": "9967271326",
+        "poNumber": "9164390047",
+        "poLineNumber": 1,
+        "itemNumber": "550211956",
+        "quantity": 5,
+        "uom": "ZA",
+        "claimType": "CARRIER"
+    },
+    {
+        "deliveryNumber": "9967271326",
+        "poNumber": "9164390047",
+        "poLineNumber": 0,
+        "itemNumber": "550211956",
+        "quantity": 5,
+        "uom": "ZA",
+        "claimType": "CARRIER"
+    }
+]

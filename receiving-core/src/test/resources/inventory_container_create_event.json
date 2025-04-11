@@ -1,0 +1,82 @@
+{
+	"id": "1d465736-eb6d-4b91-936c-e8c73cec05fb",
+	"correlationId": "GOUSERECONCILIATION1234",
+	"user": "SYSADMIN",
+	"event": "container.created",
+	"occurredOn": "27 May 2020 08:48:34.457+0000",
+	"eventObject": {
+		"trackingId": "newlyCreatedDestContainer",
+		"containerId": 0,
+		"containerTypeAbbr": "Tote",
+		"countryCode": "US",
+		"dcNumber": 32612,
+		"destinationLocationId": 0,
+		"itemList": [
+			{
+				"itemNumber": 1,
+				"itemUPC": "10618842371188",
+				"purchaseCompanyId": 1001,
+				"financialReportingGroup": "US",
+				"baseDivisionCode": "WM",
+				"vendorPkRatio": 4,
+				"warehousePkRatio": 4,
+				"unitOfMeasurement": "EACHES",
+				"availabletosellQty": 50,
+				"availableNonPickableQty": 0,
+				"claimsQty": 0,
+				"allocatedQty": 0,
+				"frozenQty": 0,
+				"onorderQty": 0,
+				"pickedQty": 0,
+				"intransitQty": 0,
+				"problemfreightQty": 0,
+				"receivedQty": 0,
+				"workInProgressQty": 0,
+				"qualitycontrolQty": 0,
+				"poType": "CROSSU",
+				"channelType": "CROSSU",
+				"whsePackSell": {
+					"value": 31.15,
+					"uom": "USD"
+				},
+				"adjustmentTO": {
+					"value": 50,
+					"uom": "EACHES"
+				},
+				"orderDetails": [],
+				"poDetails": [
+					{
+						"poNum": "3765790053",
+						"purchaseReferenceLineNumber": 1,
+						"poQty": 50
+					}
+				],
+				"purchaseReferenceLineNumbers": [
+					1
+				],
+				"rotateDate": "01 Jan 2020 00:00:00.000+0000",
+				"promoBuyInd": "N",
+				"ossIndicator": "N"
+			}
+		],
+		"childContainers": [],
+		"rotateDates": [
+			"01 Jan 2020 00:00:00.000+0000"
+		],
+		"lotNumbers": [],
+		"poNums": [
+			"3765790053"
+		],
+		"isNetItemWeightCalc": true,
+		"itemWeightUOM": "LB",
+		"itemNetWeight": 103.2,
+		"isContainerCubeCalc": true,
+		"containerCubeUOM": "CF",
+		"containerCube": 10.087499618530273,
+		"containerCreatedDate": "27 May 2020 08:48:34.457+0000",
+		"containerStatus": "AVAILABLE",
+		"deliveryNumber": "92856554",
+		"locationName": "unknown",
+		"locationOrgUnitId": 0
+	}
+}

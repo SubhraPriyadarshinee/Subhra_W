@@ -1,0 +1,78 @@
+{
+  "delivery": {
+    "deliveryNumber": 89305863,
+    "statusInformation": {
+      "operationalStatus": "FNL",
+      "statusReasonCode": [
+        "DELIVERY_REFINALIZED"
+      ],
+      "status": "FNL"
+    },
+    "scheduled": "2022-11-15T05:00:00Z",
+    "arrivalTimeStamp": "2022-11-17T06:09:33.192Z",
+    "finalizedTimeStamp": "2023-09-15T15:02:00.013Z",
+    "doorOpenTime": "2023-09-15T09:16:53.866Z",
+    "receivingStartedTimeStamp": "2023-09-15T14:47:32.647Z",
+    "receivingCompletedTimeStamp": "2023-09-15T15:00:03.440Z",
+    "unloadingCompletedTimeStamp": "2023-09-15T11:45:02.191Z",
+    "unloadingCompletedByUser": "rcvscheduler"
+  },
+  "shipments": [
+    {
+      "documentId": "ASN_0563454GDM_20230908_E7AF78635D8D4EDABDBFDDEEE76A4766_SELLER_US",
+      "shipmentNumber": "ASN_0563454GDM",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2023-09-08T23:35:49.727Z",
+      "shipmentDate": "2023-09-08",
+      "source": {
+        "number": "E7AF78635D8D4EDABDBFDDEEE76A4766",
+        "numberType": "WALMART",
+        "type": "SELLER",
+        "countryCode": "US"
+      },
+      "destination": {
+        "type": "DC",
+        "number": 4093,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "reportedDeliveryNumber": 59233103
+      },
+      "totalPacks": 150
+    }
+  ],
+  "packs": [
+    {
+      "documentPackId": "ASN_0563454GDM_20230908_E7AF78635D8D4EDABDBFDDEEE76A4766_SELLER_US_008500550230497831",
+      "documentId": "ASN_0563454GDM_20230908_E7AF78635D8D4EDABDBFDDEEE76A4766_SELLER_US",
+      "packNumber": "008500550230497831",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "shipmentNumber": "ASN_0563454GDM",
+      "items": [
+        {
+          "reportedProductId": "06062921299332",
+          "reportedProductIdType": "UK",
+          "gtin": "06062921299332",
+          "itemDivision": "WM",
+          "documentSequenceNumber": 1,
+          "purchaseOrder": {
+            "poNumber": "0563454GDM",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63"
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 1.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 1.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          }
+        }
+      ],
+      "receivingStatus": "Open"
+    }
+  ]
+}

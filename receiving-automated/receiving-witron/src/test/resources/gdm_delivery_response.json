@@ -1,0 +1,211 @@
+{
+    "deliveryNumber": 20634023,
+    "statusInformation": {
+        "status": "WRK",
+        "operationalStatus": "WRK"
+    },
+    "type": "LIVE",
+    "appointmentStartDateTime": "2023-03-12T22:45:00.000Z",
+    "commodity": "SCFZ",
+    "lastUpdateDoorNumber": "263",
+    "arrivalTime": "2023-08-15T14:43:46.646Z",
+    "hazmat": false,
+    "loadInformation": {
+        "number": "110606556",
+        "trailerInformation": {
+            "sealNumber": "DELIVERY_NUM",
+            "trailerId": "T20634023",
+            "scacCode": "WM"
+        }
+    },
+    "lifeCycleInformation": [
+        {
+            "type": "DOOR_OPEN",
+            "userId": "sysadmin",
+            "time": "2023-08-15T14:46:13.797Z"
+        },
+        {
+            "type": "RECEIVING_STARTED",
+            "userId": "sysadmin",
+            "time": "2023-08-15T14:46:22.756Z"
+        }
+    ],
+    "purchaseOrders": [
+        {
+            "poNumber": "0776661555",
+            "omsPONumber": "0776661555",
+            "poDcNumber": "6085",
+            "bpoNumber": "0",
+            "baseDivisionCode": "WM",
+            "legacyType": 20,
+            "freightBillQty": 1200,
+            "totalBolFbq": 1200,
+            "purchaseCompanyId": 1,
+            "poStatus": "ACTV",
+            "bolNumbers": [
+                {
+                    "bolNumber": "0",
+                    "freightBillQty": 1200
+                }
+            ],
+            "weight": {
+                "quantity": 9093.7,
+                "uom": "LB"
+            },
+            "freightTermCode": "PRP",
+            "financialGroupCode": "US",
+            "dates": {
+                "cancel": "2023-02-21",
+                "ordered": "2023-02-15",
+                "mabd": "2023-08-25",
+                "ship": "2023-02-21"
+            },
+            "vendor": {
+                "name": "BAMA COMPANIES INC",
+                "number": 779611,
+                "department": 92,
+                "vendorNbrDeptSeq": "779611920"
+            },
+            "operationalInfo": {
+                "state": "ACTIVE"
+            },
+            "additionalInformation": {
+                "Ship_Point": "VARIOUS ZZ ZZ",
+                "manCrtInd": "N",
+                "Outbound_Month": "3",
+                "No_Of_Items": 8,
+                "Walmart_Week": "5"
+            },
+            "lines": [
+                {
+                    "poLineNumber": 1,
+                    "channel": "SSTKU",
+                    "originalChannel": "STAPLESTOCK",
+                    "poLineStatus": "ACTIVE",
+                    "ordered": {
+                        "quantity": 1200,
+                        "uom": "ZA"
+                    },
+                    "freightBillQty": 1200,
+                    "ovgThresholdLimit": {
+                        "quantity": 240,
+                        "uom": "ZA"
+                    },
+                    "whpk": {
+                        "quantity": 30,
+                        "sell": 45.18
+                    },
+                    "vnpk": {
+                        "quantity": 30,
+                        "cost": 45.18,
+                        "weight": {
+                            "quantity": 13.8,
+                            "uom": "LB"
+                        },
+                        "cube": {
+                            "quantity": 0.478,
+                            "uom": "CF"
+                        }
+                    },
+                    "event": "POS REPLEN",
+                    "additionalInformation": {
+                        "promoBuyInd": "Y",
+                        "Sample_Po_Ind": "N",
+                        "Manual_Po_Ind": "N"
+                    },
+                    "vendor": {
+                        "number": 482950,
+                        "department": 92,
+                        "vendorNbrDeptSeq": "482950920"
+                    },
+                    "itemDetails": {
+                        "number": 8380910,
+                        "consumableGTIN": "00715166138046",
+                        "orderableGTIN": "60715166138055",
+                        "supplierStockId": "CFBR00548",
+                        "palletTi": 24,
+                        "palletHi": 8,
+                        "hazmat": false,
+                        "conveyable": false,
+                        "itemTypeCode": "20",
+                        "descriptions": [
+                            "TRANS SFD SNCKRS",
+                            "SEAFOOD SNACKERS"
+                        ],
+                        "vendorDepartment": "93",
+                        "additionalInformation": {
+                            "warehouseGroupCode": "M",
+                            "IsNodeLevelPalletHi": true,
+                            "IsGoldLevelWeightQty": true,
+                            "IsGoldLevelWhpkDimensions": true,
+                            "warehouseAreaCode": 1,
+                            "IsGoldLevelCubeQty": true,
+                            "IsNodeLevelWarehouseRotationTypeCode": true,
+                            "IsGoldLevelEachesDimensions": false,
+                            "IsNodeLevelPalletTi": true,
+                            "warehouseAreaDesc": "Fresh Meat",
+                            "cubeUOM": "CF",
+                            "eachesDimensions": {
+                                "uom": "IN",
+                                "depth": 0.6,
+                                "width": 4.05,
+                                "height": 5.95
+                            },
+                            "cube": 0.215,
+                            "whpkDimensions": {
+                                "height": 5.0,
+                                "width": 5.9,
+                                "depth": 12.6,
+                                "uom": "IN"
+                            },
+                            "IsGoldLevelCubeQtyUom": true,
+                            "isNewItem": true,
+                            "IsNodeLevelWarehouseAreaCode": true,
+                            "warehouseRotationTypeCode": 3,
+                            "weight": 6.8,
+                            "warehouseMinLifeRemainingToReceive": 45,
+                            "isHACCP": true,
+                            "weightFormatTypeCode": "F",
+                            "profiledWarehouseArea": "OFFLINE",
+                            "IsGoldLevelWeightQtyUom": true,
+                            "weightUOM": "LB"
+                        },
+                        "orderableQuantity": 30,
+                        "warehousePackQuantity": 30
+                    },
+                    "operationalInfo": {
+                        "state": "ACTIVE"
+                    }
+                }
+            ],
+            "poTypeCode": "20",
+            "poDcCountry": "US",
+            "cube": {
+                "quantity": 299.233,
+                "uom": "CF"
+            },
+            "poLoadSequenceNbr": 1,
+            "event": "POS REPLEN",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "sellerType": "WM",
+            "sellerName": "Walmart"
+        }
+    ],
+    "deliveryActions": {
+        "CRO": {
+            "name": "CRO",
+            "status": "COMPLETED",
+            "user": "SVCe2et",
+            "timestamp": "2023-08-15T14:46:09.318Z",
+            "severity": "SEVERE",
+            "processingStage": "PRE_RECEIVING"
+        }
+    },
+    "carrierId": "WTTY",
+    "carrierName": "WITTE BROTHERS EXCHANGE INCORPORATED",
+    "carrierScacCode": "WM",
+    "carrierContactName": "Shane Carter",
+    "carrierContactNumber": "3142194200",
+    "billSign": true,
+    "deliveryOwnership": "atlas"
+}

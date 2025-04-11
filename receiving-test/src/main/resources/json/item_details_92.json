@@ -1,0 +1,126 @@
+{
+  "foundSupplyItems": [
+    {
+      "partitionKey": "us-wm-100011321",
+      "number": 100011321,
+      "baseDivisionCode": "wm",
+      "financialReportingGroupCode": "us",
+      "description": [
+        {
+          "textValue": "N 13 PANEL 9IN CO LT CAN 16X16 MBLU",
+          "languageCode": "101"
+        }
+      ],
+      "status": {
+        "code": "A",
+        "description": "ACTIVE"
+      },
+      "warehouseArea": {
+        "code": "A"
+      },
+      "unitCost": 7.93,
+      "isHazmat": true,
+      "tradeItems": [
+        {
+          "gtin": "10001132100000",
+          "isMasterCarton": true,
+          "palletTi": 10,
+          "palletHi": 20,
+          "weight": {
+            "amount": 0,
+            "uom": "LB"
+          },
+          "dimensions": {
+            "height": 0,
+            "width": 0,
+            "depth": 0,
+            "uom": "IN"
+          },
+          "isGuaranteedSales": true,
+          "cube": {
+            "amount": 0,
+            "uom": "CF"
+          },
+          "isDisplayAvailable": true,
+          "palletSizeType": {
+            "code": "L",
+            "description": "LARGE"
+          },
+          "isCatchWeight": true,
+          "isDEAReported": true,
+          "isConveyable": true,
+          "isOrderable": true,
+          "isConsumable": true
+        }
+      ],
+      "weight": {
+        "amount": 1,
+        "uom": "LB"
+      },
+      "dimensions": {
+        "height": 0.5,
+        "width": 11,
+        "depth": 11,
+        "uom": "IN"
+      },
+      "cube": {
+        "amount": 0.04,
+        "uom": "CF"
+      },
+      "dcProperties": {
+        "supplyItem": {
+          "isHazmat": true,
+          "tradeItems": [
+            {
+              "gtin": "10001132100000",
+              "isMasterCarton": true,
+              "palletTi": 10,
+              "palletHi": 20,
+              "weight": {
+                "amount": 0,
+                "uom": "LB"
+              },
+              "dimensions": {
+                "height": 0,
+                "width": 0,
+                "depth": 0,
+                "uom": "IN"
+              },
+              "isGuaranteedSales": true,
+              "cube": {
+                "amount": 0,
+                "uom": "CF"
+              },
+              "isDisplayAvailable": true,
+              "palletSizeType": {
+                "code": "L",
+                "description": "LARGE"
+              },
+              "isCatchWeight": true,
+              "isDEAReported": true,
+              "isConveyable": true,
+              "isOrderable": true,
+              "isConsumable": true
+            }
+          ],
+          "weight": {
+            "amount": 1,
+            "uom": "LB"
+          },
+          "dimensions": {
+            "height": 0.5,
+            "width": 11,
+            "depth": 11,
+            "uom": "IN"
+          },
+          "cube": {
+            "amount": 0.04,
+            "uom": "CF"
+          },
+          "warehouse": {}
+        }
+      }
+    }
+  ],
+  "notFoundSupplyItems": []
+}

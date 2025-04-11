@@ -1,0 +1,66 @@
+{
+  "event": {
+    "type": "SHIPMENT_ADDED",
+    "eventId": "dc0ee3c-2040-4e05-ae86-85be6c9da376",
+    "eventTime": "2020-11-05T16:00:00Z",
+    "source": "SHORE",
+    "sourceEventTime": "2020-11-05T16:00:00Z",
+    "publishTime": "2020-11-05T16:00:00Z",
+    "WMT_CorrelationId": "cdc0ee3c-2040-4e05-ae86-85be6c9da376",
+    "facilityCountryCode": "US",
+    "facilityNum": 6001,
+    "data": {
+      "shipmentNumber": "546191216",
+      "shipmentDocumentId": "546191216_20191106_719468_VENDOR_US"
+    }
+  },
+  "payload": {
+    "shipment": {
+      "documentId": "546191216_20191106_719468_VENDOR_US",
+      "shipmentNumber": "546191216",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2019-11-06T19:02:43.774Z",
+      "shipmentDate": "2019-11-06",
+      "destination": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "loadNumber": "88528711",
+        "shippingDate": "2019-01-08"
+      }
+    },
+    "packs": [
+      {
+        "packNumber": "B32899000020011086",
+        "handledOnBehalfOf": {
+          "type": "DC",
+          "number": 6094,
+          "countryCode": "US"
+        },
+        "items": [
+          {
+            "reportedProductId": "561301081",
+            "itemNumber": 561301081,
+            "itemDescription": "Party Material",
+            "purchaseOrder": {
+              "poDate": "2019-01-08",
+              "poLineNumber": 1,
+              "poNumber": "3001747108",
+              "poPoLineCount": 1
+            },
+            "inventoryDetail": {
+              "reportedQuantity": 1120.0,
+              "reportedUom": "EA",
+              "derivedQuantity": 1120.0,
+              "derivedUom": "EA"
+            }
+          }
+        ],
+        "shipmentNumber": "546191216"
+      }
+    ]
+  }
+}

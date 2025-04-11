@@ -1,0 +1,312 @@
+{
+  "delivery": {
+    "deliveryNumber": 95768482,
+    "statusInformation": {
+      "operationalStatus": "SCH",
+      "status": "SCH"
+    }
+  },
+  "shipments": [
+    {
+      "documentId": "SID5242520_20201008_6092755126_SHIPPER_US",
+      "shipmentNumber": "SID5242520",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2020-10-16T12:15:47.227Z",
+      "shipmentDate": "2020-10-08",
+      "source": {
+        "number": "6092755126",
+        "numberType": "ZZ",
+        "type": "SHIPPER",
+        "countryCode": "US",
+        "shipperName": "ZYDUS PHARMACEUTICALS USA, INC."
+      },
+      "destination": {
+        "globalLocationNumber": "0078742027753",
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "reportedDeliveryNumber": 95768482,
+        "shippingDate": "2020-10-08",
+        "carrierId": "ODFL"
+      }
+    },
+    {
+      "documentId": "SID5242519_20201008_6092755126_SHIPPER_US",
+      "shipmentNumber": "SID5242519",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2020-10-16T12:15:47.227Z",
+      "shipmentDate": "2020-10-08",
+      "source": {
+        "number": "6092755126",
+        "numberType": "ZZ",
+        "type": "SHIPPER",
+        "countryCode": "US",
+        "shipperName": "ZYDUS PHARMACEUTICALS USA, INC."
+      },
+      "destination": {
+        "globalLocationNumber": "0078742027753",
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "reportedDeliveryNumber": 95768482,
+        "shippingDate": "2020-10-08",
+        "carrierId": "ODFL"
+      }
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poNumber": "8769950202",
+      "freightBillQty": 20,
+      "poDcCountry": "US",
+      "baseDivisionCode": "WM",
+      "poType": "20",
+      "purchaseCompanyId": 1,
+      "poStatus": "ACTV",
+      "financialGroupCode": "US",
+      "poDates": {
+        "cancel": "2020-10-12",
+        "ordered": "2020-10-08",
+        "mabd": "2020-10-14",
+        "ship": "2020-10-10"
+      },
+      "vendorInformation": {
+        "name": "BRADSHAW INTERNATIONAL INC",
+        "number": 233323,
+        "department": 38
+      },
+      "poDcNumber": 6001,
+      "lines": [
+        {
+          "poLineNumber": 27,
+          "channel": "SSTKU",
+          "whpkQty": 30,
+          "whpkSell": 22.28,
+          "vnpkQty": 1440,
+          "vnpkCost": 1069.44,
+          "vnpkWeightQty": 2.3,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.211,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "poLineStatus": "RECEIVED",
+          "orderedQty": 1,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00368382330062",
+            "orderableGTIN": "10368382330069",
+            "supplierStockId": "68382-0330-06",
+            "conveyable": false,
+            "itemTypeCode": "20",
+            "vendorDepartment": "38",
+            "color": "CAPSUL",
+            "size": "30",
+            "warehousePackQuantity": 30,
+            "orderableQuantity": 1440,
+            "itemAdditonalInformation": {
+              "isDscsaExemptionInd": false,
+              "weight": 0.048,
+              "cubeUOM": "CF",
+              "cube": 0.1,
+              "weightUOM": "LB"
+            },
+            "descriptions": [
+              "PARICALCITOL 1MCG",
+              "PARICALCITOL 1MCG"
+            ],
+            "number": 571839219
+          }
+        },
+        {
+          "poLineNumber": 28,
+          "channel": "SSTKU",
+          "whpkQty": 30,
+          "whpkSell": 22.28,
+          "vnpkQty": 1440,
+          "vnpkCost": 1069.44,
+          "vnpkWeightQty": 2.3,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.211,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "poLineStatus": "RECEIVED",
+          "orderedQty": 1,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00368382330062",
+            "orderableGTIN": "10368382330069",
+            "supplierStockId": "68382-0330-06",
+            "conveyable": false,
+            "itemTypeCode": "20",
+            "vendorDepartment": "38",
+            "color": "CAPSUL",
+            "size": "30",
+            "warehousePackQuantity": 30,
+            "orderableQuantity": 1440,
+            "itemAdditonalInformation": {
+              "isDscsaExemptionInd": false,
+              "weight": 0.048,
+              "cubeUOM": "CF",
+              "cube": 0.1,
+              "weightUOM": "LB"
+            },
+            "descriptions": [
+              "PARICALCITOL 1MCG",
+              "PARICALCITOL 1MCG"
+            ],
+            "number": 571839219
+          }
+        }
+      ],
+      "weightQty": 202,
+      "weightQtyUom": "KG",
+      "cubeQtyUom": "CF"
+    }
+  ],
+  "packs": [
+    {
+      "packNumber": "00100683820038410886",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "68382033006",
+          "reportedProductIdType": "N4",
+          "itemNumber": 571839219,
+          "gtin": "10368382330069",
+          "vendorId": "233323",
+          "itemDescription": "PARICALCITOL CAPSULES 1MCG 30CT",
+          "itemOnFileStatus": "UNKNOWN",
+          "assortmentType": "UNKNOWN",
+          "purchaseOrder": {
+            "poDate": "2020-10-08",
+            "poLineNumber": 27,
+            "poNumber": "8769950202",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 1
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 48,
+            "reportedUom": "EA",
+            "derivedQuantity": 48,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "68382033006",
+          "isDSCSAExempt": "UNKNOWN",
+          "aggregatedItemQty": 1,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "1131444",
+              "expirationDate": "2023-01-10",
+              "reportedQuantity": 48,
+              "reportedUom": "EA"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "13586570704011",
+              "uom": "CA"
+            },
+            {
+              "gtin": "13586570709991",
+              "uom": "CA"
+            },
+            {
+              "gtin": "30358657704018",
+              "uom": "SEA"
+            },
+            {
+              "gtin": "00358657704018",
+              "uom": "EA"
+            }
+          ],
+          "nationalDrugCode": "68382039801",
+          "nationalDrugCodeType": "N4"
+        }
+      ],
+      "shipmentNumber": "SID5242519"
+    },
+    {
+      "packNumber": "20100683820038410886",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "68382033006",
+          "reportedProductIdType": "N4",
+          "itemNumber": 571839219,
+          "gtin": "10368382330069",
+          "vendorId": "233323",
+          "itemDescription": "PARICALCITOL CAPSULES 1MCG 30CT",
+          "itemOnFileStatus": "UNKNOWN",
+          "assortmentType": "UNKNOWN",
+          "purchaseOrder": {
+            "poDate": "2020-10-08",
+            "poLineNumber": 27,
+            "poNumber": "8769950202",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 1
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 48,
+            "reportedUom": "EA",
+            "derivedQuantity": 48,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "68382033006",
+          "isDSCSAExempt": "UNKNOWN",
+          "aggregatedItemQty": 1,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "1131444",
+              "expirationDate": "2023-01-10",
+              "reportedQuantity": 48,
+              "reportedUom": "EA"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "13586570704011",
+              "uom": "CA"
+            },
+            {
+              "gtin": "13586570709991",
+              "uom": "CA"
+            },
+            {
+              "gtin": "30358657704018",
+              "uom": "SEA"
+            },
+            {
+              "gtin": "00358657704018",
+              "uom": "EA"
+            }
+          ],
+          "nationalDrugCode": "68382039801",
+          "nationalDrugCodeType": "N4"
+        }
+      ],
+      "shipmentNumber": "SID5242520"
+    }
+  ]
+}

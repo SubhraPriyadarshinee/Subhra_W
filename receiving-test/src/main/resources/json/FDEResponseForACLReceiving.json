@@ -1,0 +1,79 @@
+{
+  "messageId": "c32987000000000000000001",
+  "instructionCode": "Pass",
+  "instructionMsg": "No Action required",
+  "activityName": "ACL",
+  "shrinkWrap": false,
+  "container": {
+    "trackingId": "c32987000000000000000001",
+    "distributions": [
+      {
+        "orderId": "5a53dc7d-f916-46bd-8019-e338832500a0",
+        "allocQty": 10,
+        "item": {
+          "itemNbr": 566051127,
+          "baseDivisionCode": "WM",
+          "reportingGroup": "US"
+        }
+      }
+    ],
+    "ctrType": "Vendor Pack",
+    "inventoryStatus": "PICKED",
+    "ctrDestination": {
+      "buNumber": 6094,
+      "countryCode": "US"
+    },
+    "outboundChannelMethod": "CROSSU",
+    "ctrReusable": false,
+    "ctrShippable": true,
+    "ctrLabel": {
+      "clientId": "OF",
+      "headers": {
+        "facilityCountryCode": "US",
+        "facilityNum": "32987",
+        "WMT-CorrelationId": "aafa2fcc-d299-4663-aa64-ba6f79704635"
+      },
+      "printRequests": [
+        {
+          "labelIdentifier": "c32987000000000000000001",
+          "formatName": "pallet_lpn_format",
+          "data": [
+            {
+              "key": "ITEM",
+              "value": "566051127"
+            },
+            {
+              "key": "DESTINATION",
+              "value": "06094 US"
+            },
+            {
+              "key": "UPCBAR",
+              "value": "10074451115207"
+            },
+            {
+              "key": "LPN",
+              "value": "c32987000000000000000001"
+            },
+            {
+              "key": "FULLUSERID",
+              "value": "sysadmin"
+            },
+            {
+              "key": "TYPE",
+              "value": "DA"
+            },
+            {
+              "key": "DESC1",
+              "value": "VL 2.5G WATERER"
+            }
+          ],
+          "ttlInHours": 72
+        }
+      ]
+    }
+  },
+  "providerId": "DA-SSTK",
+  "projectedQty": 1,
+  "projectedQtyUom": "EA",
+  "printChildContainerLabels": false
+}

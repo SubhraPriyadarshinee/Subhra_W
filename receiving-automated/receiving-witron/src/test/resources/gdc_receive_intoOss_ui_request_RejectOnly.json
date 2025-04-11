@@ -1,0 +1,17 @@
+{
+    "pos": [
+        {
+            "poNum": "1688567328",
+            "lines": [
+                {
+                    "lineNum": 1,
+                    "receiveQty": 0,
+                    "receiveQtyUOM": "ZA",
+                    "rejectQty": 10,
+                    "rejectQtyUOM": "ZA",
+                    "rejectReasonCode": "R10"
+                }
+            ]
+        }
+    ]
+}

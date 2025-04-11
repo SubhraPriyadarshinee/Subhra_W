@@ -1,0 +1,51 @@
+{
+    "testCase" : "HIF-RCV-02 manual item",
+    "trackingId": "?",
+    "messageId": "?",
+    "deliveryNumber": "121212121",
+    "location": "101",
+    "orgUnitId": "",
+    "facility": {
+        "buNumber": "05435",
+        "countryCode": "US"
+    },
+    "ctrType" : "Chep Pallet",
+    "ctrStatus" : "OPEN",
+    "ctrWght" : 1920,
+    "ctrWghtUom" : "LB" ,
+    "ctrCube" : "68.48",
+    "ctrCubeUom" : "CF",
+    "ctrShippable" : true,
+    "ctrReusable" : false,
+    "inventoryStatus" : "AVAILABLE",
+    "contents": [
+        {
+            "purchaseReferenceNumber": "6712345678",
+            "purchaseReferenceLineNumber": 2,
+            "inboundChannelMethod": "SSTKU",
+            "outboundChannelMethod": "SSTKU",
+            "purchaseCompanyId": "0001",
+            "totalPurchaseReferenceQty": 40,
+            "gtin": "26163800000",
+            "itemNumber": 570563622,
+            "description": "FMLY PK BS BRST",
+            "deptNumber": "0093",
+            "quantity": 40,
+            "quantityUom": "EA",
+            "vnpkQty": 1,
+            "whpkQty": 1,
+            "vendorPackCost": 76.32,
+            "whpkSell": 14.4,
+            "rotateDate": "2019-07-31T00:00:00Z",
+            "baseDivisionCode": "WM",
+            "financialReportingGroupCode": "US",
+            "ti": 5,
+            "hi": 8,
+            "lotNumber": "1",
+            "vendorNbr": 332767930,
+            "packagedAsUom": "ZA",
+            "actualTi" : 5,
+            "actualHi" : 8
+        }
+    ]
+}

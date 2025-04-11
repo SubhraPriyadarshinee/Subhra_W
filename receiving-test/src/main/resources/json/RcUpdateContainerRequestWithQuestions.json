@@ -1,0 +1,184 @@
+{
+    "scannedBin": "RT21211",
+    "scannedCart": "RC21211",
+    "containerTag": "NONCONSUMABLE",
+    "disposition": {
+      "itemCondition": "SELLABLE",
+      "proposedDisposition": "RESTOCK",
+      "finalDisposition": "RESTOCK",
+      "legacySellerId": "999991",
+      "sellerName": "example"
+    },
+    "answers": {
+      "legacySellerId": "999991",
+      "serviceType": "WFS",
+      "itemCategory": "Food & Beverage",
+      "questions": [
+        {
+          "questionId": "1",
+          "question": "Do the image and item match?",
+          "questionType": "SINGLE_SELECT",
+          "isMandatory": true,
+          "sequenceNumber": 1,
+          "options": [
+            {
+              "optionId": "11",
+              "option": "Yes",
+              "isSelected": true
+            },
+            {
+              "optionId": "12",
+              "option": "No",
+              "isSelected": false
+            }
+          ],
+          "questions": [
+            {
+              "questionId": "111",
+              "question": "Choose a Category?",
+              "questionType": "SINGLE_SELECT",
+              "parentOptionId": "11",
+              "isMandatory": true,
+              "options": [
+                {
+                  "optionId": "1111",
+                  "option": "Category A",
+                  "propertyType": "CATEGORY_A",
+                  "isSelected": false
+                },
+                {
+                  "optionId": "1112",
+                  "option": "Category B",
+                  "propertyType": "CATEGORY_B",
+                  "isSelected": true
+                },
+                {
+                  "optionId": "1113",
+                  "option": "Category C",
+                  "propertyType": "CATEGORY_C",
+                  "isSelected": false
+                }
+              ],
+              "questions": [
+                {
+                  "questionId": "11121",
+                  "question": "Is the item new / Unopened?",
+                  "questionType": "SINGLE_SELECT",
+                  "parentOptionId": "1112",
+                  "isMandatory": true,
+                  "options": [
+                    {
+                      "optionId": "111211",
+                      "option": "Yes",
+                      "propertyType": "YES",
+                      "isSelected": true
+                    },
+                    {
+                      "optionId": "111212",
+                      "option": "No",
+                      "propertyType": "NO",
+                      "isSelected": false
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "questionId": "1112112",
+                      "question": "Is Packaging Damaged?",
+                      "questionType": "SINGLE_SELECT",
+                      "parentOptionId": "111211",
+                      "isMandatory": true,
+                      "options": [
+                        {
+                          "optionId": "11121121",
+                          "option": "Yes",
+                          "propertyType": "YES",
+                          "isSelected": false
+                        },
+                        {
+                          "optionId": "11121122",
+                          "option": "No",
+                          "propertyType": "NO",
+                          "isSelected": true
+                        }
+                      ],
+                      "questions": []
+                    },
+                    {
+                      "questionId": "1112113",
+                      "question": "Does the item have customer info?",
+                      "questionType": "SINGLE_SELECT",
+                      "parentOptionId": "111211",
+                      "isMandatory": true,
+                      "options": [
+                        {
+                          "optionId": "11121131",
+                          "option": "Yes",
+                          "propertyType": "YES",
+                          "isSelected": true
+                        },
+                        {
+                          "optionId": "11121132",
+                          "option": "No",
+                          "propertyType": "NO",
+                          "isSelected": false
+                        }
+                      ],
+                      "questions": [
+                        {
+                          "questionId": "111211311",
+                          "question": "Fixed?",
+                          "questionType": "SINGLE_SELECT",
+                          "parentOptionId": "11121131",
+                          "isMandatory": true,
+                          "options": [
+                            {
+                              "optionId": "1112113111",
+                              "option": "Yes",
+                              "propertyType": "YES",
+                              "isSelected": true
+                            },
+                            {
+                              "optionId": "1112113112",
+                              "option": "No",
+                              "propertyType": "NO",
+                              "isSelected": false
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "questionId": "1112114",
+                      "question": "Is the item Damaged?",
+                      "questionType": "SINGLE_SELECT",
+                      "parentOptionId": "111211",
+                      "isMandatory": true,
+                      "options": [
+                        {
+                          "optionId": "11121141",
+                          "option": "Yes",
+                          "propertyType": "YES",
+                          "isSelected": false
+                        },
+                        {
+                          "optionId": "11121142",
+                          "option": "No",
+                          "propertyType": "NO",
+                          "isSelected": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "location": {
+      "locationId": 368627,
+      "orgUnitId": 1126,
+      "name": "ARCIN01"
+    }
+}

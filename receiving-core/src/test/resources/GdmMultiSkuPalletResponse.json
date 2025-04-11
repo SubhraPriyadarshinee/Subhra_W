@@ -1,0 +1,271 @@
+{
+  "delivery": {
+    "deliveryNumber": 78869670,
+    "statusInformation": {
+      "operationalStatus": "WRK",
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "status": "WRK"
+    }
+  },
+  "shipments": [
+    {
+      "documentId": "7070125847171097_20191106_719468_VENDOR_US",
+      "shipmentNumber": "7070125847171097",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2020-12-14T15:55:03.665Z",
+      "shipmentDate": "2020-12-14",
+      "source": {
+        "globalLocationNumber": "0069382035222",
+        "number": "6938",
+        "numberType": "WALMART",
+        "countryCode": "US",
+        "shipperId": "492918",
+        "shipperName": "Walmart"
+      },
+      "destination": {
+        "globalLocationNumber": "0078742035222",
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "trailerNumber": "T127265756094",
+        "trailerSealNumber": "SL8132816",
+        "billOfLadingNumber": "6938-88528711",
+        "loadNumber": "1269670",
+        "shippingDate": "2019-01-08",
+        "freightPayment": "PP",
+        "carrierId": "WM",
+        "carrierTrackingId": "WM"
+      }
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poNumber": "7702953585",
+      "freightBillQty": 4,
+      "cubeQty": 150.0,
+      "poDcCountry": "US",
+      "baseDivisionCode": "WM",
+      "poType": "20",
+      "purchaseCompanyId": 1,
+      "poStatus": "ACTV",
+      "financialGroupCode": "US",
+      "poDates": {
+        "cancel": "2019-03-26",
+        "ordered": "2019-03-19",
+        "mabd": "2019-03-26",
+        "ship": "2019-03-26"
+      },
+      "vendorInformation": {
+        "name": "BAMA COMPANIES INC",
+        "number": 988246,
+        "department": 38
+      },
+      "poDcNumber": 6001,
+      "lines": [
+        {
+          "poLineNumber": 2,
+          "channel": "SSTKU",
+          "whpkQty": 5,
+          "whpkSell": 2.3,
+          "vnpkQty": 10,
+          "vnpkCost": 1.84,
+          "vnpkWeightQty": 3.84,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.246,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "poLineStatus": "ACTIVE",
+          "orderedQty": 2.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00368382807014",
+            "orderableGTIN": "30368382807015",
+            "supplierStockId": "68382-0807-01",
+            "hazmat": false,
+            "conveyable": false,
+            "itemTypeCode": "20",
+            "vendorDepartment": "38",
+            "color": "TABLET",
+            "size": "100",
+            "isNewItem": false,
+            "itemAdditonalInformation": {
+              "warehouseRotationTypeCode": "1",
+              "weight": 6.45,
+              "weightUOM": "LB",
+              "weightFormatTypeCode": "F"
+            },
+            "descriptions": [
+              "TRAZODONE HCL 150MG",
+              "TRAZODONE HCL 150MG"
+            ],
+            "number": 569768114
+          }
+        },
+        {
+          "poLineNumber": 1,
+          "channel": "SSTKU",
+          "whpkQty": 5,
+          "whpkSell": 2.3,
+          "vnpkQty": 10,
+          "vnpkCost": 1.84,
+          "vnpkWeightQty": 3.84,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.246,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "poLineStatus": "ACTIVE",
+          "orderedQty": 2.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00364679923023",
+            "orderableGTIN": "10364679923020",
+            "supplierStockId": "64679-0923-02",
+            "hazmat": false,
+            "conveyable": false,
+            "itemTypeCode": "20",
+            "vendorDepartment": "38",
+            "color": "TABLET",
+            "size": "100",
+            "isNewItem": false,
+            "itemAdditonalInformation": {
+              "warehouseRotationTypeCode": "1",
+              "weight": 10.4,
+              "weightUOM": "LB",
+              "weightFormatTypeCode": "F"
+            },
+            "descriptions": [
+              "ENALAPRIL 2.5MG",
+              "ENALAPRIL 2.5MG"
+            ],
+            "number": 555185870
+          }
+        }
+      ],
+      "weightQty": 100.0,
+      "weightQtyUom": "LB",
+      "cubeQtyUom": "CF"
+    }
+  ],
+  "packs": [
+    {
+      "packNumber": "00106001674256273959",
+      "invoice": {
+        "invoiceNumber": "32899000132"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "legacyDetail": {
+        "packType": "UNKNOWN",
+        "labelType": "UNKNOWN"
+      },
+      "items": [
+        {
+          "reportedProductId": "3802309",
+          "reportedProductIdType": "IN",
+          "reportedCaseProductId": "3802309",
+          "reportedCaseProductIdType": "IN",
+          "itemNumber": 569768114,
+          "gtin": "30368382807015",
+          "warehouseCaseGtin": "00368382807014",
+          "vendorCaseGtin": "30368382807015",
+          "vendorId": "988246",
+          "itemDescription": "TRAZODONE HCL 150MG",
+          "itemDepartment": "38",
+          "itemDivision": "786",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "documentSequenceNumber": 1,
+          "purchaseOrder": {
+            "orderNumber": "bcf6a98a-1000-41c6-af17-e3c2b71f5c01",
+            "poDate": "2019-03-19",
+            "poLineNumber": 2,
+            "poNumber": "7702953585",
+            "poType": "DC_TO_DC_TRANSFER",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 1
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 10.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 2.0,
+            "derivedUom": "PH",
+            "warehouseCaseQuantity": 5,
+            "vendorCaseQuantity": 10
+          },
+          "upc": "30368382807015",
+          "nationalDrugCodeN2": "8869007676",
+          "nationalDrugCodeN4": "886900076765",
+          "purchaseCode": "DIR",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 2,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "3121291",
+              "expirationDate": "2022-08-13"
+            }
+          ]
+        },
+        {
+          "reportedProductId": "3802309",
+          "reportedProductIdType": "IN",
+          "reportedCaseProductId": "3802309",
+          "reportedCaseProductIdType": "IN",
+          "itemNumber": 555185870,
+          "gtin": "10364679923020",
+          "warehouseCaseGtin": "00364679923023",
+          "vendorCaseGtin": "10364679923020",
+          "vendorId": "988246",
+          "itemDescription": "ENALAPRIL 2.5MG",
+          "itemDepartment": "38",
+          "itemDivision": "786",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "documentSequenceNumber": 1,
+          "purchaseOrder": {
+            "orderNumber": "bcf6a98a-1000-41c6-af17-e3c2b71f5c01",
+            "poDate": "2019-03-19",
+            "poLineNumber": 1,
+            "poNumber": "7702953585",
+            "poType": "DC_TO_DC_TRANSFER",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 1
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 10.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 2.0,
+            "derivedUom": "PH",
+            "warehouseCaseQuantity": 5,
+            "vendorCaseQuantity": 10
+          },
+          "upc": "10364679923020",
+          "nationalDrugCodeN2": "8869007676",
+          "nationalDrugCodeN4": "886900076765",
+          "purchaseCode": "DIR",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 2,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "3121290",
+              "expirationDate": "2021-08-05"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "7070125847171097"
+    }
+  ]
+}

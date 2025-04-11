@@ -1,0 +1,198 @@
+{
+ "id" : 515355,
+ "facilityCountryCode" : "US",
+ "facilityNum" : 32899,
+ "activityName" : "DACon",
+ "childContainers" : "[{\"ctrLabel\":{\"headers\":{\"WMT-CorrelationId\":\"59984caa-9d47-4d72-9690-9672e92f325a\",\"facilityCountryCode\":\"US\",\"facilityNum\":\"32899\"},\"clientId\":\"AllocationPlanner\",\"printRequests\":[{\"labelIdentifier\":\"e328990000200000000083656\",\"formatName\":\"case_lpn_format\",\"data\":[{\"key\":\"LPN\",\"value\":\"e328990000200000000083656\"},{\"key\":\"DESTINATION\",\"value\":\"06094 US\"},{\"key\":\"ITEM\",\"value\":\"559399867\"},{\"key\":\"QTY\",\"value\":\"\"},{\"key\":\"UPCBAR\",\"value\":\"00029695319808\"},{\"key\":\"DESC1\",\"value\":\"MED FETCH BALL 2-PK\"},{\"key\":\"DESC2\",\"value\":\"REPLACE 868675\"},{\"key\":\"FULLUSERID\",\"value\":\"sysadmin\"},{\"key\":\"PACK\",\"value\":\"1\"},{\"key\":\"SIZE\",\"value\":\"MEDIUM\"},{\"key\":\"COLOR\",\"value\":\"NONE\"},{\"key\":\"POCODE\",\"value\":\"GO\"},{\"key\":\"PO\",\"value\":\"9991230599\"},{\"key\":\"VENDORID\",\"value\":\"988246\"},{\"key\":\"POLINE\",\"value\":\"1\"},{\"key\":\"POEVENT\",\"value\":\"POS REPLEN\"},{\"key\":\"REPRINT\",\"value\":\"\"},{\"key\":\"HAZMAT\",\"value\":\"\"},{\"key\":\"STOREZONE\",\"value\":\"E\"},{\"key\":\"EVENTCHAR\",\"value\":\" \"},{\"key\":\"PRINTER\",\"value\":\"\"},{\"key\":\"CPQTY\",\"value\":\"1\"},{\"key\":\"DEPT\",\"value\":\"38\"},{\"key\":\"CHANNEL\",\"value\":\"DIST\"},{\"key\":\"PACKTYPE\",\"value\":\"CP\"},{\"key\":\"DSDC\",\"value\":\"\"},{\"key\":\"ORIGIN\",\"value\":\"32899\"},{\"key\":\"DELIVERY\",\"value\":\"201901100\"},{\"key\":\"DOOR\",\"value\":\"901\"}],\"ttlInHours\":72.0}]},\"ctrShippable\":true,\"ctrReusable\":false,\"outboundChannelMethod\":\"CROSSU\",\"ctrDestination\":{\"buNumber\":\"6094\",\"countryCode\":\"US\"},\"inventoryStatus\":\"PICKED\",\"ctrType\":\"Vendor Pack\",\"trackingId\":\"e328990000200000000083656\",\"distributions\":[{\"allocQty\":1,\"item\":{\"itemNbr\":\"559399867\",\"baseDivisionCode\":\"WM\",\"financialReportingGroup\":\"US\",\"reportingGroup\":\"US\"},\"orderId\":\"051d3a92-2eda-4d8d-8b8a-3ac53bf1b094\"}]},{\"ctrLabel\":{\"headers\":{\"WMT-CorrelationId\":\"59984caa-9d47-4d72-9690-9672e92f325a\",\"facilityCountryCode\":\"US\",\"facilityNum\":\"32899\"},\"clientId\":\"AllocationPlanner\",\"printRequests\":[{\"labelIdentifier\":\"e328990000200000000083657\",\"formatName\":\"case_lpn_format\",\"data\":[{\"key\":\"LPN\",\"value\":\"e328990000200000000083657\"},{\"key\":\"DESTINATION\",\"value\":\"06094 US\"},{\"key\":\"ITEM\",\"value\":\"559399867\"},{\"key\":\"QTY\",\"value\":\"\"},{\"key\":\"UPCBAR\",\"value\":\"00029695319808\"},{\"key\":\"DESC1\",\"value\":\"MED FETCH BALL 2-PK\"},{\"key\":\"DESC2\",\"value\":\"REPLACE 868675\"},{\"key\":\"FULLUSERID\",\"value\":\"sysadmin\"},{\"key\":\"PACK\",\"value\":\"1\"},{\"key\":\"SIZE\",\"value\":\"MEDIUM\"},{\"key\":\"COLOR\",\"value\":\"NONE\"},{\"key\":\"POCODE\",\"value\":\"GO\"},{\"key\":\"PO\",\"value\":\"9991230599\"},{\"key\":\"VENDORID\",\"value\":\"988246\"},{\"key\":\"POLINE\",\"value\":\"1\"},{\"key\":\"POEVENT\",\"value\":\"POS REPLEN\"},{\"key\":\"REPRINT\",\"value\":\"\"},{\"key\":\"HAZMAT\",\"value\":\"\"},{\"key\":\"STOREZONE\",\"value\":\"E\"},{\"key\":\"EVENTCHAR\",\"value\":\" \"},{\"key\":\"PRINTER\",\"value\":\"\"},{\"key\":\"CPQTY\",\"value\":\"1\"},{\"key\":\"DEPT\",\"value\":\"38\"},{\"key\":\"CHANNEL\",\"value\":\"DIST\"},{\"key\":\"PACKTYPE\",\"value\":\"CP\"},{\"key\":\"DSDC\",\"value\":\"\"},{\"key\":\"ORIGIN\",\"value\":\"32899\"},{\"key\":\"DELIVERY\",\"value\":\"201901100\"},{\"key\":\"DOOR\",\"value\":\"901\"}],\"ttlInHours\":72.0}]},\"ctrShippable\":true,\"ctrReusable\":false,\"outboundChannelMethod\":\"CROSSU\",\"ctrDestination\":{\"buNumber\":\"6094\",\"countryCode\":\"US\"},\"inventoryStatus\":\"PICKED\",\"ctrType\":\"Vendor Pack\",\"trackingId\":\"e328990000200000000083657\",\"distributions\":[{\"allocQty\":1,\"item\":{\"itemNbr\":\"559399867\",\"baseDivisionCode\":\"WM\",\"financialReportingGroup\":\"US\",\"reportingGroup\":\"US\"},\"orderId\":\"051d3a92-2eda-4d8d-8b8a-3ac53bf1b094\"}]},{\"ctrLabel\":{\"headers\":{\"WMT-CorrelationId\":\"59984caa-9d47-4d72-9690-9672e92f325a\",\"facilityCountryCode\":\"US\",\"facilityNum\":\"32899\"},\"clientId\":\"AllocationPlanner\",\"printRequests\":[{\"labelIdentifier\":\"e328990000200000000083658\",\"formatName\":\"case_lpn_format\",\"data\":[{\"key\":\"LPN\",\"value\":\"e328990000200000000083658\"},{\"key\":\"DESTINATION\",\"value\":\"06094 US\"},{\"key\":\"ITEM\",\"value\":\"559399867\"},{\"key\":\"QTY\",\"value\":\"\"},{\"key\":\"UPCBAR\",\"value\":\"00029695319808\"},{\"key\":\"DESC1\",\"value\":\"MED FETCH BALL 2-PK\"},{\"key\":\"DESC2\",\"value\":\"REPLACE 868675\"},{\"key\":\"FULLUSERID\",\"value\":\"sysadmin\"},{\"key\":\"PACK\",\"value\":\"1\"},{\"key\":\"SIZE\",\"value\":\"MEDIUM\"},{\"key\":\"COLOR\",\"value\":\"NONE\"},{\"key\":\"POCODE\",\"value\":\"GO\"},{\"key\":\"PO\",\"value\":\"9991230599\"},{\"key\":\"VENDORID\",\"value\":\"988246\"},{\"key\":\"POLINE\",\"value\":\"1\"},{\"key\":\"POEVENT\",\"value\":\"POS REPLEN\"},{\"key\":\"REPRINT\",\"value\":\"\"},{\"key\":\"HAZMAT\",\"value\":\"\"},{\"key\":\"STOREZONE\",\"value\":\"E\"},{\"key\":\"EVENTCHAR\",\"value\":\" \"},{\"key\":\"PRINTER\",\"value\":\"\"},{\"key\":\"CPQTY\",\"value\":\"1\"},{\"key\":\"DEPT\",\"value\":\"38\"},{\"key\":\"CHANNEL\",\"value\":\"DIST\"},{\"key\":\"PACKTYPE\",\"value\":\"CP\"},{\"key\":\"DSDC\",\"value\":\"\"},{\"key\":\"ORIGIN\",\"value\":\"32899\"},{\"key\":\"DELIVERY\",\"value\":\"201901100\"},{\"key\":\"DOOR\",\"value\":\"901\"}],\"ttlInHours\":72.0}]},\"ctrShippable\":true,\"ctrReusable\":false,\"outboundChannelMethod\":\"CROSSU\",\"ctrDestination\":{\"buNumber\":\"6094\",\"countryCode\":\"US\"},\"inventoryStatus\":\"PICKED\",\"ctrType\":\"Vendor Pack\",\"trackingId\":\"e328990000200000000083658\",\"distributions\":[{\"allocQty\":1,\"item\":{\"itemNbr\":\"559399867\",\"baseDivisionCode\":\"WM\",\"financialReportingGroup\":\"US\",\"reportingGroup\":\"US\"},\"orderId\":\"051d3a92-2eda-4d8d-8b8a-3ac53bf1b094\"}]},{\"ctrLabel\":{\"headers\":{\"WMT-CorrelationId\":\"59984caa-9d47-4d72-9690-9672e92f325a\",\"facilityCountryCode\":\"US\",\"facilityNum\":\"32899\"},\"clientId\":\"AllocationPlanner\",\"printRequests\":[{\"labelIdentifier\":\"e328990000200000000083659\",\"formatName\":\"case_lpn_format\",\"data\":[{\"key\":\"LPN\",\"value\":\"e328990000200000000083659\"},{\"key\":\"DESTINATION\",\"value\":\"06094 US\"},{\"key\":\"ITEM\",\"value\":\"559399867\"},{\"key\":\"QTY\",\"value\":\"\"},{\"key\":\"UPCBAR\",\"value\":\"00029695319808\"},{\"key\":\"DESC1\",\"value\":\"MED FETCH BALL 2-PK\"},{\"key\":\"DESC2\",\"value\":\"REPLACE 868675\"},{\"key\":\"FULLUSERID\",\"value\":\"sysadmin\"},{\"key\":\"PACK\",\"value\":\"1\"},{\"key\":\"SIZE\",\"value\":\"MEDIUM\"},{\"key\":\"COLOR\",\"value\":\"NONE\"},{\"key\":\"POCODE\",\"value\":\"GO\"},{\"key\":\"PO\",\"value\":\"9991230599\"},{\"key\":\"VENDORID\",\"value\":\"988246\"},{\"key\":\"POLINE\",\"value\":\"1\"},{\"key\":\"POEVENT\",\"value\":\"POS REPLEN\"},{\"key\":\"REPRINT\",\"value\":\"\"},{\"key\":\"HAZMAT\",\"value\":\"\"},{\"key\":\"STOREZONE\",\"value\":\"E\"},{\"key\":\"EVENTCHAR\",\"value\":\" \"},{\"key\":\"PRINTER\",\"value\":\"\"},{\"key\":\"CPQTY\",\"value\":\"1\"},{\"key\":\"DEPT\",\"value\":\"38\"},{\"key\":\"CHANNEL\",\"value\":\"DIST\"},{\"key\":\"PACKTYPE\",\"value\":\"CP\"},{\"key\":\"DSDC\",\"value\":\"\"},{\"key\":\"ORIGIN\",\"value\":\"32899\"},{\"key\":\"DELIVERY\",\"value\":\"201901100\"},{\"key\":\"DOOR\",\"value\":\"901\"}],\"ttlInHours\":72.0}]},\"ctrShippable\":true,\"ctrReusable\":false,\"outboundChannelMethod\":\"CROSSU\",\"ctrDestination\":{\"buNumber\":\"6094\",\"countryCode\":\"US\"},\"inventoryStatus\":\"PICKED\",\"ctrType\":\"Vendor Pack\",\"trackingId\":\"e328990000200000000083659\",\"distributions\":[{\"allocQty\":1,\"item\":{\"itemNbr\":\"559399867\",\"baseDivisionCode\":\"WM\",\"financialReportingGroup\":\"US\",\"reportingGroup\":\"US\"},\"orderId\":\"051d3a92-2eda-4d8d-8b8a-3ac53bf1b094\"}]},{\"ctrLabel\":{\"headers\":{\"WMT-CorrelationId\":\"59984caa-9d47-4d72-9690-9672e92f325a\",\"facilityCountryCode\":\"US\",\"facilityNum\":\"32899\"},\"clientId\":\"AllocationPlanner\",\"printRequests\":[{\"labelIdentifier\":\"e328990000200000000083660\",\"formatName\":\"case_lpn_format\",\"data\":[{\"key\":\"LPN\",\"value\":\"e328990000200000000083660\"},{\"key\":\"DESTINATION\",\"value\":\"06094 US\"},{\"key\":\"ITEM\",\"value\":\"559399867\"},{\"key\":\"QTY\",\"value\":\"\"},{\"key\":\"UPCBAR\",\"value\":\"00029695319808\"},{\"key\":\"DESC1\",\"value\":\"MED FETCH BALL 2-PK\"},{\"key\":\"DESC2\",\"value\":\"REPLACE 868675\"},{\"key\":\"FULLUSERID\",\"value\":\"sysadmin\"},{\"key\":\"PACK\",\"value\":\"1\"},{\"key\":\"SIZE\",\"value\":\"MEDIUM\"},{\"key\":\"COLOR\",\"value\":\"NONE\"},{\"key\":\"POCODE\",\"value\":\"GO\"},{\"key\":\"PO\",\"value\":\"9991230599\"},{\"key\":\"VENDORID\",\"value\":\"988246\"},{\"key\":\"POLINE\",\"value\":\"1\"},{\"key\":\"POEVENT\",\"value\":\"POS REPLEN\"},{\"key\":\"REPRINT\",\"value\":\"\"},{\"key\":\"HAZMAT\",\"value\":\"\"},{\"key\":\"STOREZONE\",\"value\":\"E\"},{\"key\":\"EVENTCHAR\",\"value\":\" \"},{\"key\":\"PRINTER\",\"value\":\"\"},{\"key\":\"CPQTY\",\"value\":\"1\"},{\"key\":\"DEPT\",\"value\":\"38\"},{\"key\":\"CHANNEL\",\"value\":\"DIST\"},{\"key\":\"PACKTYPE\",\"value\":\"CP\"},{\"key\":\"DSDC\",\"value\":\"\"},{\"key\":\"ORIGIN\",\"value\":\"32899\"},{\"key\":\"DELIVERY\",\"value\":\"201901100\"},{\"key\":\"DOOR\",\"value\":\"901\"}],\"ttlInHours\":72.0}]},\"ctrShippable\":true,\"ctrReusable\":false,\"outboundChannelMethod\":\"CROSSU\",\"ctrDestination\":{\"buNumber\":\"6094\",\"countryCode\":\"US\"},\"inventoryStatus\":\"PICKED\",\"ctrType\":\"Vendor Pack\",\"trackingId\":\"e328990000200000000083660\",\"distributions\":[{\"allocQty\":1,\"item\":{\"itemNbr\":\"559399867\",\"baseDivisionCode\":\"WM\",\"financialReportingGroup\":\"US\",\"reportingGroup\":\"US\"},\"orderId\":\"051d3a92-2eda-4d8d-8b8a-3ac53bf1b094\"}]},{\"ctrLabel\":{\"headers\":{\"WMT-CorrelationId\":\"59984caa-9d47-4d72-9690-9672e92f325a\",\"facilityCountryCode\":\"US\",\"facilityNum\":\"32899\"},\"clientId\":\"AllocationPlanner\",\"printRequests\":[{\"labelIdentifier\":\"e328990000200000000083661\",\"formatName\":\"case_lpn_format\",\"data\":[{\"key\":\"LPN\",\"value\":\"e328990000200000000083661\"},{\"key\":\"DESTINATION\",\"value\":\"06094 US\"},{\"key\":\"ITEM\",\"value\":\"559399867\"},{\"key\":\"QTY\",\"value\":\"\"},{\"key\":\"UPCBAR\",\"value\":\"00029695319808\"},{\"key\":\"DESC1\",\"value\":\"MED FETCH BALL 2-PK\"},{\"key\":\"DESC2\",\"value\":\"REPLACE 868675\"},{\"key\":\"FULLUSERID\",\"value\":\"sysadmin\"},{\"key\":\"PACK\",\"value\":\"1\"},{\"key\":\"SIZE\",\"value\":\"MEDIUM\"},{\"key\":\"COLOR\",\"value\":\"NONE\"},{\"key\":\"POCODE\",\"value\":\"GO\"},{\"key\":\"PO\",\"value\":\"9991230599\"},{\"key\":\"VENDORID\",\"value\":\"988246\"},{\"key\":\"POLINE\",\"value\":\"1\"},{\"key\":\"POEVENT\",\"value\":\"POS REPLEN\"},{\"key\":\"REPRINT\",\"value\":\"\"},{\"key\":\"HAZMAT\",\"value\":\"\"},{\"key\":\"STOREZONE\",\"value\":\"E\"},{\"key\":\"EVENTCHAR\",\"value\":\" \"},{\"key\":\"PRINTER\",\"value\":\"\"},{\"key\":\"CPQTY\",\"value\":\"1\"},{\"key\":\"DEPT\",\"value\":\"38\"},{\"key\":\"CHANNEL\",\"value\":\"DIST\"},{\"key\":\"PACKTYPE\",\"value\":\"CP\"},{\"key\":\"DSDC\",\"value\":\"\"},{\"key\":\"ORIGIN\",\"value\":\"32899\"},{\"key\":\"DELIVERY\",\"value\":\"201901100\"},{\"key\":\"DOOR\",\"value\":\"901\"}],\"ttlInHours\":72.0}]},\"ctrShippable\":true,\"ctrReusable\":false,\"outboundChannelMethod\":\"CROSSU\",\"ctrDestination\":{\"buNumber\":\"6094\",\"countryCode\":\"US\"},\"inventoryStatus\":\"PICKED\",\"ctrType\":\"Vendor Pack\",\"trackingId\":\"e328990000200000000083661\",\"distributions\":[{\"allocQty\":1,\"item\":{\"itemNbr\":\"559399867\",\"baseDivisionCode\":\"WM\",\"financialReportingGroup\":\"US\",\"reportingGroup\":\"US\"},\"orderId\":\"70a36d3b-85ba-4090-80c4-e1351cfc8410\"}]},{\"ctrLabel\":{\"headers\":{\"WMT-CorrelationId\":\"59984caa-9d47-4d72-9690-9672e92f325a\",\"facilityCountryCode\":\"US\",\"facilityNum\":\"32899\"},\"clientId\":\"AllocationPlanner\",\"printRequests\":[{\"labelIdentifier\":\"e328990000200000000083662\",\"formatName\":\"case_lpn_format\",\"data\":[{\"key\":\"LPN\",\"value\":\"e328990000200000000083662\"},{\"key\":\"DESTINATION\",\"value\":\"06094 US\"},{\"key\":\"ITEM\",\"value\":\"559399867\"},{\"key\":\"QTY\",\"value\":\"\"},{\"key\":\"UPCBAR\",\"value\":\"00029695319808\"},{\"key\":\"DESC1\",\"value\":\"MED FETCH BALL 2-PK\"},{\"key\":\"DESC2\",\"value\":\"REPLACE 868675\"},{\"key\":\"FULLUSERID\",\"value\":\"sysadmin\"},{\"key\":\"PACK\",\"value\":\"1\"},{\"key\":\"SIZE\",\"value\":\"MEDIUM\"},{\"key\":\"COLOR\",\"value\":\"NONE\"},{\"key\":\"POCODE\",\"value\":\"GO\"},{\"key\":\"PO\",\"value\":\"9991230599\"},{\"key\":\"VENDORID\",\"value\":\"988246\"},{\"key\":\"POLINE\",\"value\":\"1\"},{\"key\":\"POEVENT\",\"value\":\"POS REPLEN\"},{\"key\":\"REPRINT\",\"value\":\"\"},{\"key\":\"HAZMAT\",\"value\":\"\"},{\"key\":\"STOREZONE\",\"value\":\"E\"},{\"key\":\"EVENTCHAR\",\"value\":\" \"},{\"key\":\"PRINTER\",\"value\":\"\"},{\"key\":\"CPQTY\",\"value\":\"1\"},{\"key\":\"DEPT\",\"value\":\"38\"},{\"key\":\"CHANNEL\",\"value\":\"DIST\"},{\"key\":\"PACKTYPE\",\"value\":\"CP\"},{\"key\":\"DSDC\",\"value\":\"\"},{\"key\":\"ORIGIN\",\"value\":\"32899\"},{\"key\":\"DELIVERY\",\"value\":\"201901100\"},{\"key\":\"DOOR\",\"value\":\"901\"}],\"ttlInHours\":72.0}]},\"ctrShippable\":true,\"ctrReusable\":false,\"outboundChannelMethod\":\"CROSSU\",\"ctrDestination\":{\"buNumber\":\"6094\",\"countryCode\":\"US\"},\"inventoryStatus\":\"PICKED\",\"ctrType\":\"Vendor Pack\",\"trackingId\":\"e328990000200000000083662\",\"distributions\":[{\"allocQty\":1,\"item\":{\"itemNbr\":\"559399867\",\"baseDivisionCode\":\"WM\",\"financialReportingGroup\":\"US\",\"reportingGroup\":\"US\"},\"orderId\":\"70a36d3b-85ba-4090-80c4-e1351cfc8410\"}]},{\"ctrLabel\":{\"headers\":{\"WMT-CorrelationId\":\"59984caa-9d47-4d72-9690-9672e92f325a\",\"facilityCountryCode\":\"US\",\"facilityNum\":\"32899\"},\"clientId\":\"AllocationPlanner\",\"printRequests\":[{\"labelIdentifier\":\"e328990000200000000083663\",\"formatName\":\"case_lpn_format\",\"data\":[{\"key\":\"LPN\",\"value\":\"e328990000200000000083663\"},{\"key\":\"DESTINATION\",\"value\":\"06094 US\"},{\"key\":\"ITEM\",\"value\":\"559399867\"},{\"key\":\"QTY\",\"value\":\"\"},{\"key\":\"UPCBAR\",\"value\":\"00029695319808\"},{\"key\":\"DESC1\",\"value\":\"MED FETCH BALL 2-PK\"},{\"key\":\"DESC2\",\"value\":\"REPLACE 868675\"},{\"key\":\"FULLUSERID\",\"value\":\"sysadmin\"},{\"key\":\"PACK\",\"value\":\"1\"},{\"key\":\"SIZE\",\"value\":\"MEDIUM\"},{\"key\":\"COLOR\",\"value\":\"NONE\"},{\"key\":\"POCODE\",\"value\":\"GO\"},{\"key\":\"PO\",\"value\":\"9991230599\"},{\"key\":\"VENDORID\",\"value\":\"988246\"},{\"key\":\"POLINE\",\"value\":\"1\"},{\"key\":\"POEVENT\",\"value\":\"POS REPLEN\"},{\"key\":\"REPRINT\",\"value\":\"\"},{\"key\":\"HAZMAT\",\"value\":\"\"},{\"key\":\"STOREZONE\",\"value\":\"E\"},{\"key\":\"EVENTCHAR\",\"value\":\" \"},{\"key\":\"PRINTER\",\"value\":\"\"},{\"key\":\"CPQTY\",\"value\":\"1\"},{\"key\":\"DEPT\",\"value\":\"38\"},{\"key\":\"CHANNEL\",\"value\":\"DIST\"},{\"key\":\"PACKTYPE\",\"value\":\"CP\"},{\"key\":\"DSDC\",\"value\":\"\"},{\"key\":\"ORIGIN\",\"value\":\"32899\"},{\"key\":\"DELIVERY\",\"value\":\"201901100\"},{\"key\":\"DOOR\",\"value\":\"901\"}],\"ttlInHours\":72.0}]},\"ctrShippable\":true,\"ctrReusable\":false,\"outboundChannelMethod\":\"CROSSU\",\"ctrDestination\":{\"buNumber\":\"6094\",\"countryCode\":\"US\"},\"inventoryStatus\":\"PICKED\",\"ctrType\":\"Vendor Pack\",\"trackingId\":\"e328990000200000000083663\",\"distributions\":[{\"allocQty\":1,\"item\":{\"itemNbr\":\"559399867\",\"baseDivisionCode\":\"WM\",\"financialReportingGroup\":\"US\",\"reportingGroup\":\"US\"},\"orderId\":\"70a36d3b-85ba-4090-80c4-e1351cfc8410\"}]},{\"ctrLabel\":{\"headers\":{\"WMT-CorrelationId\":\"59984caa-9d47-4d72-9690-9672e92f325a\",\"facilityCountryCode\":\"US\",\"facilityNum\":\"32899\"},\"clientId\":\"AllocationPlanner\",\"printRequests\":[{\"labelIdentifier\":\"e328990000200000000083664\",\"formatName\":\"case_lpn_format\",\"data\":[{\"key\":\"LPN\",\"value\":\"e328990000200000000083664\"},{\"key\":\"DESTINATION\",\"value\":\"06094 US\"},{\"key\":\"ITEM\",\"value\":\"559399867\"},{\"key\":\"QTY\",\"value\":\"\"},{\"key\":\"UPCBAR\",\"value\":\"00029695319808\"},{\"key\":\"DESC1\",\"value\":\"MED FETCH BALL 2-PK\"},{\"key\":\"DESC2\",\"value\":\"REPLACE 868675\"},{\"key\":\"FULLUSERID\",\"value\":\"sysadmin\"},{\"key\":\"PACK\",\"value\":\"1\"},{\"key\":\"SIZE\",\"value\":\"MEDIUM\"},{\"key\":\"COLOR\",\"value\":\"NONE\"},{\"key\":\"POCODE\",\"value\":\"GO\"},{\"key\":\"PO\",\"value\":\"9991230599\"},{\"key\":\"VENDORID\",\"value\":\"988246\"},{\"key\":\"POLINE\",\"value\":\"1\"},{\"key\":\"POEVENT\",\"value\":\"POS REPLEN\"},{\"key\":\"REPRINT\",\"value\":\"\"},{\"key\":\"HAZMAT\",\"value\":\"\"},{\"key\":\"STOREZONE\",\"value\":\"E\"},{\"key\":\"EVENTCHAR\",\"value\":\" \"},{\"key\":\"PRINTER\",\"value\":\"\"},{\"key\":\"CPQTY\",\"value\":\"1\"},{\"key\":\"DEPT\",\"value\":\"38\"},{\"key\":\"CHANNEL\",\"value\":\"DIST\"},{\"key\":\"PACKTYPE\",\"value\":\"CP\"},{\"key\":\"DSDC\",\"value\":\"\"},{\"key\":\"ORIGIN\",\"value\":\"32899\"},{\"key\":\"DELIVERY\",\"value\":\"201901100\"},{\"key\":\"DOOR\",\"value\":\"901\"}],\"ttlInHours\":72.0}]},\"ctrShippable\":true,\"ctrReusable\":false,\"outboundChannelMethod\":\"CROSSU\",\"ctrDestination\":{\"buNumber\":\"6094\",\"countryCode\":\"US\"},\"inventoryStatus\":\"PICKED\",\"ctrType\":\"Vendor Pack\",\"trackingId\":\"e328990000200000000083664\",\"distributions\":[{\"allocQty\":1,\"item\":{\"itemNbr\":\"559399867\",\"baseDivisionCode\":\"WM\",\"financialReportingGroup\":\"US\",\"reportingGroup\":\"US\"},\"orderId\":\"70a36d3b-85ba-4090-80c4-e1351cfc8410\"}]},{\"ctrLabel\":{\"headers\":{\"WMT-CorrelationId\":\"59984caa-9d47-4d72-9690-9672e92f325a\",\"facilityCountryCode\":\"US\",\"facilityNum\":\"32899\"},\"clientId\":\"AllocationPlanner\",\"printRequests\":[{\"labelIdentifier\":\"e328990000200000000083665\",\"formatName\":\"case_lpn_format\",\"data\":[{\"key\":\"LPN\",\"value\":\"e328990000200000000083665\"},{\"key\":\"DESTINATION\",\"value\":\"06094 US\"},{\"key\":\"ITEM\",\"value\":\"559399867\"},{\"key\":\"QTY\",\"value\":\"\"},{\"key\":\"UPCBAR\",\"value\":\"00029695319808\"},{\"key\":\"DESC1\",\"value\":\"MED FETCH BALL 2-PK\"},{\"key\":\"DESC2\",\"value\":\"REPLACE 868675\"},{\"key\":\"FULLUSERID\",\"value\":\"sysadmin\"},{\"key\":\"PACK\",\"value\":\"1\"},{\"key\":\"SIZE\",\"value\":\"MEDIUM\"},{\"key\":\"COLOR\",\"value\":\"NONE\"},{\"key\":\"POCODE\",\"value\":\"GO\"},{\"key\":\"PO\",\"value\":\"9991230599\"},{\"key\":\"VENDORID\",\"value\":\"988246\"},{\"key\":\"POLINE\",\"value\":\"1\"},{\"key\":\"POEVENT\",\"value\":\"POS REPLEN\"},{\"key\":\"REPRINT\",\"value\":\"\"},{\"key\":\"HAZMAT\",\"value\":\"\"},{\"key\":\"STOREZONE\",\"value\":\"E\"},{\"key\":\"EVENTCHAR\",\"value\":\" \"},{\"key\":\"PRINTER\",\"value\":\"\"},{\"key\":\"CPQTY\",\"value\":\"1\"},{\"key\":\"DEPT\",\"value\":\"38\"},{\"key\":\"CHANNEL\",\"value\":\"DIST\"},{\"key\":\"PACKTYPE\",\"value\":\"CP\"},{\"key\":\"DSDC\",\"value\":\"\"},{\"key\":\"ORIGIN\",\"value\":\"32899\"},{\"key\":\"DELIVERY\",\"value\":\"201901100\"},{\"key\":\"DOOR\",\"value\":\"901\"}],\"ttlInHours\":72.0}]},\"ctrShippable\":true,\"ctrReusable\":false,\"outboundChannelMethod\":\"CROSSU\",\"ctrDestination\":{\"buNumber\":\"6094\",\"countryCode\":\"US\"},\"inventoryStatus\":\"PICKED\",\"ctrType\":\"Vendor Pack\",\"trackingId\":\"e328990000200000000083665\",\"distributions\":[{\"allocQty\":1,\"item\":{\"itemNbr\":\"559399867\",\"baseDivisionCode\":\"WM\",\"financialReportingGroup\":\"US\",\"reportingGroup\":\"US\"},\"orderId\":\"70a36d3b-85ba-4090-80c4-e1351cfc8410\"}]}]",
+ "completeTs" : null,
+ "completeUserId" : null,
+ "container" :
+ {
+  "ctrLabel": {
+   "headers": {
+    "WMT-CorrelationId": "9bbf7e0f-027b-4858-8800-7ecff0b37c40",
+    "facilityCountryCode": "US",
+    "facilityNum": "32898"
+   },
+   "clientId": "AllocationPlanner",
+   "printRequests": [
+    {
+     "labelIdentifier": "h328990000200000000002129",
+     "formatName": "case_lpn_format",
+     "data": [
+      {
+       "key": "LPN",
+       "value": "h328990000200000000002129"
+      },
+      {
+       "key": "TYPE",
+       "value": "DA_NC"
+      },
+      {
+       "key": "DESTINATION",
+       "value": "06094 US"
+      },
+      {
+       "key": "ITEM",
+       "value": "554000560"
+      },
+      {
+       "key": "UPCBAR",
+       "value": "00737765745982"
+      },
+      {
+       "key": "DESC1",
+       "value": "SEASENSE 16-1/2 LBS"
+      },
+      {
+       "key": "FULLUSERID",
+       "value": "sysadmin"
+      },
+      {
+       "key": "ORIGIN",
+       "value": "32898"
+      },
+      {
+       "key": "DELIVERY",
+       "value": "50466432"
+      },
+      {
+       "key": "DOOR",
+       "value": "159"
+      },
+      {
+       "key": "QTY",
+       "value": "1"
+      }
+     ],
+     "ttlInHours": 72.0
+    },
+    {
+     "labelIdentifier": "B32898000010502358",
+     "formatName": "pallet_lpn_format",
+     "data": [
+      {
+       "key": "LPN",
+       "value": "B32898000010502358"
+      },
+      {
+       "key": "TYPE",
+       "value": "DA_NC"
+      },
+      {
+       "key": "DESTINATION",
+       "value": "06094 US"
+      },
+      {
+       "key": "ITEM",
+       "value": "554000560"
+      },
+      {
+       "key": "UPCBAR",
+       "value": "00737765745982"
+      },
+      {
+       "key": "DESC1",
+       "value": "SEASENSE 16-1/2 LBS"
+      },
+      {
+       "key": "FULLUSERID",
+       "value": "sysadmin"
+      },
+      {
+       "key": "ORIGIN",
+       "value": "32898"
+      },
+      {
+       "key": "DELIVERY",
+       "value": "50466432"
+      },
+      {
+       "key": "DOOR",
+       "value": "159"
+      },
+      {
+       "key": "QTY",
+       "value": "1"
+      }
+     ],
+     "ttlInHours": 72.0
+    }
+   ]
+  },
+  "ctrShippable": true,
+  "ctrReusable": false,
+  "quantity": null,
+  "outboundChannelMethod": "CROSSNA",
+  "ctrDestination": {
+   "buNumber": "6094",
+   "countryCode": "US"
+  },
+  "finalDestination": {
+   "buNumber": "6094",
+   "countryCode": "US"
+  },
+  "inventoryStatus": "PICKED",
+  "ctrType": "PALLET",
+  "ctrStatus": null,
+  "trackingId": "B32898000010502358",
+  "distributions": [
+   {
+    "allocQty": 4,
+    "item": {
+     "itemNbr": "554000560",
+     "baseDivisionCode": "WM",
+     "financialReportingGroup": "US",
+     "reportingGroup": "US"
+    },
+    "orderId": "6a337040-47a6-4853-b543-25bf04caa8ea",
+    "destCC": null,
+    "destNbr": null
+   }
+  ],
+  "projectedWeight": null,
+  "projectedWeightUom": null,
+  "orgUnitId": null,
+  "childContainers": null,
+  "contents": null,
+  "parentTrackingId": null,
+  "containerId": null,
+  "remainingQty": null,
+  "problemFreightLocation": null,
+  "glsTimestamp": null,
+  "glsWeight": null,
+  "glsWeightUOM": null
+ },
+ "createTs" : null,
+ "createUserId" : "sysadmin",
+ "deliveryNumber" : 201901100,
+ "gtin" : "00029695319808",
+ "instructionCode" : "Build Container",
+ "instructionMsg" : "Build Container",
+ "itemDescription" : "MED FETCH BALL 2-PK",
+ "labels" : "{\"usedLabels\":[\"e328990000200000000083656\",\"e328990000200000000083657\",\"e328990000200000000083658\",\"e328990000200000000083659\",\"e328990000200000000083660\",\"e328990000200000000083661\",\"e328990000200000000083662\",\"e328990000200000000083663\",\"e328990000200000000083664\"],\"availableLabels\":[\"e328990000200000000083665\"]}",
+ "lastChangeTs" : null,
+ "lastChangeUserId" : "sysadmin",
+ "messageId" : "d0bf5aab-d4d8-4bf1-b4ff-66386c6fe34c",
+ "move" : {"toLocation":"323","correlationID":"59984caa-9d47-4d72-9690-9672e92f325a","containerTag":"F32899000020055167","sequenceNbr":6.43661083E8,"lastChangedOn":1.643661083014E12,"lastChangedBy":"sysadmin"},
+ "poDcNumber" : "32899",
+ "printChildContainerLabels" : true,
+ "problemTagId" : null,
+ "projectedReceiveQty" : 10,
+ "projectedReceiveQtyUOM" : "ZA",
+ "providerId" : "AllocPlanner",
+ "purchaseReferenceLineNumber" : 1,
+ "purchaseReferenceNumber" : "9991230599",
+ "receivedQuantity" : 9,
+ "receivedQuantityUOM" : "ZA",
+ "ssccNumber" : null,
+ "firstExpiryFirstOut" : null,
+ "deliveryDocument" : "{\"purchaseReferenceNumber\":\"9991230599\",\"financialGroupCode\":\"US\",\"baseDivCode\":\"WM\",\"vendorNumber\":\"988246\",\"vendorNbrDeptSeq\":988246381,\"deptNumber\":\"38\",\"purchaseCompanyId\":\"1\",\"purchaseReferenceLegacyType\":\"33\",\"poDCNumber\":\"32899\",\"purchaseReferenceStatus\":\"ACTV\",\"deliveryDocumentLines\":[{\"gtin\":\"00029695319808\",\"quantity\":0,\"itemUPC\":\"00029695319808\",\"caseUPC\":\"50029695330983\",\"purchaseReferenceNumber\":\"9991230599\",\"purchaseReferenceLineNumber\":1,\"event\":\"POS REPLEN\",\"purchaseReferenceLineStatus\":\"ACTIVE\",\"whpkSell\":2.26,\"vendorPackCost\":1.84,\"vnpkQty\":1,\"whpkQty\":1,\"orderableQuantity\":12,\"warehousePackQuantity\":2,\"expectedQtyUOM\":\"ZA\",\"openQty\":10,\"expectedQty\":10,\"overageQtyLimit\":10,\"itemNbr\":559399867,\"purchaseRefType\":\"CROSSU\",\"palletTi\":15,\"palletHi\":5,\"vnpkWgtQty\":3.84,\"vnpkWgtUom\":\"LB\",\"vnpkcbqty\":0.246,\"vnpkcbuomcd\":\"CF\",\"color\":\"NONE\",\"size\":\"MEDIUM\",\"isHazmat\":false,\"itemDescription1\":\"MED FETCH BALL 2-PK\",\"itemDescription2\":\"REPLACE 868675\",\"isConveyable\":true,\"additionalInfo\":{\"isNewItem\":true,\"weight\":5.42,\"weightFormatTypeCode\":\"F\",\"weightUOM\":\"LB\",\"warehouseMinLifeRemainingToReceive\":0,\"primeSlotSize\":0,\"isHazardous\":0,\"atlasConvertedItem\":false,\"isWholesaler\":false},\"operationalInfo\":{\"state\":\"ACTIVE\"},\"activeChannelMethods\":[\"CROSSU\"],\"lithiumIonVerifiedOn\":\"Jan 19, 2022 12:26:11 PM\",\"department\":\"8\",\"originalChannel\":\"CROSSDOCK\",\"vendorStockNumber\":\"33098\",\"transportationModes\":[{\"mode\":{\"code\":1,\"description\":\"GROUND\"},\"dotHazardousClass\":{\"code\":\"N/A\",\"description\":\"OTHER REGULATED MATERIAL\"},\"pkgInstruction\":[\"965\"],\"properShipping\":\"Lithium Ion Battery\"}],\"maxAllowedOverageQtyIncluded\":false,\"lithiumIonVerificationRequired\":false,\"limitedQtyVerificationRequired\":false,\"isNewItem\":false}],\"totalPurchaseReferenceQty\":10,\"weight\":26.24,\"weightUOM\":\"LB\",\"cubeQty\":320.0,\"cubeUOM\":\"CF\",\"freightTermCode\":\"COLL\",\"deliveryStatus\":\"OPN\",\"poTypeCode\":33,\"totalBolFbq\":0,\"poDcCountry\":\"US\",\"deliveryLegacyStatus\":\"OPN\",\"purchaseReferenceMustArriveByDate\":\"Mar 26, 2019 12:00:00 AM\",\"stateReasonCodes\":[\"DOOR_OPEN\"],\"deliveryNumber\":201901100,\"importInd\":false}",
+ "dockTagId" : null,
+ "manualInstruction" : false,
+ "originalChannel" : null,
+ "isReceiveCorrection" : null,
+ "version" : 1,
+ "instructionSetId" : null
+}
+

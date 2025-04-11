@@ -1,0 +1,67 @@
+{
+  "totalCount": 1,
+  "successCount": 1,
+  "hasMoreEntries": false,
+  "successTuples": [
+    {
+      "response": {
+        "locations": [
+          {
+            "xCoord": 0,
+            "yCoord": 0,
+            "zCoord": 0,
+            "id": 4912,
+            "sequenceNo": 0,
+            "name": "FID11",
+            "orgUnitId": 251,
+            "status": {
+              "key": 1,
+              "value": "Active"
+            },
+            "primeSlot": false,
+            "widthQty": 0.0,
+            "depthQty": 0.0,
+            "heightQty": 0.0,
+            "maxWgtQty": 0.0,
+            "tags": [
+              {
+                "domain": "task",
+                "tagNames": [
+                  "DROP"
+                ]
+              },
+              {
+                "domain": "mlm.locgrp",
+                "tagNames": [
+                  "DROP"
+                ]
+              }
+            ],
+            "properties": {
+              "scCode": "001006002",
+              "sccDescription": "FID"
+            },
+            "links": [
+              {
+                "rel": "DELETE",
+                "href": "https://gls-location-witron-stg-uat.prod.us.walmart.net/us-32818/locations/4912",
+                "hreflang": null,
+                "media": null,
+                "title": null,
+                "type": null,
+                "deprecation": null
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "limit": 500,
+        "offset": 0,
+        "names": [
+          "FID11"
+        ]
+      }
+    }
+  ]
+}

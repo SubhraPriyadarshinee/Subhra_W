@@ -1,0 +1,239 @@
+{
+  "packageItemIdentificationCode": "PIR-111",
+  "packageItemIdentificationMessage": "Package recognizable : Item found in the package and single seller in package : Item type WFS",
+  "scannedItemLabel": "00604015693198",
+  "scannedLabel": "5512098217046",
+  "scannedLabelType": "SO",
+  "scannedBin": "RT1111",
+  "scannedCart": "RC1111",
+  "containerTag": "NONCONSUMABLE",
+  "disposition": {
+    "dispositionType": "RTV",
+    "finalDisposition": "RTV",
+    "itemCondition": "UNSELLABLE"
+  },
+  "answers": {
+    "serviceType": "WFS",
+    "legacySellerId": "10112",
+    "itemCategory": "Garden \u0026 Patio",
+    "questions": [
+      {
+        "questionId": 1,
+        "options": [
+          {
+            "isSelected": false,
+            "optionId": 11
+          },
+          {
+            "isSelected": false,
+            "optionId": 12
+          }
+        ]
+      },
+      {
+        "questionId": 2,
+        "options": [
+          {
+            "isSelected": false,
+            "optionId": 21
+          },
+          {
+            "isSelected": false,
+            "optionId": 22
+          }
+        ]
+      },
+      {
+        "questionId": 3,
+        "options": [
+          {
+            "isSelected": false,
+            "optionId": 31
+          },
+          {
+            "isSelected": false,
+            "optionId": 32
+          },
+          {
+            "isSelected": false,
+            "optionId": 33
+          }
+        ]
+      }
+    ],
+    "itemCategoryId": 0
+  },
+  "salesOrder": {
+    "soNumber": "5512098217046",
+    "returnOrders": [
+      {
+        "roNumber": "109913299280452371",
+        "orderType": "MARKET_PLACE",
+        "channel": {
+          "name": "MyAccount"
+        },
+        "lines": [
+          {
+            "lineNumber": 1,
+            "soLineNumber": 1,
+            "soLineId": 1,
+            "rcType": "MP",
+            "rcId": "null",
+            "returnInformation": {
+              "reason": "1007",
+              "ecommReasonCode": "1007",
+              "reasonDescription": "Item damaged"
+            },
+            "carrierInformation": {
+              "id": "11",
+              "trackingNumber": "395272761140"
+            }
+          },
+          {
+            "lineNumber": 2,
+            "soLineNumber": 2,
+            "soLineId": 2,
+            "rcType": "MP",
+            "rcId": "null",
+            "returnInformation": {
+              "reason": "1007",
+              "ecommReasonCode": "1007",
+              "reasonDescription": "Item damaged"
+            },
+            "carrierInformation": {
+              "id": "11",
+              "trackingNumber": "395272761140"
+            }
+          }
+        ]
+      }
+    ],
+    "lines": [
+      {
+        "lineNumber": 1,
+        "seller": {
+          "legacyId": "10112"
+        },
+        "channel": "SSTKR",
+        "trackingNumber": "916487348569",
+        "ordered": {
+          "quantity": 1
+        },
+        "itemDetails": {
+          "number": 585939187,
+          "consumableGTIN": "00604015693198",
+          "orderableGTIN": "00604015693198",
+          "descriptions": [
+            "G128 ? Trump \"Keep America Great\" 2020 Flag | 3x5 feet | Printed 150D Quali",
+            "\u003cul\u003e\u003cli\u003e[150D Polyester] This flag is made with 100% tough 150D polyester p"
+          ],
+          "additionalInformation": {
+            "images": {
+              "IMAGE_SIZE_450": "https://i5.walmartimages.com/asr/06c2855b-0973-4b2a-a98d-0fbd92101c9b.f2ebaadaea7f7cda0898c3a407a3be7a.jpeg?odnHeight\u003d450\u0026odnWidth\u003d450\u0026odnBg\u003dffffff",
+              "IMAGE_SIZE_100": "https://i5.walmartimages.com/asr/06c2855b-0973-4b2a-a98d-0fbd92101c9b.f2ebaadaea7f7cda0898c3a407a3be7a.jpeg?odnHeight\u003d100\u0026odnWidth\u003d100\u0026odnBg\u003dffffff",
+              "IMAGE_SIZE_2000": "https://i5.walmartimages.com/asr/06c2855b-0973-4b2a-a98d-0fbd92101c9b.f2ebaadaea7f7cda0898c3a407a3be7a.jpeg?odnHeight\u003d2000\u0026odnWidth\u003d2000\u0026odnBg\u003dffffff",
+              "IMAGE_SIZE_180": "https://i5.walmartimages.com/asr/06c2855b-0973-4b2a-a98d-0fbd92101c9b.f2ebaadaea7f7cda0898c3a407a3be7a.jpeg?odnHeight\u003d180\u0026odnWidth\u003d180\u0026odnBg\u003dffffff",
+              "IMAGE_SIZE_60": "https://i5.walmartimages.com/asr/06c2855b-0973-4b2a-a98d-0fbd92101c9b.f2ebaadaea7f7cda0898c3a407a3be7a.jpeg?odnHeight\u003d60\u0026odnWidth\u003d60\u0026odnBg\u003dffffff"
+            },
+            "consumable": true,
+            "weight": 0.3,
+            "weightUOM": "LB",
+            "brandName": "G128",
+            "ironBankCategory": "Garden \u0026 Patio",
+            "productName": "G128 ? Trump \"Keep America Great\" 2020 Election Flag | 3x5 feet | Printed 150D Polyester ? Indoor/Outdoor, Vibrant Colors, Brass Grommets, Much Thicker and Durable than 100D 75D Polyester, Banner",
+            "cubeQty": 0.1,
+            "cubeUomCode": "CF",
+            "dimensions": {
+              "uom": "IN",
+              "depth": 0.5,
+              "width": 8.0,
+              "height": 9.0
+            }
+          },
+          "itemId": "789584109",
+          "supplierNumber": 0
+        }
+      },
+      {
+        "lineNumber": 2,
+        "seller": {
+          "legacyId": "10112"
+        },
+        "channel": "SSTKR",
+        "trackingNumber": "916487348569",
+        "ordered": {
+          "quantity": 1
+        },
+        "itemDetails": {
+          "number": 585939187,
+          "consumableGTIN": "00604015693198",
+          "orderableGTIN": "00604015693198",
+          "descriptions": [
+            "G128 ? Trump \"Keep America Great\" 2020 Flag | 3x5 feet | Printed 150D Quali",
+            "\u003cul\u003e\u003cli\u003e[150D Polyester] This flag is made with 100% tough 150D polyester p"
+          ],
+          "additionalInformation": {
+            "images": {
+              "IMAGE_SIZE_450": "https://i5.walmartimages.com/asr/06c2855b-0973-4b2a-a98d-0fbd92101c9b.f2ebaadaea7f7cda0898c3a407a3be7a.jpeg?odnHeight\u003d450\u0026odnWidth\u003d450\u0026odnBg\u003dffffff",
+              "IMAGE_SIZE_100": "https://i5.walmartimages.com/asr/06c2855b-0973-4b2a-a98d-0fbd92101c9b.f2ebaadaea7f7cda0898c3a407a3be7a.jpeg?odnHeight\u003d100\u0026odnWidth\u003d100\u0026odnBg\u003dffffff",
+              "IMAGE_SIZE_2000": "https://i5.walmartimages.com/asr/06c2855b-0973-4b2a-a98d-0fbd92101c9b.f2ebaadaea7f7cda0898c3a407a3be7a.jpeg?odnHeight\u003d2000\u0026odnWidth\u003d2000\u0026odnBg\u003dffffff",
+              "IMAGE_SIZE_180": "https://i5.walmartimages.com/asr/06c2855b-0973-4b2a-a98d-0fbd92101c9b.f2ebaadaea7f7cda0898c3a407a3be7a.jpeg?odnHeight\u003d180\u0026odnWidth\u003d180\u0026odnBg\u003dffffff",
+              "IMAGE_SIZE_60": "https://i5.walmartimages.com/asr/06c2855b-0973-4b2a-a98d-0fbd92101c9b.f2ebaadaea7f7cda0898c3a407a3be7a.jpeg?odnHeight\u003d60\u0026odnWidth\u003d60\u0026odnBg\u003dffffff"
+            },
+            "consumable": true,
+            "weight": 0.3,
+            "weightUOM": "LB",
+            "brandName": "G128",
+            "ironBankCategory": "Garden \u0026 Patio",
+            "productName": "G128 ? Trump \"Keep America Great\" 2020 Election Flag | 3x5 feet | Printed 150D Polyester ? Indoor/Outdoor, Vibrant Colors, Brass Grommets, Much Thicker and Durable than 100D 75D Polyester, Banner",
+            "cubeQty": 0.1,
+            "cubeUomCode": "CF",
+            "dimensions": {
+              "uom": "IN",
+              "depth": 0.5,
+              "width": 8.0,
+              "height": 9.0
+            }
+          },
+          "itemId": "789584109",
+          "supplierNumber": 0
+        }
+      }
+    ]
+  },
+  "itemDetails": {
+    "number": 585939187,
+    "itemId": "789584109",
+    "legacySellerId": "10112",
+    "serviceType": "WFS",
+    "orderableGTIN": "00604015693198",
+    "consumableGTIN": "00604015693198",
+    "productName": "G128 ? Trump \"Keep America Great\" 2020 Election Flag | 3x5 feet | Printed 150D Polyester ? Indoor/Outdoor, Vibrant Colors, Brass Grommets, Much Thicker and Durable than 100D 75D Polyester, Banner",
+    "brandName": "G128",
+    "description": [
+      "G128 ? Trump \"Keep America Great\" 2020 Flag | 3x5 feet | Printed 150D Quality Polyester ? Indoor/Outdoor, Vibrant Colors, Brass Grommets, Much Thicker More Durable than 100D 75D Polyester, Election Banner",
+      "\u003cul\u003e\u003cli\u003e[150D Polyester] This flag is made with 100% tough 150D polyester providing the flag with bright, fade-resistant colors . Most other market brands use 75D polyester which is not as durable nor as vibrant.\u003c/li\u003e\u003cli\u003e[Durability] G128 flags are long lasting and have leading wear times. They fly well in high-wind areas and have outstanding performance in rain due to the material\u0027s ability to shed water.\u003c/li\u003e\u003cli\u003e[Brass Grommets] The brass grommets included in the flag are rust resistant and have reinforced edges to prevent rips and frays.\u003c/li\u003e\u003cli\u003e[Size] Large 3x5 ft (91.4x152.4 cm)\u003c/li\u003e\u003cli\u003e[Usage] Your 150D flag is suitable for indoor or outdoor use. The densely woven material ensures that this flag will shine in all locations.\u003c/li\u003e\u003c/ul\u003e"
+    ],
+    "isHazmat": false,
+    "isConsumable": false,
+    "dimensions": {
+      "uom": "IN",
+      "depth": 0.5,
+      "width": 8.0,
+      "height": 9.0
+    },
+    "weight": {
+      "amount": 0.3,
+      "uom": "LB"
+    },
+    "cube": {
+      "amount": 0.1,
+      "uom": "CF"
+    }
+  },
+  "location": {
+    "name": "RC-R-1",
+    "orgUnitId": 54,
+    "locationId": 3145
+  }
+}

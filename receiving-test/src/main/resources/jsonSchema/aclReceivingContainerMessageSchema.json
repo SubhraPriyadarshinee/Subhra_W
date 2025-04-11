@@ -1,0 +1,264 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "trackingId": {
+      "type": "string"
+    },
+    "messageId": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "deliveryNumber": {
+      "type": "integer"
+    },
+    "containerType": {
+      "type": "string",
+      "enum": ["Vendor Pack"]
+    },
+    "inventoryStatus": {
+      "type": "string",
+      "enum": ["PICKED"]
+    },
+    "ctrShippable": {
+      "type": "boolean"
+    },
+    "ctrReusable": {
+      "type": "boolean"
+    },
+    "isConveyable": {
+      "type": "boolean"
+    },
+    "onConveyor": {
+      "type": "boolean",
+      "enum": [true]
+    },
+    "facility": {
+      "type": "object",
+      "properties": {
+        "buNumber": {
+          "type": "string"
+        },
+        "countryCode": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "buNumber",
+        "countryCode"
+      ]
+    },
+    "destination": {
+      "type": "object",
+      "properties": {
+        "buNumber": {
+          "type": "string"
+        },
+        "countryCode": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "buNumber",
+        "countryCode"
+      ]
+    },
+    "completeTs": {
+      "type": "string"
+    },
+    "publishTs": {
+      "type": "string"
+    },
+    "createTs": {
+      "type": "string"
+    },
+    "createUser": {
+      "type": "string"
+    },
+    "lastChangedTs": {
+      "type": "string"
+    },
+    "lastChangedUser": {
+      "type": "string"
+    },
+    "contents": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "purchaseReferenceNumber": {
+              "type": "string"
+            },
+            "purchaseReferenceLineNumber": {
+              "type": "integer"
+            },
+            "inboundChannelMethod": {
+              "type": "string"
+            },
+            "outboundChannelMethod": {
+              "type": "string"
+            },
+            "totalPurchaseReferenceQty": {
+              "type": "integer"
+            },
+            "purchaseCompanyId": {
+              "type": "integer"
+            },
+            "deptNumber": {
+              "type": "integer"
+            },
+            "itemNumber": {
+              "type": "integer"
+            },
+            "gtin": {
+              "type": "string"
+            },
+            "quantity": {
+              "type": "integer"
+            },
+            "quantityUOM": {
+              "type": "string"
+            },
+            "vnpkQty": {
+              "type": "integer"
+            },
+            "whpkQty": {
+              "type": "integer"
+            },
+            "vendorPackCost": {
+              "type": "number"
+            },
+            "whpkSell": {
+              "type": "number"
+            },
+            "baseDivisionCode": {
+              "type": "string"
+            },
+            "financialReportingGroupCode": {
+              "type": "string"
+            },
+            "rotateDate": {
+              "type": "string"
+            },
+            "distributions": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "allocQty": {
+                      "type": "integer"
+                    },
+                    "item": {
+                      "type": "object",
+                      "properties": {
+                        "itemNbr": {
+                          "type": "string",
+                          "pattern": "^[0-9]*$"
+                        },
+                        "baseDivisionCode": {
+                          "type": "string",
+                          "enum": ["WM"]
+                        },
+                        "reportingGroup": {
+                          "type": "string",
+                          "enum": ["US"]
+                        }
+                      },
+                      "required": [
+                        "itemNbr",
+                        "baseDivisionCode",
+                        "reportingGroup"
+                      ]
+                    },
+                    "orderId": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "allocQty",
+                    "item",
+                    "orderId"
+                  ]
+                }
+              ]
+            },
+            "vnpkWgtQty": {
+              "type": "number"
+            },
+            "vnpkWgtUom": {
+              "type": "string"
+            },
+            "vnpkcbqty": {
+              "type": "number"
+            },
+            "vnpkcbuomcd": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "secondaryDescription": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "purchaseReferenceNumber",
+            "purchaseReferenceLineNumber",
+            "inboundChannelMethod",
+            "outboundChannelMethod",
+            "totalPurchaseReferenceQty",
+            "purchaseCompanyId",
+            "deptNumber",
+            "itemNumber",
+            "gtin",
+            "quantity",
+            "quantityUOM",
+            "vnpkQty",
+            "whpkQty",
+            "vendorPackCost",
+            "whpkSell",
+            "baseDivisionCode",
+            "financialReportingGroupCode",
+            "distributions",
+            "vnpkWgtQty",
+            "vnpkWgtUom",
+            "vnpkcbqty",
+            "vnpkcbuomcd",
+            "description",
+            "secondaryDescription"
+          ]
+        }
+      ]
+    },
+    "childContainers": {
+      "type": "array",
+      "items": {},
+      "minItems": 0
+    }
+  },
+  "required": [
+    "trackingId",
+    "messageId",
+    "location",
+    "deliveryNumber",
+    "containerType",
+    "inventoryStatus",
+    "ctrShippable",
+    "ctrReusable",
+    "isConveyable",
+    "onConveyor",
+    "facility",
+    "destination",
+    "completeTs",
+    "publishTs",
+    "createUser",
+    "lastChangedTs",
+    "lastChangedUser",
+    "contents",
+    "childContainers"
+  ]
+}

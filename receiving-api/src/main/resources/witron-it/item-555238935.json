@@ -1,0 +1,16 @@
+{
+    "itemNumber" : "555238935",
+    "description" : "GV 8LB BEEF PTY          ",
+    "deptNumber" : "93",
+    "vendorNbr" : 603282,
+    "gtin" : "7874206246",
+    "whpkQty" : 1,
+    "vnpkQty" : 1,
+    "ti" : 16,
+    "hi" : 4,
+    "vendorPackCost" : 14.48,
+    "whpkSell" : 15.48,
+    "vendorPackWeight" : 8,
+    "vendorPackCubeQty" : 0.252,
+    "poLine" : 13
+}

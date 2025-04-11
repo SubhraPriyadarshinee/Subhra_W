@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "deliveryNumber": {
+      "type": "integer"
+    },
+    "deliveryStatus": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "ts": {
+      "type": "string"
+    },
+    "receipts": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "purchaseReferenceNumber": {
+              "value": "81345678"
+            },
+            "receivedQty": {
+              "type": "integer"
+            },
+            "palletQty": {
+              "type": "integer"
+            },
+            "qtyUOM": {
+              "value": "ZA"
+            }
+          },
+          "required": [
+            "purchaseReferenceNumber",
+            "receivedQty",
+            "palletQty",
+            "qtyUOM"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "purchaseReferenceNumber": {
+              "value": "81765438"
+            },
+            "receivedQty": {
+              "type": "integer"
+            },
+            "qtyUOM": {
+              "value": "ZA"
+            }
+          },
+          "required": [
+            "purchaseReferenceNumber",
+            "receivedQty",
+            "qtyUOM"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "purchaseReferenceNumber": {
+              "value": "81345678"
+            },
+            "purchaseReferenceLineNumber": {
+              "type": "integer"
+            },
+            "receivedQty": {
+              "type": "integer"
+            },
+            "qtyUOM": {
+              "value": "EA"
+            }
+          },
+          "required": [
+            "purchaseReferenceNumber",
+            "purchaseReferenceLineNumber",
+            "receivedQty",
+            "qtyUOM"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "deliveryNumber",
+    "deliveryStatus",
+    "userId",
+    "ts",
+    "receipts"
+  ]
+}

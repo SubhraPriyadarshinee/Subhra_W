@@ -1,0 +1,250 @@
+{
+  "delivery": {
+    "deliveryNumber": 79102905,
+    "statusInformation": {
+      "operationalStatus": "WRK",
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "status": "WRK"
+    },
+    "scheduled": "2024-02-08T23:45:00.000Z",
+    "arrivalTimeStamp": "2024-02-16T19:15:07.230Z",
+    "doorOpenTime": "2024-02-16T19:16:41.324Z",
+    "receivingStartedTimeStamp": "2024-02-16T19:16:43.166Z",
+    "trailerId": "TL79102905"
+  },
+  "shipments": [
+    {
+      "documentId": "4789198850142556_20191106_719468_VENDOR_US",
+      "shipmentNumber": "4789198850142556",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2024-02-08T08:57:39.198Z",
+      "shipmentDate": "2024-02-08",
+      "source": {
+        "globalLocationNumber": "0069382035222",
+        "number": "6938",
+        "numberType": "WALMART",
+        "countryCode": "US",
+        "shipperId": "492918",
+        "shipperName": "Walmart"
+      },
+      "destination": {
+        "globalLocationNumber": "0078742035222",
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "trailerNumber": "T127265756094",
+        "trailerSealNumber": "SL8132816",
+        "billOfLadingNumber": "6938-88528711",
+        "loadNumber": "8249225",
+        "reportedDeliveryNumber": 79102905,
+        "shippingDate": "2019-01-08",
+        "freightPayment": "PP",
+        "carrierId": "WM",
+        "carrierTrackingId": "WM"
+      },
+      "totalPacks": 1
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poNumber": "4615635452",
+      "freightBillQty": 5,
+      "cubeQty": 150,
+      "poDcCountry": "US",
+      "baseDivisionCode": "WM",
+      "poType": "20",
+      "purchaseCompanyId": 1,
+      "poStatus": "ACTV",
+      "financialGroupCode": "US",
+      "poDates": {
+        "cancel": "2019-03-26",
+        "ordered": "2019-03-19",
+        "mabd": "2019-03-26",
+        "ship": "2019-03-26"
+      },
+      "vendorInformation": {
+        "name": "BAMA COMPANIES INC",
+        "number": 988246,
+        "department": 38,
+        "serialInfoEnabled": true
+      },
+      "poDcNumber": 6032,
+      "lines": [
+        {
+          "poLineNumber": 1,
+          "channel": "SSTKU",
+          "whpkQty": 100,
+          "whpkSell": 7.45,
+          "vnpkQty": 6000,
+          "vnpkCost": 1.84,
+          "vnpkWeightQty": 0.0166,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.001,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "polAdditionalFields": {
+            "Sample_Po_Ind": "N",
+            "Manual_Po_Ind": "N"
+          },
+          "poLineStatus": "ACTIVE",
+          "orderedQty": 5,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00300930810015",
+            "orderableGTIN": "30300930810016",
+            "warehousePackGTIN": "10300930810012",
+            "supplierStockId": "00093-0810-01",
+            "palletTi": 1,
+            "palletHi": 1,
+            "hazmat": true,
+            "conveyable": false,
+            "itemTypeCode": "20",
+            "vendorDepartment": "38",
+            "color": "CAP",
+            "size": "100",
+            "warehousePackQuantity": 100,
+            "orderableQuantity": 6000,
+            "transportationModes": [
+              {
+                "mode": {
+                  "code": 1,
+                  "description": "GROUND"
+                },
+                "dotHazardousClass": {
+                  "code": "N/A",
+                  "description": "NOT APPLICABLE"
+                },
+                "properShipping": "NON-REGULATED",
+                "pkgInstruction": []
+              }
+            ],
+            "handlingCode": "C",
+            "packType": "B",
+            "isNewItem": false,
+            "descriptions": [
+              "NORTRIPTYLINE 10MG",
+              "NORTRIPTYLINE 10MG"
+            ],
+            "itemAdditonalInformation": {
+              "isDscsaExemptionInd": false,
+              "weight": 1,
+              "cubeUOM": "CF",
+              "cube": 0.007,
+              "weightUOM": "LB",
+              "weightFormatTypeCode": "F",
+              "supplierCasePackType": "B"
+            },
+            "number": 3811479
+          }
+        }
+      ],
+      "weightQty": 100,
+      "weightQtyUom": "LB",
+      "cubeQtyUom": "CF"
+    }
+  ],
+  "packs": [
+    {
+      "documentPackId": "88528711328996094_20200608_32899_MCC_US_00106001151034282296",
+      "documentId": "4789198850142556_20191106_719468_VENDOR_US",
+      "packNumber": "00106001151034282296",
+      "invoice": {
+        "invoiceNumber": "32899000132"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "legacyDetail": {
+        "packType": "UNKNOWN"
+      },
+      "shipmentNumber": "4789198850142556",
+      "items": [
+        {
+          "reportedProductId": "3802309",
+          "reportedProductIdType": "IN",
+          "reportedCaseProductId": "3802309",
+          "reportedCaseProductIdType": "IN",
+          "itemNumber": 3811479,
+          "gtin": "00300930810015",
+          "warehouseCaseGtin": "00300930810015",
+          "vendorCaseGtin": "30300930810016",
+          "vendorId": "988246",
+          "itemDescription": "Item 3811479",
+          "itemDepartment": "38",
+          "itemDivision": "786",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "documentSequenceNumber": 1,
+          "purchaseOrder": {
+            "orderNumber": "bcf6a98a-1000-41c6-af17-e3c2b71f5c01",
+            "poDate": "2019-03-19",
+            "poLineNumber": 1,
+            "poNumber": "4615635452",
+            "poType": "DC_TO_DC_TRANSFER",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63"
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 6000,
+            "reportedUom": "EA",
+            "derivedQuantity": 60,
+            "derivedUom": "PH",
+            "warehouseCaseQuantity": 100,
+            "vendorCaseQuantity": 6000
+          },
+          "upc": "30300930810016",
+          "nationalDrugCodeN2": "8860034679",
+          "nationalDrugCodeN4": "886007346798",
+          "purchaseCode": "DIR",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 5,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "lot_567",
+              "expirationDate": "2024-07-10"
+            }
+          ],
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "886007346798",
+              "reportedProductIdType": "N4"
+            },
+            {
+              "reportedProductId": "3811479",
+              "reportedProductIdType": "IN"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "00300930810015",
+              "uom": "EA"
+            },
+            {
+              "gtin": "30300930810016",
+              "uom": "PK"
+            },
+            {
+              "gtin": "30300930810016",
+              "uom": "CA"
+            }
+          ],
+          "nationalDrugCode": "886007346798",
+          "nationalDrugCodeType": "N4"
+        }
+      ],
+      "receivingStatus": "Open",
+      "multiskuPack": false,
+      "partialPack": false
+    }
+  ]
+}

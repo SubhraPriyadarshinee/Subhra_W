@@ -1,0 +1,17 @@
+{
+  "lpn": "LPN 10656 INV 4784",
+  "destination": "598",
+  "putAwayLocation": "F1-022",
+  "items": [
+    {
+      "id": "100640707",
+      "description": "OBP W/GOAL POST  WELL AND RISER 38X8X36",
+      "quantity": 1,
+      "destination": "598",
+      "purchaseOrder": "36447642",
+      "poLineNumber": "10",
+      "promiseDate": "2020-12-21 23:48:36"
+    }
+  ],
+  "weight": 0
+}

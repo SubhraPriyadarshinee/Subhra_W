@@ -1,0 +1,204 @@
+{
+    "delivery": {
+        "deliveryNumber": 550478600090328,
+        "scheduled": "2024-07-13T21:01:06.673Z",
+        "statusInformation": {
+            "status": "SCH"
+        }
+    },
+    "shipment": {
+        "documentId": "4064607070145504_20240713_7014_DC_US",
+        "shipmentNumber": "4064607070145504",
+        "documentType": "ASN",
+        "documentRevision": 0,
+        "documentIngestTime": "2024-07-13T21:01:04.501Z",
+        "shipmentDate": "2024-07-13",
+        "isDocumentDSCSA": "NONE",
+        "source": {
+            "number": "60301231",
+            "numberType": "FRITOS",
+            "type": "VENDOR",
+            "countryCode": "US",
+            "shipperName": "FRITOS"
+        },
+        "destination": {
+            "type": "STORE",
+            "number": 5504,
+            "countryCode": "US"
+        },
+        "shipmentDetail": {
+            "trailerNumber": "TNUM9184506000",
+            "loadNumber": "40646070",
+            "reportedDeliveryNumber": 550478600090328,
+            "shippingDate": "2024-07-13",
+            "carrierId": "WM"
+        },
+        "additionalInfo": {
+            "totalMfcPacks": 1,
+            "totalMfcPallets": 1,
+            "bannerCode": "B4",
+            "palletCount": 1,
+            "unknownCaseCount": 0,
+            "mfcInvoiceNumbers": [
+                "5557253917"
+            ],
+            "totalCaseCount": 1,
+            "totalMfcQty": 6.0,
+            "floorLoadedCases": 0,
+            "totalExpected": [
+                {
+                    "quantity": 6.0,
+                    "uom": "EA"
+                }
+            ],
+            "fullCaseCount": 1,
+            "regionCode": "05",
+            "mfcWarehouseAreaDescription": [
+                "Fresh Meat"
+            ],
+            "timeZoneCode": "EST",
+            "totalPallets": 1,
+            "mfcInvoices": [
+                "5557253917"
+            ],
+            "marketCode": "056",
+            "bannerDescription": "Neighborhood Market",
+            "breakPackCount": 0
+        }
+    },
+    "packs": [
+        {
+            "packNumber": "467556056632",
+            "invoice": {
+                "invoiceNumber": "5557253917"
+            },
+            "auditDetail": {
+                "auditRequired": false
+            },
+            "legacyDetail": {
+                "packType": "MFC"
+            },
+            "items": [
+                {
+                    "reportedProductId": "570563669",
+                    "reportedProductIdType": "IN",
+                    "itemNumber": 570563669,
+                    "gtin": "00261643000004",
+                    "itemDepartment": "95",
+                    "itemDivision": "28",
+                    "itemOnFileStatus": "ON_FILE",
+                    "assortmentType": "NONE",
+                    "documentSequenceNumber": 1,
+                    "purchaseOrder": {
+                        "orderNumber": "1090005345",
+                        "poType": "REBUY_REGULAR",
+                        "sellerId": "F55CDC31AB754BB68FE0B39041159D63"
+                    },
+                    "inventoryDetail": {
+                        "reportedQuantity": 6.0,
+                        "reportedUom": "EA",
+                        "derivedQuantity": 6.0,
+                        "derivedUom": "EA",
+                        "warehouseCaseQuantity": 6,
+                        "vendorCaseQuantity": 6
+                    },
+                    "isDSCSAExempt": "UNKNOWN",
+                    "otherReportedProductIds": [
+                        {
+                            "reportedProductId": "00261643000004",
+                            "reportedProductIdType": "UK"
+                        }
+                    ],
+                    "invoice": {
+                        "invoiceNumber": "5557253917",
+                        "invoiceLineNumber": 1
+                    },
+                    "replenishmentCode": "MARKET_FULFILLMENT_CENTER",
+                    "replenishedByUnit": true,
+                    "virtualPackNumber": "05504010803800943054",
+                    "itemPackType": "NON_VARIABLE_WEIGHT",
+                    "additionalInfo": {
+                        "eventType": "OTHER"
+                    },
+                    "financialDetail": {
+                        "reportedRetail": 4.28,
+                        "derivedRetail": 5.77,
+                        "reportedRetailCurrency": "USD",
+                        "reportedCost": 15.79,
+                        "derivedCost": 2.93,
+                        "reportedCostCurrency": "USD",
+                        "financialReportingCountry": "US"
+                    }
+                }
+            ],
+            "shipmentNumber": "4064607070145504",
+            "labelType": "PALLET",
+            "physicalDetail": {
+                "weight": 164.69,
+                "weightUom": "LB",
+                "cube": 4.04,
+                "cubeUom": "CF"
+            },
+            "packType": "MFC",
+            "additionalInfo": {
+                "tripId": "5584",
+                "packDSCSA": "NONE"
+            }
+        }
+    ],
+    "items": [
+        {
+            "consumableGTIN": "00261643000004",
+            "orderableGTIN": "90030802259569",
+            "warehousePackGTIN": "90030802259569",
+            "supplierStockId": "582",
+            "palletTi": 5,
+            "palletHi": 8,
+            "conveyable": true,
+            "itemTypeCode": "20",
+            "vendorDepartment": "93",
+            "size": "LB",
+            "warehousePackQuantity": 14,
+            "orderableQuantity": 14,
+            "warehouseArea": "Fresh Meat",
+            "pluNumber": 61643,
+            "itemAdditonalInformation": {
+                "isNewItem": true,
+                "images": {
+                    "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/275721b6-3ee8-498a-8d0c-5fb69bbe7013_4.6f3bdaeb59d286dbcd24462e9cd33130.png?odnHeight=450&odnWidth=450&odnBg=ffffff",
+                    "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/275721b6-3ee8-498a-8d0c-5fb69bbe7013_4.6f3bdaeb59d286dbcd24462e9cd33130.png?odnHeight=100&odnWidth=100&odnBg=ffffff",
+                    "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/275721b6-3ee8-498a-8d0c-5fb69bbe7013_4.6f3bdaeb59d286dbcd24462e9cd33130.png?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+                    "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/275721b6-3ee8-498a-8d0c-5fb69bbe7013_4.6f3bdaeb59d286dbcd24462e9cd33130.png?odnHeight=180&odnWidth=180&odnBg=ffffff",
+                    "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/275721b6-3ee8-498a-8d0c-5fb69bbe7013_4.6f3bdaeb59d286dbcd24462e9cd33130.png?odnHeight=60&odnWidth=60&odnBg=ffffff"
+                },
+                "variableWeightIndicator": false,
+                "warehouseAreaCode": 1,
+                "vnpkWeightUomCode": "LB",
+                "warehousePackSellAmt": 31.92,
+                "warehouseRotationTypeCode": 3,
+                "baseDivisionCode": "WM",
+                "vnpkCubeQty": 1.917,
+                "pesticideIndicator": "N",
+                "financialReportingGroupCode": "US",
+                "vnpkCubeUom": "CF",
+                "temperatureZone": "ambient",
+                "mfcEnabled": true,
+                "replenishmentGroupNbr": 7633819,
+                "unitCostAmt": 2.34,
+                "chemicalIndicator": "N",
+                "vnpkWeightQty": 37.0,
+                "warehouseAreaDesc": "Fresh Meat",
+                "aerosolIndicator": "N",
+                "deptCategoryNbr": 3228
+            },
+            "descriptions": [
+                "THIN SLICED BRST MED",
+                "THIN SLICED BRST MED"
+            ],
+            "number": 570563669
+        }
+    ],
+    "pallets": [
+        
+    ]
+}

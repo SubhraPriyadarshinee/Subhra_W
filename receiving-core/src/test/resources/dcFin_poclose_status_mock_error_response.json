@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "status": "FAILURE",
+    "statusCode": "GLS-DCFIN-CLOUD-VE-0011",
+    "responseText": "GLS-DCFIN-CLOUD-VE-0011:Invalid request body"
+  },
+  "body": [
+    "GLS-DCFIN-CLOUD-SE-0050:PO closure details for facilityNum 8852, PO Number 0688583033 and Delivery Number 51598110 is not present"
+  ]
+}

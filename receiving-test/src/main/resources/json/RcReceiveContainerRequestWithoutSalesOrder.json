@@ -1,0 +1,50 @@
+{
+  "packageItemIdentificationCode": "PIR-123",
+  "packageItemIdentificationMessage": "Package recognizable : Item not found in the package and single offer in scis : Item type MP",
+  "scannedItemLabel": "00604015693198",
+  "scannedLabel": "5512098217046",
+  "scannedLabelType": "SO",
+  "scannedCart": "RC1111",
+  "containerTag": "NONCONSUMABLE",
+  "disposition": {
+    "dispositionType": "DISPOSE",
+    "proposedDisposition": "DISPOSE",
+    "finalDisposition": "DISPOSE",
+    "itemCondition": "UNSELLABLE"
+  },
+  "itemDetails": {
+    "number": 585939187,
+    "itemId": "789584109",
+    "legacySellerId": "10112",
+    "serviceType": "MP",
+    "orderableGTIN": "00604015693198",
+    "consumableGTIN": "00604015693198",
+    "productName": "G128 ? Trump \"Keep America Great\" 2020 Election Flag | 3x5 feet | Printed 150D Polyester ? Indoor/Outdoor, Vibrant Colors, Brass Grommets, Much Thicker and Durable than 100D 75D Polyester, Banner",
+    "brandName": "G128",
+    "description": [
+      "G128 ? Trump \"Keep America Great\" 2020 Flag | 3x5 feet | Printed 150D Quality Polyester ? Indoor/Outdoor, Vibrant Colors, Brass Grommets, Much Thicker More Durable than 100D 75D Polyester, Election Banner",
+      "\u003cul\u003e\u003cli\u003e[150D Polyester] This flag is made with 100% tough 150D polyester providing the flag with bright, fade-resistant colors . Most other market brands use 75D polyester which is not as durable nor as vibrant.\u003c/li\u003e\u003cli\u003e[Durability] G128 flags are long lasting and have leading wear times. They fly well in high-wind areas and have outstanding performance in rain due to the material\u0027s ability to shed water.\u003c/li\u003e\u003cli\u003e[Brass Grommets] The brass grommets included in the flag are rust resistant and have reinforced edges to prevent rips and frays.\u003c/li\u003e\u003cli\u003e[Size] Large 3x5 ft (91.4x152.4 cm)\u003c/li\u003e\u003cli\u003e[Usage] Your 150D flag is suitable for indoor or outdoor use. The densely woven material ensures that this flag will shine in all locations.\u003c/li\u003e\u003c/ul\u003e"
+    ],
+    "isHazmat": false,
+    "isConsumable": false,
+    "dimensions": {
+      "uom": "IN",
+      "depth": 0.5,
+      "width": 8.0,
+      "height": 9.0
+    },
+    "weight": {
+      "amount": 0.3,
+      "uom": "LB"
+    },
+    "cube": {
+      "amount": 0.1,
+      "uom": "CF"
+    }
+  },
+  "location": {
+    "name": "RC-R-1",
+    "orgUnitId": 54,
+    "locationId": 3145
+  }
+}

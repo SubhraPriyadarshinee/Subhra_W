@@ -1,0 +1,55 @@
+profiles:
+  - goldensignal-strati
+
+notify:
+  slack:
+    channelName: atlas-receiving-sams-fc
+
+owner:
+  group: Sams-FC-GLS-Receiving-Atlas
+  roles:
+    namespaceUsers: [ "sams-fc-atlas-receiving", "Tridents-SE" ]
+
+alerts:
+  slackChannel:
+    - atlas-receiving-sams-fc-alerts
+  email:
+    - samsewmsalertnonprod@email.wal-mart.com
+
+setup:
+  releaseRefs: ["us-sams-fc/development" , "us-sams-fc/release.*"]
+  featureFlagMap:
+    buildWhenStageRefMatches: true
+    updateGitStatusAlways: true
+
+build:
+  artifact: receiving-sams-fc
+
+deploy:
+  namespace: sams-fc-atlas-receiving
+  releaseType:
+    waitForReady: true
+    rollbackOnError: true
+
+  preDeploy:
+    - task:
+        name: messageSlack
+        text: Beginning liquibase execution on {{$.kittExec.currentStage.name}}
+    - concord:
+        name: Liquibase-Execution
+        action: start
+        org: Logistics
+        project: wcnp_liquibase
+        repo: wcnp_liquibase
+        entryPoint: default
+        sync: true
+        executionScope: stage
+        arguments:
+          version: "{{$.kitt.build.version}}"
+          artifactId: "{{$.kitt.build.artifact}}"
+          targetEnv: "{{$.kittExec.currentStage.name}}"
+          gitBranch: "{{$.kitt.build.commitEvent.commitId}}"
+          repoName: uwms-receiving
+    - task:
+        name: messageSlack
+        text: Liquibase execution successful

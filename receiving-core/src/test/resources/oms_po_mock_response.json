@@ -1,0 +1,169 @@
+{
+  "OMPSRJ": {
+    "Data": [
+      {
+        "omspo": {
+          "oponbr": "0828968923",
+          "xrefponbr": "4580154042",
+          "basediv": "1",
+          "dcnbr": "3006",
+          "dccc": "US",
+          "vndrnbr": "105403",
+          "ordrdt": "2024-04-11",
+          "frtpmttypcd": "2",
+          "frtpmttytext": "Prepaid",
+          "postcd": "1200",
+          "postatcdtext": "Closed",
+          "edlckind": "Y",
+          "whseareacd": "",
+          "whseareatext": "",
+          "mabddate": "2024-04-24",
+          "dnsbdate": "2024-04-15",
+          "dnsadate": "2024-04-17",
+          "omssuppymtterm": [
+            {
+              "vndrdeptnmbr": "40"
+            }
+          ],
+          "OMSTotals": [
+            {
+              "ttlLineWeightDue": "152.5200",
+              "ttlLineCubeDue": "6.2680"
+            }
+          ],
+          "omspoagrallow": [],
+          "omsdcrcvr": [
+            {
+              "vnpkrcvqty": "40"
+            }
+          ],
+          "omspocharge": [],
+          "subpoext": [
+            {
+              "potypecd": "20"
+            }
+          ],
+          "subpocmt": [],
+          "omspol": [
+            {
+              "oponbr": "0828968923",
+              "opolnbr": "1",
+              "vndrnbr": "105403",
+              "vndrdptnbr": "40",
+              "vndrseqnbr": "0",
+              "vnpkordqty": "4",
+              "itmnbr": "570386278",
+              "vnpkcbqty": ".7710",
+              "vnpkcbuomcd": "CF",
+              "vnpkqty": "8",
+              "vnpkwtqty": "15.3500",
+              "vnpkwtqtyuomcd": "LB",
+              "cmmdtyid": "",
+              "chnlmthdcd": "2",
+              "chnmthtxt": {
+                "chnmthdtext": "Staplestock"
+              },
+              "hzmtid": "5036",
+              "poevtabbr": {
+                "poevtapprtxt": "ONLINEASAP"
+              },
+              "ltlind": "N",
+              "omspolnallw": [],
+              "omspolinedest": [
+                {
+                  "vnpkordqty": "4",
+                  "podeststatcd": "800",
+                  "podeststttxt": {
+                    "podestcdtext": "ACTIVE"
+                  },
+                  "omsrcvrline": []
+                }
+              ],
+              "omspolinecharge": []
+            },
+            {
+              "oponbr": "0828968923",
+              "opolnbr": "2",
+              "vndrnbr": "105403",
+              "vndrdptnbr": "40",
+              "vndrseqnbr": "0",
+              "vnpkordqty": "4",
+              "itmnbr": "570386281",
+              "vnpkcbqty": ".3980",
+              "vnpkcbuomcd": "CF",
+              "vnpkqty": "4",
+              "vnpkwtqty": "11.3900",
+              "vnpkwtqtyuomcd": "LB",
+              "cmmdtyid": "",
+              "chnlmthdcd": "2",
+              "chnmthtxt": {
+                "chnmthdtext": "Staplestock"
+              },
+              "hzmtid": "5036",
+              "poevtabbr": {
+                "poevtapprtxt": "ONLINEASAP"
+              },
+              "ltlind": "N",
+              "omspolnallw": [],
+              "omspolinedest": [
+                {
+                  "vnpkordqty": "4",
+                  "podeststatcd": "800",
+                  "podeststttxt": {
+                    "podestcdtext": "ACTIVE"
+                  },
+                  "omsrcvrline": []
+                }
+              ],
+              "omspolinecharge": []
+            },
+            {
+              "oponbr": "0828968923",
+              "opolnbr": "3",
+              "vndrnbr": "105403",
+              "vndrdptnbr": "40",
+              "vndrseqnbr": "0",
+              "vnpkordqty": "4",
+              "itmnbr": "570386282",
+              "vnpkcbqty": ".3980",
+              "vnpkcbuomcd": "CF",
+              "vnpkqty": "4",
+              "vnpkwtqty": "11.3900",
+              "vnpkwtqtyuomcd": "LB",
+              "cmmdtyid": "",
+              "chnlmthdcd": "2",
+              "chnmthtxt": {
+                "chnmthdtext": "Staplestock"
+              },
+              "hzmtid": "5036",
+              "poevtabbr": {
+                "poevtapprtxt": "ONLINEASAP"
+              },
+              "ltlind": "N",
+              "omspolnallw": [],
+              "omspolinedest": [
+                {
+                  "vnpkordqty": "4",
+                  "podeststatcd": "800",
+                  "podeststttxt": {
+                    "podestcdtext": "ACTIVE"
+                  },
+                  "omsrcvrline": []
+                }
+              ],
+              "omspolinecharge": []
+            }
+          ]
+        },
+        "sto": {
+          "storcvr": [],
+          "stoallcrcvr": [],
+          "stoactivity": [],
+          "STOTotals": [],
+          "stocharge": []
+        },
+        "OMSAllocOrder": []
+      }
+    ]
+  }
+}

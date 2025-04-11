@@ -1,0 +1,53 @@
+{
+  "messageId": "7d118cb1-18fe-4176-b950-9e25c06b07be",
+  "deliveryNumber": "100026",
+  "doorNumber": "109",
+  "facility": {
+    "buNumber": 6561,
+    "countryCode": "US"
+  },
+  "userId": "rcvUser",
+  "container": {
+    "contents": [
+      {
+        "itemNbr": 577595930,
+        "baseDivisionCode": "WM",
+        "financialReportingGroup": "US",
+        "gtin": "06238657142208",
+        "event": "",
+        "sellerId": "AE70EDC9EA4D455D908B70ACB7B43393",
+        "sellerType": "WFS",
+
+        "vendorPack": 1,
+        "warehousePack": 1,
+
+        "receiveQty": 10,
+        "openQty": 10,
+        "totalOrderQty": 10,
+        "maxReceiveQty": 10,
+        "qtyUom": "EA",
+        "poDcNumber": "6280",
+        "receivingUnit": "EACH",
+        "recommendedFulfillmentType": "PUT",
+        "purchaseCompanyId": "2022",
+        "palletTie": 4,
+        "palletHigh": 3,
+
+        "purchaseReferenceNumber": "0032043GDM",
+        "purchaseReferenceLineNumber": 1,
+        "purchaseRefType": "WFS",
+
+        "isConveyable": true,
+        "description": "The Kids Room by Stupell ",
+        "secondaryDescription": "Item Desc2",
+        "size": "16 x 20",
+        "color": "Multicolor",
+        "caseUPC": "sample-caseUpc-1",
+        "vendorUPC": "sample-vendorUPC-1",
+        "isHazmat": true,
+        "purchaseReferenceLegacyType": "28",
+        "vendorNumber": "123"
+      }
+    ]
+  }
+}

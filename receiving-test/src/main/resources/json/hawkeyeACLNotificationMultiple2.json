@@ -1,0 +1,23 @@
+{
+  "equipmentName": "W1001",
+  "equipmentType": "ACL",
+  "locationId": "501",
+  "equipmentStatus": [
+    {
+      "statusTimestamp": "2020-12-18T17:35:50.324Z",
+      "status": "LABEL_LOW",
+      "severity": "WARNING",
+      "componentId": "1",
+      "cleared": true,
+      "displayMessage": "Label low"
+    },
+    {
+      "statusTimestamp": "2020-12-18T17:35:50.324Z",
+      "status": "HOST_LATE",
+      "severity": "WARNING",
+      "componentId": "1",
+      "cleared": false,
+      "displayMessage": "Host Late"
+    }
+  ]
+}

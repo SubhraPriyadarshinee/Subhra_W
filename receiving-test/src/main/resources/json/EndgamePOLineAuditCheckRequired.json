@@ -1,0 +1,83 @@
+[
+  {
+    "poNumber": "0664420451",
+    "poDcNumber": "32899",
+    "baseDivisionCode": "WM",
+    "legacyType": 33,
+    "purchaseCompanyId": 1,
+    "poStatus": "ACTV",
+    "weight": {
+      "quantity": 0,
+      "uom": "KG"
+    },
+    "financialGroupCode": "US",
+    "dates": {
+      "ordered": "2023-03-19",
+      "cancel": "2023-03-26",
+      "ship": "2023-03-26",
+      "mabd": "2023-03-26"
+    },
+    "vendor": {
+      "name": "BAMA COMPANIES INC",
+      "number": 304857,
+      "department": 8
+    },
+    "lines": [
+      {
+        "poLineNumber": 1,
+        "channel": "CROSSU",
+        "poLineStatus": "RECEIVED",
+        "ordered": {
+          "quantity": 1,
+          "uom": "ZA"
+        },
+        "ovgThresholdLimit": {
+          "quantity": 1,
+          "uom": "ZA"
+        },
+        "whpk": {
+          "quantity": 2,
+          "sell": 34.69
+        },
+        "vnpk": {
+          "quantity": 2,
+          "cost": 6.6,
+          "weight": {
+            "quantity": 11.75,
+            "uom": "LB"
+          },
+          "cube": {
+            "quantity": 1.312,
+            "uom": "CF"
+          }
+        },
+        "event": "POS REPLEN",
+        "itemDetails": {
+          "number": 561298341,
+          "consumableGTIN": "00078742229430",
+          "orderableGTIN": "20078742229434",
+          "supplierStockId": "11357",
+          "palletTi": 2,
+          "palletHi": 9,
+          "hazmat": false,
+          "conveyable": false,
+          "itemTypeCode": "20",
+          "color": "8DAYS",
+          "size": "EA",
+          "descriptions": [
+            "4\" MKT BAN CRM",
+            "<T&S>"
+          ],
+          "additionalInformation": {
+            "isNewItem": false,
+            "eachWeight": 0.01,
+            "eachWeightUOM": "LB"
+          }
+        }
+      }
+    ],
+    "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+    "sellerType": "Walmart",
+    "sellerName": "Test Name"
+  }
+]

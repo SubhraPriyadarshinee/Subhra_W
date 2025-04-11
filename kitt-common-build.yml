@@ -1,0 +1,50 @@
+profiles:
+  - springboot-jdk8-web
+  - tomcat9-jdk8-ubuntu
+  - cns-java
+  - git://Logistics:metrics-profiles:main:dt-saas-atlas/dt-saas-build
+  - "git://Tunr:strati-af-ccm2-assets:main:ccm2v2"
+
+owner:
+  group: "GLS-Receiving-Atlas"
+  roles:
+    namespaceUsers: ["GLS-Receiving-Atlas", "Tridents-SE", "glsperf"]
+
+notify:
+  slack:
+    channelName: atlas-rcv-build
+  msTeams:
+    channelId: 19%3Ad62150d0645c4af09e7a36ed37d762e4%40thread.tacv2
+
+alerts:
+  slackChannel:
+    - atlas-rcv-build
+
+looper:
+  enableDockerNoCache: false
+  enableDockerClean: true
+
+build:
+  buildType: maven
+  docker:
+    app:
+      runtime: tomcat
+      buildArgs:
+        artifactPath: 'receiving-api/target'
+        scannerVersion: 0.0.18
+        mvnGoals: 'clean deploy'
+        sonarProjKey: com.walmart.move.nim:uwms-receiving
+        sonar.projectName: receiving-api-parent
+        sonarOpts: "-Dsonar.projectVersion={{ $.kitt.build.version }}
+          -Dsonar.sources=src/main
+          -Dsonar.tests=src/test
+          -Dsonar.java.binaries=target/classes
+          -Dsonar.modules=receiving-api,receiving-core,receiving-manual/receiving-rc,receiving-test,receiving-utils,receiving-automated/receiving-acc,receiving-automated/receiving-asn,receiving-automated/receiving-endgame,receiving-automated/receiving-rx,receiving-automated/receiving-witron, receiving-reporting,receiving-manual/receiving-fixture,receiving-automated/receiving-rdc
+          -Dsonar.language=java
+          -Dsonar.java.source=1.8
+          -Dsonar.sourceEncoding=UTF-8
+          -Dsonar.junit.reportPaths=../target/coverageReport
+          -Dsonar.core.codeCoveragePlugin=jacoco
+          -Dsonar.jacoco.reportPath=../target/jacoco-ut.exec
+          -Djacoco.reports.unit.dir=../target/coverageReport/
+          -Dcoverage.reports.dir=../target/coverageReport"

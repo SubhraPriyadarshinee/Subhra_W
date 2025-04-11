@@ -1,0 +1,90 @@
+[
+	{
+		"deliveryNumber": 60032433,
+		"purchaseReferenceNumber": "8458708162",
+		"omsPurchaseReferenceNumber": "0518552199",
+		"deliveryStatus": "WRK",
+		"poDCNumber": "32897",
+		"bpoNumber": "0",
+		"baseDivCode": "WM",
+		"purchaseReferenceLegacyType": "20",
+		"totalPurchaseReferenceQty": 378,
+		"palletQty": 0,
+		"purchaseCompanyId": 1,
+		"receiverNumber": 0,
+		"purchaseReferenceOrderDate": "2020-10-19",
+		"purchaseReferenceCancelDate": "2020-10-22",
+		"purchaseReferenceShipDate": "2020-10-20",
+		"purchaseReferenceMustArriveByDate": "2020-10-28",
+		"deliveryDocumentLines": [
+			{
+				"purchaseRefType": "SSTKU",
+				"originalChannel": "STAPLESTOCK",
+				"purchaseReferenceNumber": "8458708162",
+				"purchaseReferenceLineNumber": 1,
+				"purchaseReferenceLineStatus": "RECEIVED",
+				"itemNbr": 3804890,
+				"itemUPC": "90929695410987",
+				"caseUPC": "90929695410987",
+				"vendorUPC": "90929695410987",
+				"expectedQty": 378,
+				"expectedQtyUOM": "ZA",
+				"vnpkQty": 10,
+				"whpkQty": 1,
+				"vendorStockNumber": "2222",
+				"vendorPackCost": 22.2,
+				"whpkSell": 1.85,
+				"vnpkWgtQty": 15.0,
+				"vnpkWgtUom": "LB",
+				"vnpkcbqty": 0.324,
+				"vnpkcbuomcd": "CF",
+				"handlingCode": "C",
+				"packType": "B",
+				"event": "POS REPLEN",
+				"freeTextDetail": "WHITEMS HUGE 40 PER PLTHUGE PILLOW",
+				"palletTi": 10,
+				"palletHi": 5,
+				"department": "1",
+				"isHazmat": false,
+				"isConveyable": true,
+				"overageQtyLimit": 10,
+				"overageThresholdQty": 10,
+				"color": "",
+				"size": "",
+				"itemDescription1": "AK RAISINETS",
+				"itemDescription2": "ALASKA ONLY",
+				"additionalInfo": {
+					"isDscsaExemptionInd": false,
+					"primeSlot": "A120"
+				},
+				"promoBuyInd": "N",
+				"operationalInfo": {
+					"state": "ACTIVE"
+				}
+			}
+		],
+		"bolNumber": "0",
+		"proNumber": "7166065233",
+		"deptNumber": "38",
+		"vendorNumber": "39833",
+		"vendorName": "XTTRIUM LABORATORIES INC",
+		"vendorNbrDeptSeq": "39833380",
+		"lastChangedByDate": "2020-11-05",
+		"weight": 5670.0,
+		"weightUOM": "LB",
+		"freightTermCode": "PRP",
+		"financialGroupCode": "US",
+		"lastChangedBy": "546",
+		"bolNumbers": [
+			{
+				"bolNumber": "0",
+				"freightBillQuantity": 378
+			}
+		],
+		"poConIndicator": false,
+		"poTypeCode": "20",
+		"purchaseReferenceStatus": "ACTIVE",
+		"poDcCountry": "US",
+		"totalBolFbq": 0
+	}
+]

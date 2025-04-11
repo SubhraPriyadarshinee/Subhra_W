@@ -1,0 +1,32 @@
+{
+  "messageId": "d034fc9c-849b-11ea-bc55-0242ac130003",
+  "locations": [
+    {
+      "type": "success",
+      "itemNbr": "3803380",
+      "location": "H0005",
+      "primeLocation": "H0005",
+      "locationSize": 72,
+      "slotType" : "prime",
+      "asrsAlignment": "SYM1"
+    },
+    {
+      "type": "success",
+      "itemNbr": "3803381",
+      "location": "H0006",
+      "primeLocation": "H0006",
+      "locationSize": 72,
+      "slotType" : "prime",
+      "asrsAlignment": "SYM1"
+    },
+    {
+      "type": "success",
+      "itemNbr": "3803382",
+      "location": "H0007",
+      "primeLocation": "H0007",
+      "locationSize": 72,
+      "slotType" : "prime",
+      "asrsAlignment": "SYM1"
+    }
+  ]
+}

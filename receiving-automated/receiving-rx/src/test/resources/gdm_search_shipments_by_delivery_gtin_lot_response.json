@@ -1,0 +1,35 @@
+[
+  {
+    "documentId": "546191216_20191106_719468_VENDOR_US",
+    "shipmentNumber": "546191216",
+    "documentType": "ASN",
+    "documentRevision": 0,
+    "documentIngestTime": "2019-11-06T19:02:43.774Z",
+    "shipmentDate": "2019-11-06",
+    "source": {
+      "globalLocationNumber": "0069382035222",
+      "number": "6938",
+      "numberType": "WALMART",
+      "type": "MCC",
+      "countryCode": "US",
+      "shipperId": "492918",
+      "shipperName": "Walmart"
+    },
+    "destination": {
+      "globalLocationNumber": "0078742035222",
+      "type": "DC",
+      "number": 6094,
+      "countryCode": "US"
+    },
+    "shipmentDetail": {
+      "trailerNumber": "T127265756094",
+      "trailerSealNumber": "SL8132816",
+      "billOfLadingNumber": "6938-88528711",
+      "loadNumber": "88528711",
+      "shippingDate": "2019-01-08",
+      "freightPayment": "PP",
+      "carrierId": "WM",
+      "carrierTrackingId": "WM"
+    }
+  }
+]

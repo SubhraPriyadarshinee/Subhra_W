@@ -1,0 +1,332 @@
+{
+  "packageItemIdentificationCode": "PIR-111",
+  "packageItemIdentificationMessage": "Package recognizable : Item found in the package and single seller in package : Item type WFS",
+  "answers": {
+    "legacySellerId": "967",
+    "serviceType": "WFS",
+    "itemCategory": "Clothing",
+    "questions": [
+      {
+        "questionId": "1",
+        "question": "Do the image and item match?",
+        "questionType": "SINGLE_SELECT",
+        "isMandatory": true,
+        "sequenceNumber": 1,
+        "options": [
+          {
+            "optionId": "11",
+            "option": "Yes",
+            "isSelected": true
+          },
+          {
+            "optionId": "12",
+            "option": "No",
+            "isSelected": false
+          }
+        ],
+        "questions": [
+          {
+            "questionId": "111",
+            "question": "Choose a Category?",
+            "questionType": "SINGLE_SELECT",
+            "parentOptionId": "11",
+            "isMandatory": true,
+            "options": [
+              {
+                "optionId": "1111",
+                "option": "Category A",
+                "propertyType": "CATEGORY_A",
+                "isSelected": false
+              },
+              {
+                "optionId": "1112",
+                "option": "Category B",
+                "propertyType": "CATEGORY_B",
+                "isSelected": true
+              },
+              {
+                "optionId": "1113",
+                "option": "Category C",
+                "propertyType": "CATEGORY_C",
+                "isSelected": false
+              }
+            ],
+            "questions": [
+              {
+                "questionId": "11121",
+                "question": "Is the item new / Unopened?",
+                "questionType": "SINGLE_SELECT",
+                "parentOptionId": "1112",
+                "isMandatory": true,
+                "options": [
+                  {
+                    "optionId": "111211",
+                    "option": "Yes",
+                    "propertyType": "YES",
+                    "isSelected": true
+                  },
+                  {
+                    "optionId": "111212",
+                    "option": "No",
+                    "propertyType": "NO",
+                    "isSelected": false
+                  }
+                ],
+                "questions": [
+                  {
+                    "questionId": "1112112",
+                    "question": "Is Packaging Damaged?",
+                    "questionType": "SINGLE_SELECT",
+                    "parentOptionId": "111211",
+                    "isMandatory": true,
+                    "options": [
+                      {
+                        "optionId": "11121121",
+                        "option": "Yes",
+                        "propertyType": "YES",
+                        "isSelected": false
+                      },
+                      {
+                        "optionId": "11121122",
+                        "option": "No",
+                        "propertyType": "NO",
+                        "isSelected": true
+                      }
+                    ],
+                    "questions": []
+                  },
+                  {
+                    "questionId": "1112113",
+                    "question": "Does the item have customer info?",
+                    "questionType": "SINGLE_SELECT",
+                    "parentOptionId": "111211",
+                    "isMandatory": true,
+                    "options": [
+                      {
+                        "optionId": "11121131",
+                        "option": "Yes",
+                        "propertyType": "YES",
+                        "isSelected": false
+                      },
+                      {
+                        "optionId": "11121132",
+                        "option": "No",
+                        "propertyType": "NO",
+                        "isSelected": true
+                      }
+                    ],
+                    "questions": []
+                  },
+                  {
+                    "questionId": "1112114",
+                    "question": "Is the item Damaged?",
+                    "questionType": "SINGLE_SELECT",
+                    "parentOptionId": "111211",
+                    "isMandatory": true,
+                    "options": [
+                      {
+                        "optionId": "11121141",
+                        "option": "Yes",
+                        "propertyType": "YES",
+                        "isSelected": false
+                      },
+                      {
+                        "optionId": "11121142",
+                        "option": "No",
+                        "propertyType": "NO",
+                        "isSelected": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "disposition": {
+    "itemCondition": "SELLABLE",
+    "dispositionType": "RESTOCK",
+    "proposedDisposition": "RESTOCK",
+    "finalDisposition": "RESTOCK"
+  },
+  "scannedLabel": "100000256104878",
+  "scannedItemLabel": "00658723904947",
+  "scannedLabelType": "SO",
+  "scannedBin": "RT2112",
+  "scannedCart": "RC2111",
+  "containerTag": "NONCONSUMABLE",
+  "salesOrder": {
+    "soNumber": "100000256104878",
+    "returnOrders": [
+      {
+        "roNumber": "138917354002907205",
+        "orderType": "VIRTUAL_EXCHANGE",
+        "channel": {
+          "name": "CCA-Returns"
+        },
+        "lines": [
+          {
+            "lineNumber": 1,
+            "soLineNumber": 1,
+            "soLineId": 1,
+            "receivingNode": null,
+            "rcType": "WFS",
+            "rcId": "null",
+            "returnInformation": {
+              "reason": "1007",
+              "ecommReasonCode": "1007",
+              "reasonDescription": "Item arrived damaged"
+            },
+            "carrierInformation": null,
+            "returned": {
+              "quantity": 1,
+              "uom": "EA"
+            },
+            "faultCategory": "WFS",
+            "isGoodwill": null,
+            "goodwillReason": null
+          }
+        ]
+      }
+    ],
+    "lines": [
+      {
+        "lineNumber": 1,
+        "seller": {
+          "legacyId": "967"
+        },
+        "channel": "SSTKR",
+        "trackingNumber": "108823633623210",
+        "isSerialScanRequired": false,
+        "serialNumbers": null,
+        "poNumber": "108823633623205",
+        "ordered": {
+          "quantity": 3,
+          "uom": "EA"
+        },
+        "itemCost": "1",
+        "itemDetails": {
+          "number": 650642714,
+          "consumableGTIN": "00658723904947",
+          "orderableGTIN": "00658723904947",
+          "itemId": "1330431013",
+          "supplierNumber": 0,
+          "additionalInformation": {
+            "brandName": "MIARHB",
+            "hasExpiration": null,
+            "physicalState": null,
+            "ironBankCategory": "Clothing",
+            "shelfLife": null,
+            "weightUOM": "LB",
+            "consumable": true,
+            "wfsEligible": true,
+            "dotHazardousCode": null,
+            "weight": 2,
+            "images": {
+              "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/4aac7d7b-e9c2-4ae2-a9f3-f7880507370c.2f5c1bd228e08ef174e30988a7007ed2.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+              "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/4aac7d7b-e9c2-4ae2-a9f3-f7880507370c.2f5c1bd228e08ef174e30988a7007ed2.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+              "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/4aac7d7b-e9c2-4ae2-a9f3-f7880507370c.2f5c1bd228e08ef174e30988a7007ed2.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+              "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/4aac7d7b-e9c2-4ae2-a9f3-f7880507370c.2f5c1bd228e08ef174e30988a7007ed2.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+              "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/4aac7d7b-e9c2-4ae2-a9f3-f7880507370c.2f5c1bd228e08ef174e30988a7007ed2.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+            },
+            "productImages": [
+              {
+                "dimensions": {
+                  "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/4aac7d7b-e9c2-4ae2-a9f3-f7880507370c.2f5c1bd228e08ef174e30988a7007ed2.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+                  "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/4aac7d7b-e9c2-4ae2-a9f3-f7880507370c.2f5c1bd228e08ef174e30988a7007ed2.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+                  "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/4aac7d7b-e9c2-4ae2-a9f3-f7880507370c.2f5c1bd228e08ef174e30988a7007ed2.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+                  "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/4aac7d7b-e9c2-4ae2-a9f3-f7880507370c.2f5c1bd228e08ef174e30988a7007ed2.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+                  "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/4aac7d7b-e9c2-4ae2-a9f3-f7880507370c.2f5c1bd228e08ef174e30988a7007ed2.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+                },
+                "assetType": "PRIMARY"
+              }
+            ],
+            "dimensions": {
+              "uom": "IN",
+              "depth": 2,
+              "width": 2,
+              "height": 2
+            },
+            "productName": "MIARHB Women Fashion V Neck Floral Print Long Sleeve Jumpsuit Sleepwear Bodysuit",
+            "cubeQty": 0.005,
+            "cubeUomCode": "CF",
+            "properShipping": null,
+            "pkgInstruction": null,
+            "dotRegionCode": null,
+            "limitedQty": null,
+            "productShortDescription": "MIARHB Women Fashion V Neck Floral Print Long Sleeve Jumpsuit Sleepwear Bodysuit",
+            "productLongDescription": "MIARHB Women Fashion V Neck Floral Print Long Sleeve Jumpsuit Sleepwear Bodysuit",
+            "hazardous": false
+          },
+          "dotIdNbr": null
+        }
+      }
+    ],
+    "rctrOrders": null
+  },
+  "itemDetails": {
+    "orderableGTIN": "00658723904947",
+    "consumableGTIN": "00658723904947",
+    "itemId": "1330431013",
+    "legacySellerId": "967",
+    "serviceType": "WFS",
+    "ironBankCategory": "Clothing",
+    "brandName": "MIARHB",
+    "isConsumable": false,
+    "number": 650642714,
+    "productName": "MIARHB Women Fashion V Neck Floral Print Long Sleeve Jumpsuit Sleepwear Bodysuit",
+    "description": [
+      "MIARHB Women Fashion V Neck Floral Print Long Sleeve Jumpsuit Sleepwear Bodysuit",
+      "MIARHB Women Fashion V Neck Floral Print Long Sleeve Jumpsuit Sleepwear Bodysuit"
+    ],
+    "isHazmat": false,
+    "regulatedItemType": null,
+    "regulatedItemLabelCode": null,
+    "weight": {
+      "amount": 2,
+      "uom": "LB"
+    },
+    "dimensions": {
+      "uom": "IN",
+      "depth": 2,
+      "width": 2,
+      "height": 2
+    },
+    "cube": {
+      "amount": 0.005,
+      "uom": "CF"
+    },
+    "isSerialScanRequired": false,
+    "serialNumbers": [],
+    "isGoodwill": false,
+    "goodwillReason": null,
+    "isHazardous": false,
+    "salesOrderNumber": "100000256104878",
+    "quantity": 1,
+    "itemImages": [
+      {
+        "dimensions": {
+          "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/4aac7d7b-e9c2-4ae2-a9f3-f7880507370c.2f5c1bd228e08ef174e30988a7007ed2.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/4aac7d7b-e9c2-4ae2-a9f3-f7880507370c.2f5c1bd228e08ef174e30988a7007ed2.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+          "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/4aac7d7b-e9c2-4ae2-a9f3-f7880507370c.2f5c1bd228e08ef174e30988a7007ed2.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+          "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/4aac7d7b-e9c2-4ae2-a9f3-f7880507370c.2f5c1bd228e08ef174e30988a7007ed2.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+          "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/4aac7d7b-e9c2-4ae2-a9f3-f7880507370c.2f5c1bd228e08ef174e30988a7007ed2.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+        },
+        "assetType": "PRIMARY"
+      }
+    ]
+  },
+  "location": {
+    "locationId": 368627,
+    "orgUnitId": 1126,
+    "name": "ARCIN01",
+    "stationType": "Receiving"
+  },
+  "reasonCodes": [],
+  "trackingId": "g090740000100000000282033",
+  "lineNumber": 1,
+  "prePopulatedCategory":"C"
+}

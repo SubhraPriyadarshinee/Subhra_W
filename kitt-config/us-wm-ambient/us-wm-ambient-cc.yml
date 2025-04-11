@@ -1,0 +1,90 @@
+profiles:
+  - git://Logistics:uwms-receiving:main:kitt-common-deploy
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-ambient/stages/ambient-stage-cell003
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-ambient/stages/prod-amb-011
+
+notify:
+  slack:
+    channelName: atlas-rcv-build-ambient
+
+alerts:
+  slackChannel:
+    - atlas-rcv-alerts-ambient
+
+setup:
+  releaseRefs: [
+    "main",
+    "us-wm-ambient/cc-development-amb",
+    "us-wm-ambient/release/.*",
+    ".*-hotfix"
+  ]
+
+build:
+  artifact: uwms-receiving-ambient
+
+deploy:
+  preDeploy:
+    - task:
+        name: messageSlack
+        text: Beginning liquibase execution on {{$.kittExec.currentStage.name}}
+    - concord:
+        name: Liquibase-Execution
+        action: start
+        org: Logistics
+        project: wcnp_liquibase
+        repo: wcnp_liquibase
+        entryPoint: default
+        enabled: true
+        sync: true
+        executionScope: stage
+        arguments:
+          version: "{{$.kitt.build.version}}"
+          artifactId: "{{$.kitt.build.artifact}}"
+          targetEnv: "amb-{{$.kittExec.currentStage.name}}"
+          gitBranch: "{{$.kitt.build.commitEvent.commitId}}"
+          repoName: "uwms-receiving"
+    - task:
+        name: messageSlack
+        text: Liquibase execution successful
+  namespace: amb-atlas-receiving
+  skip: false
+  changeRecord:
+    create: true
+    affectedGEOs: [ "US" ]
+    group: "LOG - GLS NextGen"
+    notifyChannels: [ "atlas-rcv-build-ambient" ]
+    managerGroup: "Change Managers - GEC"
+  gslb:
+    lbRoutings:
+      stg-cell003:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-amb-stg-cell003.walmart.com
+          - receiving-api-amb-stg-cell003.walmart.com
+        matchStages: [ stg-cell003 ]
+      prod-amb-011:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-amb-prod-amb-011.walmart.com
+          - receiving-api-amb-prod-amb-011.walmart.com
+        matchStages: [ prod-amb-011 ]
+
+  stages:
+    - name: stg-cell003
+      refs: [ "main", "us-wm-ambient/cc-development-amb", "us-wm-ambient/release/.*" ]
+      target:
+        - cluster_id: [ uswest-stage-wmt-001 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+      rollbackOnError: true
+
+    - name: prod-amb-011
+      refs: [ "main", "us-wm-ambient/cc-development-amb", "us-wm-ambient/release/.*" ]
+      target:
+        - cluster_id: [ eus2-prod-a24, uscentral-prod-az-315 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "Tridents-SE"
+      rollbackOnError: true

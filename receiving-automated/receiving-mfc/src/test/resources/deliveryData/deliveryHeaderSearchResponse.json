@@ -1,0 +1,218 @@
+{
+  "data": [
+    {
+      "deliveryNumber": 55050000000007,
+      "status": "ARV",
+      "type": "LIVE",
+      "arrivalTime": "2023-09-11T18:55:12.778Z",
+      "scheduledTime": "2023-09-08T14:13:23.730Z",
+      "trailerId": "REGTST01",
+      "receivedQty": 0,
+      "doorNumber": "999",
+      "totalPos": 0,
+      "totalPoLines": 0,
+      "totalFbq": 0,
+      "palletQty": 0,
+      "expectedPalletQty": 0,
+      "vendor": [],
+      "warehouseArea": [],
+      "additionalInformation": {
+        "totalMfcPallets": 0,
+        "totalMfcPacks": 0,
+        "storeInvoices": [
+          "6030161275"
+        ],
+        "shipmentDocumentIds": [
+          "39279959-TMS60305504_20230908_6030_DC_US_1"
+        ],
+        "invoiceNumbers": [
+          "6030161275"
+        ],
+        "shipmentFlippedDetails": [
+          {
+            "originalDestination": {
+              "type": "STORE",
+              "number": 5504,
+              "countryCode": "US"
+            }
+          }
+        ],
+        "totalFtsItems": 0,
+        "sourceNumbers": [
+          "6030"
+        ],
+        "totalMfcQty": 0.0,
+        "totalExpected": [
+          {
+            "quantity": 12.0,
+            "uom": "EA"
+          }
+        ],
+        "shipmentNumbers": [
+          "39279959-TMS60305504"
+        ],
+        "totalPallets": 1,
+        "mfcInvoices": [],
+        "shipmentDocumentTypes": [
+          "ASN"
+        ]
+      },
+      "loadNumber": "39279959-TMS",
+      "channels": [],
+      "freightType": [],
+      "businessUnitType": []
+    },
+    {
+      "deliveryNumber": 55050000000008,
+      "status": "ARV",
+      "type": "LIVE",
+      "arrivalTime": "2023-09-12T13:30:37.115Z",
+      "scheduledTime": "2023-09-11T20:32:03.764Z",
+      "trailerId": "MFCTRFT001",
+      "receivedQty": 0,
+      "doorNumber": "999",
+      "totalPos": 0,
+      "totalPoLines": 0,
+      "totalFbq": 0,
+      "palletQty": 0,
+      "expectedPalletQty": 0,
+      "vendor": [],
+      "warehouseArea": [
+        "Dry Grocery"
+      ],
+      "additionalInformation": {
+        "totalMfcPallets": 0,
+        "totalMfcPacks": 0,
+        "storeInvoices": [
+          "6030161283"
+        ],
+        "shipmentDocumentIds": [
+          "39279960-TMS60305504_20230911_6030_DC_US_1"
+        ],
+        "invoiceNumbers": [
+          "6030161283"
+        ],
+        "shipmentFlippedDetails": [
+          {
+            "originalDestination": {
+              "type": "STORE",
+              "number": 5504,
+              "countryCode": "US"
+            }
+          }
+        ],
+        "totalFtsItems": 0,
+        "sourceNumbers": [
+          "6030"
+        ],
+        "totalMfcQty": 0.0,
+        "totalExpected": [
+          {
+            "quantity": 12.0,
+            "uom": "EA"
+          }
+        ],
+        "shipmentNumbers": [
+          "39279960-TMS60305504"
+        ],
+        "totalPallets": 1,
+        "mfcInvoices": [],
+        "shipmentDocumentTypes": [
+          "ASN"
+        ]
+      },
+      "loadNumber": "39279960-TMS",
+      "channels": [],
+      "freightType": [],
+      "businessUnitType": []
+    },
+    {
+      "deliveryNumber": 55050000000009,
+      "status": "WRK",
+      "type": "LIVE",
+      "arrivalTime": "2023-09-12T13:30:11.201Z",
+      "scheduledTime": "2023-09-12T01:38:43.024Z",
+      "trailerId": "MFCTEST911",
+      "receivedQty": 0,
+      "doorNumber": "999",
+      "totalPos": 0,
+      "totalPoLines": 0,
+      "totalFbq": 0,
+      "palletQty": 0,
+      "expectedPalletQty": 0,
+      "vendor": [],
+      "warehouseArea": [],
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "rcvusr",
+          "time": "2023-10-06T13:13:44.437Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "rcvusr",
+          "time": "2023-10-06T13:13:44.556Z"
+        },
+        {
+          "type": "UNLOADING_COMPLETED",
+          "userId": "rcvusr",
+          "time": "2023-10-06T13:35:28.926Z"
+        }
+      ],
+      "additionalInformation": {
+        "totalMfcPallets": 0,
+        "totalMfcPacks": 0,
+        "storeInvoices": [
+          "6030161285",
+          "6030161284"
+        ],
+        "shipmentDocumentIds": [
+          "39279961-TMS60305504_20230911_6030_DC_US"
+        ],
+        "invoiceNumbers": [
+          "6030161285",
+          "6030161284"
+        ],
+        "shipmentFlippedDetails": [
+          {
+            "originalDestination": {
+              "type": "STORE",
+              "number": 5504,
+              "countryCode": "US"
+            }
+          }
+        ],
+        "totalFtsItems": 0,
+        "sourceNumbers": [
+          "6030"
+        ],
+        "totalMfcQty": 0.0,
+        "totalExpected": [
+          {
+            "quantity": 44.0,
+            "uom": "EA"
+          }
+        ],
+        "shipmentNumbers": [
+          "39279961-TMS60305504"
+        ],
+        "totalPallets": 4,
+        "mfcInvoices": [],
+        "shipmentDocumentTypes": [
+          "ASN"
+        ]
+      },
+      "loadNumber": "39279961-TMS",
+      "channels": [],
+      "freightType": [],
+      "businessUnitType": []
+    }
+  ],
+  "page": {
+    "size": 50,
+    "number": 0,
+    "numberOfElements": 3,
+    "totalElements": 3,
+    "totalPages": 1
+  }
+}

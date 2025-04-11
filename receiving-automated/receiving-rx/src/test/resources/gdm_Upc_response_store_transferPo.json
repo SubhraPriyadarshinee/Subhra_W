@@ -1,0 +1,75 @@
+[
+    {
+        "deliveryNumber": 7861095,
+        "documentNbr": "108786863",
+        "purchaseReferenceNumber": "108786863",
+        "poDCNumber": "6001",
+        "baseDivCode": "WM",
+        "purchaseReferenceLegacyType": "0",
+        "totalPurchaseReferenceQty": 20,
+        "purchaseCompanyId": 1,
+        "purchaseReferenceMustArriveByDate": "2019-12-03T00:00:00.000+0000",
+        "deliveryDocumentLines": [
+            {
+                "purchaseRefType": "CROSSMU",
+                "originalChannel": "CROSSDOCK",
+                "purchaseReferenceNumber": "108786863",
+                "purchaseReferenceLineNumber": 1,
+                "purchaseReferenceLineStatus": "APPROVED",
+                "itemNbr": 550761449,
+                "itemUPC": "00301691837020",
+                "caseUPC": "10301691837027",
+                "expectedQty": 13,
+                "expectedQtyUOM": "ZA",
+                "vnpkQty": 6,
+                "whpkQty": 1,
+                "vendorStockNumber": "00169-1837-02",
+                "vendorPackCost": 28.5,
+                "whpkSell": 4.75,
+                "vnpkWgtQty": 31.7,
+                "vnpkWgtUom": "LB",
+                "vnpkcbqty": 0.52,
+                "vnpkcbuomcd": "CF",
+                "event": "",
+                "department": "38",
+                "isConveyable": true,
+                "overageQtyLimit": 0,
+                "overageThresholdQty": 0,
+                "color": "INSULI",
+                "size": "10X10",
+                "itemDescription1": "RELION NOVOLIN 70/30",
+                "itemDescription2": "NOVOLIN 70/30 OTC",
+                "additionalInfo": {
+                    "isDscsaExemptionInd": false,
+                    "weight": "4.0E-4",
+                    "cubeUOM": "CF",
+                    "cube": "0.0",
+                    "weightUOM": "LB"
+                },
+                "promoBuyInd": "N",
+                "activeChannelMethods": [],
+                "operationalInfo": {
+                    "state": "ACTIVE"
+                },
+                "orderableQuantity": 240,
+                "warehousePackQuantity": 10,
+                "deptNumber": "38"
+            }
+        ],
+        "deptNumber": "38",
+        "vendorNumber": "645184",
+        "vendorNbrDeptSeq": "645184641",
+        "weight": 202,
+        "weightUOM": "KG",
+        "freightTermCode": "PRP",
+        "financialGroupCode": "US",
+        "poTypeCode": "28",
+        "purchaseReferenceStatus": "ACTV",
+        "deliveryStatus": "WRK",
+        "stateReasonCodes":[
+            "DOOR_OPEN"],
+        "deliveryLegacyStatus": "ARV",
+        "poDcCountry": "US",
+        "totalBolFbq": 0
+    }
+]

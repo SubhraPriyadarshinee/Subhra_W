@@ -1,0 +1,146 @@
+{
+  "containers": [
+    {
+      "id": "cdc258b6-7156-4092-809c-2e258436e4d1",
+      "parentId": "1245678910",
+      "sscc": "00800109399919082945",
+      "lotNumber": "",
+      "unitCount": 96,
+      "childCount": 4,
+      "shipmentDocumentId": "50048525_2225371795_241224061100_v2_6032_US",
+      "receivingStatus": "Open",
+      "hints": [
+        "CASE_PACK_ITEM",
+        "SSCC_PACKAGE",
+        "SINGLE_SKU_PACKAGE"
+      ],
+      "level": 1,
+      "topLevelContainerSscc": "00800109399919082945",
+      "topLevelContainerId": "cdc258b6-7156-4092-809c-2e258436e4d1",
+      "itemInfo": [
+        {
+          "itemNumber": 553413723,
+          "gtin": "00316571657100",
+          "totalUnitQty": 96
+        }
+      ],
+      "trackingStatus": "ValidationSuccessful",
+      "shipmentNumber": "50048525_2225371795_241224061100_v2"
+    }
+  ],
+  "delivery": {
+    "deliveryNumber": 50048525,
+    "statusInformation": {
+      "operationalStatus": "OPN",
+      "statusReasonCode": [
+        "DOOR_OPEN"
+      ],
+      "status": "OPN"
+    },
+    "scheduled": "2024-12-24T23:45:00.000Z",
+    "arrivalTimeStamp": "2024-12-24T17:41:20.992Z",
+    "doorOpenTime": "2024-12-24T06:49:13.524Z",
+    "trailerId": "T50048525"
+  },
+  "shipments": [
+    {
+      "documentId": "50048525_2225371795_241224061100_v2_6032_US",
+      "shipmentNumber": "50048525_2225371795_241224061100_v2",
+      "documentType": "EPCIS",
+      "documentRevision": 0,
+      "source": {
+        "globalLocationNumber": "0078742030548",
+        "shipperId": "988246",
+        "shipperName": "BAMA COMPANIES INC"
+      },
+      "shipmentDetail": {
+        "reportedDeliveryNumber": 50048525
+      }
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poNumber": "2225371795",
+      "freightBillQty": 4,
+      "cubeQty": 150.0,
+      "poDcCountry": "US",
+      "baseDivisionCode": "WM",
+      "poType": "20",
+      "purchaseCompanyId": 1,
+      "poStatus": "ACTV",
+      "financialGroupCode": "US",
+      "vendorInformation": {
+        "name": "BAMA COMPANIES INC",
+        "number": 988246,
+        "department": 38,
+        "serialInfoEnabled": true
+      },
+      "poDates": {
+        "cancel": "2019-03-26",
+        "ordered": "2019-03-19",
+        "mabd": "2019-03-26",
+        "ship": "2019-03-26"
+      },
+      "poDcNumber": 6032,
+      "lines": [
+        {
+          "poLineNumber": 1,
+          "channel": "SSTKU",
+          "whpkQty": 100,
+          "whpkSell": 54.7,
+          "vnpkQty": 2400,
+          "vnpkCost": 1.84,
+          "vnpkWeightQty": 2.97,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.246,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "polAdditionalFields": {
+            "Sample_Po_Ind": "N",
+            "Manual_Po_Ind": "N"
+          },
+          "poLineStatus": "ACTIVE",
+          "orderedQty": 4.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00316571657100",
+            "orderableGTIN": "50316571657105",
+            "warehousePackGTIN": "30316571657101",
+            "supplierStockId": "16571-0657-10",
+            "conveyable": false,
+            "itemTypeCode": "7",
+            "vendorDepartment": "38",
+            "color": "CAPSUL",
+            "size": "100",
+            "warehousePackQuantity": 100,
+            "orderableQuantity": 2400,
+            "handlingCode": "C",
+            "packType": "B",
+            "complianceItem": false,
+            "isControlledSubstance": false,
+            "isTemperatureSensitive": false,
+            "descriptions": [
+              "CEVIMELINE HCL 30MG",
+              "CEVIMELINE HCL 30MG"
+            ],
+            "itemAdditonalInformation": {
+              "isDscsaExemptionInd": false,
+              "weight": 0.08,
+              "cubeUOM": "CF",
+              "cube": 0.006,
+              "weightUOM": "LB",
+              "supplierCasePackType": "B",
+              "weightFormatTypeCode": "F",
+              "isTemperatureSensitive": "N",
+              "isControlledSubstance": "N"
+            },
+            "number": 553413723
+          }
+        }
+      ],
+      "weightQty": 100.0,
+      "weightQtyUom": "LB",
+      "cubeQtyUom": "CF"
+    }
+  ]
+}

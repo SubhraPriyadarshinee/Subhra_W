@@ -1,0 +1,123 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "type": "object",
+  "required": [
+    "deliveryNumber",
+    "scanItems"
+  ],
+  "properties": {
+    "deliveryNumber": {
+      "type": "integer"
+    },
+    "scanItems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "item",
+          "orderableGTIN",
+          "consumableGTIN",
+          "labels",
+          "exceptionLabels",
+          "exceptionLabelURL"
+        ],
+        "properties": {
+          "item": {
+            "type": "integer"
+          },
+          "sscc": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "orderableGTIN": {
+            "type": "string"
+          },
+          "consumableGTIN": {
+            "type": "string"
+          },
+          "catalogGTIN": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reject": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "labels": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "seqNo",
+                "purchaseReferenceNumber",
+                "lpns",
+                "labelData"
+              ],
+              "properties": {
+                "seqNo": {
+                  "type": "string"
+                },
+                "purchaseReferenceNumber": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "lpns": {
+                  "type": "array"
+                },
+                "labelData": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "exceptionLabels": {
+            "type": "object",
+            "required": [
+              "seqNo",
+              "purchaseReferenceNumber",
+              "lpns",
+              "labelData"
+            ],
+            "properties": {
+              "seqNo": {
+                "type": "string"
+              },
+              "purchaseReferenceNumber": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lpns": {
+                "type": "array"
+              },
+              "labelData": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "exceptionLabelURL": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

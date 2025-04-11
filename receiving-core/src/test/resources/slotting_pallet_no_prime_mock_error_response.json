@@ -1,0 +1,5 @@
+{
+  "type": "error",
+  "code": "SMART-SLOTTING-SERVICE-500",
+  "desc": "Unable to process request due to data setup issue or some config issue !"
+}

@@ -1,0 +1,169 @@
+{
+  "delivery": {
+    "deliveryNumber": 52792909,
+    "statusInformation": {
+      "operationalStatus": "WRK",
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "status": "WRK"
+    },
+    "scheduled": "2023-06-22T22:45:00.000Z",
+    "arrivalTimeStamp": "2023-06-23T01:29:35.921Z",
+    "doorOpenTime": "2023-06-22T15:07:51.369Z",
+    "receivingStartedTimeStamp": "2023-06-22T15:08:51.682Z"
+  },
+  "shipments": [
+    {
+      "documentId": "9366983348069466_20191106_719468_VENDOR_US",
+      "shipmentNumber": "9366983348069466",
+      "documentType": "EPCIS",
+      "documentRevision": 0,
+      "source": {
+        "globalLocationNumber": "0069382035222",
+        "shipperId": "988246",
+        "shipperName": "BAMA COMPANIES INC"
+      },
+      "shipmentDetail": {
+        "reportedDeliveryNumber": 52792909
+      },
+      "totalPacks": 6
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poNumber": "1032225909",
+      "freightBillQty": 6,
+      "cubeQty": 150.0,
+      "poDcCountry": "US",
+      "baseDivisionCode": "WM",
+      "poType": "20",
+      "purchaseCompanyId": 1,
+      "poStatus": "ACTV",
+      "financialGroupCode": "US",
+      "poDates": {
+        "cancel": "2019-03-26",
+        "ordered": "2019-03-19",
+        "mabd": "2019-03-26",
+        "ship": "2019-03-26"
+      },
+      "vendorInformation": {
+        "name": "BAMA COMPANIES INC",
+        "number": 988246,
+        "department": 38,
+        "serialInfoEnabled": true
+      },
+      "poDcNumber": 6001,
+      "lines": [
+        {
+          "poLineNumber": 1,
+          "channel": "SSTKU",
+          "whpkQty": 5,
+          "whpkSell": 8.22,
+          "vnpkQty": 15,
+          "vnpkCost": 1.84,
+          "vnpkWeightQty": 4.0,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.007,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "polAdditionalFields": {
+            "Sample_Po_Ind": "N",
+            "Manual_Po_Ind": "N"
+          },
+          "poLineStatus": "ACTIVE",
+          "orderedQty": 6.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00301210825019",
+            "orderableGTIN": "10301210825016",
+            "warehousePackGTIN": "10301210825016",
+            "supplierStockId": "00121-0825-01",
+            "conveyable": true,
+            "itemTypeCode": "20",
+            "vendorDepartment": "38",
+            "color": "SOLN",
+            "size": "30",
+            "warehousePackQuantity": 30,
+            "orderableQuantity": 30,
+            "complianceItem": false,
+            "itemAdditonalInformation": {
+              "isDscsaExemptionInd": false,
+              "weight": 4.0,
+              "cubeUOM": "CF",
+              "cube": 0.007,
+              "weightUOM": "LB",
+              "weightFormatTypeCode": "F",
+              "supplierCasePackType": "C"
+            },
+            "descriptions": [
+              "MORPHINE SUL OS1 5ML",
+              "MORPHINE SUL OS1 5ML"
+            ],
+            "number": 598500579,
+            "handlingCode": "X"
+          }
+        }
+      ],
+      "weightQty": 100.0,
+      "weightQtyUom": "LB",
+      "cubeQtyUom": "CF"
+    }
+  ],
+  "packs": [
+    {
+      "documentPackId": "88528711328996094_20200608_32899_MCC_US_00106001483896805972",
+      "documentId": "9366983348069466_20191106_719468_VENDOR_US",
+      "packNumber": "00106001483896805972",
+      "palletNumber": "003008101940117014",
+      "shipmentNumber": "9366983348069466",
+      "uom": "CA",
+      "gtin": "10301210825016",
+      "serial": "1127180174",
+      "lotNumber": "78070JEUNL",
+      "expiryDate": "2024-06-22",
+      "unitCount": 3,
+      "receivingStatus": "Open",
+      "trackingStatus": "ValidationSuccessful",
+      "poNumber": "1032225909",
+      "multiskuPack": false,
+      "partialPack": false
+    },
+    {
+      "documentPackId": "88528711328996094_20200608_32899_MCC_US_00106001785530216033",
+      "documentId": "9366983348069466_20191106_719468_VENDOR_US",
+      "packNumber": "00106001785530216033",
+      "palletNumber": "003008101940117014",
+      "shipmentNumber": "9366983348069466",
+      "uom": "CA",
+      "gtin": "10301210825016",
+      "serial": "1237449497",
+      "lotNumber": "78070JEUNL",
+      "expiryDate": "2024-06-22",
+      "unitCount": 3,
+      "receivingStatus": "Open",
+      "trackingStatus": "ValidationSuccessful",
+      "poNumber": "1032225909",
+      "multiskuPack": false,
+      "partialPack": false
+    },
+    {
+      "documentPackId": "88528711328996094_20200608_32899_MCC_US_00106001439770984125",
+      "documentId": "9366983348069466_20191106_719468_VENDOR_US",
+      "packNumber": "00106001439770984125",
+      "palletNumber": "003008101940117014",
+      "shipmentNumber": "9366983348069466",
+      "uom": "CA",
+      "gtin": "10301210825016",
+      "serial": "1290060916",
+      "lotNumber": "78070JEUNL",
+      "expiryDate": "2024-06-22",
+      "unitCount": 3,
+      "receivingStatus": "Open",
+      "trackingStatus": "ValidationSuccessful",
+      "poNumber": "1032225909",
+      "multiskuPack": false,
+      "partialPack": false
+    }
+  ]
+}

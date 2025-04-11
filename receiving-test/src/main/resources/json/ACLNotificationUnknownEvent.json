@@ -1,0 +1,12 @@
+{
+  "equipmentName": "W1001",
+  "equipmentType": "ACL",
+  "locationId": "D102A",
+  "equipmentStatus": [
+    {
+      "code": 78,
+      "value": "UNKNOWN"
+    }
+  ],
+  "updatedTs":"Mon Mar 30 23:10:44 UTC 2020"
+}

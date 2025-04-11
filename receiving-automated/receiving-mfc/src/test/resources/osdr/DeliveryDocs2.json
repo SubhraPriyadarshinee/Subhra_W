@@ -1,0 +1,44 @@
+{
+  "deliveryNumber": 55040217,
+  "statusInformation": {
+    "status": "WRK",
+    "statusReasonCode": [
+      "WORKING"
+    ],
+    "operationalStatus": "WRK"
+  },
+  "type": "LIVE",
+  "appointmentStartDateTime": "2022-08-05T06:20:10.900Z",
+  "appointmentEndDateTime": "2022-08-15T06:20:10.900Z",
+  "doorNumber": "999",
+  "arrivalTime": "2022-08-05T08:56:09.112Z",
+  "loadInformation": {
+    "number": "AK-77",
+    "sourceDCNumber": "6035",
+    "trailerInformation": {
+      "sealNumber": "0000001077",
+      "trailerId": "57473734"
+    }
+  },
+  "lifeCycleInformation": [
+    {
+      "type": "DOOR_OPEN",
+      "userId": "sysadmin",
+      "time": "2022-08-05T08:56:09.140Z"
+    },
+    {
+      "type": "RECEIVING_STARTED",
+      "userId": "sysadmin",
+      "time": "2022-08-05T08:56:12.072Z"
+    }
+  ],
+  "carrierId": "WM",
+  "shipments": [
+    {
+      "documentId": "AK-7760355504_20220805_6035_DC_US",
+      "shipmentNumber": "AK-7760355504",
+      "documentIngestTime": "2022-08-05T06:20:08.616Z",
+      "totalPacks": 6
+    }
+  ]
+}

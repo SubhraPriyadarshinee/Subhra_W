@@ -1,0 +1,65 @@
+{
+  "scannedCart": "RC372837",
+  "containerTag": "NONCONSUMABLE",
+  "disposition": {
+    "proposedDisposition": "RTV",
+    "finalDisposition": "DISPOSE",
+    "itemCondition": "UNSELLABLE"
+  },
+  "answers": {
+    "serviceType": "WFS",
+    "legacySellerId": "10112",
+    "itemCategory": "Garden \u0026 Patio",
+    "questions": [
+      {
+        "questionId": 1,
+        "options": [
+          {
+            "isSelected": false,
+            "optionId": 11
+          },
+          {
+            "isSelected": false,
+            "optionId": 12
+          }
+        ]
+      },
+      {
+        "questionId": 2,
+        "options": [
+          {
+            "isSelected": false,
+            "optionId": 21
+          },
+          {
+            "isSelected": false,
+            "optionId": 22
+          }
+        ]
+      },
+      {
+        "questionId": 3,
+        "options": [
+          {
+            "isSelected": false,
+            "optionId": 31
+          },
+          {
+            "isSelected": false,
+            "optionId": 32
+          },
+          {
+            "isSelected": false,
+            "optionId": 33
+          }
+        ]
+      }
+    ],
+    "itemCategoryId": 0
+  },
+  "location": {
+    "name": "RC-R-1",
+    "orgUnitId": 54,
+    "locationId": 3145
+  }
+}

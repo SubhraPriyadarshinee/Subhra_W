@@ -1,0 +1,22 @@
+{
+  "messageId": "2323-2323",
+  "doorId": "077",
+  "receivingMethod": "SSTK",
+  "containerDetails": [
+    {
+      "containerTrackingId": "C3269800001000006",
+      "locationName": "A0002",
+      "containerItemsDetails": [
+        {
+          "itemNbr": 566956143,
+          "packTypeCode": "C",
+          "handlingMthdCode": "I",
+          "qty": 350,
+          "qtyUom": "EA",
+          "vnpkRatio": 2,
+          "whpkRatio": 2
+        }
+      ]
+    }
+  ]
+}

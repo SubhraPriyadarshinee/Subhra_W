@@ -1,0 +1,116 @@
+{
+  "scannedLabel": "3456789024",
+  "scannedLabelType": "SO",
+  "salesOrder": {
+    "soNumber": "3456789024",
+    "returnOrders": [
+      {
+        "roNumber": "106601873971391360",
+        "orderType": "MARKET_PLACE",
+        "channel": {
+          "name": "STORE_MP"
+        },
+        "lines": [
+          {
+            "lineNumber": 2,
+            "soLineNumber": 2,
+            "soLineId": 2,
+            "rcType": "MP",
+            "rcId": "null",
+            "returnInformation": {
+              "reason": "1000",
+              "ecommReasonCode": "1000",
+              "reasonDescription": "No Longer Wanted"
+            },
+            "carrierInformation": {
+              "id": "12",
+              "trackingNumber": "394139967158"
+            }
+          },
+          {
+            "lineNumber": 1,
+            "soLineNumber": 1,
+            "soLineId": 1,
+            "rcType": "MP",
+            "rcId": "null",
+            "returnInformation": {
+              "reason": "1000",
+              "ecommReasonCode": "1000",
+              "reasonDescription": "No Longer Wanted"
+            },
+            "carrierInformation": {
+              "id": "11",
+              "trackingNumber": "394139967157"
+            }
+          },
+          {
+            "lineNumber": 3,
+            "soLineNumber": 4,
+            "soLineId": 4,
+            "rcType": "MP",
+            "rcId": "null",
+            "returnInformation": {
+              "reason": "1000",
+              "ecommReasonCode": "1000",
+              "reasonDescription": "No Longer Wanted"
+            },
+            "carrierInformation": {
+              "id": "11",
+              "trackingNumber": "394139967157"
+            }
+          }
+        ]
+      }
+    ],
+    "lines": [
+      {
+        "lineNumber": 4,
+        "seller": {
+          "legacyId": "123123"
+        },
+        "channel": "SSTKU",
+        "trackingNumber": "1Z223456432134677",
+        "poNumber": "1805375328795",
+        "ordered": {
+          "quantity": 1
+        }
+      },
+      {
+        "lineNumber": 3,
+        "seller": {
+          "legacyId": "16216"
+        },
+        "channel": "SSTKU",
+        "trackingNumber": "1Z223456432134677",
+        "poNumber": "1805375328795",
+        "ordered": {
+          "quantity": 1
+        }
+      },
+      {
+        "lineNumber": 2,
+        "seller": {
+          "legacyId": "16216"
+        },
+        "channel": "SSTKU",
+        "trackingNumber": "1Z223456432134676",
+        "poNumber": "1805375328795",
+        "ordered": {
+          "quantity": 1
+        }
+      },
+      {
+        "lineNumber": 1,
+        "seller": {
+          "legacyId": "16216"
+        },
+        "channel": "SSTKU",
+        "trackingNumber": "1Z223456432134675",
+        "poNumber": "1805375328795",
+        "ordered": {
+          "quantity": 1
+        }
+      }
+    ]
+  }
+}

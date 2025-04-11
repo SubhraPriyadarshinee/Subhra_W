@@ -1,0 +1,188 @@
+{
+  "delivery": {
+    "deliveryNumber": 10000000001758,
+    "statusInformation": {
+      "operationalStatus": "ARV",
+      "status": "ARV"
+    },
+    "scheduled": "2024-06-06T05:00:54.330Z",
+    "arrivalTimeStamp": "2024-06-06T05:00:45.571Z"
+  },
+  "shipments": [
+    {
+      "documentId": "716284986030100_20240606_6030_DC_US",
+      "shipmentNumber": "716284986030100",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2024-06-06T05:00:52.311Z",
+      "shipmentDate": "2024-06-06",
+      "isDocumentDSCSA": "NONE",
+      "source": {
+        "number": "183020",
+        "numberType": "WALMART",
+        "type": "VENDOR",
+        "countryCode": "US",
+        "shipperName": "FRITO-LAY INC"
+      },
+      "destination": {
+        "type": "STORE",
+        "number": 100,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "trailerNumber": "MFCT3251850973",
+        "trailerSealNumber": "0000000906",
+        "loadNumber": "71628498",
+        "reportedDeliveryNumber": 10000000001758,
+        "shippingDate": "2022-03-09",
+        "carrierId": "WM"
+      },
+      "totalPacks": 1,
+      "additionalInfo": {
+        "totalMfcPacks": 1,
+        "totalMfcPallets": 1,
+        "bannerCode": "A1",
+        "palletCount": 1,
+        "unknownCaseCount": 0,
+        "mfcInvoiceNumbers": [
+          "2344344483"
+        ],
+        "totalCaseCount": 50,
+        "totalMfcQty": 50.0,
+        "floorLoadedCases": 0,
+        "totalExpected": [
+          {
+            "quantity": 50.0,
+            "uom": "EA"
+          }
+        ],
+        "fullCaseCount": 50,
+        "regionCode": "05",
+        "timeZoneCode": "EST",
+        "totalPallets": 1,
+        "mfcInvoices": [
+          "2344344483"
+        ],
+        "marketCode": "056",
+        "bannerDescription": "WM Supercenter",
+        "breakPackCount": 0
+      }
+    }
+  ],
+  "packs": [
+    {
+      "documentPackId": "716284986030100_20240606_6030_DC_US_7457752987941",
+      "documentId": "716284986030100_20240606_6030_DC_US",
+      "packNumber": "002482608329812546",
+      "palletNumber": "002482608329812546",
+      "invoice": {
+        "invoiceNumber": "2344344483"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "legacyDetail": {
+        "packType": "MFC"
+      },
+      "shipmentNumber": "716284986030100",
+      "physicalDetail": {
+        "weight": 4.1,
+        "weightUom": "LB"
+      },
+      "labelType": "CASE_PACK",
+      "items": [
+        {
+          "reportedProductId": "627281588",
+          "reportedProductIdType": "IN",
+          "itemNumber": 627281588,
+          "gtin": "00859539007048",
+          "itemDescription": "WNDFL 12Z KERNL PIST",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "documentSequenceNumber": 1,
+          "inventoryDetail": {
+            "reportedQuantity": 50.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 50.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00859539007048",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "2344344483",
+            "invoiceLineNumber": 1
+          },
+          "replenishmentCode": "MARKET_FULFILLMENT_CENTER",
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "financialReportingCountry": "UNKNOWN"
+          },
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          }
+        }
+      ],
+      "multiskuPack": false,
+      "partialPack": false,
+      "additionalInfo": {
+        "packDSCSA": "NONE"
+      }
+    }
+  ],"items": [
+  {
+    "consumableGTIN": "00859539007048",
+    "orderableGTIN": "10192371078980",
+    "warehousePackGTIN": "00192371078983",
+    "supplierStockId": "M7162501",
+    "palletTi": 12,
+    "palletHi": 10,
+    "conveyable": false,
+    "itemTypeCode": "37",
+    "vendorDepartment": "9",
+    "size": "1.0",
+    "warehousePackQuantity": 1,
+    "orderableQuantity": 6,
+    "descriptions": [
+      "TM RCKTBLLZ SOFT 12"
+    ],
+    "itemAdditonalInformation": {
+      "isNewItem": true,
+      "images": {
+        "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/5d5429c9-55b9-4196-a0e5-78715995d05f.97766f9849cd52f0ba3155e7486e5589.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+        "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/5d5429c9-55b9-4196-a0e5-78715995d05f.97766f9849cd52f0ba3155e7486e5589.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+        "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/5d5429c9-55b9-4196-a0e5-78715995d05f.97766f9849cd52f0ba3155e7486e5589.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+        "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/5d5429c9-55b9-4196-a0e5-78715995d05f.97766f9849cd52f0ba3155e7486e5589.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+        "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/5d5429c9-55b9-4196-a0e5-78715995d05f.97766f9849cd52f0ba3155e7486e5589.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+      },
+      "variableWeightIndicator": false,
+      "vnpkWeightUomCode": "LB",
+      "warehousePackSellAmt": 11.02,
+      "baseDivisionCode": "WM",
+      "vnpkCubeQty": 0.265,
+      "pesticideIndicator": "N",
+      "financialReportingGroupCode": "US",
+      "vnpkCubeUom": "CF",
+      "mfcEnabled": true,
+      "replenishmentGroupNbr": 100802893,
+      "unitCostAmt": 10.75,
+      "chemicalIndicator": "N",
+      "vnpkWeightQty": 9.0,
+      "aerosolIndicator": "N",
+      "deptCategoryNbr": 1519,
+      "deptSubcatgNbr" :"28897"
+    },
+    "number": 627281588,
+    "pluNumber" : 94067
+  }
+]
+}

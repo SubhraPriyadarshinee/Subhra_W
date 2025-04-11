@@ -1,0 +1,245 @@
+[
+  {
+    "labelId": "7a9fd380-9d51-4611-b516-a35786258a12",
+    "printerType": "ZEBRA",
+    "formatId": "case_lpn_format",
+    "formatName": "case_lpn_format",
+    "labelIdentifier": "null",
+    "ttlInHours": 504,
+    "clientId": "RCV-ACL-PRE",
+    "userId": "RCV-ACL-PRE",
+    "data": [
+      {
+        "key": "POLINE",
+        "value": "8"
+      },
+      {
+        "key": "PRINTER",
+        "value": ""
+      },
+      {
+        "key": "POCODE",
+        "value": "AD"
+      },
+      {
+        "key": "HAZMAT",
+        "value": "null"
+      },
+      {
+        "key": "QTY",
+        "value": ""
+      },
+      {
+        "key": "PACK",
+        "value": "2"
+      },
+      {
+        "key": "DESC1",
+        "value": "My pallet"
+      },
+      {
+        "key": "DESC2",
+        "value": "REPLACE 550485664"
+      },
+      {
+        "key": "DSDC",
+        "value": ""
+      },
+      {
+        "key": "PACKTYPE",
+        "value": "CP"
+      },
+      {
+        "key": "POEVENT",
+        "value": "POS REPLEN"
+      },
+      {
+        "key": "VENDORID",
+        "value": "11520-2"
+      },
+      {
+        "key": "DESTINATION",
+        "value": ""
+      },
+      {
+        "key": "SIZE",
+        "value": "1.0EA"
+      },
+      {
+        "key": "REPRINT",
+        "value": ""
+      },
+      {
+        "key": "CHANNEL",
+        "value": "DIST"
+      },
+      {
+        "key": "FULLUSERID",
+        "value": "SYS-ACL"
+      },
+      {
+        "key": "COLOR",
+        "value": "NONE"
+      },
+      {
+        "key": "PO",
+        "value": "3615852071"
+      },
+      {
+        "key": "LABELDATE",
+        "value": "=LABELTIMESTAMP="
+      },
+      {
+        "key": "STOREZONE",
+        "value": "B"
+      },
+      {
+        "key": "ITEM",
+        "value": "566051127"
+      },
+      {
+        "key": "EVENTCHAR",
+        "value": ""
+      },
+      {
+        "key": "UPCBAR",
+        "value": "00074451115200"
+      },
+      {
+        "key": "LPN",
+        "value": "null"
+      },
+      {
+        "key": "DEPT",
+        "value": "79"
+      },
+      {
+        "key": "CPQTY",
+        "value": "2"
+      },
+      {
+        "key": "LBLPRNT_MODE",
+        "value": "0"
+      }
+    ],
+    "labelData": [
+      {
+        "key": "POLINE",
+        "value": "8"
+      },
+      {
+        "key": "PRINTER",
+        "value": ""
+      },
+      {
+        "key": "POCODE",
+        "value": "AD"
+      },
+      {
+        "key": "HAZMAT",
+        "value": "null"
+      },
+      {
+        "key": "QTY",
+        "value": ""
+      },
+      {
+        "key": "PACK",
+        "value": "2"
+      },
+      {
+        "key": "DESC1",
+        "value": "My pallet"
+      },
+      {
+        "key": "DESC2",
+        "value": "REPLACE 550485664"
+      },
+      {
+        "key": "DSDC",
+        "value": ""
+      },
+      {
+        "key": "PACKTYPE",
+        "value": "CP"
+      },
+      {
+        "key": "POEVENT",
+        "value": "POS REPLEN"
+      },
+      {
+        "key": "VENDORID",
+        "value": "11520-2"
+      },
+      {
+        "key": "DESTINATION",
+        "value": ""
+      },
+      {
+        "key": "SIZE",
+        "value": "1.0EA"
+      },
+      {
+        "key": "REPRINT",
+        "value": ""
+      },
+      {
+        "key": "CHANNEL",
+        "value": "DIST"
+      },
+      {
+        "key": "FULLUSERID",
+        "value": "SYS-ACL"
+      },
+      {
+        "key": "COLOR",
+        "value": "NONE"
+      },
+      {
+        "key": "PO",
+        "value": "3615852071"
+      },
+      {
+        "key": "LABELDATE",
+        "value": "=LABELTIMESTAMP="
+      },
+      {
+        "key": "STOREZONE",
+        "value": "B"
+      },
+      {
+        "key": "ITEM",
+        "value": "566051127"
+      },
+      {
+        "key": "EVENTCHAR",
+        "value": ""
+      },
+      {
+        "key": "UPCBAR",
+        "value": "00074451115200"
+      },
+      {
+        "key": "LPN",
+        "value": "null"
+      },
+      {
+        "key": "DEPT",
+        "value": "79"
+      },
+      {
+        "key": "CPQTY",
+        "value": "2"
+      },
+      {
+        "key": "LBLPRNT_MODE",
+        "value": "0"
+      }
+    ],
+    "formattedData": "^XA^PW660^LH0,0^LS0^LT12^FWn,0^FX ==== Store Friendly Shipping ====^FX === HORIZONTAL LINES ===^FO12,436,0^GB609,3,2^FS^FO12,454,0^GB546,3,2^FS^FO556,510,0^GB64,3,2^FS^FO12,496,0^GB232,3,2^FS^FO242,520,0^GB313,3,2^FS^FO12,560,0^GB478,3,2^FS^FX === VERTICAL LINES ===^FO144,438,0^GB3,19,2^FS^FO507,458,0^GB3,63,2^FS^FX === LABEL BARCODE ===^FO65,28^BY3^BCn,240,n,,,A^FD=LPN=^FS^FX === DESC1 ===^FT142,290,0^CF0,20,30^FDMINNIE BNCR RCKR GRL^FS^FX === DESC2 ===^FT142,310,0^CF0,20,30^FDREPLACE 550485664^FS^FX === CPQTY ===^FT142,330,0^CF0,20,30^FDQTY^FS^FT200,330,0^CF0,20,30^FD2^FS^FX === ITEM ===^FT290,330,0^CF0,20,30^FD566051127^FS^FX === HAZMAT ===^FT53,390,0^CF0,70,80^FDnull^FS^FX === UPC BARCODE ===^FO188,345^BY2^BCn,61,n,,,A^FD00074451115200^FS^FX === DEPT ===^FT590,320,0^CF0,50,50^FD79^FS^FX === STOREZONE ===^FT474,370,0^CF0,60,70^FDB^FS^FX === EVENTCHAR ===^FT510,370,0^CF0,60,70^FD^FS^FX === EVENTCHAR ===^FT540,370,0^CF0,60,70^FD^FS^FX === EVENTCHAR ===^FT570,370,0^CF0,60,70^FD^FS^FX === EVENTCHAR ===^FT510,400,0^CF0,60,70^FD^FS^FX === EVENTCHAR ===^FT540,400,0^CF0,60,70^FD^FS^FX === EVENTCHAR ===^FT570,400,0^CF0,60,70^FD^FS^FX === PO EVENT ===^FT474,410,0^CF0,25,25^FDPOS REPLEN^FS^FX === REPRINT ===^FT50,451,0^CF0,15,17^FD^FS^FX === PO ===^FT208,451,0^CF0,15,17^FDPO^FS^FT232,451,0^CF0,15,17^FD3615852071^FS^FX === POLINE ===^FT344,451,0^CF0,15,17^FDLn^FS^FT364,451,0^CF0,15,17^FD8^FS^FX === COLOR ===^FT50,475,0^CF0,20,25^FDNONE^FS^FX === SIZE ===^FT175,475,0^CF0,20,25^FD1.0EA^FS^FX === LABELDATE ===^FT50,492,0^CF0,20,25^FD=LABELTIMESTAMP=^FS^FX === POCODE ===^FT260,492,0^CF0,20,25^FDAD^FS^FX === UPCBAR ===^FT280,475,0^CF0,12,15^FDUPC^FS^FT310,475,0^CF0,20,25^FD00074451115200^FS^FX === VENDORID ===^FT266,518,0^CF0,30,27^FD11520-2^FS^FX === PACK ===^FT512,475,0^CF0,12,15^FDPACK^FS^FT512,515,0^CF0,50,40^FD2^FS^FX === PACKTYPE ===^FT585,490,0^CF0,60,50^FDCP^FS^FX === LPN ===^FT70,553,0^CF0,40,37^FD=LPN=^FS^FX === CHANNEL ===^FT530,559,0^CF0,50,47^FDDIST^FS^FX === PRINTER ===^FT50,580,0^CF0,25,30^FD^FS^FX === FULLUSERID ===^FT170,580,0^CF0,25,30^FDSYS-ACL^FS^FX === DESTINATION ===^FT430,580,0^CF0,25,30^FD^FS^XZ",
+    "printableData": "^XA^PW660^LH0,0^LS0^LT12^FWn,0^FX ==== Store Friendly Shipping ====^FX === HORIZONTAL LINES ===^FO12,436,0^GB609,3,2^FS^FO12,454,0^GB546,3,2^FS^FO556,510,0^GB64,3,2^FS^FO12,496,0^GB232,3,2^FS^FO242,520,0^GB313,3,2^FS^FO12,560,0^GB478,3,2^FS^FX === VERTICAL LINES ===^FO144,438,0^GB3,19,2^FS^FO507,458,0^GB3,63,2^FS^FX === LABEL BARCODE ===^FO65,28^BY3^BCn,240,n,,,A^FD=LPN=^FS^FX === DESC1 ===^FT142,290,0^CF0,20,30^FDMINNIE BNCR RCKR GRL^FS^FX === DESC2 ===^FT142,310,0^CF0,20,30^FDREPLACE 550485664^FS^FX === CPQTY ===^FT142,330,0^CF0,20,30^FDQTY^FS^FT200,330,0^CF0,20,30^FD2^FS^FX === ITEM ===^FT290,330,0^CF0,20,30^FD566051127^FS^FX === HAZMAT ===^FT53,390,0^CF0,70,80^FDnull^FS^FX === UPC BARCODE ===^FO188,345^BY2^BCn,61,n,,,A^FD00074451115200^FS^FX === DEPT ===^FT590,320,0^CF0,50,50^FD79^FS^FX === STOREZONE ===^FT474,370,0^CF0,60,70^FDB^FS^FX === EVENTCHAR ===^FT510,370,0^CF0,60,70^FD^FS^FX === EVENTCHAR ===^FT540,370,0^CF0,60,70^FD^FS^FX === EVENTCHAR ===^FT570,370,0^CF0,60,70^FD^FS^FX === EVENTCHAR ===^FT510,400,0^CF0,60,70^FD^FS^FX === EVENTCHAR ===^FT540,400,0^CF0,60,70^FD^FS^FX === EVENTCHAR ===^FT570,400,0^CF0,60,70^FD^FS^FX === PO EVENT ===^FT474,410,0^CF0,25,25^FDPOS REPLEN^FS^FX === REPRINT ===^FT50,451,0^CF0,15,17^FD^FS^FX === PO ===^FT208,451,0^CF0,15,17^FDPO^FS^FT232,451,0^CF0,15,17^FD3615852071^FS^FX === POLINE ===^FT344,451,0^CF0,15,17^FDLn^FS^FT364,451,0^CF0,15,17^FD8^FS^FX === COLOR ===^FT50,475,0^CF0,20,25^FDNONE^FS^FX === SIZE ===^FT175,475,0^CF0,20,25^FD1.0EA^FS^FX === LABELDATE ===^FT50,492,0^CF0,20,25^FD=LABELTIMESTAMP=^FS^FX === POCODE ===^FT260,492,0^CF0,20,25^FDAD^FS^FX === UPCBAR ===^FT280,475,0^CF0,12,15^FDUPC^FS^FT310,475,0^CF0,20,25^FD00074451115200^FS^FX === VENDORID ===^FT266,518,0^CF0,30,27^FD11520-2^FS^FX === PACK ===^FT512,475,0^CF0,12,15^FDPACK^FS^FT512,515,0^CF0,50,40^FD2^FS^FX === PACKTYPE ===^FT585,490,0^CF0,60,50^FDCP^FS^FX === LPN ===^FT70,553,0^CF0,40,37^FD=LPN=^FS^FX === CHANNEL ===^FT530,559,0^CF0,50,47^FDDIST^FS^FX === PRINTER ===^FT50,580,0^CF0,25,30^FD^FS^FX === FULLUSERID ===^FT170,580,0^CF0,25,30^FDSYS-ACL^FS^FX === DESTINATION ===^FT430,580,0^CF0,25,30^FD^FS^XZ",
+    "version": 1,
+    "language": "ENGLISH",
+    "createdTimeStamp": "2020-04-28T06:07:13.911Z"
+  }
+]

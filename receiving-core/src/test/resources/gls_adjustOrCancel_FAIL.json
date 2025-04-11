@@ -1,0 +1,15 @@
+{
+	"status": "FAIL",
+	"header": {
+		"headerAttributes": {}
+	},
+	"errors": [
+		{
+			"code": "GLS_RCV_1024",
+			"description": "Internal Error, Please reach out to Support team. Error: Adjustment failed for pallet 97366027",
+			"info": "VTR/RCV-Correction failed",
+			"severity": "ERROR"
+		}
+	],
+	"payload": null
+}

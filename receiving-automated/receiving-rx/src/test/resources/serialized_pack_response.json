@@ -1,0 +1,17 @@
+[
+          {
+            "gtin": "00368180121015",
+            "expiryDate": "2025-12-24",
+            "serial": "abc",
+            "trackingStatus": "ValidationSuccessful",
+            "uom": "EA",
+            "palletNumber": "",
+            "packNumber": "00123456789562356895656",
+            "lotNumber": "00L032C09A",
+            "receivingStatus": "1",
+            "isPartialPack": false,
+            "isMultiskuPack": false,
+            "packUnitSerialQty": 1,
+            "packUnitSerialDetails": []
+          }
+        ]

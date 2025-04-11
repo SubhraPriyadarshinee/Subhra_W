@@ -1,0 +1,35 @@
+{
+  "deliveryNumber": 550478600022427,
+  "statusInformation": {
+    "status": "SCH",
+    "operationalStatus": "SCH"
+  },
+  "type": "LIVE",
+  "appointmentStartDateTime": "2024-05-08T11:00:30.552Z",
+  "appointmentEndDateTime": "2024-05-18T11:00:30.552Z",
+  "arrivalTime": "2024-05-08T11:12:57.578Z",
+  "loadInformation": {
+    "number": "99112261",
+    "sourceDCNumber": "6071",
+    "trailerInformation": {
+      "sealNumber": "SL54072",
+      "trailerId": "T99112261"
+    }
+  },
+  "lifeCycleInformation": [
+  ],
+  "carrierId": "WM",
+  "shipments": [
+    {
+      "documentId": "NI-61060355504_20230602_6035_DC_US",
+      "shipmentNumber": "9911226160715504",
+      "documentIngestTime": "2024-05-08T11:00:27.154Z",
+      "totalPacks": 4,
+      "documentType": "ASN",
+      "source": {
+        "number": "5132321",
+        "type": "VENDOR"
+      }
+    }
+  ]
+}

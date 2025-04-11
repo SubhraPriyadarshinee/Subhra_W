@@ -1,0 +1,16 @@
+{
+    "itemNumber" : "568140989",
+    "description" : "SRLN TRITIP RST",
+    "deptNumber" : "93",
+    "vendorNbr" : 318340,
+    "gtin" : "25985100000",
+    "whpkQty" : 1,
+    "vnpkQty" : 1,
+    "ti" : 4,
+    "hi" : 16,
+    "vendorPackCost" : 240,
+    "whpkSell" : 31.28,
+    "vendorPackWeight" : 6,
+    "vendorPackCubeQty" : 1.348,
+    "poLine" : 18
+}

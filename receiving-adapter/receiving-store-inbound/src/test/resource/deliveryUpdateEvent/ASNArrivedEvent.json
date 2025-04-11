@@ -1,0 +1,12 @@
+{
+  "eventType": "ARRIVED",
+  "shipmentNumber": "550502057000668",
+  "deliveryNumber": "550478600022427",
+  "countryCode": "US",
+  "siteNumber": "5504",
+  "shipmentCountry": "US",
+  "shipmentSourceNumber": "7014",
+  "shipmentDocumentId": "NI-61060355504_20230602_6035_DC_US",
+  "shipmentDocumentIdUrl": "https://gls-atlas-gdm-core-wm-cell002-qa.us.walmart.com/api/shipments/0348859870145504_20230528_7014_DC_US",
+  "shipmentDocumentType":"ASN"
+}

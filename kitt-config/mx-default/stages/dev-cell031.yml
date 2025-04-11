@@ -1,0 +1,66 @@
+deploy:
+  stages:
+    - name: dev-cell031
+      helm:
+        values:
+          env:
+            JAVA_OPTS: >-
+              -Xms2048M
+              -Xmx2048M
+              -XX:+UseParNewGC
+              -XX:+UseConcMarkSweepGC
+              -XX:NewSize=512M
+              -XX:MaxMetaspaceSize=256M
+              -Djsse.enableSNIExtension=true
+              -Druntime.context.environmentType=dev
+              -Druntime.context.environment=dev-mx
+              -Druntime.context.appName=receiving-api
+              -Druntime.context.system.property.override.enabled=true
+              -Dscm.snapshot.enabled=true -Dscm.root.dir=/tmp/scm
+              -Dscm.print.summary.onchange=true
+              -Dscm.print.detailed.summary=true
+              -Dspring.config.use-legacy-processing=true
+              -Dspring.main.allow-bean-definition-overriding=true
+              -Dcom.ibm.mq.cfg.useIBMCipherMappings=false
+              -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+              -DDATACENTER={{$.kittExec.currentCluster.zone}}
+              -DstageName=dev
+              -Dplatform=wcnp
+              -Dio.strati.RuntimeContext=io.strati.impl.runtime.context.RuntimeContextEnv
+              -Dcom.walmart.platform.metrics.impl.type=MICROMETER
+              -Dcom.walmart.platform.txnmarking.otel.type=LOGGING
+              -Dcom.walmart.platform.txnmarking.otel.port=80
+              -Dcom.walmart.platform.txnmarking.otel.host=walmotelcol-deployment.walmotelcol.scus-stage-atracestore1.cluster.k8s.us.walmart.net
+              -Dcom.walmart.platform.telemetry.otel.enabled=true
+              -Dcom.walmart.platform.logging.profile=OTEL
+              -Dspring.main.allow-circular-references=true
+
+          metadata:
+            labels:
+              strati.appkey: ATLASRECEIVING
+              strati.env: dev-mx
+              wm.app: ATLASRECEIVING
+              wm.env: dev-mx
+            annotations:
+              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"},{"Path":"^/.*"}]'
+              sidecar.istio.io/inject: "true"
+              traffic.sidecar.istio.io/excludeOutboundPorts: 8080
+          min:
+            cpu: 2000m
+            memory: 2048Mi
+          max:
+            cpu: 2000m
+            memory: 2048Mi
+          scaling:
+            enabled: false
+            min: 1
+            max: 1
+  postDeploy:
+    - concord:
+        name: executeDITs
+        action: start
+        org: Logistics
+        project: managedservlet-atlas-receiving
+        repo: uwms-receiving-dit
+        entryPoint: default
+        sync: true

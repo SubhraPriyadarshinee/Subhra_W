@@ -1,0 +1,351 @@
+package com.walmart.move.nim.receiving.data;
+
+public class MockFeatureFlags {
+  public static final String VALID_DATA =
+      "{\n"
+          + "  \"6561\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\"\n"
+          + "  },\n"
+          + "  \"6938\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\"\n"
+          + "  },\n"
+          + "  \"99999\": {\n"
+          + "    \"putawayHandler\": \"WitronPutawayHandler\"\n"
+          + "  },\n"
+          + "  \"default\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\"\n"
+          + "  }\n"
+          + "}";
+
+  public static final String TENANT_EMAIL_DATA =
+      "{\n"
+          + "  \"6561\": {\n"
+          + "    \"emailIds\": [\"robin.kumar@walmart.com\",\"sairajiv.singuluri@walmart.com\"]\n"
+          + "  },\n"
+          + "  \"6938\": {\n"
+          + "   \"emailIds\": [\"sairajiv.singuluri@walmart.com\"]\n"
+          + "  },\n"
+          + "  \"6020\": {\n"
+          + "    \"emailIds\": [\"robin.kumar@walmart.com\"]\n"
+          + "  },\n"
+          + "  \"default\": {\n"
+          + "    \"emailIds\": [\"robin.kumar@walmart.com\"]\n"
+          + "  }\n"
+          + "}";
+
+  public static final String MISSING_DEFAULT_DATA =
+      "{\n"
+          + "  \"6561\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\"\n"
+          + "  },\n"
+          + "  \"6938\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\"\n"
+          + "  },\n"
+          + "  \"99999\": {\n"
+          + "    \"putawayHandler\": \"WitronPutawayHandler\"\n"
+          + "  }\n"
+          + "}";
+
+  public static final String INVALID_DATA =
+      "{\n"
+          + "  \"6561\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\"\n"
+          + "  },\n"
+          + "  \"6938\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\"\n"
+          + "  ,\n"
+          + "  \"99999\": {\n"
+          + "    \"putawayHandler\": \"WitronPutawayHandler\"\n"
+          + "  },\n"
+          + "  \"default\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\"\n"
+          + "  }\n"
+          + " ";
+
+  public static final String VALID_DATA_PO_CONFIRMATION =
+      "{\n"
+          + "  \"6561\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\"\n"
+          + "  },\n"
+          + "  \"6938\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\"\n"
+          + "  },\n"
+          + "  \"99999\": {\n"
+          + "    \"putawayHandler\": \"WitronPutawayHandler\"\n"
+          + "  },\n"
+          + "  \"32612\": {\n"
+          + "    \"poConfirmationEnabled\": \"true\"\n"
+          + "  },\n"
+          + "  \"default\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\"\n"
+          + "  }\n"
+          + "}";
+
+  public static final String VALID_DATA_ITEM_CATALOG =
+      "{\n"
+          + "  \"6561\": {\n"
+          + "    \"isItemCatalogEnabled\": \"true\"\n"
+          + "  },\n"
+          + "  \"6938\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\"\n"
+          + "  },\n"
+          + "  \"99999\": {\n"
+          + "    \"putawayHandler\": \"WitronPutawayHandler\"\n"
+          + "  },\n"
+          + "  \"32818\": {\n"
+          + "    \"isItemCatalogEnabled\": \"true\"\n"
+          + "  },\n"
+          + "  \"default\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\"\n"
+          + "  }\n"
+          + "}";
+
+  public static final String VALID_DATA_USE_FBQ_IN_CBR =
+      "{\n"
+          + "  \"6561\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\"\n"
+          + "  },\n"
+          + "  \"6938\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\"\n"
+          + "  },\n"
+          + "  \"99999\": {\n"
+          + "    \"putawayHandler\": \"WitronPutawayHandler\"\n"
+          + "  },\n"
+          + "  \"32623\": {\n"
+          + "    \"useFbqInCbr\": \"true\"\n"
+          + "  },\n"
+          + "  \"default\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\"\n"
+          + "  }\n"
+          + "}";
+
+  public static final String DELIVERY_ITEM_OVERRIDE_FLAG =
+      "{\n"
+          + "  \"6561\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\",\n"
+          + "    \"putOnHoldService\": \"DefaultPutOnHoldService\",\n"
+          + "    \"deliveryEventHandler\": \"defaultDeliveryEventProcessor\"\n"
+          + "  },\n"
+          + "  \"6938\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\",\n"
+          + "    \"putOnHoldService\": \"DefaultPutOnHoldService\",\n"
+          + "    \"deliveryEventHandler\": \"defaultDeliveryEventProcessor\"\n"
+          + "  },\n"
+          + "  \"9610\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\",\n"
+          + "    \"putOnHoldService\": \"DefaultPutOnHoldService\",\n"
+          + "    \"deliveryEventHandler\": \"endgameDeliveryEventProcessor\"\n"
+          + "  },\n"
+          + "  \"32612\": {\n"
+          + "    \"putawayHandler\": \"WitronPutawayHandler\",\n"
+          + "    \"putOnHoldService\": \"WitronPutOnHoldService\",\n"
+          + "    \"deliveryEventHandler\": \"endgameDeliveryEventProcessor\",\n"
+          + "    \"poConfirmationEnabled\": \"true\",\n"
+          + "    \"newItemAlertEnabled\": \"true\",\n"
+          + "    \"dcTimeZone\": \"US/Central\",\n"
+          + "    \"deliveryItemOverrideEnabled\": \"true\"\n"
+          + "  },\n"
+          + "  \"32623\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\",\n"
+          + "    \"deliveryEventHandler\": \"defaultDeliveryEventProcessor\",\n"
+          + "    \"putOnHoldService\": \"DefaultPutOnHoldService\",\n"
+          + "    \"poConfirmationEnabled\": \"true\",\n"
+          + "    \"useFbqInCbr\": \"true\"\n"
+          + "  },\n"
+          + "  \"32987\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\",\n"
+          + "    \"putOnHoldService\": \"DefaultPutOnHoldService\",\n"
+          + "    \"deliveryEventHandler\": \"defaultDeliveryEventProcessor\"\n"
+          + "  },\n"
+          + "  \"54321\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\",\n"
+          + "    \"putOnHoldService\": \"DefaultPutOnHoldService\",\n"
+          + "    \"deliveryEventHandler\": \"endgameDeliveryEventProcessor\"\n"
+          + "  },\n"
+          + "  \"default\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\",\n"
+          + "    \"putOnHoldService\": \"DefaultPutOnHoldService\",\n"
+          + "    \"dcTimeZone\": \"UTC\",\n"
+          + "    \"deliveryEventHandler\": \"defaultDeliveryEventProcessor\"\n"
+          + "  }\n"
+          + "}";
+
+  public static final String VALID_ENABLE_BOL_WEIGHT_CHECK =
+      "{\n"
+          + "  \"32612\": {\n"
+          + "    \"enableBOLWeightCheck\": \"true\"\n"
+          + "  },\n"
+          + "  \"default\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\"\n"
+          + "  }\n"
+          + "}";
+
+  public static final String FEATURE_FLAG =
+      "{\n"
+          + "  \"32897\": {\n"
+          + "    \"enableWfmPublishInstruction\": \"false\",\n"
+          + "    \"moveDestForNonConDockTag\": \"PSN\",\n"
+          + "    \"moveFloorLineDestForNonConDockTag\": \"EFLCP08\",\n"
+          + "    \"sorter.contract.version\": 2\n"
+          + "  },\n"
+          + "  \"default\": {\n"
+          + "    \"enableWfmPublishInstruction\": \"true\",\n"
+          + "    \"enablePublishDCFin\": \"true\"\n"
+          + "  },\n"
+          + "  \"4026\": {\n"
+          + "    \"BASE_DIV_CODE\": \"SAMS\"\n"
+          + "  }\n"
+          + "}";
+  public static final String FEATURE_FLAG_INVALID_SYNTAX =
+      "{\n"
+          + "  \"32897\": {\n"
+          + "    \"enableWfmPublishInstruction\": \"false\"\n"
+          + "    \"moveDestForNonConDockTag\": \"PSN\"\n"
+          + "    \"moveFloorLineDestForNonConDockTag\": \"EFLCP08\"\n"
+          + "  },\n"
+          + "  \"default\": {\n"
+          + "    \"enableWfmPublishInstruction\": \"true\",\n"
+          + "    \"enablePublishDCFin\": \"true\"\n"
+          + "  }\n"
+          + "}";
+
+  public static final String VALID_DATA_PRINT_LABEL_TTL_DEFAULT_NODE =
+      "{\n"
+          + "    \"32612\": {\n"
+          + "        \"printLabelTtlHrs\":168\n"
+          + "    },\n"
+          + "    \"default\": {\n"
+          + "        \"printLabelTtlHrs\":72\n"
+          + "    }\n"
+          + "}";
+  public static final String VALID_CCM_VALUE =
+      "{\n"
+          + "  \"32612\": {\n"
+          + "    \"putawayHandler\": \"WitronPutawayHandler\",\n"
+          + "    \"putOnHoldService\": \"WitronPutOnHoldService\",\n"
+          + "    \"updateInstructionHandler\": \"WitronUpdateInstructionHandler\"\n"
+          + "  },\n"
+          + "  \"default\": {\n"
+          + "    \"putawayHandler\": \"DefaultPutawayHandler\",\n"
+          + "    \"putOnHoldService\": \"DefaultPutOnHoldService\"\n"
+          + "  }\n"
+          + "}";
+
+  public static final String VALID_CCM_VALUE_BY_MARKET_TYPE =
+      "{\n"
+          + "   \"inventoryAdjustmentProcessor\": \"mfcInventoryAdjustmentProcessor\",\n"
+          + "   \"kafkaInventoryAdjustmentProcessor\": \"mfcInventoryAdjustmentProcessor\",\n"
+          + "   \"enable.decant.receipt\": \"false\",\n"
+          + "   \"containerCreateProcessor\": \"v2StoreInboundContainerCreate\",\n"
+          + "   \"enable.ngr.finalization\": \"true\"\n"
+          + "}";
+
+  public static final String MARKET_FEATURE_CONFIG_JSON =
+      "{\n"
+          + "   \"STORE\": {\n"
+          + "      \"facilityTypes\": [\n"
+          + "         \"STORE\"\n"
+          + "      ],\n"
+          + "      \"problemCreationOnUnloadFor\": [\n"
+          + "         \"STORE\"\n"
+          + "      ],\n"
+          + "      \"deliveryStatusHandler\": \"kafkaDeliveryStatusProcessorV2\",\n"
+          + "      \"osdrService\": \"oSDRService\",\n"
+          + "      \"completeDeliveryProcessor\": \"mfcCompleteDeliveryProcessor\",\n"
+          + "      \"instructionSearchRequestHandler\": \"trailerOpenInstructionRequestHandler\",\n"
+          + "      \"containerCreateProcessor\": \"v3StoreInboundContainerCreate\",\n"
+          + "      \"deliveryEventHandler\": \"storeInboundMixedPalletProcessor\",\n"
+          + "      \"postDeliveryCompleteFlowEvent\": \"deliveryCompleteFlowExecutor\",\n"
+          + "      \"deliveryUnloadingProcessor\": \"storeDeliveryUnloadingProcessorV2\",\n"
+          + "      \"problemRegistrationService\": \"loadQualityProblemService\"\n"
+          + "   },\n"
+          + "   \"MFC\": {\n"
+          + "      \"facilityTypes\": [\n"
+          + "         \"MFC\"\n"
+          + "      ],\n"
+          + "      \"inventoryAdjustmentProcessor\": \"mfcInventoryAdjustmentProcessor\",\n"
+          + "      \"kafkaInventoryAdjustmentProcessor\": \"mfcInventoryAdjustmentProcessor\",\n"
+          + "      \"deliveryStatusHandler\": \"kafkaDeliveryStatusProcessor\",\n"
+          + "      \"osdrService\": \"mfcOSDRService\",\n"
+          + "      \"completeDeliveryProcessor\": \"mfcCompleteDeliveryProcessor\",\n"
+          + "      \"instructionSearchRequestHandler\": \"trailerOpenInstructionRequestHandler\",\n"
+          + "      \"containerCreateProcessor\": \"v2StoreInboundContainerCreate\",\n"
+          + "      \"deliveryEventHandler\": \"storeInboundMixedPalletProcessor\",\n"
+          + "      \"postDeliveryCompleteFlowEvent\": \"deliveryCompleteFlowExecutor\",\n"
+          + "      \"deliveryUnloadingProcessor\": \"storeDeliveryUnloadingProcessor\"\n"
+          + "   },\n"
+          + "   \"default\": {\n"
+          + "      \"facilityTypes\": [\n"
+          + "         \"MFC\"\n"
+          + "      ],\n"
+          + "      \"inventoryAdjustmentProcessor\": \"mfcInventoryAdjustmentProcessor\",\n"
+          + "      \"kafkaInventoryAdjustmentProcessor\": \"mfcInventoryAdjustmentProcessor\",\n"
+          + "      \"deliveryStatusHandler\": \"kafkaDeliveryStatusProcessor\",\n"
+          + "      \"osdrService\": \"mfcOSDRService\",\n"
+          + "      \"completeDeliveryProcessor\": \"mfcCompleteDeliveryProcessor\",\n"
+          + "      \"instructionSearchRequestHandler\": \"trailerOpenInstructionRequestHandler\",\n"
+          + "      \"containerCreateProcessor\": \"v2StoreInboundContainerCreate\",\n"
+          + "      \"deliveryEventHandler\": \"storeInboundMixedPalletProcessor\",\n"
+          + "      \"postDeliveryCompleteFlowEvent\": \"deliveryCompleteFlowExecutor\",\n"
+          + "      \"deliveryUnloadingProcessor\": \"storeDeliveryUnloadingProcessor\"\n"
+          + "   }\n"
+          + "}";
+
+  public static final String MARKET_FLAGS_CONFIG_JSON =
+      "{\n"
+          + "   \"STORE\": {\n"
+          + "      \"enable.decant.receipt\": \"false\",\n"
+          + "      \"enable.store.pallet.osdr\": \"true\",\n"
+          + "      \"enable.store.pallet.publish\": \"false\",\n"
+          + "      \"enable.inventory.container.removal\": \"false\",\n"
+          + "      \"async.delivery.unload.processing\": \"true\",\n"
+          + "      \"enable.on.scan.receipt\": true\n"
+          + "   },\n"
+          + "   \"MFC\": {\n"
+          + "      \"enable.decant.receipt\": \"false\",\n"
+          + "      \"enable.store.pallet.osdr\": \"false\",\n"
+          + "      \"enable.store.pallet.publish\": \"false\",\n"
+          + "      \"enable.inventory.container.removal\": \"true\",\n"
+          + "      \"enable.store.finalization.event\": \"true\",\n"
+          + "      \"enable.mfc.pallet.publish\": \"true\"\n"
+          + "   },\n"
+          + "   \"default\": {\n"
+          + "      \"enable.decant.receipt\": \"false\",\n"
+          + "      \"enable.store.pallet.osdr\": \"false\",\n"
+          + "      \"enable.store.pallet.publish\": \"false\",\n"
+          + "      \"enable.inventory.container.removal\": \"true\",\n"
+          + "      \"enable.store.finalization.event\": \"true\",\n"
+          + "      \"enable.mfc.pallet.publish\": \"true\"\n"
+          + "   }\n"
+          + "}";
+  public static final String ATLAS_COMPLETE_MIGRATED_FREIGHTTYPES =
+      "{\n" + "\"32679\":{\n" + "\"atlas.complete.migrated.freightTypes\":\"sstk\"\n" + "}\n" + "}";
+
+  public static final String VALID_DATA_VNPK_PALLET =
+          "{\n"
+                  + "  \"3006\": {\n"
+                  + "    \"isVnpkEqualPalletQtyCheck\": \"true\"\n"
+                  + "  },\n"
+                  + "  \"99999\": {\n"
+                  + "    \"isVnpkEqualPalletQtyCheck\": \"false\"\n"
+                  + "  },\n"
+                  + "  \"default\": {\n"
+                  + "    \"isVnpkEqualPalletQtyCheck\": \"false\"\n"
+                  + "  }\n"
+                  + "}";
+
+  public static final String CCM_VALUE_WITH_LIST =
+      "{\n  \"4093\":{\n    \"tclFreeAcceptableDeliveryStatusCodes\": \"WRK,OPN,PNDFNL\"\n  },\n  \"default\": {\n    \"tclFreeAcceptableDeliveryStatusCodes\": \"WRK,OPN,PNDFNL\"\n  }\n}";
+
+  public static final String OUTBOX_PUBLISHER_CONFIG_JSON = "{\n" +
+          "  \"4034\": {\n" +
+          "    \"tclInfoOutboxKafkaPublishEnabled\": \"true\",\n" +
+          "    \"unloadCompleteOutboxKafkaPublishEnabled\": \"true\",\n" +
+          "    \"divertInfoOutboxKafkaPublishEnabled\": \"true\"\n" +
+          "  }, \n" +
+          "  \"default\" : {\n" +
+          "    \"tclInfoOutboxKafkaPublishEnabled\": \"false\",\n" +
+          "    \"unloadCompleteOutboxKafkaPublishEnabled\": \"false\"\n" +
+          "  }\n" +
+          "}";
+}

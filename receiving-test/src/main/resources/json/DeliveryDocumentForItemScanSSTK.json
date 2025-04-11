@@ -1,0 +1,49 @@
+[
+    {
+        "documentNbr": "1000000002",
+        "purchaseReferenceNumber": "1000000002",
+        "poDCNumber": "32987",
+        "baseDivCode": "WM",
+        "purchaseReferenceLegacyType": "33",
+        "purchaseCompanyId": 1,
+        "deliveryDocumentLines": [
+            {
+                "purchaseRefType": "SSTKU",
+                "purchaseReferenceNumber": "1000000002",
+                "purchaseReferenceLineNumber": 1,
+                "purchaseReferenceLineStatus": "ACTIVE",
+                "itemNbr": 100000002,
+                "itemUPC": "10000000000002",
+                "caseUPC": "10000000000002",
+                "expectedQty": 64,
+                "expectedQtyUOM": "ZA",
+                "vnpkQty": 4,
+                "whpkQty": 2,
+                "vendorStockNumber": "222",
+                "vendorPackCost": 6.6,
+                "whpkSell": 8.22,
+                "vnpkWgtQty": 14.84,
+                "vnpkWgtUom": "LB",
+                "vnpkcbqty": 0.432,
+                "vnpkcbuomcd": "CF",
+                "event": "POS REPLEN",
+                "palletTi": 4,
+                "palletHi": 4,
+                "department": "1",
+                "isHazmat": false,
+                "isConveyable": false,
+                "overageQtyLimit": 11,
+                "overageThresholdQty": 11,
+                "color": "",
+                "size": "",
+                "itemDescription1": "IP 1",
+                "itemDescription2": "IP 1"
+            }
+        ],
+        "deptNumber": "14",
+        "vendorNumber": "12344",
+        "weight": 0.0,
+        "freightTermCode": "COLL",
+        "financialGroupCode": "US"
+    }
+]

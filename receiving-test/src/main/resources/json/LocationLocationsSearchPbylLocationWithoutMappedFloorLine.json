@@ -1,0 +1,65 @@
+{
+  "totalCount": 1,
+  "successCount": 1,
+  "hasMoreEntries": false,
+  "successTuples": [
+    {
+      "response": {
+        "locations": [
+          {
+            "xCoord": 0,
+            "yCoord": 0,
+            "zCoord": 0,
+            "id": 1,
+            "name": "PTR001",
+            "orgUnitId": 1,
+            "type": {
+              "key": 2,
+              "value": "Door"
+            },
+            "status": {
+              "key": 1,
+              "value": "Active"
+            },
+            "primeSlot": false,
+            "tags": [
+              {
+                "domain": "pbyl_door",
+                "tagNames": [
+                  "Y"
+                ]
+              }
+            ],
+            "widthQty": 0,
+            "depthQty": 0,
+            "heightQty": 0,
+            "maxWgtQty": 0,
+            "properties": {
+              "freightType": "",
+              "scCode": "",
+              "sccDescription": ""
+            },
+            "links": [
+              {
+                "rel": "DELETE",
+                "href": "https://gls-location-test.prod.us.walmart.net/us-32987/locations/1",
+                "hreflang": null,
+                "media": null,
+                "title": null,
+                "type": null,
+                "deprecation": null
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "limit": 500,
+        "offset": 0,
+        "names": [
+          "PTR001"
+        ]
+      }
+    }
+  ]
+}

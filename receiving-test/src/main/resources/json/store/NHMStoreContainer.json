@@ -1,0 +1,62 @@
+{
+  "trackingId": "PL-SIB-1103-01",
+  "messageId": "a66fc67c-27f3-4400-9d09-3178aa7d46b8",
+  "deliveryNumber": 32840077,
+  "containerType": "PALLET",
+  "containerStatus": "AVAILABLE",
+  "weight": 0,
+  "weightUOM": "LB",
+  "cube": 0,
+  "cubeUOM": "CF",
+  "ctrShippable": false,
+  "ctrReusable": false,
+  "inventoryStatus": "AVAILABLE",
+  "completeTs": "2022-11-03T05:59:51.775Z",
+  "publishTs": "2022-11-03T05:59:51.775Z",
+  "createTs": "2022-11-03T05:59:51.775Z",
+  "createUser": "r0r00g0",
+  "lastChangedUser": "r0r00g0",
+  "hasChildContainers": false,
+  "ssccNumber": "PL-SIB-1103-01",
+  "eventType": "PALLET_RECEIVED",
+  "containerMiscInfo": {
+    "bannerCode": "B4",
+    "timeZoneCode": "CST",
+    "palletType": "STORE",
+    "operationType": "NORMAL",
+    "bannerDescription": "Neighborhood Market"
+  },
+  "containerItems": [
+    {
+      "purchaseReferenceNumber": "999999999",
+      "purchaseReferenceLineNumber": 1,
+      "inboundChannelMethod": "STAPLESTOCK",
+      "outboundChannelMethod": "STAPLESTOCK",
+      "totalPurchaseReferenceQty": 5,
+      "deptNumber": 95,
+      "itemNumber": 565821976,
+      "gtin": "00014113912549",
+      "quantity": 5,
+      "quantityUOM": "EA",
+      "vnpkQty": 1,
+      "whpkQty": 1,
+      "whpkSell": 83.87,
+      "baseDivisionCode": "WM",
+      "financialReportingGroupCode": "US",
+      "vnpkWgtQty": 0,
+      "vnpkWgtUom": "LB",
+      "vnpkcbqty": 0,
+      "vnpkcbuomcd": "CF",
+      "description": "WNDFL 12Z KERNL PIST",
+      "secondaryDescription": "1LB 96 GRND BF",
+      "vendorNumber": 0,
+      "itemUPC": "00078742269580",
+      "caseUPC": "30027182574977",
+      "containerItemMiscInfo": {
+        "packNumber": "PCK-SIB-1103-04"
+      },
+      "invoiceNumber": "32840003",
+      "invoiceLineNumber": 1
+    }
+  ]
+}

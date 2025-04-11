@@ -1,0 +1,139 @@
+profiles:
+  - git://Logistics:uwms-receiving:us-wm-store/development:kitt-common-deploy
+  - git://Logistics:uwms-receiving:us-wm-store/development:kitt-config/us-wm-store/stages/dev-cell002
+  - git://Logistics:uwms-receiving:us-wm-store/development:kitt-config/us-wm-store/stages/qa-cell002
+  - git://Logistics:uwms-receiving:us-wm-store/development:kitt-config/us-wm-store/stages/perf-cell002
+  - git://Logistics:uwms-receiving:us-wm-store/development:kitt-config/us-wm-store/stages/prod-cell002
+  - git://Logistics:uwms-receiving:us-wm-store/development:kitt-config/us-wm-store/stages/store-prod-000
+
+build:
+  artifact: uwms-receiving-002
+
+notify:
+  slack:
+    channelName: atlas-rcv-store-build
+alerts:
+  slackChannel:
+    - atlas-rcv-store-dynatrace
+
+deploy:
+  preDeploy:
+    - task:
+        name: messageSlack
+        text: Beginning liquibase execution on {{$.kittExec.currentStage.name}}
+    - concord:
+        name: Liquibase-Execution
+        action: start
+        org: Logistics
+        project: wcnp_liquibase
+        repo: wcnp_liquibase
+        entryPoint: default
+        enabled: true
+        sync: true
+        executionScope: stage
+        arguments:
+          version: "{{$.kitt.build.version}}"
+          artifactId: "{{$.kitt.build.artifact}}"
+          targetEnv: "{{$.kittExec.currentStage.name}}"
+          gitBranch: "{{$.kitt.build.commitEvent.commitId}}"
+          repoName: "uwms-receiving"
+    - task:
+        name: messageSlack
+        text: Liquibase execution successful
+  namespace: atlas-receiving-store
+  changeRecord:
+    create: true
+    affectedGEOs: ["US"]
+    group: "LOG - GLS NextGen"
+    notifyChannels: ["atlas-rcv-store-build"]
+    managerGroup: "Change Managers - GEC"
+  gslb:
+    lbRoutings:
+      dev-cell002:
+        cnames:
+          - gls-atlas-uwms-receiving-dev-cell002.walmart.com
+          - receiving-api-dev-store.prod.us.walmart.net
+        matchStages: [ dev-cell002 ]
+      qa-cell002:
+        cnames:
+          - gls-atlas-uwms-receiving-qa-store-cell002.walmart.com
+          - receiving-api-qa-store-cell002.prod.us.walmart.net
+        matchStages: [ qa-cell002 ]
+      perf-cell002:
+        cnames:
+          - gls-atlas-uwms-receiving-perf-cell002.walmart.com
+          - receiving-api-perf-store.prod.us.walmart.net
+        matchStages: [ perf-cell002 ]
+      prod-cell002:
+        cnames:
+          - gls-atlas-uwms-receiving-prod-cell002.walmart.com
+          - atlas-store-receiving.prod.us.walmart.net
+        matchStages: [ prod-cell002 ]
+      store-prod-000:
+        cnames:
+          - gls-atlas-uwms-receiving-store-prod-cell000.walmart.com
+          - atlas-store-receiving.prod-cell000.us.walmart.net
+        matchStages: [ store-prod-000 ]
+  stages:
+    - name: dev-cell002
+      refEventFilters:
+        - refs: [ "main" , "us-wm-store/development" ]
+          events: [ onPush ]
+      target:
+        - cluster_id: [ scus-dev-a4 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+    - name: qa-cell002
+      refs: [ "main", "us-wm-store/development", "us-wm-store/release/.*" ]
+      target:
+        - cluster_id: [ uscentral-stage-az-300 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+      postDeploy:
+        - task:
+            name: messageSlack
+            enabled: true
+            executionScope: stage
+            text: Triggering E2E tests on {{$.kittExec.currentStage.name}} 
+        - concord:
+            name: MFC_E2E_Sanity
+            action: start
+            org: SCT
+            project: In-Memory
+            repo: MFC_E2E_Sanity
+        - task:
+            name: messageSlack
+            enabled: true
+            executionScope: stage
+            text: "Triggered E2E tests successfully"
+    - name: perf-cell002
+      refs: [ "main", "us-wm-store/development", "us-wm-store/release/.*" ]
+      target:
+        - cluster_id: [ uscentral-stage-az-300 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+    - name: prod-cell002
+      refs: [ "main", "us-wm-store/release/.*" ]
+      target:
+        - cluster_id: [ uswest-prod-az-312, uscentral-prod-az-024 ]
+      approvers:
+        groups:
+          - "Supply-Chain-Managers"
+          - "Tridents-SE"
+    - name: store-prod-000
+      refs: [ "main", "us-wm-store/release/.*" ]
+      target:
+        - cluster_id: [ uswest-prod-az-312, uscentral-prod-az-024 ]
+      approvers:
+        groups:
+          - "Supply-Chain-Managers"
+          - "Tridents-SE"

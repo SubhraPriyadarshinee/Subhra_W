@@ -1,0 +1,725 @@
+package com.walmart.move.nim.receiving.core.common.exception;
+
+public final class ExceptionCodes {
+
+  public static final String NO_PURCHASE_REF_TYPE_ERROR = "GLS-RCV-NO-PURCHASE-REF-TYPE-ERROR-400";
+  public static final String NO_MATCHING_CAPABALITY_ERROR =
+      "GLS-RCV-NO-MATCHING-CAPABALITY-ERROR-500";
+  public static final String OF_NETWORK_ERROR = "GLS-RCV-OF-NETWORK-ERROR-500";
+  public static final String NO_ALLOCATION = "GLS-RCV-NO-ALLOCATION-500";
+  public static final String GLS_RCV_ITEM_IS_NOT_ATLAS_SUPPORTED =
+      "GLS-RCV-ITEM-IS-NOT-ATLAS-SUPPORTED-409";
+
+  public static final String OF_GENERIC_ERROR = "GLS-RCV-OF-GENERIC-ERROR-500";
+  public static final String MULTI_USER_ERROR = "GLS-RCV-MUTLI-USER-ERROR-500";
+  public static final String GDM_NETWORK_ERROR = "GLS-RCV-2D-BARCODE-GDM-NETWORK-ERROR-500";
+  public static final String MISSING_FREIGHT_BILL_QTY = "GLS-RCV-MISSING-FREIGHT-BILL-QTY-400";
+  public static final String DUPLICATE_MANUAL_FINALIZATION = "GLS-RCV-DUPLICATE-MF-400";
+  public static final String EVENT_NOT_FOUND = "GLS-RCV-EVNT-404";
+
+  private ExceptionCodes() {
+    throw new UnsupportedOperationException("Constructor is not allowed");
+  }
+
+  // Bad data exceptions Codes
+  public static final String INVALID_TENANT = "GLS-RCV-TNT-400";
+  public static final String INVALID_ITEM_DETAILS = "GLS-RCV-ITM-400";
+  public static final String GDM_VENDOR_UPC_UPDATE_ITEM_NOT_FOUND = "GLS-RCV-ITM-UPDATE-400";
+  public static final String INVALID_SLOTTING_REQ = "GLS-RCV-SLT-400";
+  public static final String SLOTTING_INTERNAL_ERROR = "GLS-RCV-SLT-500";
+  public static final String INVALID_DELIVERY_STATUS = "GLS-RCV-DEL-400";
+  public static final String OPERATION_NOT_PERMITTED = "GLS-RCV-NOT-PERMITTED-400";
+  public static final String INVALID_DELIVERY_STATUS_UPDATE_REQUEST = "GLS-RCV-DEL-DATA-400";
+  public static final String INVALID_SUMO_REQ = "GLS-RCV-SUM-400";
+  public static final String INVALID_EXPIRY_DATE_LISTENER_DATA = "GLS-RCV-EXPD-400";
+  public static final String INVALID_INVENTORY_ADJUSTMENT_DATA = "GLS-RCV-INVTADJ-400";
+  public static final String INVALID_FLOOR_LINE_LOCATION = "GLS-RCV-LOC-400";
+  public static final String INVALID_FLOOR_LINE_LOCATION_MULTI_MANIFEST = "GLS-RCV-LOC-401";
+  public static final String INVALID_PBYL_LOCATION = "GLS-RCV-LOC-PBYL-400";
+  public static final String INVALID_LOCATION = "GLS-RCV-LOC-400-1";
+  public static final String INVALID_DATA = "GLS-RCV-DATA-400";
+  public static final String INTERNAL_ERROR_INV_CRT_CNTR = "GLS-RCV-INV-CREATE-CNTR-500";
+  public static final String INVALID_OF_REQ = "GLS-RCV-OF-400";
+  public static final String INVALID_KAFKA_PAYLOAD = "GLS-RCV-KAF-400";
+  public static final String INVALID_MQTT_PAYLOAD = "GLS-RCV-MQTT-400";
+  public static final String INVALID_DOCK_TAG = "GLS-RCV-DTG-400";
+  public static final String CONFLICT_DOCK_TAG_MMR = "GLS-RCV-DTG-MMR-409";
+  public static final String CONFLICT_DOCK_TAG_MMR_LOCATION_IN_USE = "GLS-RCV-DTG-MMR-409-2";
+  public static final String INVALID_FLOOR_LINE_DOCK_TAG = "GLS-RCV-FDT-400";
+  public static final String INVALID_NON_CON_DOCK_TAG = "GLS-RCV-NDT-400";
+  public static final String INVALID_SCANNED_DATA = "GLS-RCV-INV-SCANDATA-400";
+  public static final String SCANNED_EXPIRY_DATE_DETAILS_DO_NOT_MATCH = "GLS-RCV-DATA-EXP-DATE-MISMATCH-409";
+  public static final String SCANNED_EXPIRY_DATE_AND_LOT_DETAILS_DO_NOT_MATCH = "GLS-REV-DATA-LOT-AND-EXPIRY-MISMATCH-409";
+  public static final String SCANNED_LOT_DETAILS_DO_NOT_MATCH = "GLS-REV-DATA-LOT-MISMATCH-409";
+  public static final String SCANNED_DETAILS_DO_NOT_MATCH_WITH_PARENT = "GLS-REV-DATA-PARENT-DETAIL-MISMATCH-409";
+  public static final String INVALID_GDM_EXPIRY_DATE = "GLS-RCV-INVALID-GDM-EXPIRY-DATE-400";
+  public static final String INVALID_SCANNED_DATA_GTIN = "GLS-RCV-ISCANGTIN-400";
+  public static final String INVALID_SCANNED_DATA_LOT = "GLS-RCV-ISCANLOT-400";
+  public static final String INVALID_SCANNED_DATA_SERIAL = "GLS-RCV-ISCANSER-400";
+  public static final String INVALID_SCANNED_DATA_EXPIRY_DATE = "GLS-RCV-ISCANEDATE-400";
+  public static final String EPCIS_VERIFY_ERROR = "GLS-RCV-EPCIS-400";
+  public static final String CREATE_INSTRUCTION_ERROR = "GLS-RCV-NEW-INSTR-BAD-DATA-400";
+  public static final String CREATE_INSTRUCTION_CONTROLLED_SUBSTANCE_ERROR = "GLS-RCV-CONTROLLED-SUBSTANCE-400";
+  public static final String ITEM_X_BLOCKED_ERROR = "GLS-RCV-ITEM-X-BLOCK-400";
+  public static final String UPDATE_INSTRUCTION_ERROR = "GLS-RCV-UPDATEINSTR-400";
+  public static final String CREATE_INSTRUCTION_ERROR_NO_OPEN_QTY = "GLS-RCV-NO-OPEN-QTY-400";
+  public static final String CREATE_INSTRUCTION_ERROR_NO_SERIALIZE_INFO =
+      "GLS-RCV-NO-SERIALIZED_INFO-400";
+
+  public static final String INVALID_QUANTITY_CORRECTION_REQ = "GLS-RCV-QTYCHNG-400";
+  public static final String INVALID_QUANTITY_RECEIVED_REQ = "GLS-RCV-QTYRCVD-400";
+  public static final String QUANTITY_RCVD_ERROR_FROM_RDS = "GLS-RCV-QTY-ERR-RDS-400";
+  public static final String RECEIVED_QTY_SUMMARY_BY_PO_ERROR_FROM_RDS =
+      "GLS-RCV-PO-SUMMARY-ERR-RDS-400";
+  public static final String RECEIVED_QTY_SUMMARY_BY_POLINE_ERROR_FROM_RDS =
+      "GLS-RCV-POL-SMY-ERR-RDS-400";
+  public static final String GET_RECEIPTS_ERROR_RESPONSE_IN_RDS =
+      "GLS-RCV-RECEIPTS-ERROR-IN-RDS-400";
+  public static final String DELIVERY_DOCUMENT_BY_PO_POLINE_ERROR_RESPONSE =
+      "GLS-RCV-DELIVERY_DOCUMENT-ERROR-400";
+  public static final String RDS_RECEIVED_QTY_SUMMARY_BY_DELIVERY_NUMBERS =
+      "GLS-RCV-QTY-SUMMARY-DELIVERY-ERR-RDS-400";
+  public static final String INVALID_DELIVERY_RECEIPTS_REQ = "GLS-RCV-DLVRY-RECEIPTS-400";
+  public static final String INVALID_CASE_QUANTITY_CORRECTION_REQ = "GLS-RCV-CASEQTYCHNG-400";
+  public static final String INVLID_D40_RECEIVING_FLOW = "GLS-RCV-CREATEINSTR-INVAL-D40-400";
+  public static final String INVALID_GDM_DSDA_IND_VALUE = "GLS-RCV-GDM-INVL-DSCSA-IND-400";
+  public static final String SHIPMENT_UNAVAILABLE = "GLS-RCV-SHPMT-UNAVAIL-400";
+  public static final String DEPT_UNAVAILABLE = "GLS-RCV-DEPT-UNAVAILABLE-400";
+  public static final String ALLOWED_CASES_RECEIVED = "GLS-RCV-CASESRCVD-400";
+  public static final String ALL_CASES_RECEIVED = "GLS-RCV-PALLETCASESRCVD-400";
+  public static final String INVALID_RDS_SLOTTING_REQ = "GLS-RCV-RDS-SLT-400";
+  public static final String SMART_SLOTTING_NOT_ENABLED_FOR_ATLAS_DA_ITEMS =
+      "GLS-RCV-ATLAS-DA-SLT-400";
+  public static final String INVALID_RDS_PRIME_SLOTTING_REQ = "GLS-RCV-RDS-PRIME-SLOT-400";
+  public static final String INVALID_CREATE_INSTRUCTION_REQUEST = "GLS-RCV-CRT_INS-400";
+  public static final String AUTO_SELECT_PO_NO_OPEN_QTY = "GLS-RCV-PO-LINE-NO-OPEN-QTY-400";
+  public static final String INVALID_CREATE_CONTAINER_REQUEST = "GLS-RCV-CRT-CNTR-400";
+  public static final String INVALID_DELIVERY_LINE_LEVEL_FBQ = "GLS-RCV-DLV-FBQ-400";
+  public static final String INVALID_UPDATE_CONTAINER_REQUEST = "GLS-RCV-UPDT-CNTR-400";
+  public static final String MAX_ALLOWED_DOCKTAGS_TO_COMPLETE = "GLS-RCV-CMPL-DTG-400";
+  public static final String INVALID_CONTROL_TOWER_REQ = "GLS-RCV-CT-400";
+  public static final String LOCATION_RESP_IS_EMPTY = "GLS-RCV-LOC-EMPTY-RESP-400";
+  public static final String INVALID_PACKAGE_TRACKER_REQUEST = "GLS-RCV-PKG-TKR-400";
+  public static final String INVALID_ITEM_TRACKER_REQUEST = "GLS-RCV-ITM-TKR-400";
+  public static final String INVALID_WORKFLOW_REQUEST = "GLS-RCV-WRKFLW-REQ-400";
+  public static final String INVALID_REQUEST = "GLS-RCV-REQ-400";
+  public static final String INVALID_REPRINT_LABEL_REQUEST = "GLS-RCV-REPRNT-REQ-400";
+  public static final String CONTAINER_IS_ALREADY_BACKED_OUT = "GLS-RCV-CNTR-BACKED-OUT-400";
+  public static final String MULTI_ITEM_FOUND_BY_UPC = "GLS-RCV-MULTI-ITEM-FOUND-BY-UPC-400";
+  public static final String MULTI_INSTRUCTION_NOT_SUPPORTED = "GLS-RCV-MULTI-INST-400";
+  public static final String NO_ACTIVE_PO_LINES_TO_RECEIVE = "GLS-RCV-NO-ACTV-LINES-400";
+  public static final String NO_ACTIVE_PO_AVAILABLE_TO_RECEIVE = "GLS-RCV-NO-ACTV-PO-400";
+  public static final String COMPLETE_EXISTING_INSTRUCTION = "GLS-RCV-INSTRN-EXISTS-409";
+  public static final String INVALID_PO = "GLS-RCV-INVLD-PO-400";
+  public static final String UNABLE_TO_RETRIEVE_DECANT_ITEM = "GLS-RCV-DCNT-404";
+  public static final String WFS_INVALID_GET_CONTAINER_REQUEST_PICKED_PALLET =
+      "GLS-RCV-CRC-CNTR-400";
+  public static final String WFS_INVALID_GET_CONTAINER_REQUEST_BACKOUT_CTR =
+      "GLS-RCV-CRC-CNTR-400-1";
+  public static final String WFS_INVALID_LABEL_FOR_CORRECTION_INV_NOT_FOUND =
+      "GLS-RCV-CRC-CNTR-400-2";
+  public static final String WFS_INVALID_GET_CONTAINER_FOR_CORRECTION_INV_STATUS_NOT_PICKED =
+      "GLS-RCV-CRC-CNTR-400-3";
+
+  public static final String PALLET_LABEL_CAN_NOT_BE_PRINTED =
+      "GLS-PALLET-LABEL-PRINT-NOT-ALLOWED-400";
+  public static final String
+      WFS_INVALID_GET_CONTAINER_REQUEST_FOR_CORRECTION_CTR_TYPE_NOT_VENDORPACK =
+          "GLS-RCV-CRC-CNTR-400-4";
+  public static final String
+      WFS_INVALID_GET_CONTAINER_REQUEST_FOR_CORRECTION_CTR_STATUS_NOT_PICKED_OR_AVAILABLE =
+          "GLS-RCV-CRC-CNTR-400-5";
+  public static final String WFS_INVALID_GET_CONTAINER_REQUEST_RESTART_DCNT_DELIVERY_FNL =
+      "GLS-RCV-CRC-CNTR-400-6";
+  public static final String WFS_INVALID_GET_CONTAINER_REQUEST_RESTART_DCNT_INV_STATUS_CTR_TYPE =
+      "GLS-RCV-CRC-CNTR-400-7";
+  public static final String WFS_INVALID_GET_CONTAINER_REQUEST_RESTART_DCNT_INV_STATUS =
+      "GLS-RCV-CRC-CNTR-400-8";
+  public static final String WFS_INVALID_INDUCT_LPN_DESTINATION_CTR = "GLS-RCV-CRC-CNTR-400-9";
+  public static final String WFS_INVALID_LABEL_FOR_RESTART_DCNT_INV_NOT_FOUND =
+      "GLS-RCV-CRC-CNTR-400-10";
+  public static final String
+      WFS_INVALID_GET_CONTAINER_REQUEST_FOR_CORRECTION_INV_STATUS_NOT_PICKED_OR_AVAILABLE =
+          "GLS-RCV-CRC-CNTR-400-11";
+  public static final String WFS_INVALID_GET_CONTAINER_REQUEST_RESTART_DCNT_CTR_STATUS_BACKOUT =
+      "GLS-RCV-CRC-CNTR-400-12";
+  public static final String RDC_INVALID_RECEIVING_FEATURE_TYPE =
+      "GLS-RCV-INVALID-FEATURE-TYPE-400";
+  public static final String PROBLEM_TAG_FOUND_FOR_SCANNED_UPC = "GLS-RCV-PBLM-TAG-FOUND-400";
+
+  // Internal Exception Codes
+  public static final String TENANT_ERROR = "GLS-RCV-TNT-500";
+  public static final String CONFIGURATION_ERROR = "GLS-RCV-CNF-500";
+  public static final String GDM_ERROR = "GLS-RCV-GDM-500";
+  public static final String UNABLE_TO_CREATE_CONTAINER = "GLS-RCV-CNTR-500";
+
+  public static final String UNABLE_TO_CREATED_CONTAINER = "GLS-RCV-CNTR-500";
+  public static final String UNABLE_TO_RECEIVE = "GLS-RCV-500";
+  public static final String DCFIN_CONTAINER_ERROR = "GLS-RCV-DCFIN-500";
+  public static final String LOCATION_SERVICE_ERROR = "GLS-RCV-LOC-500";
+  public static final String LABEL_FORMATTING_ERROR = "GLS-RCV-LBL-500";
+  public static final String SUMO_SERVICE_ERROR = "GLS-RCV-SUM-500";
+  public static final String IDP_SERVICE_ERROR = "GLS-RCV-IDP-500";
+  public static final String CONTROL_TOWER_SERVICE_ERROR = "GLS-RCV-CT-500";
+  public static final String UNABLE_TO_PROCESS_EXPIRY_UPDATION = "GLS-RCV-EXPD-500";
+  public static final String UNABLE_TO_PROCESS_FTS_UPDATION = "GLS-RCV-FTS-500";
+  public static final String UNABLE_TO_PARSE = "GLS-RCV-PRS-500";
+  public static final String UNABLE_TO_FALLBACK = "GLS-RCV-FLG-500";
+  public static final String UNABLE_TO_PUBLISH = "GLS-RCV-PUB-500";
+  public static final String UNABLE_TO_PUBLISH_MQTT_VIA_MQTT = "GLS-RCV-MQTT-PUB-500";
+  public static final String UNABLE_TO_PROCESS_DOCK_TAG = "GLS-RCV-DTG-500";
+  public static final String UNABLE_TO_PROCESS_NON_CON_DOCK_TAG = "GLS-RCV-NDT-500";
+  public static final String UNABLE_TO_CREATE_DOCK_TAG = "GLS-RCV-DTGCR-500";
+  public static final String UNABLE_TO_PROCESS_INVENTORY = "GLS-RCV-INV-500";
+  public static final String UNABLE_TO_COMPLETE_DOCKTAG = "GLS-RCV-DTG-CMPL-500";
+
+  public static final String RECEIVING_INTERNAL_ERROR = "GLS-RCV-INT-500";
+  public static final String ACL_ERROR = "GLS-RCV-ACL-500";
+  public static final String HAWK_EYE_ERROR = "GLS-RCV-HWK-500";
+  public static final String UNABLE_TO_DO_PALLET_CORRECTION = "GLS-RCV-QTYCHANGE-500";
+  public static final String LABEL_CORRECTION_NOT_ALLOWED_FOR_DA = "GLS-RCV-DA-QTYCHANGE-409";
+  public static final String INSTRUCTION_MULTI_USER_ERROR_MESSAGE = "GLS-RCV-INS-INT-500";
+  public static final String CANCEL_PALLET_ERROR = "GLS-RCV-CAN-PAL-500";
+  public static final String INSTRUCTION_COMPLETE_ALREADY = "GLS-RCV-INS-COM-500";
+  public static final String INSTRUCITON_IS_ALREADY_COMPLETED = "GLS-RCV-CNL-INS-CMP-500";
+  public static final String INSTRUCTION_IS_ALREADY_COMPLETED_WFS = "GLS-RCV-CNL-INS-CMP-WFS-500";
+  public static final String INSTRUCTION_PARTIALLY_RECEIVED = "GLS-RCV-CNL-INS-RCVD-500";
+  public static final String GDM_SHIPMENT_DELIVERY_LINK_FAILURE = "GLS-RCV-GDM-LINK-500";
+  public static final String GDM_SEARCH_SHIPMENT_FAILED = "GLS-RCV-GDM-SHPMT-FAIL-500";
+  public static final String GDM_SEARCH_PACK_FAILED = "GLS-RCV-GDM-PACK-FAIL-500";
+  public static final String GDM_SEARCH_PACK_UNIT_SERIAL_FAILURE =
+      "GLS-RCV-GDM-PACK-UNIT-SERIAL-500";
+  public static final String GDM_SEARCH_SHIPMENT_BY_GTIN_LOT_FAILURE =
+      "GLS-RCV-GDM-SHPMT-BY-GTIN-LOT_FAIL-500";
+  public static final String GDM_SEARCH_SHIPMENT_FAILURE_AFTER_UPC_CATALOG =
+      "GLS-RCV-GDM-SHIPMENT-FAIL-AFTER-UPC-CATALOG-500";
+  public static final String COMPLETE_DELIVERY_OPEN_INSTRUCTION_ERROR_MESSAGE =
+      "GLS-RCV-COMPDELIV-500";
+  public static final String GDM_SEARCH_FOR_DELIVERY_DOC_BY_GTIN_AND_LOT_FAILURE =
+      "GLS-RCV-GDM-DELIVERY-DOC-FAIL-500";
+  public static final String ERROR_IN_PATCHING_INSTRUCTION = "GLS-RCV-PATCH-INSTN-500";
+  public static final String RECEIVE_CONTAINERS_RDS_ERROR = "GLS-RCV-RDS-SLT-500";
+  public static final String RECEIVE_CONTAINERS_RDS_ERROR_MSG = "GLS-RCV-RDS-ERR-500";
+  public static final String SLOTTING_NOT_ACCESSIBLE = "GLS-RCV-SLT-503";
+  public static final String LABEL_CORRECTION_ERROR_FOR_FINALIZED_DELIVERY =
+      "GLS-RCV-QTY-CHANGE-DLVRY-FNLD-500";
+  public static final String SYMBOTIC_ERROR = "GLS-RCV-SYM-500";
+
+  public static final String THREE_SCAN_DOCKTAG_MIXED_ITEM_ERROR = "GLS-RCV-3SCAN-ITEM-MIXED-500";
+  public static final String THREE_SCAN_DOCKTAG_DSDC_SCAN_UPC = "GLS-RCV-3SCAN-DSDC-UPC-400";
+  public static final String THREE_SCAN_DOCKTAG_HISTORY_PO_ERROR =
+      "GLS-RCV-3SCAN-ITEM-HISTORY-PO-500";
+  public static final String THREE_SCAN_DOCKTAG_CANCELLED_REJECTED_POL_ERROR =
+      "GLS-RCV-3SCAN-ITEM-CANCELLED-REJECTED-500";
+  public static final String THREE_SCAN_DOCKTAG_XBLOCK_ITEM_ERROR = "GLS-RCV-3SCAN-ITEM-XBLOCK-500";
+  public static final String THREE_SCAN_DOCKTAG_FTS_ITEM_ERROR = "GLS-RCV-3SCAN-ITEM-FTS-500";
+  public static final String THREE_SCAN_DOCKTAG_MAX_ALREADY_RECEIVED_ERROR =
+      "GLS-RCV-3SCAN-ITEM-MAX-RCVD-500";
+
+  public static final String FIREFLY_ERROR = "GLS-RCV-FIREFLY-500";
+  public static final String UNEXPECTED_FIREFLY_EVENT_ERROR =
+      "GLS-RCV-UNEXPECTED-FIREFLY-EVENT-500";
+  public static final String DELIVERY_NOT_FOUND_FIREFLY_EVENT_ERROR =
+      "GLS-RCV-DEL-FIREFLY-EVENT-404";
+  public static final String UNABLE_TO_PROCESS_ITEM_UPDATE = "GLS-RCV-ITM-UPD-500";
+
+  // Notfound Exception Codes
+  public static final String RESOURCE_NOT_FOUND = "GLS-RCV-RES-404";
+  public static final String UPC_NOT_FOUND = "GLS-RCV-RES-404";
+  public static final String DELIVERY_NOT_FOUND = "GLS-RCV-DEL-404";
+  public static final String NO_DELIVERY_FOUND = "GLS-RCV-NO-DEL-FOUND-404";
+  public static final String TCL_NOT_FOUND = "GLS-RCV-TCL-404";
+  public static final String TPL_NOT_FOUND = "GLS-RCV-TPL-404";
+  public static final String DELIVERY_METADATA_NOT_FOUND = "GLS-RCV-META-404";
+  public static final String PO_NOT_FOUND = "GLS-RCV-PO-404";
+  public static final String GDM_DELIVERY_DOCUMENTS_NOT_FOUND = "GLS-GDM-RCV-PO-404";
+  public static final String PO_LINE_NOT_FOUND = "GLS-RCV-POL-404";
+  public static final String SHIPMENT_NOT_FOUND = "GLS-RCV-SHIP-404";
+  public static final String ITEM_NOT_FOUND = "GLS-RCV-ITM-404";
+  public static final String AUDIT_INFO_NOT_FOUND = "GLS-RCV-ADT-404";
+  public static final String LOCATION_NOT_FOUND = "GLS-RCV-LOC-404";
+  public static final String CONTAINER_NOT_FOUND = "GLS-RCV-CNTR-404";
+  public static final String WORKFLOW_NOT_FOUND = "GLS-RCV-WRKFLW-404";
+  public static final String WORKFLOW_ITEM_NOT_FOUND = "GLS-RCV-WRKFLW-ITM-404";
+  public static final String PRODUCT_CATEGORY_GROUP_NOT_FOUND = "GLS-RCV-PCG-404";
+  public static final String RECEIPTS_NOT_FOUND = "GLS-RCV-RCT-404";
+  public static final String USER_NOT_FOUND = "GLS-RCV-USR-404";
+  public static final String LPNS_NOT_FOUND = "GLS-RCV-LPNS-404";
+  public static final String LPN_ALREADY_RECEIVED = "GLS-RCV-LPNS-409";
+  public static final String PRE_GEN_DATA_NOT_FOUND = "GLS-RCV-PGD-404";
+  public static final String DOCK_TAG_NOT_FOUND = "GLS-RCV-DTG-404";
+  public static final String INVENTORY_NOT_FOUND = "GLS-RCV-INV-404";
+  public static final String GDM_NOT_FOUND = "GLS-RCV-GDM-404";
+  public static final String GDM_SSCC_NOT_FOUND = "GLS-RCV-GDM-SSCC-404";
+  public static final String GDM_DSDC_OR_SSTK_SSCC_NOT_FOUND = "GLS-RCV-GDM-DSDC-SSCC-404";
+  public static final String DSDC_SSCC_ALREADY_RECEIVED = "GLS-RCV-DSDC-SSCC-409";
+  public static final String GDM_PACK_NOT_FOUND = "GLS-RCV-GDM-PACK-404";
+  public static final String GDM_PARTIAL_SHIPMENT_DATA = "GLS-RCV-GDM-SHPMT-404";
+  public static final String GDM_EPCIS_DATA_NOT_FOUND = "GDM_EPCIS_DATA_404";
+  public static final String GDM_EPCIS_DATA_NOT_FOUND_FOR_LEVEL_0 = "GDM_EPCIS_DATA_404_FOR_LEVEL_0";
+  public static final String GDM_EPCIS_DATA_NOT_FOUND_FOR_PO = "GDM_EPCIS_DATA_404_FOR_PO";
+  public static final String GDM_EPCIS_DATA_NOT_FOUND_FOR_PO_LINE = "GDM_EPCIS_DATA_404_FOR_PO_LINE";
+  public static final String PACKAGE_NOT_FOUND = "GLS-RCV-PKG-404";
+  public static final String SMART_SLOT_NOT_FOUND = "GLS-RCV-SMART-SLOT-404";
+  public static final String SMART_SLOTTING_INVALID_RESPONSE = "GLS-RCV-SMART-SLOT-INVALID-409";
+  public static final String PRIME_SLOT_NOT_FOUND_ERROR_IN_SMART_SLOTTING =
+      "GLS-RCV-SMART-SLOT-PRIME-404";
+  public static final String ITEM_UPC_NOT_FOUND_FOR_DELIVERY =
+      "GLS-RCV-2D-BARCODE-NO-ITEM-FOUND-404";
+  public static final String INVALID_SMART_SLOT = "GLS-RCV-SMART-SLOT-409";
+  public static final String INVALID_SMART_SLOT_CONFLICT = "GLS-RCV-SLT-409";
+  public static final String SMART_SLOTTING_NOT_AVAILABLE = "GLS-RCV-SMART-SLOT-500";
+  public static final String AUTO_SLOT_NOT_FOUND_ERROR_IN_SMART_SLOTTING =
+      "GLS-RCV-SMART-SLOT-AUTO-SLOT-404";
+  public static final String INVENTORY_AVAILABLE_FOR_DIFFERENT_ITEM_IN_PRIMESLOT =
+      "GLS-RCV-SMART-SLOT-MULTIITEM-404";
+  public static final String MANUAL_SLOT_NOT_AVAILABLE_IN_SMART_SLOTTING =
+      "GLS-RCV-SMART-SLOT-MANUAL-SLOT-404";
+  public static final String MANUAL_SLOTTING_NOT_SUPPORTED_FOR_ATLAS_ITEMS =
+      "GLS-RCV-SMART-SLOT-MANUAL-SLOT-NOT-SUPPORTED-404";
+  public static final String SMART_SLOT_BAD_DATA_ERROR = "GLS-RCV-SMART-SLOT-400";
+  public static final String FIT_NOT_FOUND = "GLS-RCV-FIT-400";
+  public static final String DATA_NOT_FOUND_FOR_THE_GIVEN_SEARCH_CRITERIA = "GLS-RCV-DTG-FND-404";
+  public static final String PROBLEM_NOT_FOUND = "GLS-RCV-PROBLEM-NOT-FOUND-404";
+  public static final String INSTRUCTION_NOT_FOUND = "GLS-RCV-INSTRN-NOT-FOUND-404";
+  public static final String FIXIT_NOT_FOUND = "GLS-RCV-FIXIT-400";
+  public static final String NO_PO_FOUND = "GLS-RCV-2D-BARCODE-NO-PO-404";
+  // UnavailableException codes
+  public static final String KAFKA_NOT_ACCESSABLE = "GLS-RCV-KAF-503";
+  public static final String LABEL_PREPARATION_ERROR = "GLS-RCV-LBL-500";
+  public static final String RESOURCE_NOT_ACCESSABLE = "GLS-RCV-RES-503";
+  public static final String GDM_NOT_ACCESSIBLE = "GLS-RCV-GDM-503";
+  public static final String FIT_NOT_ACCESSIBLE = "GLS-RCV-FIT-5xx";
+  public static final String FIXIT_NOT_ACCESSIBLE = "GLS-RCV-FIXIT-503";
+  public static final String LOAD_QUALITY_NOT_ACCESSIBLE = "GLS-RCV-LOAD_QUALITY-503";
+  // method not allowed
+  public static final String METHOD_NOT_ALLOWED = "GLS-RCV-MET-405";
+
+  // conflict
+  public static final String CONTAINER_ALREADY_EXISTS = "GLS-RCV-CNTR-409";
+  public static final String CONTAINER_ALREADY_EXPIRED = "GLS-RCV-EGX-CNTR-409";
+  public static final String PO_LINE_EXHAUSTED = "GLS-RCV-POL-409";
+  public static final String ITEM_NOT_IN_PO_LINE = "GLS-RCV-ITM-POL-404";
+  public static final String MULTI_SKU_PALLET = "GLS-RCV-MULTISKU-409";
+  public static final String INVALID_LPN = "GLS-RCV-LPN-409";
+  public static final String INVALID_REQUESTED_LPN = "GLS-RCV-LPN-400";
+  public static final String SERIALIZED_PRODUCT_UPC_NOT_SUPPORTED = "GLS-RCV-UPC-409";
+
+  public static final String SERIALIZED_PRODUCT_UPC_RCV_NOT_SUPPORTED = "GLS-RCV-UPC-RCV-409";
+  public static final String SCANNED_SSCC_NOT_VALID = "GLS-RCV-SSCC-409";
+  public static final String INVALID_LOCATION_RESPONSE = "GLS-RCV-INVLD-LOC-RESP-409";
+  public static final String PROBLEM_ITEM_DOES_NOT_MATCH = "GLS-RCV-PRBLM-ITEM-MISMATCH-409";
+  public static final String PROBLEM_TICKET_MISSING_ITEM = "GLS-RCV-PRBLM-ITEM-MISSING-409";
+  public static final String SCANNED_DETAILS_DO_NOT_MATCH = "GLS-RCV-DATA-MISMATCH-409";
+  public static final String PROBLEM_CONFLICT = "GLS-RCV-PRBLM-409";
+  public static final String INVALID_PROBLEM_RESOLUTION = "GLS-RCV-PRBLM-409";
+
+  public static final String TRACKING_ID_CANNOT_BE_EMPTY = "GLS-RCV-DEL-CNTR-EMPTY-INPUT-400";
+  public static final String INVALID_HASH_VALUE_SENT = "GLS-RCV-DEL-CNTR-INVALID-HASH-INPUT-400";
+  public static final String PARENT_CONTAINER_CANNOT_BE_DELETED = "GLS-RCV-DEL-CNTR-400";
+  public static final String INSTRUCTION_CLOSED_CONTAINER_CANNOT_BE_DELETED =
+      "GLS-RCV-DEL-CNTR-CLOSED-INSTR-400";
+  public static final String INSTRUCTION_NOT_FOUND_FOR_CONTAINER = "GLS-RCV-CNTR-INSTR-404";
+
+  // Date Exception codes
+  public static final String FROMDATE_GREATER = "GLS-RCV-FROMDATE-400";
+  public static final String MAX_DATETIMEINTERVAL = "GLS-RCV-TIMEINTRVL-400";
+  public static final String MANDATORY_DATE_FIELDS = "GLS-RCV-DATEFLDMAND-400";
+
+  public static final String WFT_MANDATORY_FIELD = "GLS-RCV-WFTMAND-400";
+
+  public static final String INVALID_VNPK_WHPK_QTY = "GLS-RCV-GDM-PO-POL-400";
+  public static final String INVALID_DOCKTAG_REQUEST = "GLS-RCV-RDC-DT-400";
+  public static final String NO_LABEL_FOUND = "GLS-RCV-NO-LABEL-FOUND";
+
+  public static final String DA_PURCHASE_REF_TYPE = "GLS-RCV-RDC-DA-UPC-400";
+  public static final String NON_DA_PURCHASE_REF_TYPE = "GLS-RCV-RDC-SSTK-UPC-400";
+  public static final String DSDC_PURCHASE_REF_TYPE = "GLS-RCV-RDC-DSDC-UPC-400";
+  public static final String UNSUPPORTED_PURCHASE_REF_TYPE_FOR_RDC =
+      "GLS-RCV-RDC-INVD-CHANNEL-METHOD-400";
+  public static final String SPLIT_PALLET_RECEIVING_NOT_SUPPORTED_FOR_DA_FREIGHT =
+      "GLS-RCV-RDC-SPLIT-PALLET-NOT-SUPPORTED-DA-400";
+  public static final String REJECT_SAVE_BAD_DATA = "GLS-RCV-SAVE-REJECTION-BAD-REQUEST-400";
+  public static final String REJECT_OSDR_VERSION_MISMATCH =
+      "GLS-RCV-SAVE-REJECTION-OSDR-VERSION-MISMATCH-400";
+
+  public static final String EXPIRED_PRODUCT_DATE_ERROR_CODE =
+      "GLS-RCV-EXPIRED-PRODUCT-DATE-ERROR-CODE-400";
+  public static final String INVALID_PRODUCT_DATE_ERROR_CODE =
+      "GLS-RCV-INVALID-PRODUCT-DATE-ERROR-CODE-400";
+
+  // Unauthorised exception codes
+  public static final String IDP_SSO_UNAUTHORISED = "GLS-RCV-IDP-401";
+
+  public static final String INVALID_PO_PO_LINE_STATUS = "GLS-RCV-PO-PO-LINE-STATUS-400";
+  public static final String RDC_INVALID_PO_PO_LINE_STATUS = "GLS-RCV-RDC-PO-PO-LINE-STATUS-400";
+  public static final String MAX_RECEIVE_QTY_RECEIVED = "GLS-RCV-MAX-PO-POL-QTY-RCVD-400";
+
+  public static final String INVALID_INPUT_INSTRUCTION_IDS = "GLS-RCV-INVALID-INPUT-INSTR-ID-400";
+  public static final String INVALID_INPUT_USERID = "GLS-RCV-INVALID-INPUT-USER-ID-400";
+
+  public static final String CLOSE_DATED_ITEM = "GLS-RCV-CLOSE-DATED-ITEM-403";
+  public static final String EXPIRED_ITEM = "GLS-RCV-EXPIRED-ITEM-403";
+
+  public static final String D38_PALLET_CORRECTION_NOT_ALLWED =
+      "GLS-RCV-PALLET-CORR-INVALID-ITEM-400";
+
+  public static final String INVALID_PALLET_CORRECTION_QTY =
+      "GLS-RCV-PALLET-CORR-INVALID-INPUT-QTY-400";
+
+  public static final String INSTR_OPTIMISTIC_LOCK_ERROR =
+      "GLS-RCV-INSTR-OPTIMISTIC-LOCK-ERROR-409";
+
+  public static final String INSTR_OPTIMISTIC_LOCK_GENERIC_ERROR =
+      "GLS-RCV-INSTR-OPTIMISTIC-LOCK-GENERIC-ERROR-409";
+
+  public static final String INVALID_RUNTIME_STATUS =
+      "GLS-RCV-RECON-JMS-RETRY-INVALID-EVENT-TARGET-STATUS-ERROR-400";
+
+  public static final String INSTR_CREATE_SPLIT_PALLET_NOT_BREAK_PACK_ITEM =
+      "GLS-RCV-INSTR-SPLIT-PALLET-NOT-BREAK-PACK-ITEM-400";
+  public static final String INSTR_CREATE_SPLIT_PALLET_SYMBOTIC_BREAK_PACK_ITEM =
+      "GLS-RCV-INSTR-SPLIT-PALLET-SYMBOTIC-BREAK-PACK-ITEM-400";
+  public static final String INSTR_CREATE_SPLIT_PALLET_PRIMES_COMPATIBLE =
+      "GLS-RCV-INSTR-SPLIT-PALLET-PRIMES-COMPATIBLE-400";
+  public static final String PRIME_SLOT_NOT_COMPATIBLE_ERROR_FROM_SMART_SLOTTING =
+      "GLS-RCV-INSTR-SPLIT-PALLET-PRIMES-COMPATIBLE-SLOTTING-400";
+
+  public static final String INSTR_CREATE_SPLIT_PALLET_MAX_ITEMS_ADDED =
+      "GLS-RCV-INSTR-SPLIT-PALLET-MAX-ITEMS-ADDED-400";
+  public static final String INSTR_CREATE_SPLIT_PALLET_DIFFERENT_ITEM_TYPES_400 =
+      "GLS-RCV-INSTR-SPLIT-PALLET-MIXED-ITEM-TYPES-400";
+  public static final String MIXED_PO_NUMBERS_NOT_ALLOWED_IN_SPLIT_PALLET =
+      "GLS-RCV-INSTR-SPLIT-PALLET-MIXED-PO-NUMBERS-400";
+
+  public static final String NIM_RDS_MULTI_LABEL_GENERIC_ERROR =
+      "GLS-RCV-COMPLETE-INSTR-NIM-RDS-GENERIC-ERROR-400";
+
+  public static final String INVALID_INSTRUCTION_STATE = "GLS-RCV-INVALID-INSTR-STATE-400";
+
+  public static final String PARTIALS_NOT_ALLOWED_IN_SPLIT_PALLET =
+      "GLS-RCV-INSTR-SPLIT-PALLET-PARTIAL-NOT-ALLOWED-400";
+  public static final String NO_SHIPMENT_AVAILABLE_WITH_OPEN_QTY =
+      "GLS_RCV-NO-SHIPMENT_AVAL-WITH-OPEN-QTy-400";
+  // Item Config Exception Codes
+  public static final String ITEM_CONFIG_SEARCH_BAD_REQUEST = "GLS_RCV-ITEM-CONFIG-400";
+  public static final String ITEM_CONFIG_SEARCH_INTERNAL_SERVER_ERROR = "GLS_RCV-ITEM-CONFIG-500";
+  public static final String ITEM_CONFIG_SERVICE_UNAVAILABLE = "GLS_RCV-ITEM-CONFIG-503";
+
+  // Item Catalog Exception Codes
+  public static final String INVALID_CATALOG_UPC_REQUEST = "GLS-RCV-ITEM-UPDATE-REQ-400";
+  public static final String ITEM_UPDATE_INTERNAL_SERVER_ERROR = "GLS-RCV-ITEM-UPDATE-REQ-500";
+  public static final String ITEM_UPDATE_NOT_FOUND = "GLS-RCV-ITEM-UPDATE-REQ-404";
+  public static final String ITEM_UPDATE_SERVICE_UNAVAILABLE = "GLS-RCV-ITEM-UPDATE-REQ-503";
+  public static final String ITEM_CACHE_INTERNAL_SERVER_ERROR = "GLS-RCV-ITEM-CACHE-500";
+  public static final String ITEM_CACHE_GENERIC_ERROR = "GLS-RCV-ITEM-CACHE-400";
+  public static final String INVALID_ITEM_UPDATE_REQUEST = "GLS-RCV-INVALID-ITEM-UPDATE-REQ-400";
+
+  public static final String INVALID_PRODUCT_CATEGORY_GROUP_IMPORT_CSV_FILE_REQUEST =
+      "GLS-RCV-PROD-CAT-GRP-IMPORT-CSV-FILE-REQ-400";
+
+  public static final String UPC_NOT_AVAILABLE = "GLS-RCV-NO-UPC-400";
+  public static final String SSCC_NOT_AVAILABLE = "GLS-RCV-NO-SSCC-400";
+  public static final String NEW_ITEM = "GLS-RCV-SCAN-UPC-NEW-ITEM-400";
+
+  public static final String SSCC_SCAN_RECEIVING_NOT_ALLOWED =
+      "GLS-RCV-SSCC-SCAN-NOT-SUPPORTED-409";
+  public static final String SSCC_RECEIVED_ALREADY = "GLS-RCV-SSCC-RECEIVED-409";
+  public static final String ASN_PO_NO_OPEN_QTY = "GLS-RCV-NO-OPEN-QTY-409";
+  public static final String ASN_PO_OVERAGES = "GLS-RCV-OVG-409";
+
+  public static final String INVENTORY_ADJUSTMENT_MSG_PROCESSING_ERROR = "GLS-RCV-INVT-ADJ-500";
+  public static final String INVENTORY_SERVICE_UNAVAILABLE = "GLS-RCV-INVT-503";
+  public static final String INVALID_ITEM_HANDLING_METHOD =
+      "GLS-RCV-INVALID-ITEM-HANDLING-METHOD-400";
+  public static final String MAX_QUANTITY_REACHED_FOR_PROBLEM = "GLS-RCV-PROB-MAX-QTY-REACHED-500";
+
+  public static final String INVALID_MESSAGE_TYPE = "GLS-RCV-PUBLISH-MSG-TYPE-INVALID-400";
+  public static final String UNSUPPORTED_MESSAGE_TYPE =
+      "GLS-RCV-PUBLISH-MSG-TYPE-NOT-SUPPORTED-409";
+  public static final String INVALID_SYM_SYSTEM = "GLS-RCV-PUBLISH-INVALID-SYM-SYS-400";
+  public static final String INVALID_PUTAWAY_REQUEST =
+      "GLS-RCV-PUBLISH-INVALID-PUTAWAY-REQUEST-400";
+  public static final String PARTIAL_PUTAWAY_REQUEST =
+      "GLS-RCV-PUBLISH-PARTIAL-PUTAWAY-REQUEST-400";
+
+  public static final String INVALID_PALLET_CORRECTION_TRACKING_IDS =
+      "GLS-RCV-PALLET-CORR-INVALID-TRACKING_IDS-400";
+  public static final String CONTAINER_ITEM_DATA_NOT_FOUND = "GLS-RCV-CNTR-ITM-DATA-404";
+  public static final String AUTO_GROC_OVERAGE_ERROR = "AutoGrocOverage_%s_%s";
+  public static final String AUTO_GROC_HACCP_ERROR = "AutoGrocHACCPItem_%s_%s";
+  public static final String GROCERY_OVERAGE_ERROR_CODE = "GLS-RCV-OVERAGE-ERROR-CODE-500";
+
+  public static final String DSDC_FEATURE_FLAGGED_ERROR = "GLS-RCV-DSDC-FEATURE-FLAGGED-ERROR-500";
+  public static final String POCON_FEATURE_FLAGGED_ERROR =
+      "GLS-RCV-POCON-FEATURE-FLAGGED-ERROR-500";
+  public static final String PO_POL_NOT_FOUND_ERROR = "GLS-RCV-POLINE-NOT-FOUND-404";
+  public static final String CREATE_INSTRUCTION_NO_PO_LINE =
+      "GLS-RCV-CREATE-INSTRUCTION-NO-PO-LINE-404";
+  public static final String PO_FINALIZED_ERROR = "GLS-RCV-PO-FINALIZED-ERROR-409";
+  public static final String MULTI_USER_UNABLE_TO_VERIFY =
+      "GLS-RCV-MULTI-USER-UNABLE-TO-VERIFY-500";
+  public static final String COMPLETE_INSTRUCTION_PALLET_CANCELLED =
+      "GLS-RCV-COMPLETE-INSTRUCTION-PALLET-CANCELLED";
+  public static final String COMPLETE_INSTRUCTION_ALREADY_COMPLETE =
+      "GLS-RCV-COMPLETE-INSTRUCTION-ALREADY-COMPLETE-500";
+  public static final String INVALID_ITEM_ERROR_MSG = "GLS-RCV-INVALID-ITEM-ERROR-MSG-400";
+  public static final String INVALID_EXP_DATE = "GLS-RCV-INVALID-EXP-DATE-400";
+  public static final String INVALID_EXP_DATE_ERROR_MSG = "GLS-RCV-INVALID-EXP-DATE-ERROR-MSG-400";
+  public static final String UPDATE_INSTRUCTION_EXCEEDS_QUANTITY = "GLS-RCV-CASESRCVD-400";
+  public static final String RECEIVE_INSTRUCTION_EXCEEDS_QUANTITY = "GLS-RCV-CASESRCVD-400";
+  public static final String UPDATE_INSTRUCTION_REACHED_MAXIMUM_THRESHOLD =
+      "GLS-RCV-UPDATE-INSTRUCTION-REACHED-MAXIMUM_THRESHOLD-500";
+  public static final String RECEIVE_INSTRUCTION_REACHED_MAXIMUM_THRESHOLD =
+      "GLS-RCV-RECEIVE-INSTRUCTION-REACHED-MAXIMUM_THRESHOLD-500";
+  public static final String CONTAINER_EXCEEDS_QUANTITY = "GLS-RCV-CONTAINER-EXCEEDS-QUANTITY-500";
+  public static final String COMPLETE_INSTRUCTION_ERROR_MSG =
+      "GLS-RCV-COMPLETE-INSTRUCTION-ERROR-MSG-400";
+  public static final String RECEIVE_INSTRUCTION_INTERNAL_ERROR =
+      "GLS-RCV-RECEIVE-INSTRUCTION-ERROR-500";
+  public static final String RECEIVE_DSDC_INSTRUCTION_INTERNAL_ERROR =
+      "GLS-RCV-RECEIVE-DSDC-INSTRUCTION-ERROR-500";
+  public static final String UNABLE_TO_RECEIVE_INSTRUCTION_ERROR =
+      "GLS-RCV-RECEIVE-INSTRUCTION-RDS-ASYNC-ERROR-500";
+
+  public static final String BLOCK_PRINT_ASYNC_FLOW_ERROR = "GLS-RCV-RECEIVE-BLOCK-PRINT-ASYNC-500";
+  public static final String RECEIVE_INSTRUCTION_ERROR_MSG =
+      "GLS-RCV-RECEIVE-INSTRUCTION-ERROR-MSG-400";
+  public static final String INVALID_BOL_WEIGHT_ERROR = "GLS-RCV-INVALID-BOL-WEIGHT-ERROR-400";
+  public static final String ITEM_NOT_ON_BOL_ERROR = "GLS-RCV-ITEM-NOT_ON_BOL-ERROR-400";
+  public static final String MULTI_USER_ERROR_MESSAGE = "GLS-RCV-MULTI-USER-ERROR-MESSAGE-500";
+  public static final String UPDATE_INSTRUCTION_NEAR_OVERAGE_LIMIT =
+      "GLS-RCV-UPDATE-INSTRUCTION-NEAR-OVERAGE-LIMIT-500";
+  public static final String RECEIVE_INSTRUCTION_NEAR_OVERAGE_LIMIT =
+      "GLS-RCV-UPDATE-INSTRUCTION-NEAR-OVERAGE-LIMIT-500";
+  public static final String INVALID_DELIVERY_NUMBER = "GLS-RCV-DEL-NO-INVALID-400";
+  public static final String GDM_GET_DELIVERY_ERROR = "GLS-RCV-DEL-FETCH_ERROR-404";
+  public static final String FIXIT_SERVICE_DOWN = "GLS-RCV-FIXIT-NOT-REACHABLE-500";
+  public static final String FIT_SERVICE_DOWN = "GLS-RCV-FIT-NOT-REACHABLE-500";
+  public static final String PTAG_NOT_FOUND = "GLS-RCV-CNTR-NOT-AVAILABLE-500";
+  public static final String COMPLETE_PTAG_ERROR = "GLS-RCV-PROB-TAG-COMPLETE-ERROR-500";
+  public static final String GDM_SERVICE_DOWN = "GLS-RCV-GDM-DOWN-500";
+  public static final String CREATE_PTAG_ERROR_MESSAGE = "GLS-RCV-PROB-TAG-CREATE-ERR-400";
+  public static final String PTAG_NOT_READY_TO_RECEIVE = "GLS-RCV-NOT-READY-500";
+  public static final String PTAG_RESOLVED_BUT_LINE_REJECTED = "GLS-RCV-PBLM-RESOLVED-ITEM-REJ-409";
+  public static final String PTAG_RESOLVED_BUT_LINE_ALREADY_RECEIVED =
+      "GLS-RCV-PBLM-RESOLVED-ALLOWED-QTY-409";
+  public static final String TENANT_CONFIG_ERROR = "GLS-RCV-TNT-CONF-409";
+  public static final String CANCEL_INSTRUCTION_ERROR_MSG = "GLS-RCV-CAN-INS-ERR-500";
+  public static final String COMPLETE_DELIVERY_UNCONFIRMED_PO_ERROR_MESSAGE =
+      "GLS-RCV-UN-CONF-PO-CNT-500";
+  public static final String NO_TRANSFERRABLE_INSTRUCTIONS = "GLS-RCV-NO-TRANSFERABLE-INS-500";
+  public static final String INSTRUCTIONS_FOR_MESSAGE_ID = "GLS-RCV-INSTRN-FOR-MSG-ID-404";
+  public static final String GLS_RCV_INSTRUCTION_COMPLETED =
+      "GLS-RCV-INSTRUCTION-COMPLETED-CODE-400";
+  public static final String DC_FIN_SERVICE_DOWN = "GLS-RCV-DCFIN-SRVC-DOWN-500";
+  public static final String DC_FIN_POST_RECEIPT_ERROR = "GLS-RCV-DCFIN_POST_RCPT-500";
+
+  public static final String PRODATE_NOT_FOUND_IN_PO_ERROR = "GLS-RCV-MISSING-PRODATE-IN-PO-409";
+
+  public static final String ITEM_DETAILS_NOT_FOUND_IN_RDS =
+      "GLS-RCV-MISSING-ITEM-DETAILS-IN-RDS-404";
+  public static final String OVERAGE_ERROR = "GLS-RCV-OVERAGE-ERROR-500";
+  public static final String GLS_DELIVERY_ERROR = "GLS-RCV-DELIVERY-400";
+  public static final String INVALID_GDM_DOCUMENT_DATA = "GLS-RCV-GDM-INVALID-ASN-400";
+  public static final String FEATURE_NOT_IMPLEMENTED = "GLS-RCV-501";
+
+  public static final String INVALID_PALLET = "GLS-RCV-PALLET-409";
+  public static final String PARTIAL_DOCKTAG_CREATION_ERROR = "GLS-RCV-DTG-PRTL-CRT-500";
+  public static final String DOCKTAG_ALREADY_COMPLETED_ERROR = "GLS-RCV-DTG-CMPL-400";
+  public static final String INVENTORY_SERVICE_NOT_AVAILABLE_ERROR =
+      "GLS-RCV-DTG-CMPL-INV-NOT-AVAILABLE-500";
+
+  public static final String INVALID_DA_LBL_BACKOUT_REQUEST = "GLS-RCV-RDS-INVALID-REQ-400";
+  public static final String NIM_RDS_SERVICE_UNAVAILABLE_ERROR =
+      "GLS-RCV-RDS-SERVICE_UNAVAILABLE-500";
+  public static final String UNABLE_TO_CANCEL_LABEL = "GLS-RCV-RDS-BACKOUT-LBL-409";
+  public static final String DA_LBL_ALREADY_BACKED_OUT = "GLS-RCV-RDC-LBL-ALREADY-BACKED-OUT";
+
+  public static final String INVALID_PROBLEM_CREATE_TS = "GLS-RCV-PROBLEM-CREATE-TS-409";
+
+  public static final String DELIVERY_NOT_RECEIVABLE = "GLS-RCV-DELIVERY-NOT-RECEIVABLE-400";
+  public static final String DELIVERY_NOT_RECEIVABLE_REOPEN =
+      "GLS-RCV-DELIVERY-NOT-RECEIVABLE-REOPEN-400";
+  public static final String INVALID_EXPIRY_DATE_ERROR_CODE = "GLS-RCV-EXP-DATE-INVALID-400";
+  public static final String WAREHOUSE_MIN_LIFE_NULL_ERROR_CODE = "GLS-RCV-NO-WRHSEMINLIFE-400";
+  public static final String STORE_MIN_LIFE_NULL_ERROR_CODE = "GLS-RCV-NO-STOREMINLIFE-400";
+  public static final String PALLET_CORRECTION_NOTALLOWED_EPCIS_VENDOR_409 =
+      "PALLET-CORRECTION-NOTALLOWED-EPCIS-VENDOR-409";
+  public static final String AUDIT_2D_DETAILS_DO_NOT_MATCH = "GLS-RCV-INVALID-AUDIT-SCAN-403";
+  public static final String MULTI_SKU_CASE_EPCIS = "MULTI-SKU-CASE-EPCIS";
+  public static final String SPLIT_PALLET_NOT_ALLOWED_EPCIS_VENDOR_409 =
+      "SPLIT_PALLET_NOT_ALLOWED_EPCIS_VENDOR_409";
+  public static final String MULTI_LOT_PARTIAL_CASE = "MULTI_LOT_PARTIAL_CASE";
+  public static final String CASE_2D_NOT_ALLOWED_PARTIAL_FLOW =
+      "CASE_2D_NOT_ALLOWED_PARTIAL_FLOW_409";
+  public static final String BULK_SLOT_DELIVERY_NOT_FOUND_409 =
+      "GLS-RCV-SMART-SLOT-DELIVERY-NOT-FOUND-409";
+  public static final String BULK_SLOT_NOT_AVAILABLE_FOR_DELIVERY_409 =
+      "GLS-RCV-SMART-SLOT-INVALID-DELIVERY-409";
+
+  public static final String BULK_SLOT_CAPACITY_NOT_AVAILABLE_FOR_DELIVERY_404 =
+      "GLS-RCV-SMART-SLOT-NO-CAPACITY-404";
+
+  public static final String NO_RECEIVING_TYPE = "NO_RECEIVING_TYPE_409";
+
+  public static final String BARCODE_ALREADY_RECEIVED = "BARCODE_ALREADY_RECEIVED";
+  public static final String BARCODE_NOT_IN_RECEIVABLE_STATUS = "BARCODE_NOT_IN_RECEIVABLE_STATUS";
+  public static final String INVALID_CORRECTION_ERROR = "GLS-RCV-CRC-CNTR-400-13";
+
+  public static final String BAD_REQUEST_FOR_FIXIT_EVENT = "GLS-RCV-FIXIT-EPCISPUBLISH-400";
+  public static final String INVALID_DSDC_RECEIVE_REQUEST = "GLS-RCV-RDS-INVALID-REQ-400";
+  public static final String RDS_DSDC_RECEIVE_VALIDATION_ERROR =
+      "GLS-RCV-RDS-DSDC-VALIDATION-ERR-400";
+  public static final String DSDC_RECEIVE_ERROR_RDS = "GLS-RCV-DSDC-RECEIVE-ERR-RDS-409";
+  public static final String WEIGHT_UOM_INVALID_ERROR_CODE = "GLS-RCV-INVALID-WEIGHT-UOM-400";
+  public static final String WEIGHT_THRESHOLD_EXCEEDED_ERROR_CODE =
+      "GLS-RCV-WEIGHT-THRESHOLD-EXCEEDED-500";
+  public static final String DA_RTS_PUT_NOT_ALLOWED_IN_WORKSTATION =
+      "GLS-RCV-RTS-PUT-NOT-ALLOWED-400";
+  public static final String GDM_SEARCH_EPCIS_DATA_FAILED = "RCV-GDM-EPCIS-SHPMT-FAIL-500";
+  public static final String ERROR_UPDATING_GDM = "RCV-GDM-EPCIS-STATUS-FAIL-500";
+  public static final String GLS_RCV_ITEM_SAVE_CONFIRMATION_CODE =
+      "GLS-RCV-ITEM-SAVE-CONFIRMATION-400";
+  public static final String GLS_RCV_ITEM_SAVE_COO_CONFIRMATION_CODE =
+      "GLS-RCV-ITEM-SAVE-COO-CONFIRMATION-400";
+  public static final String GLS_RCV_ITEM_SAVE_PACK_CONFIRMATION_CODE =
+      "GLS-RCV-ITEM-SAVE-PACK-CONFIRMATION-400";
+  public static final String MISSING_MANDATORY_FIELDS = "GLS-RCV-ITEM-SAVE-400";
+  public static final String GET_STORE_DIST_ERROR_FROM_RDS = "GLS-STORE-DISTRIBUTION-ERR-RDS-400";
+  public static final String STORE_DIST_BY_DELIVERY_DOC_LINE_ERROR_FROM_RDS =
+      "GLS-RCV-STORE-DISTRIBUTION-ERR-RDS-400";
+  public static final String BAD_REQUEST_FOR_INV_ADJUST_EVENT = "GLS-RCV-INV-400";
+
+  // Line level FBQ check error message
+  public static final String LINE_LEVEL_FBQ_MISSING_ERROR = "GLS-RCV-LINE-LEVEL-FBQ-MISSING-400";
+  public static final String BEYOND_THRESHOLD_DATE_WARN_ERROR_CODE =
+      "GLS-RCV-BEYOND-THRESHOLD-DATE-WARN-CODE-400";
+  public static final String NO_ALLOCATIONS_FOR_DA_FREIGHT = "GLS-RCV-OP-NO-ALLOCATION-400";
+  public static final String LABEL_COUNT_NOT_MATCHED = "GLS-RCV-DA-LABEL-COUNT-MISMATCH-400";
+  public static final String INVALID_LABEL_STATUS_FOR_HAWKEYE_LPNS =
+      "GLS-RCV-DA-INVALID-LPN-STATUS-409";
+  public static final String ATLAS_DA_SLOTTING_NOT_ALLOWED_FOR_CONVEYABLE_ITEMS =
+      "GLS-RCV-DA-SLOT-NOT-ALLOWED-400";
+  public static final String LABEL_COUNT_EXCEEDED_FOR_DSDC_SSCC =
+      "GLS-RCV-DSDC-LABEL-COUNT-EXCEED-409";
+  public static final String NO_ALLOCATIONS_FOR_DSDC_FREIGHT = "GLS-RCV-OP-NO-ALLOCATION-DSDC-400";
+  public static final String NO_ALLOCATIONS_FOR_DSDC_FREIGHT_BY_LPN =
+      "GLS-RCV-OP-NO-ALLOCATION-DSDC-LPN-400";
+  public static final String SOURCE_CONTAINER_NOT_FOUND = "GLS-RCV-CNTR-SWAP-404";
+  public static final String SOURCE_CONTAINER_NOT_ELIGIBLE = "GLS-RCV-CNTR-SWAP-409";
+
+  public static final String MIRAGE_EXCEPTION_INTERNAL_SERVER =
+      "GLS-RCV-MIRAGE-INTERNAL-SERVER-500";
+  public static final String MIRAGE_EXCEPTION_ERROR_INVALID_BARCODE =
+      "GLS-RCV-MIRAGE-INVALID-BARCODE-404";
+  public static final String HAWKEYE_RECEIVE_ERROR = "GLS-RCV-Delivery-Search-Hawkeye-500";
+  public static final String HAWKEYE_RECEIVE_NO_DELIVERY_FOUND = "GLS-RCV-Hawkeye-200";
+  public static final String HAWKEYE_RECEIVE_INVALID_INPUT = "GLS-RCV-Hawkeye-404";
+  public static final String INVALID_RECEIVE_EXCEPTION_REQUEST =
+      "GLS-RCV-EXCEPTION-INVALID-REQ-400";
+  public static final String UPC_MATCH_NOT_FOUND = "GLS-RCV-UPC-NOT-FOUND-400";
+  public static final String INVALID_LABEL_DETAILS = "GLS-RCV-LABEL-400";
+  public static final String CONFLICT_LABEL_DETAILS = "GLS-RCV-LABEL-409";
+  public static final String LABEL_DETAILS_ERROR = "GLS-RCV-LABEL-500";
+  public static final String HAWKEYE_ITEM_UPDATE_FAILED = "GLS-RCV-HWK-ITEM-UPDATE-400";
+  public static final String HAWKEYE_FETCH_LPNS_FAILED = "GLS-RCV-HWK-FETCH-LPNS-400";
+  public static final String HAWKEYE_LABEL_GROUP_UPDATE_FAILED = "GLS-RCV-HWK-DELIVERY-LINK-400";
+  public static final String HAWKEYE_LABEL_GROUP_UPDATE_CONFLICT = "GLS-RCV-HWK-DELIVERY-LINK-409";
+  public static final String HAWKEYE_LABEL_GROUP_UPDATE_ERROR = "GLS-RCV-HWK-DELIVERY-LINK-500";
+  public static final String LABELS_NOT_FOUND = "GLS-RCV-LABEL-404";
+
+  public static final String INVALID_CASE_UPC = "GLS-RCV-INVALID-CASE-UPC-400";
+  public static final String RECEIVE_PACK_INTERNAL_ERROR = "GLS-RCV-RECEIVE-PACK-ERROR-400";
+  public static final String
+      CONTAINER_ADJUSTMENT_NOT_ALLOWED_FOR_LESS_THAN_A_CASE_RECEIVED_CONTAINER =
+          "GLS-RCV-CNT-ADJUST-DA-409";
+  public static final String CONTAINER_ADJUSTMENT_NOT_ALLOWED_FOR_DSDC_CONTAINER =
+      "GLS-RCV-CNT-ADJUST-DSDC-409";
+
+  public static final String MAX_ALLOWED_TIME_FOR_CONTAINER_BACKOUT_EXPIRED =
+      "GLS-RCV-CNT-BACKOUT-EXP-TIME-500";
+  public static final String ORDER_FULFILLMENT_PRINT_SL_FROM_RL_FAILED = "GLS-RCV-OF-PRINT-SL-400";
+  public static final String OF_SERVER_ERROR = "GLS-RCV-OF-500";
+
+  public static final String DELIVERY_WORKING_STATUS_EVENT_INTERNAL_SERVER_ERROR =
+      "GLS-RCV-DELIVERY-WORKING-STATUS-EVENT-UPDATE-REQ-500";
+  public static final String INVALID_WORKING_STATUS_EVENT_REQUEST =
+      "GLS-RCV-INVALID-WORKING-STATUS-EVENT-REQ-400";
+  public static final String DELIVERY_WORKING_STATUS_EVENT_UNAVAILABLE =
+      "GLS-RCV-DELIVERY-WORKING-STATUS-EVENT-REQ-503";
+  public static final String DELIVERY_WORKING_STATUS_EVENT_NOT_FOUND =
+      "GLS-RCV-DELIVERY-WORKING-STATUS-EVENT-REQ-404";
+
+  public static final String DELIVERY_OPEN_STATUS_EVENT_INTERNAL_SERVER_ERROR =
+      "GLS-RCV-DELIVERY-OPEN-STATUS-EVENT-UPDATE-REQ-500";
+  public static final String INVALID_OPEN_STATUS_EVENT_REQUEST =
+      "GLS-RCV-INVALID-OPEN-STATUS-EVENT-REQ-400";
+  public static final String DELIVERY_OPEN_STATUS_EVENT_UNAVAILABLE =
+      "GLS-RCV-DELIVERY-OPEN-STATUS-EVENT-REQ-503";
+  public static final String DELIVERY_OPEN_STATUS_EVENT_NOT_FOUND =
+      "GLS-RCV-DELIVERY-OPEN-STATUS-EVENT-REQ-404";
+
+  public static final String INVALID_LBL_FORMAT = "GLS-RCV-INVALID-LABEL-FMT-409";
+
+  public static final String DA_NON_ATLAS_ITEM_HANDLING_CODE_NOT_SUPPORTED =
+      "GLS-RCV-DA-HANDLING-CODE-NOT-SUPPORTED-400";
+
+  public static final String ATLAS_DA_AUTOMATION_SLOTTING_NOT_ALLOWED =
+      "GLS-RCV-DA-AUTOMATION-SLOT-NOT-ALLOWED-400";
+
+  public static final String DA_QUANTITY_RECEIVING_NOT_ALLOWED =
+      "GLS-RCV-QUANTITY-RECEIVING-NOT-ALLOWED-400";
+  public static final String MISSING_ITEM_HANDLING_CODE = "GLS-RCV-MISSING-ITEM-HANDLING-CODE-400";
+  public static final String ATLAS_DA_CONVENTIONAL_SLOTTING_NOT_ALLOWED_FOR_NON_CON_ITEMS =
+      "GLS-RCV-DA-CONVENTIONAL-SLOT-NOT-ALLOWED-400";
+
+  public static final String ATLAS_DA_SLOTTING_AND_PALLET_PULL_NOT_ALLOWED_FOR_PACK_HANDLING_CODES =
+      "GLS-RCV-DA-SLOTTING-AND-PALLET-PULL-NOT-ALLOWED-400";
+
+  public static final String SSCC_NOT_FOUND = "GLS-RCV-DSDC-ASN-SSCC-404";
+  public static final String SSCC_ALREADY_RECEIVED = "GLS-RCV-DSDC-ASN-SSCC-409";
+
+  public static final String ATLAS_DA_SLOTTING_NOT_SUPPORTED_HANDLING_CODES =
+      "GLS-RCV-DA-NOT-SUPPORTED-SLOTTING-HANDLING-CODE-400";
+
+  public static final String INVALID_GTIN_ID = "GLS-RCV-INVALID-GTIN-ID-400";
+  public static final String ITEM_NOT_CONVERTED_TO_ATLAS =
+      "GLS-RVC-ITEM_NOT_CONVERTED_TO_ATLAS_400";
+  public static final String ITEM_CONFIG_SERVICE_NOT_ENABLED =
+      "GLS-RVC-ITEM_NOT_CONVERTED_TO_ATLAS_409";
+
+  public static final String GDM_LPN_DATA_NOT_FOUND = "GDM_LPN_DATA_404";
+  public static final String DOCK_LPN_TAG_NOT_FOUND = "GLS-RCV-DTG-LPN-404";
+
+  public static final String PENDING_LPN = "GLS-RCV-PENDING-LPN-422";
+  public static final String RE_RECEIVING_LPN_ALREADY_RECEIVED = "GLS-RCV-LPNS-408";
+
+  public static final String LABEL_DATA_NOT_FOUND = "GLS-RCV-LABEL-DATA-404";
+
+  public static final String RESOLUTION_BPO_NOT_ALLOWED = "GLS-RCV-FIXIT-BPO-RESOLUTION-400";
+
+  public static final String NGR_EVENT_ERROR = "GLS-RCV-NGR-500";
+  public static final String INVALID_NGR_EVENT = "GLS-RCV-NGR-400";
+
+  public static final String SLOT_PO_TYPE_MISMATCH_ERROR_400 =
+      "GLS-RCV-SMART-SLOT-PO-TYPE-MISMATCH-400";
+  public static final String SLOTTING_INACTIVE_SLOT_ERROR_400 =
+      "GLS-RCV-SMART-SLOT-INACTIVE-SLOT-400";
+  public static final String SLOTTING_FROZEN_SLOT_ERROR_ERROR_400 =
+      "GLS-RCV-SMART-SLOT-FROZEN-SLOT-400";
+  public static final String SLOTTING_LOCATION_NOT_CONFIGURED_ERROR_400 =
+      "GLS-RCV-SMART-SLOT-LOCATION-NOT-CONFIGURED-400";
+  public static final String SLOTTING_CONTAINER_ITEM_LOCATION_NOT_FOUND_ERROR_400 =
+      "GLS-RCV-SMART-SLOT-ITEM-LOCATION-NOT-FOUND-400";
+  public static final String PUBLISH_TO_KAFKA_TOPIC_RESTRICTED =
+      "PUBLISH_TO_KAFKA_TOPIC_RESTRICTED-405";
+
+  public static final String UPC_VALIDATION_FAILED = "GLS-RCV-UPC-VALIDATION-FAIL-400";
+  public static final String CHANNEL_FLIP = "GLS-RCV-CHANNEL-FLIP-500";
+  public static final String ITEM_CHANGED_AFTER_PO_AUTO_SELECTION =
+      "GLS-RCV-ITEM-CHNG-PO-AUTO-SELECT-400";
+  public static final String AUTO_SELECT_PO_POLINE_FAILED =
+      "GLS-RCV-AUTO-SELECT-PO-POLINE-FAIL-400";
+  public static final String INVALID_ROTATE_DATE_ERROR_CODE = "GLS-RCV-ROTATE-DATE-INVALID-400";
+}

@@ -1,0 +1,133 @@
+{
+  "summary": {
+    "containers": [
+      {
+        "trackingId": "120000000000000095",
+        "sscc": "120000000000000095",
+        "containerType": "PALLET",
+        "shipmentDocumentId": "NI-30260355504_20221111_6035_DC_US",
+        "rcvdQty": 0,
+        "rcvdQtyUom": "EA",
+        "items": [
+          {
+            "itemNumber": "566092822",
+            "gtin": "00078742351926",
+            "invoiceNumber": "8000000265",
+            "invoiceLineNumber": "2",
+            "reportedQty": 5,
+            "reportedQtyUom": "EA",
+            "rcvdQty": 0,
+            "rcvdQtyUom": "EA",
+            "shortage": {
+              "quantity": 5,
+              "uom": "EA"
+            }
+          }
+        ],
+        "shortage": {
+          "quantity": 5,
+          "uom": "EA"
+        },
+        "receivedFor": "MFC"
+      },
+      {
+        "trackingId": "120000000000000096",
+        "sscc": "120000000000000096",
+        "containerType": "PALLET",
+        "shipmentDocumentId": "NI-30260355504_20221111_6035_DC_US",
+        "rcvdQty": 0,
+        "rcvdQtyUom": "EA",
+        "items": [
+          {
+            "itemNumber": "566092822",
+            "gtin": "00078742351926",
+            "invoiceNumber": "8000000265",
+            "invoiceLineNumber": "3",
+            "reportedQty": 5,
+            "reportedQtyUom": "EA",
+            "rcvdQty": 0,
+            "rcvdQtyUom": "EA",
+            "shortage": {
+              "quantity": 5,
+              "uom": "EA"
+            }
+          }
+        ],
+        "shortage": {
+          "quantity": 5,
+          "uom": "EA"
+        },
+        "receivedFor": "MFC"
+      },
+      {
+        "trackingId": "120000000000000095",
+        "sscc": "120000000000000095",
+        "containerType": "PALLET",
+        "shipmentDocumentId": "NI-30260355504_20221111_6035_DC_US",
+        "rcvdQty": 0,
+        "rcvdQtyUom": "EA",
+        "items": [
+          {
+            "itemNumber": "566092822",
+            "gtin": "00078742351926",
+            "invoiceNumber": "8000000265",
+            "invoiceLineNumber": "1",
+            "reportedQty": 5,
+            "reportedQtyUom": "EA",
+            "rcvdQty": 0,
+            "rcvdQtyUom": "EA",
+            "shortage": {
+              "quantity": 5,
+              "uom": "EA"
+            }
+          }
+        ],
+        "shortage": {
+          "quantity": 5,
+          "uom": "EA"
+        },
+        "receivedFor": "MFC"
+      }
+    ],
+    "purchaseOrders": [
+      {
+        "rcvdQty": 0,
+        "invoiceNumber": "8000000265",
+        "lines": [
+          {
+            "lineNumber": 1,
+            "gtin": "00078742351926",
+            "rcvdQty": 0,
+            "shortage": {
+              "quantity": 15
+            }
+          },
+          {
+            "lineNumber": 2,
+            "gtin": "00078742351926",
+            "rcvdQty": 0,
+            "shortage": {
+              "quantity": 5
+            }
+          },
+          {
+            "lineNumber": 3,
+            "gtin": "00078742351926",
+            "rcvdQty": 0,
+            "shortage": {
+              "quantity": 5
+            }
+          }
+        ],
+        "shortage": {
+          "quantity": 15
+        },
+        "receivedFor": "MFC"
+      }
+    ]
+  },
+  "eventType": "rcv_asn_osdr",
+  "userId": "sysadmin",
+  "ts": "2022-11-15T08:08:08.123Z",
+  "deliveryNumber": 55041350
+}

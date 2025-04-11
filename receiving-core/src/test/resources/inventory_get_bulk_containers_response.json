@@ -1,0 +1,35 @@
+[
+  {
+    "containerInventories": [
+      {
+        "trackingId": "001000132679203193",
+        "locationName": "999",
+        "orgUnitId": 0,
+        "containerStatus": "AVAILABLE",
+        "childContainerDetails": [],
+        "items": [
+          {
+            "itemNumber": 200184,
+            "venPkQuantity": 12,
+            "warPkQuantity": 48,
+            "venPkRatio": 12,
+            "warPkRatio": 3,
+            "channelType": "STAPLESTOCK",
+            "itemUPC": "00732216300246",
+            "caseUPC": "00732216503616",
+            "podetails": [
+              {
+                "poNum": "9999999999",
+                "purchaseReferenceLineNumber": 1,
+                "poQty": 144
+              }
+            ]
+          }
+        ],
+        "createUserId": "rcvuser",
+        "containerCreateDate": 1706138706599,
+        "deliveryNumber": "12345065"
+      }
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+{
+  "facilityCountryCode": "us",
+  "facilityNum": 32818,
+  "id": 67752,
+  "deliveryNumber": 23371015,
+  "purchaseReferenceNumber": "4223042727",
+  "purchaseReferenceLineNumber": 2,
+  "gtin": "34988446565",
+  "receivedQuantity": 2,
+  "receivedQuantityUOM": "ZA",
+  "itemDescription": "PREDNISOLONE 5MG/5ML",
+  "poDcNumber": "32897",
+  "createUserId": "sysadmin",
+  "createTs": "2020-10-28",
+  "lastChangeUserId": "sysadmin",
+  "lastChangeTs": "2020-10-28",
+  "completeUserId": "sysadmin",
+  "completeTs": "2020-10-28",
+  "printChildContainerLabels": false,
+  "activityName": "SSTK",
+  "providerId": "RdcSSTK",
+  "instructionMsg": "Build Pallet for RDC",
+  "instructionCode": "Build Pallet",
+  "messageId": "d16c6bd2-cd30-4190-afa6-5daceb14b3bf",
+  "projectedReceiveQty": 81,
+  "projectedReceiveQtyUOM": "ZA",
+  "container": {
+    "ctrLabel": {
+      "headers": {
+        "WMT-CorrelationId": "343434-fddfpdfdf-32323",
+        "facilityCountryCode": "us",
+        "facilityNum": "32818"
+      },
+      "clientId": "nextgen-receiving",
+      "printRequests": [{
+        "formatName": "dc1000f0_format_g",
+        "labelFormatId": null,
+        "facilityType": null,
+        "language": null,
+        "data": [
+          {
+            "key": "LABELBAR",
+            "value": "9778090968"
+          },
+          {
+            "key": "SLOT",
+            "value": "T7757"
+          },
+          {
+            "key": "LBLPICK",
+            "value": "2"
+          },
+          {
+            "key": "LABELDATE",
+            "value": "03/04/21 22:30:20"
+          },
+          {
+            "key": "LBLVNPK",
+            "value": "6"
+          },
+          {
+            "key": "ITEM",
+            "value": "3802181"
+          },
+          {
+            "key": "POLINE",
+            "value": "2"
+          },
+          {
+            "key": "RCVR",
+            "value": "702673"
+          },
+          {
+            "key": "LBLWHPK",
+            "value": "6"
+          },
+          {
+            "key": "UPCBAR",
+            "value": "34988446565"
+          },
+          {
+            "key": "USERID",
+            "value": "sysadmin"
+          },
+          {
+            "key": "TI",
+            "value": "15"
+          },
+          {
+            "key": "HI",
+            "value": "3"
+          },
+          {
+            "key": "VENDORID",
+            "value": "11357"
+          },
+          {
+            "key": "LABELNUM",
+            "value": "1"
+          },
+          {
+            "key": "LABELCNT",
+            "value": "1"
+          },
+          {
+            "key": "PARTIALTAG",
+            "value": "PARTIAL"
+          },
+          {
+            "key": "REPRINT",
+            "value": ""
+          },
+          {
+            "key": "SLOTSIZE",
+            "value": "73"
+          }
+        ],
+        "labelIdentifier": "9778090968",
+        "ttlInHours": 100,
+        "isErrorHandlingNeeded": true,
+        "printableData": null,
+        "printJobId": "70652"
+      }]
+    },
+    "ctrShippable": false,
+    "ctrReusable": false,
+    "quantity": null,
+    "outboundChannelMethod": null,
+    "ctrDestination": null,
+    "inventoryStatus": "PICKED",
+    "ctrType": "PALLET",
+    "ctrStatus": null,
+    "trackingId": "9778090968",
+    "distributions": null,
+    "projectedWeight": null,
+    "projectedWeightUom": null,
+    "orgUnitId": null,
+    "childContainers": null,
+    "contents": null,
+    "parentTrackingId": null,
+    "containerId": null,
+    "remainingQty": null,
+    "problemFreightLocation": null
+  },
+  "childContainers": null,
+  "move": {
+    "fromLocation": "6",
+    "lastChangedOn": "2020-10-28",
+    "lastChangedBy": "sysadmin",
+    "primeLocation": "T7757",
+    "primeLocationSize": 73
+  },
+  "labels": null,
+  "ssccNumber": null,
+  "problemTagId": null,
+  "firstExpiryFirstOut": false,
+  "deliveryDocument": "{\"purchaseReferenceNumber\":\"4223042727\",\"financialGroupCode\":\"US\",\"baseDivCode\":\"WM\",\"vendorNumber\":\"480889\",\"vendorNbrDeptSeq\":480889940,\"deptNumber\":\"94\",\"purchaseCompanyId\":\"1\",\"purchaseReferenceLegacyType\":\"0\",\"poDCNumber\":\"32897\",\"purchaseReferenceStatus\":\"CLOSED\",\"deliveryDocumentLines\":[{\"gtin\":\"34988446565\",\"itemUPC\":\"34988446565\",\"caseUPC\":\"30349884465651\",\"purchaseReferenceNumber\":\"4223042727\",\"purchaseReferenceLineNumber\":2,\"event\":\"POS REPLEN\",\"purchaseReferenceLineStatus\":\"RECEIVED\",\"whpkSell\":23.89,\"vendorPackCost\":23.89,\"vnpkQty\":6,\"whpkQty\":6, \"maxReceiveQty\":250,\"expectedQtyUOM\":\"ZA\",\"openQty\":830,\"expectedQty\":810,\"overageQtyLimit\":20,\"itemNbr\":3802181,\"purchaseRefType\":\"SSTKU\",\"palletTi\":15,\"palletHi\":3,\"vnpkWgtQty\":10.0,\"vnpkWgtUom\":\"LB\",\"vnpkcbqty\":0.852,\"vnpkcbuomcd\":\"CF\",\"color\":\"LIQUID\",\"size\":\"EA\",\"isHazmat\":false,\"itemDescription1\":\"PREDNISOLONE 5MG/5ML\",\"itemDescription2\":\"PEDIAPRED\",\"isConveyable\":false,\"warehouseRotationTypeCode\":\"2\",\"firstExpiryFirstOut\":false,\"warehouseMinLifeRemainingToReceive\":30,\"profiledWarehouseArea\":\"CPS\",\"promoBuyInd\":\"N\",\"additionalInfo\":{\"warehouseAreaCode\":\"4\",\"warehouseGroupCode\":\"F\",\"isNewItem\":false,\"profiledWarehouseArea\":\"CPS\",\"warehouseRotationTypeCode\":\"2\",\"recall\":false,\"weight\":3.325,\"weightUOM\":\"LB\",\"warehouseMinLifeRemainingToReceive\":30},\"operationalInfo\":{\"state\":\"ACTIVE\"},\"activeChannelMethods\":[],\"department\":\"38\",\"vendorStockNumber\":\"11357\"}],\"totalPurchaseReferenceQty\":1300,\"weight\":0.0,\"cubeQty\":0.0,\"freightTermCode\":\"PRP\",\"deliveryStatus\":\"OPN\",\"poTypeCode\":0,\"totalBolFbq\":0,\"deliveryLegacyStatus\":\"OPN\",\"purchaseReferenceMustArriveByDate\":\"Nov 27, 2019 6:00:00 PM\",\"stateReasonCodes\":[\"DOOR_OPEN\"],\"deliveryNumber\":23371015}",
+  "manualInstruction": null,
+  "dockTagId": null,
+  "originalChannel": null,
+  "isReceiveCorrection": null
+}

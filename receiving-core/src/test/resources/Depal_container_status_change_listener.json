@@ -1,0 +1,14 @@
+{
+  "trackingId": "m073770000100000002338381",
+  "sourceLocationId": "CP04FL_C-DEPAL-1",
+  "destinationLocationId": "BUF100",
+  "messageTs": "2019-03-13T07:35:50.324Z",
+  "messageType": "DEPAL_START",
+  "equipmentName" : "CP04FL_C",
+  "skuInd": "SINGLE",
+  "priority": 3,
+  "roboticCellAssignments": {
+    "frameNumber": "F504",
+    "agvNumber": "AGV5"
+  }
+}

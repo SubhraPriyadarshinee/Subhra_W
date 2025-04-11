@@ -1,0 +1,259 @@
+{
+  "messageId": "ac4b7124-82a8-4c20-882b-99d3b6652a4j",
+  "instructionCode": "Pass",
+  "instructionMsg": "No action required",
+  "activityName": "ACL",
+  "shrinkWrap": false,
+  "container": {
+    "trackingId": "c671810000200000000001002",
+    "distributions": [
+      {
+        "orderId": "ec6d1f3f-2026-4575-8375-05d1f06a73e9",
+        "allocQty": 4,
+        "item": {
+          "itemNbr": 550129241,
+          "baseDivisionCode": "WM",
+          "financialReportingGroup": "US",
+          "reportingGroup": "US"
+        }
+      }
+    ],
+    "ctrType": "Vendor Pack",
+    "inventoryStatus": "PICKED",
+    "ctrDestination": {
+      "buNumber": 6037,
+      "countryCode": "US"
+    },
+    "finalDestination": {
+      "buNumber": 6037,
+      "countryCode": "US"
+    },
+    "outboundChannelMethod": "CROSSU",
+    "ctrReusable": false,
+    "ctrShippable": true,
+    "ctrLabel": {
+      "formatID": "case_lpn_format",
+      "formatId": "case_lpn_format",
+      "clientID": "AllocPlanner",
+      "clientId": "AllocPlanner",
+      "labelIdentifier": "c671810000200000000001002",
+      "ttlInHours": 72,
+      "labelData": [
+        {
+          "key": "LPN",
+          "value": "c671810000200000000001002"
+        },
+        {
+          "key": "DESTINATION",
+          "value": "06037 US"
+        },
+        {
+          "key": "ITEM",
+          "value": "550129241"
+        },
+        {
+          "key": "QTY",
+          "value": ""
+        },
+        {
+          "key": "UPCBAR",
+          "value": "00000943037204"
+        },
+        {
+          "key": "DESC1",
+          "value": "TR 12QT STCKPT SS"
+        },
+        {
+          "key": "DESC2",
+          "value": "<T&S>"
+        },
+        {
+          "key": "FULLUSERID",
+          "value": "sysadmin"
+        },
+        {
+          "key": "PACK",
+          "value": "4"
+        },
+        {
+          "key": "SIZE",
+          "value": "EA"
+        },
+        {
+          "key": "COLOR",
+          "value": "*"
+        },
+        {
+          "key": "POCODE",
+          "value": "GO"
+        },
+        {
+          "key": "PO",
+          "value": "4763030227"
+        },
+        {
+          "key": "VENDORID",
+          "value": "480889"
+        },
+        {
+          "key": "POLINE",
+          "value": "1"
+        },
+        {
+          "key": "POEVENT",
+          "value": "POS REPLEN"
+        },
+        {
+          "key": "REPRINT",
+          "value": ""
+        },
+        {
+          "key": "HAZMAT",
+          "value": ""
+        },
+        {
+          "key": "STOREZONE",
+          "value": "F"
+        },
+        {
+          "key": "EVENTCHAR",
+          "value": " "
+        },
+        {
+          "key": "PRINTER",
+          "value": ""
+        },
+        {
+          "key": "CPQTY",
+          "value": "4"
+        },
+        {
+          "key": "DEPT",
+          "value": "92"
+        },
+        {
+          "key": "CHANNEL",
+          "value": "DIST"
+        },
+        {
+          "key": "PACKTYPE",
+          "value": "CP"
+        },
+        {
+          "key": "DSDC",
+          "value": ""
+        }
+      ],
+      "data": [
+        {
+          "key": "LPN",
+          "value": "c671810000200000000001002"
+        },
+        {
+          "key": "DESTINATION",
+          "value": "06037 US"
+        },
+        {
+          "key": "ITEM",
+          "value": "550129241"
+        },
+        {
+          "key": "QTY",
+          "value": ""
+        },
+        {
+          "key": "UPCBAR",
+          "value": "00023968377311"
+        },
+        {
+          "key": "DESC1",
+          "value": "4\" MKT BAN CRM N"
+        },
+        {
+          "key": "DESC2",
+          "value": "<T&S>"
+        },
+        {
+          "key": "FULLUSERID",
+          "value": "sysadmin"
+        },
+        {
+          "key": "PACK",
+          "value": "4"
+        },
+        {
+          "key": "SIZE",
+          "value": "EA"
+        },
+        {
+          "key": "COLOR",
+          "value": "*"
+        },
+        {
+          "key": "POCODE",
+          "value": "GO"
+        },
+        {
+          "key": "PO",
+          "value": "2516950126"
+        },
+        {
+          "key": "VENDORID",
+          "value": "480889"
+        },
+        {
+          "key": "POLINE",
+          "value": "1"
+        },
+        {
+          "key": "POEVENT",
+          "value": "POS REPLEN"
+        },
+        {
+          "key": "REPRINT",
+          "value": ""
+        },
+        {
+          "key": "HAZMAT",
+          "value": ""
+        },
+        {
+          "key": "STOREZONE",
+          "value": "F"
+        },
+        {
+          "key": "EVENTCHAR",
+          "value": " "
+        },
+        {
+          "key": "PRINTER",
+          "value": ""
+        },
+        {
+          "key": "CPQTY",
+          "value": "4"
+        },
+        {
+          "key": "DEPT",
+          "value": "92"
+        },
+        {
+          "key": "CHANNEL",
+          "value": "DIST"
+        },
+        {
+          "key": "PACKTYPE",
+          "value": "CP"
+        },
+        {
+          "key": "DSDC",
+          "value": ""
+        }
+      ]
+    }
+  },
+  "providerId": "AllocPlanner",
+  "projectedQty": 4,
+  "projectedQtyUom": "EA",
+  "printChildContainerLabels": false
+}

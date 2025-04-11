@@ -1,0 +1,67 @@
+{
+  "found": [
+    {
+      "poNumber": "8458708163",
+      "poLine": 1,
+      "results": [
+        {
+          "manifest": 60032433,
+          "quantity": 120,
+          "storeDistrib": [
+            {
+              "storeNbr": 10,
+              "whpk_order_qty": 5,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 13,
+              "whpk_order_qty": 5,
+              "whpk_distrib_qty": 0
+            }
+          ]
+        },
+        {
+          "manifest": 60032432,
+          "quantity": 120,
+          "storeDistrib": [
+            {
+              "storeNbr": 10,
+              "whpk_order_qty": 5,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 13,
+              "whpk_order_qty": 5,
+              "whpk_distrib_qty": 0
+            }
+          ]
+        }
+      ],
+      "total": 240
+    },
+    {
+      "poNumber": "8458708164",
+      "poLine": 1,
+      "results": [
+        {
+          "manifest": 60032433,
+          "quantity": 120,
+          "storeDistrib": [
+            {
+              "storeNbr": 10,
+              "whpk_order_qty": 5,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 13,
+              "whpk_order_qty": 5,
+              "whpk_distrib_qty": 0
+            }
+          ]
+        }
+      ],
+      "total": 120
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,173 @@
+{
+  "number": "9213971",
+  "baseDivisionCode": "wm",
+  "financialReportingGroupCode": "us",
+  "description": [
+    {
+      "textValue": "SK CWW TNA PCH 2.6Z      ",
+      "languageCode": "101"
+    }
+  ],
+  "createDate": "2008-05-28T00:00:00.000+0000",
+  "supplierAgreement": {
+    "supplierNumber": 58271,
+    "department": {
+      "number": 92
+    }
+  },
+  "warehouseRotationType": {
+    "code": "2",
+    "description": "Strict - By Received Date               "
+  },
+  "orderableQuantity": {
+    "amount": 24
+  },
+  "orderableGTIN": "10080000495225",
+  "warehousePackQuantity": {
+    "amount": 24
+  },
+  "consumableGTIN": "00080000495228",
+  "deptNumber": 92,
+  "warehouseArea": {
+    "code": "6"
+  },
+  "supplierStockId": "495220              ",
+  "isHazmat": false,
+  "size": "2.6 OZ    ",
+  "color": [
+    {
+      "actual": "NONE      "
+    }
+  ],
+  "tradeItems": [
+    {
+      "gtin": "10080000495225",
+      "palletTi": 33,
+      "palletHi": 6,
+      "weight": {
+        "amount": 4.85,
+        "uom": "LB"
+      },
+      "dimensions": {
+        "height": 6.93,
+        "width": 5.75,
+        "depth": 9.7,
+        "uom": "IN"
+      },
+      "cube": {
+        "amount": 0.223,
+        "uom": "CF"
+      },
+      "isConveyable": true,
+      "isConsumable": true,
+      "batteryType": {
+        "code": "1"
+      }
+    }
+  ],
+  "palletTi": 33,
+  "palletHi": 6,
+  "weight": {
+    "amount": 0.1625,
+    "uom": "LB"
+  },
+  "dimensions": {
+    "height": 6.25,
+    "width": 4.5,
+    "depth": 0.39,
+    "uom": "IN"
+  },
+  "cube": {
+    "amount": 0.1,
+    "uom": "CF"
+  },
+  "productDefinition": {
+    "name": "Starkist Starkist Albacore Pouch                 ",
+    "isHazmat": false,
+    "isAerosol": false,
+    "isPesticide": false,
+    "isChemical": false,
+    "isMultipack": false,
+    "merchandiseSegregation": {
+      "code": "1"
+    }
+  },
+  "dcProperties": {
+    "id": {
+      "itemNumber": 9213971,
+      "baseDivisionCode": "wm"
+    },
+    "itemNumber": 9213971,
+    "baseDivisionCode": "wm",
+    "isNewItem": false,
+    "supplyItem": {
+      "orderableQuantity": {
+        "amount": 24
+      },
+      "warehousePackQuantity": {
+        "amount": 24
+      },
+      "isHazmat": false,
+      "tradeItems": [
+        {
+          "gtin": "10080000495225",
+          "palletTi": 33,
+          "palletHi": 6,
+          "weight": {
+            "amount": 4.85,
+            "uom": "LB"
+          },
+          "dimensions": {
+            "height": 6.93,
+            "width": 5.75,
+            "depth": 9.7,
+            "uom": "IN"
+          },
+          "cube": {
+            "amount": 0.223,
+            "uom": "CF"
+          },
+          "isConveyable": true,
+          "isConsumable": true,
+          "batteryType": {
+            "code": "1"
+          }
+        }
+      ],
+      "weight": {
+        "amount": 0.1625,
+        "uom": "LB"
+      },
+      "dimensions": {
+        "height": 6.25,
+        "width": 4.5,
+        "depth": 0.39,
+        "uom": "IN"
+      },
+      "cube": {
+        "amount": 0.1,
+        "uom": "CF"
+      },
+      "warehouse": {
+        "warehouseRotationType": {
+          "code": "3",
+          "description": "Strict - By Sell By Date"
+        }
+      }
+    },
+    "fcAttributes": {
+      "serialNumRequired": false,
+      "isLiquid": false,
+      "shipAlone": false,
+      "slottingTag": "NON-CHEMICAL",
+      "isToteable": true,
+      "shipAsIs": true,
+      "totable": true
+    }
+  },
+  "gtinHazmat":{
+    "slotting": {
+      "code": "1"
+    }
+  }
+}

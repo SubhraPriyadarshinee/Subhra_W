@@ -1,0 +1,12 @@
+{
+  "messageId": "13012c7e-f413-46a5-9836-f3bdbeaa47fc",
+  "deliveryNumber": "42229567",
+  "deliveryStatus": "WRK",
+  "upcNumber": "00616376506093",
+  "doorNumber": "258",
+  "deliveryDocuments": null,
+  "enteredQty":null,
+  "enteredQtyUOM":null,
+  "mappedFloorLine": null,
+  "receivingType":"UPC"
+}

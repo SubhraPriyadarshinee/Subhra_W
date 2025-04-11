@@ -1,0 +1,138 @@
+{
+  "deliveryNumber": "60148930",
+  "deliveryStatus": "OPN",
+  "doorNumber": "122",
+  "messageId": "15fa50ca-644d-41d3-a0ad-b9302e67558a",
+  "scannedDataList": [
+    {
+      "key": "sscc",
+      "applicationIdentifier": "00",
+      "value": "107713130250136761"
+    }
+  ],
+  "sscc": "00107713130250136761",
+  "deliveryDocuments": [
+    {
+      "baseDivisionCode": "WM",
+      "cubeQty": 0,
+      "cubeUOM": "",
+      "deliveryDocumentLines": [
+        {
+          "additionalInfo": {},
+          "caseUpc": "",
+          "color": "CAPSUL",
+          "cube": "0.51",
+          "cubeUom": "CF",
+          "currency": "",
+          "description": "ATOMOXETINE HCl CAP 80MG 30 BTL USA",
+          "dotIdNbr": "",
+          "event": "POS REPLEN",
+          "deptNumber": "38",
+          "gtin": "00360505283538",
+          "itemNbr": 571398025,
+          "itemType": "",
+          "itemUpc": "00360505283538",
+          "itemUPC": "00360505283538",
+          "ndc": "60505283503",
+          "overageQtyLimit": 0,
+          "packSSCC": "",
+          "palletSSCC": "00107713130250136761",
+          "profiledWarehouseArea": "",
+          "promoBuyInd": "",
+          "purchaseRefType": "20",
+          "purchaseReferenceLineNumber": 16,
+          "purchaseReferenceLineStatus": "APPROVED",
+          "purchaseReferenceNumber": "9371790870",
+          "qtyUOM": "ZA",
+          "shipmentDetailsList": [
+            {
+              "loadNumber": "",
+              "shipmentNumber": "0086008782",
+              "destinationGlobalLocationNumber": "0078742030180"
+            }
+          ],
+          "manufactureDetails": [
+            {
+              "expiryDate": "2022-10-31",
+              "lot": "RW0409",
+              "qty": "36",
+              "reportedUom": "PH",
+              "gtinHierarchy": [
+                {
+                  "gtin": "00360505283538",
+                  "type": "consumableGTIN"
+                },
+                {
+                  "gtin": "10360505283535",
+                  "type": "orderableGTIN"
+                },
+                {
+                  "gtin": "00360505283538",
+                  "type": "warehousePackGtin"
+                },
+                {
+                  "gtin": "",
+                  "type": "catalogGTIN"
+                },
+                {
+                  "gtin": "00360505283538",
+                  "type": "gtin"
+                },
+                {
+                  "gtin": "40360505283536",
+                  "type": "IN"
+                },
+                {
+                  "gtin": "00360505283538",
+                  "type": "EA"
+                },
+                {
+                  "gtin": "60360505283530",
+                  "type": "CA"
+                },
+                {
+                  "gtin": "10360505283535",
+                  "type": "CA"
+                }
+              ]
+            }
+          ],
+          "shipmentNumber": "0086008782",
+          "secondaryDescription": "",
+          "size": "30",
+          "totalOrderQty": 1,
+          "vendorPack": 2160,
+          "vendorPackCost": 1170,
+          "warehousePack": 30,
+          "warehousePackSell": 16.25,
+          "weight": 5.48,
+          "weightUom": "LB",
+          "quantityUOM": "ZA",
+          "vnpkQty": 2160,
+          "whpkQty": 30,
+          "expectedQty": 1,
+          "vendorNbrDeptSeq": 733436,
+          "shippedQty": 2,
+          "shippedQtyUom": "ZA",
+          "aggregatedTotalOrderedQty": 1,
+          "aggregatedShippedQty": 2,
+          "itemDescription1": "ATOMOXETINE HCl CAP 80MG 30 BTL USA"
+        }
+      ],
+      "deliveryStatus": "OPN",
+      "deptNumber": "38",
+      "financialReportingGroup": "US",
+      "freightTermCode": "",
+      "poDCNumber": "6028",
+      "poTypeCode": 20,
+      "purchaseCompanyId": "1",
+      "purchaseReferenceLegacyType": "20",
+      "purchaseReferenceNumber": "9371790870",
+      "purchaseReferenceStatus": "ACTV",
+      "totalBolFbq": 96,
+      "vendorNumber": "733436",
+      "weight": 0,
+      "weightUOM": ""
+    }
+  ]
+}

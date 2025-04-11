@@ -1,0 +1,10 @@
+{
+  "messageId": "d034fc9c-849b-11ea-bc55-0242ac130003",
+  "locations": [
+    {
+      "type": "error",
+      "code": "GLS-SMART-SLOTING-400097",
+      "desc": "Items are not compatible for slotting"
+    }
+  ]
+}

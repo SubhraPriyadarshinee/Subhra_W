@@ -1,0 +1,181 @@
+{
+  "poNumber": "1708326250",
+  "omsPONumber": "1378376638",
+  "poDcNumber": "7552",
+  "bpoNumber": "0",
+  "baseDivisionCode": "WM",
+  "legacyType": 20,
+  "purchaseCompanyId": 1,
+  "poStatus": "ACTV",
+  "freightTermCode": "COLL",
+  "financialGroupCode": "US",
+  "dates": {
+    "cancel": "2019-03-26",
+    "ordered": "2019-03-19",
+    "mabd": "2024-02-29",
+    "ship": "2019-03-26"
+  },
+  "vendor": {
+    "name": "BAMA COMPANIES INC",
+    "number": 304857,
+    "department": 52,
+    "vendorNbrDeptSeq": "304857521",
+    "serialInfoEnabled": false
+  },
+  "additionalInformation": {
+    "Ship_Point": "VARIOUS ZZ ZZ",
+    "manCrtInd": "Y",
+    "Outbound_Month": "3",
+    "No_Of_Items": 1,
+    "Walmart_Week": "9"
+  },
+  "lines": [
+    {
+      "poLineNumber": 3,
+      "channel": "SSTKU",
+      "originalChannel": "STAPLESTOCK",
+      "poLineStatus": "ACTIVE",
+      "ordered": {
+        "quantity": 2,
+        "uom": "ZA"
+      },
+      "whpk": {
+        "quantity": 1,
+        "sell": 23.68
+      },
+      "vnpk": {
+        "quantity": 1,
+        "cost": 1.84,
+        "weight": {
+          "quantity": 3.84,
+          "uom": "LB"
+        },
+        "cube": {
+          "quantity": 0.246,
+          "uom": "CF"
+        }
+      },
+      "event": "POS REPLEN",
+      "additionalInformation": {
+        "Sample_Po_Ind": "N",
+        "Manual_Po_Ind": "N"
+      },
+      "itemDetails": {
+        "number": 571012536,
+        "consumableGTIN": "00000013398019",
+        "orderableGTIN": "00000013398019",
+        "supplierStockId": "D13398-1",
+        "palletTi": 0,
+        "palletHi": 0,
+        "hazmat": false,
+        "itemTypeCode": "7",
+        "color": "",
+        "size": "",
+        "descriptions": [
+          "23\" INCH TALL WHITE",
+          "ONLINE ONLY"
+        ],
+        "vendorDepartment": "17",
+        "additionalInformation": {
+          "isNewItem": false,
+          "images": {
+            "IMAGE_SIZE_100": "https://i5.walmartimages.com/asr/dc48b620-2ca0-40a2-bb88-3f70c18b995e_1.6a7ee062d82bdb69a057adce9d85f36a.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+            "IMAGE_SIZE_180": "https://i5.walmartimages.com/asr/dc48b620-2ca0-40a2-bb88-3f70c18b995e_1.6a7ee062d82bdb69a057adce9d85f36a.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+            "IMAGE_SIZE_2000": "https://i5.walmartimages.com/asr/dc48b620-2ca0-40a2-bb88-3f70c18b995e_1.6a7ee062d82bdb69a057adce9d85f36a.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+            "IMAGE_SIZE_450": "https://i5.walmartimages.com/asr/dc48b620-2ca0-40a2-bb88-3f70c18b995e_1.6a7ee062d82bdb69a057adce9d85f36a.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+            "IMAGE_SIZE_60": "https://i5.walmartimages.com/asr/dc48b620-2ca0-40a2-bb88-3f70c18b995e_1.6a7ee062d82bdb69a057adce9d85f36a.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+          },
+          "warehouseRotationTypeCode": "1",
+          "eachesDimensions": {
+            "height": 1.15,
+            "width": 1.21,
+            "depth": 2.21,
+            "uom": "IN"
+          },
+          "fcAttributes": {
+            "food": false,
+            "iccid": true,
+            "eid": false,
+            "isGlass": false,
+            "isNestable": false,
+            "isLiquid": false,
+            "packageType": "box",
+            "inboundPrepType": "",
+            "outboundPrepType": "",
+            "shipAlone": false,
+            "nonRigid": true,
+            "slottingTag": "NON-CHEMICAL",
+            "totable": true,
+            "imeiNumber": "none"
+          },
+          "weight": 30.23,
+          "cubeUOM": "CF",
+          "cube": 0.0,
+          "weightUOM": "LB",
+          "eachWeight": 30.23,
+          "eachWeightUOM": "LB"
+        },
+        "orderableQuantity": 1,
+        "warehousePackQuantity": 1
+      },
+      "lastChangedOn": "2019-04-03T18:02:01.000Z"
+    },
+    {
+      "poLineNumber": 2,
+      "channel": "SSTKU",
+      "originalChannel": "STAPLESTOCK",
+      "poLineStatus": "ACTIVE",
+      "ordered": {
+        "quantity": 2,
+        "uom": "ZA"
+      },
+      "whpk": {
+        "quantity": 1,
+        "sell": 23.68
+      },
+      "vnpk": {
+        "quantity": 1,
+        "cost": 1.84,
+        "weight": {
+          "quantity": 3.84,
+          "uom": "LB"
+        },
+        "cube": {
+          "quantity": 0.246,
+          "uom": "CF"
+        }
+      },
+      "event": "POS REPLEN",
+      "additionalInformation": {
+        "Sample_Po_Ind": "N",
+        "Manual_Po_Ind": "N"
+      },
+      "itemDetails": {
+        "number": 881729,
+        "consumableGTIN": "00050000454358",
+        "orderableGTIN": "00050000454358",
+        "supplierStockId": "005000045435",
+        "palletTi": 21,
+        "palletHi": 7,
+        "hazmat": false,
+        "itemTypeCode": "20",
+        "color": "",
+        "size": "",
+        "descriptions": [
+          "FRISK PATE SEAF 32CT",
+          "SEAFOOD VARIETY PACK"
+        ],
+        "vendorDepartment": "8",
+        "additionalInformation": {
+          "isNewItem": false,
+          "images": {
+            "IMAGE_SIZE_100": "https://i5.walmartimages.com/asr/b1e2575f-1ef7-4e20-a481-992439ac5603.aea1c1623ed5dd9818a90edd70184cd0.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+            "IMAGE_SIZE_180": "https://i5.walmartimages.com/asr/b1e2575f-1ef7-4e20-a481-992439ac5603.aea1c1623ed5dd9818a90edd70184cd0.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+            "IMAGE_SIZE_2000": "https://i5.walmartimages.com/asr/b1e2575f-1ef7-4e20-a481-992439ac5603.aea1c1623ed5dd9818a90edd70184cd0.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+            "IMAGE_SIZE_450": "https://i5.walmartimages.com/asr/b1e2575f-1ef7-4e20-a481-992439ac5603.aea1c1623ed5dd9818a90edd70184cd0.jpeg?odnHeight=450&odnWidth=450&od"
+          }
+        }
+      }
+    }
+  ]
+}

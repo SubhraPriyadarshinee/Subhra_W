@@ -1,0 +1,13 @@
+{
+    "found": [],
+    "errors": [
+        {
+            "item_nbr": "123456789",
+            "errorCode": "NIMRDS-017",
+            "message": "Error: No Item Details found"
+        }
+    ],
+    "missing": [
+        "123456789"
+    ]
+}

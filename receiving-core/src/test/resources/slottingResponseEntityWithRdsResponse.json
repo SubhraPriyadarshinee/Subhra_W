@@ -1,0 +1,60 @@
+{
+  "messageId": "d034fc9c-849b-11ea-bc55-0242ac130003",
+  "locations": [
+    {
+      "type": "success",
+      "location": "K7298",
+      "primeLocation": "K7298",
+      "locationSize": 60,
+      "slotType": "prime",
+      "asrsAlignment": "SYM1"
+    }
+  ],
+  "rds": {
+    "sneEnabled": true,
+    "received": [
+      {
+        "poNumber": "4130044264",
+        "poLine": 73,
+        "returnCode": 0,
+        "message": "SUCCESS",
+        "labelTrackingId": "",
+        "carton": "",
+        "batch": 0,
+        "shippingLane": 0,
+        "receiver": 97382,
+        "pack": 0,
+        "department": 0,
+        "division": 0,
+        "pocode": 0,
+        "aisle": "",
+        "poevent": "",
+        "storezone": null,
+        "eventchar": null,
+        "pri_loc": "",
+        "sec_loc": "",
+        "ter_loc": "",
+        "hazmat": " ",
+        "sscc": "",
+        "tag": "",
+        "destinations": [
+          {
+            "store": null,
+            "slot": "K7298",
+            "slot_size": 60,
+            "zone": null,
+            "division": null,
+            "carton": null
+          }
+        ],
+        "productivity": {
+
+        },
+        "_id": "7bd0ab79-79de-4bf0-8e4a-137ac5f25d8a"
+      }
+    ],
+    "errors": [
+
+    ]
+  }
+}

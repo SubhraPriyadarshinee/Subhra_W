@@ -1,0 +1,98 @@
+{
+  "foundSupplyItems": [
+    {
+      "number": 561298341,
+      "baseDivisionCode": "wm",
+      "description": [
+        {
+          "textValue": "GV CANOLA CK SPRAY 8     ",
+          "languageCode": "101"
+        }
+      ],
+      "secondaryDescription": [
+        {
+          "textValue": "AEROSOL                  "
+        }
+      ],
+      "createDate": "1998-07-28T00:00:00.000+0000",
+      "supplierAgreement": {
+        "supplierNumber": 928333
+      },
+      "orderableQuantity": {
+        "amount": 12
+      },
+      "orderableGTIN": "20078742229434",
+      "warehousePackQuantity": {
+        "amount": 12
+      },
+      "consumableGTIN": "00078742229430",
+      "deptNumber": 92,
+      "supplierStockId": "20078742229434      ",
+      "isHazmat": true,
+      "tradeItems": [
+        {
+          "gtin": "20078742229434",
+          "weight": {
+            "amount": 8.837,
+            "uom": "LB"
+          },
+          "dimensions": {
+            "height": 10.0,
+            "width": 7.313,
+            "depth": 9.625,
+            "uom": "IN"
+          },
+          "isConveyable": false,
+          "batteryType": {
+            "code": "1"
+          }
+        }
+      ],
+      "weight": {
+        "amount": 0.698,
+        "uom": "LB"
+      },
+      "dimensions": {
+        "height": 9.19,
+        "width": 2.273,
+        "depth": 2.273,
+        "uom": "IN"
+      },
+      "productDefinition": {
+        "name": "Great Value Gv Canola Cooking Spray 8 Oz            ",
+        "isAerosol": true,
+        "isPesticide": false,
+        "isChemical": true,
+        "merchandiseSegregation": {
+          "code": "5"
+        }
+      },
+      "dcProperties": {
+        "supplyItem": {
+          "isHazmat": false,
+          "tradeItems": [
+            {
+              "gtin": "20078742229434",
+              "weight": {
+                "amount": 8.837,
+                "uom": "LB"
+              },
+              "dimensions": {
+                "height": 10.0,
+                "width": 7.313,
+                "depth": 9.625,
+                "uom": "IN"
+              },
+              "isConveyable": false,
+              "batteryType": {
+                "code": "1"
+              }
+            }
+          ],
+          "warehouse": {}
+        }
+      }
+    }
+  ],
+  "notFoundSupplyItems": []
+}

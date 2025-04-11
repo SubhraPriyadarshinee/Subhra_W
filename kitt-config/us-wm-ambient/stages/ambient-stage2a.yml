@@ -1,0 +1,69 @@
+profiles:
+  - git://Logistics:metrics-profiles:main:dt-saas-atlas/us-walmart/dt-saas-common
+  - git://Logistics:atlas-kitt-assets:main:deploy/us/wm/ambient/non-prod
+
+deploy:
+  stages:
+    - name: amb-stg2a
+      helm:
+        values:
+          secrets:
+            akeyless: true
+            engine: eso
+            config:
+              akeyless:
+                path:
+                  WCNP: /Prod/WCNP/homeoffice/GLS-Receiving-Atlas/receiving-api/{{$.kittExec.currentStage.name}}
+                  DPS: "/Non-Prod/DPS/homeoffice/GLS-Receiving-Atlas"
+            k8s:
+              - name: sam-secrets-{{$.kitt.build.artifact}}-{{$.kittExec.currentStage.name}}
+                type: Opaque
+                provider: DPS
+                secret_data:
+                  - key: azuresql-readwrite
+                    content: stage/stage/sam/SVC_AZURESQL_atlas-ambient-stg-cell002_020425173249
+          env:
+            DYNATRACE_ENABLED: false
+            JAVA_OPTS: >-
+              -Xms2048M
+              -Xmx2048M
+              -XX:+UseParNewGC
+              -XX:+UseConcMarkSweepGC
+              -XX:NewSize=512M
+              -XX:MaxMetaspaceSize=256M
+              -Djsse.enableSNIExtension=true
+              -Druntime.context.environmentType=stg
+              -Druntime.context.environment=amb-stg2a
+              -Dscm.scope.template=/stg/amb-stg2a/{{$.kittExec.currentCluster.site}}
+              -Druntime.context.appName=receiving-api
+              -Druntime.context.system.property.override.enabled=true
+              -Druntime.context.cloud={{$.kittExec.currentCluster.zone}}
+              -Dscm.snapshot.enabled=true
+              -Dscm.root.dir=/tmp/scm
+              -Dscm.print.summary.onchange=true
+              -Dscm.print.detailed.summary=true
+              -Dspring.config.use-legacy-processing=true
+              -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+              -DDATACENTER={{$.kittExec.currentCluster.zone}}
+              -Dplatform=wcnp
+              -Dspring.main.allow-circular-references=true
+              -DdeploymentSite={{$.kittExec.currentCluster.site}}
+              -Denable_jms=true
+              -Datlas-global-config-bootstrap=ccm
+              -Dspring.main.allow-bean-definition-overriding=true
+          metadata:
+            labels:
+              strati.appkey: ATLASRECEIVING
+              strati.env: stg-int
+            annotations:
+              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"},{"Path":"^/.*"}]'
+          min:
+            cpu: 2000m
+            memory: 2048Mi
+          max:
+            cpu: 2000m
+            memory: 2048Mi
+          scaling:
+            enabled: false
+            min: 1
+            max: 1

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Atlas Receiving Search Tool</title>
+    <!--  Bootstrap stylesheet  -->
+    <link rel="stylesheet" th:href="@{/resources/css/bootstrap-4.4.1-dist/css/bootstrap.min.css}">
+
+    <!--  Custom stylesheet  -->
+    <link rel="stylesheet" th:href="@{/resources/css/style.css}">
+
+</head>
+<body class="container">
+<div class="card-report">
+    <div class="card-body">
+        <p class="h1 text-center">Atlas Receiving Search Tool</p>
+        <div id="error" class="alert alert-danger" role="alert"></div>
+        <div id="success" class="alert alert-success" role="alert"></div>
+        <div>
+            <form id="searchForm" name='f'>
+                <div class="form-row d-flex justify-content-center">
+                    <div class="form-group col-sm-3 m-2">
+                        <label id="searchFieldLabel" for="searchField">Enter Delivery Number</label>
+                        <input id="searchField" class="form-control-lg" type="number" placeholder="Search Delivery" aria-label="Search">
+                    </div>
+                    <div id="poLineSearchFieldDiv" class="form-group col-sm-2 m-2 wd-8">
+                        <label id="searchFieldLabel2" for="poLineSearchField">Enter PO Line</label>
+                        <input id="poLineSearchField" class="form-control-lg wd-8" type="number" placeholder="PO Line" aria-label="Search">
+                    </div>
+
+                    <div class="form-group col-sm-3 m-2">
+                        <label for="facilityNumFormSelect" class="row-form-label">Select Facility Number</label>
+                        <select class="form-control form-control-lg" id="facilityNumFormSelect">
+                            <option th:each="facilityNum : ${allFacilityNumbers}"
+                                    th:value="${facilityNum}"
+                                    th:utext="${facilityNum}"/>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-3 m-2">
+                        <label for="facilityCountryCodeFormSelect" class="row-form-label">Select Country Code</label>
+                        <select class="form-control form-control-lg" id="facilityCountryCodeFormSelect">
+                            <option th:each="facilityCountryCode : ${allFacilityCountryCodes}"
+                                    th:value="${facilityCountryCode}"
+                                    th:utext="${facilityCountryCode}"/>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-1 m-2">
+                        <label></label>
+                        <label></label>
+                        <button type="submit" id="getData" class="btn btn-primary btn-lg">
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="searchButtonsSection" class="text-center md-top">
+            <button id="instructionSearchButton" class="btn btn-primary">Search for instruction instead</button>
+            <button id="containerSearchButton" class="btn btn-primary ml-3">Search for container instead</button>
+            <button id="receiptsSearchButton" class="btn btn-primary ml-3">Search for receipts instead</button>
+            <button id="deliverySearchButton" class="btn btn-primary ml-3">Search for delivery instead</button>
+        </div>
+        <hr>
+        <div id='ajax_loader' class="spinner-center">
+            <div class="spinner-border text-primary"></div>
+        </div>
+        <div class="row table-data justify-content-center" id="deliveryDataSection">
+            <div>
+                <div id="deliveryTitle">
+                </div>
+
+                <div id="deliveryStatus" class="row md-top">
+
+                </div>
+                <table id="deliveryReportData" class="table table-responsive-lg table-striped">
+                    <thead id="deiveryReportDataHeader">
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">PO Number</th>
+                        <th scope="col">PO Line</th>
+                        <th scope="col">Item Number</th>
+                        <th scope="col">GTIN</th>
+                        <th scope="col">Channel Method</th>
+                        <th scope="col" id="orderedLabelsHeader">Ordered Labels</th>
+                        <th scope="col" id="overageLabelsHeader">Overage Labels</th>
+                        <th scope="col" id="exceptionLabelsHeader">Exception Labels</th>
+                    </tr>
+                    </thead>
+                    <tbody id="deliveryTableBody">
+                    </tbody>
+                </table>
+            </div>
+            <div id="insReceiptButtons" class="text-center">
+                <button id="instructionsButton" class="btn btn-primary">View Instructions</button> &nbsp;
+                <button id="receiptsButton" class="btn btn-primary">View Receipts</button>
+            </div>
+        </div>
+        <div class="row table-data justify-content-center" id="instructionsDataSection">
+            <div>
+
+                <button class="btn btn-primary" id="instructionsBackButton">
+                    Back
+                </button>
+                <hr>
+                <p id="instructionsTitle" class="h4 text-center">
+                </p>
+                <hr>
+
+                <table id="instructionsReportData" class="table table-responsive-lg table-striped">
+                    <thead id="instructionsReportDataHeader">
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Instruction Id</th>
+                        <th scope="col">Message Id</th>
+                        <th scope="col">Activity Name</th>
+                        <th scope="col">Instruction Quantity</th>
+                        <th scope="col">Received Quantity</th>
+                        <th scope="col">UOM</th>
+                        <th scope="col">Pallet Tracking Id</th>
+                    </tr>
+                    </thead>
+                    <tbody id="instructionsTableBody">
+                    </tbody>
+                </table>
+            </div>
+            <div id="containersButtonSection" class="text-center">
+                <button id="containersButton" class="btn btn-primary">View Containers</button> &nbsp;
+            </div>
+        </div>
+        <div id="instructionDetailsSection" class="md-top-sm">
+            <button class="btn btn-primary" id="instructionDetailsBackButton">
+                Back
+            </button>
+            <pre id="instructionDetails" class="pre-scrollable" style="max-height: 50vh"></pre>
+        </div>
+        <div id="containerDetailsSection" class="md-top-sm">
+            <button class="btn btn-primary" id="containerDetailsBackButton">
+                Back
+            </button>
+            <pre id="containerDetails" class="pre-scrollable" style="max-height: 50vh"></pre>
+        </div>
+        <div class="row table-data justify-content-center" id="receiptsDataSection">
+            <div>
+
+                <button class="btn btn-primary" id="receiptsBackButton">
+                    Back
+                </button>
+                <hr>
+                <p id="receiptsTitle" class="h4 text-center">
+                </p>
+                <hr>
+
+                <table id="receiptsReportData" class="table table-responsive-lg table-striped">
+                    <thead id="receiptsReportDataHeader">
+                    <tr>
+                        <th scope="col">User Id</th>
+                        <th scope="col">Delivery Number</th>
+                        <th scope="col">Received Quantity</th>
+                        <th scope="col">UOM</th>
+                    </tr>
+                    </thead>
+                    <tbody id="receiptsTableBody">
+                    </tbody>
+                </table>
+                <hr>
+                <p id="receiptsTotalQty" class="h4 text-center"></p>
+            </div>
+        </div>
+        <div class="row table-data justify-content-center" id="containersDataSection">
+            <div>
+
+                <button class="btn btn-primary" id="containersBackButton">
+                    Back
+                </button>
+                <hr>
+                <p id="containersTitle" class="h4 text-center">
+                </p>
+                <hr>
+
+                <table id="containersReportData" class="table table-responsive-lg table-striped">
+                    <thead id="containersReportDataHeader">
+                    <tr>
+                        <th scope="col">Tracking Id</th>
+                        <th scope="col">Parent Tracking Id</th>
+                        <th scope="col">Container Type</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Container Publish Timestamp</th>
+                    </tr>
+                    </thead>
+                    <tbody id="containersTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer>
+    <!-- jQuery library -->
+    <script th:src="@{/resources/css/jquery-3.4.1/jquery-3.4.1.min.js}"></script>
+    <!--  Bootstrap library  -->
+    <script th:src="@{/resources/css/bootstrap-4.4.1-dist/js/bootstrap.min.js}"></script>
+
+    <!-- js file -->
+    <script th:src="@{/resources/js/search.js}"></script>
+</footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{
+    "testCase": "HIF-RCV-07 quantity doesn't match tihi",
+    "trackingId": "?",
+    "messageId": "?",
+    "deliveryNumber": "121212121",
+    "location": "101",
+    "orgUnitId": "",
+    "facility": {
+        "buNumber": "05435",
+        "countryCode": "US"
+    },
+    "ctrType": "Chep Pallet",
+    "ctrStatus": "OPEN",
+    "ctrWght": 1120,
+    "ctrWghtUom": "LB",
+    "ctrCube": "44.72",
+    "ctrCubeUom": "CF",
+    "ctrShippable": true,
+    "ctrReusable": false,
+    "inventoryStatus": "AVAILABLE",
+    "contents": [
+        {
+            "purchaseReferenceNumber": "6712345678",
+            "purchaseReferenceLineNumber": 28,
+            "inboundChannelMethod": "SSTKU",
+            "outboundChannelMethod": "SSTKU",
+            "purchaseCompanyId": "0001",
+            "totalPurchaseReferenceQty": 80,
+            "gtin": "7874213228",
+            "itemNumber": 554930276,
+            "description": "FG POTATO SALAD 2LB      ",
+            "deptNumber": "0080",
+            "quantity": 486,
+            "quantityUom": "EA",
+            "vnpkQty": 6,
+            "whpkQty": 6,
+            "vendorPackCost": 10.62,
+            "whpkSell": 10.514,
+            "rotateDate": "2019-07-31T00:00:00Z",
+            "baseDivisionCode": "WM",
+            "financialReportingGroupCode": "US",
+            "ti": 8,
+            "hi": 10,
+            "lotNumber": "555",
+            "vendorNbr": 579284804,
+            "packagedAsUom": "ZA",
+            "actualTi": 8,
+            "actualHi": 10
+        }
+    ]
+}

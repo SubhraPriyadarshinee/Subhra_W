@@ -1,0 +1,29 @@
+[
+  {
+    "id": 32425,
+    "containerId": "a329870000000000000000001",
+    "priority": 40,
+    "assignedUserId": null,
+    "type": "PUTAWAY",
+    "status": "COMPLETED",
+    "fromLocation": "256",
+    "toLocation": "DPM08420",
+    "actions": {},
+    "moveCreatedTs": "2023-04-18T15:23:09.680+00:00",
+    "lastUpdatedTs": "2023-04-20T22:23:48.495+00:00",
+    "storeDestination": null,
+    "reasonDescription": "QA / Mgr Request",
+    "nextGenMoveId": null,
+    "quantity": 288.0,
+    "glsMoveId": null,
+    "containerCreateTs": "2023-04-18T15:23:05.778+00:00",
+    "routeNumber": null,
+    "actualReplenishmentcaseCount": null,
+    "warehouseAreaCode": 2,
+    "warehouseAreaName": "Dairy/Deli",
+    "mvmtVnpkQty": 8,
+    "mvmtWhpkQty": 8,
+    "moveQuantityUomCode": "EA",
+    "moveShippingContainerId": null
+  }
+]

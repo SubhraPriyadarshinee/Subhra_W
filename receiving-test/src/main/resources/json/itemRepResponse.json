@@ -1,0 +1,19 @@
+[
+    {
+        "articleId": "100000019",
+        "articleDescription": "UPRIGHT INT 36/54 - S/V",
+        "sapArticleType": "ZWM1",
+        "sapArticleTypeDescription": "WM Goods not for resale",
+        "baseUnitOfMeasure": "EA",
+        "sapInventoryFlag": "",
+        "articleLength": 0,
+        "articleWidth": 36,
+        "articleHeight": 54,
+        "dimensionUnitOfMeasure": "IN",
+        "weightUnit": "KG",
+        "articleVolume": 0,
+        "volumeUnit": "",
+        "deliveryType": "Cross Dock",
+        "isReplenished": false
+    }
+ ]

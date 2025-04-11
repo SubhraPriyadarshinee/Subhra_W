@@ -1,0 +1,28 @@
+{
+  "found": [
+    {
+      "poNumber": "8458708162",
+      "poLine": 1,
+      "results": [
+        {
+          "manifest": 60032433,
+          "quantity": 10,
+          "storeDistrib": [
+            {
+              "storeNbr": 10,
+              "whpk_order_qty": 5,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 13,
+              "whpk_order_qty": 5,
+              "whpk_distrib_qty": 0
+            }
+          ]
+        }
+      ],
+      "total": 10
+    }
+  ],
+  "errors": []
+}

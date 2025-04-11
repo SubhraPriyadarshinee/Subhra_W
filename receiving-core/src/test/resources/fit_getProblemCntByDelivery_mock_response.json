@@ -1,0 +1,56 @@
+{
+    "deliveryNumber": "9967271326",
+    "issueQtyUom": "ZA",
+    "issueQtyWithOutPo": 30,
+    "issueQtyWithPo": 62,
+    "purchaseOrders": [
+        {
+            "poNumber": "91643900463",
+            "issueQtyWithPoLines": 2,
+            "issueQtyUom": "ZA",
+            "poLines": [
+                {
+                    "poLineNumber": "0",
+                    "issueQtyUom": "ZA",
+                    "issueQty": 2
+                }
+            ]
+        },
+        {
+            "poNumber": "91643900463",
+            "issueQtyWithPoLines": 2,
+            "issueQtyUom": "ZA",
+            "poLines": [
+                {
+                    "poLineNumber": "1",
+                    "issueQtyUom": "ZA",
+                    "issueQty": 2
+                }
+            ]
+        },
+        {
+            "poNumber": "9164390047",
+            "issueQtyWithPoLines": 40,
+            "issueQtyUom": "ZA",
+            "poLines": [
+                {
+                    "poLineNumber": "1",
+                    "issueQtyUom": "ZA",
+                    "issueQty": 40
+                }
+            ]
+        },
+        {
+            "poNumber": "9164390046",
+            "issueQtyWithPoLines": 20,
+            "issueQtyUom": "ZA",
+            "poLines": [
+                {
+                    "poLineNumber": "2",
+                    "issueQtyUom": "ZA",
+                    "issueQty": 20
+                }
+            ]
+        }
+    ]
+}

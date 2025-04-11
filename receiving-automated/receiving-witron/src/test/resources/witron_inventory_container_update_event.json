@@ -1,0 +1,96 @@
+{
+    "correlationId": "GOUSERECONCILIATION1234",
+    "event": "container.updated",
+    "eventObject": {
+        "childContainers": [
+        ],
+        "containerCreatedDate": "27 May 2020 08:35:50.963+0000",
+        "containerCube": 28.648500442504883,
+        "containerCubeUOM": "CF",
+        "containerId": 0,
+        "containerStatus": "AVAILABLE",
+        "containerTypeAbbr": "Vendor Pack",
+        "countryCode": "US",
+        "dcNumber": 32612,
+        "deliveryNumber": "92856554",
+        "destinationLocationId": 6026,
+        "isContainerCubeCalc": true,
+        "isNetItemWeightCalc": true,
+        "isReusable": false,
+        "isShippable": true,
+        "itemList": [
+            {
+                "adjustmentTO": {
+                    "targetContainers": [
+                        {
+                            "adjustBy": 50,
+                            "adjustedQuantityUOM": "EA",
+                            "currentQuantityUOM": "EA",
+                            "event": "CREATION",
+                            "trackingId": "newlyCreatedDestContainer"
+                        }
+                    ],
+                    "uom": "EACHES",
+                    "value": -50
+                },
+                "allocatedQty": 0,
+                "availableNonPickableQty": 0,
+                "availabletosellQty": 50,
+                "baseDivisionCode": "WM",
+                "channelType": "CROSSU",
+                "claimsQty": 0,
+                "financialReportingGroup": "US",
+                "frozenQty": 0,
+                "intransitQty": 0,
+                "itemNumber": 1,
+                "itemUPC": "10618842371188",
+                "onorderQty": 0,
+                "orderDetails": [
+                ],
+                "ossIndicator": "N",
+                "pickedQty": 0,
+                "poDetails": [
+                    {
+                        "poNum": "3765790053",
+                        "poQty": 50,
+                        "purchaseReferenceLineNumber": 1
+                    }
+                ],
+                "poType": "CROSSU",
+                "problemfreightQty": 0,
+                "promoBuyInd": "N",
+                "purchaseCompanyId": 1,
+                "purchaseReferenceLineNumbers": [
+                    1
+                ],
+                "qualitycontrolQty": 0,
+                "receivedQty": 0,
+                "rotateDate": "01 Jan 2020 00:00:00.000+0000",
+                "unitOfMeasurement": "EACHES",
+                "vendorPkRatio": 4,
+                "warehousePkRatio": 4,
+                "whsePackSell": {
+                    "uom": "USD",
+                    "value": 31.15
+                },
+                "workInProgressQty": 0
+            }
+        ],
+        "itemNetWeight": 293.088,
+        "itemWeightUOM": "LB",
+        "locationName": "conveyor",
+        "locationOrgUnitId": 0,
+        "lotNumbers": [
+        ],
+        "poNums": [
+            "3765790053"
+        ],
+        "rotateDates": [
+            "01 Jan 2020 00:00:00.000+0000"
+        ],
+        "trackingId": "sourceContainer"
+    },
+    "id": "7dc82f0c-6161-4560-98d6-8b3ebae48edd",
+    "occurredOn": "27 May 2020 08:48:34.457+0000",
+    "user": "SYSADMIN"
+}

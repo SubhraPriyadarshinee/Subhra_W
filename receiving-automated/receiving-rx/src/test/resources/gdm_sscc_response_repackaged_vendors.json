@@ -1,0 +1,102 @@
+[
+  {
+    "purchaseReferenceNumber": "1211102552",
+    "financialGroupCode": "US",
+    "baseDivCode": "WM",
+    "vendorNumber": "53717",
+    "deptNumber": "38",
+    "purchaseCompanyId": "1",
+    "purchaseReferenceLegacyType": "33",
+    "poDCNumber": "32898",
+    "purchaseReferenceStatus": "ACTV",
+
+    "deliveryDocumentLines": [
+      {
+        "gtin": "00301680056463",
+        "itemUPC": "00301680056463",
+        "purchaseReferenceNumber": "1211102552",
+        "purchaseReferenceLineNumber": 1,
+        "event": "POS REPLEN",
+        "purchaseReferenceLineStatus": "RECEIVED",
+        "whpkSell": 8.22,
+        "vendorPackCost": 6.6,
+        "vnpkQty": 200,
+        "whpkQty": 50,
+        "expectedQtyUOM": "ZA",
+        "expectedQty": 10,
+        "overageQtyLimit": 0,
+        "itemNbr": 550327633,
+        "purchaseRefType": "33",
+        "vnpkWgtQty": 14.84,
+        "vnpkWgtUom": "LB",
+        "vnpkcbqty": 0.432,
+        "vnpkcbuomcd": "CF",
+        "color": "OINT",
+        "size": "45",
+        "itemDescription1": "Party Material",
+        "additionalInfo": {
+          "isNewItem": false,
+          "warehouseMinLifeRemainingToReceive": 0,
+          "isDscsaExemptionInd": false,
+          "primeSlotSize": 0
+        },
+        "packSSCC": "00320008990200601212",
+        "shipmentNumber": "200601212",
+        "shipmentDetailsList": [
+          {
+            "inboundShipmentDocId": "200601212_20191106_719468_VENDOR_US",
+            "shipmentNumber": "200601212",
+            "sourceGlobalLocationNumber": "0069382035222",
+            "destinationGlobalLocationNumber": "0078742035222"
+          }
+        ],
+        "manufactureDetails": [
+          {
+            "lot": "201101",
+            "expiryDate": "2025-01-08",
+            "qty": 4,
+            "reportedUom": "PH",
+            "gtinHierarchy": [
+              {
+                "gtin": "00301680056463",
+                "type": "consumableGTIN"
+              },
+              {
+                "gtin": "10405503276339",
+                "type": "orderableGTIN"
+              },
+              {
+                "gtin": "20405503276336",
+                "type": "warehousePackGtin"
+              },
+              {
+                "type": "catalogGTIN"
+              },
+              {
+                "gtin": "00301680056463",
+                "type": "gtin"
+              }
+            ]
+          }
+        ],
+        "deptNumber": "38",
+        "vendorNbrDeptSeq": 492918,
+        "shippedQty": 100,
+        "shippedQtyUom": "ZA",
+        "warehousePackGtin": "20405503276336",
+        "consumableGTIN": "00301680056463",
+        "orderableGTIN": "10405503276339",
+        "lotNumber": "201101",
+        "maxAllowedOverageQtyExceeded": false
+      }
+    ],
+    "weight": 0,
+    "cubeQty": 0,
+    "deliveryStatus": "WRK",
+    "poTypeCode": 33,
+    "totalBolFbq": 106,
+    "deliveryLegacyStatus": "WRK",
+    "purchaseReferenceMustArriveByDate": "Feb 22, 2019 12:00:00 AM",
+    "deliveryNumber": 1172025
+  }
+]

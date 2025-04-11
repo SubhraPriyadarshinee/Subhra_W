@@ -1,0 +1,29 @@
+{
+  "found": [
+    {
+      "item_nbr": 3804890,
+      "catalog_upc_nbr": "27800100013",
+      "case_upc_nbr": "27800100013",
+      "upc_nbr": "2780010003",
+      "itemDesc": "MTHRS CIRCUS AML12PK ",
+      "itemDesc2": "WAREHOUSE            ",
+      "size": "12.0OZ    ",
+      "color": "NONE      ",
+      "ti": 5,
+      "hi": 2,
+      "handlingCode": "C",
+      "packType": "C",
+      "primeSlot": null,
+      "primeSlotSize": 0,
+      "is_hazardous": 0,
+      "sym_eligible_ind": "N",
+      "hazmatInfo": {
+        "hazmat_id": 0,
+        "trnsp_mode_code": 0,
+        "dot_haz_class_code": ""
+      }
+    }
+  ],
+  "errors": [],
+  "missing": []
+}

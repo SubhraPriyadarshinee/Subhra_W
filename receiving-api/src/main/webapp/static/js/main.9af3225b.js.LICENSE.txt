@@ -1,0 +1,187 @@
+/*
+  object-assign
+  (c) Sindre Sorhus
+  @license MIT
+  */
+
+/*!
+    * The buffer module from node.js, for the browser.
+    *
+    * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+    * @license  MIT
+    */
+
+/*!
+  * Programatically add the following
+  */
+
+/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+  */
+
+/*! ./mawp-constants */
+
+/*! ./mawp-core.js */
+
+/*! ./mawp-events */
+
+/*! ./services/http.service */
+
+/*! ./services/storage.service */
+
+/*! ./services/utility.service */
+
+/*! ./storage.service */
+
+/*! ./utility.service */
+
+/*! exports provided: COOKIE_KEY, default */
+
+/*! exports provided: MAWP_NO_DATA_MSG, MAWP_EXTERNAL_APP_DATA, MY_APPS_WEB_URL, WNDW_MESSAGE_EVENTS, MY_APPS_HANDSHAKE_MSG, MY_APPS_DATA, MAWP_HANDSHAKE_RESP_MSG, MAWP_DATA_SNIFF_FREQUENCY, MAWP_DATA_SNIFF_TIMEOUT, MAWP_GET_AUTHORIZED_APP_ERROR */
+
+/*! exports provided: MawpCore */
+
+/*! exports provided: MawpEvents */
+
+/*! exports provided: default */
+
+/*!**********************!*\
+        !*** ./src/index.js ***!
+        \**********************/
+
+/*!**************************!*\
+        !*** ./src/mawp-core.js ***!
+        \**************************/
+
+/*!****************************!*\
+        !*** ./src/mawp-events.js ***!
+        \****************************/
+
+/*!*******************************!*\
+        !*** ./src/mawp-constants.js ***!
+        \*******************************/
+
+/*!**************************************!*\
+        !*** ./src/services/http.service.js ***!
+        \**************************************/
+
+/*!*****************************************!*\
+        !*** ./src/services/storage.service.js ***!
+        \*****************************************/
+
+/*!*****************************************!*\
+        !*** ./src/services/utility.service.js ***!
+        \*****************************************/
+
+/**
+     * query-core
+     *
+     * Copyright (c) TanStack
+     *
+     * This source code is licensed under the MIT license found in the
+     * LICENSE.md file in the root directory of this source tree.
+     *
+     * @license MIT
+     */
+
+/**
+  * Checks if an event is supported in the current execution environment.
+  *
+  * NOTE: This will not work correctly for non-generic events such as `change`,
+  * `reset`, `load`, `error`, and `select`.
+  *
+  * Borrows from Modernizr.
+  *
+  * @param {string} eventNameSuffix Event name, e.g. "click".
+  * @param {?boolean} capture Check if the capture phase is supported.
+  * @return {boolean} True if the event is supported.
+  * @internal
+  * @license Modernizr 3.0.0pre (Custom Build) | MIT
+  */
+
+/**
+ * @license React
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * use-sync-external-store-shim.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * react-query-devtools-noop
+ *
+ * Copyright (c) TanStack
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
+/** @license MUI v5.7.0
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.13.1
+ * react-is.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react-is.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */

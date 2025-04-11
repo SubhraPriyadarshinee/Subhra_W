@@ -1,0 +1,51 @@
+{
+   "testCase" : "HIF-RCV-03 Item missing product link",
+    "trackingId": "?",
+    "messageId": "?",
+    "deliveryNumber": "121212121",
+    "location": "101",
+    "orgUnitId": "",
+    "facility": {
+        "buNumber": "05435",
+        "countryCode": "US"
+    },
+    "ctrType" : "Chep Pallet",
+    "ctrStatus" : "OPEN",
+    "ctrWght" : 435,
+    "ctrWghtUom" : "LB" ,
+    "ctrCube" : "28.64",
+    "ctrCubeUom" : "CF",
+    "ctrShippable" : true,
+    "ctrReusable" : false,
+    "inventoryStatus" : "AVAILABLE",
+    "contents": [
+        {
+            "purchaseReferenceNumber": "6712345678",
+            "purchaseReferenceLineNumber": 26,
+            "inboundChannelMethod": "SSTKU",
+            "outboundChannelMethod": "SSTKU",
+            "purchaseCompanyId": "0001",
+            "totalPurchaseReferenceQty": 30,
+            "gtin": "22682400000",
+            "itemNumber": 551358734,
+            "description": "PORK CHOPS LG",
+            "deptNumber": "0093",
+            "quantity": 16,
+            "quantityUom": "EA",
+            "vnpkQty": 1,
+            "whpkQty": 1,
+            "vendorPackCost": 58.43,
+            "whpkSell": 20.80,
+            "rotateDate": "2019-07-31T00:00:00Z",
+            "baseDivisionCode": "WM",
+            "financialReportingGroupCode": "US",
+            "ti": 4,
+            "hi": 4,
+            "lotNumber": "1",
+            "vendorNbr": 627265932,
+            "packagedAsUom": "ZA",
+            "actualTi" : 4,
+            "actualHi" : 4
+        }
+    ]
+}

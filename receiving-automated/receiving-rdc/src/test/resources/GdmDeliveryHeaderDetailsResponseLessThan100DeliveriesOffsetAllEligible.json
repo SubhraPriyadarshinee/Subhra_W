@@ -1,0 +1,177 @@
+{
+    "data": [
+        {
+            "deliveryNumber": 28071593,
+            "status": "WORKING"
+        },
+        {
+            "deliveryNumber": 28628012,
+            "status": "WORKING"
+        },
+        {
+            "deliveryNumber": 28694213,
+            "status": "PENDING_FINALIZED"
+        },
+        {
+            "deliveryNumber": 28733455,
+            "status": "WORKING"
+        },
+        {
+            "deliveryNumber": 28748060,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 28757984,
+            "status": "PENDING_FINALIZED"
+        },
+        {
+            "deliveryNumber": 28765919,
+            "status": "WORKING"
+        },
+        {
+            "deliveryNumber": 28766944,
+            "status": "PENDING_FINALIZED"
+        },
+        {
+            "deliveryNumber": 28788232,
+            "status": "PENDING_FINALIZED"
+        },
+        {
+            "deliveryNumber": 28792043,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 28813936,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG",
+                "PENDING_AUDIT_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 28817554,
+            "status": "WORKING"
+        },
+        {
+            "deliveryNumber": 28823507,
+            "status": "WORKING"
+        },
+        {
+            "deliveryNumber": 28823637,
+            "status": "WORKING"
+        },
+        {
+            "deliveryNumber": 28845811,
+            "status": "WORKING"
+        },
+        {
+            "deliveryNumber": 28853330,
+            "status": "WORKING"
+        },
+        {
+            "deliveryNumber": 28858671,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 28867317,
+            "status": "PENDING_FINALIZED"
+        },
+        {
+            "deliveryNumber": 28877839,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 28879397,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 28880591,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 28884717,
+            "status": "PENDING_FINALIZED"
+        },
+        {
+            "deliveryNumber": 28896405,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 28900258,
+            "status": "WORKING"
+        },
+        {
+            "deliveryNumber": 28903235,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 28917370,
+            "status": "WORKING"
+        },
+        {
+            "deliveryNumber": 28937292,
+            "status": "WORKING"
+        },
+        {
+            "deliveryNumber": 28942199,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 28947636,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG",
+                "PENDING_AUDIT_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 28953466,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 28965832,
+            "status": "WORKING"
+        },
+        {
+            "deliveryNumber": 29078538,
+            "status": "WORKING"
+        }
+    ],
+    "page": {
+        "size": 50,
+        "number": 0,
+        "numberOfElements": 32,
+        "totalElements": 32,
+        "totalPages": 1
+    }
+}

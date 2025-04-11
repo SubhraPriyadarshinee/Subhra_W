@@ -1,0 +1,785 @@
+{
+  "delivery": {
+    "deliveryNumber": 550478600053907,
+    "scheduled": "2023-09-21T20:58:14.921Z",
+    "arrivalTimeStamp": "2023-09-21T21:09:48.463Z",
+    "doorOpenTime": "2023-09-21T21:09:48.515Z",
+    "receivingStartedTimeStamp": "2023-09-21T21:09:52.926Z",
+    "unloadingCompletedTimeStamp": "2023-09-21T21:09:52.819Z",
+    "unloadingCompletedByUser": "vn53xvq",
+    "statusInformation": {
+      "status": "WRK"
+    }
+  },
+  "shipment": {
+    "documentId": "rdc_comb_23326795504_20230921_32679_DC_US",
+    "shipmentNumber": "rdc_comb_23326795504",
+    "documentType": "ASN",
+    "documentRevision": 0,
+    "documentIngestTime": "2023-09-21T20:58:10.752Z",
+    "shipmentDate": "2023-09-21",
+    "isDocumentDSCSA": "NONE",
+    "source": {
+      "number": "32679",
+      "numberType": "WALMART",
+      "type": "DC",
+      "countryCode": "US",
+      "shipperName": "WM"
+    },
+    "destination": {
+      "type": "STORE",
+      "number": 5504,
+      "countryCode": "US"
+    },
+    "shipmentDetail": {
+      "trailerNumber": "rdc_comb_23",
+      "trailerSealNumber": "0000000906",
+      "loadNumber": "rdc_comb_23",
+      "reportedDeliveryNumber": 550478600053907,
+      "shippingDate": "2023-09-21",
+      "carrierId": "WM"
+    },
+    "additionalInfo": {
+      "storeInvoices": [
+        "58901298",
+        "589012981",
+        "589012982"
+      ],
+      "regionCode": "05",
+      "bannerCode": "B4",
+      "mfcWarehouseAreaDescription": [
+        "Fresh Dairy",
+        "Dry Grocery",
+        "Fresh Meat"
+      ],
+      "timeZoneCode": "EST",
+      "totalPallets": 6,
+      "marketCode": "056",
+      "mfcInvoiceNumbers": [
+        "58901298",
+        "589012981",
+        "589012982"
+      ],
+      "bannerDescription": "Neighborhood Market",
+      "floorLoadedCases": 1,
+      "totalExpected": [
+        {
+          "quantity": 75.0,
+          "uom": "EA"
+        }
+      ]
+    }
+  },
+  "packs": [
+    {
+      "packNumber": "6030589012981245",
+      "invoice": {
+        "invoiceNumber": "589012981"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "legacyDetail": {
+        "packType": "STORE"
+      },
+      "items": [
+        {
+          "reportedProductId": "567234238",
+          "reportedProductIdType": "IN",
+          "itemNumber": 567234238,
+          "gtin": "00025000044908",
+          "itemDescription": "MS XL TRY TBL GRAY",
+          "itemDepartment": "71",
+          "itemDivision": "1",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "documentSequenceNumber": 2,
+          "inventoryDetail": {
+            "reportedQuantity": 4.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 4.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00885936412062",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "589012981",
+            "invoiceLineNumber": 2
+          },
+          "replenishedByUnit": false,
+          "virtualPackNumber": "60305890129811",
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 19.88,
+            "derivedRetail": 14.97,
+            "derivedCost": 9.2667,
+            "financialReportingCountry": "UNKNOWN"
+          },
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          }
+        },
+        {
+          "reportedProductId": "567234234",
+          "reportedProductIdType": "IN",
+          "itemNumber": 567234234,
+          "gtin": "00044681346972",
+          "itemDescription": "COSCO 6FT WHT TBL",
+          "itemDepartment": "71",
+          "itemDivision": "1",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "documentSequenceNumber": 1,
+          "inventoryDetail": {
+            "reportedQuantity": 2.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 2.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00044681346972",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "589012981",
+            "invoiceLineNumber": 1
+          },
+          "replenishedByUnit": false,
+          "virtualPackNumber": "60305890129812",
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 49.47,
+            "derivedRetail": 2.58,
+            "derivedCost": 1.83,
+            "financialReportingCountry": "UNKNOWN"
+          },
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          }
+        }
+      ],
+      "shipmentNumber": "rdc_comb_23326795504",
+      "labelType": "BREAK_PACK",
+      "physicalDetail": {
+        "weight": 14.0,
+        "weightUom": "LB",
+        "cube": 0.0,
+        "cubeUom": "UNKNOWN"
+      },
+      "packType": "STORE",
+      "additionalInfo": {
+        "packDSCSA": "NONE"
+      }
+    },
+    {
+      "packNumber": "326795890129828002",
+      "palletNumber": "326795890129828001",
+      "invoice": {
+        "invoiceNumber": "589012982"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "legacyDetail": {
+        "packType": "STORE"
+      },
+      "items": [
+        {
+          "reportedProductId": "256551129",
+          "reportedProductIdType": "IN",
+          "itemNumber": 256551129,
+          "gtin": "00789041330986",
+          "itemDescription": "IRRITANT: LIQUID",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "documentSequenceNumber": 1,
+          "purchaseOrder": {
+            "orderNumber": "589012981",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63"
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 10.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 10.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00789041330986",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "589012982",
+            "invoiceLineNumber": 3
+          },
+          "replenishmentCode": "UNKNOWN",
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "financialReportingCountry": "US"
+          },
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          }
+        }
+      ],
+      "shipmentNumber": "rdc_comb_23326795504",
+      "labelType": "CASE_PACK",
+      "physicalDetail": {
+        "weight": 4.1,
+        "weightUom": "LB"
+      },
+      "packType": "STORE",
+      "additionalInfo": {
+        "packDSCSA": "NONE"
+      }
+    },
+    {
+      "packNumber": "3265890129829002",
+      "palletNumber": "3265890129829001",
+      "invoice": {
+        "invoiceNumber": "589012982"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "legacyDetail": {
+        "packType": "STORE"
+      },
+      "items": [
+        {
+          "reportedProductId": "254952128",
+          "reportedProductIdType": "IN",
+          "itemNumber": 254952128,
+          "gtin": "00405531923031",
+          "itemDescription": "IRRITANT: LIQUID",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "documentSequenceNumber": 1,
+          "purchaseOrder": {
+            "orderNumber": "57899013426",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63"
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 10.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 10.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00405531923031",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "589012982",
+            "invoiceLineNumber": 1
+          },
+          "replenishmentCode": "UNKNOWN",
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "financialReportingCountry": "US"
+          },
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          }
+        }
+      ],
+      "shipmentNumber": "rdc_comb_23326795504",
+      "labelType": "CASE_PACK",
+      "physicalDetail": {
+        "weight": 4.1,
+        "weightUom": "LB"
+      },
+      "packType": "STORE",
+      "additionalInfo": {
+        "packDSCSA": "NONE"
+      }
+    },
+    {
+      "packNumber": "3265890129823002",
+      "palletNumber": "3265890129823001",
+      "invoice": {
+        "invoiceNumber": "589012982"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "legacyDetail": {
+        "packType": "STORE"
+      },
+      "items": [
+        {
+          "reportedProductId": "556018847",
+          "reportedProductIdType": "IN",
+          "itemNumber": 556018847,
+          "gtin": "00070842063204",
+          "itemDescription": "IRRITANT: LIQUID",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "documentSequenceNumber": 1,
+          "purchaseOrder": {
+            "orderNumber": "589012982",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63"
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 10.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 10.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00070842063204",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "589012982",
+            "invoiceLineNumber": 4
+          },
+          "replenishmentCode": "UNKNOWN",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 12.12,
+            "derivedCost": 8.6613,
+            "financialReportingCountry": "US"
+          },
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          }
+        }
+      ],
+      "shipmentNumber": "rdc_comb_23326795504",
+      "labelType": "CASE_PACK",
+      "physicalDetail": {
+        "weight": 4.1,
+        "weightUom": "LB"
+      },
+      "packType": "STORE",
+      "additionalInfo": {
+        "packDSCSA": "NONE"
+      }
+    },
+    {
+      "packNumber": "3267958901298002",
+      "palletNumber": "3267958901298001",
+      "invoice": {
+        "invoiceNumber": "58901298"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "legacyDetail": {
+        "packType": "STORE"
+      },
+      "items": [
+        {
+          "reportedProductId": "567234238",
+          "reportedProductIdType": "IN",
+          "itemNumber": 567234238,
+          "gtin": "00025000044908",
+          "itemDescription": "SCNTVA TGS 32OZ",
+          "itemDepartment": "13",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "documentSequenceNumber": 1,
+          "purchaseOrder": {
+            "orderNumber": "58901298",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63"
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 18.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 18.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00025000044908",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "58901298",
+            "invoiceLineNumber": 2
+          },
+          "replenishmentCode": "UNKNOWN",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 2.58,
+            "derivedCost": 1.83,
+            "financialReportingCountry": "US"
+          },
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          }
+        }
+      ],
+      "shipmentNumber": "rdc_comb_23326795504",
+      "labelType": "CASE_PACK",
+      "physicalDetail": {
+        "weight": 4.1,
+        "weightUom": "LB"
+      },
+      "packType": "STORE",
+      "additionalInfo": {
+        "packDSCSA": "NONE"
+      }
+    },
+    {
+      "packNumber": "3267958901298102",
+      "palletNumber": "3267958901298101",
+      "invoice": {
+        "invoiceNumber": "58901298"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "legacyDetail": {
+        "packType": "STORE"
+      },
+      "items": [
+        {
+          "reportedProductId": "570563669",
+          "reportedProductIdType": "IN",
+          "itemNumber": 570563669,
+          "gtin": "00261643000004",
+          "itemDescription": "THIN SLICED BRST MED",
+          "itemDepartment": "93",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "documentSequenceNumber": 1,
+          "purchaseOrder": {
+            "orderNumber": "58901298",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63"
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 11.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 11.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00261643000004",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "58901298",
+            "invoiceLineNumber": 1
+          },
+          "replenishmentCode": "UNKNOWN",
+          "replenishedByUnit": true,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 3.98,
+            "derivedCost": 2.96,
+            "financialReportingCountry": "US"
+          },
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          }
+        }
+      ],
+      "shipmentNumber": "rdc_comb_23326795504",
+      "labelType": "CASE_PACK",
+      "physicalDetail": {
+        "weight": 4.1,
+        "weightUom": "LB"
+      },
+      "packType": "STORE",
+      "additionalInfo": {
+        "packDSCSA": "NONE"
+      }
+    },
+    {
+      "packNumber": "32679589012982002",
+      "palletNumber": "32679589012982001",
+      "invoice": {
+        "invoiceNumber": "589012982"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "legacyDetail": {
+        "packType": "STORE"
+      },
+      "items": [
+        {
+          "reportedProductId": "45198870",
+          "reportedProductIdType": "IN",
+          "itemNumber": 45198870,
+          "gtin": "00025000100710",
+          "itemDescription": "IRRITANT: LIQUID",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "documentSequenceNumber": 1,
+          "purchaseOrder": {
+            "orderNumber": "589012982",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63"
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 10.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 10.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00025000100710",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "589012982",
+            "invoiceLineNumber": 2
+          },
+          "replenishmentCode": "UNKNOWN",
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "financialReportingCountry": "US"
+          },
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          }
+        }
+      ],
+      "shipmentNumber": "rdc_comb_23326795504",
+      "labelType": "CASE_PACK",
+      "physicalDetail": {
+        "weight": 4.1,
+        "weightUom": "LB"
+      },
+      "packType": "STORE",
+      "additionalInfo": {
+        "packDSCSA": "NONE"
+      }
+    }
+  ],
+  "items": [
+    {
+      "consumableGTIN": "00070842063204",
+      "orderableGTIN": "10070842063218",
+      "warehousePackGTIN": "10070842063218",
+      "supplierStockId": "06321W",
+      "palletTi": 9,
+      "palletHi": 7,
+      "conveyable": true,
+      "itemTypeCode": "20",
+      "vendorDepartment": "95",
+      "color": "NONE",
+      "size": "32.0OZ",
+      "warehousePackQuantity": 8,
+      "orderableQuantity": 8,
+      "warehouseArea": "Dry Grocery",
+      "descriptions": [
+        "BEER NUTS ORG MIX",
+        "BEER NUTS ORG MIX"
+      ],
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "images": {
+          "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/4a1ee98c-c2bb-4774-ae9a-e60106c7bf1b.b89aba9ec09eaed47cf672326d68e784.png?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/4a1ee98c-c2bb-4774-ae9a-e60106c7bf1b.b89aba9ec09eaed47cf672326d68e784.png?odnHeight=100&odnWidth=100&odnBg=ffffff",
+          "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/4a1ee98c-c2bb-4774-ae9a-e60106c7bf1b.b89aba9ec09eaed47cf672326d68e784.png?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+          "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/4a1ee98c-c2bb-4774-ae9a-e60106c7bf1b.b89aba9ec09eaed47cf672326d68e784.png?odnHeight=180&odnWidth=180&odnBg=ffffff",
+          "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/4a1ee98c-c2bb-4774-ae9a-e60106c7bf1b.b89aba9ec09eaed47cf672326d68e784.png?odnHeight=60&odnWidth=60&odnBg=ffffff"
+        },
+        "variableWeightIndicator": false,
+        "warehouseAreaCode": 6,
+        "vnpkWeightUomCode": "LB",
+        "warehousePackSellAmt": 40.32,
+        "warehouseRotationTypeCode": 2,
+        "baseDivisionCode": "WM",
+        "vnpkCubeQty": 1.148,
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "vnpkCubeUom": "CF",
+        "temperatureZone": "ambient",
+        "mfcEnabled": true,
+        "replenishmentGroupNbr": 18892232,
+        "unitCostAmt": 5.04,
+        "chemicalIndicator": "N",
+        "vnpkWeightQty": 17.5,
+        "warehouseAreaDesc": "Dry Grocery",
+        "aerosolIndicator": "N"
+      },
+      "number": 556018847
+    },
+    {
+      "consumableGTIN": "00261643000004",
+      "orderableGTIN": "90030802259569",
+      "warehousePackGTIN": "90030802259569",
+      "supplierStockId": "582",
+      "palletTi": 5,
+      "palletHi": 8,
+      "conveyable": true,
+      "itemTypeCode": "20",
+      "vendorDepartment": "93",
+      "size": "1LB",
+      "warehousePackQuantity": 14,
+      "orderableQuantity": 14,
+      "warehouseArea": "Fresh Meat",
+      "pluNumber": 61643,
+      "descriptions": [
+        "THIN SLICED BRST MED",
+        "THIN SLICED BRST MED"
+      ],
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "images": {
+          "IMAGE_SIZE_450": "https://i5.walmartimages.com/asr/b2c2ed2f-a958-4ff6-901b-667c7e51d622.0dfa0cf3b53e9776991066037362e4d3.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "IMAGE_SIZE_100": "https://i5.walmartimages.com/asr/b2c2ed2f-a958-4ff6-901b-667c7e51d622.0dfa0cf3b53e9776991066037362e4d3.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+          "IMAGE_SIZE_2000": "https://i5.walmartimages.com/asr/b2c2ed2f-a958-4ff6-901b-667c7e51d622.0dfa0cf3b53e9776991066037362e4d3.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+          "IMAGE_SIZE_180": "https://i5.walmartimages.com/asr/b2c2ed2f-a958-4ff6-901b-667c7e51d622.0dfa0cf3b53e9776991066037362e4d3.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+          "IMAGE_SIZE_60": "https://i5.walmartimages.com/asr/b2c2ed2f-a958-4ff6-901b-667c7e51d622.0dfa0cf3b53e9776991066037362e4d3.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+        },
+        "variableWeightIndicator": false,
+        "warehouseAreaCode": 1,
+        "vnpkWeightUomCode": "LB",
+        "warehousePackSellAmt": 41.3,
+        "warehouseRotationTypeCode": 3,
+        "baseDivisionCode": "WM",
+        "vnpkCubeQty": 1.491,
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "vnpkCubeUom": "CF",
+        "temperatureZone": "ambient",
+        "mfcEnabled": true,
+        "replenishmentGroupNbr": 7633819,
+        "unitCostAmt": 2.86,
+        "chemicalIndicator": "N",
+        "vnpkWeightQty": 37.0,
+        "warehouseAreaDesc": "Fresh Meat",
+        "aerosolIndicator": "N"
+      },
+      "number": 570563669
+    },
+    {
+      "consumableGTIN": "00025000044908",
+      "orderableGTIN": "00025000044915",
+      "warehousePackGTIN": "00025000044915",
+      "supplierStockId": "369591",
+      "palletTi": 18,
+      "palletHi": 5,
+      "conveyable": true,
+      "itemTypeCode": "20",
+      "vendorDepartment": "95",
+      "size": "52.0FO",
+      "warehousePackQuantity": 6,
+      "orderableQuantity": 6,
+      "warehouseArea": "Fresh Dairy",
+      "descriptions": [
+        "SMPLY LMND WRASP 52",
+        "SMPLY LMND WRASP 52"
+      ],
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "images": {
+          "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/3502e224-7499-451f-9bc1-c1eb7a6e81a1.fcf3c86fd953b290017d11f56f1fe440.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/3502e224-7499-451f-9bc1-c1eb7a6e81a1.fcf3c86fd953b290017d11f56f1fe440.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+          "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/3502e224-7499-451f-9bc1-c1eb7a6e81a1.fcf3c86fd953b290017d11f56f1fe440.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+          "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/3502e224-7499-451f-9bc1-c1eb7a6e81a1.fcf3c86fd953b290017d11f56f1fe440.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+          "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/3502e224-7499-451f-9bc1-c1eb7a6e81a1.fcf3c86fd953b290017d11f56f1fe440.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+        },
+        "variableWeightIndicator": false,
+        "warehouseAreaCode": 3,
+        "vnpkWeightUomCode": "LB",
+        "warehousePackSellAmt": 11.1,
+        "warehouseRotationTypeCode": 2,
+        "baseDivisionCode": "WM",
+        "vnpkCubeQty": 0.62,
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "vnpkCubeUom": "CF",
+        "temperatureZone": "chilled",
+        "mfcEnabled": true,
+        "replenishmentGroupNbr": 173410,
+        "unitCostAmt": 1.86,
+        "chemicalIndicator": "N",
+        "vnpkWeightQty": 22.02,
+        "warehouseAreaDesc": "Fresh Dairy",
+        "aerosolIndicator": "N",
+        "deptCategory": 5196
+      },
+      "number": 567234238
+    }
+  ],
+  "pallets": [
+    {
+      "palletNumber": "3265890129829001",
+      "documentId": "rdc_comb_23326795504_20230921_32679_DC_US"
+    },
+    {
+      "palletNumber": "3267958901298101",
+      "documentId": "rdc_comb_23326795504_20230921_32679_DC_US"
+    },
+    {
+      "palletNumber": "32679589012982001",
+      "documentId": "rdc_comb_23326795504_20230921_32679_DC_US"
+    },
+    {
+      "palletNumber": "3265890129823001",
+      "documentId": "rdc_comb_23326795504_20230921_32679_DC_US"
+    },
+    {
+      "palletNumber": "3267958901298001",
+      "documentId": "rdc_comb_23326795504_20230921_32679_DC_US"
+    },
+    {
+      "palletNumber": "326795890129828001",
+      "documentId": "rdc_comb_23326795504_20230921_32679_DC_US"
+    }
+  ]
+}

@@ -1,0 +1,2380 @@
+{
+    "messageId": "7386C27C-106D-456E-A8F1-0C68CA8972B7",
+    "instructionCode": "Build Container",
+    "instructionMsg": "Build Container",
+    "activityName": "DACon",
+    "shrinkWrap": false,
+    "container": {
+        "trackingId": "b670120000200000000070214",
+        "ctrType": "PALLET",
+        "inventoryStatus": "PICKED",
+        "ctrDestination": {
+            "buNumber": 7026,
+            "countryCode": "US"
+        },
+        "outboundChannelMethod": "CROSSU",
+        "ctrReusable": false,
+        "ctrShippable": false,
+        "ctrLabel": {
+            "clientId": "OF",
+            "headers": {
+                "facilityCountryCode": "US",
+                "facilityNum": "32987",
+                "WMT-CorrelationId": "01415726-e60e-4c43-b3bb-177ec65d7e74"
+            },
+            "printRequests": [
+                {
+                    "labelIdentifier": "b670120000200000000070214",
+                    "formatName": "pallet_lpn_format",
+                    "data": [
+                        {
+                            "key": "ITEM",
+                            "value": "100000001"
+                        },
+                        {
+                            "key": "DESTINATION",
+                            "value": "07026 US"
+                        },
+                        {
+                            "key": "UPCBAR",
+                            "value": "10000000000001"
+                        },
+                        {
+                            "key": "LPN",
+                            "value": "b670120000200000000070214"
+                        },
+                        {
+                            "key": "FULLUSERID",
+                            "value": "sysadmin"
+                        },
+                        {
+                            "key": "TYPE",
+                            "value": "DA"
+                        },
+                        {
+                            "key": "DESC1",
+                            "value": "IP 1"
+                        }
+                    ],
+                    "ttlInHours": 72
+                }
+            ]
+        }
+    },
+    "move": {
+        "toLocation": "S101",
+        "containerTag": "b670120000200000000070214",
+        "lastChangedOn": 1578123126391,
+        "lastChangedBy": "sysadmin"
+    },
+    "providerId": "DA-SSTK",
+    "projectedQty": 64,
+    "projectedQtyUom": "EA",
+    "printChildContainerLabels": true,
+    "childContainers": [
+        {
+            "trackingId": "b670120000200000000070215",
+            "distributions": [
+                {
+                    "orderId": "4B2FE9B0-6DA0-4332-B04D-F24A48C03841",
+                    "allocQty": 4,
+                    "item": {
+                        "itemNbr": 100000001,
+                        "baseDivisionCode": "WM",
+                        "reportingGroup": "US"
+                    }
+                }
+            ],
+            "ctrType": "Vendor Pack",
+            "inventoryStatus": "PICKED",
+            "ctrDestination": {
+                "buNumber": 7026,
+                "countryCode": "US"
+            },
+            "outboundChannelMethod": "CROSSU",
+            "ctrReusable": false,
+            "ctrShippable": true,
+            "ctrLabel": {
+                "clientId": "OF",
+                "headers": {
+                    "facilityCountryCode": "US",
+                    "facilityNum": "32987",
+                    "WMT-CorrelationId": "01415726-e60e-4c43-b3bb-177ec65d7e74"
+                },
+                "printRequests": [
+                    {
+                        "labelIdentifier": "b670120000200000000070215",
+                        "formatName": "case_lpn_format",
+                        "data": [
+                            {
+                                "key": "HAZMAT",
+                                "value": ""
+                            },
+                            {
+                                "key": "LPN",
+                                "value": "b670120000200000000070215"
+                            },
+                            {
+                                "key": "FULLUSERID",
+                                "value": "sysadmin"
+                            },
+                            {
+                                "key": "POCODE",
+                                "value": "GO"
+                            },
+                            {
+                                "key": "VENDORID",
+                                "value": "12344"
+                            },
+                            {
+                                "key": "COLOR",
+                                "value": ""
+                            },
+                            {
+                                "key": "QTY",
+                                "value": ""
+                            },
+                            {
+                                "key": "DEPT",
+                                "value": "14"
+                            },
+                            {
+                                "key": "CPQTY",
+                                "value": "4"
+                            },
+                            {
+                                "key": "DESC1",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "DESC2",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "PACKTYPE",
+                                "value": "BP"
+                            },
+                            {
+                                "key": "SIZE",
+                                "value": ""
+                            },
+                            {
+                                "key": "POEVENT",
+                                "value": "POS REPLEN"
+                            },
+                            {
+                                "key": "EVENTCHAR",
+                                "value": " "
+                            },
+                            {
+                                "key": "DSDC",
+                                "value": ""
+                            },
+                            {
+                                "key": "STOREZONE",
+                                "value": "A"
+                            },
+                            {
+                                "key": "ITEM",
+                                "value": "100000001"
+                            },
+                            {
+                                "key": "REPRINT",
+                                "value": ""
+                            },
+                            {
+                                "key": "POLINE",
+                                "value": "1"
+                            },
+                            {
+                                "key": "PRINTER",
+                                "value": ""
+                            },
+                            {
+                                "key": "CHANNEL",
+                                "value": "DIST"
+                            },
+                            {
+                                "key": "DESTINATION",
+                                "value": "07026 US"
+                            },
+                            {
+                                "key": "UPCBAR",
+                                "value": "10000000000001"
+                            },
+                            {
+                                "key": "PACK",
+                                "value": "4"
+                            },
+                            {
+                                "key": "PO",
+                                "value": "1000000001"
+                            }
+                        ],
+                        "ttlInHours": 72
+                    }
+                ]
+            }
+        },
+        {
+            "trackingId": "b670120000200000000070216",
+            "distributions": [
+                {
+                    "orderId": "4B2FE9B0-6DA0-4332-B04D-F24A48C03841",
+                    "allocQty": 4,
+                    "item": {
+                        "itemNbr": 100000001,
+                        "baseDivisionCode": "WM",
+                        "reportingGroup": "US"
+                    }
+                }
+            ],
+            "ctrType": "Vendor Pack",
+            "inventoryStatus": "PICKED",
+            "ctrDestination": {
+                "buNumber": 7026,
+                "countryCode": "US"
+            },
+            "outboundChannelMethod": "CROSSU",
+            "ctrReusable": false,
+            "ctrShippable": true,
+            "ctrLabel": {
+                "clientId": "OF",
+                "headers": {
+                    "facilityCountryCode": "US",
+                    "facilityNum": "32987",
+                    "WMT-CorrelationId": "01415726-e60e-4c43-b3bb-177ec65d7e74"
+                },
+                "printRequests": [
+                    {
+                        "labelIdentifier": "b670120000200000000070216",
+                        "formatName": "case_lpn_format",
+                        "data": [
+                            {
+                                "key": "HAZMAT",
+                                "value": ""
+                            },
+                            {
+                                "key": "LPN",
+                                "value": "b670120000200000000070216"
+                            },
+                            {
+                                "key": "FULLUSERID",
+                                "value": "sysadmin"
+                            },
+                            {
+                                "key": "POCODE",
+                                "value": "GO"
+                            },
+                            {
+                                "key": "VENDORID",
+                                "value": "12344"
+                            },
+                            {
+                                "key": "COLOR",
+                                "value": ""
+                            },
+                            {
+                                "key": "QTY",
+                                "value": ""
+                            },
+                            {
+                                "key": "DEPT",
+                                "value": "14"
+                            },
+                            {
+                                "key": "CPQTY",
+                                "value": "4"
+                            },
+                            {
+                                "key": "DESC1",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "DESC2",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "PACKTYPE",
+                                "value": "BP"
+                            },
+                            {
+                                "key": "SIZE",
+                                "value": ""
+                            },
+                            {
+                                "key": "POEVENT",
+                                "value": "POS REPLEN"
+                            },
+                            {
+                                "key": "EVENTCHAR",
+                                "value": " "
+                            },
+                            {
+                                "key": "DSDC",
+                                "value": ""
+                            },
+                            {
+                                "key": "STOREZONE",
+                                "value": "A"
+                            },
+                            {
+                                "key": "ITEM",
+                                "value": "100000001"
+                            },
+                            {
+                                "key": "REPRINT",
+                                "value": ""
+                            },
+                            {
+                                "key": "POLINE",
+                                "value": "1"
+                            },
+                            {
+                                "key": "PRINTER",
+                                "value": ""
+                            },
+                            {
+                                "key": "CHANNEL",
+                                "value": "DIST"
+                            },
+                            {
+                                "key": "DESTINATION",
+                                "value": "07026 US"
+                            },
+                            {
+                                "key": "UPCBAR",
+                                "value": "10000000000001"
+                            },
+                            {
+                                "key": "PACK",
+                                "value": "4"
+                            },
+                            {
+                                "key": "PO",
+                                "value": "1000000001"
+                            }
+                        ],
+                        "ttlInHours": 72
+                    }
+                ]
+            }
+        },
+        {
+            "trackingId": "b670120000200000000070217",
+            "distributions": [
+                {
+                    "orderId": "4B2FE9B0-6DA0-4332-B04D-F24A48C03841",
+                    "allocQty": 4,
+                    "item": {
+                        "itemNbr": 100000001,
+                        "baseDivisionCode": "WM",
+                        "reportingGroup": "US"
+                    }
+                }
+            ],
+            "ctrType": "Vendor Pack",
+            "inventoryStatus": "PICKED",
+            "ctrDestination": {
+                "buNumber": 7026,
+                "countryCode": "US"
+            },
+            "outboundChannelMethod": "CROSSU",
+            "ctrReusable": false,
+            "ctrShippable": true,
+            "ctrLabel": {
+                "clientId": "OF",
+                "headers": {
+                    "facilityCountryCode": "US",
+                    "facilityNum": "32987",
+                    "WMT-CorrelationId": "01415726-e60e-4c43-b3bb-177ec65d7e74"
+                },
+                "printRequests": [
+                    {
+                        "labelIdentifier": "b670120000200000000070217",
+                        "formatName": "case_lpn_format",
+                        "data": [
+                            {
+                                "key": "HAZMAT",
+                                "value": ""
+                            },
+                            {
+                                "key": "LPN",
+                                "value": "b670120000200000000070217"
+                            },
+                            {
+                                "key": "FULLUSERID",
+                                "value": "sysadmin"
+                            },
+                            {
+                                "key": "POCODE",
+                                "value": "GO"
+                            },
+                            {
+                                "key": "VENDORID",
+                                "value": "12344"
+                            },
+                            {
+                                "key": "COLOR",
+                                "value": ""
+                            },
+                            {
+                                "key": "QTY",
+                                "value": ""
+                            },
+                            {
+                                "key": "DEPT",
+                                "value": "14"
+                            },
+                            {
+                                "key": "CPQTY",
+                                "value": "4"
+                            },
+                            {
+                                "key": "DESC1",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "DESC2",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "PACKTYPE",
+                                "value": "BP"
+                            },
+                            {
+                                "key": "SIZE",
+                                "value": ""
+                            },
+                            {
+                                "key": "POEVENT",
+                                "value": "POS REPLEN"
+                            },
+                            {
+                                "key": "EVENTCHAR",
+                                "value": " "
+                            },
+                            {
+                                "key": "DSDC",
+                                "value": ""
+                            },
+                            {
+                                "key": "STOREZONE",
+                                "value": "A"
+                            },
+                            {
+                                "key": "ITEM",
+                                "value": "100000001"
+                            },
+                            {
+                                "key": "REPRINT",
+                                "value": ""
+                            },
+                            {
+                                "key": "POLINE",
+                                "value": "1"
+                            },
+                            {
+                                "key": "PRINTER",
+                                "value": ""
+                            },
+                            {
+                                "key": "CHANNEL",
+                                "value": "DIST"
+                            },
+                            {
+                                "key": "DESTINATION",
+                                "value": "07026 US"
+                            },
+                            {
+                                "key": "UPCBAR",
+                                "value": "10000000000001"
+                            },
+                            {
+                                "key": "PACK",
+                                "value": "4"
+                            },
+                            {
+                                "key": "PO",
+                                "value": "1000000001"
+                            }
+                        ],
+                        "ttlInHours": 72
+                    }
+                ]
+            }
+        },
+        {
+            "trackingId": "b670120000200000000070218",
+            "distributions": [
+                {
+                    "orderId": "4B2FE9B0-6DA0-4332-B04D-F24A48C03841",
+                    "allocQty": 4,
+                    "item": {
+                        "itemNbr": 100000001,
+                        "baseDivisionCode": "WM",
+                        "reportingGroup": "US"
+                    }
+                }
+            ],
+            "ctrType": "Vendor Pack",
+            "inventoryStatus": "PICKED",
+            "ctrDestination": {
+                "buNumber": 7026,
+                "countryCode": "US"
+            },
+            "outboundChannelMethod": "CROSSU",
+            "ctrReusable": false,
+            "ctrShippable": true,
+            "ctrLabel": {
+                "clientId": "OF",
+                "headers": {
+                    "facilityCountryCode": "US",
+                    "facilityNum": "32987",
+                    "WMT-CorrelationId": "01415726-e60e-4c43-b3bb-177ec65d7e74"
+                },
+                "printRequests": [
+                    {
+                        "labelIdentifier": "b670120000200000000070218",
+                        "formatName": "case_lpn_format",
+                        "data": [
+                            {
+                                "key": "HAZMAT",
+                                "value": ""
+                            },
+                            {
+                                "key": "LPN",
+                                "value": "b670120000200000000070218"
+                            },
+                            {
+                                "key": "FULLUSERID",
+                                "value": "sysadmin"
+                            },
+                            {
+                                "key": "POCODE",
+                                "value": "GO"
+                            },
+                            {
+                                "key": "VENDORID",
+                                "value": "12344"
+                            },
+                            {
+                                "key": "COLOR",
+                                "value": ""
+                            },
+                            {
+                                "key": "QTY",
+                                "value": ""
+                            },
+                            {
+                                "key": "DEPT",
+                                "value": "14"
+                            },
+                            {
+                                "key": "CPQTY",
+                                "value": "4"
+                            },
+                            {
+                                "key": "DESC1",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "DESC2",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "PACKTYPE",
+                                "value": "BP"
+                            },
+                            {
+                                "key": "SIZE",
+                                "value": ""
+                            },
+                            {
+                                "key": "POEVENT",
+                                "value": "POS REPLEN"
+                            },
+                            {
+                                "key": "EVENTCHAR",
+                                "value": " "
+                            },
+                            {
+                                "key": "DSDC",
+                                "value": ""
+                            },
+                            {
+                                "key": "STOREZONE",
+                                "value": "A"
+                            },
+                            {
+                                "key": "ITEM",
+                                "value": "100000001"
+                            },
+                            {
+                                "key": "REPRINT",
+                                "value": ""
+                            },
+                            {
+                                "key": "POLINE",
+                                "value": "1"
+                            },
+                            {
+                                "key": "PRINTER",
+                                "value": ""
+                            },
+                            {
+                                "key": "CHANNEL",
+                                "value": "DIST"
+                            },
+                            {
+                                "key": "DESTINATION",
+                                "value": "07026 US"
+                            },
+                            {
+                                "key": "UPCBAR",
+                                "value": "10000000000001"
+                            },
+                            {
+                                "key": "PACK",
+                                "value": "4"
+                            },
+                            {
+                                "key": "PO",
+                                "value": "1000000001"
+                            }
+                        ],
+                        "ttlInHours": 72
+                    }
+                ]
+            }
+        },
+        {
+            "trackingId": "b670120000200000000070219",
+            "distributions": [
+                {
+                    "orderId": "4B2FE9B0-6DA0-4332-B04D-F24A48C03841",
+                    "allocQty": 4,
+                    "item": {
+                        "itemNbr": 100000001,
+                        "baseDivisionCode": "WM",
+                        "reportingGroup": "US"
+                    }
+                }
+            ],
+            "ctrType": "Vendor Pack",
+            "inventoryStatus": "PICKED",
+            "ctrDestination": {
+                "buNumber": 7026,
+                "countryCode": "US"
+            },
+            "outboundChannelMethod": "CROSSU",
+            "ctrReusable": false,
+            "ctrShippable": true,
+            "ctrLabel": {
+                "clientId": "OF",
+                "headers": {
+                    "facilityCountryCode": "US",
+                    "facilityNum": "32987",
+                    "WMT-CorrelationId": "01415726-e60e-4c43-b3bb-177ec65d7e74"
+                },
+                "printRequests": [
+                    {
+                        "labelIdentifier": "b670120000200000000070219",
+                        "formatName": "case_lpn_format",
+                        "data": [
+                            {
+                                "key": "HAZMAT",
+                                "value": ""
+                            },
+                            {
+                                "key": "LPN",
+                                "value": "b670120000200000000070219"
+                            },
+                            {
+                                "key": "FULLUSERID",
+                                "value": "sysadmin"
+                            },
+                            {
+                                "key": "POCODE",
+                                "value": "GO"
+                            },
+                            {
+                                "key": "VENDORID",
+                                "value": "12344"
+                            },
+                            {
+                                "key": "COLOR",
+                                "value": ""
+                            },
+                            {
+                                "key": "QTY",
+                                "value": ""
+                            },
+                            {
+                                "key": "DEPT",
+                                "value": "14"
+                            },
+                            {
+                                "key": "CPQTY",
+                                "value": "4"
+                            },
+                            {
+                                "key": "DESC1",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "DESC2",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "PACKTYPE",
+                                "value": "BP"
+                            },
+                            {
+                                "key": "SIZE",
+                                "value": ""
+                            },
+                            {
+                                "key": "POEVENT",
+                                "value": "POS REPLEN"
+                            },
+                            {
+                                "key": "EVENTCHAR",
+                                "value": " "
+                            },
+                            {
+                                "key": "DSDC",
+                                "value": ""
+                            },
+                            {
+                                "key": "STOREZONE",
+                                "value": "A"
+                            },
+                            {
+                                "key": "ITEM",
+                                "value": "100000001"
+                            },
+                            {
+                                "key": "REPRINT",
+                                "value": ""
+                            },
+                            {
+                                "key": "POLINE",
+                                "value": "1"
+                            },
+                            {
+                                "key": "PRINTER",
+                                "value": ""
+                            },
+                            {
+                                "key": "CHANNEL",
+                                "value": "DIST"
+                            },
+                            {
+                                "key": "DESTINATION",
+                                "value": "07026 US"
+                            },
+                            {
+                                "key": "UPCBAR",
+                                "value": "10000000000001"
+                            },
+                            {
+                                "key": "PACK",
+                                "value": "4"
+                            },
+                            {
+                                "key": "PO",
+                                "value": "1000000001"
+                            }
+                        ],
+                        "ttlInHours": 72
+                    }
+                ]
+            }
+        },
+        {
+            "trackingId": "b670120000200000000070220",
+            "distributions": [
+                {
+                    "orderId": "4B2FE9B0-6DA0-4332-B04D-F24A48C03841",
+                    "allocQty": 4,
+                    "item": {
+                        "itemNbr": 100000001,
+                        "baseDivisionCode": "WM",
+                        "reportingGroup": "US"
+                    }
+                }
+            ],
+            "ctrType": "Vendor Pack",
+            "inventoryStatus": "PICKED",
+            "ctrDestination": {
+                "buNumber": 7026,
+                "countryCode": "US"
+            },
+            "outboundChannelMethod": "CROSSU",
+            "ctrReusable": false,
+            "ctrShippable": true,
+            "ctrLabel": {
+                "clientId": "OF",
+                "headers": {
+                    "facilityCountryCode": "US",
+                    "facilityNum": "32987",
+                    "WMT-CorrelationId": "01415726-e60e-4c43-b3bb-177ec65d7e74"
+                },
+                "printRequests": [
+                    {
+                        "labelIdentifier": "b670120000200000000070220",
+                        "formatName": "case_lpn_format",
+                        "data": [
+                            {
+                                "key": "HAZMAT",
+                                "value": ""
+                            },
+                            {
+                                "key": "LPN",
+                                "value": "b670120000200000000070220"
+                            },
+                            {
+                                "key": "FULLUSERID",
+                                "value": "sysadmin"
+                            },
+                            {
+                                "key": "POCODE",
+                                "value": "GO"
+                            },
+                            {
+                                "key": "VENDORID",
+                                "value": "12344"
+                            },
+                            {
+                                "key": "COLOR",
+                                "value": ""
+                            },
+                            {
+                                "key": "QTY",
+                                "value": ""
+                            },
+                            {
+                                "key": "DEPT",
+                                "value": "14"
+                            },
+                            {
+                                "key": "CPQTY",
+                                "value": "4"
+                            },
+                            {
+                                "key": "DESC1",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "DESC2",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "PACKTYPE",
+                                "value": "BP"
+                            },
+                            {
+                                "key": "SIZE",
+                                "value": ""
+                            },
+                            {
+                                "key": "POEVENT",
+                                "value": "POS REPLEN"
+                            },
+                            {
+                                "key": "EVENTCHAR",
+                                "value": " "
+                            },
+                            {
+                                "key": "DSDC",
+                                "value": ""
+                            },
+                            {
+                                "key": "STOREZONE",
+                                "value": "A"
+                            },
+                            {
+                                "key": "ITEM",
+                                "value": "100000001"
+                            },
+                            {
+                                "key": "REPRINT",
+                                "value": ""
+                            },
+                            {
+                                "key": "POLINE",
+                                "value": "1"
+                            },
+                            {
+                                "key": "PRINTER",
+                                "value": ""
+                            },
+                            {
+                                "key": "CHANNEL",
+                                "value": "DIST"
+                            },
+                            {
+                                "key": "DESTINATION",
+                                "value": "07026 US"
+                            },
+                            {
+                                "key": "UPCBAR",
+                                "value": "10000000000001"
+                            },
+                            {
+                                "key": "PACK",
+                                "value": "4"
+                            },
+                            {
+                                "key": "PO",
+                                "value": "1000000001"
+                            }
+                        ],
+                        "ttlInHours": 72
+                    }
+                ]
+            }
+        },
+        {
+            "trackingId": "b670120000200000000070221",
+            "distributions": [
+                {
+                    "orderId": "4B2FE9B0-6DA0-4332-B04D-F24A48C03841",
+                    "allocQty": 4,
+                    "item": {
+                        "itemNbr": 100000001,
+                        "baseDivisionCode": "WM",
+                        "reportingGroup": "US"
+                    }
+                }
+            ],
+            "ctrType": "Vendor Pack",
+            "inventoryStatus": "PICKED",
+            "ctrDestination": {
+                "buNumber": 7026,
+                "countryCode": "US"
+            },
+            "outboundChannelMethod": "CROSSU",
+            "ctrReusable": false,
+            "ctrShippable": true,
+            "ctrLabel": {
+                "clientId": "OF",
+                "headers": {
+                    "facilityCountryCode": "US",
+                    "facilityNum": "32987",
+                    "WMT-CorrelationId": "01415726-e60e-4c43-b3bb-177ec65d7e74"
+                },
+                "printRequests": [
+                    {
+                        "labelIdentifier": "b670120000200000000070221",
+                        "formatName": "case_lpn_format",
+                        "data": [
+                            {
+                                "key": "HAZMAT",
+                                "value": ""
+                            },
+                            {
+                                "key": "LPN",
+                                "value": "b670120000200000000070221"
+                            },
+                            {
+                                "key": "FULLUSERID",
+                                "value": "sysadmin"
+                            },
+                            {
+                                "key": "POCODE",
+                                "value": "GO"
+                            },
+                            {
+                                "key": "VENDORID",
+                                "value": "12344"
+                            },
+                            {
+                                "key": "COLOR",
+                                "value": ""
+                            },
+                            {
+                                "key": "QTY",
+                                "value": ""
+                            },
+                            {
+                                "key": "DEPT",
+                                "value": "14"
+                            },
+                            {
+                                "key": "CPQTY",
+                                "value": "4"
+                            },
+                            {
+                                "key": "DESC1",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "DESC2",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "PACKTYPE",
+                                "value": "BP"
+                            },
+                            {
+                                "key": "SIZE",
+                                "value": ""
+                            },
+                            {
+                                "key": "POEVENT",
+                                "value": "POS REPLEN"
+                            },
+                            {
+                                "key": "EVENTCHAR",
+                                "value": " "
+                            },
+                            {
+                                "key": "DSDC",
+                                "value": ""
+                            },
+                            {
+                                "key": "STOREZONE",
+                                "value": "A"
+                            },
+                            {
+                                "key": "ITEM",
+                                "value": "100000001"
+                            },
+                            {
+                                "key": "REPRINT",
+                                "value": ""
+                            },
+                            {
+                                "key": "POLINE",
+                                "value": "1"
+                            },
+                            {
+                                "key": "PRINTER",
+                                "value": ""
+                            },
+                            {
+                                "key": "CHANNEL",
+                                "value": "DIST"
+                            },
+                            {
+                                "key": "DESTINATION",
+                                "value": "07026 US"
+                            },
+                            {
+                                "key": "UPCBAR",
+                                "value": "10000000000001"
+                            },
+                            {
+                                "key": "PACK",
+                                "value": "4"
+                            },
+                            {
+                                "key": "PO",
+                                "value": "1000000001"
+                            }
+                        ],
+                        "ttlInHours": 72
+                    }
+                ]
+            }
+        },
+        {
+            "trackingId": "b670120000200000000070222",
+            "distributions": [
+                {
+                    "orderId": "4B2FE9B0-6DA0-4332-B04D-F24A48C03841",
+                    "allocQty": 4,
+                    "item": {
+                        "itemNbr": 100000001,
+                        "baseDivisionCode": "WM",
+                        "reportingGroup": "US"
+                    }
+                }
+            ],
+            "ctrType": "Vendor Pack",
+            "inventoryStatus": "PICKED",
+            "ctrDestination": {
+                "buNumber": 7026,
+                "countryCode": "US"
+            },
+            "outboundChannelMethod": "CROSSU",
+            "ctrReusable": false,
+            "ctrShippable": true,
+            "ctrLabel": {
+                "clientId": "OF",
+                "headers": {
+                    "facilityCountryCode": "US",
+                    "facilityNum": "32987",
+                    "WMT-CorrelationId": "01415726-e60e-4c43-b3bb-177ec65d7e74"
+                },
+                "printRequests": [
+                    {
+                        "labelIdentifier": "b670120000200000000070222",
+                        "formatName": "case_lpn_format",
+                        "data": [
+                            {
+                                "key": "HAZMAT",
+                                "value": ""
+                            },
+                            {
+                                "key": "LPN",
+                                "value": "b670120000200000000070222"
+                            },
+                            {
+                                "key": "FULLUSERID",
+                                "value": "sysadmin"
+                            },
+                            {
+                                "key": "POCODE",
+                                "value": "GO"
+                            },
+                            {
+                                "key": "VENDORID",
+                                "value": "12344"
+                            },
+                            {
+                                "key": "COLOR",
+                                "value": ""
+                            },
+                            {
+                                "key": "QTY",
+                                "value": ""
+                            },
+                            {
+                                "key": "DEPT",
+                                "value": "14"
+                            },
+                            {
+                                "key": "CPQTY",
+                                "value": "4"
+                            },
+                            {
+                                "key": "DESC1",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "DESC2",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "PACKTYPE",
+                                "value": "BP"
+                            },
+                            {
+                                "key": "SIZE",
+                                "value": ""
+                            },
+                            {
+                                "key": "POEVENT",
+                                "value": "POS REPLEN"
+                            },
+                            {
+                                "key": "EVENTCHAR",
+                                "value": " "
+                            },
+                            {
+                                "key": "DSDC",
+                                "value": ""
+                            },
+                            {
+                                "key": "STOREZONE",
+                                "value": "A"
+                            },
+                            {
+                                "key": "ITEM",
+                                "value": "100000001"
+                            },
+                            {
+                                "key": "REPRINT",
+                                "value": ""
+                            },
+                            {
+                                "key": "POLINE",
+                                "value": "1"
+                            },
+                            {
+                                "key": "PRINTER",
+                                "value": ""
+                            },
+                            {
+                                "key": "CHANNEL",
+                                "value": "DIST"
+                            },
+                            {
+                                "key": "DESTINATION",
+                                "value": "07026 US"
+                            },
+                            {
+                                "key": "UPCBAR",
+                                "value": "10000000000001"
+                            },
+                            {
+                                "key": "PACK",
+                                "value": "4"
+                            },
+                            {
+                                "key": "PO",
+                                "value": "1000000001"
+                            }
+                        ],
+                        "ttlInHours": 72
+                    }
+                ]
+            }
+        },
+        {
+            "trackingId": "b670120000200000000070223",
+            "distributions": [
+                {
+                    "orderId": "4B2FE9B0-6DA0-4332-B04D-F24A48C03841",
+                    "allocQty": 4,
+                    "item": {
+                        "itemNbr": 100000001,
+                        "baseDivisionCode": "WM",
+                        "reportingGroup": "US"
+                    }
+                }
+            ],
+            "ctrType": "Vendor Pack",
+            "inventoryStatus": "PICKED",
+            "ctrDestination": {
+                "buNumber": 7026,
+                "countryCode": "US"
+            },
+            "outboundChannelMethod": "CROSSU",
+            "ctrReusable": false,
+            "ctrShippable": true,
+            "ctrLabel": {
+                "clientId": "OF",
+                "headers": {
+                    "facilityCountryCode": "US",
+                    "facilityNum": "32987",
+                    "WMT-CorrelationId": "01415726-e60e-4c43-b3bb-177ec65d7e74"
+                },
+                "printRequests": [
+                    {
+                        "labelIdentifier": "b670120000200000000070223",
+                        "formatName": "case_lpn_format",
+                        "data": [
+                            {
+                                "key": "HAZMAT",
+                                "value": ""
+                            },
+                            {
+                                "key": "LPN",
+                                "value": "b670120000200000000070223"
+                            },
+                            {
+                                "key": "FULLUSERID",
+                                "value": "sysadmin"
+                            },
+                            {
+                                "key": "POCODE",
+                                "value": "GO"
+                            },
+                            {
+                                "key": "VENDORID",
+                                "value": "12344"
+                            },
+                            {
+                                "key": "COLOR",
+                                "value": ""
+                            },
+                            {
+                                "key": "QTY",
+                                "value": ""
+                            },
+                            {
+                                "key": "DEPT",
+                                "value": "14"
+                            },
+                            {
+                                "key": "CPQTY",
+                                "value": "4"
+                            },
+                            {
+                                "key": "DESC1",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "DESC2",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "PACKTYPE",
+                                "value": "BP"
+                            },
+                            {
+                                "key": "SIZE",
+                                "value": ""
+                            },
+                            {
+                                "key": "POEVENT",
+                                "value": "POS REPLEN"
+                            },
+                            {
+                                "key": "EVENTCHAR",
+                                "value": " "
+                            },
+                            {
+                                "key": "DSDC",
+                                "value": ""
+                            },
+                            {
+                                "key": "STOREZONE",
+                                "value": "A"
+                            },
+                            {
+                                "key": "ITEM",
+                                "value": "100000001"
+                            },
+                            {
+                                "key": "REPRINT",
+                                "value": ""
+                            },
+                            {
+                                "key": "POLINE",
+                                "value": "1"
+                            },
+                            {
+                                "key": "PRINTER",
+                                "value": ""
+                            },
+                            {
+                                "key": "CHANNEL",
+                                "value": "DIST"
+                            },
+                            {
+                                "key": "DESTINATION",
+                                "value": "07026 US"
+                            },
+                            {
+                                "key": "UPCBAR",
+                                "value": "10000000000001"
+                            },
+                            {
+                                "key": "PACK",
+                                "value": "4"
+                            },
+                            {
+                                "key": "PO",
+                                "value": "1000000001"
+                            }
+                        ],
+                        "ttlInHours": 72
+                    }
+                ]
+            }
+        },
+        {
+            "trackingId": "b670120000200000000070224",
+            "distributions": [
+                {
+                    "orderId": "4B2FE9B0-6DA0-4332-B04D-F24A48C03841",
+                    "allocQty": 4,
+                    "item": {
+                        "itemNbr": 100000001,
+                        "baseDivisionCode": "WM",
+                        "reportingGroup": "US"
+                    }
+                }
+            ],
+            "ctrType": "Vendor Pack",
+            "inventoryStatus": "PICKED",
+            "ctrDestination": {
+                "buNumber": 7026,
+                "countryCode": "US"
+            },
+            "outboundChannelMethod": "CROSSU",
+            "ctrReusable": false,
+            "ctrShippable": true,
+            "ctrLabel": {
+                "clientId": "OF",
+                "headers": {
+                    "facilityCountryCode": "US",
+                    "facilityNum": "32987",
+                    "WMT-CorrelationId": "01415726-e60e-4c43-b3bb-177ec65d7e74"
+                },
+                "printRequests": [
+                    {
+                        "labelIdentifier": "b670120000200000000070224",
+                        "formatName": "case_lpn_format",
+                        "data": [
+                            {
+                                "key": "HAZMAT",
+                                "value": ""
+                            },
+                            {
+                                "key": "LPN",
+                                "value": "b670120000200000000070224"
+                            },
+                            {
+                                "key": "FULLUSERID",
+                                "value": "sysadmin"
+                            },
+                            {
+                                "key": "POCODE",
+                                "value": "GO"
+                            },
+                            {
+                                "key": "VENDORID",
+                                "value": "12344"
+                            },
+                            {
+                                "key": "COLOR",
+                                "value": ""
+                            },
+                            {
+                                "key": "QTY",
+                                "value": ""
+                            },
+                            {
+                                "key": "DEPT",
+                                "value": "14"
+                            },
+                            {
+                                "key": "CPQTY",
+                                "value": "4"
+                            },
+                            {
+                                "key": "DESC1",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "DESC2",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "PACKTYPE",
+                                "value": "BP"
+                            },
+                            {
+                                "key": "SIZE",
+                                "value": ""
+                            },
+                            {
+                                "key": "POEVENT",
+                                "value": "POS REPLEN"
+                            },
+                            {
+                                "key": "EVENTCHAR",
+                                "value": " "
+                            },
+                            {
+                                "key": "DSDC",
+                                "value": ""
+                            },
+                            {
+                                "key": "STOREZONE",
+                                "value": "A"
+                            },
+                            {
+                                "key": "ITEM",
+                                "value": "100000001"
+                            },
+                            {
+                                "key": "REPRINT",
+                                "value": ""
+                            },
+                            {
+                                "key": "POLINE",
+                                "value": "1"
+                            },
+                            {
+                                "key": "PRINTER",
+                                "value": ""
+                            },
+                            {
+                                "key": "CHANNEL",
+                                "value": "DIST"
+                            },
+                            {
+                                "key": "DESTINATION",
+                                "value": "07026 US"
+                            },
+                            {
+                                "key": "UPCBAR",
+                                "value": "10000000000001"
+                            },
+                            {
+                                "key": "PACK",
+                                "value": "4"
+                            },
+                            {
+                                "key": "PO",
+                                "value": "1000000001"
+                            }
+                        ],
+                        "ttlInHours": 72
+                    }
+                ]
+            }
+        },
+        {
+            "trackingId": "b670120000200000000070225",
+            "distributions": [
+                {
+                    "orderId": "4B2FE9B0-6DA0-4332-B04D-F24A48C03841",
+                    "allocQty": 4,
+                    "item": {
+                        "itemNbr": 100000001,
+                        "baseDivisionCode": "WM",
+                        "reportingGroup": "US"
+                    }
+                }
+            ],
+            "ctrType": "Vendor Pack",
+            "inventoryStatus": "PICKED",
+            "ctrDestination": {
+                "buNumber": 7026,
+                "countryCode": "US"
+            },
+            "outboundChannelMethod": "CROSSU",
+            "ctrReusable": false,
+            "ctrShippable": true,
+            "ctrLabel": {
+                "clientId": "OF",
+                "headers": {
+                    "facilityCountryCode": "US",
+                    "facilityNum": "32987",
+                    "WMT-CorrelationId": "01415726-e60e-4c43-b3bb-177ec65d7e74"
+                },
+                "printRequests": [
+                    {
+                        "labelIdentifier": "b670120000200000000070225",
+                        "formatName": "case_lpn_format",
+                        "data": [
+                            {
+                                "key": "HAZMAT",
+                                "value": ""
+                            },
+                            {
+                                "key": "LPN",
+                                "value": "b670120000200000000070225"
+                            },
+                            {
+                                "key": "FULLUSERID",
+                                "value": "sysadmin"
+                            },
+                            {
+                                "key": "POCODE",
+                                "value": "GO"
+                            },
+                            {
+                                "key": "VENDORID",
+                                "value": "12344"
+                            },
+                            {
+                                "key": "COLOR",
+                                "value": ""
+                            },
+                            {
+                                "key": "QTY",
+                                "value": ""
+                            },
+                            {
+                                "key": "DEPT",
+                                "value": "14"
+                            },
+                            {
+                                "key": "CPQTY",
+                                "value": "4"
+                            },
+                            {
+                                "key": "DESC1",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "DESC2",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "PACKTYPE",
+                                "value": "BP"
+                            },
+                            {
+                                "key": "SIZE",
+                                "value": ""
+                            },
+                            {
+                                "key": "POEVENT",
+                                "value": "POS REPLEN"
+                            },
+                            {
+                                "key": "EVENTCHAR",
+                                "value": " "
+                            },
+                            {
+                                "key": "DSDC",
+                                "value": ""
+                            },
+                            {
+                                "key": "STOREZONE",
+                                "value": "A"
+                            },
+                            {
+                                "key": "ITEM",
+                                "value": "100000001"
+                            },
+                            {
+                                "key": "REPRINT",
+                                "value": ""
+                            },
+                            {
+                                "key": "POLINE",
+                                "value": "1"
+                            },
+                            {
+                                "key": "PRINTER",
+                                "value": ""
+                            },
+                            {
+                                "key": "CHANNEL",
+                                "value": "DIST"
+                            },
+                            {
+                                "key": "DESTINATION",
+                                "value": "07026 US"
+                            },
+                            {
+                                "key": "UPCBAR",
+                                "value": "10000000000001"
+                            },
+                            {
+                                "key": "PACK",
+                                "value": "4"
+                            },
+                            {
+                                "key": "PO",
+                                "value": "1000000001"
+                            }
+                        ],
+                        "ttlInHours": 72
+                    }
+                ]
+            }
+        },
+        {
+            "trackingId": "b670120000200000000070226",
+            "distributions": [
+                {
+                    "orderId": "4B2FE9B0-6DA0-4332-B04D-F24A48C03841",
+                    "allocQty": 4,
+                    "item": {
+                        "itemNbr": 100000001,
+                        "baseDivisionCode": "WM",
+                        "reportingGroup": "US"
+                    }
+                }
+            ],
+            "ctrType": "Vendor Pack",
+            "inventoryStatus": "PICKED",
+            "ctrDestination": {
+                "buNumber": 7026,
+                "countryCode": "US"
+            },
+            "outboundChannelMethod": "CROSSU",
+            "ctrReusable": false,
+            "ctrShippable": true,
+            "ctrLabel": {
+                "clientId": "OF",
+                "headers": {
+                    "facilityCountryCode": "US",
+                    "facilityNum": "32987",
+                    "WMT-CorrelationId": "01415726-e60e-4c43-b3bb-177ec65d7e74"
+                },
+                "printRequests": [
+                    {
+                        "labelIdentifier": "b670120000200000000070226",
+                        "formatName": "case_lpn_format",
+                        "data": [
+                            {
+                                "key": "HAZMAT",
+                                "value": ""
+                            },
+                            {
+                                "key": "LPN",
+                                "value": "b670120000200000000070226"
+                            },
+                            {
+                                "key": "FULLUSERID",
+                                "value": "sysadmin"
+                            },
+                            {
+                                "key": "POCODE",
+                                "value": "GO"
+                            },
+                            {
+                                "key": "VENDORID",
+                                "value": "12344"
+                            },
+                            {
+                                "key": "COLOR",
+                                "value": ""
+                            },
+                            {
+                                "key": "QTY",
+                                "value": ""
+                            },
+                            {
+                                "key": "DEPT",
+                                "value": "14"
+                            },
+                            {
+                                "key": "CPQTY",
+                                "value": "4"
+                            },
+                            {
+                                "key": "DESC1",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "DESC2",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "PACKTYPE",
+                                "value": "BP"
+                            },
+                            {
+                                "key": "SIZE",
+                                "value": ""
+                            },
+                            {
+                                "key": "POEVENT",
+                                "value": "POS REPLEN"
+                            },
+                            {
+                                "key": "EVENTCHAR",
+                                "value": " "
+                            },
+                            {
+                                "key": "DSDC",
+                                "value": ""
+                            },
+                            {
+                                "key": "STOREZONE",
+                                "value": "A"
+                            },
+                            {
+                                "key": "ITEM",
+                                "value": "100000001"
+                            },
+                            {
+                                "key": "REPRINT",
+                                "value": ""
+                            },
+                            {
+                                "key": "POLINE",
+                                "value": "1"
+                            },
+                            {
+                                "key": "PRINTER",
+                                "value": ""
+                            },
+                            {
+                                "key": "CHANNEL",
+                                "value": "DIST"
+                            },
+                            {
+                                "key": "DESTINATION",
+                                "value": "07026 US"
+                            },
+                            {
+                                "key": "UPCBAR",
+                                "value": "10000000000001"
+                            },
+                            {
+                                "key": "PACK",
+                                "value": "4"
+                            },
+                            {
+                                "key": "PO",
+                                "value": "1000000001"
+                            }
+                        ],
+                        "ttlInHours": 72
+                    }
+                ]
+            }
+        },
+        {
+            "trackingId": "b670120000200000000070227",
+            "distributions": [
+                {
+                    "orderId": "4B2FE9B0-6DA0-4332-B04D-F24A48C03841",
+                    "allocQty": 4,
+                    "item": {
+                        "itemNbr": 100000001,
+                        "baseDivisionCode": "WM",
+                        "reportingGroup": "US"
+                    }
+                }
+            ],
+            "ctrType": "Vendor Pack",
+            "inventoryStatus": "PICKED",
+            "ctrDestination": {
+                "buNumber": 7026,
+                "countryCode": "US"
+            },
+            "outboundChannelMethod": "CROSSU",
+            "ctrReusable": false,
+            "ctrShippable": true,
+            "ctrLabel": {
+                "clientId": "OF",
+                "headers": {
+                    "facilityCountryCode": "US",
+                    "facilityNum": "32987",
+                    "WMT-CorrelationId": "01415726-e60e-4c43-b3bb-177ec65d7e74"
+                },
+                "printRequests": [
+                    {
+                        "labelIdentifier": "b670120000200000000070227",
+                        "formatName": "case_lpn_format",
+                        "data": [
+                            {
+                                "key": "HAZMAT",
+                                "value": ""
+                            },
+                            {
+                                "key": "LPN",
+                                "value": "b670120000200000000070227"
+                            },
+                            {
+                                "key": "FULLUSERID",
+                                "value": "sysadmin"
+                            },
+                            {
+                                "key": "POCODE",
+                                "value": "GO"
+                            },
+                            {
+                                "key": "VENDORID",
+                                "value": "12344"
+                            },
+                            {
+                                "key": "COLOR",
+                                "value": ""
+                            },
+                            {
+                                "key": "QTY",
+                                "value": ""
+                            },
+                            {
+                                "key": "DEPT",
+                                "value": "14"
+                            },
+                            {
+                                "key": "CPQTY",
+                                "value": "4"
+                            },
+                            {
+                                "key": "DESC1",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "DESC2",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "PACKTYPE",
+                                "value": "BP"
+                            },
+                            {
+                                "key": "SIZE",
+                                "value": ""
+                            },
+                            {
+                                "key": "POEVENT",
+                                "value": "POS REPLEN"
+                            },
+                            {
+                                "key": "EVENTCHAR",
+                                "value": " "
+                            },
+                            {
+                                "key": "DSDC",
+                                "value": ""
+                            },
+                            {
+                                "key": "STOREZONE",
+                                "value": "A"
+                            },
+                            {
+                                "key": "ITEM",
+                                "value": "100000001"
+                            },
+                            {
+                                "key": "REPRINT",
+                                "value": ""
+                            },
+                            {
+                                "key": "POLINE",
+                                "value": "1"
+                            },
+                            {
+                                "key": "PRINTER",
+                                "value": ""
+                            },
+                            {
+                                "key": "CHANNEL",
+                                "value": "DIST"
+                            },
+                            {
+                                "key": "DESTINATION",
+                                "value": "07026 US"
+                            },
+                            {
+                                "key": "UPCBAR",
+                                "value": "10000000000001"
+                            },
+                            {
+                                "key": "PACK",
+                                "value": "4"
+                            },
+                            {
+                                "key": "PO",
+                                "value": "1000000001"
+                            }
+                        ],
+                        "ttlInHours": 72
+                    }
+                ]
+            }
+        },
+        {
+            "trackingId": "b670120000200000000070228",
+            "distributions": [
+                {
+                    "orderId": "4B2FE9B0-6DA0-4332-B04D-F24A48C03841",
+                    "allocQty": 4,
+                    "item": {
+                        "itemNbr": 100000001,
+                        "baseDivisionCode": "WM",
+                        "reportingGroup": "US"
+                    }
+                }
+            ],
+            "ctrType": "Vendor Pack",
+            "inventoryStatus": "PICKED",
+            "ctrDestination": {
+                "buNumber": 7026,
+                "countryCode": "US"
+            },
+            "outboundChannelMethod": "CROSSU",
+            "ctrReusable": false,
+            "ctrShippable": true,
+            "ctrLabel": {
+                "clientId": "OF",
+                "headers": {
+                    "facilityCountryCode": "US",
+                    "facilityNum": "32987",
+                    "WMT-CorrelationId": "01415726-e60e-4c43-b3bb-177ec65d7e74"
+                },
+                "printRequests": [
+                    {
+                        "labelIdentifier": "b670120000200000000070228",
+                        "formatName": "case_lpn_format",
+                        "data": [
+                            {
+                                "key": "HAZMAT",
+                                "value": ""
+                            },
+                            {
+                                "key": "LPN",
+                                "value": "b670120000200000000070228"
+                            },
+                            {
+                                "key": "FULLUSERID",
+                                "value": "sysadmin"
+                            },
+                            {
+                                "key": "POCODE",
+                                "value": "GO"
+                            },
+                            {
+                                "key": "VENDORID",
+                                "value": "12344"
+                            },
+                            {
+                                "key": "COLOR",
+                                "value": ""
+                            },
+                            {
+                                "key": "QTY",
+                                "value": ""
+                            },
+                            {
+                                "key": "DEPT",
+                                "value": "14"
+                            },
+                            {
+                                "key": "CPQTY",
+                                "value": "4"
+                            },
+                            {
+                                "key": "DESC1",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "DESC2",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "PACKTYPE",
+                                "value": "BP"
+                            },
+                            {
+                                "key": "SIZE",
+                                "value": ""
+                            },
+                            {
+                                "key": "POEVENT",
+                                "value": "POS REPLEN"
+                            },
+                            {
+                                "key": "EVENTCHAR",
+                                "value": " "
+                            },
+                            {
+                                "key": "DSDC",
+                                "value": ""
+                            },
+                            {
+                                "key": "STOREZONE",
+                                "value": "A"
+                            },
+                            {
+                                "key": "ITEM",
+                                "value": "100000001"
+                            },
+                            {
+                                "key": "REPRINT",
+                                "value": ""
+                            },
+                            {
+                                "key": "POLINE",
+                                "value": "1"
+                            },
+                            {
+                                "key": "PRINTER",
+                                "value": ""
+                            },
+                            {
+                                "key": "CHANNEL",
+                                "value": "DIST"
+                            },
+                            {
+                                "key": "DESTINATION",
+                                "value": "07026 US"
+                            },
+                            {
+                                "key": "UPCBAR",
+                                "value": "10000000000001"
+                            },
+                            {
+                                "key": "PACK",
+                                "value": "4"
+                            },
+                            {
+                                "key": "PO",
+                                "value": "1000000001"
+                            }
+                        ],
+                        "ttlInHours": 72
+                    }
+                ]
+            }
+        },
+        {
+            "trackingId": "b670120000200000000070229",
+            "distributions": [
+                {
+                    "orderId": "4B2FE9B0-6DA0-4332-B04D-F24A48C03841",
+                    "allocQty": 4,
+                    "item": {
+                        "itemNbr": 100000001,
+                        "baseDivisionCode": "WM",
+                        "reportingGroup": "US"
+                    }
+                }
+            ],
+            "ctrType": "Vendor Pack",
+            "inventoryStatus": "PICKED",
+            "ctrDestination": {
+                "buNumber": 7026,
+                "countryCode": "US"
+            },
+            "outboundChannelMethod": "CROSSU",
+            "ctrReusable": false,
+            "ctrShippable": true,
+            "ctrLabel": {
+                "clientId": "OF",
+                "headers": {
+                    "facilityCountryCode": "US",
+                    "facilityNum": "32987",
+                    "WMT-CorrelationId": "01415726-e60e-4c43-b3bb-177ec65d7e74"
+                },
+                "printRequests": [
+                    {
+                        "labelIdentifier": "b670120000200000000070229",
+                        "formatName": "case_lpn_format",
+                        "data": [
+                            {
+                                "key": "HAZMAT",
+                                "value": ""
+                            },
+                            {
+                                "key": "LPN",
+                                "value": "b670120000200000000070229"
+                            },
+                            {
+                                "key": "FULLUSERID",
+                                "value": "sysadmin"
+                            },
+                            {
+                                "key": "POCODE",
+                                "value": "GO"
+                            },
+                            {
+                                "key": "VENDORID",
+                                "value": "12344"
+                            },
+                            {
+                                "key": "COLOR",
+                                "value": ""
+                            },
+                            {
+                                "key": "QTY",
+                                "value": ""
+                            },
+                            {
+                                "key": "DEPT",
+                                "value": "14"
+                            },
+                            {
+                                "key": "CPQTY",
+                                "value": "4"
+                            },
+                            {
+                                "key": "DESC1",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "DESC2",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "PACKTYPE",
+                                "value": "BP"
+                            },
+                            {
+                                "key": "SIZE",
+                                "value": ""
+                            },
+                            {
+                                "key": "POEVENT",
+                                "value": "POS REPLEN"
+                            },
+                            {
+                                "key": "EVENTCHAR",
+                                "value": " "
+                            },
+                            {
+                                "key": "DSDC",
+                                "value": ""
+                            },
+                            {
+                                "key": "STOREZONE",
+                                "value": "A"
+                            },
+                            {
+                                "key": "ITEM",
+                                "value": "100000001"
+                            },
+                            {
+                                "key": "REPRINT",
+                                "value": ""
+                            },
+                            {
+                                "key": "POLINE",
+                                "value": "1"
+                            },
+                            {
+                                "key": "PRINTER",
+                                "value": ""
+                            },
+                            {
+                                "key": "CHANNEL",
+                                "value": "DIST"
+                            },
+                            {
+                                "key": "DESTINATION",
+                                "value": "07026 US"
+                            },
+                            {
+                                "key": "UPCBAR",
+                                "value": "10000000000001"
+                            },
+                            {
+                                "key": "PACK",
+                                "value": "4"
+                            },
+                            {
+                                "key": "PO",
+                                "value": "1000000001"
+                            }
+                        ],
+                        "ttlInHours": 72
+                    }
+                ]
+            }
+        },
+        {
+            "trackingId": "b670120000200000000070230",
+            "distributions": [
+                {
+                    "orderId": "4B2FE9B0-6DA0-4332-B04D-F24A48C03841",
+                    "allocQty": 4,
+                    "item": {
+                        "itemNbr": 100000001,
+                        "baseDivisionCode": "WM",
+                        "reportingGroup": "US"
+                    }
+                }
+            ],
+            "ctrType": "Vendor Pack",
+            "inventoryStatus": "PICKED",
+            "ctrDestination": {
+                "buNumber": 7026,
+                "countryCode": "US"
+            },
+            "outboundChannelMethod": "CROSSU",
+            "ctrReusable": false,
+            "ctrShippable": true,
+            "ctrLabel": {
+                "clientId": "OF",
+                "headers": {
+                    "facilityCountryCode": "US",
+                    "facilityNum": "32987",
+                    "WMT-CorrelationId": "01415726-e60e-4c43-b3bb-177ec65d7e74"
+                },
+                "printRequests": [
+                    {
+                        "labelIdentifier": "b670120000200000000070230",
+                        "formatName": "case_lpn_format",
+                        "data": [
+                            {
+                                "key": "HAZMAT",
+                                "value": ""
+                            },
+                            {
+                                "key": "LPN",
+                                "value": "b670120000200000000070230"
+                            },
+                            {
+                                "key": "FULLUSERID",
+                                "value": "sysadmin"
+                            },
+                            {
+                                "key": "POCODE",
+                                "value": "GO"
+                            },
+                            {
+                                "key": "VENDORID",
+                                "value": "12344"
+                            },
+                            {
+                                "key": "COLOR",
+                                "value": ""
+                            },
+                            {
+                                "key": "QTY",
+                                "value": ""
+                            },
+                            {
+                                "key": "DEPT",
+                                "value": "14"
+                            },
+                            {
+                                "key": "CPQTY",
+                                "value": "4"
+                            },
+                            {
+                                "key": "DESC1",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "DESC2",
+                                "value": "IP 1"
+                            },
+                            {
+                                "key": "PACKTYPE",
+                                "value": "BP"
+                            },
+                            {
+                                "key": "SIZE",
+                                "value": ""
+                            },
+                            {
+                                "key": "POEVENT",
+                                "value": "POS REPLEN"
+                            },
+                            {
+                                "key": "EVENTCHAR",
+                                "value": " "
+                            },
+                            {
+                                "key": "DSDC",
+                                "value": ""
+                            },
+                            {
+                                "key": "STOREZONE",
+                                "value": "A"
+                            },
+                            {
+                                "key": "ITEM",
+                                "value": "100000001"
+                            },
+                            {
+                                "key": "REPRINT",
+                                "value": ""
+                            },
+                            {
+                                "key": "POLINE",
+                                "value": "1"
+                            },
+                            {
+                                "key": "PRINTER",
+                                "value": ""
+                            },
+                            {
+                                "key": "CHANNEL",
+                                "value": "DIST"
+                            },
+                            {
+                                "key": "DESTINATION",
+                                "value": "07026 US"
+                            },
+                            {
+                                "key": "UPCBAR",
+                                "value": "10000000000001"
+                            },
+                            {
+                                "key": "PACK",
+                                "value": "4"
+                            },
+                            {
+                                "key": "PO",
+                                "value": "1000000001"
+                            }
+                        ],
+                        "ttlInHours": 72
+                    }
+                ]
+            }
+        }
+    ]
+}

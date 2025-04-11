@@ -1,0 +1,171 @@
+{
+  "data": [
+    {
+      "deliveryNumber": 89768798,
+      "statusInformation": {
+        "status": "WRK",
+        "statusReasonCode": [
+          "WORKING"
+        ],
+        "operationalStatus": "WRK"
+      },
+      "type": "LIVE",
+      "appointmentTime": "2020-02-12T15:07:04.587Z",
+      "doorNumber": "786",
+      "arrivalTime": "2020-02-12T15:07:04.587Z",
+      "hazmat": true,
+      "loadInformation": {
+        "type": "CONV",
+        "number": "72216313",
+        "sourceDCNumber": "6094",
+        "sourceType": "DC",
+        "trailerInformation": {
+          "sealNumber": "9158266",
+          "trailerId": "144840",
+          "scacCode": "WM"
+        }
+      },
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "sysadmin",
+          "time": "2019-12-09T10:44:11.688Z"
+        },
+        {
+          "type": "RECEIVING_COMPLETED",
+          "userId": "sysadmin",
+          "time": "2019-12-09T12:44:11.688Z"
+        }
+      ],
+      "additionalInformation": {
+        "lastUpdatedSealNumber": "9158989"
+      },
+      "purchaseOrders": [
+        {
+          "poNumber": "7320250027",
+          "omsPONumber": "0433565165",
+          "poDcNumber": "32898",
+          "bpoNumber": "0",
+          "baseDivisionCode": "WM",
+          "legacyType": 33,
+          "freightBillQty": 200,
+          "totalBolFbq": 20,
+          "palletQty": 3,
+          "purchaseCompanyId": 1,
+          "poStatus": "CLOSED",
+          "bolNumbers": [
+            {
+              "bolNumber": "88392148",
+              "proNumber": "1010532708",
+              "freightBillQty": 10
+            }
+          ],
+          "weight": {
+            "quantity": 7.6,
+            "uom": "KG"
+          },
+          "cube": {
+            "quantity": 0.86,
+            "uom": "LB"
+          },
+          "freightTermCode": "COLL",
+          "financialGroupCode": "US",
+          "dates": {
+            "ordered": "2019-12-02",
+            "mabd": "2019-12-05",
+            "cancel": "2019-04-30",
+            "ship": "2019-04-30"
+          },
+          "vendor": {
+            "name": "IMPERIAL TOY LLC",
+            "number": 23508572,
+            "department": 1
+          },
+          "operationalInfo": {
+            "state": "FINALIZED",
+            "time": "2020-02-12T15:07:04.587Z",
+            "userId": "a0r02b1"
+          },
+          "additionalInformation": {
+            "ship_point": "VARIOUS ZZ ZZ",
+            "outbound_month": "5"
+          },
+          "lines": [
+            {
+              "poLineNumber": 22,
+              "channel": "SSTKU",
+              "poLineStatus": "PARTIALLY_RECEIVED",
+              "ordered": {
+                "quantity": 10,
+                "uom": "EA"
+              },
+              "freightBillQty": 20,
+              "ovgThresholdQuantityLimit": 27,
+              "whpk": {
+                "quantity": 6,
+                "sell": 19.19
+              },
+              "vnpk": {
+                "quantity": 6,
+                "cost": 18.24,
+                "weight": {
+                  "quantity": 7.6,
+                  "uom": "KG"
+                },
+                "cube": {
+                  "quantity": 3.678,
+                  "uom": "CF"
+                }
+              },
+              "event": "POS REPLEN",
+              "additionalInformation": {
+                "sample_po_ind": "N",
+                "manual_po_ind": "N"
+              },
+              "itemDetails": {
+                "number": 570950956,
+                "consumableGTIN": "00073561300254",
+                "orderableGTIN": "10073561300251",
+                "vendorUPC": "30073561300251",
+                "supplierStockId": "3002510PM",
+                "palletTi": 30,
+                "palletHi": 6,
+                "hazmat": true,
+                "conveyable": true,
+                "itemTypeCode": "33",
+                "color": "MOUND",
+                "size": "10",
+                "descriptions": [
+                    "ORTHENE 2PK FIREANT",
+                    "CASE"
+                ],
+                "vendorDepartment": "16",
+                "additionalInformation": {
+                  "isNewItem": false,
+                  "warehouseMinLifeRemainingToReceiveUOM": "DAYS",
+                  "profiledWarehouseArea": "OPM",
+                  "warehouseRotationTypeCode": "1",
+                  "recall": true,
+                  "weight": 1.0,
+                  "isVariableWeight": true,
+                  "warehousePackGTIN": "10400008055700",
+                  "warehouseMinLifeRemainingToReceive": 24,
+                  "weightUOM": "LB"
+                }
+              },
+              "lineDistributions": [
+                {
+                  "buNumber": 5,
+                  "ordered": {
+                    "quantity": 10,
+                    "uom": "EA"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

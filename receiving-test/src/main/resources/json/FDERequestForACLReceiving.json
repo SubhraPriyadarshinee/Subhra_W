@@ -1,0 +1,53 @@
+{
+  "messageId": "c32987000000000000000001",
+  "trackingId": "c32987000000000000000001",
+  "correlationId": "aafa2fcc-d299-4663-aa64-ba6f79704635",
+  "facility": {
+    "countryCode": "US",
+    "buNumber": "32987"
+  },
+  "deliveryNumber": "94769060",
+  "doorNumber": "D102A",
+  "userId": "rcvuser",
+  "container": {
+    "weight": 1.25,
+    "weightUom": "LB",
+    "cube": 0.432,
+    "cubeUom": "CF",
+    "contents": [
+      {
+        "gtin": "10074451115207",
+        "itemNbr": 566051127,
+        "baseDivisionCode": "WM",
+        "financialReportingGroup": "US",
+        "purchaseCompanyId": "1",
+        "purchaseReferenceNumber": "3615852071",
+        "purchaseReferenceLineNumber": 8,
+        "poDcNumber": "32987",
+        "purchaseRefType": "CROSSU",
+        "qtyUom": "ZA",
+        "vendorPack": 1,
+        "warehousePack": 1,
+        "openQty": 10,
+        "totalOrderQty": 10,
+        "palletTie": 2,
+        "palletHigh": 2,
+        "maxReceiveQty": 15,
+        "warehousePackSell": 2.99,
+        "vendorPackCost": 1.99,
+        "deptNumber": 10,
+        "color": "WHITE",
+        "size": "SMALL",
+        "description": "Sample item descr1",
+        "secondaryDescription": "Sample item descr2",
+        "isConveyable": true,
+        "onConveyor": true,
+        "isHazmat": false,
+        "purchaseReferenceLegacyType": "33",
+        "vendorNumber": "125486526",
+        "event": "POS REPLEN",
+        "caseUPC": "10074451115207"
+      }
+    ]
+  }
+}

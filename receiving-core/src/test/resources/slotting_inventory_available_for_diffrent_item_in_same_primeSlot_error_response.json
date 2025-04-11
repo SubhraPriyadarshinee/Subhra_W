@@ -1,0 +1,11 @@
+{
+  "messageId": "c4b9a1d5-6106-4a55-ba42-a92eb15d4b73",
+  "locations": [
+    {
+      "type": "error",
+      "code": "GLS-SMART-SLOTING-4090117",
+      "desc": "Inventory is in Available or OnHold status for a different Item in the same Prime Slot",
+      "markInventoryStatus": "AVAILABLE_NON_PICKABLE"
+    }
+  ]
+}

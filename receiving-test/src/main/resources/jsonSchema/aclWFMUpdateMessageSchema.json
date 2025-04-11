@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "activityName": {
+      "enum": ["ACL-DOOR","ACL-FLR-LINE"]
+    },
+    "instructionMsg": {
+      "type": "string"
+    },
+    "instructionCode": {
+      "type": "string"
+    },
+    "messageId": {
+      "type": "string"
+    },
+    "instructionStatus": {
+      "enum": ["Updated"]
+    },
+    "instructionExecutionTS": {
+      "type": "string"
+    },
+    "printChildContainerLabels": {
+      "type": "boolean",
+      "enum": [false]
+    },
+    "userInfo": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string"
+        },
+        "securityId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "userId",
+        "securityId"
+      ]
+    },
+    "updatedQty": {
+      "type": "integer",
+      "enum": [1]
+    },
+    "updatedQtyUOM": {
+      "enum": ["ZA"]
+    },
+    "vnpkQty": {
+      "type": "integer",
+      "enum": [1]
+    },
+    "whpkQty": {
+      "type": "integer",
+      "enum": [1]
+    }
+  },
+  "required": [
+    "activityName",
+    "instructionMsg",
+    "instructionCode",
+    "messageId",
+    "instructionStatus",
+    "instructionExecutionTS",
+    "printChildContainerLabels",
+    "userInfo",
+    "updatedQty",
+    "updatedQtyUOM",
+    "vnpkQty",
+    "whpkQty"
+  ]
+}

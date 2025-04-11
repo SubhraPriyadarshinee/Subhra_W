@@ -1,0 +1,178 @@
+{
+  "items": [
+    {
+      "number": 565209430,
+      "orderableGTIN": "20078742351920",
+      "consumableGTIN": "00078742351926",
+      "warehousePackGTIN": "20078742351920",
+      "supplierStockId": "35192",
+      "itemTypeCode": "20",
+      "descriptions": [
+        "GV DRINKING WATER"
+      ],
+      "size": "1 GAL",
+      "conveyable": true,
+      "palletTi": 4,
+      "palletHi": 14,
+      "vendorDepartment": 95,
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "images": {
+          "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/0ec9b0e1-bfa6-449a-ac6b-ba0275b2b0a7.d09978ca2ed19f86cecbf7f18ffaa4e2.jpeg?odnHeight\u003d450\u0026odnWidth\u003d450\u0026odnBg\u003dffffff",
+          "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/0ec9b0e1-bfa6-449a-ac6b-ba0275b2b0a7.d09978ca2ed19f86cecbf7f18ffaa4e2.jpeg?odnHeight\u003d100\u0026odnWidth\u003d100\u0026odnBg\u003dffffff",
+          "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/0ec9b0e1-bfa6-449a-ac6b-ba0275b2b0a7.d09978ca2ed19f86cecbf7f18ffaa4e2.jpeg?odnHeight\u003d2000\u0026odnWidth\u003d2000\u0026odnBg\u003dffffff",
+          "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/0ec9b0e1-bfa6-449a-ac6b-ba0275b2b0a7.d09978ca2ed19f86cecbf7f18ffaa4e2.jpeg?odnHeight\u003d180\u0026odnWidth\u003d180\u0026odnBg\u003dffffff",
+          "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/0ec9b0e1-bfa6-449a-ac6b-ba0275b2b0a7.d09978ca2ed19f86cecbf7f18ffaa4e2.jpeg?odnHeight\u003d60\u0026odnWidth\u003d60\u0026odnBg\u003dffffff"
+        },
+        "variableWeightIndicator": false,
+        "warehouseAreaCode": 6.0,
+        "vnpkWeightUomCode": "LB",
+        "warehousePackSellAmt": 1.69,
+        "warehouseRotationTypeCode": 3.0,
+        "baseDivisionCode": "WM",
+        "vnpkCubeQty": 0.696,
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "vnpkCubeUom": "CF",
+        "mfcEnabled": true,
+        "replenishmentGroupNbr": 498013.0,
+        "unitCostAmt": 0.46,
+        "chemicalIndicator": "N",
+        "vnpkWeightQty": 27.78,
+        "aerosolIndicator": "N",
+        "warehouseAreaDesc": "Dry Grocery",
+        "temperatureZone": "ambient"
+      },
+      "warehousePackQuantity": 3,
+      "orderableQuantity": 3
+    }
+  ],
+  "shipment": {
+    "documentId": "AK-7760355504_20220805_6035_DC_US",
+    "shipmentNumber": "AK-7760355504",
+    "documentType": "ASN",
+    "documentRevision": 0,
+    "documentIngestTime": "2022-08-05T06:20:08.616Z",
+    "shipmentDate": "2022-08-05",
+    "source": {
+      "number": "6035",
+      "numberType": "WALMART",
+      "type": "DC",
+      "countryCode": "US",
+      "shipperName": "WM"
+    },
+    "destination": {
+      "type": "STORE",
+      "number": "5504",
+      "countryCode": "US"
+    },
+    "shipmentDetail": {
+      "loadNumber": "AK-77",
+      "shippedQty": 0
+    }
+  },
+  "isOverage": false,
+  "delivery": {
+    "deliveryNumber": 55040217,
+    "statusInformation": {
+      "status": "WRK"
+    }
+  },
+  "packs": [
+    {
+      "packNumber": "1659691641700",
+      "palletNumber": "100000000000000316",
+      "shipmentNumber": "AK-7760355504",
+      "items": [
+        {
+          "itemNumber": 565209430,
+          "gtin": "00078742351926",
+          "itemDescription": "GV DRINKING WATER",
+          "inventoryDetail": {
+            "reportedQuantity": 5.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 5.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "invoice": {
+            "invoiceNumber": "7000000078",
+            "invoiceLineNumber": 3
+          },
+          "replenishmentCode": "MARKET_FULFILLMENT_CENTER"
+        }
+      ]
+    },
+    {
+      "packNumber": "100000000000000307",
+      "palletNumber": "100000000000000306",
+      "shipmentNumber": "AK-7760355504",
+      "items": [
+        {
+          "reportedProductId": "565209430",
+          "reportedProductIdType": "IN",
+          "itemNumber": 565209430,
+          "gtin": "00078742351926",
+          "itemDepartment": "95",
+          "itemDescription": "WNDFL 12Z KERNL PIST",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "inventoryDetail": {
+            "reportedQuantity": 5.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 5.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "invoice": {
+            "invoiceNumber": "7000000077",
+            "invoiceLineNumber": 4
+          },
+          "replenishmentCode": "UNKNOWN"
+        }
+      ],
+      "handledOnBehalfOf": {
+        "type": "STORE",
+        "number": "5504",
+        "countryCode": "US"
+      }
+    },
+    {
+      "packNumber": "100000000000000315",
+      "palletNumber": "100000000000000314",
+      "shipmentNumber": "AK-7760355504",
+      "items": [
+        {
+          "reportedProductId": "565209430",
+          "reportedProductIdType": "IN",
+          "itemNumber": 565209430,
+          "gtin": "00078742351926",
+          "itemDepartment": "95",
+          "itemDescription": "WNDFL 12Z KERNL PIST",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "inventoryDetail": {
+            "reportedQuantity": 5.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 5.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "invoice": {
+            "invoiceNumber": "7000000077",
+            "invoiceLineNumber": 1
+          },
+          "replenishmentCode": "MARKET_FULFILLMENT_CENTER"
+        }
+      ],
+      "handledOnBehalfOf": {
+        "type": "STORE",
+        "number": "5504",
+        "countryCode": "US"
+      }
+    }
+  ]
+}

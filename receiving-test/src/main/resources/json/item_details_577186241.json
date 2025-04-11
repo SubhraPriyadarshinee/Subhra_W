@@ -1,0 +1,191 @@
+{
+  "number": 577186241,
+  "baseDivisionCode": "wm",
+  "financialReportingGroupCode": "us",
+  "description": [
+    {
+      "textValue": "18PCGT WN BCH AQUA       ",
+      "languageCode": "101"
+    }
+  ],
+  "secondaryDescription": [
+    {
+      "textValue": "                         "
+    }
+  ],
+  "createDate": "2019-09-11T00:00:00.000+0000",
+  "supplierAgreement": {
+    "supplierNumber": 7105,
+    "department": {
+      "number": 25
+    }
+  },
+  "warehouseRotationType": {
+    "code": "1",
+    "description": "Normal - By Received Date               "
+  },
+  "orderableQuantity": {
+    "amount": 1
+  },
+  "orderableGTIN": "00405771862411",
+  "warehousePackQuantity": {
+    "amount": 1
+  },
+  "consumableGTIN": "00405771862411",
+  "deptNumber": 25,
+  "supplierStockId": "GTWN20CA067         ",
+  "isHazmat": false,
+  "size": "          ",
+  "color": [
+    {
+      "actual": "BLUE      "
+    }
+  ],
+  "tradeItems": [
+    {
+      "gtin": "00405771862411",
+      "weight": {
+        "amount": 6.614,
+        "uom": "LB"
+      },
+      "dimensions": {
+        "height": 9.055,
+        "width": 5.905,
+        "depth": 18.7,
+        "uom": "IN"
+      },
+      "cube": {
+        "amount": 0.578,
+        "uom": "CF"
+      },
+      "isConveyable": true,
+      "isConsumable": true
+    }
+  ],
+  "weight": {
+    "amount": 6.614,
+    "uom": "LB"
+  },
+  "dimensions": {
+    "height": 9.055,
+    "width": 5.905,
+    "depth": 18.7,
+    "uom": "IN"
+  },
+  "cube": {
+    "amount": 0.578,
+    "uom": "CF"
+  },
+  "productDefinition": {
+    "name": "                                        ",
+    "isHazmat": false,
+    "merchandiseSegregation": {
+      "code": "1"
+    }
+  },
+  "dcProperties": {
+    "supplyItem": {
+      "orderableQuantity": {
+        "amount": 1
+      },
+      "warehousePackQuantity": {
+        "amount": 1
+      },
+      "isHazmat": false,
+      "tradeItems": [
+        {
+          "gtin": "00405771862411",
+          "weight": {
+            "amount": 6.614,
+            "uom": "LB"
+          },
+          "dimensions": {
+            "height": 9.055,
+            "width": 5.905,
+            "depth": 18.7,
+            "uom": "IN"
+          },
+          "cube": {
+            "amount": 0.578,
+            "uom": "CF"
+          },
+          "isConveyable": true,
+          "isConsumable": true
+        }
+      ],
+      "weight": {
+        "amount": 6.614,
+        "uom": "LB"
+      },
+      "dimensions": {
+        "height": 9.055,
+        "width": 5.905,
+        "depth": 18.7,
+        "uom": "IN"
+      },
+      "cube": {
+        "amount": 0.578,
+        "uom": "CF"
+      },
+      "warehouse": {}
+    }
+  },
+  "assortmentShipper": [
+    {
+      "attributes": {
+        "quantity": "3"
+      },
+      "relatedItem": {
+        "attributes": {
+          "itemNbr": 577186084,
+          "warehousePackGtin": "00605388431462",
+          "orderablePackGtin": "00005771860846",
+          "consumableGtin": "00605388431462",
+          "warehousePackCostAmt": 32.8842
+        }
+      }
+    },
+    {
+      "attributes": {
+        "quantity": "3"
+      },
+      "relatedItem": {
+        "attributes": {
+          "itemNbr": 577186085,
+          "warehousePackGtin": "00605388431431",
+          "orderablePackGtin": "00005771860853",
+          "consumableGtin": "00605388431431",
+          "warehousePackCostAmt": 32.8842
+        }
+      }
+    },
+    {
+      "attributes": {
+        "quantity": "6"
+      },
+      "relatedItem": {
+        "attributes": {
+          "itemNbr": 577186086,
+          "warehousePackGtin": "00605388431448",
+          "orderablePackGtin": "00005771860860",
+          "consumableGtin": "00605388431448",
+          "warehousePackCostAmt": 32.8842
+        }
+      }
+    },
+    {
+      "attributes": {
+        "quantity": "6"
+      },
+      "relatedItem": {
+        "attributes": {
+          "itemNbr": 577186087,
+          "warehousePackGtin": "00605388431455",
+          "orderablePackGtin": "00005771860877",
+          "consumableGtin": "00605388431455",
+          "warehousePackCostAmt": 32.8842
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+profiles:
+  - git://Logistics:uwms-receiving:main:kitt-common-deploy
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-ambient/stages/ambient-dev
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-ambient/stages/ambient-qa
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-ambient/stages/ambient-qa-rdc
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-ambient/stages/ambient-stage
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-ambient/stages/ambient-perf
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-ambient/stages/prod-amb-002
+
+notify:
+  slack:
+    channelName: atlas-rcv-build-ambient
+alerts:
+  slackChannel:
+    - atlas-rcv-alerts-ambient
+
+setup:
+  releaseRefs: ["main", "us-wm-ambient/development", "us-wm-ambient/release/.*", ".*-hotfix"]
+
+build:
+  artifact: uwms-receiving-ambient
+
+deploy:
+  preDeploy:
+    - task:
+        name: messageSlack
+        text: Beginning liquibase execution on {{$.kittExec.currentStage.name}}
+    - concord:
+        name: Liquibase-Execution
+        action: start
+        org: Logistics
+        project: wcnp_liquibase
+        repo: wcnp_liquibase
+        entryPoint: default
+        enabled: true
+        sync: true
+        executionScope: stage
+        arguments:
+          version: "{{$.kitt.build.version}}"
+          artifactId: "{{$.kitt.build.artifact}}"
+          targetEnv: "amb-{{$.kittExec.currentStage.name}}"
+          gitBranch: "{{$.kitt.build.commitEvent.commitId}}"
+          repoName: "uwms-receiving"
+    - task:
+        name: messageSlack
+        text: Liquibase execution successful
+  namespace: amb-atlas-receiving
+  skip: false
+  changeRecord:
+    create: true
+    affectedGEOs: ["US"]
+    group: "LOG - GLS NextGen"
+    notifyChannels: ["atlas-rcv-build-ambient"]
+    managerGroup: "Change Managers - GEC"
+  gslb:
+    lbRoutings:
+      dev-cell000:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-amb-dev-cell000.walmart.com
+          - receiving-api-amb-dev-cell000.walmart.com
+        matchStages: [ dev-cell000 ]
+      qa-cell000:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-amb-qa-cell000.walmart.com
+          - receiving-api-amb-qa-cell000.walmart.com
+        matchStages: [ qa-cell000 ]
+      qa-cell001:
+        cnames:
+         - gls-atlas-uwms-receiving-wm-amb-qa-cell001.walmart.com
+         - receiving-api-amb-qa-cell001.walmart.com
+        matchStages: [ qa-cell001 ]
+      stg-cell000:
+        cnames:
+        - gls-atlas-uwms-receiving-wm-amb-stg-int-cell000.walmart.com
+        - receiving-api-amb-stg-int-cell000.walmart.com
+        matchStages: [ stg-cell000 ]
+      perf-cell000:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-amb-stg-perf-cell000.walmart.com
+          - receiving-api-amb-stg-perf-cell000.walmart.com
+        matchStages: [ perf-cell000 ]
+      prod-amb-002:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-amb-prod-cell002.walmart.com
+          - receiving-api-amb-prod-cell002.walmart.com
+        matchStages: [ prod-amb-002 ]
+  stages:
+    - name: dev-cell000
+      flows: [ release ]
+      refs: [ "main" ]
+      target:
+        - cluster_id: [ uscentral-dev-az-001 ]
+      rollbackOnError: true
+    - name: qa-cell000
+      flows: [ release ]
+      refs: [ "main" ]
+      target:
+        - cluster_id: [ uscentral-dev-az-001 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+      rollbackOnError: true
+    - name: qa-cell001
+      flows: [ release ]
+      refs: [ "main" ]
+      target:
+        - cluster_id: [ uscentral-dev-az-001 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+      rollbackOnError: true
+    - name: stg-cell000
+      flows: [ release ]
+      refs: [ "main" ]
+      target:
+        - cluster_id: [ uscentral-stage-az-12 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+      rollbackOnError: true
+    - name: perf-cell000
+      flows: [ release ]
+      refs: [ "main" ]
+      target:
+        - cluster_id: [ uscentral-stage-az-12, uswest-stage-az-002 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+      rollbackOnError: true
+      postDeploy:
+        - concord:
+            name: RDC_Receiving_CICD_Pipeline  # anything
+            action: start
+            org: Logistics
+            project: Perf_automaton
+            repo: Perf_automaton_tests
+            sync: true
+            entryPoint: default
+            arguments:
+              gitUrl: https://gecgithub01.walmart.com/Logistics/glsperf.git
+              Flow: RDC-Receiving-CICD
+              Branch: Staging
+              Userid: r0v05gd
+              slaDict: "{\"errorPct\":10,\"DA_Receiving\":{\"DA_ReceiveInstruction\":{\"avg95thPct\":500}},\"SSTK_Receiving\":{\"SSTK_CreateInstruction\":{\"avg95thPct\":500},\"SSTK_ReceiveInstruction\":{\"avg95thPct\":500}}}"
+              version: "{{$.kitt.build.version}}"
+              artifact: "{{$.kitt.build.artifact}}"
+              market: "Ambient"
+    - name: prod-amb-002
+      refs: [ "main" ]
+      target:
+        - cluster_id: [ uscentral-prod-az-315, uswest-prod-az-317 ]
+      approvers:
+        groups:
+          - "Supply-Chain-Managers"
+          - "Tridents-SE"
+          - "GLS-Receiving-Atlas"

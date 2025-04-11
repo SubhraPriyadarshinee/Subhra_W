@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "messageId": {
+      "type": "string"
+    },
+    "instructionCode": {
+      "type": "string",
+      "enum": ["Dock Tag"]
+    },
+    "instructionMsg": {
+      "type": "string"
+    },
+    "activityName": {
+      "type": "string",
+      "enum": ["Dock Tag"]
+    },
+    "instructionStatus": {
+      "type": "string",
+      "enum": ["Created"]
+    },
+    "instructionExecutionTS": {
+      "type": "string"
+    },
+    "printChildContainerLabels": {
+      "type": "boolean",
+      "enum": [false]
+    },
+    "userInfo": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string"
+        },
+        "securityId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "userId",
+        "securityId"
+      ]
+    }
+  },
+  "required": [
+    "messageId",
+    "instructionCode",
+    "instructionMsg",
+    "activityName",
+    "instructionStatus",
+    "instructionExecutionTS",
+    "printChildContainerLabels",
+    "userInfo"
+  ]
+}
+

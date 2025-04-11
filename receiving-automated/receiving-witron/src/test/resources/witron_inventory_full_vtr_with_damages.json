@@ -1,0 +1,124 @@
+{
+  "id": "ec2f9aef-dea0-4ab2-9cd2-bbd4ad77e11d",
+  "correlationId": "4d5f2692-3db4-4275-baf1-b4079405dc88",
+  "user": "sguyll",
+  "event": "container.updated",
+  "occurredOn": "17 Feb 2021 14:20:23.843+0000",
+  "eventObject": {
+    "trackingId": "D08852000020063375",
+    "containerId": 0,
+    "containerTypeAbbr": "Chep Pallet",
+    "countryCode": "US",
+    "dcNumber": 8852,
+    "destinationLocationId": 0,
+    "itemList": [
+      {
+        "itemNumber": 555138905,
+        "itemUPC": "00078742118789",
+        "purchaseCompanyId": 1,
+        "financialReportingGroup": "US",
+        "baseDivisionCode": "WM",
+        "vendorPkRatio": 6,
+        "warehousePkRatio": 6,
+        "unitOfMeasurement": "EACHES",
+        "availabletosellQty": 0,
+        "availableNonPickableQty": 0,
+        "claimsQty": 0,
+        "allocatedQty": 0,
+        "frozenQty": 0,
+        "onorderQty": 0,
+        "pickedQty": 0,
+        "intransitQty": 0,
+        "problemfreightQty": 0,
+        "receivedQty": 0,
+        "workInProgressQty": 0,
+        "qualitycontrolQty": 0,
+        "nonInductedHoldQty": 0,
+        "itemStatusChange": {
+          "availabletosellQty": -90
+        },
+        "poType": "SSTKU",
+        "channelType": "SSTKU",
+        "whsePackSell": {
+          "value": 65.88,
+          "uom": "USD"
+        },
+        "adjustmentTO": {
+          "reasonCode": 28,
+          "reasonDesc": "Void to reinstate",
+          "value": -90,
+          "uom": "EACHES"
+        },
+        "orderDetails": [],
+        "poDetails": [
+          {
+            "poNum": "1019283832",
+            "purchaseReferenceLineNumber": 1,
+            "poQty": 120
+          }
+        ],
+        "purchaseReferenceLineNumbers": [
+          1
+        ],
+        "rotateDate": "17 Feb 2021 00:00:00.000+0000",
+        "promoBuyInd": "N",
+        "weightFormatType": "F",
+        "ossIndicator": "N",
+        "receivedDate": "17 Feb 2021 00:00:00.000+0000",
+        "inventoryAggSnapshot": {
+          "aggByRotateDateMap": {
+            "01 Feb 2021 00:00:00.000+0000": {
+              "availableQty": 252,
+              "onHoldQty": 0,
+              "receivedQty": 0,
+              "allocatedQty": 0,
+              "vendorPkRatio": 6,
+              "warehousePkRatio": 6,
+              "nonInductedHoldQty": 0
+            },
+            "16 Feb 2021 00:00:00.000+0000": {
+              "availableQty": 6138,
+              "onHoldQty": 0,
+              "receivedQty": 0,
+              "allocatedQty": 0,
+              "vendorPkRatio": 6,
+              "warehousePkRatio": 6,
+              "nonInductedHoldQty": 0
+            },
+            "17 Feb 2021 00:00:00.000+0000": {
+              "availableQty": 0,
+              "onHoldQty": 0,
+              "receivedQty": 390,
+              "allocatedQty": 0,
+              "vendorPkRatio": 6,
+              "warehousePkRatio": 6,
+              "nonInductedHoldQty": 0
+            }
+          }
+        }
+      }
+    ],
+    "childContainers": [],
+    "rotateDates": [
+      "17 Feb 2021 00:00:00.000+0000"
+    ],
+    "lotNumbers": [],
+    "poNums": [
+      "1019283832"
+    ],
+    "isNetItemWeightCalc": true,
+    "itemWeightUOM": "LB",
+    "itemNetWeight": 249.75,
+    "isContainerCubeCalc": true,
+    "containerCubeUOM": "CF",
+    "containerCube": 9.315000534057617,
+    "containerCreatedDate": "17 Feb 2021 14:11:50.844+0000",
+    "containerStatus": "AVAILABLE",
+    "isShippable": false,
+    "isReusable": false,
+    "deliveryNumber": "24345902",
+    "containerUpdatedDate": "17 Feb 2021 14:17:19.662+0000",
+    "locationName": "200",
+    "locationOrgUnitId": 0
+  }
+}

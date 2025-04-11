@@ -1,0 +1,2217 @@
+{
+  "delivery": {
+    "deliveryNumber": 60081774,
+    "statusInformation": {
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "operationalStatus": "WRK",
+      "status": "WRK"
+    }
+  },
+  "shipments": [
+    {
+      "documentId": "8000516572_20201211_629345LC_SHIPPER_US",
+      "shipmentNumber": "8000516572",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2020-12-11T21:04:17.925Z",
+      "shipmentDate": "2020-12-11",
+      "source": {
+        "number": "629345LC",
+        "numberType": "ZZ",
+        "type": "SHIPPER",
+        "countryCode": "US",
+        "shipperName": "Teva Pharmaceuticals USA Inc North Wales"
+      },
+      "destination": {
+        "globalLocationNumber": "0078742027753",
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "shippingDate": "2020-12-11",
+        "carrierId": "HRGK"
+      }
+    },
+    {
+      "documentId": "8000519070_20201211_629345LC_SHIPPER_US",
+      "shipmentNumber": "8000519070",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2020-12-11T17:43:01.579Z",
+      "shipmentDate": "2020-12-11",
+      "source": {
+        "number": "629345LC",
+        "numberType": "ZZ",
+        "type": "SHIPPER",
+        "countryCode": "US",
+        "shipperName": "Teva Pharmaceuticals USA Inc North Wales"
+      },
+      "destination": {
+        "globalLocationNumber": "0078742027753",
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "shippingDate": "2020-12-11",
+        "carrierId": "HRGK"
+      }
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poNumber": "8769951017",
+      "freightBillQty": 1551,
+      "cubeQty": 51.0,
+      "poDcCountry": "US",
+      "baseDivisionCode": "WM",
+      "poType": "20",
+      "purchaseCompanyId": 1,
+      "poStatus": "ACTV",
+      "financialGroupCode": "US",
+      "poDates": {
+        "cancel": "2020-12-11",
+        "ordered": "2020-12-07",
+        "mabd": "2020-12-14",
+        "ship": "2020-12-09"
+      },
+      "vendorInformation": {
+        "name": "TEVA PHARMACEUTICALS USA",
+        "number": 629345,
+        "department": 38
+      },
+      "poDcNumber": 6001,
+      "lines": [
+        {
+          "poLineNumber": 6,
+          "channel": "SSTKU",
+          "whpkQty": 168,
+          "whpkSell": 11.0,
+          "vnpkQty": 2016,
+          "vnpkCost": 132.0,
+          "vnpkWeightQty": 0.1,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.1,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "poLineStatus": "PARTIALLY_RECEIVED",
+          "orderedQty": 90.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00305559018583",
+            "orderableGTIN": "10400038037790",
+            "warehousePackGTIN": "20400038037797",
+            "supplierStockId": "00555-9018-58",
+            "conveyable": true,
+            "itemTypeCode": "20",
+            "vendorDepartment": "38",
+            "color": "TABLET",
+            "size": "168",
+            "warehousePackQuantity": 168,
+            "orderableQuantity": 2016,
+            "itemAdditonalInformation": {
+              "isDscsaExemptionInd": false,
+              "weight": 0.0,
+              "cubeUOM": "CF",
+              "cube": 0.138,
+              "weightUOM": "LB"
+            },
+            "descriptions": [
+              "TRI-SPRINTEC",
+              "TRI-SPRINTEC"
+            ],
+            "catalogGTIN": "30305559018584",
+            "number": 3803779
+          }
+        }
+      ],
+      "weightQty": 19152.0,
+      "weightQtyUom": "LB",
+      "cubeQtyUom": "CF"
+    }
+  ],
+  "packs": [
+    {
+      "packNumber": "00009000931319334827",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334872",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334933",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319335053",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334964",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334834",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319335121",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334889",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334841",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334940",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319335060",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319335084",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319335114",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334896",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319335022",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319335039",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334995",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319335145",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334810",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319335015",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334957",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334971",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334988",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334902",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319335091",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319343195",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 1
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 660.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 660.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 55,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 660.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000516572"
+    },
+    {
+      "packNumber": "00009000931319335008",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "13586570704011",
+              "uom": "CA",
+              "levelContainsGtin": "00358657704018",
+              "levelContainsUom": "EA",
+              "levelContainsQty": 100
+            },
+            {
+              "gtin": "13586570709991",
+              "uom": "CA"
+            },
+            {
+              "gtin": "30358657704018",
+              "uom": "SEA"
+            },
+            {
+              "gtin": "00358657704018",
+              "uom": "EA"
+            }
+          ],
+          "nationalDrugCode": "68382039801",
+          "nationalDrugCodeType": "N4"
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334858",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319335077",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "13586570704011",
+              "uom": "CA",
+              "levelContainsGtin": "00358657704018",
+              "levelContainsUom": "EA",
+              "levelContainsQty": 100
+            },
+            {
+              "gtin": "13586570709991",
+              "uom": "CA"
+            },
+            {
+              "gtin": "30358657704018",
+              "uom": "SEA"
+            },
+            {
+              "gtin": "00358657704018",
+              "uom": "EA"
+            }
+          ],
+          "nationalDrugCode": "68382039801",
+          "nationalDrugCodeType": "N4"
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334919",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "13586570704011",
+              "uom": "CA",
+              "levelContainsGtin": "00358657704018",
+              "levelContainsUom": "EA",
+              "levelContainsQty": 100
+            },
+            {
+              "gtin": "13586570709991",
+              "uom": "CA"
+            },
+            {
+              "gtin": "30358657704018",
+              "uom": "SEA"
+            },
+            {
+              "gtin": "00358657704018",
+              "uom": "EA"
+            }
+          ],
+          "nationalDrugCode": "68382039801",
+          "nationalDrugCodeType": "N4"
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334926",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "13586570704011",
+              "uom": "CA",
+              "levelContainsGtin": "00358657704018",
+              "levelContainsUom": "EA",
+              "levelContainsQty": 100
+            },
+            {
+              "gtin": "13586570709991",
+              "uom": "CA"
+            },
+            {
+              "gtin": "30358657704018",
+              "uom": "SEA"
+            },
+            {
+              "gtin": "00358657704018",
+              "uom": "EA"
+            }
+          ],
+          "nationalDrugCode": "68382039801",
+          "nationalDrugCodeType": "N4"
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334803",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "13586570704011",
+              "uom": "CA",
+              "levelContainsGtin": "00358657704018",
+              "levelContainsUom": "EA",
+              "levelContainsQty": 100
+            },
+            {
+              "gtin": "13586570709991",
+              "uom": "CA"
+            },
+            {
+              "gtin": "30358657704018",
+              "uom": "SEA"
+            },
+            {
+              "gtin": "00358657704018",
+              "uom": "EA"
+            }
+          ],
+          "nationalDrugCode": "68382039801",
+          "nationalDrugCodeType": "N4"
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319334865",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "13586570704011",
+              "uom": "CA",
+              "levelContainsGtin": "00358657704018",
+              "levelContainsUom": "EA",
+              "levelContainsQty": 100
+            },
+            {
+              "gtin": "13586570709991",
+              "uom": "CA"
+            },
+            {
+              "gtin": "30358657704018",
+              "uom": "SEA"
+            },
+            {
+              "gtin": "00358657704018",
+              "uom": "EA"
+            }
+          ],
+          "nationalDrugCode": "68382039801",
+          "nationalDrugCodeType": "N4"
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319335107",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "13586570704011",
+              "uom": "CA",
+              "levelContainsGtin": "00358657704018",
+              "levelContainsUom": "EA",
+              "levelContainsQty": 100
+            },
+            {
+              "gtin": "13586570709991",
+              "uom": "CA"
+            },
+            {
+              "gtin": "30358657704018",
+              "uom": "SEA"
+            },
+            {
+              "gtin": "00358657704018",
+              "uom": "EA"
+            }
+          ],
+          "nationalDrugCode": "68382039801",
+          "nationalDrugCodeType": "N4"
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319335046",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "13586570704011",
+              "uom": "CA",
+              "levelContainsGtin": "00358657704018",
+              "levelContainsUom": "EA",
+              "levelContainsQty": 100
+            },
+            {
+              "gtin": "13586570709991",
+              "uom": "CA"
+            },
+            {
+              "gtin": "30358657704018",
+              "uom": "SEA"
+            },
+            {
+              "gtin": "00358657704018",
+              "uom": "EA"
+            }
+          ],
+          "nationalDrugCode": "68382039801",
+          "nationalDrugCodeType": "N4"
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    },
+    {
+      "packNumber": "00009000931319335138",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "00555901858",
+          "reportedProductIdType": "N4",
+          "itemNumber": 3803779,
+          "gtin": "00305559018583",
+          "warehouseCaseGtin": "10400038037790",
+          "vendorCaseGtin": "10400038037790",
+          "vendorId": "629345",
+          "itemDescription": "TRI-SPRINTEC(R) -28 (NORGEST/EE) 168",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20400038037797",
+          "purchaseOrder": {
+            "poDate": "2020-12-07",
+            "poLineNumber": 6,
+            "poNumber": "8769951017",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 35
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "00555901858",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 35,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "100018179",
+              "expirationDate": "2021-12-31",
+              "reportedQuantity": 12.0,
+              "reportedUom": "EA"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "13586570704011",
+              "uom": "CA",
+              "levelContainsGtin": "00358657704018",
+              "levelContainsUom": "EA",
+              "levelContainsQty": 100
+            },
+            {
+              "gtin": "13586570709991",
+              "uom": "CA"
+            },
+            {
+              "gtin": "30358657704018",
+              "uom": "SEA"
+            },
+            {
+              "gtin": "00358657704018",
+              "uom": "EA"
+            }
+          ],
+          "nationalDrugCode": "68382039801",
+          "nationalDrugCodeType": "N4"
+        }
+      ],
+      "shipmentNumber": "8000519070"
+    }
+  ]
+}

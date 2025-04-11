@@ -1,0 +1,19 @@
+{
+  "totalCount": 1,
+  "successCount": 1,
+  "hasMoreEntries": false,
+  "successTuples": [
+    {
+      "response": {
+        "locations": []
+      },
+      "request": {
+        "limit": 500,
+        "offset": 0,
+        "names": [
+          "1005"
+        ]
+      }
+    }
+  ]
+}

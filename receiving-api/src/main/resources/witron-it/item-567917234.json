@@ -1,0 +1,16 @@
+{
+    "itemNumber" : "567917234",
+    "description" : "FRENCH BREAD             ",
+    "deptNumber" : "98",
+    "vendorNbr" : 711452,
+    "gtin" : "72158210863",
+    "whpkQty" : 1,
+    "vnpkQty" : 1,
+    "ti" : 10,
+    "hi" : 7,
+    "vendorPackCost" : 10.53,
+    "whpkSell" : 10.53,
+    "vendorPackWeight" : 26.5,
+    "vendorPackCubeQty" : 0.941,
+    "poLine" : 17
+}

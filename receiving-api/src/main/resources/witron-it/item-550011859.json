@@ -1,0 +1,16 @@
+{
+    "itemNumber" : "550011859",
+    "description" : "AVO HASS 105 PE MP       ",
+    "deptNumber" : "94",
+    "vendorNbr" : 268311,
+    "gtin" : "76101004046",
+    "whpkQty" : 105,
+    "vnpkQty" : 105,
+    "ti" : 5,
+    "hi" : 11,
+    "vendorPackCost" : 32,
+    "whpkSell" : 64.75,
+    "vendorPackWeight" : 37.5,
+    "vendorPackCubeQty" : 1.529,
+    "poLine" : 32
+}

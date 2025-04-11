@@ -1,0 +1,9 @@
+{
+  "eventType": "DOOR_ASSIGNED",
+  "deliveryStatus": "ARV",
+  "deliveryNumber": "56003401",
+  "countryCode": "US",
+  "siteNumber": "32899",
+  "url": "https://dev.gdm.prod.us.walmart.net/document/v2/deliveries/56003401",
+  "doorNumber": "W21"
+}

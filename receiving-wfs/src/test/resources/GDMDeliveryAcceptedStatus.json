@@ -1,0 +1,48 @@
+{
+  "data": [
+    {
+      "deliveryNumber": 40476188,
+      "statusInformation": {
+        "status": "WRK",
+        "operationalStatus": "WRK"
+      },
+      "purchaseOrders": [
+        {
+          "poNumber": "0042084GDM",
+          "lines": [
+            {
+              "poLineNumber": 1
+            }
+          ],
+          "sellerId": "9238B068A181406EA509541BC2742E17"
+        },
+        {
+          "poNumber": "0042086GDM",
+          "lines": [
+            {
+              "poLineNumber": 1
+            }
+          ],
+          "sellerId": "9238B068A181406EA509541BC2742E17"
+        }
+      ]
+    },
+    {
+      "deliveryNumber": 60502460,
+      "statusInformation": {
+        "status": "OPN"
+      },
+      "purchaseOrders": [
+        {
+          "poNumber": "0240511GDM",
+          "lines": [
+            {
+              "poLineNumber": 1
+            }
+          ],
+          "sellerId": "9238B068A181406EA509541BC2742E17"
+        }
+      ]
+    }
+  ]
+}

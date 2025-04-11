@@ -1,0 +1,130 @@
+{
+  "deliveryNumber": 28668573,
+  "receivedQty": 3516,
+  "summary": [
+    {
+      "purchaseReferenceNumber": "1523836513",
+      "receivedQty": 712
+    },
+    {
+      "purchaseReferenceNumber": "2072544001",
+      "receivedQty": 39
+    },
+    {
+      "purchaseReferenceNumber": "2173164546",
+      "receivedQty": 850
+    },
+    {
+      "purchaseReferenceNumber": "2173164577",
+      "receivedQty": 100
+    },
+    {
+      "purchaseReferenceNumber": "2423992911",
+      "receivedQty": 87
+    },
+    {
+      "purchaseReferenceNumber": "2423992966",
+      "receivedQty": 5
+    },
+    {
+      "purchaseReferenceNumber": "2423992969",
+      "receivedQty": 15
+    },
+    {
+      "purchaseReferenceNumber": "2423992972",
+      "receivedQty": 34
+    },
+    {
+      "purchaseReferenceNumber": "2423992973",
+      "receivedQty": 9
+    },
+    {
+      "purchaseReferenceNumber": "2423992976",
+      "receivedQty": 10
+    },
+    {
+      "purchaseReferenceNumber": "2423992977",
+      "receivedQty": 11
+    },
+    {
+      "purchaseReferenceNumber": "2423992980",
+      "receivedQty": 14
+    },
+    {
+      "purchaseReferenceNumber": "2423992983",
+      "receivedQty": 30
+    },
+    {
+      "purchaseReferenceNumber": "2423992985",
+      "receivedQty": 1
+    },
+    {
+      "purchaseReferenceNumber": "2423992987",
+      "receivedQty": 33
+    },
+    {
+      "purchaseReferenceNumber": "2423993001",
+      "receivedQty": 3
+    },
+    {
+      "purchaseReferenceNumber": "2423993008",
+      "receivedQty": 133
+    },
+    {
+      "purchaseReferenceNumber": "2423993072",
+      "receivedQty": 26
+    },
+    {
+      "purchaseReferenceNumber": "2423993074",
+      "receivedQty": 29
+    },
+    {
+      "purchaseReferenceNumber": "2423993077",
+      "receivedQty": 66
+    },
+    {
+      "purchaseReferenceNumber": "2423993079",
+      "receivedQty": 21
+    },
+    {
+      "purchaseReferenceNumber": "2423993183",
+      "receivedQty": 248
+    },
+    {
+      "purchaseReferenceNumber": "2958524325",
+      "receivedQty": 67
+    },
+    {
+      "purchaseReferenceNumber": "3509103945",
+      "receivedQty": 12
+    },
+    {
+      "purchaseReferenceNumber": "3969049741",
+      "receivedQty": 7
+    },
+    {
+      "purchaseReferenceNumber": "4373064248",
+      "receivedQty": 33
+    },
+    {
+      "purchaseReferenceNumber": "5725743327",
+      "receivedQty": 120
+    },
+    {
+      "purchaseReferenceNumber": "5725743398",
+      "receivedQty": 120
+    },
+    {
+      "purchaseReferenceNumber": "8216062785",
+      "receivedQty": 41
+    },
+    {
+      "purchaseReferenceNumber": "8216062791",
+      "receivedQty": 315
+    },
+    {
+      "purchaseReferenceNumber": "9358839614",
+      "receivedQty": 325
+    }
+  ]
+}

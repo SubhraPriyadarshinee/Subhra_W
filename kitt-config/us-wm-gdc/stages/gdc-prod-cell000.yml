@@ -1,0 +1,53 @@
+profiles:
+  - git://Logistics:metrics-profiles:main:dt-saas-atlas/us-walmart/dt-saas-common
+deploy:
+  stages:
+    - name: gdc-prod-cell000
+      helm:
+        values:
+          env:
+            DYNATRACE_ENABLED: true
+            JAVA_OPTS: >-
+              -Xms3072m
+              -Xmx3072m
+              -XX:+UseParNewGC
+              -XX:+UseConcMarkSweepGC
+              -XX:NewSize=2048M
+              -XX:MaxMetaspaceSize=256M
+              -Djsse.enableSNIExtension=true
+              -Druntime.context.environmentType=prod
+              -Druntime.context.environment=PROD
+              -Druntime.context.appName=receiving-api
+              -Druntime.context.system.property.override.enabled=true
+              -Dscm.snapshot.enabled=true
+              -Dscm.root.dir=/tmp/scm
+              -Dscm.print.summary.onchange=true
+              -Dscm.print.detailed.summary=true
+              -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+              -DDATACENTER={{$.kittExec.currentCluster.zone}}
+              -Dplatform=wcnp
+              -DfacilityCountryCode=us
+              -DcellName=gdc-Cell000-USSouthCentral-USWest
+              -Dspring.config.use-legacy-processing=true
+              -Dspring.main.allow-circular-references=true
+
+          metadata:
+            labels:
+              strati.appkey: ATLASRECEIVING
+              strati.env: prod
+              dt-trproductid: "3543"
+              dt-trproductid-name: "ATLAS-GROCERY-Receiving-APM0006031"
+            annotations:
+              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"},{"Path":"^/.*"}]'
+              dynatrace.com/inject: "false"
+          min:
+            cpu: 500m
+            memory: 6144Mi
+          max:
+            cpu: 4000m
+            memory: 6144Mi
+          scaling:
+            enabled: true
+            min: 3
+            max: 5
+            cpuPercent: 60

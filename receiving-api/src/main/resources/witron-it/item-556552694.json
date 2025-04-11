@@ -1,0 +1,16 @@
+{
+    "itemNumber" : "556552694",
+    "description" : "ORG BANANA 40# CPC       ",
+    "deptNumber" : "94",
+    "vendorNbr" : 755645,
+    "gtin" : "94011",
+    "whpkQty" : 40,
+    "vnpkQty" : 40,
+    "ti" : 6,
+    "hi" : 8,
+    "vendorPackCost" : 20.32,
+    "whpkSell" : 20.59,
+    "vendorPackWeight" : 43,
+    "vendorPackCubeQty" : 1.692,
+    "poLine" : 16
+}

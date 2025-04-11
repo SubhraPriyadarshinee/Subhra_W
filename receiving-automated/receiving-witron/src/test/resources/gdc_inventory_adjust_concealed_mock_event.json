@@ -1,0 +1,131 @@
+{
+  "eventData": {
+    "event": {
+      "@type": "containerItemsUpdatedEvent",
+      "eventType": "container.updated",
+      "flowName": "adjusted",
+      "eventMetadata": {
+        "correlationId": "f78ead9d-55f8-412f-9d22-7c30abaf552e",
+        "userId": "SYSADMIN",
+        "occuredOn": "2022-12-21T11:17:42.159Z",
+        "occuredOnAsDate": "2022-12-21T16:47:42.159+05"
+      },
+      "legacyBusinessEvent": "adjusted",
+      "updatedItems": [
+        {
+          "rowId": "836c3ef8-77d2-b93d-faf7-0185345e33a0",
+          "itemNumber": 563465428,
+          "upcNumber": "00821614105529",
+          "financialReportingGroup": "US",
+          "baseDivisionCode": "WM",
+          "quantityChangeAndItemState": {
+            "quantityChange": {
+              "previousQty": 8,
+              "deltaQty": -4,
+              "postUpdateQty": 4,
+              "qtyUOM": "EA"
+            },
+            "itemState": "AVAILABLE_TO_SELL"
+          },
+          "netItemWeight": 73.36,
+          "markItemForDeletion": false,
+          "promoBuyIndicator": "TURN",
+          "rotateDate": "2023-04-04",
+          "hardAllocationImpact": {
+            "impacted": true,
+            "impactedQty": 1
+          }
+        }
+      ],
+      "reasonCode": {
+        "code": 55,
+        "desc": "Damages"
+      },
+      "trackingId": "r0s01us211222-4",
+      "facility": {
+        "number": 6085,
+        "country": "US",
+        "market": "GROCERY"
+      }
+    }
+  },
+  "payload": {
+    "@type": "containerSnapshotEntity",
+    "dcCountryCode": "US",
+    "containerStatus": "AVAILABLE",
+    "containerType": "Vendor Pack",
+    "createDate": "2022-08-31T23:07:05.223Z",
+    "createUserid": "SYSADMIN",
+    "lastChangeDate": "2022-12-21T11:17:42.159Z",
+    "lastChangeUserId": "SYSADMIN",
+    "destLocationId": 6085,
+    "locationName": "conveyor",
+    "orgUnitId": 0,
+    "isShippable": true,
+    "isReusable": false,
+    "deliveryNumber": "63417669",
+    "insertDate": "2022-12-21T11:07:40.678Z",
+    "channelType": "CROSSU",
+    "originSystem": "RECEIVING",
+    "originDcNumber": 6085,
+    "originCountryCode": "US",
+    "sourceSys": 0,
+    "trackingId": "r0s01us211222-4",
+    "dcNumber": 6085,
+    "inventoryLines": [
+      {
+        "itemNumber": 563465428,
+        "baseDivisionCode": "WM",
+        "financialReportingGroup": "US",
+        "purchaseCompanyId": 1,
+        "containerTrackingId": "r0s01us211222-4",
+        "vendorPkRatio": 1,
+        "warehousePkRatio": 1,
+        "upcNumber": "00821614105529",
+        "quantity": 0,
+        "qtyUOM": "EA",
+        "availableToSellQty": 4,
+        "allocatedQty": 5,
+        "description": "BHG COPPER MERCURY",
+        "secondaryDescription": "BHG COPPER MERCURY",
+        "vnpkWeightQty": 9.17,
+        "vnpkWeightUOM": "LB",
+        "vnpkCubeQty": 0.246,
+        "vnpkCubeUOM": "CF",
+        "promoBuyInd": "N",
+        "weightFormatType": "F",
+        "returnOrderLineNumber": 0,
+        "saleOrderLineNumber": 0,
+        "receivedDate": "2022-08-31",
+        "rotateDate": "2023-04-04",
+        "itemKey": "563465428;WM;US;",
+        "deptNumber": 38,
+        "lastChangeDate": "2022-12-21T11:14:18.742Z",
+        "lastChangeUserId": "SYSADMIN",
+        "rowId": "836c3ef8-77d2-b93d-faf7-0185345e33a0",
+        "quantityObj": {
+          "qty": 0,
+          "qtyUOM": "EA"
+        },
+        "whsePackSell": {
+          "value": 8.22,
+          "uom": "USD"
+        },
+        "itemQtyInEaches": 9,
+        "itemWeight": 82.53,
+        "totalQty": 9
+      }
+    ],
+    "containerWeight": {
+      "value": 9.17,
+      "uom": "LB"
+    },
+    "containerCube": {
+      "value": 0.246,
+      "uom": "CF",
+      "cubeUOM": "CF",
+      "valid": true
+    },
+    "identifier": "r0s01us211222-4"
+  }
+}

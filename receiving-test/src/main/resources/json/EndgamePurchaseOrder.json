@@ -1,0 +1,153 @@
+{
+  "poNumber": "1708069842",
+  "omsPONumber": "1378376637",
+  "poDcNumber": "4034",
+  "bpoNumber": "0",
+  "baseDivisionCode": "WM",
+  "legacyType": 20,
+  "purchaseCompanyId": 1,
+  "poStatus": "ACTV",
+  "freightTermCode": "COLL",
+  "financialGroupCode": "US",
+  "dates": {
+    "cancel": "2019-03-26",
+    "ordered": "2019-03-19",
+    "mabd": "2024-02-26",
+    "ship": "2019-03-26"
+  },
+  "vendor": {
+    "name": "BAMA COMPANIES INC",
+    "number": 304857,
+    "department": 52,
+    "vendorNbrDeptSeq": "304857521",
+    "serialInfoEnabled": false
+  },
+  "additionalInformation": {
+    "Ship_Point": "VARIOUS ZZ ZZ",
+    "manCrtInd": "Y",
+    "Outbound_Month": "3",
+    "No_Of_Items": 1,
+    "Walmart_Week": "9"
+  },
+  "lines": [
+    {
+      "poLineNumber": 1,
+      "sscc" : "12345",
+      "channel": "SSTKU",
+      "originalChannel": "STAPLESTOCK",
+      "poLineStatus": "ACTIVE",
+      "ordered": {
+        "quantity": 120,
+        "uom": "ZA"
+      },
+      "whpk": {
+        "quantity": 2,
+        "sell": 20.28
+      },
+      "vnpk": {
+        "quantity": 1,
+        "cost": 20.28,
+        "weight": {
+          "quantity": 3.84,
+          "uom": "LB"
+        },
+        "cube": {
+          "quantity": 0.246,
+          "uom": "CF"
+        }
+      },
+      "event": "POS REPLEN",
+      "additionalInformation": {
+        "Sample_Po_Ind": "N",
+        "Manual_Po_Ind": "N"
+      },
+      "itemDetails": {
+        "number": 587272806,
+        "consumableGTIN": "00841342108678",
+        "orderableGTIN": "00841342108678",
+        "supplierStockId": "14602B04",
+        "palletTi": 0,
+        "palletHi": 0,
+        "hazmat": false,
+        "itemTypeCode": "3",
+        "color": "",
+        "size": "",
+        "descriptions": [
+          "STERILITE 120 QT. EZ",
+          "ONLINE ONLY"
+        ],
+        "vendorDepartment": "74",
+        "additionalInformation": {
+          "isNewItem": false,
+          "images": {
+            "IMAGE_SIZE_100": "https://i5.walmartimages.com/asr/a488a252-aad4-4a61-80a9-4ba292caf9d1.e986e52ae24dfdd04fd25d5bc7d42317.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+            "IMAGE_SIZE_180": "https://i5.walmartimages.com/asr/a488a252-aad4-4a61-80a9-4ba292caf9d1.e986e52ae24dfdd04fd25d5bc7d42317.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+            "IMAGE_SIZE_2000": "https://i5.walmartimages.com/asr/a488a252-aad4-4a61-80a9-4ba292caf9d1.e986e52ae24dfdd04fd25d5bc7d42317.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+            "IMAGE_SIZE_450": "https://i5.walmartimages.com/asr/a488a252-aad4-4a61-80a9-4ba292caf9d1.e986e52ae24dfdd04fd25d5bc7d42317.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+            "IMAGE_SIZE_60": "https://i5.walmartimages.com/asr/a488a252-aad4-4a61-80a9-4ba292caf9d1.e986e52ae24dfdd04fd25d5bc7d42317.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+          },
+          "warehouseRotationTypeCode": "1",
+          "baseDivisionCode": "wm",
+          "weight": 2.0,
+          "vnpkDimensions": {
+            "height": 1.0,
+            "width": 1.0,
+            "depth": 1.0,
+            "uom": "IN"
+          },
+          "fcAttributes": {
+            "food": false,
+            "serialNumRequired": false,
+            "imeiNum": false,
+            "iccid": false,
+            "eid": false,
+            "isGlass": false,
+            "isNestable": false,
+            "isLiquid": false,
+            "packageType": "shipAsIs",
+            "inboundPrepType": "",
+            "outboundPrepType": "",
+            "shipAlone": true,
+            "nonRigid": false,
+            "slottingTag": "NON-CHEMICAL",
+            "totable": true,
+            "isOverboxing": false,
+            "isMultiBox": false,
+            "palletType": "40con",
+            "isCutOutOrHandle": false,
+            "imeiNumber": "none",
+            "tvIndicator": false,
+            "bikeIndicator": false
+          },
+          "weightUOM": "LB",
+          "financialReportingGroupCode": "us",
+          "whpkDimensions": {
+            "height": 1.0,
+            "width": 1.0,
+            "depth": 1.0,
+            "uom": "IN"
+          },
+          "cubeUOM": "CF",
+          "eachesDimensions": {
+            "height": 1.0,
+            "width": 1.0,
+            "depth": 1.0,
+            "uom": "IN"
+          },
+          "cube": 0.0,
+          "eachWeight": 2.0,
+          "eachWeightUOM": "LB"
+        },
+        "orderableQuantity": 1,
+        "warehousePackQuantity": 1
+      },
+      "lastChangedOn": "2019-04-03T18:02:01.000Z"
+    }
+  ],
+  "poDcCountry": "US",
+  "lastChangedOn": "2019-04-03T18:02:01.000Z",
+  "lastChangedBy": "546",
+  "event": "POS REPLEN",
+  "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+  "sellerType": "WM"
+}

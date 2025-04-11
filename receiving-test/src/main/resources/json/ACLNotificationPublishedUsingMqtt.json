@@ -1,0 +1,22 @@
+{
+  "notification": {
+    "custom_payload": {
+      "equipmentName": "W1001",
+      "equipmentType": "ACL",
+      "locationId": "D102A",
+      "equipmentStatus": [{
+        "code": 13,
+        "value": "CARTON_SIDE_BY_SIDE",
+        "msgSequence": "118-20191123165746",
+        "message": "Carton side by side - Multiple cases inducted next to each other. Solution: Remove the cases and re-induct them."
+      }],
+      "updatedTs":"Mon Mar 30 23:10:44 UTC 2020",
+    },
+    "title": "Test Title",
+    "alert": "Test Alert",
+    "audience": {
+      "user_id": ["sysadmin"]
+    },
+    "expire_ts": "2022-01-28T14:39:55.703Z"
+  }
+}

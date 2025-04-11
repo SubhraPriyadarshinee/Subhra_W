@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "messageId": {
+      "type": "string"
+    },
+    "instructionCode": {
+      "type": "string"
+    },
+    "instructionMsg": {
+      "type": "string"
+    },
+    "activityName": { "enum": ["ACL"] },
+    "instructionStatus": { "enum": ["Completed"] },
+    "instructionExecutionTS": {
+      "type": "string"
+    },
+    "printChildContainerLabels": {
+      "type": "boolean",
+      "enum": [false]
+    },
+    "userInfo": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string"
+        },
+        "securityId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "userId",
+        "securityId"
+      ]
+    }
+  },
+  "required": [
+    "messageId",
+    "instructionCode",
+    "instructionMsg",
+    "activityName",
+    "instructionStatus",
+    "instructionExecutionTS",
+    "printChildContainerLabels",
+    "userInfo"
+  ]
+}

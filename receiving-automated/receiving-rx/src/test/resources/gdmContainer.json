@@ -1,0 +1,28 @@
+{
+  "container": {
+    "id": "cdc258b6-7156-4092-809c-2e258436e4d1",
+    "sscc": "00800109399919082945",
+    "lotNumber": "",
+    "unitCount": 96,
+    "childCount": 4,
+    "shipmentDocumentId": "50048525_2225371795_241224061100_v2_6032_US",
+    "receivingStatus": "Open",
+    "hints": [
+      "CASE_PACK_ITEM",
+      "SSCC_PACKAGE",
+      "SINGLE_SKU_PACKAGE"
+    ],
+    "level": 1,
+    "topLevelContainerSscc": "00800109399919082945",
+    "topLevelContainerId": "cdc258b6-7156-4092-809c-2e258436e4d1",
+    "itemInfo": [
+      {
+        "itemNumber": 553413723,
+        "gtin": "00316571657100",
+        "totalUnitQty": 96
+      }
+    ],
+    "trackingStatus": "ValidationSuccessful",
+    "shipmentNumber": "50048525_2225371795_241224061100_v2"
+  }
+}

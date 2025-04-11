@@ -1,0 +1,15 @@
+{
+  "id": 15,
+  "asnNumber": "8062558",
+  "deliveryNumber": 24333103,
+  "ssccNumber": "00000227002624669200",
+  "auditStatus": "PENDING",
+  "createdBy": "sysadmin",
+  "createdTs": "Feb 2, 2024 2:58:49 PM",
+  "completedBy": "sysadmin",
+  "completedTs": "Feb 2, 2024 2:58:49 PM",
+  "lastUpdatedTs": "Feb 2, 2024 2:58:49 PM",
+  "version": 0,
+  "facilityCountryCode": "us",
+  "facilityNum": 32679
+}

@@ -1,0 +1,18 @@
+{
+  "deliveryNumber": 12345678,
+  "subcenterId": 1,
+  "doorNumber": "100",
+  "problemTagId": "32612100343901",
+  "poNumber": "2822820001",
+  "poLineNumber": 1,
+  "itemNumber": 587040467,
+  "ti": 5,
+  "hi": 4,
+  "quantity": 20,
+  "quantityUOM": "ZA",
+  "rotateDate": "2022-05-25T00:00:00.000Z",
+  "createUser": "test",
+  "overrideInd": "Y",
+  "supervisorId": "sysadmin",
+  "receiveAsCorrection": "N"
+}

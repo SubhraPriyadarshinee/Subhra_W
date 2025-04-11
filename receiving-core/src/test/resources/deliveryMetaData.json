@@ -1,0 +1,32 @@
+{
+    "documents": [
+        {
+            "purchaseReferenceNumber": "7971298360"
+        },
+        {
+            "purchaseReferenceNumber": "7971298361",
+            "lines": [
+                {
+                    "purchaseReferenceLineNumber": 1,
+                    "ignoreExpiry": "true"
+                }
+            ]
+        },
+        {
+            "purchaseReferenceNumber": "7971298362",
+            "lines": [
+                {
+                    "purchaseReferenceLineNumber": 1,
+                    "ignoreExpiry": "true"
+                },
+                {
+                    "purchaseReferenceLineNumber": 2,
+                    "ignoreExpiry": "true"
+                }
+            ]
+        },
+        {
+            "purchaseReferenceNumber": "7971298364"
+        }
+    ]
+}

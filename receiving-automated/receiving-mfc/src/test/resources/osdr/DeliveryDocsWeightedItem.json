@@ -1,0 +1,45 @@
+{
+  "deliveryNumber": 550478600045777,
+  "statusInformation": {
+    "status": "WRK",
+    "statusReasonCode": [
+      "WORKING"
+    ],
+    "operationalStatus": "WRK"
+  },
+  "type": "LIVE",
+  "appointmentStartDateTime": "2023-08-24T15:10:01.701Z",
+  "appointmentEndDateTime": "2023-09-03T15:10:01.701Z",
+  "doorNumber": "999",
+  "arrivalTime": "2023-08-24T15:10:46.272Z",
+  "loadInformation": {
+    "number": "v_weight_68",
+    "sourceDCNumber": "6071",
+    "trailerInformation": {
+      "sealNumber": "0000000906",
+      "trailerId": "v_weight_68"
+    }
+  },
+  "lifeCycleInformation": [
+    {
+      "type": "DOOR_OPEN",
+      "userId": "vn53xvq",
+      "time": "2023-08-24T15:10:46.355Z"
+    },
+    {
+      "type": "RECEIVING_STARTED",
+      "userId": "vn53xvq",
+      "time": "2023-08-24T15:10:46.483Z"
+    }
+  ],
+  "carrierId": "WM",
+  "shipments": [
+    {
+      "documentId": "v_weight_6860715504_20230824_6071_DC_US",
+      "shipmentNumber": "v_weight_6860715504",
+      "documentIngestTime": "2023-08-24T15:09:57.857Z",
+      "totalPacks": 3,
+      "documentType": "ASN"
+    }
+  ]
+}

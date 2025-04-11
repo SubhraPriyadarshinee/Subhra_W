@@ -1,0 +1,974 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.walmart.move.nim</groupId>
+	<artifactId>uwms-receiving</artifactId>
+	<version>3.0.275</version>
+	<packaging>pom</packaging>
+	<name>receiving-api-parent</name>
+	<description>Receiving API for UWMS</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<!-- <version>2.0.5.RELEASE</version> -->
+		<version>2.7.10</version> <!-- lookup parent from repository -->
+	</parent>
+
+	<modules>
+		<module>receiving-test</module>
+		<module>receiving-utils</module>
+		<module>receiving-core</module>
+		<module>receiving-api</module>
+		<module>receiving-automated</module>
+		<module>receiving-manual</module>
+		<module>receiving-reporting</module>
+		<module>receiving-wfs</module>
+		<module>receiving-adapter</module>
+	</modules>
+
+	<properties>
+		<spring-boot.version>2.7.10</spring-boot.version>
+		<!-- <spring-boot.version>2.0.5.RELEASE</spring-boot.version> -->
+
+		<spring.cloud-version>2021.0.3</spring.cloud-version>
+
+		<!-- Maven -->
+		<revision>1.5.13-SNAPSHOT</revision>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.javadoc.failOnError>false</maven.javadoc.failOnError>
+		<aspect.jweaver>1.9.1</aspect.jweaver>
+		<easymock.version>3.6</easymock.version>
+		<collectMetrics>true</collectMetrics>
+		<product.group>com.walmart.move.nim</product.group>
+		<product.artifact>${project.artifactId}</product.artifact>
+		<messaging-jms-client.version>2.1.1</messaging-jms-client.version>
+		<ibm.mq.version>8.0.0.5</ibm.mq.version>
+		<springdoc.openapi.ui.version>1.6.6</springdoc.openapi.ui.version>
+		<!-- Artume Integration End -->
+
+		<!-- Java -->
+		<version.java>1.8</version.java>
+
+		<!-- Strati -->
+		<version.strati.starter>3.1.1</version.strati.starter>
+
+		<!-- Strati metrics version -->
+		<strati.metrics.version>2.0.16</strati.metrics.version>
+
+		<!-- javax interceptor -->
+		<javax.interceptor.version>1.2</javax.interceptor.version>
+
+		<!--Thymeleaf version-->
+		<spring.thymeleaf.version>3.1.2.RELEASE</spring.thymeleaf.version>
+
+		<!-- poi  version-->
+		<poi.version>3.17</poi.version>
+
+		<!-- poi-ooxml version -->
+		<poi-ooxml.version>3.17</poi-ooxml.version>
+
+		<!-- Testing -->
+		<version.jacoco>0.8.3</version.jacoco>
+		<sonar.language>java</sonar.language>
+		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+		<!--<sonar.jacoco.reportPath>${project.basedir}/../target/jacoco-ut.exec</sonar.jacoco.reportPath>-->
+		<sonar.coverage.jacoco.xmlReportPaths>${project.reporting.outputDirectory}/jacoco-ut/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+		<skipTests>false</skipTests>
+		<sonar.exclusions>
+			**/TestController.java,
+			**/HealthCheckController.java,
+			**/RestResponseEntityExceptionHandler.java,
+			**/advice/**,
+			**/config/**,
+			**/entity/**,
+			**/model/**,
+			**/constants/**,
+			**/handler/**,
+			**/retry/**,
+			receiving-test/**,
+			**/exception/**.*,
+			receiving-api/src/main/java/com/walmart/move/nim/receiving/Application.java,
+			receiving-core/src/main/java/com/walmart/move/nim/receiving/core/service/WitronITService.java,
+			receiving-reporting/src/main/java/com/walmart/move/nim/receiving/reporting/repositories/ReportingItemCatalogCustomRepository.java,
+			receiving-core/src/main/java/com/walmart/move/nim/receiving/core/common/exception/Error.java,
+			**/TenantData.java,
+			**/*.js
+		</sonar.exclusions>
+		<sonar.cpd.exclusions>
+			receiving-wfs/src/main/java/com/walmart/move/nim/receiving/wfs/service/WFSCompleteDeliveryProcessor.java
+		</sonar.cpd.exclusions>
+
+		<!-- Swagger -->
+		<version.swagger>3.0.0</version.swagger>
+
+		<!-- Microsoft SQL Server -->
+		<version.mssql>12.6.1.jre8</version.mssql>
+		<version.msal4j>1.14.1</version.msal4j>
+		<version.walmart.azuresql>12.6.1.8</version.walmart.azuresql>
+
+		<!-- jcl over slf4j -->
+		<version.jcl>1.7.12</version.jcl>
+
+		<!-- Google gson -->
+		<version.gson>2.8.9</version.gson>
+
+		<!-- This defines the java version spring boot way	-->
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<!-- This defines the java version spring boot way	-->
+
+		<version.labelling>1.0.4</version.labelling>
+		<io.strati.bom.version>11.1.2</io.strati.bom.version>
+		<strati-metrics.version>4.4.10</strati-metrics.version>
+		<strati-metrics-api.version>4.3.3</strati-metrics-api.version>
+		<strati-metrics-spring.version>4.4.4</strati-metrics-spring.version>
+		<strati-af-txn-marking-spring.version>4.5.1</strati-af-txn-marking-spring.version>
+		<fc-common-lib.version>0.0.11</fc-common-lib.version>
+		<tomcat.embed.version>9.0.98</tomcat.embed.version>
+		<netty.codec.version>4.1.100.Final</netty.codec.version>
+    <relayer.version>0.0.237</relayer.version>
+		<atlas.autoconfigure.verison>0.0.82</atlas.autoconfigure.verison>
+	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>af-release</id>
+			<url>${env.REPOSOLNS_MVN_REPO}</url>
+			<uniqueVersion>true</uniqueVersion>
+		</repository>
+		<snapshotRepository>
+			<id>af-snapshot</id>
+			<url>${env.REPOSOLNS_MVN_REPO}</url>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<scm>
+		<connection>scm:git:https://c18fc3b72ea08b2e18c7f5a14d398e4445efd719@gecgithub01.walmart.com/Logistics/uwms-receiving.git</connection>
+		<developerConnection>scm:git:https://c18fc3b72ea08b2e18c7f5a14d398e4445efd719@gecgithub01.walmart.com/Logistics/uwms-receiving.git</developerConnection>
+		<url>https://gecgithub01.walmart.com/Logistics/uwms-receiving</url>
+		<tag>uwms-receiving-3.0.275-SNAPSHOT</tag>
+	</scm>
+
+	<repositories>
+		<repository>
+			<id>spring-releases</id>
+			<url>https://repo.spring.io/libs-release</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-releases</id>
+			<url>https://repo.spring.io/libs-release</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- Receiving module dependency management -->
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>receiving-utils</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>receiving-core</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>receiving-wfs</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>receiving-test</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>receiving-endgame</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>receiving-acc</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>receiving-asn</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>receiving-witron</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>receiving-reporting</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>receiving-rc</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>receiving-rx</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>receiving-rdc</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>receiving-fixture</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>receiving-mfc</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring.cloud-version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>receiving-store-inbound</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<!-- Strati starter -->
+			<dependency>
+				<groupId>io.strati.ioc</groupId>
+				<artifactId>strati-af-springboot-starter</artifactId>
+				<version>${version.strati.starter}</version>
+				<exclusions>
+					<exclusion>
+						<artifactId>bcprov-jdk15on</artifactId>
+						<groupId>org.bouncycastle</groupId>
+					</exclusion>
+					<exclusion>
+						<groupId>io.strati.ioc</groupId>
+						<artifactId>strati-af-forklift-spring-boot-starter</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>io.strati</groupId>
+						<artifactId>strati-af-solr-api</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>io.strati</groupId>
+						<artifactId>strati-af-solr-client-api</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>io.strati</groupId>
+						<artifactId>strati-af-couch</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>io.strati.servlet</groupId>
+						<artifactId>strati-af-framework-bom</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>io.strati.base</groupId>
+						<artifactId>strati-af-framework-bom</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>io.strati.base</groupId>
+						<artifactId>strati-af-ccm-bom</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>io.strati.base</groupId>
+						<artifactId>strati-af-logging-bom</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>io.strati.base</groupId>
+						<artifactId>strati-af-metrics-bom</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>io.strati.base</groupId>
+						<artifactId>strati-af-txnmarking-bom</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>io.strati.base</groupId>
+						<artifactId>strati-af-forklift-bom</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>io.strati</groupId>
+						<artifactId>strati-af-logging-log4j2-impl</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>io.strati</groupId>
+				<artifactId>strati-af-metrics-impl</artifactId>
+				<version>${strati-metrics.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>io.micrometer</groupId>
+				<artifactId>micrometer-core</artifactId>
+				<version>1.10.0</version>
+			</dependency>
+			<dependency>
+				<groupId>io.micrometer</groupId>
+				<artifactId>micrometer-registry-prometheus</artifactId>
+				<version>1.10.0</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/io.prometheus/simpleclient -->
+			<dependency>
+				<groupId>io.prometheus</groupId>
+				<artifactId>simpleclient</artifactId>
+				<version>0.16.0</version>
+			</dependency>
+
+
+			<dependency>
+				<groupId>io.strati</groupId>
+				<artifactId>strati-af-metrics-api</artifactId>
+				<version>${strati-metrics-api.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>io.strati</groupId>
+						<artifactId>strati-af-metrics-spring</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<dependency>
+				<groupId>io.strati</groupId>
+				<artifactId>strati-af-metrics-spring</artifactId>
+				<version>${strati-metrics-spring.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>io.strati</groupId>
+						<artifactId>strati-af-logging-libs</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<dependency>
+				<groupId>io.strati</groupId>
+				<artifactId>strati-af-txn-marking-api</artifactId>
+				<version>${strati-af-txn-marking-spring.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>com.google.protobuf</groupId>
+						<artifactId>protobuf-java</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-actuator</artifactId>
+				<version>${spring-boot.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>jcl-over-slf4j</artifactId>
+				<version>${version.jcl}</version>
+			</dependency>
+
+			<!-- Strati starter end -->
+
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-collections4</artifactId>
+				<version>4.4</version>
+			</dependency>
+
+			<!-- Spring Boot start -->
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>${spring-boot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+				<version>${spring-boot.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-tomcat</artifactId>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-logging</artifactId>
+					</exclusion>
+				</exclusions>
+				<scope>provided</scope>
+			</dependency>
+
+			<!-- Spring Boot end -->
+
+
+			<!-- Microsoft SQL Server start -->
+			<dependency>
+				<groupId>com.microsoft.sqlserver</groupId>
+				<artifactId>mssql-jdbc</artifactId>
+				<version>${version.mssql}</version>
+			</dependency>
+
+			<!-- Microsoft SQL Server end -->
+
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>msal4j</artifactId>
+				<version>${version.msal4j}</version>
+			</dependency>
+
+			<!-- Google Gson Dependency starts -->
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>${version.gson}</version>
+			</dependency>
+			<!-- Google Gson Dependency ends -->
+
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-ui</artifactId>
+				<version>${springdoc.openapi.ui.version}</version>
+			</dependency>
+
+			<!-- Swagger Dependency starts -->
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>${version.swagger}</version>
+				<scope>compile</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>${version.swagger}</version>
+				<scope>compile</scope>
+			</dependency>
+			<!-- Swagger Dependency ends -->
+
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>1.18.20</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!-- Strati MaaS Dependency start -->
+			<dependency>
+				<groupId>io.strati.base</groupId>
+				<artifactId>strati-af-maas-bom</artifactId>
+				<version>3.6.0</version>
+				<type>pom</type>
+				<exclusions>
+					<exclusion>
+						<groupId>io.strati.base</groupId>
+						<artifactId>strati-af-ccm-bom</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>io.strati.base</groupId>
+						<artifactId>strati-af-logging-bom</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>io.strati.base</groupId>
+						<artifactId>strati-af-metrics-bom</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+            <dependency>
+                <groupId>io.strati.base</groupId>
+                <artifactId>strati-af-maas-bom</artifactId>
+                <version>3.6.0</version>
+                <type>pom</type>
+                <exclusions>
+                    <exclusion>
+                        <groupId>io.strati.base</groupId>
+                        <artifactId>strati-af-ccm-bom</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>io.strati.base</groupId>
+                        <artifactId>strati-af-logging-bom</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>io.strati.base</groupId>
+                        <artifactId>strati-af-metrics-bom</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+
+            <dependency>
+				<groupId>com.ibm</groupId>
+				<artifactId>com.ibm.mqjms</artifactId>
+				<version>${ibm.mq.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.ibm</groupId>
+				<artifactId>com.ibm.mq.jmqi</artifactId>
+				<version>${ibm.mq.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.ibm</groupId>
+				<artifactId>com.ibm.mq.headers</artifactId>
+				<version>${ibm.mq.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.ibm</groupId>
+				<artifactId>com.ibm.mq.commonservices</artifactId>
+				<version>${ibm.mq.version}</version>
+				<type>pom</type>
+			</dependency>
+
+			<dependency>
+				<groupId>com.ibm</groupId>
+				<artifactId>com.ibm.mq.allclient</artifactId>
+				<version>${ibm.mq.version}</version>
+			</dependency>
+			<!-- Strati MaaS Dependency End -->
+
+			<!-- Test dependency starts -->
+
+			<!-- TestNG Dependency for unit testing -->
+			<dependency>
+				<groupId>org.testng</groupId>
+				<artifactId>testng</artifactId>
+				<version>6.10</version>
+			</dependency>
+			<!-- Test dependency ends -->
+			<!--Shedlock start -->
+			<dependency>
+				<groupId>net.javacrumbs.shedlock</groupId>
+				<artifactId>shedlock-spring</artifactId>
+				<version>2.5.0</version>
+			</dependency>
+			<dependency>
+				<groupId>net.javacrumbs.shedlock</groupId>
+				<artifactId>shedlock-provider-jdbc-template</artifactId>
+				<version>2.5.0</version>
+			</dependency>
+			<!--Shedlock end -->
+
+			<!--json schema validator start-->
+			<dependency>
+				<groupId>org.everit.json</groupId>
+				<artifactId>org.everit.json.schema</artifactId>
+				<version>1.5.0</version>
+			</dependency>
+			<!--json schema validator end-->
+
+			<!--Thymeleaf dependency-->
+			<dependency>
+				<groupId>org.thymeleaf</groupId>
+				<artifactId>thymeleaf-spring5</artifactId>
+				<version>${spring.thymeleaf.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-thymeleaf</artifactId>
+			</dependency>
+
+			<!-- Apache poi depedency for mail service -->
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi</artifactId>
+				<version>${poi.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-ooxml</artifactId>
+				<version>${poi-ooxml.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>2.7</version>
+			</dependency>
+
+			<!-- Mqtt dependency start -->
+			<dependency>
+				<groupId>org.eclipse.paho</groupId>
+				<artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+				<version>1.1.1</version>
+			</dependency>
+			<!-- Mqtt dependency end -->
+
+			<dependency>
+				<groupId>javax.mail</groupId>
+				<artifactId>mail</artifactId>
+				<version>1.4.7</version>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.jettison</groupId>
+				<artifactId>jettison</artifactId>
+				<version>1.5.4</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-lang</groupId>
+				<artifactId>commons-lang</artifactId>
+				<version>2.6</version>
+			</dependency>
+			<dependency>
+				<groupId>org.json</groupId>
+				<artifactId>json</artifactId>
+				<version>20230618</version>
+			</dependency>
+			<dependency>
+				<groupId>org.yaml</groupId>
+				<artifactId>snakeyaml</artifactId>
+				<version>2.0</version>
+			</dependency>
+			<dependency>
+				<groupId>net.minidev</groupId>
+				<artifactId>json-smart</artifactId>
+				<version>2.4.9</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>2.12.7.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+				<version>2.1.0</version>
+			</dependency>
+			<!-- outbox sink -->
+			<dependency>
+				<groupId>com.walmart.platform</groupId>
+				<artifactId>relayer-jdbc-sink</artifactId>
+				<version>0.0.251</version>
+			</dependency>
+			<dependency>
+				<groupId>com.walmartlabs</groupId>
+				<artifactId> hawkshaw-clients-generic</artifactId>
+				<version>0.2.14</version>
+			</dependency>
+			<dependency>
+				<groupId>com.walmart.gls.atlas</groupId>
+				<artifactId>fc-common-lib</artifactId>
+				<version>${fc-common-lib.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.tomcat.embed</groupId>
+				<artifactId>tomcat-embed-core</artifactId>
+				<version>${tomcat.embed.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.tomcat.embed</groupId>
+				<artifactId>tomcat-embed-websocket</artifactId>
+				<version>${tomcat.embed.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.netty</groupId>
+				<artifactId>netty-codec-http2</artifactId>
+				<version>${netty.codec.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>io.strati</groupId>
+			<artifactId>strati-af-metrics-impl</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>io.strati</groupId>
+					<artifactId>strati-af-telemetry-impl-shared</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>io.strati</groupId>
+			<artifactId>strati-af-metrics-api</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>io.strati</groupId>
+					<artifactId>strati-af-metrics-spring</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>io.strati</groupId>
+			<artifactId>strati-af-metrics-spring</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>io.strati</groupId>
+					<artifactId>strati-af-telemetry-impl-shared</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>io.strati</groupId>
+			<artifactId>strati-af-telemetry-impl-shared</artifactId>
+			<version>5.5.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.strati</groupId>
+			<artifactId>strati-af-txn-marking-api</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.strati.servlet</groupId>
+			<artifactId>strati-af-framework-bom</artifactId>
+			<type>pom</type>
+			<version>${io.strati.bom.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>io.strati</groupId>
+					<artifactId>strati-af-jackson</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- Strati CCM2 -->
+		<dependency>
+			<groupId>io.strati.base</groupId>
+			<artifactId>strati-af-ccm-bom</artifactId>
+			<type>pom</type>
+			<version>${io.strati.bom.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>io.strati.tunr.utils</groupId>
+					<artifactId>strati-af-tunr-utils-client-impl</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>io.strati</groupId>
+					<artifactId>strati-af-ccm-client-impl</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>io.strati</groupId>
+			<artifactId>strati-af-ccm-client-impl</artifactId>
+			<version>9.1.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.strati</groupId>
+			<artifactId>strati-af-configuration-api</artifactId>
+			<version>2.2.5</version>
+		</dependency>
+		<!-- Strati CCM2 -->
+		<dependency>
+			<groupId>io.strati.base</groupId>
+			<artifactId>strati-af-logging-bom</artifactId>
+			<type>pom</type>
+			<version>${io.strati.bom.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>io.strati.base</groupId>
+					<artifactId>strati-af-framework-bom</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>io.strati</groupId>
+					<artifactId>strati-af-jackson</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>io.strati.base</groupId>
+			<artifactId>strati-af-metrics-bom</artifactId>
+			<type>pom</type>
+			<version>${io.strati.bom.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.strati.base</groupId>
+			<artifactId>strati-af-txnmarking-bom</artifactId>
+			<type>pom</type>
+			<version>${io.strati.bom.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-validation</artifactId>
+		<exclusions>
+			<exclusion>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-logging</artifactId>
+			</exclusion>
+		</exclusions>
+		</dependency>
+		 <dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.minidev</groupId>
+			<artifactId>json-smart</artifactId>
+			<version>2.4.9</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.12.7.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.avro</groupId>
+			<artifactId>avro</artifactId>
+			<version>1.11.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.walmart.gls.atlas</groupId>
+			<artifactId>atlas-config-spring-autoconfigure</artifactId>
+			<version>${atlas.autoconfigure.verison}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>io.strati</groupId>
+					<artifactId>strati-af-spi</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.azure</groupId>
+			<artifactId>azure-storage-blob</artifactId>
+			<version>12.20.3</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.fasterxml.jackson.dataformat</groupId>
+					<artifactId>jackson-dataformat-xml</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-inline</artifactId>
+			<version>5.2.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.walmart.atlas</groupId>
+			<artifactId>argus-metrics</artifactId>
+			<version>0.0.139</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.coveo</groupId>
+				<artifactId>fmt-maven-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<displayLimit>10</displayLimit>
+					<verbose>true</verbose>
+					<filesNamePattern>.*\.java</filesNamePattern>
+					<style>google</style>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${version.java}</source>
+					<target>${version.java}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
+				<configuration>
+					<localCheckout>true</localCheckout>
+					<tag>${project.artifactId}-${project.version}</tag>
+					<scmCommentPrefix>NGRCV-3668 [maven-release-plugin] auto-update of version</scmCommentPrefix>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>${version.jacoco}</version>
+				<executions>
+					<execution>
+						<id>pre-unit-test</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+						<configuration>
+							<destFile>${sonar.jacoco.reportPath}</destFile>
+							<propertyName>surefireArgLine</propertyName>
+							<append>true</append>
+						</configuration>
+					</execution>
+					<execution>
+						<id>post-unit-test</id>
+						<phase>test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+						<configuration>
+							<dataFile>${sonar.jacoco.reportPath}</dataFile>
+							<outputDirectory>${project.reporting.outputDirectory}/jacoco-ut</outputDirectory>
+							<append>true</append>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skip>${skipTests}</skip>
+					<argLine>${surefireArgLine}</argLine>
+					<includes>
+						<include>**/*TestNG*</include>
+						<include>**/*Test*</include>
+					</includes>
+					<excludes>
+						<exclude>**/FT/**</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

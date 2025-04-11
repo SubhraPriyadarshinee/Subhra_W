@@ -1,0 +1,10 @@
+{
+  "messageId": "4283487f-4c6a-4623-8c8c-1fd6318f42f5",
+  "locations": [
+    {
+      "type": "error",
+      "code": "GLS-SMART-SLOTING-4040009",
+      "desc": "Setup issue - Prime Slot is not present for the entered item"
+    }
+  ]
+}

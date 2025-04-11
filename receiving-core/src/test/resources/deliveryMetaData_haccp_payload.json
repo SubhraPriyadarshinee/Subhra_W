@@ -1,0 +1,133 @@
+{
+  "documents": [
+    {
+      "purchaseReferenceNumber": "0552442972",
+      "poType": "20",
+      "lines": [
+        {
+          "purchaseReferenceLineNumber": 1,
+          "ignoreOverage": "true",
+          "approvedHaccp": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 2,
+          "ignoreOverage": "true"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "0549885862",
+      "poType": "20",
+      "lines": [
+        {
+          "purchaseReferenceLineNumber": 1,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 2,
+          "ignoreOverage": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 3,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 4,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 5,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 6,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 7,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 8,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 9,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 10,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 81,
+          "ignoreExpiry": "true",
+          "approvedHaccp": "true"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "0552442969",
+      "poType": "20",
+      "lines": [
+        {
+          "purchaseReferenceLineNumber": 1,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 2,
+          "ignoreOverage": "true",
+          "approvedHaccp": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 3,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 4,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 5,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 6,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 7,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 8,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 9,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 10,
+          "ignoreExpiry": "true"
+        },
+        {
+          "purchaseReferenceLineNumber": 81,
+          "ignoreExpiry": "true"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "0550598141",
+      "poType": "20"
+    },
+    {
+      "purchaseReferenceNumber": "0550665045",
+      "poType": "20"
+    },
+    {
+      "purchaseReferenceNumber": "0550621162",
+      "poType": "20"
+    }
+  ]
+}

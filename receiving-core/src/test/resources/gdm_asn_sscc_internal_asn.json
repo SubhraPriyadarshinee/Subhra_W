@@ -1,0 +1,201 @@
+{
+  "delivery": {
+    "deliveryNumber": 29298162,
+    "statusInformation": {
+      "operationalStatus": "REO",
+      "statusReasonCode": [
+        "DELIVERY_REOPENED"
+      ],
+      "status": "OPN"
+    }
+  },
+  "shipments": [
+    {
+      "documentId": "1647229870426020_20211006_7042_DC_US",
+      "shipmentNumber": "1647229870426020",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2021-09-23T20:20:04.000Z",
+      "shipmentDate": "2021-10-06",
+      "source": {
+        "number": "7042",
+        "type": "DC",
+        "countryCode": "US",
+        "shipperName": "WAL-MART TRANSPORTATION L"
+      },
+      "destination": {
+        "type": "DC",
+        "number": 32698,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "trailerNumber": "TSHR01",
+        "trailerSealNumber": "3432",
+        "loadNumber": "16471247",
+        "shippingDate": "2021-10-06",
+        "carrierId": "WALM",
+        "carrierTrackingId": "WALM"
+      },
+      "totalPacks": 1
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poNumber": "2072542432",
+      "freightBillQty": 386,
+      "cubeQty": 411.0,
+      "poDcCountry": "US",
+      "baseDivisionCode": "WM",
+      "poType": "43",
+      "purchaseCompanyId": 1,
+      "poStatus": "CLOSED",
+      "financialGroupCode": "US",
+      "vendorInformation": {
+        "name": "NINGBO TAIOOR COOKWARE",
+        "number": 18281,
+        "department": 14
+      },
+      "poDates": {
+        "cancel": "2021-07-30",
+        "ordered": "2021-04-29",
+        "mabd": "2021-07-30",
+        "ship": "2021-07-23"
+      },
+      "poDcNumber": 6020,
+      "lines": [
+        {
+          "poLineNumber": 1,
+          "freightBillQty": 0,
+          "channel": "CROSSMU",
+          "ovgThresholdQuantityLimit": 17,
+          "whpkQty": 1,
+          "whpkSell": 28.0,
+          "vnpkQty": 1,
+          "vnpkCost": 28.09,
+          "vnpkWeightQty": 10.1412,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 1.134,
+          "vnpkCubeQtyUom": "CF",
+          "event": "HOMEPAD_28",
+          "poLineStatus": "RECEIVED",
+          "orderedQty": 386.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "06952528109649",
+            "orderableGTIN": "06952528106648",
+            "supplierStockId": "MS89-080-305-10",
+            "palletTi": 0,
+            "palletHi": 0,
+            "hazmat": false,
+            "conveyable": true,
+            "vendorDepartment": "14",
+            "size": "12PC",
+            "warehousePackQuantity": 0,
+            "orderableQuantity": 0,
+            "isNewItem": false,
+            "itemAdditonalInformation": {
+              "warehouseRotationTypeCode": "1",
+              "weight": 10.1412,
+              "cubeUOM": "CF",
+              "cube": 1.134,
+              "weightUOM": "LB",
+              "weightFormatTypeCode": "F"
+            },
+            "descriptions": [
+              "MS CER 12PC SET TL",
+              "MS CER 12PC SET TL"
+            ],
+            "number": 572579663
+          }
+        }
+      ],
+      "weightQty": 4111.0,
+      "weightQtyUom": "LB",
+      "cubeQtyUom": "CF"
+    }
+  ],
+  "packs": [
+    {
+      "packNumber": "06020000704245077935",
+      "invoice": {
+        "invoiceNumber": "07042036691"
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 32698,
+        "countryCode": "US"
+      },
+      "channelMethod": "CROSSNMA",
+      "shipmentNumber": "1647229870426020",
+      "physicalDetail": {
+        "weight": 4.56,
+        "weightUom": "",
+        "cube": 0.0,
+        "cubeUom": "CF"
+      },
+      "reportedChannelMethod": "CROSSNMA",
+      "items": [
+        {
+          "itemNumber": 572579663,
+          "gtin": "00071623646791",
+          "itemDepartment": "18",
+          "itemDivision": "WM",
+          "purchaseOrder": {
+            "orderNumber": "6596072",
+            "poLineNumber": 1,
+            "poNumber": "2072542432",
+            "poType": "23",
+            "poPoLineCount": 2,
+            "poLocationNumber": "6020",
+            "poLocationCountryCode": "US",
+            "importInd": true
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 192.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 192.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 12,
+            "vendorCaseQuantity": 48
+          },
+          "upc": "00071623646791",
+          "financialDetail": {
+            "reportedCost": 3.069999933242798,
+            "derivedCost": 3.069999933242798,
+            "financialReportingCountry": "US"
+          }
+        },
+        {
+          "itemNumber": 572579663,
+          "gtin": "00071623646791",
+          "itemDepartment": "18",
+          "itemDivision": "WM",
+          "purchaseOrder": {
+            "orderNumber": "6596072",
+            "poLineNumber": 1,
+            "poNumber": "2072542432",
+            "poType": "23",
+            "poPoLineCount": 2,
+            "poLocationNumber": "6020",
+            "poLocationCountryCode": "US",
+            "importInd": true
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 192.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 192.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 12,
+            "vendorCaseQuantity": 48
+          },
+          "upc": "00071623646791",
+          "financialDetail": {
+            "reportedCost": 3.069999933242798,
+            "derivedCost": 3.069999933242798,
+            "financialReportingCountry": "US"
+          }
+        }
+      ]
+    }
+  ]
+}

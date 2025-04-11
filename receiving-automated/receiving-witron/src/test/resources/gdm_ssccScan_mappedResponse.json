@@ -1,0 +1,118 @@
+[{
+  "purchaseReferenceNumber": "0657531161",
+  "financialGroupCode": "US",
+  "baseDivCode": "WM",
+  "vendorNumber": "332767",
+  "deptNumber": "93",
+  "purchaseCompanyId": "1",
+  "purchaseReferenceLegacyType": "20",
+  "poDCNumber": "8852",
+  "purchaseReferenceStatus": "ACTV",
+  "deliveryDocumentLines": [
+    {
+      "gtin": "90074941431929",
+      "itemUPC": "90074941431929",
+      "caseUPC": "10074941431923",
+      "purchaseReferenceNumber": "0657531161",
+      "purchaseReferenceLineNumber": 2,
+      "event": "POS REPLEN",
+      "purchaseReferenceLineStatus": "APPROVED",
+      "whpkSell": 18,
+      "vendorPackCost": 18.4,
+      "vnpkQty": 4,
+      "whpkQty": 4,
+      "orderableQuantity": 4,
+      "warehousePackQuantity": 4,
+      "expectedQtyUOM": "ZA",
+      "openQty": 147,
+      "expectedQty": 147,
+      "overageQtyLimit": 14,
+      "itemNbr": 551636997,
+      "purchaseRefType": "SSTKU",
+      "palletTi": 7,
+      "palletHi": 8,
+      "vnpkWgtQty": 40,
+      "vnpkWgtUom": "LB",
+      "vnpkcbqty": 1.001,
+      "vnpkcbuomcd": "CF",
+      "size": "10 LB",
+      "isHazmat": false,
+      "itemDescription1": "LEG QTR 10LB",
+      "firstExpiryFirstOut": true,
+      "promoBuyInd": "N",
+      "additionalInfo": {
+        "warehouseAreaCode": "2",
+        "warehouseAreaDesc": "Frozen",
+        "warehouseGroupCode": "",
+        "isNewItem": false,
+        "profiledWarehouseArea": "OPM",
+        "warehouseRotationTypeCode": "3",
+        "weight": 42,
+        "weightFormatTypeCode": "F",
+        "weightUOM": "LB",
+        "warehouseMinLifeRemainingToReceive": 180,
+        "isDscsaExemptionInd": false,
+        "isHACCP": true,
+        "primeSlotSize": 0,
+        "isHazardous": 0,
+        "atlasConvertedItem": false,
+        "isWholesaler": false
+      },
+      "freightBillQty": 3,
+      "bolWeight": 1,
+      "department": "93",
+      "palletSSCC": "00006641941209544694",
+      "manufactureDetails": [
+        {
+          "lot": "1220954469",
+          "qty": 49,
+          "reportedUom": "CA"
+        }
+      ],
+      "deptNumber": "93",
+      "vendorNbrDeptSeq": 332767,
+      "vendorStockNumber": "43192",
+      "shippedQty": 49,
+      "shippedQtyUom": "ZA",
+      "consumableGTIN": "00074941098228",
+      "orderableGTIN": "10074941431923",
+      "lotNumber": "1220954469",
+      "totalReceivedQty": 0,
+      "maxAllowedOverageQtyIncluded": false,
+      "lithiumIonVerificationRequired": false,
+      "limitedQtyVerificationRequired": false,
+      "gtinHierarchy": [
+        {
+          "gtin": "00074941098228",
+          "type": "consumableGTIN"
+        },
+        {
+          "gtin": "10074941431923",
+          "type": "orderableGTIN"
+        },
+        {
+          "type": "warehousePackGtin"
+        },
+        {
+          "type": "catalogGTIN"
+        },
+        {
+          "gtin": "90074941431929",
+          "type": "gtin"
+        }
+      ],
+      "isNewItem": false,
+      "autoPopulateReceivingQty": false
+    }
+  ],
+  "weight": 0,
+  "cubeQty": 0,
+  "deliveryStatus": "WRK",
+  "poTypeCode": 20,
+  "totalBolFbq": 822,
+  "deliveryLegacyStatus": "WRK",
+  "purchaseReferenceMustArriveByDate": "Apr 9, 2022 12:00:00 AM",
+  "deliveryNumber": 33630424,
+  "sourceType": "SHIPPER"
+}
+]

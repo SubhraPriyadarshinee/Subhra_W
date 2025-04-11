@@ -1,0 +1,53 @@
+profiles:
+  - git://Logistics:metrics-profiles:main:dt-saas-atlas/us-walmart/dt-saas-common
+deploy:
+  stages:
+    - name: qa-cell000
+      helm:
+        values:
+          env:
+            JAVA_OPTS: >-
+              -Xms2048M
+              -Xmx2048M
+              -XX:+UseParNewGC
+              -XX:+UseConcMarkSweepGC
+              -XX:NewSize=512M
+              -XX:MaxMetaspaceSize=256M
+              -Djsse.enableSNIExtension=true
+              -Druntime.context.environmentType=qa
+              -Druntime.context.environment=QA
+              -Dscm.scope.template=/qa/QA
+              -Druntime.context.cloud={{$.kittExec.currentCluster.zone}}
+              -Druntime.context.appName=receiving-api
+              -Druntime.context.system.property.override.enabled=true
+              -Dscm.snapshot.enabled=true
+              -Dscm.root.dir=/tmp/scm
+              -Dscm.print.summary.onchange=true
+              -Dscm.print.detailed.summary=true
+              -Dspring.config.use-legacy-processing=true
+              -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+              -DDATACENTER={{$.kittExec.currentCluster.zone}}
+              -Dplatform=wcnp
+              -Dspring.main.allow-circular-references=true
+              -Dspring.main.allow-bean-definition-overriding=true
+              -DdeploymentSite={{$.kittExec.currentCluster.site}}
+              -Datlas-global-config-bootstrap=ccm
+              -Dio.strati.RuntimeContext=io.strati.impl.runtime.context.RuntimeContextEnv
+              -Dcom.walmart.platform.telemetry.structured.logging.enabled=true
+              -Dtunr.enabled=false
+          metadata:
+            labels:
+              strati.appkey: ATLASRECEIVING
+              strati.env: qa
+            annotations:
+              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"},{"Path":"^/.*"}]'
+          min:
+            cpu: 2000m
+            memory: 2048Mi
+          max:
+            cpu: 2000m
+            memory: 2048Mi
+          scaling:
+            enabled: false
+            min: 1
+            max: 1

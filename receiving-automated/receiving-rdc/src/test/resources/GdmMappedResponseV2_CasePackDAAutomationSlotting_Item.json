@@ -1,0 +1,125 @@
+[
+  {
+    "deliveryNumber": 80426073,
+    "purchaseReferenceNumber": "0953727536",
+    "omsPurchaseReferenceNumber": "0953727536",
+    "poDCNumber": "32679",
+    "bpoNumber": "0",
+    "baseDivCode": "WM",
+    "purchaseReferenceLegacyType": "33",
+    "totalPurchaseReferenceQty": 20,
+    "palletQty": 0,
+    "purchaseCompanyId": 1,
+    "receiverNumber": 0,
+    "purchaseReferenceOrderDate": "2023-07-27",
+    "purchaseReferenceCancelDate": "2023-08-01",
+    "purchaseReferenceShipDate": "2023-08-01",
+    "purchaseReferenceMustArriveByDate": "2023-08-03",
+    "deliveryDocumentLines": [
+      {
+        "purchaseRefType": "CROSSU",
+        "originalChannel": "CROSSDOCK",
+        "purchaseReferenceNumber": "0953727536",
+        "purchaseReferenceLineNumber": 1,
+        "purchaseReferenceLineStatus": "APPROVED",
+        "itemNbr": 564449921,
+        "itemUPC": "00070257509557",
+        "caseUPC": "50070257518011",
+        "vendorUPC": "00007025750956",
+        "expectedQty": 20,
+        "expectedQtyUOM": "ZA",
+        "vnpkQty": 5,
+        "whpkQty": 5,
+        "vendorStockNumber": "BGM910-2/5CD-W",
+        "vendorPackCost": 20.4,
+        "whpkSell": 20.4,
+        "vnpkCostUom": "CA",
+        "vnpkWgtQty": 3,
+        "vnpkWgtUom": "LB",
+        "vnpkcbqty": 0.884,
+        "vnpkcbuomcd": "CF",
+        "distributions": [
+          {
+            "buNumber": "1084",
+            "orderQuantity": 10,
+            "qtyUOM": "PH"
+          },
+          {
+            "buNumber": "100",
+            "orderQuantity": 10,
+            "qtyUOM": "PH"
+          }
+        ],
+        "event": "",
+        "palletTi": 0,
+        "palletHi": 0,
+        "department": "82",
+        "isHazmat": true,
+        "isConveyable": false,
+        "overageQtyLimit": 20,
+        "overageThresholdQty": 20,
+        "size": "1.0EA",
+        "itemDescription1": "ANF TORCH COMBO",
+        "itemDescription2": "NEW TRAY",
+        "lastchangedOn": "2023-08-12T03:34:27.658Z",
+        "promoBuyInd": "N",
+        "operationalInfo": {
+          "state": "ACTIVE"
+        },
+        "orderableQuantity": 5,
+        "warehousePackQuantity": 5,
+        "dotIdNbr": "1057",
+        "limitedQtyVerifiedOn": "2023-01-01T00:00:00.000+0000",
+        "lithiumIonVerifiedOn": "2023-01-01T00:00:00.000+0000",
+        "transportationModes": [
+          {
+            "mode": {
+              "code": 1,
+              "description": "GROUND"
+            },
+            "dotIdNbr": "1057",
+            "dotHazardousClass": {
+              "code": "2.1",
+              "description": "FLAMMABLE GASES"
+            },
+            "properShipping": "LIGHTERS",
+            "dotRegionCode": "UN",
+            "pkgInstruction": []
+          }
+        ],
+        "handlingCode": "J",
+        "packType": "C",
+        "isNewItem": false
+      }
+    ],
+    "bolNumber": "123",
+    "deptNumber": "9",
+    "vendorNumber": "17512",
+    "vendorName": "BAMA COMPANIES INC",
+    "vendorNbrDeptSeq": "1751290",
+    "lastChangedByDate": "2023-08-12",
+    "weight": 100,
+    "weightUOM": "LB",
+    "cubeQty": 150,
+    "cubeUOM": "CF",
+    "freightTermCode": "COLL",
+    "financialGroupCode": "US",
+    "lastChangedBy": "svcaucan",
+    "bolNumbers": [
+      {
+        "bolNumber": "123",
+        "freightBillQuantity": 20
+      }
+    ],
+    "poConIndicator": false,
+    "importInd": false,
+    "poTypeCode": "33",
+    "purchaseReferenceStatus": "ACTV",
+    "poDcCountry": "US",
+    "totalBolFbq": 0,
+    "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+    "sellerType": "WM",
+    "proDate": "2024-05-13T11:39:52.952Z",
+    "poLoadSequenceNbr": 1
+  }
+]

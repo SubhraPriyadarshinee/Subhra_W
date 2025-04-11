@@ -1,0 +1,92 @@
+{
+  "sneEnabled": true,
+  "received": [
+    {
+      "carton": "00000087625",
+      "poNumber": "9977421136",
+      "poLine": 1,
+      "returnCode": 0,
+      "message": "SUCCESS",
+      "labelTrackingId": "099970200000087625",
+      "batch": 606,
+      "shippingLane": 12,
+      "receiver": 512411,
+      "pack": 6,
+      "department": 10,
+      "division": "02",
+      "pocode": 33,
+      "aisle": "L",
+      "poevent": "POS REPLEN",
+      "storezone": "R",
+      "eventchar": " ",
+      "pri_loc": "|   |",
+      "sec_loc": "   |",
+      "ter_loc": "   |",
+      "hazmat": " ",
+      "sscc": "00428182059650001276",
+      "tag": "915124110010",
+      "labelTimestamp": "Sun Jul 24 22:54:08 2022",
+      "destinations": [
+        {
+          "slot": "R8000",
+          "slot_size": 0,
+          "store": "9997",
+          "zone": null,
+          "division": "02",
+          "carton": 28452
+        }
+      ],
+      "productivity": {
+        "productivity_code": 0,
+        "productivity_qty": 1,
+        "productivity_uom": "CA",
+        "label_tracking_id": "00428182059650001276"
+      },
+      "_id": "62de13e0876d1c647994b700"
+    },
+    {
+      "carton": "00000087625",
+      "poNumber": "9977421136",
+      "poLine": 1,
+      "returnCode": 0,
+      "message": "SUCCESS",
+      "labelTrackingId": "003420200000087625",
+      "batch": 606,
+      "shippingLane": 12,
+      "receiver": 512411,
+      "pack": 6,
+      "department": 10,
+      "division": "02",
+      "pocode": 33,
+      "aisle": "L",
+      "poevent": "POS REPLEN",
+      "storezone": "R",
+      "eventchar": " ",
+      "pri_loc": "|   |",
+      "sec_loc": "   |",
+      "ter_loc": "   |",
+      "hazmat": " ",
+      "sscc": "00428182059650001276",
+      "tag": "915124110010",
+      "labelTimestamp": "Sun Jul 24 22:54:08 2022",
+      "destinations": [
+        {
+          "slot": "R8000",
+          "slot_size": 0,
+          "store": "04231",
+          "zone": null,
+          "division": "02",
+          "carton": 28452
+        }
+      ],
+      "productivity": {
+        "productivity_code": 0,
+        "productivity_qty": 1,
+        "productivity_uom": "CA",
+        "label_tracking_id": "00428182059650001276"
+      },
+      "_id": "62de13e0876d1c647994b700"
+    }
+  ],
+  "errors": []
+}

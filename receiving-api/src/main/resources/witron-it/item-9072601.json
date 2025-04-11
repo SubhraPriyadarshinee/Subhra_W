@@ -1,0 +1,16 @@
+{
+    "itemNumber" : 9072601,
+    "description" : "YOP ORG CRMY STR 32Z     ",
+    "deptNumber" : "90",
+    "vendorNbr" : 711452,
+    "gtin" : "7047000430",
+    "whpkQty" : 6,
+    "vnpkQty" : 6,
+    "ti" : 13,
+    "hi" : 6,
+    "vendorPackCost" : 10.50,
+    "whpkSell" : 10.296,
+    "vendorPackWeight" : 13,
+    "vendorPackCubeQty" : 1,
+    "poLine" : 6
+}

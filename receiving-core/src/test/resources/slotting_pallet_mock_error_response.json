@@ -1,0 +1,10 @@
+{
+  "messageId": "4362b190-16e0-40b5-8684-1eddefc85b46",
+  "locations": [
+    {
+      "type": "error",
+      "code": "GLS-SMART-SLOTING-4040008",
+      "desc": "No slot is available to auto-slot.User has to go for manual slotting"
+    }
+  ]
+}

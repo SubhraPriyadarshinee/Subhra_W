@@ -1,0 +1,22 @@
+
+{
+  "messageId": "d034fc9c-849b-11ea-bc55-0242ac130003",
+  "receivingMethod": "SSTK",
+  "atlasOnboardedItem" : false,
+  "containerDetails": [
+    {
+      "containerTrackingId": "b5f8c7f4-caf7-4582-82f8-a5a9ece9f819",
+      "locationSize": 72,
+      "containerItemsDetails": [
+        {
+          "itemNbr": 3803380,
+          "stockType": "",
+          "qty": 40,
+          "qtyUom": "ZA",
+          "vnpkRatio": 1,
+          "whpkRatio": 1
+        }
+      ]
+    }
+  ]
+}

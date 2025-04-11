@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "notification": {
+      "type": "object",
+      "properties": {
+        "custom_payload": {
+          "type": "object",
+          "properties": {
+            "equipmentName": {
+              "type": "string"
+            },
+            "equipmentType": {
+              "type": "string"
+            },
+            "locationId": {
+              "type": "string"
+            },
+            "equipmentStatus": {
+              "type": "string",
+              "pattern":".*code.*value.*"
+          },
+          "updatedTs": {
+            "type": "string",
+            "pattern":"[a-zA-Z]{3}\\s[a-zA-Z]{3}\\s[0-9]+\\s[0-9]+:[0-9]+:[0-9]+\\s[A-Z]{3}\\s[0-9]{4}"
+          }
+        },
+        "required": [
+          "equipmentName",
+          "equipmentType",
+          "locationId",
+          "equipmentStatus",
+          "updatedTs"
+        ]
+      },
+      "title": {
+        "type": "string"
+      },
+      "alert": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "custom_payload",
+      "title",
+      "alert"
+    ]
+  },
+  "audience": {
+    "type": "object",
+    "properties": {
+      "user_id": {
+        "type": "array",
+        "items": [
+          {
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "required": [
+      "user_id"
+    ]
+  },
+  "expire_ts": {
+    "type": "string",
+    "pattern":"[0-9]+-[0-9]+-[0-9]+T[0-9]+:[0-9]+:[0-9]{2}.*Z"
+  }
+},
+"required": [
+"notification",
+"audience",
+"expire_ts"
+]
+}

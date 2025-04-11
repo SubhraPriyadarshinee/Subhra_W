@@ -1,0 +1,134 @@
+profiles:
+  - rel://../../kitt-common-deploy
+  - rel://stages/ambient-stage2a
+  - rel://stages/ambient-stage7
+  - rel://stages/prod-001a
+  - dynatrace-saas-walmart
+
+notify:
+  slack:
+    channelName: atlas-rcv-build-ambient
+alerts:
+  slackChannel:
+    - atlas-rcv-alerts-ambient
+
+setup:
+  releaseRefs: [
+    "main",
+    ".*-hotfix",
+    "us-wm-ambient/pharmacy/release/.*",
+    "us-wm-ambient/pharmacy/release/hotfix/.*"
+  ]
+
+build:
+  artifact: uwms-receiving-ambient
+
+deploy:
+  preDeploy:
+    - task:
+        name: messageSlack
+        text: Beginning liquibase execution on {{$.kittExec.currentStage.name}}
+    - concord:
+        name: Liquibase-Execution
+        action: start
+        org: Logistics
+        project: wcnp_liquibase
+        repo: wcnp_liquibase
+        entryPoint: default
+        enabled: true
+        sync: true
+        executionScope: stage
+        arguments:
+          version: "{{$.kitt.build.version}}"
+          artifactId: "{{$.kitt.build.artifact}}"
+          targetEnv: "amb-{{$.kittExec.currentStage.name}}"
+          gitBranch: "{{$.kitt.build.commitEvent.commitId}}"
+          repoName: "uwms-receiving"
+    - task:
+        name: messageSlack
+        text: Liquibase execution successful
+  namespace: amb-atlas-receiving
+  skip: false
+  changeRecord:
+    create: true
+    affectedGEOs: [ "US" ]
+    group: "LOG - GLS NextGen"
+    notifyChannels: [ "atlas-rcv-build-ambient" ]
+    managerGroup: "Change Managers - GEC"
+  gslb:
+    lbRoutings:
+      amb-stg2a:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-amb-stg2a-cell000.walmart.com
+          - receiving-api-amb-stg2a-cell000.walmart.com
+        matchStages: [ amb-stg2a ]
+      amb-stg7:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-amb-stg7-cell000.walmart.com
+          - receiving-api-amb-stg7-cell000.walmart.com
+        matchStages: [ amb-stg7 ]
+      prod-001a:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-amb-cell001a.prod.walmart.com
+        matchStages: [ prod-001a ]
+
+  stages:
+
+    - name: amb-stg2a
+      flows: [ release ]
+      refs: [ "us-wm-ambient/pharmacy/release/.*", "us-wm-ambient/pharmacy/release/hotfix/.*" ]
+      target:
+        - cluster_id: [ uscentral-stage-az-12 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+      rollbackOnError: true
+      helm:
+        values:
+          metadata:
+            annotations:
+              dynatrace.com/inject: "false"
+            labels:
+              dt-trproductid: "3541"
+              dt-trproductid-name: "ATLAS-Ambient-APM0006031"
+
+    - name: amb-stg7
+      flows: [ release ]
+      refs: [ "us-wm-ambient/pharmacy/release/.*", "us-wm-ambient/pharmacy/release/hotfix/.*" ]
+      target:
+        - cluster_id: [ uscentral-stage-az-12 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+        rollbackOnError: true
+        helm:
+          values:
+            metadata:
+              annotations:
+                dynatrace.com/inject: "false"
+              labels:
+                dt-trproductid: "3541"
+                dt-trproductid-name: "ATLAS-Ambient-APM0006031"
+
+    - name: prod-001a
+      flows: [ release ]
+      refs: [ "us-wm-ambient/pharmacy/release/.*", "us-wm-ambient/pharmacy/release/hotfix/.*" ]
+      target:
+        - cluster_id: [ uscentral-prod-az-315 , uswest-prod-az-317 ]
+      approvers:
+        groups:
+          - "Atlas-Receiving-Approvers"
+          - "Tridents-SE"
+      rollbackOnError: true
+      helm:
+        values:
+          metadata:
+            annotations:
+              dynatrace.com/inject: "false"
+            labels:
+              dt-trproductid: "3541"
+              dt-trproductid-name: "ATLAS-Ambient-APM0006031"

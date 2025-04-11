@@ -1,0 +1,566 @@
+{
+  "data": [
+    {
+      "deliveryNumber": 12403633,
+      "status": "WRK",
+      "type": "LIVE",
+      "arrivalTime": "2023-07-16T23:30:34.754Z",
+      "scheduledTime": "2023-07-16T22:45:00.000Z",
+      "trailerId": "TL12403633",
+      "receivedQty": 0,
+      "doorNumber": "1112",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 3,
+      "vendor": [
+        {
+          "name": "S&Testseller2"
+        }
+      ],
+      "daConPercentage": 0.0,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "SVCe2et",
+          "time": "2023-07-16T23:30:49.339Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "SVCe2et",
+          "time": "2023-07-16T23:33:29.179Z"
+        }
+      ],
+      "additionalInformation": {
+        "totalFtsItems": "0",
+        "healthInfo": {}
+      },
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "11223344",
+      "channels": [
+        "WFS"
+      ],
+      "freightType": [
+        "WFS"
+      ],
+      "carrierScacCode": "PRIM"
+    },
+    {
+      "deliveryNumber": 21228793,
+      "status": "WRK",
+      "type": "LIVE",
+      "arrivalTime": "2023-07-16T23:11:47.055Z",
+      "scheduledTime": "2023-07-16T22:45:00.000Z",
+      "trailerId": "TL21228793",
+      "receivedQty": 0,
+      "doorNumber": "1111",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 6,
+      "vendor": [
+        {
+          "name": "S&Testseller2"
+        }
+      ],
+      "daConPercentage": 0.0,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "SVCe2et",
+          "time": "2023-07-16T23:12:01.835Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "SVCe2et",
+          "time": "2023-07-16T23:14:56.950Z"
+        }
+      ],
+      "additionalInformation": {
+        "totalFtsItems": 0
+      },
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "11223344",
+      "channels": [
+        "WFS"
+      ],
+      "freightType": [
+        "WFS"
+      ],
+      "carrierScacCode": "PRIM"
+    },
+    {
+      "deliveryNumber": 25919093,
+      "status": "WRK",
+      "type": "LIVE",
+      "arrivalTime": "2023-07-16T23:13:39.745Z",
+      "scheduledTime": "2023-07-16T22:45:00.000Z",
+      "trailerId": "TL25919093",
+      "receivedQty": 0,
+      "doorNumber": "1120",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 3,
+      "vendor": [
+        {
+          "name": "S&Testseller2"
+        }
+      ],
+      "daConPercentage": 0.0,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "SVCe2et",
+          "time": "2023-07-16T23:13:54.555Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "SVCe2et",
+          "time": "2023-07-16T23:16:42.068Z"
+        }
+      ],
+      "additionalInformation": {
+        "totalFtsItems": 0
+      },
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "11223344",
+      "channels": [
+        "WFS"
+      ],
+      "freightType": [
+        "WFS"
+      ],
+      "carrierScacCode": "PRIM"
+    },
+    {
+      "deliveryNumber": 30557239,
+      "status": "WRK",
+      "type": "LIVE",
+      "arrivalTime": "2023-07-16T23:29:23.456Z",
+      "scheduledTime": "2023-07-16T22:45:00.000Z",
+      "trailerId": "TL30557239",
+      "receivedQty": 0,
+      "doorNumber": "1109",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 4,
+      "vendor": [
+        {
+          "name": "S&Testseller2"
+        }
+      ],
+      "daConPercentage": 0.0,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "SVCe2et",
+          "time": "2023-07-16T23:29:38.105Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "SVCe2et",
+          "time": "2023-07-16T23:32:27.366Z"
+        }
+      ],
+      "additionalInformation": {
+        "totalFtsItems": 0
+      },
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "11223344",
+      "channels": [
+        "WFS"
+      ],
+      "freightType": [
+        "WFS"
+      ],
+      "carrierScacCode": "PRIM"
+    },
+    {
+      "deliveryNumber": 33181103,
+      "status": "WRK",
+      "type": "LIVE",
+      "arrivalTime": "2022-10-06T18:31:30.418Z",
+      "scheduledTime": "2022-10-06T22:45:00.000Z",
+      "trailerId": "TL33181103",
+      "receivedQty": 1,
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 500,
+      "vendor": [
+        {
+          "name": "WFS Vir Ventures"
+        }
+      ],
+      "daConPercentage": 0.0,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "j0k05oh",
+          "time": "2022-10-11T09:48:01.062Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "j0k05oh",
+          "time": "2023-03-16T15:26:42.418Z"
+        },
+        {
+          "type": "RECEIVING_COMPLETED",
+          "userId": "rcvscheduler",
+          "time": "2022-10-28T07:45:03.536Z"
+        },
+        {
+          "type": "UNLOADING_COMPLETED",
+          "userId": "rcvscheduler",
+          "time": "2022-10-11T11:50:02.483Z"
+        }
+      ],
+      "additionalInformation": {
+        "totalFtsItems": 0
+      },
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "11223344",
+      "channels": [
+        "WFS"
+      ],
+      "freightType": [
+        "WFS"
+      ],
+      "carrierScacCode": "WMT"
+    },
+    {
+      "deliveryNumber": 37609208,
+      "status": "WRK",
+      "type": "LIVE",
+      "arrivalTime": "2023-07-16T23:06:02.709Z",
+      "scheduledTime": "2023-07-16T22:45:00.000Z",
+      "trailerId": "TL37609208",
+      "receivedQty": 0,
+      "doorNumber": "1118",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 4,
+      "vendor": [
+        {
+          "name": "S&Testseller2"
+        }
+      ],
+      "daConPercentage": 0.0,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "SVCe2et",
+          "time": "2023-07-16T23:06:35.964Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "SVCe2et",
+          "time": "2023-07-16T23:09:34.802Z"
+        }
+      ],
+      "additionalInformation": {
+        "totalFtsItems": 0
+      },
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "11223344",
+      "channels": [
+        "WFS"
+      ],
+      "freightType": [
+        "WFS"
+      ],
+      "carrierScacCode": "PRIM"
+    },
+    {
+      "deliveryNumber": 38118559,
+      "status": "WRK",
+      "type": "LIVE",
+      "arrivalTime": "2023-07-16T23:06:03.393Z",
+      "scheduledTime": "2023-07-16T22:45:00.000Z",
+      "trailerId": "TL38118559",
+      "receivedQty": 0,
+      "doorNumber": "1107",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 4,
+      "vendor": [
+        {
+          "name": "S&Testseller2"
+        }
+      ],
+      "daConPercentage": 0.0,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "SVCe2et",
+          "time": "2023-07-16T23:06:35.962Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "SVCe2et",
+          "time": "2023-07-16T23:09:34.238Z"
+        }
+      ],
+      "additionalInformation": {
+        "totalFtsItems": 0
+      },
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "11223344",
+      "channels": [
+        "WFS"
+      ],
+      "freightType": [
+        "WFS"
+      ],
+      "carrierScacCode": "PRIM"
+    },
+    {
+      "deliveryNumber": 44200142,
+      "status": "WRK",
+      "type": "DROP",
+      "arrivalTime": "2022-11-17T06:09:33.192Z",
+      "scheduledTime": "2021-07-13T05:00:00.000Z",
+      "trailerId": "101058",
+      "receivedQty": 0,
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 106,
+      "vendor": [
+        {
+          "number": 12344,
+          "name": "V11"
+        }
+      ],
+      "daConPercentage": 0.0,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "i0a02l3",
+          "time": "2023-05-10T15:19:35.424Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "i0a02l3",
+          "time": "2023-06-15T09:34:59.749Z"
+        },
+        {
+          "type": "RECEIVING_COMPLETED",
+          "userId": "rcvscheduler",
+          "time": "2023-05-25T00:45:08.287Z"
+        },
+        {
+          "type": "UNLOADING_COMPLETED",
+          "userId": "rcvscheduler",
+          "time": "2023-05-25T00:45:08.287Z"
+        }
+      ],
+      "additionalInformation": {
+        "totalFtsItems": 0
+      },
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "63149288",
+      "channels": [
+        "CROSSU"
+      ],
+      "freightType": [
+        "DA"
+      ],
+      "carrierScacCode": "WM"
+    },
+    {
+      "deliveryNumber": 47166822,
+      "status": "WRK",
+      "type": "LIVE",
+      "arrivalTime": "2023-07-16T23:23:07.679Z",
+      "scheduledTime": "2023-07-16T22:45:00.000Z",
+      "trailerId": "TL47166822",
+      "receivedQty": 0,
+      "doorNumber": "1102",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 10,
+      "vendor": [
+        {
+          "name": "S&Testseller2"
+        }
+      ],
+      "daConPercentage": 0.0,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "SVCe2et",
+          "time": "2023-07-16T23:23:22.433Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "SVCe2et",
+          "time": "2023-07-16T23:26:20.780Z"
+        }
+      ],
+      "additionalInformation": {
+        "totalFtsItems": 0
+      },
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "11223344",
+      "channels": [
+        "WFS"
+      ],
+      "freightType": [
+        "WFS"
+      ],
+      "carrierScacCode": "PRIM"
+    },
+    {
+      "deliveryNumber": 52352259,
+      "status": "WRK",
+      "type": "DROP",
+      "arrivalTime": "2023-03-20T18:21:52.887Z",
+      "scheduledTime": "2022-11-15T05:00:00.000Z",
+      "trailerId": "676879",
+      "receivedQty": 0,
+      "doorNumber": "",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 106,
+      "vendor": [
+        {
+          "number": 12344,
+          "name": "V11"
+        }
+      ],
+      "daConPercentage": 0.0,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "a0s0xp4",
+          "time": "2023-03-20T18:23:20.827Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "userId",
+          "time": "2023-03-21T13:54:28.468Z"
+        }
+      ],
+      "additionalInformation": {
+        "totalFtsItems": 0
+      },
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "63149288",
+      "channels": [
+        "WFS"
+      ],
+      "freightType": [
+        "WFS"
+      ],
+      "carrierScacCode": "W-6836"
+    },
+    {
+      "deliveryNumber": 6054548,
+      "status": "OPN",
+      "type": "LIVE",
+      "arrivalTime": "2022-05-23T16:06:35.949Z",
+      "scheduledTime": "2022-03-16T20:00:00.000Z",
+      "trailerId": "",
+      "receivedQty": 0,
+      "doorNumber": "132",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 4,
+      "palletQty": 0,
+      "expectedPalletQty": 0,
+      "vendor": [
+        {
+          "name": "stage testSeller 2"
+        }
+      ],
+      "daConPercentage": 0.0,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "j0k05oh",
+          "time": "2022-06-03T08:45:46.966Z"
+        }
+      ],
+      "additionalInformation": {
+        "totalFtsItems": 0
+      },
+      "statusReasonCode": [
+        "DOOR_OPEN"
+      ],
+      "loadNumber": "0",
+      "channels": [
+        "WFS"
+      ],
+      "freightType": [
+        "WFS"
+      ],
+      "carrierScacCode": "WM"
+    },
+    {
+      "deliveryNumber": 11414367,
+      "status": "OPN",
+      "type": "LIVE",
+      "arrivalTime": "2022-06-22T05:18:12.237Z",
+      "scheduledTime": "2022-06-22T22:45:00.000Z",
+      "trailerId": "TL11414367",
+      "receivedQty": 0,
+      "doorNumber": "",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 1,
+      "palletQty": 0,
+      "expectedPalletQty": 0,
+      "vendor": [
+        {
+          "name": "stage testSeller 2"
+        }
+      ],
+      "daConPercentage": 0.0,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "SVC_E2E_AUTO",
+          "time": "2022-06-22T05:18:31.788Z"
+        }
+      ],
+      "additionalInformation": {
+        "totalFtsItems": 0
+      },
+      "statusReasonCode": [
+        "DELIVERY_REOPENED"
+      ],
+      "loadNumber": "11223344",
+      "channels": [
+        "WFS"
+      ],
+      "freightType": [
+        "WFS"
+      ],
+      "carrierScacCode": "PRIM"
+    }
+  ],
+  "page": {
+    "size": 10,
+    "number": 0,
+    "numberOfElements": 10,
+    "totalElements": 22,
+    "totalPages": 3
+  }
+}

@@ -1,0 +1,1187 @@
+{
+  "eventType": "rcv_osdr",
+  "auditPending": false,
+  "summary": [
+    {
+      "purchaseReferenceNumber": "6805687930",
+      "rcvdQty": 9051,
+      "orderFilledQty": 9051,
+      "rcvdPackCount": 356,
+      "rcvdQtyUom": "ZA",
+      "cutOverType": "Non-Atlas",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 29,
+          "orderFilledQty": 29,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 2,
+          "rcvdQty": 147,
+          "orderFilledQty": 147,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 3,
+          "rcvdQty": 40,
+          "orderFilledQty": 40,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 4,
+          "rcvdQty": 125,
+          "orderFilledQty": 125,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 5,
+          "rcvdQty": 189,
+          "orderFilledQty": 189,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 6,
+          "rcvdQty": 141,
+          "orderFilledQty": 141,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 7,
+          "rcvdQty": 339,
+          "orderFilledQty": 339,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 8,
+          "rcvdQty": 164,
+          "orderFilledQty": 164,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 9,
+          "rcvdQty": 211,
+          "orderFilledQty": 211,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 10,
+          "rcvdQty": 239,
+          "orderFilledQty": 239,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 11,
+          "rcvdQty": 128,
+          "orderFilledQty": 128,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 12,
+          "rcvdQty": 326,
+          "orderFilledQty": 326,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 13,
+          "rcvdQty": 207,
+          "orderFilledQty": 207,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 14,
+          "rcvdQty": 195,
+          "orderFilledQty": 195,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 15,
+          "rcvdQty": 117,
+          "orderFilledQty": 117,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 16,
+          "rcvdQty": 63,
+          "orderFilledQty": 63,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 17,
+          "rcvdQty": 43,
+          "orderFilledQty": 43,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 18,
+          "rcvdQty": 24,
+          "orderFilledQty": 24,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 19,
+          "rcvdQty": 51,
+          "orderFilledQty": 51,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 20,
+          "rcvdQty": 151,
+          "orderFilledQty": 151,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 21,
+          "rcvdQty": 40,
+          "orderFilledQty": 40,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 22,
+          "rcvdQty": 13,
+          "orderFilledQty": 13,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 23,
+          "rcvdQty": 145,
+          "orderFilledQty": 145,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 24,
+          "rcvdQty": 138,
+          "orderFilledQty": 138,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 25,
+          "rcvdQty": 63,
+          "orderFilledQty": 63,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 26,
+          "rcvdQty": 186,
+          "orderFilledQty": 186,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 27,
+          "rcvdQty": 115,
+          "orderFilledQty": 115,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 28,
+          "rcvdQty": 227,
+          "orderFilledQty": 227,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 29,
+          "rcvdQty": 12,
+          "orderFilledQty": 12,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 30,
+          "rcvdQty": 14,
+          "orderFilledQty": 14,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 31,
+          "rcvdQty": 37,
+          "orderFilledQty": 37,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 32,
+          "rcvdQty": 34,
+          "orderFilledQty": 34,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 33,
+          "rcvdQty": 68,
+          "orderFilledQty": 68,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 34,
+          "rcvdQty": 34,
+          "orderFilledQty": 34,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 35,
+          "rcvdQty": 22,
+          "orderFilledQty": 22,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 36,
+          "rcvdQty": 140,
+          "orderFilledQty": 140,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 37,
+          "rcvdQty": 29,
+          "orderFilledQty": 29,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 38,
+          "rcvdQty": 28,
+          "orderFilledQty": 28,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 39,
+          "rcvdQty": 5,
+          "orderFilledQty": 5,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 40,
+          "rcvdQty": 53,
+          "orderFilledQty": 53,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 41,
+          "rcvdQty": 8,
+          "orderFilledQty": 8,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 42,
+          "rcvdQty": 202,
+          "orderFilledQty": 202,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 43,
+          "rcvdQty": 74,
+          "orderFilledQty": 74,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 44,
+          "rcvdQty": 7,
+          "orderFilledQty": 7,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 45,
+          "rcvdQty": 78,
+          "orderFilledQty": 78,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 46,
+          "rcvdQty": 31,
+          "orderFilledQty": 31,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 47,
+          "rcvdQty": 2,
+          "orderFilledQty": 2,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 48,
+          "rcvdQty": 1,
+          "orderFilledQty": 1,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 49,
+          "rcvdQty": 3,
+          "orderFilledQty": 3,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 50,
+          "rcvdQty": 7,
+          "orderFilledQty": 7,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 51,
+          "rcvdQty": 6,
+          "orderFilledQty": 6,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 52,
+          "rcvdQty": 6,
+          "orderFilledQty": 6,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 53,
+          "rcvdQty": 2,
+          "orderFilledQty": 2,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 55,
+          "rcvdQty": 3,
+          "orderFilledQty": 3,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 56,
+          "rcvdQty": 5,
+          "orderFilledQty": 5,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 57,
+          "rcvdQty": 20,
+          "orderFilledQty": 20,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 58,
+          "rcvdQty": 4,
+          "orderFilledQty": 4,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 59,
+          "rcvdQty": 3,
+          "orderFilledQty": 3,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 60,
+          "rcvdQty": 7,
+          "orderFilledQty": 7,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 61,
+          "rcvdQty": 8,
+          "orderFilledQty": 8,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 62,
+          "rcvdQty": 20,
+          "orderFilledQty": 20,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 63,
+          "rcvdQty": 26,
+          "orderFilledQty": 26,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 64,
+          "rcvdQty": 3,
+          "orderFilledQty": 3,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 65,
+          "rcvdQty": 45,
+          "orderFilledQty": 45,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 66,
+          "rcvdQty": 75,
+          "orderFilledQty": 75,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 67,
+          "rcvdQty": 59,
+          "orderFilledQty": 59,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 68,
+          "rcvdQty": 23,
+          "orderFilledQty": 23,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 69,
+          "rcvdQty": 23,
+          "orderFilledQty": 23,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 70,
+          "rcvdQty": 74,
+          "orderFilledQty": 74,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 71,
+          "rcvdQty": 36,
+          "orderFilledQty": 36,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 72,
+          "rcvdQty": 14,
+          "orderFilledQty": 14,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 73,
+          "rcvdQty": 21,
+          "orderFilledQty": 21,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 74,
+          "rcvdQty": 9,
+          "orderFilledQty": 9,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 75,
+          "rcvdQty": 1,
+          "orderFilledQty": 1,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 76,
+          "rcvdQty": 1,
+          "orderFilledQty": 1,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 77,
+          "rcvdQty": 19,
+          "orderFilledQty": 19,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 78,
+          "rcvdQty": 6,
+          "orderFilledQty": 6,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 79,
+          "rcvdQty": 101,
+          "orderFilledQty": 101,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 80,
+          "rcvdQty": 7,
+          "orderFilledQty": 7,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 81,
+          "rcvdQty": 8,
+          "orderFilledQty": 8,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 82,
+          "rcvdQty": 69,
+          "orderFilledQty": 69,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 83,
+          "rcvdQty": 36,
+          "orderFilledQty": 36,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 84,
+          "rcvdQty": 299,
+          "orderFilledQty": 299,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 85,
+          "rcvdQty": 35,
+          "orderFilledQty": 35,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 86,
+          "rcvdQty": 27,
+          "orderFilledQty": 27,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 87,
+          "rcvdQty": 2,
+          "orderFilledQty": 2,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 88,
+          "rcvdQty": 17,
+          "orderFilledQty": 17,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 89,
+          "rcvdQty": 34,
+          "orderFilledQty": 34,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 90,
+          "rcvdQty": 15,
+          "orderFilledQty": 15,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 91,
+          "rcvdQty": 117,
+          "orderFilledQty": 117,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 92,
+          "rcvdQty": 133,
+          "orderFilledQty": 133,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 93,
+          "rcvdQty": 199,
+          "orderFilledQty": 199,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 94,
+          "rcvdQty": 15,
+          "orderFilledQty": 15,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 95,
+          "rcvdQty": 135,
+          "orderFilledQty": 135,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 96,
+          "rcvdQty": 20,
+          "orderFilledQty": 20,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 97,
+          "rcvdQty": 3,
+          "orderFilledQty": 3,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 98,
+          "rcvdQty": 71,
+          "orderFilledQty": 71,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 99,
+          "rcvdQty": 41,
+          "orderFilledQty": 41,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 100,
+          "rcvdQty": 186,
+          "orderFilledQty": 186,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 101,
+          "rcvdQty": 36,
+          "orderFilledQty": 36,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 102,
+          "rcvdQty": 148,
+          "orderFilledQty": 148,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 103,
+          "rcvdQty": 252,
+          "orderFilledQty": 252,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 104,
+          "rcvdQty": 125,
+          "orderFilledQty": 125,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 105,
+          "rcvdQty": 26,
+          "orderFilledQty": 26,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 106,
+          "rcvdQty": 242,
+          "orderFilledQty": 242,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 107,
+          "rcvdQty": 14,
+          "orderFilledQty": 14,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 108,
+          "rcvdQty": 27,
+          "orderFilledQty": 27,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 109,
+          "rcvdQty": 358,
+          "orderFilledQty": 358,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 110,
+          "rcvdQty": 40,
+          "orderFilledQty": 40,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 111,
+          "rcvdQty": 93,
+          "orderFilledQty": 93,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 112,
+          "rcvdQty": 44,
+          "orderFilledQty": 44,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 113,
+          "rcvdQty": 164,
+          "orderFilledQty": 164,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 114,
+          "rcvdQty": 35,
+          "orderFilledQty": 35,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 115,
+          "rcvdQty": 7,
+          "orderFilledQty": 7,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 116,
+          "rcvdQty": 71,
+          "orderFilledQty": 71,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 117,
+          "rcvdQty": 34,
+          "orderFilledQty": 34,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 118,
+          "rcvdQty": 26,
+          "orderFilledQty": 26,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 119,
+          "rcvdQty": 30,
+          "orderFilledQty": 30,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 120,
+          "rcvdQty": 40,
+          "orderFilledQty": 40,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 121,
+          "rcvdQty": 2,
+          "orderFilledQty": 2,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 122,
+          "rcvdQty": 105,
+          "orderFilledQty": 105,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 123,
+          "rcvdQty": 30,
+          "orderFilledQty": 30,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 124,
+          "rcvdQty": 7,
+          "orderFilledQty": 7,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 125,
+          "rcvdQty": 47,
+          "orderFilledQty": 47,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 126,
+          "rcvdQty": 5,
+          "orderFilledQty": 5,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 127,
+          "rcvdQty": 61,
+          "orderFilledQty": 61,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 128,
+          "rcvdQty": 14,
+          "orderFilledQty": 14,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 129,
+          "rcvdQty": 22,
+          "orderFilledQty": 22,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 130,
+          "rcvdQty": 37,
+          "orderFilledQty": 37,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 131,
+          "rcvdQty": 36,
+          "orderFilledQty": 36,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 132,
+          "rcvdQty": 39,
+          "orderFilledQty": 39,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "9256031451",
+      "rcvdQty": 2229,
+      "orderFilledQty": 2229,
+      "rcvdPackCount": 272,
+      "rcvdQtyUom": "ZA",
+      "cutOverType": "Non-Atlas",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 144,
+          "orderFilledQty": 144,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 2,
+          "rcvdQty": 58,
+          "orderFilledQty": 58,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 3,
+          "rcvdQty": 110,
+          "orderFilledQty": 110,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 4,
+          "rcvdQty": 105,
+          "orderFilledQty": 105,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 5,
+          "rcvdQty": 106,
+          "orderFilledQty": 106,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 6,
+          "rcvdQty": 14,
+          "orderFilledQty": 14,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 7,
+          "rcvdQty": 178,
+          "orderFilledQty": 178,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 8,
+          "rcvdQty": 115,
+          "orderFilledQty": 115,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 9,
+          "rcvdQty": 1,
+          "orderFilledQty": 1,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 10,
+          "rcvdQty": 8,
+          "orderFilledQty": 8,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 11,
+          "rcvdQty": 135,
+          "orderFilledQty": 135,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 12,
+          "rcvdQty": 40,
+          "orderFilledQty": 40,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 13,
+          "rcvdQty": 5,
+          "orderFilledQty": 5,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 14,
+          "rcvdQty": 10,
+          "orderFilledQty": 10,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 15,
+          "rcvdQty": 9,
+          "orderFilledQty": 9,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 16,
+          "rcvdQty": 62,
+          "orderFilledQty": 62,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 17,
+          "rcvdQty": 17,
+          "orderFilledQty": 17,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 18,
+          "rcvdQty": 5,
+          "orderFilledQty": 5,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 19,
+          "rcvdQty": 69,
+          "orderFilledQty": 69,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 20,
+          "rcvdQty": 2,
+          "orderFilledQty": 2,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 21,
+          "rcvdQty": 81,
+          "orderFilledQty": 81,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 22,
+          "rcvdQty": 246,
+          "orderFilledQty": 246,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 23,
+          "rcvdQty": 20,
+          "orderFilledQty": 20,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 24,
+          "rcvdQty": 168,
+          "orderFilledQty": 168,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 25,
+          "rcvdQty": 89,
+          "orderFilledQty": 89,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 26,
+          "rcvdQty": 16,
+          "orderFilledQty": 16,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 27,
+          "rcvdQty": 9,
+          "orderFilledQty": 9,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 28,
+          "rcvdQty": 9,
+          "orderFilledQty": 9,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 29,
+          "rcvdQty": 1,
+          "orderFilledQty": 1,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 30,
+          "rcvdQty": 78,
+          "orderFilledQty": 78,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 31,
+          "rcvdQty": 30,
+          "orderFilledQty": 30,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 32,
+          "rcvdQty": 3,
+          "orderFilledQty": 3,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 33,
+          "rcvdQty": 200,
+          "orderFilledQty": 200,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        },
+        {
+          "lineNumber": 34,
+          "rcvdQty": 86,
+          "orderFilledQty": 86,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": false
+        }
+      ]
+    }
+  ],
+  "deliveryNumber": 33615697,
+  "userId": "RCV_Default",
+  "ts": "Dec 22, 2022 12:25:50 PM",
+  "openDockTags": {
+    "count": 0
+  }
+}

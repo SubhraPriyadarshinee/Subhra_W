@@ -1,0 +1,13 @@
+{
+  "itemNumber": 566051127,
+  "activeDeliveries": [
+    {
+      "url": "https://test.com",
+      "deliveryStatus": "ARV",
+      "deliveryNumber": 94769060
+    }
+  ],
+  "eventType": "DUMMY_EVENT",
+  "from": "123",
+  "to": "456"
+}

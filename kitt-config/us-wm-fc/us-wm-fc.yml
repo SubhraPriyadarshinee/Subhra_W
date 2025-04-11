@@ -1,0 +1,155 @@
+profiles:
+  - git://Logistics:uwms-receiving:main:kitt-common-deploy
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-fc/stages/dev-us-wm-fc
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-fc/stages/qa-us-wm-fc
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-fc/stages/stg-us-wm-fc
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-fc/stages/perf-us-wm-fc
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-fc/stages/prod-cell010
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-fc/stages/prod-cell003
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-fc/stages/prod-cell028
+  - git://Logistics:atlas-kitt-assets:main:deploy/us/wm/fc/fc-deploy-v1
+
+notify:
+  slack:
+    channelName: atlas-rcv-us-fc-build
+alerts:
+  email:
+    - end-game-dev@wal-mart.com
+  slackChannel:
+    - atlas-rcv-us-fc-build
+
+setup:
+  releaseRefs: ["main", "us-wm-fc/manual/release/.*"]
+
+build:
+  artifact: uwms-receiving-fc
+
+deploy:
+  preDeploy:
+    - task:
+        name: messageSlack
+        text: Beginning liquibase execution on {{$.kittExec.currentStage.name}}
+    - concord:
+        name: Liquibase-Execution
+        action: start
+        org: Logistics
+        project: wcnp_liquibase
+        repo: wcnp_liquibase
+        entryPoint: default
+        enabled: true
+        sync: true
+        executionScope: stage
+        arguments:
+          version: "{{$.kitt.build.version}}"
+          artifactId: "{{$.kitt.build.artifact}}"
+          targetEnv: "{{$.kittExec.currentStage.name}}"
+          gitBranch: "{{$.kitt.build.commitEvent.commitId}}"
+          repoName: "uwms-receiving"
+    - task:
+        name: messageSlack
+        text: Liquibase execution successful
+  namespace: fc-atlas-receiving-api
+  skip: false
+  changeRecord:
+    create: true
+    affectedGEOs: ["US"]
+    group: "LOG - GLS NextGen"
+    notifyChannels: ["atlas-rcv-us-fc-build"]
+    managerGroup: "Change Managers - GEC"
+  gslb:
+    lbRoutings:
+      dev-cell000:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-fc-dev-cell000.walmart.com
+        matchStages: [ dev-us-fc ]
+      qa-cell000:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-fc-qa-cell000.walmart.com
+        matchStages: [ qa-us-fc ]
+      stg-cell000:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-fc-stg-int-cell000.walmart.com
+        matchStages: [ stg-us-fc ]
+      perf-cell000:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-fc-perf-cell000.walmart.com
+        matchStages: [ perf-us-fc ]
+      prod-cell010:
+        cnames:
+          - gls-atlas-uwms-receiving-prod-cell010.walmart.com
+          - gls-atlas-uwms-receiving-prod-cell010-dummy.walmart.com
+          - gls-atlas-uwms-receiving-prod-cell010.multi-market.walmart.com
+        matchStages: [ prod-cell010 ]
+      prod-cell003:
+        cnames:
+          - gls-atlas-uwms-receiving-prod-cell003-dummy.walmart.com
+          - gls-atlas-uwms-receiving-prod-cell003.walmart.com
+        matchStages: [ prod-cell003 ]
+      prod-cell028:
+        cnames:
+          - gls-atlas-uwms-receiving-prod-cell028.walmart.com
+        matchStages: [ prod-cell028 ]
+  stages:
+    - name: dev-us-fc
+      flows: [ release ]
+      refs: ["main", "us-wm-fc/manual/release/.*"]
+      target:
+        - cluster_id: [ uscentral-stage-wmt-003 ]
+      rollbackOnError: true
+    - name: qa-us-fc
+      flows: [ release ]
+      refs: ["main", "us-wm-fc/manual/release/.*"]
+      target:
+        - cluster_id: [ uscentral-stage-wmt-003 ]
+      rollbackOnError: true
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+    - name: stg-us-fc
+      flows: [ release ]
+      refs: ["main", "us-wm-fc/manual/release/.*"]
+      target:
+        - cluster_id: [ uscentral-stage-wmt-003 ]
+      rollbackOnError: true
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+    - name: perf-us-fc
+      flows: [ release ]
+      refs: ["main", "us-wm-fc/manual/release/.*"]
+      target:
+        - cluster_id: [ uscentral-stage-az-12, uswest-stage-az-002 ]
+      rollbackOnError: true
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+    - name: prod-cell010
+      refs: ["main", "us-wm-fc/manual/release/.*"]
+      target:
+        - cluster_id: [ useast-prod-az-019, uscentral-prod-az-032 ]
+      approvers:
+        groups:
+          - "Supply-Chain-Managers"
+          - "Tridents-SE"
+    - name: prod-cell003
+      refs: ["main", "us-wm-fc/manual/release/.*"]
+      target:
+        - cluster_id: [ uscentral-prod-az-032, uswest-prod-az-065 ]
+      approvers:
+        groups:
+          - "Supply-Chain-Managers"
+          - "Tridents-SE"
+    - name: prod-cell028
+      refs: ["main", "us-wm-fc/manual/release/.*"]
+      target:
+        - cluster_id: [ uswest-prod-az-065, uscentral-prod-az-032 ]
+      approvers:
+        groups:
+          - "Supply-Chain-Managers"
+          - "Tridents-SE"

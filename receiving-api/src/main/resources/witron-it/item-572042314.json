@@ -1,0 +1,16 @@
+{
+    "itemNumber" : "572042314",
+    "description" : "PD TERIYAKI CHKN ORD     ",
+    "deptNumber" : "80",
+    "vendorNbr" : 398412,
+    "gtin" : "3140008273",
+    "whpkQty" : 1,
+    "vnpkQty" : 1,
+    "ti" : 13,
+    "hi" : 7,
+    "vendorPackCost" : 3.09,
+    "whpkSell" : 3.09,
+    "vendorPackWeight" : 9.54,
+    "vendorPackCubeQty" : 0.38,
+    "poLine" : 22
+}

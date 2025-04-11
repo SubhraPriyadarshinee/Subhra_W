@@ -1,0 +1,145 @@
+{
+  "eventType": "rcv_osdr",
+  "deliveryNumber": 26442922,
+  "userId": "RCV_Default",
+  "ts": "2021-03-30T14:37:05.895Z",
+  "auditPending": false,
+  "summary": [
+    {
+      "purchaseReferenceNumber": "8292651023",
+      "rcvdQty": 24,
+      "orderFilledQty": 0,
+      "rcvdQtyUom": "ZA",
+      "cutOverType": "Atlas",
+      "lines": [
+        {
+          "lineNumber": 26,
+          "rcvdQty": 24,
+          "orderFilledQty": 0,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": true,
+          "isLessThanCaseRcvd": false
+        },
+        {
+          "lineNumber": 28,
+          "rcvdQty": 26,
+          "orderFilledQty": 0,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": true,
+          "isLessThanCaseRcvd": false
+        },
+        {
+          "lineNumber": 22,
+          "rcvdQty": 20,
+          "orderFilledQty": 0,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": true,
+          "isLessThanCaseRcvd": false
+        }
+      ],
+      "isLessThanCaseRcvd": false
+    },
+    {
+      "purchaseReferenceNumber": "8293884022",
+      "rcvdQty": 12,
+      "orderFilledQty": 0,
+      "rcvdQtyUom": "ZA",
+      "cutOverType": "Atlas",
+      "lines": [
+        {
+          "lineNumber": 25,
+          "rcvdQty": 12,
+          "orderFilledQty": 0,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": true,
+          "isLessThanCaseRcvd": false
+        },
+        {
+          "lineNumber": 23,
+          "rcvdQty": 16,
+          "orderFilledQty": 0,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": true,
+          "isLessThanCaseRcvd": false
+        },
+        {
+          "lineNumber": 21,
+          "rcvdQty": 14,
+          "orderFilledQty": 0,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": true,
+          "isLessThanCaseRcvd": false
+        }
+      ],
+      "isLessThanCaseRcvd": false
+    },
+    {
+      "purchaseReferenceNumber": "8297498021",
+      "rcvdQty": 2,
+      "orderFilledQty": 0,
+      "rcvdQtyUom": "ZA",
+      "cutOverType": "Atlas",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 2,
+          "orderFilledQty": 0,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": true,
+          "isLessThanCaseRcvd": true
+        },
+        {
+          "lineNumber": 2,
+          "rcvdQty": 4,
+          "orderFilledQty": 0,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": true,
+          "isLessThanCaseRcvd": true
+        },
+        {
+          "lineNumber": 3,
+          "rcvdQty": 6,
+          "orderFilledQty": 0,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": true,
+          "isLessThanCaseRcvd": true
+        }
+      ],
+      "isLessThanCaseRcvd": true
+    },
+    {
+      "purchaseReferenceNumber": "8297498021",
+      "rcvdQty": 30,
+      "orderFilledQty": 0,
+      "rcvdQtyUom": "ZA",
+      "cutOverType": "Atlas",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 40,
+          "orderFilledQty": 0,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": true,
+          "isLessThanCaseRcvd": true
+        },
+        {
+          "lineNumber": 2,
+          "rcvdQty": 50,
+          "orderFilledQty": 0,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": true,
+          "isLessThanCaseRcvd": true
+        },
+        {
+          "lineNumber": 3,
+          "rcvdQty": 60,
+          "orderFilledQty": 0,
+          "rcvdQtyUom": "ZA",
+          "isAtlasConvertedItem": true,
+          "isLessThanCaseRcvd": true
+        }
+      ],
+      "isLessThanCaseRcvd": true
+    }
+  ]
+}

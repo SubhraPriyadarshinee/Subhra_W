@@ -1,0 +1,44 @@
+{
+  "6938": {
+    "metricFetcher": "CloudMetricFeatureCC",
+    "emailformat": "atlasEmailFormat",
+    "timeZone": "US/Central",
+    "isItemCatalogEnabled": false
+  },
+  "6561": {
+    "metricFetcher": "OnPremMetricFetcherCC",
+    "emailFormat": "accEmailFormat",
+    "timeZone": "US/Pacific",
+    "isItemCatalogEnabled": true
+  },
+  "32987": {
+    "metricFetcher": "CloudMetricFeatureCC",
+    "emailformat": "atlasEmailFormat",
+    "timeZone": "US/Central",
+    "isItemCatalogEnabled": true
+  },
+  "32898": {
+    "metricFetcher": "CloudMetricFeatureCC",
+    "emailformat": "atlasEmailFormat",
+    "timeZone": "US/Central",
+    "isItemCatalogEnabled": true
+  },
+  "32899": {
+    "metricFetcher": "CloudMetricFeatureCC",
+    "emailformat": "atlasEmailFormat",
+    "timeZone": "US/Central",
+    "isItemCatalogEnabled": true
+  },
+  "32612": {
+    "metricFetcher": "CloudMetricFeatureCC",
+    "emailformat": "atlasEmailFormat",
+    "timeZone": "US/Central" ,
+    "isItemCatalogEnabled": false
+  },
+  "default":  {
+    "metricFetcher": "CloudMetricFeatureCC",
+    "emailformat": "atlasEmailFormat",
+    "timeZone": "US/Central",
+    "isItemCatalogEnabled": false
+  }
+}

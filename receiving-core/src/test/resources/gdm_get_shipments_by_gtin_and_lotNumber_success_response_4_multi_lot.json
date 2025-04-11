@@ -1,0 +1,216 @@
+{
+  "delivery": {
+    "deliveryNumber": 95334888,
+    "statusInformation": {
+      "operationalStatus": "OPN",
+      "statusReasonCode": [
+        "DOOR_OPEN"
+      ],
+      "status": "OPN"
+    }
+  },
+  "shipments": [
+    {
+      "documentId": "45580011_20191106_719468_VENDOR_US",
+      "shipmentNumber": "45580011",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2019-11-06T19:02:43.774Z",
+      "shipmentDate": "2019-11-06",
+      "source": {
+        "globalLocationNumber": "0069382035222",
+        "number": "6938",
+        "numberType": "WALMART",
+        "type": "MCC",
+        "countryCode": "US",
+        "shipperId": "492918",
+        "shipperName": "Walmart"
+      },
+      "destination": {
+        "globalLocationNumber": "0078742035222",
+        "type": "DC",
+        "number": 6094,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "trailerNumber": "T127265756094",
+        "trailerSealNumber": "SL8132816",
+        "billOfLadingNumber": "6938-91255150",
+        "loadNumber": "91255150",
+        "reportedDeliveryNumber": 95334888,
+        "shippingDate": "2019-01-08",
+        "freightPayment": "PP",
+        "carrierId": "WM",
+        "carrierTrackingId": "WM"
+      }
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poNumber": "8458709083",
+      "freightBillQty": 106,
+      "baseDivisionCode": "WM",
+      "poType": "20",
+      "purchaseCompanyId": 1,
+      "poStatus": "ACTV",
+      "financialGroupCode": "US",
+      "vendorInformation": {
+        "name": "V11",
+        "number": 12344,
+        "department": 38
+      },
+      "poDates": {
+        "cancel": "2019-02-20",
+        "ordered": "2019-02-19",
+        "mabd": "2019-02-22",
+        "ship": "2019-02-21"
+      },
+      "poDcNumber": 32898,
+      "lines": [
+        {
+          "poLineNumber": 1,
+          "channel": "CROSSU",
+          "whpkQty": 5,
+          "whpkSell": 8.22,
+          "vnpkQty": 15,
+          "vnpkCost": 6.6,
+          "vnpkWeightQty": 14.84,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.432,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "poLineStatus": "RECEIVED",
+          "orderedQty": 2.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "10368645556540",
+            "orderableGTIN": "10368645556540",
+            "supplierStockId": "2222",
+            "palletTi": 0,
+            "palletHi": 0,
+            "hazmat": false,
+            "conveyable": true,
+            "vendorDepartment": "1",
+            "isNewItem": false,
+            "itemAdditonalInformation": {
+              "isDscsaExemptionInd": false
+            },
+            "descriptions": [
+              "AK RAISINETS",
+              "AK RAISINETS"
+            ],
+            "number": 563045609
+          }
+        }
+      ]
+    }
+  ],
+  "packs": [
+    {
+      "packNumber": "00909899000020014355",
+      "palletNumber": "00100700302232310006",
+      "invoice": {
+        "invoiceNumber": "90999000132"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6094,
+        "countryCode": "US"
+      },
+      "channelMethod": "CROSSNA",
+      "legacyDetail": {
+        "packType": "UNKNOWN"
+      },
+      "shipmentNumber": "45580011",
+      "items": [
+        {
+          "reportedProductId": "563045609",
+          "reportedProductIdType": "IN",
+          "reportedCaseProductId": "561298341",
+          "reportedCaseProductIdType": "IN",
+          "itemNumber": 563045609,
+          "gtin": "10368645556540",
+          "warehouseCaseGtin": "10368645556540",
+          "vendorCaseGtin": "20029695410987",
+          "vendorId": "492918",
+          "itemDescription": "TOYS",
+          "itemDepartment": "8",
+          "itemDivision": "108",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "documentSequenceNumber": 1,
+          "purchaseOrder": {
+            "orderNumber": "f843847e-b083-4f1e-9c51-261bc3053b2b",
+            "poDate": "2019-01-08",
+            "poLineNumber": 1,
+            "poNumber": "8458709083",
+            "poType": "IMPORT_ASSEMBLY",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 1
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 15.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 15.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 2,
+            "vendorCaseQuantity": 2
+          },
+          "upc": "90929695410987",
+          "nationalDrugCodeN2": "43547-282-11",
+          "nationalDrugCodeN4": "43547-0282-11",
+          "aggregatedItemQty": 2,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "01L032C09B",
+              "expirationDate": "2025-01-08"
+            },
+            {
+              "lotNumber": "01L032C09A",
+              "expirationDate": "2025-01-08"
+            }
+          ],
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "42806071401",
+              "reportedProductIdType": "N4"
+            },
+            {
+              "reportedProductId": "578752249",
+              "reportedProductIdType": "IN"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "00342806714010",
+              "uom": "EA"
+            },
+            {
+              "gtin": "10342806714017",
+              "uom": "PK"
+            },
+            {
+              "gtin": "20342806714014",
+              "uom": "CA"
+            }
+          ],
+          "nationalDrugCode": "42806071401",
+          "nationalDrugCodeType": "N4",
+          "financialDetail": {
+            "reportedCost": 34.69,
+            "reportedCostCurrency": "USD",
+            "financialReportingCountry": "US",
+            "legacyFinancialDetail": {
+              "quantity": 36.0,
+              "uom": "EA"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

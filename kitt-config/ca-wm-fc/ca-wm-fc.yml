@@ -1,0 +1,460 @@
+profiles:
+#  - git://Logistics:uwms-receiving:main:kitt-common-deploy
+  - git://Logistics:uwms-receiving:main:kitt-config/ca-wm-fc/stages/dev-cell230
+  - git://Logistics:uwms-receiving:main:kitt-config/ca-wm-fc/stages/qa-cell230
+  - git://Logistics:uwms-receiving:main:kitt-config/ca-wm-fc/stages/stg-cell230
+  - git://Logistics:uwms-receiving:main:kitt-config/ca-wm-fc/stages/prod-cell230
+  - goldensignal-strati
+
+notify:
+  slack:
+    channelName: ca-wm-fc-deployments
+  msTeams:
+    channelId: "19%3Aaa118451bb164812959141e99e8cb957%40thread.tacv2"
+
+alerts:
+  email:
+    - INTL_UF_ATLAS_FC@email.wal-mart.com
+  slackChannel:
+    - ca-wm-fc-alerts
+
+setup:
+  releaseRefs: ["intl-fc/release/.*", "intl-fc/feature/.*"]
+
+build:
+  artifact: uwms-receiving-ca-fc
+
+deploy:
+  tenantSite: CAGM
+  namespace: atlas-receiving-ca-fc
+  skip: false
+  preDeploy:
+    - task:
+        name: messageSlack
+        text: Beginning liquibase execution on {{$.kittExec.currentStage.name}}
+    - concord:
+        name: Liquibase-Execution
+        action: start
+        org: Logistics
+        project: wcnp_liquibase
+        repo: wcnp_liquibase
+        entryPoint: default
+        sync: true
+        executionScope: stage
+        arguments:
+          version: "{{$.kitt.build.version}}"
+          artifactId: "{{$.kitt.build.artifact}}"
+          targetEnv: "{{$.kittExec.currentStage.name}}"
+          gitBranch: "{{$.kitt.build.commitEvent.commitId}}"
+          repoName: "uwms-receiving"
+    - task:
+        name: messageSlack
+        text: Liquibase execution successful
+  releaseType:
+    strategy: normal
+    deployTimeout: 1200
+    waitForReady: true
+    rollbackOnError: true
+  changeRecord:
+    create: true
+    affectedGEOs: ["CA"]
+    group: "GLS International"
+    notifyChannels: ["ca-wm-fc-deployments"]
+    managerGroup: "Change Managers - GEC"
+  gslb:
+    httpsPortEnabled: true
+    healthCheckDefaults:
+      expectedStatus: 200
+      timeout: 5
+      retryDelay: 5
+      probeInterval: 20
+      failureThreshold: 2
+    strategy: stage
+    enabled: true
+    lbRoutings:
+      dev-cell230:
+        cnames:
+          - gls-atlas-receiving-cawmfc-cell230-dev.walmart.com
+          - gls-atlas-receiving-cawmfc-dev.walmart.com
+        matchStages: [ dev-cell230 ]
+
+      qa-cell230:
+        cnames:
+          - gls-atlas-receiving-cawmfc-cell230-qa.walmart.com
+          - gls-atlas-receiving-cawmfc-qa.walmart.com
+        matchStages: [ qa-cell230 ]
+
+      stg-cell230:
+        cnames:
+          - gls-atlas-receiving-cawmfc-cell230-stg.walmart.com
+          - gls-atlas-receiving-cawmfc-stg.walmart.com
+        matchStages: [ stg-cell230 ]
+
+      prod-cell230:
+        cnames:
+          - gls-atlas-receiving-cawmfc-cell230-prod.walmart.com
+          - gls-atlas-receiving-cawmfc-prod.walmart.com
+        matchStages: [ prod-cell230 ]
+
+
+  helm:
+    values:
+      metadata:
+        labels:
+          strati.appkey: ATLASRECEIVING
+          strati.env: dev-cell230
+          wm.app: ATLASRECEIVING
+          wm.env: dev-cell230
+        annotations:
+          strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"}, {"Path":"^/.*"}]'
+          sidecar.istio.io/inject: "true"
+          traffic.sidecar.istio.io/excludeOutboundPorts: 8300
+      secrets:
+        akeyless: true
+        config:
+          akeyless:
+            path: /Prod/WCNP/homeoffice/INTL_ATLAS_CA_FC/uwms-receiving/{{$.kittExec.currentStage.name}}
+        files:
+          - destination: /receiving-secrets.properties
+            content: secrets.key
+          - destination: /gls-atlas-receiving.jks
+            content: truststore.key
+            base64decode: true
+          - destination: /signature.properties
+            content: servicemesh.config
+            base64decode: true
+      livenessProbe:
+        path: "/heartbeat"
+        wait: 300
+        periodSeconds: 10
+        successThreshold: 1
+        failureThreshold: 10
+      readinessProbe:
+        path: "/heartbeat"
+        wait: 240
+        periodSeconds: 10
+        successThreshold: 1
+        failureThreshold: 10
+      global:
+        metrics:
+          endpoints:
+            - targetPort: "8080,8300"
+              path: "/prometheus"
+            - targetPort: 7766
+              path: "/metrics"
+          remoteWriteSampleLimit: 250
+          whitelist:
+            - dcFinExceptionCount_total
+            - receiveContainersTimed_seconds
+            - quantityChangeTimed_seconds
+            - publishReceiveEventTimed_seconds
+            - Endgame_PrintAck_seconds
+            - Endgame_PrintAck_Exception_total
+            - Endgame_ScanAck_seconds
+            - Endgame_ScanAck_Exception_total
+            - Endgame_PreGen_seconds
+            - Endgame_PreGen_total
+            - SLT_Get_Divert_seconds
+            - SLT_Get_Divert_Exception_total
+            - GDM_Get_Delivery_seconds
+            - GDM_Get_Delivery_Exception_total
+            - Endgame_Channel_Flip_seconds
+            - Endgame_Channel_Flip_Exception_total
+            - Endgame_ScanUPC_seconds
+            - Endgame_ScanUPC_Exception_total
+            - HKW_TCL_Upload_seconds
+            - HKW_TCL_Upload_Exception_total
+            - Manual_TCL_Gen_seconds
+            - Manual_TCL_Gen_Exception_total
+            - Endgame_AuditFlip_seconds
+            - Endgame_AuditFlip_Exception_total
+            - kafkaListenerExceptionCount_total
+            - HKW_Divert_Upload_seconds
+            - heartBeatHitCount_total
+            - instructionRequestHitCount_total
+            - instructionRequestTimed_seconds
+            - OFrequestTimed_seconds
+            - idmCallTimed_seconds
+            - OFrequestCount_total
+            - completeInstructionTimed_seconds
+            - updateInstructionTimed_seconds
+            - completeDeliveryTimed_seconds
+            - instructionResponseSummaryTimed_seconds
+            - OFrequestExceptionCount_total
+            - noAllocationException_total
+            - completeInstructionExceptionCount_total
+            - instructionResponseSummaryExceptionCount_total
+            - backoutReceiptsExceptionCount_total
+            - instructionRequestExceptionCount_total
+            - instructionFromDBTimed_seconds
+            - updateInstructionExceptionCount_total
+            - receivedQtySummaryByPOForDeliveryTimed_seconds
+            - idmCallExceptionCount_total
+            - jmsPublishTimed_seconds
+            - completeDeliveryExceptionCount_total
+            - heartBeatTimed_seconds
+            - jmsPublishExceptionCount_total
+            - receivedQtySummaryByPOForDeliveryExceptionCount_total
+            - completeProblemTagExceptionCount_total
+            - uwms_Exception_alert_Reqs_total
+            - cancelInstructionTimed_seconds
+            - heartBeatExceptionCount_total
+            - completeProblemTagTimed_seconds
+            - receivedQtySummaryByPOForDeliveryHitCount_total
+            - cancelContainersTimed_seconds
+            - cancelInstructionExceptionCount_total
+            - cancelContainersExceptionCount_total
+            - getProblemTagDetailsTimed_seconds
+            - transferInstructionHitCount_total
+            - getProblemTagDetailsExceptionCount_total
+            - reOpenDeliveryExceptionCount_total
+            - jmsListenerExceptionCount_total
+            - reOpenDeliveryTimed_seconds
+            - transferInstructionExceptionCount_total
+            - idmCallByAsnTimed_seconds
+            - transferInstructionTimed_seconds
+            - idmCallByAsnExceptionCount_total
+            - preLabelGenTimed_seconds
+            - ReceiveByLpnTimed_seconds
+            - preLabelGenExceptionCount_total
+            - ReceiveByLpnExceptionCount_total
+            - plgSchedulerExceptionCount_total
+            - plgSchedulerTimed_seconds
+            - userLocAPIExceptionCount_total
+            - userLocAPITimed_seconds
+            - aclNotificationExceptionCount_total
+            - receiveDockTagExceptionCount_total
+            - completeDockTagExceptionCount_total
+            - floorLineSummaryExceptionCount_total
+            - exceptionLabelAPIExceptionCount_total
+            - aclNotificationHistoryExceptionCount_total
+            - aclNotificationHistoryHitCount_total
+            - fetchLabelsFromACLExceptionCount_total
+            - updateVendorUpcExceptionCount_total
+            - OFRetryRequestTimed_seconds
+            - OFRetryRequestExceptionCount_total
+            - getDeliveryDetailsExceptionCount_total
+            - getDoorInfoExceptionCount_total
+            - retrieveLPNExceptionCount_total
+            - retrieveLPNTimed_seconds
+            - findDeliveryDocumentExceptionCount_total
+            - findDeliveryDocumentTimed_seconds
+            - sendSumoNotificationExceptionCount_total
+            - rcTrackItemTimed_seconds
+            - rcTrackItemExceptionCount_total
+            - rcTrackPackageTimed_seconds
+            - rcTrackPackageExceptionCount_total
+            - rcReceiveContainerTimed_seconds
+            - rcReceiveContainerExceptionCount_total
+            - rcGetContainerByGtinTimed_seconds
+            - rcGetContainerByGtinExceptionCount_total
+            - processShipmentTimed_seconds
+            - processShipmentExceptionCount_total
+            - receivePalletTimed_seconds
+            - receivePalletCount_total
+            - putAwayTimed_seconds
+            - receivePalletExceptionCount_total
+            - putAwayExceptionCount_total
+            - mapLPNTimed_seconds
+            - putAwayCTTimed_seconds
+            - mapLPNExceptionCount_total
+            - putAwayCTExceptionCount_total
+            - getCTStatusTimed_seconds
+            - getCTStatusExceptionCount_total
+            - getAllItemsTimed_seconds
+            - getAllItemsExceptionCount_total
+            - acquireSlotTimes_seconds
+            - updateVendorUPCTimed_seconds
+            - linkDeliveryAndShipmentByGtinAndLotNumberTimed_seconds
+            - findDeliveryDocumentByGtinAndLotNumberWithShipmentLinkingTimed_seconds
+            - findDeliveryDocumentBySSCCWithShipmentLinkingTimed_seconds
+            - findDeliveryDocumentBySSCCWithShipmentLinkinExceptionCount_total
+            - findDeliveryDocumentByGtinAndLotNumberWithShipmentLinkingExceptionCount_total
+            - getDeliveryTimed_seconds
+            - updateQuantityByTrackingIdTimed_seconds
+            - receiveContainersExceptionCount_total
+            - quantityChangeExceptionCount_total
+            - publishReceiveEventExceptionCounted_total
+            - palletsOffHoldTimed_seconds
+            - verifySerializedDataTimed_seconds
+            - verifySerializedDataExceptionCounted_total
+            - acquireSlotExceptionCount_total
+            - searchShipmentTimed_seconds
+            - searchShipmentExceptionCount_total
+            - searchShipmentsByDeliveryAndGtinAndLotNumberFromGdmTimed_seconds
+            - searchShipmentsByDeliveryAndGtinAndLotNumberFromGdmExceptionCount_total
+            - linkDeliveryAndShipmentByGtinAndLotNumberExceptionCount_total
+            - getShipmentsByGtinAndLotNumberFromGdmTimed_seconds
+            - getShipmentsByGtinAndLotNumberFromGdmExceptionCount_total
+            - findDeliveryDocumentsByGtinAndLotNumberTimed_seconds
+            - findDeliveryDocumentsByGtinAndLotNumberExceptionCount_total
+            - linkDeliveryWithShipmentTimed_seconds
+            - linkDeliveryWithShipmentExceptionCount_total
+            - getContainerSsccDetailsTimed_seconds
+            - getContainerSsccDetailsExceptionCount_total
+            - findDeliveryDocumentBySSCCWithLatestShipmentLinking_seconds
+            - findDeliveryDocumentBySSCCWithLatestShipmentLinkingExceptionCount_total
+            - RdcItemCatalogAPIExceptionCount_total
+            - createRdcDockTagTimed_seconds
+            - createRdcDockTagExceptionCount_total
+            - receiveRdcDockTagTimed_seconds
+            - receiveRdcDockTagExceptionCount_total
+            - rdcCompleteDockTagTimed_seconds
+            - rdcCompleteDockTagExceptionCount_total
+            - RdcItemCatalogAPITimed_seconds
+            - RdcPublishAPITimed_seconds
+            - RdcPublishAPIExceptionCount_total
+            - quantityReceivedTimed_seconds
+            - quantityReceivedExceptionCount_total
+            - getReceivedQtySummaryByPoTimed_seconds
+            - getReceivedQtySummaryByPoExceptionCount_total
+            - getReceivedQtySummaryByPoLineTimed_seconds
+            - getReceivedQtySummaryByPoLineExceptionCount_total
+            - itemDetailsTimed_seconds
+            - itemDetailsExceptionCount_total
+            - voidLPNTimed_seconds
+            - voidLPNExceptionCount_total
+            - notifyBackoutAdjustmentTimed_seconds
+            - notifyBackoutAdjustmentCount_total
+            - notifyReceivingCorrectionAdjustmentTimed_seconds
+            - notifyReceivingCorrectionAdjustmentCount_total
+            - getDeliveryByURITimed_seconds
+            - getDeliveryByURIExceptionCount_total
+            - updateVendorUpcInNGRTimed_seconds
+            - updateVendorUpcInNGRCount_total
+            - rdcRetrieveLPNTimed_seconds
+            - rdcRetrieveLPNExceptionCount_total
+            - receivePalletSlottingHitCount_total
+            - receivePalletSlottingTimed_seconds
+            - receivePalletSlottingExceptionCount_total
+            - getPrimeSlotForSplitPalletTimed_seconds
+            - getPrimeSlotForSplitPalletCount_total
+            - getPrimeSlotForSplitPalletExceptionCount_total
+            - getPrimeSlotByDocumentLineHitCount_total
+            - getPrimeSlotByDocumentLineTimed_seconds
+            - getPrimeSlotByDocumentLineExceptionCount_total
+            - getPrimeSlotByItemNumbersHitCount_total
+            - getPrimeSlotByItemNumbersTimed_seconds
+            - getPrimeSlotByItemNumbersExceptionCount_total
+            - getSlotTimed_seconds
+            - getSlotExceptionCount_total
+            - deliveryNGRReceiptsTimed_seconds
+            - deliveryNGRReceiptsExceptionCount_total
+            - scanProblemTagAPITimed_seconds
+            - scanProblemTagAPIExceptionCount_total
+            - getProblemTagAPITimed_seconds
+            - getProblemTagAPIExceptionCount_total
+            - getProblemTagHitCount_total
+            - updateProblemReceivedQtyAPITimed_seconds
+            - updateProblemReceivedQtyAPIExceptionCount_total
+            - updateProblemReceivedQtyHitCount_total
+            - createProblemTagAPITimed_seconds
+            - createProblemTagAPIExceptionCount_total
+            - createProblemTagHitCount_total
+            - reportProblemErrorAPITimed_seconds
+            - reportProblemErrorAPIExceptionCount_total
+            - reportProblemErrorHitCount_total
+            - getPOLineInfoFromGdmAPITimed_seconds
+            - getPOLineInfoFromGdmAPIExceptionCount_total
+            - getPOLineInfoFromGdmHitCount_total
+            - searchAtlasConvertedItemsAPITimed_seconds
+            - searchAtlasConvertedItemsExceptionCount_total
+            - searchAtlasConvertedItemsHitCount_total
+            - getDoorInfoTimed_seconds
+            - manualMFCDeliveryProcessingTimed_seconds
+            - manualMFCDeliveryProcessingExceptionCount_total
+            - manualMFCContainerPublishingTimed_seconds
+            - manualMFCContainerPublishingExceptionCount_total
+            - autoMFCDeliveryProcessingTimed_seconds
+            - autoMFCDeliveryProcessingExceptionCount_total
+            - autoMFCDecantTimed_seconds
+            - autoMFCDecantExceptionCount_total
+            - autoMFCExceptionReceiptCreationTimed_seconds
+            - autoMFCExceptionReceiptCreationExceptionCount_total
+            - mfcContainerCreationTimed_seconds
+            - mfcASNDownloadTimed_seconds
+            - mfcASNDownloadExceptionCount_total
+            - mfcReceiptCreationTimed_seconds
+            - mfcReceiptCreationExceptionCount_total
+            - mfcInventoryProcessingTimed_seconds
+            - mfcInventoryProcessingExceptionCount_total
+            - damageInventoryReportTimed_seconds
+            - damageInventoryReportExceptionCount_total
+            - getAllContainersByDeliveryTimed_seconds
+            - getAllContainersByDeliveryExceptionCount_total
+            - dcFinV2ExceptionCount_total
+            - dcFinReconReceiptsRetryExceptionCount_total
+            - dcFinReceiptsForDeliveryExceptionCount_total
+            - JMS_MESSAGE_PUBLISHING_EXCEPTION_COUNT_total
+            - DCFIN_PURCHASE_POSTING_EXCEPTION_COUNT_total
+            - DCFIN_PO_CLOSE_EXCEPTION_COUNT_total
+            - GDM_PO_FINALIZE_EXCEPTION_COUNT_total
+            - INVENTORY_RECEIPT_RECEIVE_CORRECTION_EXCEPTION_COUNT_total
+            - INVENTORY_UPDATE_PO_DETAILS_EXCEPTION_COUNT_total
+            - INVENTORY_UPDATE_LOCATION_EXCEPTION_COUNT_total
+            - wrongUOM_detected_total
+            - storeInboundFailedPackCreation_total
+            - manualMfcFailedPackCreation_total
+            - autoMfcFailedPackCreation_total
+            - duplicate_container_item_total
+            - storeInboundMixedPalletProcessingTimed_seconds
+            - storeInboundMixedPalletProcessingExceptionCount_total
+            - retry_exhausted_total
+            - mixed_pallet_not_found_total
+            - receiveInstructionTimed_seconds
+            - confirmPurchaseOrdersTimed_seconds
+            - receiveInstructionExceptionCount_total
+            - confirmPurchaseOrdersExceptionCount_total
+            - mfc_inventory_adjustment_failed_total
+            - RdcAutoReceiveContainersAPITimed_seconds
+            - RdcAutoReceiveContainersAPIExceptionTimed_total
+            - getReceiptQtySummaryByDeliveriesTimed_seconds
+            - getReceiptQtySummaryByDeliveries_total
+            - GetLabelSummary_Exception_total
+            - GetLabelSummary_seconds
+            - getOSDRExceptionCount_total
+            - getOSDRTimed_seconds
+            - Endgame_MultiplePalletReceiving_Exception_total
+            - Endgame_MultiplePalletReceive_seconds
+            - getContainerByTrackingIdTimed_seconds
+            - getDeliveryExceptionCount_total
+      releaseType:
+        strategy:
+          rollingUpdate:
+            maxSurge: "33%"
+            maxUnavailable: "33%"
+  stages:
+    - name: dev-cell230
+      refs: [ "intl-fc/feature/.*" ]
+      target:
+        - cluster_id: [ uscentral-stage-wmt-004 ]
+      rollbackOnError: true
+
+    - name: qa-cell230
+      flows: [ release ]
+      refs: [ "intl-fc/release/.*", "intl-fc/feature/.*" ]
+      target:
+        - cluster_id: [ uscentral-stage-wmt-004 ]
+      rollbackOnError: true
+
+    - name: stg-cell230
+      flows: [release]
+      refs: [ "intl-fc/release/.*" ]
+      target:
+        - cluster_id: [ uscentral-stage-wmt-004 ]
+      rollbackOnError: true
+
+    - name: prod-cell230
+      flows: [release]
+      refs: [ "intl-fc/release/.*" ]
+      target:
+        - cluster_id: [ uscentral-prod-wmt-017, useast-prod-wmt-003 ]
+      rollbackOnError: true
+
+      postDeploy:
+        - task:
+            name: messageSlack
+            text: |
+              Deployment details* :
+              > Namespace: *{ $.kitt.deploy.namespace }*
+              > Cluster: *{$.kittExec.currentCluster.clusterId}*

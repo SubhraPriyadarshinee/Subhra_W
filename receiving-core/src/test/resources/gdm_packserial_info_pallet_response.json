@@ -1,0 +1,26 @@
+[
+  {
+    "palletNumber": "00100700302232310014",
+    "packNumber": "00909899000020014394",
+    "gtin": "00368180121015",
+    "lotNumber": "00L032C09A",
+    "serial": "304160",
+    "expiryDate": "2019-01-08",
+    "uom": "CS",
+    "receivingStatus": "readyToReceive",
+    "trackingStatus": "readyToReceive",
+    "packUnitSerialDetails": []
+  },
+  {
+    "palletNumber": "00100700302232310014",
+    "packNumber": "00909899000020014394",
+    "gtin": "00368180121015",
+    "lotNumber": "00L032C09A",
+    "serial": "304160",
+    "expiryDate": "2019-01-08",
+    "uom": "CS",
+    "receivingStatus": "readyToReceive",
+    "trackingStatus": "readyToReceive",
+    "packUnitSerialDetails": []
+  }
+]

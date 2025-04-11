@@ -1,0 +1,107 @@
+[
+  {
+    "deliveryNumber": 23230002,
+    "purchaseReferenceNumber": "9859162587",
+    "omsPurchaseReferenceNumber": "0790148115",
+    "poDCNumber": "6020",
+    "bpoNumber": "0",
+    "baseDivCode": "WM",
+    "purchaseReferenceLegacyType": "20",
+    "totalPurchaseReferenceQty": 1208,
+    "palletQty": 0,
+    "purchaseCompanyId": 1,
+    "receiverNumber": 0,
+    "purchaseReferenceOrderDate": "2023-10-06",
+    "purchaseReferenceCancelDate": "2023-10-13",
+    "purchaseReferenceShipDate": "2023-10-13",
+    "purchaseReferenceMustArriveByDate": "2023-10-16",
+    "deliveryDocumentLines": [
+      {
+        "purchaseRefType": "CROSSU",
+        "originalChannel": "CROSSSDOCK",
+        "purchaseReferenceNumber": "9859162587",
+        "purchaseReferenceLineNumber": 3,
+        "purchaseReferenceLineStatus": "APPROVED",
+        "itemNbr": 3804890,
+        "itemUPC": "00079191200148",
+        "caseUPC": "00079191600146",
+        "expectedQty": 288,
+        "expectedQtyUOM": "ZA",
+        "vnpkQty": 24,
+        "whpkQty": 24,
+        "vendorStockNumber": "152C86",
+        "vendorPackCost": 101.52,
+        "whpkSell": 101.52,
+        "vnpkWgtQty": 46.32,
+        "vnpkWgtUom": "LB",
+        "vnpkcbqty": 1.051,
+        "vnpkcbuomcd": "CF",
+        "event": "POS REPLEN",
+        "palletTi": 12,
+        "palletHi": 4,
+        "department": "42",
+        "isHazmat": true,
+        "isConveyable": true,
+        "overageQtyLimit": 4,
+        "overageThresholdQty": 4,
+        "size": "EBOXQT",
+        "itemDescription1": "CAS SYN EB  5W20 SN",
+        "itemDescription2": "4216823-CASE",
+        "promoBuyInd": "N",
+        "activeChannelMethods": [],
+        "operationalInfo": {
+          "state": "ACTIVE"
+        },
+        "orderableQuantity": 24,
+        "warehousePackQuantity": 24,
+        "lithiumIonVerifiedOn": "2023-04-10T17:31:47.344+0000",
+        "transportationModes": [
+          {
+            "mode": {
+              "code": 1,
+              "description": "GROUND"
+            },
+            "dotHazardousClass": {
+              "code": "N/A",
+              "description": "NOT APPLICABLE"
+            },
+            "properShipping": "NON-REGULATED",
+            "pkgInstruction": []
+          }
+        ],
+        "handlingCode": "C",
+        "packType": "C",
+        "isNewItem": false
+      }
+    ],
+    "bolNumber": "0",
+    "deptNumber": "42",
+    "vendorNumber": "66670",
+    "vendorName": "BP LUBRICANTS USA INC",
+    "vendorNbrDeptSeq": "66670420",
+    "lastChangedByDate": "2023-10-22",
+    "weight": 37433.86,
+    "weightUOM": "LB",
+    "cubeQty": 1083.508,
+    "cubeUOM": "CF",
+    "freightTermCode": "PRP",
+    "financialGroupCode": "US",
+    "lastChangedBy": "svcaucan",
+    "bolNumbers": [
+      {
+        "bolNumber": "0",
+        "freightBillQuantity": 1208
+      }
+    ],
+    "poConIndicator": false,
+    "importInd": false,
+    "poTypeCode": "20",
+    "purchaseReferenceStatus": "CLOSED",
+    "poDcCountry": "US",
+    "totalBolFbq": 0,
+    "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+    "sellerType": "WM",
+    "proDate": "2023-10-15T10:31:43.929Z",
+    "poLoadSequenceNbr": 2
+  }
+]

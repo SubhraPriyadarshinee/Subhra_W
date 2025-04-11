@@ -1,0 +1,54 @@
+{
+  "messageId": "5e1df00-ebf6-11e8-9c25-dd4bfc2a06f5",
+  "correlationId": "1a2bc3d4",
+  "facility": {
+    "countryCode": "US",
+    "buNumber": "32987"
+  },
+  "deliveryNumber": "21119003",
+  "doorNumber": "123",
+  "userId": "sysadmin",
+  "container": {
+    "weight": 9.35,
+    "weightUom": "lb",
+    "cube": 0.0,
+    "cubeUom": "",
+    "contents": [
+      {
+        "gtin": "00016017039630",
+        "itemNbr": 550129241,
+        "baseDivisionCode": "WM",
+        "financialReportingGroup": "US",
+        "purchaseCompanyId": "1",
+        "purchaseReferenceNumber": "4763030227",
+        "purchaseReferenceLineNumber": 1,
+        "poDcNumber": "06938",
+        "purchaseRefType": "CROSSU",
+        "qtyUom": "EA",
+        "vendorPack": 4,
+        "warehousePack": 4,
+        "openQty": 10,
+        "totalOrderQty": 10,
+        "palletTie": 6,
+        "palletHigh": 4,
+        "maxReceiveQty": 15,
+        "warehousePackSell": 28.18,
+        "vendorPackCost": 26.98,
+        "deptNumber": 14,
+        "color": "NONE",
+        "size": "1.0EA",
+        "description": "TR12QTSTCKPTSS",
+        "secondaryDescription": "TR12QTSTCKPTSS",
+        "isConveyable": true,
+        "onConveyor": true,
+        "isHazmat": false,
+        "purchaseReferenceLegacyType": "33",
+        "vendorNumber": "482497180",
+        "event": "POSREPLEN",
+        "warehouseAreaCode": "1",
+        "warehouseAreaCodeValue": "M",
+        "caseUPC": "00000943037204"
+      }
+    ]
+  }
+}

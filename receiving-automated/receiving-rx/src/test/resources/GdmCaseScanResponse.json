@@ -1,0 +1,174 @@
+{
+  "delivery": {
+    "deliveryNumber": 83077757,
+    "statusInformation": {
+      "operationalStatus": "WRK",
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "status": "WRK"
+    }
+  },
+  "shipments": [
+    {
+      "documentId": "97956_20201016_9732769600_SHIPPER_US",
+      "shipmentNumber": "90989098",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2020-10-16T22:51:30.976Z",
+      "shipmentDate": "2020-10-16",
+      "source": {
+        "number": "9732769600",
+        "numberType": "ZZ",
+        "type": "SHIPPER",
+        "countryCode": "US",
+        "shipperName": "LEADING PHARMA,LLC"
+      },
+      "destination": {
+        "globalLocationNumber": "0078742027753",
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "billOfLadingNumber": "1Z442AY30331278765",
+        "shippingDate": "2020-10-16",
+        "carrierId": "UPSN"
+      }
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poNumber": "9091747200",
+      "freightBillQty": 106,
+      "baseDivisionCode": "WM",
+      "poType": "33",
+      "purchaseCompanyId": 1,
+      "poStatus": "ACTV",
+      "financialGroupCode": "US",
+      "poDates": {
+        "cancel": "2019-02-20",
+        "ordered": "2019-02-19",
+        "mabd": "2019-02-22",
+        "ship": "2019-02-21"
+      },
+      "vendorInformation": {
+        "name": "V11",
+        "number": 12344,
+        "department": 38
+      },
+      "poDcNumber": 32898,
+      "lines": [
+        {
+          "poLineNumber": 1,
+          "channel": "CROSSU",
+          "whpkQty": 28,
+          "whpkSell": 8.22,
+          "vnpkQty": 1008,
+          "vnpkCost": 6.6,
+          "vnpkWeightQty": 14.84,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.432,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "poLineStatus": "RECEIVED",
+          "orderedQty": 20.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "10368645556540",
+            "orderableGTIN": "10368645556540",
+            "supplierStockId": "2222",
+            "palletTi": 0,
+            "palletHi": 0,
+            "hazmat": false,
+            "conveyable": true,
+            "isNewItem": false,
+            "vendorDepartment": "1",
+            "itemAdditonalInformation": {
+              "isDscsaExemptionInd": false
+            },
+            "descriptions": [
+              "AK RAISINETS",
+              "AK RAISINETS"
+            ],
+            "number": 584636960
+          }
+        }
+      ]
+    }
+  ],
+  "packs": [
+    {
+      "packNumber": "909899000020014304",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "43547-282-11",
+          "reportedProductIdType": "N4",
+          "itemNumber": 584636960,
+          "gtin": "00369315312285",
+          "warehouseCaseGtin": "50369315312280",
+          "vendorCaseGtin": "50369315312280",
+          "vendorId": "557954",
+          "itemDescription": "PROCTO-MED HC 2.5% CREAM (1OZ)  28.35GM",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "purchaseOrder": {
+            "poDate": "2020-10-16",
+            "poLineNumber": 1,
+            "poNumber": "9091747200",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 2
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 10.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 10.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "43547-282-11",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 20,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "0KT0336",
+              "expirationDate": "2022-08-30",
+              "reportedQuantity": 10.0,
+              "reportedUom": "EA"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "13586570704011",
+              "uom": "CA"
+            },
+            {
+              "gtin": "13586570709991",
+              "uom": "CA"
+            },
+            {
+              "gtin": "30358657704018",
+              "uom": "SEA"
+            },
+            {
+              "gtin": "00358657704018",
+              "uom": "EA"
+            }
+          ],
+          "nationalDrugCode": "43547-282-11",
+          "nationalDrugCodeType": "N4"
+        }
+      ],
+      "shipmentNumber": "90989098",
+      "unitCount": 1
+    }
+  ]
+}

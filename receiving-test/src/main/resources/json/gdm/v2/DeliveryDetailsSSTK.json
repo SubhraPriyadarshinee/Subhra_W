@@ -1,0 +1,101 @@
+{
+  "deliveryNumber": 94769060,
+  "deliveryStatus": "ARV",
+  "deliveryTypeCode": "DROP",
+  "countryCode": "US",
+  "dcNumber": "6561",
+  "loadTypeCode": "FLR",
+  "loadNumber": "076924925",
+  "sealNumber": "5505448",
+  "hazmatInd": true,
+  "scacCode": "JBR",
+  "trailerId": "322683",
+  "scheduledTimeStamp": "2020-04-20T00:00:00.000+0000",
+  "idmCompleteTimeStamp": "2020-04-27T20:53:23.966+0000",
+  "arrivedTimeStamp": "2020-04-21T00:58:43.474+0000",
+  "doorOpenTimeStamp": "2020-04-22T04:41:59.724+0000",
+  "workingTimeStamp": "2020-04-27T20:47:35.526+0000",
+  "doorOpenUserId": "mef005a",
+  "doorCloseUserId": "VAS003H",
+  "workingUserId": "VAS003H",
+  "numberOfPallets": 0,
+  "lastUpdatedSealNumber": "",
+  "deliveryDocuments": [
+    {
+      "deliveryNumber": 94769060,
+      "purchaseReferenceNumber": "3615852071",
+      "omsPurchaseReferenceNumber": "470564017",
+      "poDCNumber": "6561",
+      "bpoNumber": "0",
+      "baseDivCode": "WM",
+      "purchaseReferenceLegacyType": "33",
+      "totalPurchaseReferenceQty": 1030,
+      "palletQty": 0,
+      "purchaseCompanyId": 1,
+      "receiverNumber": 0,
+      "purchaseReferenceOrderDate": "2020-04-15",
+      "purchaseReferenceCancelDate": "2020-04-20",
+      "purchaseReferenceShipDate": "2020-04-20",
+      "purchaseReferenceMustArriveByDate": "2020-04-21",
+      "purchaseReferenceStatus": "CLOSED",
+      "deliveryDocumentLines": [
+        {
+          "purchaseRefType": "SSTKU",
+          "purchaseReferenceNumber": "3615852071",
+          "purchaseReferenceLineNumber": 8,
+          "purchaseReferenceLineStatus": "PARTIALLY_RECEIVED",
+          "itemNbr": 566051127,
+          "itemUPC": "00074451115200",
+          "caseUPC": "10074451115207",
+          "vendorUPC": "20074451115204",
+          "expectedQty": 6,
+          "expectedQtyUOM": "ZA",
+          "vnpkQty": 2,
+          "whpkQty": 2,
+          "vendorStockNumber": "11520-2",
+          "vendorPackCost": 55.86,
+          "whpkSell": 59.03,
+          "vnpkWgtQty": 19.4,
+          "vnpkWgtUom": "LB",
+          "vnpkcbqty": 2.678,
+          "vnpkcbuomcd": "CF",
+          "event": "POS REPLEN",
+          "freeTextDetail": "NONE MINNIE BNCR RCKR GRL REPLACE 550485664",
+          "palletTi": 6,
+          "palletHi": 2,
+          "isConveyable": true,
+          "overageQtyLimit": 2,
+          "overageThresholdQty": 2,
+          "color": "NONE",
+          "size": "1.0EA",
+          "itemDescription1": "MINNIE BNCR RCKR GRL",
+          "itemDescription2": "REPLACE 550485664",
+          "freightBillQty": 6,
+          "activeChannelMethods": [
+            "SSTK"
+          ],
+          "operationalInfo": {
+            "state": "ACTIVE"
+          }
+        }
+      ],
+      "deptNumber": "79",
+      "vendorNumber": "389908",
+      "vendorName": "KIDS2, INC.",
+      "lastChangedByDate": "2020-05-02",
+      "weight": 20382,
+      "weightUOM": "LB",
+      "freightTermCode": "COLL",
+      "financialGroupCode": "US",
+      "lastChangedBy": "230",
+      "bolNumbers": [
+        {
+          "bolNumber": "",
+          "freightBillQuantity": 1030
+        }
+      ],
+      "poConIndicator": false
+    }
+  ],
+  "deliveryLegacyStatus": "ARV"
+}

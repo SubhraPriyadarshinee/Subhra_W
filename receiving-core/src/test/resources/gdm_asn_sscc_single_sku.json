@@ -1,0 +1,234 @@
+{
+  "delivery": {
+    "deliveryNumber": 1180378,
+    "statusInformation": {
+      "operationalStatus": "SCH",
+      "status": "SCH"
+    }
+  },
+  "shipments": [
+    {
+      "documentId": "1180378_20210829_8004517096_SHIPPER_US",
+      "shipmentNumber": "1180378",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2021-08-30T02:10:37.768Z",
+      "shipmentDate": "2021-08-29",
+      "source": {
+        "number": "8004517096",
+        "numberType": "ZZ",
+        "type": "SHIPPER",
+        "countryCode": "US",
+        "shipperName": "BEAUMONT PRODUCTS, INC."
+      },
+      "destination": {
+        "globalLocationNumber": "0078742029542",
+        "type": "DC",
+        "number": 6020,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "billOfLadingNumber": "00087052000011196",
+        "reportedDeliveryNumber": 1180378,
+        "carrierId": "DTNZP8VVVVXHY"
+      },
+      "totalPacks": 7
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poNumber": "1222735765",
+      "freightBillQty": 0,
+      "cubeQty": 1.358,
+      "poDcCountry": "US",
+      "baseDivisionCode": "WM",
+      "poType": "33",
+      "purchaseCompanyId": 1,
+      "poStatus": "ACTV",
+      "financialGroupCode": "US",
+      "poDates": {
+        "cancel": "2021-08-30",
+        "ordered": "2021-08-24",
+        "mabd": "2021-09-02",
+        "ship": "2021-08-30"
+      },
+      "vendorInformation": {
+        "number": 459112,
+        "department": 16
+      },
+      "poDcNumber": 6020,
+      "lines": [
+        {
+          "poLineNumber": 1,
+          "channel": "CROSSU",
+          "ovgThresholdQuantityLimit": 0,
+          "whpkQty": 40,
+          "whpkSell": 18.4,
+          "vnpkQty": 40,
+          "vnpkCost": 18.4,
+          "vnpkWeightQty": 1.05,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.194,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "poLineStatus": "APPROVED",
+          "orderedQty": 0.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00786216153524",
+            "orderableGTIN": "10786216153521",
+            "supplierStockId": "WM18891",
+            "palletTi": 30,
+            "palletHi": 10,
+            "hazmat": true,
+            "conveyable": false,
+            "itemTypeCode": "20",
+            "isNewItem": false,
+            "vendorDepartment": "16",
+            "color": "PER-WR",
+            "size": "1.0EA",
+            "warehousePackQuantity": 40,
+            "orderableQuantity": 40,
+            "itemAdditonalInformation": {
+              "weight": 1.05,
+              "weightUOM": "LB"
+            },
+            "descriptions": [
+              "BITE ME NOT REPL BND",
+              "BITE ME NOT REPL BND"
+            ],
+            "number": 566073785
+          }
+        },
+        {
+          "poLineNumber": 2,
+          "channel": "CROSSU",
+          "ovgThresholdQuantityLimit": 0,
+          "whpkQty": 40,
+          "whpkSell": 18.4,
+          "vnpkQty": 40,
+          "vnpkCost": 18.4,
+          "vnpkWeightQty": 1.05,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.194,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "poLineStatus": "APPROVED",
+          "orderedQty": 0.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00786216153524",
+            "orderableGTIN": "10786216153521",
+            "supplierStockId": "WM18891",
+            "palletTi": 30,
+            "palletHi": 10,
+            "hazmat": true,
+            "conveyable": false,
+            "itemTypeCode": "20",
+            "vendorDepartment": "16",
+            "color": "PER-WR",
+            "size": "1.0EA",
+            "isNewItem": false,
+            "warehousePackQuantity": 40,
+            "orderableQuantity": 40,
+            "itemAdditonalInformation": {
+              "weight": 1.05,
+              "weightUOM": "LB"
+            },
+            "descriptions": [
+              "BITE ME NOT REPL BND",
+              "BITE ME NOT REPL BND"
+            ],
+            "number": 787359177095
+          }
+        }
+      ],
+
+      "weightQty": 7.35
+    }
+  ],
+  "packs": [
+    {
+      "packNumber": "AUTO_S1002962855_6",
+      "palletNumber": "00100422730065700129",
+      "items": [
+        {
+          "reportedProductId": "787359178771",
+          "reportedProductIdType": "UP",
+          "vendorId": "338327",
+          "itemDescription": "Dried Blueberries & Cranberries 9/3.5oz",
+          "itemDivision": "WM",
+          "itemNumber": 566073785,
+          "purchaseOrder": {
+            "poDate": "2021-08-23",
+            "poNumber": "1222735765",
+            "poLineNumber": 1,
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 2
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 10.0,
+            "reportedUom": "CA",
+            "derivedQuantity": 10.0,
+            "derivedUom": "CA"
+          },
+          "manufactureDetails": [
+            {
+              "lotNumber": "2210707",
+              "reportedQuantity": 10.0,
+              "reportedUom": "CA"
+            }
+          ],
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "10787359178778",
+              "reportedProductIdType": "UK"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "1180378"
+    },
+    {
+      "packNumber": "AUTO_S1002962855_4",
+      "palletNumber": "00100422730065700129",
+      "items": [
+        {
+          "reportedProductId": "787359177095",
+          "reportedProductIdType": "UP",
+          "vendorId": "338327",
+          "itemDescription": "Cranberries & Glazed Walnuts 9/3.5oz",
+          "itemDivision": "WM",
+          "itemNumber": 787359177095,
+          "purchaseOrder": {
+            "poDate": "2021-08-23",
+            "poNumber": "1222735765",
+            "poLineNumber": 2,
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 2
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 6.0,
+            "reportedUom": "CA",
+            "derivedQuantity": 6.0,
+            "derivedUom": "CA"
+          },
+          "manufactureDetails": [
+            {
+              "lotNumber": "2210719",
+              "reportedQuantity": 6.0,
+              "reportedUom": "CA"
+            }
+          ],
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "10787359177092",
+              "reportedProductIdType": "UK"
+            }
+          ]
+        }
+      ],
+      "shipmentNumber": "1180378"
+    }
+  ]
+}

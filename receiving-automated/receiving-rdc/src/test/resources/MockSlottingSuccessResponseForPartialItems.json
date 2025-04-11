@@ -1,0 +1,21 @@
+{
+  "messageId": "e5f8c7f4-cdf7-5583-82f8-b5b9ecf9f994",
+  "locations": [
+    {
+      "type": "success",
+      "itemNbr": 553857311,
+      "location": "SYMBP",
+      "locationSize": 40,
+      "slotType": "PRIME",
+      "asrsAlignment": "SYM2_5",
+      "markInventoryStatus": "AVAILABLE_NON_PICKABLE"
+    },
+    {
+      "type": "error",
+      "code": "GLS-SMART-SLOTING-4040009",
+      "desc": "Setup issue - Prime Slot is not present for the entered item",
+      "itemNbr": 553857312,
+      "markInventoryStatus": "AVAILABLE_NON_PICKABLE"
+    }
+  ]
+}

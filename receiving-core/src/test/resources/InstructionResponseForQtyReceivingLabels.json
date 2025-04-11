@@ -1,0 +1,331 @@
+{
+  "facilityCountryCode": "US",
+  "facilityNum": 32679,
+  "id": 65133,
+  "deliveryNumber": 27003566,
+  "purchaseReferenceNumber": "1358904710",
+  "purchaseReferenceLineNumber": 3,
+  "gtin": "00034223345181",
+  "receivedQuantity": 10,
+  "receivedQuantityUOM": "ZA",
+  "itemDescription": "16QT WHL LAGUNA BLUE",
+  "poDcNumber": "6020",
+  "createUserId": "sysadmin",
+  "createTs": "Apr 29, 2021 4:48:06 PM",
+  "lastChangeUserId": "sysadmin",
+  "lastChangeTs": "Apr 29, 2021 4:48:06 PM",
+  "completeUserId": "sysadmin",
+  "completeTs": "Apr 29, 2021 4:48:06 PM",
+  "printChildContainerLabels": false,
+  "activityName": "SSTK",
+  "providerId": "RDC-RCV",
+  "instructionMsg": "Build Pallet for RDC",
+  "instructionCode": "RdcBuildPallet",
+  "messageId": "e51dc8c3-1d3e-4a28-9951-23c4aa454db6",
+  "projectedReceiveQty": 10,
+  "projectedReceiveQtyUOM": "ZA",
+  "container": {
+    "ctrLabel": {
+      "headers": {
+        "WMT-CorrelationId": "ed2dfb84-8634-440f-9cd8-e8261e306f94",
+        "facilityCountryCode": "US",
+        "facilityNum": "32679"
+      },
+      "clientId": "nextgen-receiving",
+      "printRequests": [
+        {
+          "printJobId": "47523",
+          "formatName": "dc1000f0_format_g",
+          "data": [
+            {
+              "key": "LABELBAR",
+              "value": "b06030323232322223"
+            },
+            {
+              "key": "SLOT",
+              "value": "M5118"
+            },
+            {
+              "key": "LBLPICK",
+              "value": "10"
+            },
+            {
+              "key": "LABELDATE",
+              "value": "04/29/21 12:48:06"
+            },
+            {
+              "key": "LBLVNPK",
+              "value": "2"
+            },
+            {
+              "key": "ITEM",
+              "value": "577547649"
+            },
+            {
+              "key": "POLINE",
+              "value": "3"
+            },
+            {
+              "key": "RCVR",
+              "value": "782549"
+            },
+            {
+              "key": "LBLWHPK",
+              "value": "2"
+            },
+            {
+              "key": "UPCBAR",
+              "value": "00034223345181"
+            },
+            {
+              "key": "USERID",
+              "value": "sysadmin"
+            },
+            {
+              "key": "TI",
+              "value": "5"
+            },
+            {
+              "key": "HI",
+              "value": "4"
+            },
+            {
+              "key": "VENDORID",
+              "value": "34518"
+            },
+            {
+              "key": "LABELNUM",
+              "value": "1"
+            },
+            {
+              "key": "LABELCNT",
+              "value": "1"
+            },
+            {
+              "key": "PARTIALTAG",
+              "value": "PARTIAL"
+            },
+            {
+              "key": "REPRINT",
+              "value": ""
+            },
+            {
+              "key": "SLOTSIZE",
+              "value": "55"
+            }
+          ],
+          "labelIdentifier": "b06030323232322223",
+          "ttlInHours": 100.0,
+          "isErrorHandlingNeeded": true
+        },
+        {
+          "printJobId": "47523",
+          "formatName": "dc1000f0_format_g",
+          "data": [
+            {
+              "key": "LABELBAR",
+              "value": "c0602022323223322"
+            },
+            {
+              "key": "SLOT",
+              "value": "M5118"
+            },
+            {
+              "key": "LBLPICK",
+              "value": "10"
+            },
+            {
+              "key": "LABELDATE",
+              "value": "04/29/21 12:48:06"
+            },
+            {
+              "key": "LBLVNPK",
+              "value": "2"
+            },
+            {
+              "key": "ITEM",
+              "value": "577547649"
+            },
+            {
+              "key": "POLINE",
+              "value": "3"
+            },
+            {
+              "key": "RCVR",
+              "value": "782549"
+            },
+            {
+              "key": "LBLWHPK",
+              "value": "2"
+            },
+            {
+              "key": "UPCBAR",
+              "value": "00034223345181"
+            },
+            {
+              "key": "USERID",
+              "value": "sysadmin"
+            },
+            {
+              "key": "TI",
+              "value": "5"
+            },
+            {
+              "key": "HI",
+              "value": "4"
+            },
+            {
+              "key": "VENDORID",
+              "value": "34518"
+            },
+            {
+              "key": "LABELNUM",
+              "value": "1"
+            },
+            {
+              "key": "LABELCNT",
+              "value": "1"
+            },
+            {
+              "key": "PARTIALTAG",
+              "value": "PARTIAL"
+            },
+            {
+              "key": "REPRINT",
+              "value": ""
+            },
+            {
+              "key": "SLOTSIZE",
+              "value": "55"
+            }
+          ],
+          "labelIdentifier": "c0602022323223322",
+          "ttlInHours": 100.0,
+          "isErrorHandlingNeeded": true
+        },
+        {
+          "printJobId": "47523",
+          "formatName": "dc1000f0_format_g",
+          "data": [
+            {
+              "key": "LABELBAR",
+              "value": "l06030323232322223"
+            },
+            {
+              "key": "SLOT",
+              "value": "M5118"
+            },
+            {
+              "key": "LBLPICK",
+              "value": "10"
+            },
+            {
+              "key": "LABELDATE",
+              "value": "04/29/21 12:48:06"
+            },
+            {
+              "key": "LBLVNPK",
+              "value": "2"
+            },
+            {
+              "key": "ITEM",
+              "value": "577547649"
+            },
+            {
+              "key": "POLINE",
+              "value": "3"
+            },
+            {
+              "key": "RCVR",
+              "value": "782549"
+            },
+            {
+              "key": "LBLWHPK",
+              "value": "2"
+            },
+            {
+              "key": "UPCBAR",
+              "value": "00034223345181"
+            },
+            {
+              "key": "USERID",
+              "value": "sysadmin"
+            },
+            {
+              "key": "TI",
+              "value": "5"
+            },
+            {
+              "key": "HI",
+              "value": "4"
+            },
+            {
+              "key": "VENDORID",
+              "value": "34518"
+            },
+            {
+              "key": "LABELNUM",
+              "value": "1"
+            },
+            {
+              "key": "LABELCNT",
+              "value": "1"
+            },
+            {
+              "key": "PARTIALTAG",
+              "value": "PARTIAL"
+            },
+            {
+              "key": "REPRINT",
+              "value": ""
+            },
+            {
+              "key": "SLOTSIZE",
+              "value": "55"
+            }
+          ],
+          "labelIdentifier": "l06030323232322223",
+          "ttlInHours": 100.0,
+          "isErrorHandlingNeeded": true
+        }
+      ]
+    },
+    "ctrShippable": false,
+    "ctrReusable": false,
+    "quantity": null,
+    "outboundChannelMethod": "SSTKU",
+    "ctrDestination": null,
+    "inventoryStatus": "PICKED",
+    "ctrType": "PALLET",
+    "ctrStatus": "COMPLETE",
+    "trackingId": "9784587526",
+    "distributions": null,
+    "projectedWeight": null,
+    "projectedWeightUom": null,
+    "orgUnitId": null,
+    "childContainers": null,
+    "contents": null,
+    "parentTrackingId": null,
+    "containerId": null,
+    "remainingQty": null,
+    "problemFreightLocation": null
+  },
+  "childContainers": null,
+  "move": {
+    "fromLocation": "066",
+    "correlationID": "ed2dfb84-8634-440f-9cd8-e8261e306f94",
+    "lastChangedOn": "Apr 29, 2021 4:48:06 PM",
+    "lastChangedBy": "sysadmin",
+    "primeLocation": "M5118",
+    "primeLocationSize": 55.0
+  },
+  "labels": null,
+  "ssccNumber": null,
+  "problemTagId": null,
+  "firstExpiryFirstOut": null,
+  "deliveryDocument": "{\"purchaseReferenceNumber\":\"1358904710\",\"financialGroupCode\":\"US\",\"baseDivCode\":\"WM\",\"vendorNumber\":\"233601\",\"vendorNbrDeptSeq\":2336019,\"deptNumber\":\"9\",\"purchaseCompanyId\":\"1\",\"purchaseReferenceLegacyType\":\"20\",\"poDCNumber\":\"6020\",\"purchaseReferenceStatus\":\"ACTV\",\"deliveryDocumentLines\":[{\"gtin\":\"00034223345181\",\"itemUPC\":\"00034223345181\",\"caseUPC\":\"10034223345188\",\"purchaseReferenceNumber\":\"1358904710\",\"purchaseReferenceLineNumber\":3,\"event\":\"POS REPLEN\",\"purchaseReferenceLineStatus\":\"APPROVED\",\"whpkSell\":29.0,\"vendorPackCost\":26.36,\"vnpkQty\":2,\"whpkQty\":2,\"orderableQuantity\":0,\"warehousePackQuantity\":0,\"expectedQtyUOM\":\"ZA\",\"openQty\":5,\"expectedQty\":5,\"overageQtyLimit\":5,\"itemNbr\":577547649,\"purchaseRefType\":\"SSTKU\",\"palletTi\":5,\"palletHi\":4,\"vnpkWgtQty\":13.8,\"vnpkWgtUom\":\"LB\",\"vnpkcbqty\":2.939,\"vnpkcbuomcd\":\"CF\",\"color\":\"BLUE\",\"size\":\"1.0EA\",\"isHazmat\":false,\"itemDescription1\":\"16QT WHL LAGUNA BLUE\",\"itemDescription2\":\"HARDSIDE COOLER\",\"isConveyable\":true,\"promoBuyInd\":\"N\",\"additionalInfo\":{\"isNewItem\":false,\"weight\":13.8,\"weightFormatTypeCode\":\"F\",\"weightUOM\":\"LB\",\"warehouseMinLifeRemainingToReceive\":0,\"gdmPalletTi\":2,\"gdmPalletHi\":2,\"primeSlot\":\"B2198\",\"primeSlotSize\":72,\"handlingCode\":\"E\",\"packTypeCode\":\"C\",\"symEligibleIndicator\":\"N\",\"palletTi\":5,\"palletHi\":4},\"operationalInfo\":{\"state\":\"ACTIVE\"},\"freightBillQty\":0,\"activeChannelMethods\":[],\"department\":\"9\",\"limitedQty\":0.0,\"originalChannel\":\"STAPLESTOCK\",\"vendorStockNumber\":\"34518\",\"totalReceivedQty\":0,\"maxAllowedOverageQtyIncluded\":true,\"maxReceiveQty\":10,\"lithiumIonVerificationRequired\":false,\"limitedQtyVerificationRequired\":false}],\"totalPurchaseReferenceQty\":0,\"weight\":3968.0,\"weightUOM\":\"LB\",\"cubeQty\":1268.0,\"cubeUOM\":\"CF\",\"freightTermCode\":\"COLL\",\"deliveryStatus\":\"OPN\",\"poTypeCode\":20,\"totalBolFbq\":0,\"poDcCountry\":\"US\",\"deliveryLegacyStatus\":\"OPN\",\"purchaseReferenceMustArriveByDate\":\"Apr 30, 2021 12:00:00 AM\",\"stateReasonCodes\":[\"DOOR_OPEN\"],\"deliveryNumber\":27003566,\"importInd\":false}",
+  "manualInstruction": null,
+  "dockTagId": null,
+  "originalChannel": null,
+  "isReceiveCorrection": null
+}

@@ -1,0 +1,108 @@
+profiles:
+  - git://Logistics:metrics-profiles:main:dt-saas-atlas/us-walmart/dt-saas-fc
+
+deploy:
+  stages:
+    - name: prod-cell003
+      helm:
+        values:
+          secrets:
+            config:
+              akeyless:
+                path:
+                  DPS: "/Prod/DPS/homeoffice/GLS-Receiving-Atlas"
+            k8s:
+              - name: sam-secrets-{{$.kitt.build.artifact}}-{{$.kittExec.currentStage.name}}
+                type: Opaque
+                provider: DPS
+                secret_data:
+                  - key: azuresql-readwrite
+                    content: prod/prod/sam/SVC_AZURESQL_atlas-fc-receiving_020525111416
+          env:
+            atlas_deploymentContext: "PROD-US-WM-FC-CELL003"
+            atlas_deploymentSite: "{{$.kittExec.currentCluster.site}}"
+            DYNATRACE_ENABLED: true
+            JAVA_OPTS: >-
+              -Xms6144m
+              -Xmx6144m
+              -XX:+UseParNewGC
+              -XX:+UseConcMarkSweepGC
+              -XX:NewSize=3072M
+              -XX:MaxMetaspaceSize=256M
+              -Djsse.enableSNIExtension=true
+              -Druntime.context.environmentType=prod
+              -Druntime.context.environment=prod
+              -Druntime.context.facilityCountryCode=us
+              -Druntime.context.BusinessUnit=wm
+              -Druntime.context.marketType=fc
+              -Druntime.context.cellName=Cell003-USSouthCentral-USWest
+              -Druntime.context.region={{$.kittExec.currentCluster.site}}
+              -Druntime.context.deploymentRegionPair=scus-wus2
+              -Druntime.context.applicationName=receiving-api
+              -Druntime.context.envProfile=prod
+              -Druntime.context.appVersion=US-WM-FC-PROD-1.0
+              -Druntime.context.appName=receiving-api
+              -Druntime.context.deploymentCountry=us
+              -Druntime.context.system.property.override.enabled=true
+              -Druntime.context.cloud={{$.kittExec.currentCluster.zone}}
+              -DdeploymentSite={{$.kittExec.currentCluster.site}}
+              -Dscm.root.dir=/tmp/scm
+              -Dscm.print.summary.onchange=true
+              -Dscm.print.detailed.summary=true
+              -Dspring.config.use-legacy-processing=true
+              -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+              -Datlas-global-config-bootstrap=ccm
+              -Dplatform=wcnp
+              -DfacilityCountryCode=us
+              -Dspring.main.allow-circular-references=true
+              -Dccm.configs.dir=/etc/config
+              -Dtunr.enabled=true
+              -Dtunr.configs.dir=/etc/config
+              -Dscm.secrets.root.dir=/etc/secrets
+              -Dspring.main.allow-bean-definition-overriding=true
+          metadata:
+            labels:
+              ccm.filter-redundant-properties: true
+              ccm.server-delivery-api-version: v3
+              ccm.serviceId: "receiving-api"
+              ccm.serviceConfigVersion: "US-WM-FC-PROD-1.0"
+              isCcmEnabled: "true"
+              ccm.deploymentContext: "${execCtx.currentStage.name.toLowerCase()}"
+              ccm.apiVersion: "2.0"
+              ccm.environmentType: prod
+              ccm.cellName: Cell003-USSouthCentral-USWest
+              ccm.site: random
+              ccm.node: "node"
+              ccm.region: "all"
+              ccm.zone: "{{$.kittExec.currentCluster.clusterId}}"
+              ccm.deploymentSite: "{{$.kittExec.currentCluster.site}}"
+              ccm.envProfile: prod
+              ccm.environment: prod
+              ccm.deploymentCountry: us
+              ccm.deploymentRegionPair: scus-wus2
+              ccm.facilityCountryCode: us
+              ccm.businessUnit: wm
+              ccm.BusinessUnit: wm
+              ccm.marketType: fc
+              ccm.applicationName: receiving-api
+              wm.app: US-WM-FC-ATLAS-RECEIVING
+              wm.env: prod-cell003
+            annotations:
+              ccm.configVolumeMount: "/etc/config"
+          volumeMounts:
+            config-vol:
+              mountPath: "/etc/config"
+              meta:
+                configMap:
+                  name: "tunrconfig-${execCtx.currentStage.helm.values.global.metadata.labels['ccm.serviceId'].replaceAll('_', '-').toLowerCase()}-${execCtx.currentStage.helm.values.global.metadata.labels['ccm.serviceConfigVersion'].replaceAll('_', '-').toLowerCase()}-${execCtx.currentStage.helm.values.global.metadata.labels['ccm.deploymentContext'].contains('currentStage')?execCtx.currentStage.name.replaceAll('_', '-').toLowerCase():execCtx.currentStage.helm.values.global.metadata.labels['ccm.deploymentContext'].replaceAll('_', '-').toLowerCase()}"
+          min:
+            cpu: 100m
+            memory: 8192Mi
+          max:
+            cpu: 4000m
+            memory: 8192Mi
+          scaling:
+            enabled: true
+            min: 3
+            max: 4
+            cpuPercent: 75

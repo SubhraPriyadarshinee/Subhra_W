@@ -1,0 +1,180 @@
+[
+  {
+    "purchaseReferenceNumber": "8458709170",
+    "financialGroupCode": "US",
+    "baseDivCode": "WM",
+    "vendorNumber": "12344",
+    "deptNumber": "38",
+    "purchaseCompanyId": "1",
+    "purchaseReferenceLegacyType": "33",
+    "poDCNumber": "32897",
+    "purchaseReferenceStatus": "ACTV",
+    "deliveryDocumentLines": [
+      {
+        "gtin": "00368180121015",
+        "itemUPC": "00368180121015",
+        "caseUPC": "14351672127520",
+        "purchaseReferenceNumber": "8458709170",
+        "purchaseReferenceLineNumber": 1,
+        "event": "POS REPLEN",
+        "purchaseReferenceLineStatus": "RECEIVED",
+        "whpkSell": 8.22,
+        "vendorPackCost": 6.6,
+        "vnpkQty": 200,
+        "whpkQty": 50,
+        "expectedQtyUOM": "EA",
+        "expectedQty": 1000,
+        "overageQtyLimit": 0,
+        "itemNbr": 552464790,
+        "purchaseRefType": "CROSSU",
+        "palletTi": 0,
+        "palletHi": 0,
+        "vnpkWgtQty": 14.84,
+        "vnpkWgtUom": "LB",
+        "vnpkcbqty": 0.432,
+        "vnpkcbuomcd": "CF",
+        "isHazmat": false,
+        "itemDescription1": "Party Material",
+        "isControlledSubstance": true,
+        "additionalInfo": {
+          "warehouseGroupCode": "",
+          "isNewItem": false,
+          "weight": 0,
+          "warehouseMinLifeRemainingToReceive": 0,
+          "isDscsaExemptionInd": false,
+          "isHACCP": false,
+          "primeSlotSize": 0,
+          "isHazardous": 0,
+          "atlasConvertedItem": false,
+          "isWholesaler": false,
+          "isDefaultTiHiUsed": false,
+          "qtyValidationDone": false,
+          "isEpcisEnabledVendor": true,
+          "auditQty": 0,
+          "attpQtyInEaches": 0,
+          "attpVnpkQtyInEaches": 0,
+          "isControlledSubstance": true
+        },
+        "department": "38",
+        "palletSSCC": "00909899000020014394",
+        "ndc": "42806071401",
+        "shipmentDetailsList": [
+          {
+            "inboundShipmentDocId": "94198246_20191106_719468_VENDOR_US",
+            "shipmentNumber": "94198246",
+            "sourceGlobalLocationNumber": "0069382035222",
+            "destinationGlobalLocationNumber": "0078742035222",
+            "shippedQty": 1000,
+            "shippedQtyUom": "EA"
+          }
+        ],
+        "manufactureDetails": [
+          {
+            "lot": "00L032C09A",
+            "expiryDate": "2025-01-08",
+            "qty": 5120,
+            "reportedUom": "EA"
+          }
+        ],
+        "deptNumber": "38",
+        "vendorNbrDeptSeq": 492918,
+        "vendorStockNumber": "2222",
+        "shippedQty": 1000,
+        "shippedQtyUom": "EA",
+        "consumableGTIN": "00351672127527",
+        "orderableGTIN": "14351672127520",
+        "lotNumber": "00L032C09A",
+        "maxAllowedOverageQtyIncluded": false,
+        "lithiumIonVerificationRequired": false,
+        "limitedQtyVerificationRequired": false,
+        "gtinHierarchy": [
+          {
+            "gtin": "00351672127527",
+            "type": "consumableGTIN"
+          },
+          {
+            "gtin": "14351672127520",
+            "type": "orderableGTIN"
+          },
+          {
+            "type": "warehousePackGtin"
+          },
+          {
+            "type": "catalogGTIN"
+          },
+          {
+            "gtin": "00368180121015",
+            "type": "gtin"
+          },
+          {
+            "gtin": "00017800166331",
+            "type": "EA"
+          },
+          {
+            "gtin": "10342806714017",
+            "type": "PK"
+          },
+          {
+            "gtin": "20342806714014",
+            "type": "CA"
+          }
+        ],
+        "isNewItem": false,
+        "autoPopulateReceivingQty": false,
+        "packs": [
+          {
+            "packNumber": "00909899000020014373",
+            "palletNumber": "00100700302232310009",
+            "invoice": {
+              "invoiceNumber": "90999000132"
+            },
+            "auditDetail": {
+              "auditRequired": false
+            },
+            "handledOnBehalfOf": {
+              "type": "DC",
+              "number": 6094,
+              "countryCode": "US"
+            },
+            "channelMethod": "CROSSNA",
+            "legacyDetail": {
+              "packType": "UNKNOWN"
+            },
+            "shipmentNumber": "93935261",
+            "labelType": "UNKNOWN",
+            "uom": "CA",
+            "gtin": "00368180121015",
+            "serial": "1234",
+            "lotNumber": "1345",
+            "expiryDate": "2025-12-24",
+            "unitCount": 4,
+            "trackingStatus": "ValidationSuccessful",
+            "receivingStatus": "Open",
+            "poNumber": "8458709183",
+            "multiskuPack": false,
+            "partialPack": false,
+            "gtinHierarchy": [
+              {
+                "gtin": "20029695410987",
+                "uom": "CA"
+              },
+              {
+                "gtin": "10029695410987",
+                "uom": "CA"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "weight": 0,
+    "cubeQty": 0,
+    "deliveryStatus": "OPN",
+    "poTypeCode": 33,
+    "totalBolFbq": 106,
+    "deliveryLegacyStatus": "OPN",
+    "purchaseReferenceMustArriveByDate": "Feb 22, 2019 12:00:00 AM",
+    "deliveryNumber": 95334888,
+    "sourceType": "MCC"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "storeNbr": "3347",
+    "whpkOrderQty": 4,
+    "whpkDistribQty": 0
+  },
+  {
+    "storeNbr": "1245",
+    "whpkOrderQty": 4,
+    "whpkDistribQty": 0
+  },
+  {
+    "storeNbr": "2796",
+    "whpkOrderQty": 8,
+    "whpkDistribQty": 1
+  },
+  {
+    "storeNbr": "890",
+    "whpkOrderQty": 4,
+    "whpkDistribQty": 0
+  },
+  {
+    "storeNbr": "2695",
+    "whpkOrderQty": 4,
+    "whpkDistribQty": 0
+  },
+  {
+    "storeNbr": "3463",
+    "whpkOrderQty": 12,
+    "whpkDistribQty": 0
+  }
+]

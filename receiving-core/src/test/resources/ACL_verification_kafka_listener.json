@@ -1,0 +1,9 @@
+{
+ "labelVerificationAck": [{
+  "groupNbr": "40375082",
+  "locationId": "247",
+  "lpn": "c065610000100000001577483",
+  "eventTs": "2021-03-08T15:25:15.132Z",
+  "printerId":"ACL1_LINE1_PRINT1"
+ }]
+}

@@ -1,0 +1,43 @@
+[
+{
+"packNumber": "00909899000020014373",
+"palletNumber": "00100700302232310009",
+"invoice": {
+"invoiceNumber": "90999000132"
+},
+"auditDetail": {
+"auditRequired": false
+},
+"handledOnBehalfOf": {
+"type": "DC",
+"number": 6094,
+"countryCode": "US"
+},
+"channelMethod": "CROSSNA",
+"legacyDetail": {
+"packType": "UNKNOWN"
+},
+"shipmentNumber": "93935261",
+"labelType": "UNKNOWN",
+"uom": "CA",
+"gtin": "00368180121015",
+"serial": "1234",
+"lotNumber": "4567",
+"expiryDate": "2025-12-24",
+"unitCount": 4,
+"trackingStatus": "ValidationSuccessful",
+"poNumber": "8458709183",
+"multiskuPack": false,
+"partialPack": false,
+"gtinHierarchy": [
+{
+"gtin": "20029695410987",
+"uom": "CA"
+},
+{
+"gtin": "10029695410987",
+"uom": "CA"
+}
+]
+}
+]

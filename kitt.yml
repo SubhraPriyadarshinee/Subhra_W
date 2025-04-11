@@ -1,0 +1,150 @@
+setup:
+  releaseRefs: [#  Add your market specific branches here
+    "main",
+    "us-default/development", "us-default/release/.*",
+    "us-wm-ambient/development", "us-wm-ambient/release/.*",
+    "us-wm-fc/development", ".*-hotfix",
+    "us-wm-gdc/development", "us-wm-gdc/release/.*",
+    "us-wm-store/development", "us-wm-store/release/.*",
+    "us-sams-fc/development", "us-sams-fc/release.*",
+    "mx-default/development", "mx-default/release/.*",
+    "intl-fc/release/.*", "intl-fc/feature/.*",
+    "intl-default/development","intl-default/release.*",
+    "cam-default/development","cam-default/release.*",
+    "us-wm-ambient/pharmacy/release/.*",
+    "us-wm-ambient/pharmacy/release/hotfix/.*",
+    "us-wm-fc/auto/release/.*", "us-wm-fc/manual/release/.*"]
+
+
+  featureFlagMap:
+    logInfoKittModel: true
+    enableIstioSidecar: true
+    buildWhenStageRefMatches: true
+    validateChangeRecord: true
+    usePluginRoutingManifests: true
+    useArtifactory: true
+    forceCrqDefaultTypeAsManual: false
+
+profiles:
+  - git://Logistics:uwms-receiving:main:kitt-common-build
+  - git://Logistics:atlas-kitt-assets:main:build/atlas-build-v1
+  - dynatrace-saas-walmart
+build:
+  docker:
+    app:
+      buildArgs:
+        dtSaasOneAgentEnabled: "true"
+  postBuild:
+    - task:
+        name: deployApp
+        kittFilePath: kitt-config/us-default/us-default.yml
+        tag: ""
+        branch: "{{$.kitt.build.commitEvent.currentBranch}}"
+        sync: false
+    - task:
+        name: deployAppMX
+        type: deployApp
+        kittFilePath: kitt-config/mx-wm-fc/mx-wm-fc.yml
+        tag: ""
+        branch: "{{$.kitt.build.commitEvent.currentBranch}}"
+        sync: false
+    - task:
+        name: deployAppMX
+        type: deployApp
+        kittFilePath: kitt-config/mx-wm-fc/mx-wm-fc.yml
+        tag: ""
+        branch: "{{$.kitt.build.commitEvent.currentBranch}}"
+        sync: false
+    - task:
+        name: deployApp
+        kittFilePath: kitt-config/us-wm-ambient/us-wm-ambient.yml
+        tag: ""
+        branch: "{{$.kitt.build.commitEvent.currentBranch}}"
+        sync: false
+    - task:
+        name: deployApp
+        kittFilePath: kitt-config/us-wm-ambient/us-wm-ambient-rx.yml
+        tag: ""
+        branch: "{{$.kitt.build.commitEvent.currentBranch}}"
+        sync: false
+    - task:
+        name: deployApp
+        kittFilePath: kitt-config/us-wm-ambient/us-wm-ambient-cc.yml
+        tag: ""
+        branch: "{{$.kitt.build.commitEvent.currentBranch}}"
+        sync: false
+    - task:
+        name: deployApp
+        kittFilePath: kitt-config/us-wm-gdc/us-wm-gdc.yml
+        tag: ""
+        branch: "{{$.kitt.build.commitEvent.currentBranch}}"
+        sync: false
+    - task:
+        name: deployApp
+        kittFilePath: kitt-config/us-wm-fc/us-wm-fc.yml
+        tag: ""
+        branch: "{{$.kitt.build.commitEvent.currentBranch}}"
+        sync: false
+    - task:
+        name: deployApp
+        kittFilePath: kitt-config/us-wm-auto-fc/us-wm-auto-fc.yml
+        tag: ""
+        branch: "{{$.kitt.build.commitEvent.currentBranch}}"
+        sync: false
+    - task:
+        name: deployApp
+        kittFilePath: kitt-config/us-wm-store/us-wm-store.yml
+        tag: ""
+        branch: "{{$.kitt.build.commitEvent.currentBranch}}"
+        sync: false
+    - task:
+        name: deployApp
+        kittFilePath: kitt-config/mx-default/mx-default.yml
+        tag: ""
+        branch: "{{$.kitt.build.commitEvent.currentBranch}}"
+        sync: false
+    - task:
+        name: deployAppCA
+        type: deployApp
+        kittFilePath: kitt-config/ca-wm-fc/ca-wm-fc.yml
+        tag: ""
+        branch: "{{$.kitt.build.commitEvent.currentBranch}}"
+        sync: false
+    - task:
+        name: Atlas Receiving - MX
+        type: deployApp
+        kittFilePath: kitt-config/mx-wm-nonperish/mx-wm-nonperish.yml
+        tag: ""
+        branch: "{{$.kitt.build.commitEvent.currentBranch}}"
+        sync: false
+    - task:
+        name: Atlas Receiving - CAM
+        type: deployApp
+        kittFilePath: kitt-config/cam-default/cam-default.yml
+        tag: ""
+        branch: "{{$.kitt.build.commitEvent.currentBranch}}"
+        sync: false
+    - task:
+        name: Atlas Receiving - CA
+        type: deployApp
+        kittFilePath: kitt-config/ca-wm-ambient/ca-wm-ambient.yml
+        tag: ""
+        branch: "{{$.kitt.build.commitEvent.currentBranch}}"
+        sync: false
+    - task:
+        name: deployApp
+        kittFilePath: kitt-config/cl-default/cl-default.yml
+        tag: ""
+        branch: "{{$.kitt.build.commitEvent.currentBranch}}"
+        sync: false
+
+  #  Add market specific deployment tasks
+
+deploy:
+  namespace: atlas-receiving
+  skip: true
+  stages:
+    - name: pr
+      flows: [ pr ]
+    - name: dev
+      flows: [release]

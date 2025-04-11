@@ -1,0 +1,28 @@
+{
+  "containerOrders": [
+    {
+      "_id": "b377c966-f1df-4afd-a164-832fbd338bbe",
+      "poNumber": "8156165934",
+      "poLine": 1,
+      "manifest": "68531130",
+      "doorNum": "100",
+      "userId": "DCSYS",
+      "qty": 1,
+      "receivedUomTxt": "ZA",
+      "breakpackRatio": 2,
+      "containerGroupId": "a981f9a7-7109-4751-b4a3-f1d63118ee58",
+      "sstkSlotSize": 1,
+      "isLessThanCase": true,
+      "ignoreLabelCase": false,
+      "slottingOverride": {
+        "slottingType": "DA",
+        "stockType": "C",
+        "slotSize": 72,
+        "xrefDoor": "100",
+        "maxPallet": 2,
+        "slot": "A1013",
+        "slotRangeEnd": "A1099"
+      }
+    }
+  ]
+}

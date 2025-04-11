@@ -1,0 +1,267 @@
+{
+  "delivery": {
+    "deliveryNumber": 909108107,
+    "statusInformation": {
+      "status": "ARRIVED",
+      "operationalStatus": "ARV"
+    }
+  },
+  "shipments": [
+    {
+      "documentId": "90989098_20191106_719468_VENDOR_US",
+      "shipmentNumber": "90989098",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2019-11-06T19:02:43.774Z",
+      "shipmentDate": "2019-11-06",
+      "source": {
+        "globalLocationNumber": "0069382035222",
+        "number": 6938,
+        "numberType": "WALMART",
+        "type": "MCC",
+        "countryCode": "US",
+        "shipperId": "492918",
+        "shipperName": "Walmart"
+      },
+      "destination": {
+        "globalLocationNumber": "0078742035222",
+        "type": "DC",
+        "number": 6094,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "trailerNumber": "T127265756094",
+        "trailerSealNumber": "SL8132816",
+        "billOfLadingNumber": "6938-90928716",
+        "loadNumber": "90928716",
+        "deliveryNumber": 909108107,
+        "shippingDate": "2019-01-08",
+        "freightPayment": "PP",
+        "carrierId": "WM",
+        "carrierTrackingId": "WM"
+      }
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poNumber": "9091747200",
+      "freightBillQty": 106,
+      "baseDivisionCode": "WM",
+      "poType": "33",
+      "purchaseCompanyId": 1,
+      "poStatus": "ACTV",
+      "financialGroupCode": "US",
+      "poDates": {
+        "cancel": "2019-02-20",
+        "ordered": "2019-02-19",
+        "mabd": "2019-02-22",
+        "ship": "2019-02-21"
+      },
+      "vendorInformation": {
+        "name": "V11",
+        "number": 12344,
+        "department": 38
+      },
+      "poDcNumber": 32898,
+      "lines": [
+        {
+          "poLineNumber": 1,
+          "channel": "CROSSU",
+          "whpkQty": 6,
+          "whpkSell": 8.22,
+          "vnpkQty": 6,
+          "vnpkCost": 6.6,
+          "vnpkWeightQty": 14.84,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.432,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "poLineStatus": "RECEIVED",
+          "orderedQty": 10.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "30029695410987",
+            "orderableGTIN": "40029695410987",
+            "supplierStockId": "2222",
+            "palletTi": 0,
+            "palletHi": 0,
+            "hazmat": false,
+            "conveyable": true,
+            "vendorDepartment": "1",
+            "descriptions": [
+              "AK RAISINETS",
+              "AK RAISINETS"
+            ],
+            "number": 561291081
+          }
+        },
+        {
+          "poLineNumber": 2,
+          "channel": "CROSSU",
+          "whpkQty": 6,
+          "whpkSell": 8.22,
+          "vnpkQty": 6,
+          "vnpkCost": 6.6,
+          "vnpkWeightQty": 14.84,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.432,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "poLineStatus": "RECEIVED",
+          "orderedQty": 10.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "30029695410987",
+            "orderableGTIN": "40029695410987",
+            "supplierStockId": "2222",
+            "palletTi": 0,
+            "palletHi": 0,
+            "hazmat": false,
+            "conveyable": true,
+            "vendorDepartment": "1",
+            "descriptions": [
+              "AK RAISINETS",
+              "AK RAISINETS"
+            ],
+            "number": 561291082
+          }
+        }
+      ]
+    }
+  ],
+  "packs": [
+    {
+      "packNumber": "909899000020014304",
+      "palletNumber": "00909700302232310301",
+      "invoice": {
+        "invoiceNumber": "90999000132"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6094,
+        "countryCode": "US"
+      },
+      "channelMethod": "CROSSNA",
+      "legacyDetail": {
+        "packType": "UNKNOWN",
+        "labelType": "UNKNOWN"
+      },
+      "items": [
+        {
+          "reportedProductId": "561291081",
+          "reportedProductIdType": "IN",
+          "itemNumber": 561291081,
+          "gtin": "00029695410987",
+          "warehouseCaseGtin": "10029695410987",
+          "vendorCaseGtin": "20029695410987",
+          "vendorId": "492918",
+          "itemDescription": "TOYS",
+          "itemDepartment": "8",
+          "itemDivision": "108",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "documentSequenceNumber": 1,
+          "purchaseOrder": {
+            "orderNumber": "f843847e-b083-4f1e-9c51-261bc3053b2b",
+            "poDate": "2019-01-08",
+            "poLineNumber": 1,
+            "poNumber": "9091747200",
+            "poType": "IMPORT_ASSEMBLY",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 2
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 36.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 36.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 2,
+            "vendorCaseQuantity": 2
+          },
+          "upc": "90929695410987",
+          "nationalDrugCodeN2": "43547-282-11",
+          "nationalDrugCodeN4": "43547-0282-11",
+          "manufactureDetails": [
+            {
+            "lotNumber": "00L032C09A",
+            "expirationDate": "2025-01-08"
+          }
+            ]
+        }
+      ],
+      "shipmentNumber": "90989098",
+      "itemCount": {
+        "561291081": 2
+      }
+    },
+    {
+      "packNumber": "909899000020014302",
+      "palletNumber": "00909700302232310301",
+      "invoice": {
+        "invoiceNumber": "90999000132"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6094,
+        "countryCode": "US"
+      },
+      "legacyDetail": {
+        "packType": "UNKNOWN",
+        "labelType": "UNKNOWN"
+      },
+      "items": [
+        {
+          "reportedProductId": "561291082",
+          "reportedProductIdType": "IN",
+          "itemNumber": 561291082,
+          "gtin": "00074734088931",
+          "warehouseCaseGtin": "10074734088931",
+          "vendorCaseGtin": "20074734088931",
+          "vendorId": "492918",
+          "itemDescription": "Party Material",
+          "itemDepartment": "92",
+          "itemDivision": "786",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "documentSequenceNumber": 1,
+          "purchaseOrder": {
+            "orderNumber": "bcf6a98a-1000-41c6-af49-e3c2b71f5c15",
+            "poDate": "2019-01-08",
+            "poLineNumber": 2,
+            "poNumber": "9091747200",
+            "poType": "DC_TO_DC_TRANSFER",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 2
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 1120.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 1120.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 4,
+            "vendorCaseQuantity": 4
+          },
+          "upc": "90929695410987",
+          "nationalDrugCodeN2": "43547-282-11",
+          "nationalDrugCodeN4": "43547-0282-11",
+          "manufactureDetails": [
+            {
+            "lotNumber": "00L032C09B",
+            "expirationDate": "2025-01-08"
+          }
+          ]
+        }
+      ],
+      "shipmentNumber": "90989098",
+      "itemCount": {
+        "561291082": 2
+      }
+    }
+  ]
+}

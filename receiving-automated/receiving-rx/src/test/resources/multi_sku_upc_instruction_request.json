@@ -1,0 +1,92 @@
+{
+  "deliveryNumber": "83077752",
+  "deliveryStatus": "OPN",
+  "doorNumber": "601",
+  "messageId": "906cfd7d-1e98-4aea-b75d-4326b04dfccd",
+  "upcNumber": "00605388022943",
+  "scannedDataList": [
+    {
+      "key": "BARCODE_SCAN",
+      "value": "00605388022943"
+    }
+  ],
+  "deliveryDocuments": [
+    {
+      "baseDivisionCode": "WM",
+      "cubeQty": 0,
+      "cubeUOM": "",
+      "deliveryDocumentLines": [
+        {
+          "additionalInfo": {
+            "isDscsaExemptionInd": true
+          },
+          "caseUpc": "",
+          "color": "CAPSUL",
+          "cube": "0.51",
+          "cubeUom": "CF",
+          "currency": "",
+          "description": "ATOMOXETINE HCl CAP 80MG 30 BTL USA",
+          "dotIdNbr": "",
+          "event": "POS REPLEN",
+          "deptNumber": "40",
+          "gtin": "00360505283538",
+          "itemNbr": 571398025,
+          "itemType": "",
+          "itemUpc": "00360505283538",
+          "itemUPC": "00360505283538",
+          "ndc": "60505283503",
+          "overageQtyLimit": 0,
+          "packSSCC": "",
+          "palletSSCC": "00107713130250136761",
+          "profiledWarehouseArea": "",
+          "promoBuyInd": "",
+          "purchaseRefType": "20",
+          "purchaseReferenceLineNumber": 16,
+          "purchaseReferenceLineStatus": "APPROVED",
+          "purchaseReferenceNumber": "9371790870",
+          "qtyUOM": "ZA",
+          "secondaryDescription": "",
+          "shipmentDetailsList": [{
+            "loadNumber": "",
+            "shipmentNumber": "0086008782",
+            "destinationGlobalLocationNumber": "0078742030180"
+          }],
+          "size": "30",
+          "totalOrderQty": 1,
+          "vendorPack": 2160,
+          "vendorPackCost": 1170,
+          "warehousePack": 30,
+          "warehousePackSell": 16.25,
+          "weight": 5.48,
+          "weightUom": "LB",
+          "quantityUOM": "ZA",
+          "vnpkQty": 2160,
+          "whpkQty": 30,
+          "expectedQty": 1,
+          "expectedQtyUOM": "ZA",
+          "vendorNbrDeptSeq": 733436,
+          "shippedQty": 2,
+          "shippedQtyUom": "ZA",
+          "aggregatedTotalOrderedQty": 1,
+          "aggregatedShippedQty": 2,
+          "itemDescription1": "ATOMOXETINE HCl CAP 80MG 30 BTL USA",
+          "vendorStockNumber": "RGRDL100S1503MZ"
+        }
+      ],
+      "deliveryStatus": "OPN",
+      "deptNumber": "40",
+      "financialReportingGroup": "US",
+      "freightTermCode": "",
+      "poDCNumber": "6028",
+      "poTypeCode": 20,
+      "purchaseCompanyId": "1",
+      "purchaseReferenceLegacyType": "20",
+      "purchaseReferenceNumber": "9371790870",
+      "purchaseReferenceStatus": "ACTV",
+      "totalBolFbq": 96,
+      "vendorNumber": "733436",
+      "weight": 0,
+      "weightUOM": ""
+    }
+  ]
+}

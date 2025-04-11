@@ -1,0 +1,11 @@
+{
+    "sneEnabled": true,
+    "received": [],
+    "errors": [
+        {
+            "errorCode": "NIMRDS-017",
+            "message": "No receiver found for manifest or PO",
+            "_id": "d16c6bd2-cd30-4190-afa6-5daceb14b3bf"
+        }
+    ]
+}

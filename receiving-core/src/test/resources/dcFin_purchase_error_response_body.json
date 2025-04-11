@@ -1,0 +1,11 @@
+{
+    "meta": {
+        "status": "FAILURE",
+        "statusCode": "GLS-DCFIN-CLOUD-VE-0011",
+        "responseText": "Invalid request body"
+    },
+    "body": [
+        "message: purchases[0].purchaseLineList[0].receivedPrimaryQtyUOM  : Invalid lineQtyUOM, should be one amongst EA|PH|ZA",
+        "message: purchases[0].purchaseLineList[0].secondaryQuantityUOM  : Invalid secondaryQtyUOM, should be one amongst LB | LB/EA | LB/ZA | LB/PH | KG | KG/EA | KG/ZA | KG/PH"
+    ]
+}

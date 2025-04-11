@@ -1,0 +1,408 @@
+{
+  "delivery": {
+    "deliveryNumber": 60318311,
+    "statusInformation": {
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "operationalStatus": "WRK",
+      "status": "WRK"
+    }
+  },
+  "shipments": [
+    {
+      "documentId": "1901593-1-090821_20210908_PRASCO_SHIPPER_US",
+      "shipmentNumber": "1901593-1-090821",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2021-09-09T11:39:19.171Z",
+      "shipmentDate": "2021-09-08",
+      "source": {
+        "number": "PRASCO",
+        "numberType": "ZZ",
+        "type": "SHIPPER",
+        "countryCode": "US",
+        "shipperName": "PRASCO PACK SLIP 6125 COMMERCE COURT"
+      },
+      "destination": {
+        "globalLocationNumber": "0078742027753",
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "billOfLadingNumber": "1901593-1-090821",
+        "shippingDate": "2021-09-08",
+        "carrierId": "MAFL"
+      },
+      "totalPacks": 2
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poNumber": "8769954810",
+      "freightBillQty": 396,
+      "cubeQty": 10.0,
+      "poDcCountry": "US",
+      "baseDivisionCode": "WM",
+      "poType": "20",
+      "purchaseCompanyId": 1,
+      "poStatus": "ACTV",
+      "financialGroupCode": "US",
+      "vendorInformation": {
+        "name": "SCION COMPANIES",
+        "number": 465612,
+        "department": 38
+      },
+      "poDates": {
+        "cancel": "2021-09-07",
+        "ordered": "2021-09-05",
+        "mabd": "2021-09-09",
+        "ship": "2021-09-07"
+      },
+      "poDcNumber": 6001,
+      "lines": [
+        {
+          "poLineNumber": 7,
+          "channel": "SSTKU",
+          "whpkQty": 30,
+          "whpkSell": 2.46,
+          "vnpkQty": 1440,
+          "vnpkCost": 118.08,
+          "vnpkWeightQty": 1.0,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.007,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "poLineStatus": "RECEIVED",
+          "orderedQty": 51.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00366993683300",
+            "orderableGTIN": "10366993683307",
+            "warehousePackGTIN": "20366993683304",
+            "supplierStockId": "66993-0683-30",
+            "conveyable": false,
+            "itemTypeCode": "20",
+            "vendorDepartment": "38",
+            "color": "TABLET",
+            "size": "30",
+            "warehousePackQuantity": 30,
+            "orderableQuantity": 1440,
+            "isNewItem": false,
+            "itemAdditonalInformation": {
+              "isDscsaExemptionInd": false,
+              "weight": 0.003,
+              "cubeUOM": "CF",
+              "cube": 0.007,
+              "weightUOM": "LB"
+            },
+            "descriptions": [
+              "OLANZAPINE 10MG",
+              "OLANZAPINE 10MG"
+            ],
+            "number": 564040350
+          }
+        },
+        {
+          "poLineNumber": 6,
+          "channel": "SSTKU",
+          "whpkQty": 30,
+          "whpkSell": 1.73,
+          "vnpkQty": 1440,
+          "vnpkCost": 83.04,
+          "vnpkWeightQty": 8.73,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.999,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "poLineStatus": "APPROVED",
+          "orderedQty": 42.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00366993681306",
+            "orderableGTIN": "10366993681303",
+            "warehousePackGTIN": "20366993681300",
+            "supplierStockId": "66993-0681-30",
+            "conveyable": false,
+            "itemTypeCode": "20",
+            "vendorDepartment": "38",
+            "color": "TABLET",
+            "size": "30",
+            "warehousePackQuantity": 30,
+            "orderableQuantity": 1440,
+            "isNewItem": false,
+            "itemAdditonalInformation": {
+              "isDscsaExemptionInd": false,
+              "weight": 0.003,
+              "cubeUOM": "CF",
+              "cube": 0.007,
+              "weightUOM": "LB"
+            },
+            "descriptions": [
+              "OLANZAPINE 5MG",
+              "OLANZAPINE 5MG"
+            ],
+            "number": 564040197
+          }
+        },
+        {
+          "poLineNumber": 5,
+          "channel": "SSTKU",
+          "whpkQty": 30,
+          "whpkSell": 1.45,
+          "vnpkQty": 1440,
+          "vnpkCost": 69.6,
+          "vnpkWeightQty": 8.73,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.999,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "poLineStatus": "RECEIVED",
+          "orderedQty": 16.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00366993680309",
+            "orderableGTIN": "10366993680306",
+            "warehousePackGTIN": "20366993680303",
+            "supplierStockId": "66993-0680-30",
+            "conveyable": false,
+            "itemTypeCode": "20",
+            "vendorDepartment": "38",
+            "color": "TABLET",
+            "size": "30",
+            "warehousePackQuantity": 30,
+            "orderableQuantity": 1440,
+            "isNewItem": false,
+            "itemAdditonalInformation": {
+              "isDscsaExemptionInd": false,
+              "weight": 0.003,
+              "cubeUOM": "CF",
+              "cube": 0.007,
+              "weightUOM": "LB"
+            },
+            "descriptions": [
+              "OLANZAPINE 2.5MG",
+              "OLANZAPINE 2.5MG"
+            ],
+            "number": 564040133
+          }
+        }
+      ],
+      "weightQty": 6100.0,
+      "weightQtyUom": "LB",
+      "cubeQtyUom": "CF"
+    }
+  ],
+  "packs": [
+    {
+      "packNumber": "00000669930006995024",
+      "invoice": {
+        "invoiceNumber": "1969484"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6001,
+        "countryCode": "US"
+      },
+      "shipmentNumber": "1901593-1-090821",
+      "items": [
+        {
+          "reportedProductId": "66993068330",
+          "reportedProductIdType": "N2",
+          "itemNumber": 564040350,
+          "gtin": "00366993683300",
+          "warehouseCaseGtin": "50366993683305",
+          "vendorCaseGtin": "50366993683305",
+          "vendorId": "465612",
+          "itemDivision": "WM",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20366993683304",
+          "purchaseOrder": {
+            "poDate": "2021-09-06",
+            "poLineNumber": 7,
+            "poNumber": "8769954810",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 1
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 2448.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 2448.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN2": "66993068330",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 51,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "56421009A1",
+              "expirationDate": "2023-05-31",
+              "reportedQuantity": 2448.0,
+              "reportedUom": "EA"
+            }
+          ],
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "564040350",
+              "reportedProductIdType": "IN"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "20366993683304",
+              "uom": "PK"
+            },
+            {
+              "gtin": "00366993683300",
+              "uom": "EA"
+            },
+            {
+              "gtin": "10366993683307",
+              "uom": "CA"
+            },
+            {
+              "gtin": "50366993683305",
+              "uom": "CA"
+            }
+          ],
+          "nationalDrugCode": "66993068330",
+          "nationalDrugCodeType": "N2"
+        },
+        {
+          "reportedProductId": "66993068130",
+          "reportedProductIdType": "N2",
+          "itemNumber": 564040197,
+          "gtin": "00366993681306",
+          "warehouseCaseGtin": "10366993681303",
+          "vendorCaseGtin": "10366993681303",
+          "vendorId": "465612",
+          "itemDivision": "WM",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20366993681300",
+          "purchaseOrder": {
+            "poDate": "2021-09-06",
+            "poLineNumber": 6,
+            "poNumber": "8769954810",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 1
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 2016.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 2016.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN2": "66993068130",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 42,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "56221009A3",
+              "expirationDate": "2023-02-28",
+              "reportedQuantity": 2016.0,
+              "reportedUom": "EA"
+            }
+          ],
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "564040197",
+              "reportedProductIdType": "IN"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "20366993681300",
+              "uom": "PK"
+            },
+            {
+              "gtin": "00366993681306",
+              "uom": "EA"
+            },
+            {
+              "gtin": "50366993681301",
+              "uom": "CA"
+            },
+            {
+              "gtin": "10366993681303",
+              "uom": "CA"
+            }
+          ],
+          "nationalDrugCode": "66993068130",
+          "nationalDrugCodeType": "N2"
+        },
+        {
+          "reportedProductId": "66993068030",
+          "reportedProductIdType": "N2",
+          "itemNumber": 564040133,
+          "gtin": "00366993680309",
+          "warehouseCaseGtin": "50366993680304",
+          "vendorCaseGtin": "50366993680304",
+          "vendorId": "465612",
+          "itemDivision": "WM",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20366993680303",
+          "purchaseOrder": {
+            "poDate": "2021-09-06",
+            "poLineNumber": 5,
+            "poNumber": "8769954810",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 1
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 768.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 768.0,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN2": "66993068030",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 16,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "56121024A1",
+              "expirationDate": "2023-06-30",
+              "reportedQuantity": 768.0,
+              "reportedUom": "EA"
+            }
+          ],
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "564040133",
+              "reportedProductIdType": "IN"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "20366993680303",
+              "uom": "PK"
+            },
+            {
+              "gtin": "00366993680309",
+              "uom": "EA"
+            },
+            {
+              "gtin": "10366993680306",
+              "uom": "CA"
+            },
+            {
+              "gtin": "50366993680304",
+              "uom": "CA"
+            }
+          ],
+          "nationalDrugCode": "66993068030",
+          "nationalDrugCodeType": "N2"
+        }
+      ]
+    }
+  ]
+}

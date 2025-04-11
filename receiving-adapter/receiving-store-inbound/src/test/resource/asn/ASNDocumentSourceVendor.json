@@ -1,0 +1,167 @@
+{
+  "delivery": {
+    "deliveryNumber": 32840000000994,
+    "scheduled": "2024-01-26T00:02:59.597Z",
+    "statusInformation": {
+      "status": "SCH"
+    }
+  },
+  "shipment": {
+    "documentId": "04601805_20240125_905331FA_SHIPPER_US",
+    "shipmentNumber": "04601805",
+    "documentType": "ASN",
+    "documentRevision": 0,
+    "documentIngestTime": "2024-01-26T00:02:58.339Z",
+    "shipmentDate": "2024-01-25",
+    "isDocumentDSCSA": "NONE",
+    "source": {
+      "number": "905331",
+      "numberType": "WALMART",
+      "type": "VENDOR",
+      "countryCode": "US",
+      "shipperId": "905331",
+      "shipperName": "Dean West (FAF, Inc.)"
+    },
+    "destination": {
+      "globalLocationNumber": "0078742060712",
+      "type": "STORE",
+      "number": 3284,
+      "countryCode": "US"
+    },
+    "shipmentDetail": {
+      "reportedDeliveryNumber": 32840000000994,
+      "shippingDate": "2024-01-22"
+    },
+    "additionalInfo": {
+      "storeInvoices": [
+        "15848951"
+      ],
+      "regionCode": "05",
+      "bannerCode": "A1",
+      "timeZoneCode": "CST",
+      "marketCode": "044",
+      "mfcInvoiceNumbers": [
+        "15848951"
+      ],
+      "bannerDescription": "WM Supercenter",
+      "floorLoadedCases": 1,
+      "totalExpected": [
+        {
+          "quantity": 12.0,
+          "uom": "EA"
+        }
+      ]
+    }
+  },
+  "packs": [
+    {
+      "packNumber": "00007278330083527223",
+      "auditDetail": {
+        "accuracyPercent": 98.65,
+        "auditPercentOfTotalItemsOnDocument": 50.0,
+        "auditRequired": true
+      },
+      "legacyDetail": {
+        "packType": "STORE"
+      },
+      "items": [
+        {
+          "reportedProductId": "195426065563",
+          "reportedProductIdType": "UP",
+          "itemNumber": 666236289,
+          "gtin": "00195426065563",
+          "warehouseCaseGtin": "00195426065563",
+          "vendorCaseGtin": "00195426065563",
+          "vendorId": "905331",
+          "itemDescription": "FSP Y NECK/EAR SET",
+          "itemDepartment": "32",
+          "itemDivision": "11",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "documentSequenceNumber": 1,
+          "purchaseOrder": {
+            "poDate": "2023-12-22",
+            "poNumber": "4281050298",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63"
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 6.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 6.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00195426065563",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "15848951",
+            "invoiceLineNumber": 1
+          },
+          "financialDetail": {
+            "derivedRetail": 17.94,
+            "derivedRetailUom": "EA",
+            "derivedCost": 6.68,
+            "derivedCostUom": "EA"
+          }
+        },
+        {
+          "reportedProductId": "195426065570",
+          "reportedProductIdType": "UP",
+          "itemNumber": 666236288,
+          "gtin": "00195426065570",
+          "warehouseCaseGtin": "00195426065570",
+          "vendorCaseGtin": "00195426065570",
+          "vendorId": "905331",
+          "itemDescription": "FSP CZ SIMPEARL EAR",
+          "itemDepartment": "32",
+          "itemDivision": "11",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "documentSequenceNumber": 2,
+          "purchaseOrder": {
+            "poDate": "2023-12-22",
+            "poNumber": "4281050298",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63"
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 6.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 6.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00195426065570",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "15848951",
+            "invoiceLineNumber": 2
+          },
+          "financialDetail": {
+            "derivedRetail": 14.94,
+            "derivedRetailUom": "EA",
+            "derivedCost": 4.17,
+            "derivedCostUom": "EA"
+          }
+        }
+      ],
+      "shipmentNumber": "04601805",
+      "packType": "STORE",
+      "additionalInfo": {
+        "packDSCSA": "NONE"
+      }
+    }
+  ],
+  "pallets": []
+}

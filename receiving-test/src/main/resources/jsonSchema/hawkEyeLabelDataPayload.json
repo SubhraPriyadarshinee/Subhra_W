@@ -1,0 +1,265 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "deliveryNumber": {
+      "type": "integer"
+    },
+    "doorNumber": {
+      "type": "string"
+    },
+    "trailer": {
+      "type": "string"
+    },
+    "defaultTCL": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "defaultDestination": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "tclTemplate": {
+      "type": "string"
+    },
+    "scanItems": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "itemNumber": {
+              "type": "integer"
+            },
+            "itemGroupType": {
+              "type": "string"
+            },
+            "desc1": {
+              "type": "string"
+            },
+            "desc2": {
+              "type": "string"
+            },
+            "orderableGTIN": {
+              "type": "string"
+            },
+            "consumableGTIN": {
+              "type": "string"
+            },
+            "possibleUPCs": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "vnpkQty": {
+              "type": "integer"
+            },
+            "event": {
+              "type": "string"
+            },
+            "deptNumber": {
+              "type": "integer"
+            },
+            "vendorNumber": {
+              "type": "integer"
+            },
+            "hazmat": {
+              "type": "string"
+            },
+            "color": {
+              "type": "string"
+            },
+            "containerType": {
+              "type": "string"
+            },
+            "size": {
+              "type": "string"
+            },
+            "storeZone": {
+              "type": "string"
+            },
+            "channel": {
+              "type": "string"
+            },
+            "packType": {
+              "type": "string"
+            },
+            "origin": {
+              "type": "string"
+            },
+            "fullUserId": {
+              "type": "string"
+            },
+            "trailerCaseLabels": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "seqNo": {
+                      "type": "string"
+                    },
+                    "purchaseReferenceNumber": {
+                      "type": "string"
+                    },
+                    "purchaseReferenceLineNumber": {
+                      "type": "integer"
+                    },
+                    "lpns": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "poTypeCode": {
+                      "type": "string"
+                    },
+                    "poCode": {
+                      "type": "string"
+                    },
+                    "poEvent": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "seqNo",
+                    "purchaseReferenceNumber",
+                    "purchaseReferenceLineNumber",
+                    "lpns",
+                    "poTypeCode",
+                    "poCode",
+                    "poEvent"
+                  ]
+                }
+              ]
+            },
+            "exceptionLabels": {
+              "type": "object",
+              "properties": {
+                "seqNo": {
+                  "type": "string"
+                },
+                "purchaseReferenceNumber": {
+                  "type": "string"
+                },
+                "purchaseReferenceLineNumber": {
+                  "type": "integer"
+                },
+                "lpns": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "poTypeCode": {
+                  "type": "string"
+                },
+                "poCode": {
+                  "type": "string"
+                },
+                "poEvent": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "seqNo",
+                "purchaseReferenceNumber",
+                "purchaseReferenceLineNumber",
+                "lpns",
+                "poTypeCode",
+                "poCode",
+                "poEvent"
+              ]
+            }
+          },
+          "required": [
+            "itemNumber",
+            "itemGroupType",
+            "desc1",
+            "desc2",
+            "orderableGTIN",
+            "consumableGTIN",
+            "possibleUPCs",
+            "vnpkQty",
+            "event",
+            "deptNumber",
+            "vendorNumber",
+            "hazmat",
+            "color",
+            "containerType",
+            "size",
+            "storeZone",
+            "channel",
+            "packType",
+            "origin",
+            "fullUserId",
+            "trailerCaseLabels",
+            "exceptionLabels"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "deliveryNumber",
+    "doorNumber",
+    "trailer",
+    "defaultTCL",
+    "defaultDestination",
+    "tclTemplate",
+    "scanItems"
+  ]
+}

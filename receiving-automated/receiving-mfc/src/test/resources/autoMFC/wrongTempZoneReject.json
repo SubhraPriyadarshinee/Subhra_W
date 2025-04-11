@@ -1,0 +1,23 @@
+{
+  "sourceCreationTimestamp": "2021-07-  21T17:10:07.002Z",
+  "revision": 0,
+  "userId": "abc1234",
+  "items": [
+    {
+      "productId": "379VJ4AMO3EX",
+      "gtin": "00080153032837",
+      "quantityUom": "EA",
+      "previousState": "PENDING",
+      "replenishSubTypeCode": 0,
+      "itemTypeCode": 20,
+      "stockStateChange": [
+        {
+          "currentState": "REJECTED",
+          "quantity": 5.00,
+          "reasonCode": "WRONGTEMPZONE",
+          "reasonDesc": "Wrong Temp zone"
+        }
+      ]
+    }
+  ]
+}

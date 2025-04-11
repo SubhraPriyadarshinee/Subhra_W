@@ -1,0 +1,35 @@
+profiles:
+  - git://Logistics:uwms-receiving:us-sams-fc/development:kitt-config/us-sams-fc/us-sams-fc
+  - git://Logistics:uwms-receiving:us-sams-fc/development:kitt-common-deploy
+  - git://Logistics:uwms-receiving:us-sams-fc/development:kitt-config/us-sams-fc/stages/stg-c8
+  - git://Logistics:uwms-receiving:us-sams-fc/development:kitt-config/us-sams-fc/stages/prod-c8
+
+deploy:
+  gslb:
+    lbRoutings:
+      stg-c8:
+        cnames:
+          - gls-atlas-receiving-stg-sams-fc-c8.us.walmart.com
+          - receiving-api-stg-sams-fc-c8.us.walmart.net
+        matchStages: [ stg-c8 ]
+      prod-c8:
+        cnames:
+          - gls-atlas-receiving-prod-sams-fc-c8.us.walmart.com
+          - receiving-api-prod-sams-fc-c8.us.walmart.net
+        matchStages: [ prod-c8 ]
+  stages:
+    - name: stg-c8
+      refs: ["us-sams-fc/release.*" ]
+      events: [ onPush ]
+      target:
+        - cluster_id: [ uswest-stage-az-008, uscentral-stage-az-12 ]
+      rollbackOnError: true
+      approvers:
+        groups:
+          - "Sams-FC-GLS-Receiving-Atlas"
+    - name: prod-c8
+      refs: [ "us-sams-fc/release.*" ]
+      events: [ onPush ]
+      target:
+        - cluster_id: [ uswest-prod-az-321, uscentral-prod-az-004 ]
+      rollbackOnError: true

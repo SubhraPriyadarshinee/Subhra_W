@@ -1,0 +1,30 @@
+{
+  "sourceCreationTimestamp": "2021-07-  21T17:10:07.002Z",
+  "containerId": "546191213_20191106_719468_VENDOR_US_00091900003094981490" ,
+  "revision": 0,
+  "userId": "abc1234",
+  "items": [
+    {
+      "productId": "379VJ4AMO3EX",
+      "gtin": "00080153032837",
+      "quantityUom": "EA",
+      "previousState": "PENDING",
+      "itemTypeCode": 7,
+      "replenishSubTypeCode": 0,
+      "stockStateChange": [
+        {
+          "currentState": "REJECTED",
+          "quantity": 1.00,
+          "reasonCode": "DAMAGED",
+          "reasonDesc": "Broke"
+        },
+        {
+          "currentState": "REJECTED",
+          "quantity": 2.00,
+          "reasonCode": "EXPIRED",
+          "reasonDesc": "Item Expired"
+        }
+      ]
+    }
+  ]
+}

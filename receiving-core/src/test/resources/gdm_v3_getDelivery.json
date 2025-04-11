@@ -1,0 +1,492 @@
+{
+	"deliveryNumber": 9967271326,
+	"statusInformation": {
+		"status": "WRK",
+		"statusReasonCode": [
+			"WORKING"
+		],
+		"operationalStatus": "WRK"
+	},
+	"type": "LIVE",
+	"appointmentTime": "2019-12-10T17:45:00Z",
+	"doorNumber": "798",
+	"hazmat": false,
+	"loadInformation": {
+		"type": "CONV",
+		"number": "110606556",
+		"trailerInformation": {
+			"sealNumber": "6005281",
+			"trailerId": "104681",
+			"scacCode": "WM"
+		}
+	},
+	"lifeCycleInformation": [
+		{
+			"type": "DOOR_OPEN",
+			"userId": "sysadmin",
+			"time": "2020-02-28T17:49:48.291Z"
+		},
+		{
+			"type": "RECEIVING_STARTED",
+			"userId": "sysadmin",
+			"time": "2020-02-28T18:08:46.207Z"
+		}
+	],
+	"purchaseOrders": [
+		{
+			"poNumber": "9164390046",
+			"omsPONumber": "9164390046",
+			"poDcNumber": "32612",
+			"bpoNumber": "0",
+			"baseDivisionCode": "WM",
+			"legacyType": 20,
+			"freightBillQty": 1300,
+			"purchaseCompanyId": 1,
+			"poStatus": "CLOSED",
+			"bolNumbers": [
+				{
+					"bolNumber": "123"
+				}
+			],
+			"freightTermCode": "PRP",
+			"financialGroupCode": "US",
+			"dates": {
+				"cancel": "2019-11-27",
+				"ordered": "2019-11-20",
+				"mabd": "2019-11-28",
+				"ship": "2019-11-27"
+			},
+			"vendor": {
+				"name": "BAMA COMPANIES INC",
+				"number": 480889,
+				"department": 94
+			},
+			"operationalInfo": {
+				"state": "ACTIVE"
+			},
+			"additionalInformation": {
+				"Outbound_Month": "12",
+				"No_Of_Items": 3
+			},
+			"lines": [
+				{
+					"poLineNumber": 1,
+					"channel": "SSTKU",
+					"poLineStatus": "RECEIVED",
+					"ordered": {
+						"quantity": 810,
+						"uom": "ZA"
+					},
+					"freightBillQty": 810,
+					"ovgThresholdQuantityLimit": 20,
+					"whpk": {
+						"quantity": 6,
+						"sell": 23.89
+					},
+					"vnpk": {
+						"quantity": 6,
+						"cost": 23.89,
+						"weight": {
+							"quantity": 10.0,
+							"uom": "LB"
+						},
+						"cube": {
+							"quantity": 0.852,
+							"uom": "CF"
+						}
+					},
+					"event": "POS REPLEN",
+					"additionalInformation": {
+						"promoBuyInd": "N",
+						"Sample_Po_Ind": "N",
+						"Manual_Po_Ind": "N"
+					},
+					"itemDetails": {
+						"number": 555808898,
+						"consumableGTIN": "10681131135822",
+						"orderableGTIN": "00681131135825",
+						"supplierStockId": "11357",
+						"palletTi": 9,
+						"palletHi": 9,
+						"hazmat": false,
+						"conveyable": false,
+						"itemTypeCode": "20",
+						"color": "8DAYS",
+						"size": "EA",
+						"descriptions": [
+							"4\" MKT BAN CRM N",
+							"<T&S>"
+						],
+						"vendorDepartment": "98",
+						"additionalInformation": {
+							"warehouseGroupCode": "F",
+							"isNewItem": false,
+							"warehouseAreaCode": "8",
+							"warehouseAreaDesc": "Dry Produce",
+							"profiledWarehouseArea": "CPS",
+							"warehouseRotationTypeCode": "2",
+							"recall": false,
+							"weight": 3.325,
+							"isVariableWeight": false,
+							"weightUOM": "LB",
+							"warehouseMinLifeRemainingToReceive": 30
+						}
+					}
+				},
+				{
+					"poLineNumber": 2,
+					"channel": "SSTKU",
+					"poLineStatus": "RECEIVED",
+					"ordered": {
+						"quantity": 810,
+						"uom": "ZA"
+					},
+					"freightBillQty": 810,
+					"ovgThresholdQuantityLimit": 20,
+					"whpk": {
+						"quantity": 6,
+						"sell": 23.89
+					},
+					"vnpk": {
+						"quantity": 6,
+						"cost": 23.89,
+						"weight": {
+							"quantity": 10.0,
+							"uom": "LB"
+						},
+						"cube": {
+							"quantity": 0.852,
+							"uom": "CF"
+						}
+					},
+					"event": "POS REPLEN",
+					"additionalInformation": {
+						"promoBuyInd": "N",
+						"Sample_Po_Ind": "N",
+						"Manual_Po_Ind": "N"
+					},
+					"itemDetails": {
+						"number": 555808899,
+						"consumableGTIN": "10681131135823",
+						"orderableGTIN": "00681131135826",
+						"supplierStockId": "11357",
+						"palletTi": 9,
+						"palletHi": 9,
+						"hazmat": false,
+						"conveyable": false,
+						"itemTypeCode": "20",
+						"color": "8DAYS",
+						"size": "EA",
+						"descriptions": [
+							"4\" MKT BAN CRM N",
+							"<T&S>"
+						],
+						"vendorDepartment": "98",
+						"additionalInformation": {
+							"warehouseGroupCode": "F",
+							"isNewItem": false,
+							"warehouseAreaCode": "4",
+							"profiledWarehouseArea": "CPS",
+							"warehouseRotationTypeCode": "2",
+							"recall": false,
+							"weight": 3.325,
+							"isVariableWeight": false,
+							"weightUOM": "LB",
+							"warehouseMinLifeRemainingToReceive": 30
+						}
+					}
+				},
+				{
+					"poLineNumber": 3,
+					"channel": "SSTKU",
+					"poLineStatus": "RECEIVED",
+					"ordered": {
+						"quantity": 810,
+						"uom": "ZA"
+					},
+					"freightBillQty": 810,
+					"ovgThresholdQuantityLimit": 20,
+					"whpk": {
+						"quantity": 6,
+						"sell": 23.89
+					},
+					"vnpk": {
+						"quantity": 6,
+						"cost": 23.89,
+						"weight": {
+							"quantity": 10.0,
+							"uom": "LB"
+						},
+						"cube": {
+							"quantity": 0.852,
+							"uom": "CF"
+						}
+					},
+					"event": "POS REPLEN",
+					"additionalInformation": {
+						"promoBuyInd": "N",
+						"Sample_Po_Ind": "N",
+						"Manual_Po_Ind": "N"
+					},
+					"itemDetails": {
+						"number": 555808900,
+						"consumableGTIN": "10681131135824",
+						"orderableGTIN": "00681131135827",
+						"supplierStockId": "11357",
+						"palletTi": 9,
+						"palletHi": 9,
+						"hazmat": false,
+						"conveyable": false,
+						"itemTypeCode": "20",
+						"color": "8DAYS",
+						"size": "EA",
+						"descriptions": [
+							"4\" MKT BAN CRM N",
+							"<T&S>"
+						],
+						"vendorDepartment": "98",
+						"additionalInformation": {
+							"warehouseGroupCode": "F",
+							"isNewItem": false,
+							"warehouseAreaCode": "4",
+							"profiledWarehouseArea": "CPS",
+							"warehouseRotationTypeCode": "2",
+							"recall": false,
+							"weight": 3.325,
+							"isVariableWeight": false,
+							"weightUOM": "LB",
+							"warehouseMinLifeRemainingToReceive": 30
+						}
+					}
+				}
+			]
+		},
+		{
+			"poNumber": "9164390047",
+			"omsPONumber": "9164390047",
+			"poDcNumber": "32612",
+			"bpoNumber": "0",
+			"baseDivisionCode": "WM",
+			"legacyType": 20,
+			"freightBillQty": 1300,
+			"purchaseCompanyId": 1,
+			"poStatus": "CLOSED",
+			"bolNumbers": [
+				{
+					"bolNumber": "123"
+				}
+			],
+			"freightTermCode": "COLL",
+			"financialGroupCode": "US",
+			"dates": {
+				"cancel": "2019-11-27",
+				"ordered": "2019-11-20",
+				"mabd": "2019-11-28",
+				"ship": "2019-11-27"
+			},
+			"vendor": {
+				"name": "BAMA COMPANIES INC",
+				"number": 480889,
+				"department": 94
+			},
+			"operationalInfo": {
+				"state": "ACTIVE"
+			},
+			"additionalInformation": {
+				"Outbound_Month": "12",
+				"No_Of_Items": 3
+			},
+			"lines": [
+				{
+					"poLineNumber": 1,
+					"channel": "SSTKU",
+					"poLineStatus": "RECEIVED",
+					"ordered": {
+						"quantity": 810,
+						"uom": "ZA"
+					},
+					"freightBillQty": 810,
+					"ovgThresholdQuantityLimit": 20,
+					"whpk": {
+						"quantity": 6,
+						"sell": 23.89
+					},
+					"vnpk": {
+						"quantity": 6,
+						"cost": 23.89,
+						"weight": {
+							"quantity": 10.0,
+							"uom": "LB"
+						},
+						"cube": {
+							"quantity": 0.852,
+							"uom": "CF"
+						}
+					},
+					"event": "POS REPLEN",
+					"additionalInformation": {
+						"promoBuyInd": "N",
+						"Sample_Po_Ind": "N",
+						"Manual_Po_Ind": "N"
+					},
+					"itemDetails": {
+						"number": 555808888,
+						"consumableGTIN": "10681131135832",
+						"orderableGTIN": "00681131135835",
+						"supplierStockId": "11357",
+						"palletTi": 9,
+						"palletHi": 9,
+						"hazmat": false,
+						"conveyable": false,
+						"itemTypeCode": "20",
+						"color": "8DAYS",
+						"size": "EA",
+						"descriptions": [
+							"4\" MKT BAN CRM N",
+							"<T&S>"
+						],
+						"vendorDepartment": "98",
+						"additionalInformation": {
+							"warehouseGroupCode": "F",
+							"isNewItem": false,
+							"warehouseAreaCode": "4",
+							"profiledWarehouseArea": "CPS",
+							"warehouseRotationTypeCode": "2",
+							"recall": false,
+							"weight": 3.325,
+							"isVariableWeight": false,
+							"weightUOM": "LB",
+							"warehouseMinLifeRemainingToReceive": 30
+						}
+					}
+				},
+				{
+					"poLineNumber": 2,
+					"channel": "SSTKU",
+					"poLineStatus": "RECEIVED",
+					"ordered": {
+						"quantity": 810,
+						"uom": "ZA"
+					},
+					"freightBillQty": 810,
+					"ovgThresholdQuantityLimit": 20,
+					"whpk": {
+						"quantity": 6,
+						"sell": 23.89
+					},
+					"vnpk": {
+						"quantity": 6,
+						"cost": 23.89,
+						"weight": {
+							"quantity": 10.0,
+							"uom": "LB"
+						},
+						"cube": {
+							"quantity": 0.852,
+							"uom": "CF"
+						}
+					},
+					"event": "POS REPLEN",
+					"additionalInformation": {
+						"promoBuyInd": "N",
+						"Sample_Po_Ind": "N",
+						"Manual_Po_Ind": "N"
+					},
+					"itemDetails": {
+						"number": 555808888,
+						"consumableGTIN": "10681131135842",
+						"orderableGTIN": "00681131135845",
+						"supplierStockId": "11357",
+						"palletTi": 9,
+						"palletHi": 9,
+						"hazmat": false,
+						"conveyable": false,
+						"itemTypeCode": "20",
+						"color": "8DAYS",
+						"size": "EA",
+						"descriptions": [
+							"4\" MKT BAN CRM N",
+							"<T&S>"
+						],
+						"vendorDepartment": "98",
+						"additionalInformation": {
+							"warehouseGroupCode": "F",
+							"isNewItem": false,
+							"warehouseAreaCode": "4",
+							"profiledWarehouseArea": "CPS",
+							"warehouseRotationTypeCode": "2",
+							"recall": false,
+							"weight": 3.325,
+							"isVariableWeight": false,
+							"weightUOM": "LB",
+							"warehouseMinLifeRemainingToReceive": 30
+						}
+					}
+				},
+				{
+					"poLineNumber": 3,
+					"channel": "SSTKU",
+					"poLineStatus": "RECEIVED",
+					"ordered": {
+						"quantity": 810,
+						"uom": "ZA"
+					},
+					"freightBillQty": 810,
+					"ovgThresholdQuantityLimit": 20,
+					"whpk": {
+						"quantity": 6,
+						"sell": 23.89
+					},
+					"vnpk": {
+						"quantity": 6,
+						"cost": 23.89,
+						"weight": {
+							"quantity": 10.0,
+							"uom": "LB"
+						},
+						"cube": {
+							"quantity": 0.852,
+							"uom": "CF"
+						}
+					},
+					"event": "POS REPLEN",
+					"additionalInformation": {
+						"promoBuyInd": "N",
+						"Sample_Po_Ind": "N",
+						"Manual_Po_Ind": "N"
+					},
+					"itemDetails": {
+						"number": 555808888,
+						"consumableGTIN": "10681131135852",
+						"orderableGTIN": "00681131135855",
+						"supplierStockId": "11357",
+						"palletTi": 9,
+						"palletHi": 9,
+						"hazmat": false,
+						"conveyable": false,
+						"itemTypeCode": "20",
+						"color": "8DAYS",
+						"size": "EA",
+						"descriptions": [
+							"4\" MKT BAN CRM N",
+							"<T&S>"
+						],
+						"vendorDepartment": "98",
+						"additionalInformation": {
+							"warehouseGroupCode": "F",
+							"isNewItem": false,
+							"warehouseAreaCode": "4",
+							"profiledWarehouseArea": "CPS",
+							"warehouseRotationTypeCode": "2",
+							"recall": false,
+							"weight": 3.325,
+							"isVariableWeight": false,
+							"weightUOM": "LB",
+							"warehouseMinLifeRemainingToReceive": 30
+						}
+					}
+				}
+			]
+		}
+	]
+}

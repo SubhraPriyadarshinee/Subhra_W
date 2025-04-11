@@ -1,0 +1,35 @@
+{
+  "id": "6422f47a-bcf8-4bb5-aa2c-9c7db4759090",
+  "status": "OPEN",
+  "label": "07045000820683",
+  "slot": "F7113",
+  "reportedQty": 4,
+  "remainingQty": 4,
+  "issue": {
+    "id": "83970b0f-7d33-4144-8a19-09a9025e5fc1",
+    "identifier": "OVG0704521081211068",
+    "type": "OVG",
+    "status": "ANSWERED",
+    "businessStatus": "READY_TO_RECEIVE",
+    "resolutionStatus": "COMPLETE_RESOLUTON",
+    "upc": "7825405037",
+    "itemNumber": 550639297,
+    "deliveryNumber": "29023831",
+    "quantity": 4
+  },
+  "resolutions": [
+    {
+      "id": "ddffe1e4-777a-433c-a866-63ef3497bfb2",
+      "state": "OPEN",
+      "type": "ADDED_A_PO_LINE",
+      "provider": "AUTOMATIC",
+      "quantity": 4,
+      "remainingQty": 4,
+      "acceptedQuantity": 0,
+      "rejectedQuantity": 0,
+      "resolutionPoNbr": "6524480204",
+      "resolutionPoLineNbr": 5,
+      "distributionStores": 0
+    }
+  ]
+}

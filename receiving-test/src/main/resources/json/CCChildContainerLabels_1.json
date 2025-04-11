@@ -1,0 +1,133 @@
+{
+ "headers": {
+  "WMT-CorrelationId": "729a97ca-6819-4861-8d65-d6d60c8dfe1d",
+  "facilityCountryCode": "US",
+  "facilityNum": "32899"
+ },
+ "clientId": "AllocationPlanner",
+ "printRequests": [
+  {
+   "labelIdentifier": "h328990000200000000002129",
+   "formatName": "case_lpn_format",
+   "data": [
+    {
+     "key": "LPN",
+     "value": "h328990000200000000002129"
+    },
+    {
+     "key": "DESTINATION",
+     "value": "06094 US"
+    },
+    {
+     "key": "ITEM",
+     "value": "550802561"
+    },
+    {
+     "key": "QTY",
+     "value": ""
+    },
+    {
+     "key": "UPCBAR",
+     "value": "00074734088931"
+    },
+    {
+     "key": "DESC1",
+     "value": "SM SARD TOM PIC 7Z"
+    },
+    {
+     "key": "DESC2",
+     "value": ""
+    },
+    {
+     "key": "FULLUSERID",
+     "value": "sysadmin"
+    },
+    {
+     "key": "PACK",
+     "value": "1"
+    },
+    {
+     "key": "SIZE",
+     "value": "7.0 OZ"
+    },
+    {
+     "key": "COLOR",
+     "value": "NONE"
+    },
+    {
+     "key": "POCODE",
+     "value": "GO"
+    },
+    {
+     "key": "PO",
+     "value": "9888888247"
+    },
+    {
+     "key": "VENDORID",
+     "value": "988246"
+    },
+    {
+     "key": "POLINE",
+     "value": "1"
+    },
+    {
+     "key": "POEVENT",
+     "value": "POS REPLEN"
+    },
+    {
+     "key": "REPRINT",
+     "value": ""
+    },
+    {
+     "key": "HAZMAT",
+     "value": ""
+    },
+    {
+     "key": "STOREZONE",
+     "value": "E"
+    },
+    {
+     "key": "EVENTCHAR",
+     "value": " "
+    },
+    {
+     "key": "PRINTER",
+     "value": ""
+    },
+    {
+     "key": "CPQTY",
+     "value": "1"
+    },
+    {
+     "key": "DEPT",
+     "value": "38"
+    },
+    {
+     "key": "CHANNEL",
+     "value": "DIST"
+    },
+    {
+     "key": "PACKTYPE",
+     "value": "CP"
+    },
+    {
+     "key": "DSDC",
+     "value": ""
+    },
+    {
+     "key": "ORIGIN",
+     "value": "32899"
+    },
+    {
+     "key": "DELIVERY",
+     "value": "38787454"
+    },
+    {
+     "key": "DOOR",
+     "value": "193"
+    }
+   ],
+   "ttlInHours": 72.0
+  }
+ ]
+}

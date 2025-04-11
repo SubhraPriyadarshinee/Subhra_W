@@ -1,0 +1,192 @@
+
+
+
+{
+  "eventData": {
+    "event": {
+      "@type": "containerItemsUpdatedEvent",
+      "containerUpdatedEvent": {
+        "@type": "ContainerUpdatedEvent",
+        "eventData": {
+          "containerStatusNull": false,
+          "cube": 132,
+          "weight": 48
+        },
+        "eventMetadata": {
+          "correlationId": "1b024133-c5af-4e4c-8af4-cf41a08b5917",
+          "occuredOn": "2023-04-14T11:17:32.333907Z",
+          "occuredOnAsDate": "2023-04-14T16:47:32.333+05",
+          "userId": "SYSADMIN"
+        },
+        "eventType": "container.updated",
+        "facility": {
+          "country": "US",
+          "market": "GROCERY",
+          "number": 6085
+        },
+        "flowName": "SPLIT_PALLET_TRANSFER",
+        "trackingId": "1CZpDjm9mteneEYzb1C1FgrTdavxKq"
+      },
+      "eventMetadata": {
+        "correlationId": "1b024133-c5af-4e4c-8af4-cf41a08b5917",
+        "occuredOn": "2023-04-14T11:17:32.333907Z",
+        "occuredOnAsDate": "2023-04-14T16:47:32.333+05",
+        "userId": "SYSADMIN"
+      },
+      "eventType": "container.updated",
+      "facility": {
+        "country": "US",
+        "market": "GROCERY",
+        "number": 6085
+      },
+      "flowName": "SPLIT_PALLET_TRANSFER",
+      "legacyBusinessEvent": "inventoryTransfer",
+      "targetContainer": {
+        "trackingId": "3w5dJhSpJh3MfFLHKpiPRsKGRb7e"
+      },
+      "trackingId": "1CZpDjm9mteneEYzb1C1FgrTdavxKq",
+      "updatedItems": [
+        {
+          "baseDivisionCode": "WM",
+          "financialReportingGroup": "US",
+          "itemChangeList": [
+            {
+              "currentItemState": "AVAILABLE_TO_SELL",
+              "quantityChange": {
+                "deltaQty": -10,
+                "postUpdateQty": 80,
+                "previousQty": 90,
+                "qtyUOM": "EA"
+              }
+            }
+          ],
+          "itemNumber": 9454169,
+          "itemReferences": {
+            "references": [
+              {
+                "PurchaseOrder": {
+                  "poCC": "US",
+                  "poDC": 6085,
+                  "poLineNumber": 10,
+                  "poNumber": "0734036502",
+                  "poQty": 1935
+                }
+              }
+            ]
+          },
+          "markItemForDeletion": false,
+          "netItemWeight": 48,
+          "promoBuyIndicator": "TURN",
+          "quantityChangeAndItemState": {
+            "currentItemState": "AVAILABLE_TO_SELL",
+            "quantityChange": {
+              "deltaQty": -10,
+              "postUpdateQty": 80,
+              "previousQty": 90,
+              "qtyUOM": "EA"
+            }
+          },
+          "rotateDate": "2023-02-14",
+          "rowId": "fb0fb912-0001-b1e2-391a-01877f6cae7e",
+          "upcNumber": "00842234003286"
+        }
+      ]
+    }
+  },
+  "payload": {
+    "@type": "containerSnapshotEntity",
+    "containerCube": {
+      "cubeUOM": "CF",
+      "uom": "CF",
+      "value": 132
+    },
+    "containerStatus": "AVAILABLE",
+    "containerType": "Pallet",
+    "containerWeight": {
+      "uom": "LB",
+      "value": 48
+    },
+    "createDate": "2023-04-14T11:00:41.717Z",
+    "createUserid": "Virgil21",
+    "dcCountryCode": "US",
+    "dcNumber": 6085,
+    "deliveryNumber": "39215190",
+    "destLocationId": 0,
+    "entityCreatedDate": "2023-04-14T11:00:41.727Z",
+    "entityUpdatedDate": "2023-04-14T11:17:35.976212Z",
+    "identifier": "1CZpDjm9mteneEYzb1C1FgrTdavxKq",
+    "insertDate": "2023-04-14T11:00:41.717Z",
+    "inventoryLines": [
+      {
+        "availableToSellQty": 80,
+        "baseDivisionCode": "WM",
+        "channelType": "SSTKU",
+        "containerTrackingId": "1CZpDjm9mteneEYzb1C1FgrTdavxKq",
+        "deptNumber": 91,
+        "description": "Sausages Web",
+        "entityCreatedDate": "2023-04-14T11:00:41.727Z",
+        "entityUpdatedDate": "2023-04-14T11:17:36.239966Z",
+        "financialReportingGroup": "US",
+        "inboundChannelType": "SSTKU",
+        "itemCube": 96,
+        "itemKey": "9454169;WM;US;",
+        "itemNumber": 9454169,
+        "itemQtyInEaches": 80,
+        "itemWeight": 48,
+        "poTypeCode": 20,
+        "profiledWarehouseArea": "OPM",
+        "promoBuyInd": "N",
+        "purchaseCompanyId": 1,
+        "qtyUOM": "EA",
+        "quantity": 0,
+        "quantityObj": {
+          "qty": 0,
+          "qtyUOM": "EA"
+        },
+        "receivedDate": "2023-04-11",
+        "references": {
+          "references": [
+            {
+              "PurchaseOrder": {
+                "poCC": "US",
+                "poDC": 6085,
+                "poLineNumber": 10,
+                "poNumber": "0734036502",
+                "poQty": 1935
+              }
+            }
+          ],
+          "referencesChanged": false
+        },
+        "returnOrderLineNumber": 0,
+        "rotateDate": "2023-02-14",
+        "rowId": "fb0fb912-0001-b1e2-391a-01877f6cae7e",
+        "saleOrderLineNumber": 0,
+        "secondaryDescription": "Ergonomic",
+        "totalQty": 80,
+        "upcNumber": "00842234003286",
+        "vendorPkRatio": 10,
+        "version": 2,
+        "vnpkCubeQty": 12,
+        "vnpkCubeUOM": "CF",
+        "vnpkWeightQty": 6,
+        "vnpkWeightUOM": "LB",
+        "warehouseAreaCode": "4",
+        "warehouseGroupCode": "F",
+        "warehousePkRatio": 10,
+        "weightFormatType": "F",
+        "whsePackSell": null
+      }
+    ],
+    "isAuditDone": false,
+    "isReusable": false,
+    "isShippable": false,
+    "lastChangeDate": "2023-04-14T11:17:32.333907Z",
+    "lastChangeUserId": "SYSADMIN",
+    "locationName": "KYD",
+    "orgUnitId": 0,
+    "sourceSys": "ATLAS",
+    "trackingId": "1CZpDjm9mteneEYzb1C1FgrTdavxKq",
+    "version": 2
+  }
+}

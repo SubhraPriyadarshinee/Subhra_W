@@ -1,0 +1,103 @@
+{
+  "id": "4d49f5bd-03b9-476a-a8cd-53c672692d87",
+  "correlationId": "963c1164-a30b-4687-a2fa-f9a66d0b523c",
+  "user": "vn52af3",
+  "event": "container.updated",
+  "occurredOn": "09 Dec 2022 09:35:36.007+0000",
+  "eventObject": {
+    "trackingId": "05504010701400108444",
+    "containerId": 0,
+    "containerTypeAbbr": "Pallet",
+    "countryCode": "US",
+    "dcNumber": 5504,
+    "destinationLocationId": 0,
+    "itemList": [
+      {
+        "itemNumber": 583309842,
+        "itemUPC": "00025000100710",
+        "caseUPC": "00025000100727",
+        "purchaseCompanyId": 1001,
+        "financialReportingGroup": "US",
+        "baseDivisionCode": "WM",
+        "vendorPkRatio": 1,
+        "warehousePkRatio": 1,
+        "unitOfMeasurement": "EACHES",
+        "availabletosellQty": 0,
+        "availableNonPickableQty": 10,
+        "claimsQty": 0,
+        "allocatedQty": 0,
+        "frozenQty": 0,
+        "onorderQty": 0,
+        "pickedQty": 0,
+        "intransitQty": 0,
+        "problemfreightQty": 0,
+        "receivedQty": 0,
+        "workInProgressQty": 0,
+        "qualitycontrolQty": 0,
+        "nonInductedHoldQty": 0,
+        "replenishedQty": 0,
+        "onHoldQty": 0,
+        "itemStatusChange": {
+          "availableNonPickableQty": 4
+        },
+        "poType": "STAPLESTOCK",
+        "channelType": "STAPLESTOCK",
+        "whsePackSell": {
+          "value": 14.77,
+          "uom": "USD"
+        },
+        "adjustmentTO": {
+          "reasonCode": 55,
+          "reasonDesc": "Vendor concealed overage",
+          "value": 4,
+          "uom": "EACHES"
+        },
+        "orderDetails": [],
+        "poDetails": [
+          {
+            "poNum": "999999999",
+            "purchaseReferenceLineNumber": 1,
+            "poQty": 6
+          }
+        ],
+        "purchaseReferenceLineNumbers": [
+          1
+        ],
+        "ossIndicator": "N",
+        "receivedDate": "09 Dec 2022 00:00:00.000+0000",
+        "description": "SCNTVA TGS 32OZ",
+        "availableToPickQty": 0,
+        "virtualQty": 0,
+        "holdQty": 0,
+        "deptNumber": 13,
+        "totalItemWeight": 0.0,
+        "totalItemWeightUOM": "LB",
+        "invoiceNumber": "90650818924033",
+        "itemAvgCostAmt": 0.0,
+        "pluNumber": 9987,
+        "cid" : "13873247"
+      }
+    ],
+    "childContainers": [],
+    "rotateDates": [],
+    "lotNumbers": [],
+    "poNums": [
+      "999999999"
+    ],
+    "isNetItemWeightCalc": true,
+    "itemWeightUOM": "LB",
+    "itemNetWeight": 0.0,
+    "isContainerCubeCalc": true,
+    "containerCubeUOM": "CF",
+    "containerCube": 0.0,
+    "containerCreatedDate": "09 Dec 2022 09:25:36.519+0000",
+    "containerStatus": "RECEIVED",
+    "isShippable": false,
+    "isReusable": false,
+    "deliveryNumber": "55040037",
+    "containerUpdatedDate": "09 Dec 2022 09:25:36.519+0000",
+    "sourceSys": 0,
+    "locationName": "STORE",
+    "locationOrgUnitId": 0
+  }
+}

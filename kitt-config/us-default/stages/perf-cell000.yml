@@ -1,0 +1,49 @@
+deploy:
+  stages:
+    - name: perf-cell000
+      helm:
+        values:
+          env:
+            DYNATRACE_ENABLED: true
+            JAVA_OPTS: >-
+              -Xms6144m
+              -Xmx6144m
+              -XX:+UseParNewGC
+              -XX:+UseConcMarkSweepGC
+              -XX:NewSize=3072M
+              -XX:MaxMetaspaceSize=256M
+              -Djsse.enableSNIExtension=true
+              -Druntime.context.environmentType=stg
+              -Druntime.context.environment=STG
+              -Dscm.scope.template=/stg/STG/us/wm/amb/cell000
+              -Druntime.context.appName=receiving-api
+              -Druntime.context.system.property.override.enabled=true
+              -Dscm.snapshot.enabled=true
+              -Dscm.root.dir=/tmp/scm
+              -Dscm.print.summary.onchange=true
+              -Dscm.print.detailed.summary=true
+              -Dspring.config.use-legacy-processing=true
+              -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+              -DDATACENTER={{$.kittExec.currentCluster.zone}}
+              -Dplatform=wcnp
+              -Dspring.main.allow-circular-references=true
+              -Dio.strati.RuntimeContext=io.strati.impl.runtime.context.RuntimeContextEnv
+              -Dspring.main.allow-bean-definition-overriding=true
+              -Dcom.walmart.platform.telemetry.structured.logging.enabled=true
+          metadata:
+            labels:
+              strati.appkey: ATLASRECEIVING
+              strati.env: STG
+            annotations:
+              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"},{"Path":"^/.*"}]'
+          min:
+            cpu: 500m
+            memory: 8192Mi
+          max:
+            cpu: 4000m
+            memory: 8192Mi
+          scaling:
+            enabled: true
+            min: 3
+            max: 4
+            cpuPercent: 80

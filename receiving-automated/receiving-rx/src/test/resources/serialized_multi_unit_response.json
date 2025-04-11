@@ -1,0 +1,72 @@
+{
+  "packs": [
+      {
+        "palletNumber": "00100700302232310014",
+        "packNumber": "00909899000020014394",
+        "gtin": "00368180121017",
+        "lotNumber": "00L032C09A",
+        "serial": "dpf",
+        "expiryDate": "2025-12-24",
+        "uom": "CA",
+        "receivingStatus": "Open",
+        "trackingStatus": "ValidationSuccessful",
+        "isPartialPack": false,
+        "isMultiskuPack": false,
+        "unitCount": 4,
+        "items": [
+          {
+            "gtin": "00368180121015",
+            "serial": "34568",
+            "uom": "EA",
+            "trackingStatus": "ValidationSuccessful",
+            "receivingStatus": "Open",
+            "manufactureDetails": [
+              {
+                "lotNumber": "00L032C09A",
+                "expirationDate": "2025-01-08"
+              }
+            ]
+          },
+          {
+            "gtin": "14351672127520",
+            "serial": "67894T",
+            "uom": "EA",
+            "trackingStatus": "ValidationSuccessful",
+            "receivingStatus": "Open",
+            "manufactureDetails": [
+              {
+                "lotNumber": "00L032C09A",
+                "expirationDate": "2025-01-08"
+              }
+            ]
+          },
+          {
+            "gtin": "14351672127520",
+            "serial": "67895T",
+            "uom": "EA",
+            "trackingStatus": "ValidationSuccessful",
+            "receivingStatus": "Open",
+            "manufactureDetails": [
+              {
+                "lotNumber": "00L032C09A",
+                "expirationDate": "2025-01-08"
+              }
+            ]
+          },
+          {
+            "gtin": "14351672127515",
+            "serial": "67894Z",
+            "uom": "EA",
+            "trackingStatus": "ValidationSuccessful",
+            "receivingStatus": "Open",
+            "manufactureDetails": [
+              {
+                "lotNumber": "00L032C09A",
+                "expirationDate": "2025-01-08"
+              }
+            ]
+          }
+        ]
+      }
+  ]
+}

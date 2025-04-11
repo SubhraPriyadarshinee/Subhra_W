@@ -1,0 +1,81 @@
+deploy:
+  stages:
+    - name: dev-cell002
+      helm:
+        values:
+          env:
+            JAVA_OPTS: >-
+              -Xms2048M
+              -Xmx2048M
+              -XX:+UseParNewGC
+              -XX:+UseConcMarkSweepGC
+              -XX:NewSize=512M
+              -XX:MaxMetaspaceSize=256M
+              -Dccm.configs.dir=/etc/config
+              -Dscm.secrets.root.dir=/etc/secrets
+              -Dspring.profiles.active=dev
+              -Dtunr.enabled=true
+              -Dtunr.configs.dir=/etc/config
+              -Djsse.enableSNIExtension=true
+              -Dplatform=wcnp
+              -Druntime.context.appName=receiving-api
+              -Druntime.context.environment=dev
+              -Druntime.context.environmentType=dev
+              -Druntime.context.environmentName=dev
+              -Druntime.context.envProfile=dev
+              -Druntime.context.system.property.override.enabled=true
+              -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+              -Dspring.config.use-legacy-processing=true
+              -DdeploymentPrimaryRegion=scus
+              -DdeploymentSite={{$.kittExec.currentCluster.site}}
+              -Datlas-global-config-bootstrap=ccm
+              -Dspring.main.allow-circular-references=true
+              -DDATACENTER={{$.kittExec.currentCluster.zone}}
+              -Dscm.snapshot.enabled=true
+              -Dscm.root.dir=/tmp/scm
+              -Dscm.print.summary.onchange=true
+              -Dscm.print.detailed.summary=true
+          metadata:
+            annotations:
+              ccm.configVolumeMount: "/etc/config"
+            labels:
+              ccm.filter-redundant-properties: true
+              ccm.server-delivery-api-version: v3
+              ccm.serviceId: "receiving-api"
+              ccm.serviceConfigVersion: "US-WM-STORE-1.0"
+              isCcmEnabled: "true"
+              ccm.deploymentContext: "${execCtx.currentStage.name.toLowerCase()}"
+              ccm.apiVersion: "2.0"
+              ccm.environmentType: dev
+              ccm.environmentName: dev
+              ccm.cellName: dev-cell002
+              ccm.site: random
+              ccm.node: "node"
+              ccm.region: "{{$.kittExec.currentCluster.zone}}"
+              ccm.zone: "{{$.kittExec.currentCluster.clusterId}}"
+              ccm.deploymentSite: "{{$.kittExec.currentCluster.site}}"
+              ccm.envProfile: dev
+              ccm.environment: dev
+              ccm.deploymentCountry: us
+              ccm.deploymentRegionPair: scus-eus
+              ccm.businessUnit: wm
+              ccm.marketType: store
+              ccm.applicationName: receiving-api
+              wm.app: US-STORES-ATLAS-RECEIVING
+              wm.env: dev-cell002
+          volumeMounts:
+            config-vol:
+              mountPath: "/etc/config"
+              meta:
+                configMap:
+                  name: "tunrconfig-${execCtx.currentStage.helm.values.global.metadata.labels['ccm.serviceId'].replaceAll('_', '-').toLowerCase()}-${execCtx.currentStage.helm.values.global.metadata.labels['ccm.serviceConfigVersion'].replaceAll('_', '-').toLowerCase()}-${execCtx.currentStage.helm.values.global.metadata.labels['ccm.deploymentContext'].contains('currentStage')?execCtx.currentStage.name.replaceAll('_', '-').toLowerCase():execCtx.currentStage.helm.values.global.metadata.labels['ccm.deploymentContext'].replaceAll('_', '-').toLowerCase()}"
+          min:
+            cpu: 2000m
+            memory: 2048Mi
+          max:
+            cpu: 2000m
+            memory: 2048Mi
+          scaling:
+            enabled: false
+            min: 1
+            max: 1

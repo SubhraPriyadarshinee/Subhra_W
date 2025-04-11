@@ -1,0 +1,143 @@
+{
+  "found": [
+    {
+      "poNumber": "4576669261",
+      "poLine": 1,
+      "results": [
+        {
+          "manifest": 39602886,
+          "quantity": 2,
+          "storeDistrib": [
+            {
+              "storeNbr": 769,
+              "whpk_order_qty": 12,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 890,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 908,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 1
+            },
+            {
+              "storeNbr": 942,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 943,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 955,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 968,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 988,
+              "whpk_order_qty": 12,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 994,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 1171,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 1213,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 1245,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 1513,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 2387,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 2695,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 2796,
+              "whpk_order_qty": 8,
+              "whpk_distrib_qty": 1
+            },
+            {
+              "storeNbr": 2881,
+              "whpk_order_qty": 8,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 3347,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 3418,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 3463,
+              "whpk_order_qty": 12,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 3526,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 5035,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 5218,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 5299,
+              "whpk_order_qty": 8,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 5727,
+              "whpk_order_qty": 4,
+              "whpk_distrib_qty": 0
+            }
+          ]
+        }
+      ],
+      "total": 2
+    }
+  ],
+  "errors": []
+}

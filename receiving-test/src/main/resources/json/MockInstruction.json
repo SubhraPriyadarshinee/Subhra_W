@@ -1,0 +1,99 @@
+{
+  "facilityCountryCode": "US",
+  "facilityNum": 32987,
+  "id": 165702,
+  "deliveryNumber": 79672660,
+  "purchaseReferenceNumber": "2932108484",
+  "purchaseReferenceLineNumber": 1,
+  "gtin": "89633535538501",
+  "receivedQuantity": 0,
+  "receivedQuantityUOM": "ZA",
+  "itemDescription": "4\" MKT BAN CRM N",
+  "poDcNumber": "32987",
+  "createUserId": "sysadmin",
+  "createTs": null,
+  "lastChangeUserId": null,
+  "lastChangeTs": null,
+  "completeUserId": null,
+  "completeTs": null,
+  "printChildContainerLabels": false,
+  "activityName": "SSTK",
+  "providerId": "DA-SSTK",
+  "instructionMsg": "Build Container",
+  "instructionCode": "Build Container",
+  "messageId": "0eb0a8b6-36e1-4792-b4a1-9da242d8199e",
+  "projectedReceiveQty": 81,
+  "projectedReceiveQtyUOM": "ZA",
+  "container": {
+    "ctrLabel": {
+      "clientId": "OF",
+      "headers": {
+        "facilityCountryCode": "US",
+        "facilityNum": "32612",
+        "WMT-CorrelationId": "c0ffadc3-5777-4b5a-b1cc-a5856f0a2ff1"
+      },
+      "printRequests": [{
+        "labelIdentifier": "F67387000020022200",
+        "formatName": "pallet_lpn_format",
+        "data": [{
+          "key": "ITEM",
+          "value": "2111101"
+        },
+          {
+            "key": "DESTINATION",
+            "value": "Ind-1"
+          },
+          {
+            "key": "UPCBAR",
+            "value": "89633535538501"
+          },
+          {
+            "key": "LPN",
+            "value": "F67387000020022200"
+          },
+          {
+            "key": "FULLUSERID",
+            "value": "sysadmin"
+          },
+          {
+            "key": "TYPE",
+            "value": "SSTK"
+          },
+          {
+            "key": "DESC1",
+            "value": "4\" MKT BAN CRM N"
+          }
+        ],
+        "ttlInHours": 72
+      }]
+    },
+    "ctrShippable": false,
+    "ctrReusable": false,
+    "quantity": null,
+    "outboundChannelMethod": null,
+    "ctrDestination": null,
+    "inventoryStatus": "AVAILABLE",
+    "ctrType": "PALLET",
+    "ctrStatus": null,
+    "trackingId": "F67387000020022200",
+    "distributions": null,
+    "projectedWeight": null,
+    "projectedWeightUom": null,
+    "orgUnitId": null,
+    "childContainers": null,
+    "contents": null
+  },
+  "childContainers": null,
+  "move": {
+    "toLocation": "Ind-1",
+    "correlationID": "c0ffadc3-5777-4b5a-b1cc-a5856f0a2ff1",
+    "containerTag": "F67387000020022200",
+    "lastChangedOn": null,
+    "lastChangedBy": "sysadmin"
+  },
+  "labels": null,
+  "ssccNumber": null,
+  "problemTagId": null,
+  "firstExpiryFirstOut": false,
+  "deliveryDocument": null
+}

@@ -1,0 +1,195 @@
+{
+  "eventData": {
+    "event": {
+      "@type": "containerItemsUpdatedEvent",
+      "eventType": "container.updated",
+      "flowName": "DEFAULT_FLOW",
+      "eventMetadata": {
+        "correlationId": "2cfe54e6-38db-4d45-9968-6db5e6631a72",
+        "userId": "n0k0324",
+        "occuredOn": "2023-04-03T06:40:37.258Z",
+        "occuredOnAsDate": "2023-04-03T06:40:37.258Z"
+      },
+      "legacyBusinessEvent": "adjusted",
+      "updatedItems": [
+        {
+          "rowId": "f157d9fa-0001-b68d-3665-018745d5ac12",
+          "itemNumber": 586670422,
+          "upcNumber": "00024000509165",
+          "financialReportingGroup": "US",
+          "baseDivisionCode": "WM",
+          "quantityChangeAndItemState": {
+            "quantityChange": {
+              "previousQty": 60,
+              "deltaQty": -60,
+              "postUpdateQty": 0,
+              "qtyUOM": "EA"
+            },
+            "currentItemState": "AVAILABLE_TO_SELL"
+          },
+          "itemChangeList": [
+            {
+              "quantityChange": {
+                "previousQty": 60,
+                "deltaQty": -60,
+                "postUpdateQty": 0,
+                "qtyUOM": "EA"
+              },
+              "currentItemState": "AVAILABLE_TO_SELL"
+            }
+          ],
+          "netItemWeight": 0,
+          "markItemForDeletion": true,
+          "promoBuyIndicator": "TURN",
+          "rotateDate": "2023-07-02"
+        }
+      ],
+      "containerUpdatedEvent": {
+        "@type": "ContainerUpdatedEvent",
+        "eventType": "container.updated",
+        "flowName": "DEFAULT_FLOW",
+        "eventMetadata": {
+          "correlationId": "2cfe54e6-38db-4d45-9968-6db5e6631a72",
+          "userId": "n0k0324",
+          "occuredOn": "2023-04-03T06:40:37.258Z",
+          "occuredOnAsDate": "2023-04-03T06:40:37.258Z"
+        },
+        "eventData": {
+          "weight": 0,
+          "cube": 0,
+          "containerStatusNull": false
+        },
+        "trackingId": "459-AAH",
+        "facility": {
+          "number": 6085,
+          "country": "US",
+          "market": "GROCERY"
+        }
+      },
+      "reasonCode": {
+        "code": 28,
+        "desc": "Void To Reinstate"
+      },
+      "trackingId": "459-AAH",
+      "facility": {
+        "number": 6085,
+        "country": "US",
+        "market": "GROCERY"
+      }
+    }
+  },
+  "payload": {
+    "@type": "containerSnapshotEntity",
+    "version": 1,
+    "entityCreatedDate": "2023-04-03T06:37:23.860Z",
+    "entityUpdatedDate": "2023-04-03T06:40:37.324Z",
+    "dcCountryCode": "US",
+    "containerStatus": "AVAILABLE",
+    "containerType": "Pallet",
+    "createDate": "2023-04-03T06:37:22.923Z",
+    "createUserid": "n0k0324",
+    "lastChangeDate": "2023-04-03T06:40:37.258Z",
+    "lastChangeUserId": "n0k0324",
+    "destLocationId": 0,
+    "locationName": "19",
+    "orgUnitId": 0,
+    "isShippable": false,
+    "isReusable": false,
+    "deliveryNumber": "27644198",
+    "insertDate": "2023-04-03T06:37:23.814Z",
+    "channelType": "SSTKU",
+    "originSystem": "RECEIVING",
+    "originDcNumber": 6085,
+    "originCountryCode": "US",
+    "sourceSys": "ATLAS",
+    "containerTag1": 262144,
+    "containerTagSet": [
+      "TO_BE_AUDITED"
+    ],
+    "trackingId": "459-AAH",
+    "dcNumber": 6085,
+    "inventoryLines": [
+      {
+        "version": 1,
+        "entityCreatedDate": "2023-04-03T06:37:23.861Z",
+        "entityUpdatedDate": "2023-04-03T06:40:37.324Z",
+        "itemNumber": 586670422,
+        "baseDivisionCode": "WM",
+        "financialReportingGroup": "US",
+        "purchaseCompanyId": 1,
+        "containerTrackingId": "459-AAH",
+        "vendorPkRatio": 4,
+        "warehousePkRatio": 4,
+        "channelType": "SSTKU",
+        "inboundChannelType": "SSTKU",
+        "upcNumber": "00024000509165",
+        "quantity": 0,
+        "qtyUOM": "EA",
+        "availableToSellQty": 0,
+        "description": "DM SF RED GRAPEFRUIT",
+        "secondaryDescription": "",
+        "vnpkWeightQty": 18.8,
+        "vnpkWeightUOM": "LB",
+        "vnpkCubeQty": 0.416,
+        "vnpkCubeUOM": "CF",
+        "promoBuyInd": "N",
+        "weightFormatType": "F",
+        "warehouseGroupCode": "P",
+        "warehouseAreaCode": "9",
+        "returnOrderLineNumber": 0,
+        "saleOrderLineNumber": 0,
+        "receivedDate": "2023-04-03",
+        "rotateDate": "2023-07-02",
+        "profiledWarehouseArea": "OFFLINE",
+        "poTypeCode": 20,
+        "warehouseAreaCodeDesc": "Cold Produce",
+        "itemKey": "586670422;WM;US;",
+        "deptNumber": 94,
+        "isConveyable": true,
+        "references": {
+          "references": [
+            {
+              "PurchaseOrder": {
+                "poNumber": "0720880094",
+                "poQty": 60,
+                "poLineNumber": 4,
+                "poWhpkSell": 24.1221,
+                "poWhpkSellUOM": "USD"
+              }
+            },
+            {
+              "Receipt": {
+                "deliveryNumber": 27644198,
+                "receievedDate": "2023-04-03T06:37:22.923Z"
+              }
+            }
+          ],
+          "referencesChanged": false
+        },
+        "rowId": "f157d9fa-0001-b68d-3665-018745d5ac12",
+        "quantityObj": {
+          "qty": 0,
+          "qtyUOM": "EA"
+        },
+        "whsePackSell": {
+          "value": 24.1221,
+          "uom": "USD"
+        },
+        "itemQtyInEaches": 0,
+        "itemWeight": 0,
+        "itemCube": 0,
+        "totalQty": 0
+      }
+    ],
+    "containerWeight": {
+      "value": 0,
+      "uom": "LB"
+    },
+    "containerCube": {
+      "value": 0,
+      "uom": "CF",
+      "cubeUOM": "CF"
+    },
+    "identifier": "459-AAH"
+  }
+}

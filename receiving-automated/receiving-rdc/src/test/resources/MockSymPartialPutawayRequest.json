@@ -1,0 +1,29 @@
+{
+  "action": "add",
+  "contents": [
+    {
+      "purchaseReferenceNumber": "0549458271",
+      "purchaseReferenceLineNumber": 1,
+      "poTypeCode": 3,
+      "poEvent": "POS REPLN",
+      "deliveryNumber": 25904347,
+      "itemNumber": 563576981,
+      "baseDivisionCode": "WM",
+      "financialReportingGroupCode": "US",
+      "vendorNumber": 810986,
+      "quantity": 30,
+      "quantityUOM": "EA",
+      "packagedAsUom": "PH",
+      "rotateDate": "2019-05-21",
+      "ti": 3,
+      "hi": 3,
+      "primeSlotId": "A0002",
+      "deptNumber": "100",
+      "distributions": [
+        {
+          "storeId": "0"
+        }
+      ]
+    }
+  ]
+}

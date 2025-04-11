@@ -1,0 +1,217 @@
+profiles:
+  - git://Logistics:uwms-receiving:main:kitt-common-deploy
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-gdc/stages/gdc-dev
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-gdc/stages/gdc-qa
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-gdc/stages/gdc-stage
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-gdc/stages/gdc-perf
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-gdc/stages/gdc-uat
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-gdc/stages/gdc-prod-cell000
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-gdc/stages/gdc-prod-cell011
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-gdc/stages/gdc-prod-cell010
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-gdc/stages/gdc-prod-cell012
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-gdc/stages/gdc-prod-cell001
+  - git://Logistics:uwms-receiving:main:kitt-config/us-wm-gdc/stages/gdc-prod-cell002
+  - dynatrace-saas-walmart
+notify:
+  slack:
+    channelName: atlas-rcv-us-gdc-build
+alerts:
+  slackChannel:
+    - atlas-rcv-us-gdc-alerts
+
+setup:
+  releaseRefs: [ "main", "us-wm-gdc/development", "us-wm-gdc/release/.*", ".*-hotfix" ]
+
+build:
+  artifact: uwms-receiving-gdc
+
+deploy:
+  namespace: gdc-atlas-receiving
+  skip: false
+  changeRecord:
+    create: true
+    affectedGEOs: [ "US" ]
+    group: "LOG - GLS NextGen"
+    notifyChannels: [ "atlas-rcv-us-gdc-build" ]
+    managerGroup: "Change Managers - GEC"
+  preDeploy:
+    - task:
+        name: messageSlack
+        text: Beginning liquibase execution on {{$.kittExec.currentStage.name}}
+    - concord:
+        name: Liquibase-Execution
+        action: start
+        org: Logistics
+        project: wcnp_liquibase
+        repo: wcnp_liquibase
+        entryPoint: default
+        enabled: true
+        sync: true
+        executionScope: stage
+        arguments:
+          version: "{{$.kitt.build.version}}"
+          artifactId: "{{$.kitt.build.artifact}}"
+          targetEnv: "{{$.kittExec.currentStage.name}}"
+          gitBranch: "{{$.kitt.build.commitEvent.commitId}}"
+          repoName: "uwms-receiving"
+    - task:
+        name: messageSlack
+        text: Liquibase execution successful
+  gslb:
+    lbRoutings:
+      gdc-dev-cell000:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-gdc-dev.walmart.com
+        matchStages: [ gdc-dev-cell000 ]
+      gdc-qa-cell000:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-gdc-qa.walmart.com
+        matchStages: [ gdc-qa-cell000 ]
+      gdc-stg-cell000:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-gdc-stg.walmart.com
+        matchStages: [ gdc-stg-cell000 ]
+      gdc-perf-cell000:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-gdc-perf.walmart.com
+        matchStages: [ gdc-perf-cell000 ]
+      gdc-uat-cell000:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-gdc-uat.walmart.com
+        matchStages: [ gdc-uat-cell000 ]
+      gdc-prod-cell000:
+        cnames:
+          - atlas-gdc-receiving-wm-gdc-cell000.prod.us.walmart.net
+          - gls-atlas-uwms-receiving-wm-gdc-cell000.prod.walmart.com
+        matchStages: [ gdc-prod-cell000 ]
+      gdc-prod-cell011:
+        cnames:
+          - atlas-gdc-receiving-wm-gdc-cell011.prod.us.walmart.net
+          - gls-atlas-uwms-receiving-wm-gdc-cell011.prod.walmart.com
+        matchStages: [ gdc-prod-cell011 ]
+      gdc-prod-cell010:
+        cnames:
+          - atlas-gdc-receiving-wm-gdc-cell010.prod.us.walmart.net
+          - gls-atlas-uwms-receiving-wm-gdc-cell010.prod.walmart.com
+        matchStages: [ gdc-prod-cell010 ]
+      gdc-prod-cell012:
+        cnames:
+          - gls-atlas-uwms-receiving-wm-gdc-cell012.prod.walmart.com
+        matchStages: [ gdc-prod-cell012 ]
+      gdc-prod-cell001:
+        cnames:
+          - atlas-gdc-receiving-wm-gdc-cell001.prod.us.walmart.net
+          - gls-atlas-uwms-receiving-wm-gdc-cell001.prod.walmart.com
+        matchStages: [ gdc-prod-cell001 ]
+      gdc-prod-cell002:
+        cnames:
+          - atlas-gdc-receiving-wm-gdc-cell002.prod.us.walmart.net
+          - gls-atlas-uwms-receiving-wm-gdc-cell002.prod.walmart.com
+        matchStages: [ gdc-prod-cell002 ]
+  stages:
+    - name: gdc-dev-cell000
+      refEventFilters:
+        - refs: [ main, "us-wm-gdc/release/.*", ".*-hotfix" ]
+          events: [ onPush ]
+      target:
+        - cluster_id: [ uswest-stage-wmt-001 ]
+    - name: gdc-qa-cell000
+      refs: [ main, "us-wm-gdc/release/.*", ".*-hotfix" ]
+      target:
+        - cluster_id: [ uswest-stage-wmt-001 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+      postDeploy:
+        - concord:
+            name: executeE2ETests
+            action: start
+            org: Logistics
+            project: e2e-pipeline
+            repo: one-atlas-e2e-pipeline
+            entryPoint: default
+            sync: false
+            executionScope: stage
+            arguments:
+              SCOPE: "RECEIVING"
+              version: "{{$.kitt.build.version}}"
+              artifactId: "{{$.kitt.build.artifact}}"
+              targetEnv: "{{$.kittExec.currentStage.name}}"
+              gitBranch: "{{$.kitt.build.commitEvent.branch}}"
+    - name: gdc-stg-cell000
+      refs: [ main, "us-wm-gdc/release/.*", ".*-hotfix" ]
+      target:
+        - cluster_id: [ uswest-stage-wmt-001 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+    - name: gdc-perf-cell000
+      refs: [ main, "us-wm-gdc/release/.*", ".*-hotfix" ]
+      target:
+        - cluster_id: [ uscentral-stage-az-12 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+    - name: gdc-uat-cell000
+      refs: [ main, "us-wm-gdc/release/.*", ".*-hotfix" ]
+      target:
+        - cluster_id: [ uswest-stage-wmt-001 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+    - name: gdc-prod-cell001
+      refs: [ main, "us-wm-gdc/release/.*", ".*-hotfix" ]
+      target:
+        - cluster_id: [ uscentral-prod-az-010, uswest-prod-az-067 ]
+      approvers:
+        groups:
+          - "Supply-Chain-Managers"
+          - "Tridents-SE"
+    - name: gdc-prod-cell010
+      refs: [ main, "us-wm-gdc/release/.*", ".*-hotfix" ]
+      target:
+        - cluster_id: [ useast-prod-az-004, uscentral-prod-az-010 ]
+      approvers:
+        groups:
+          - "Supply-Chain-Managers"
+          - "Tridents-SE"
+    - name: gdc-prod-cell012
+      refs: [ main, "us-wm-gdc/release/.*", ".*-hotfix" ]
+      target:
+        - cluster_id: [ useast-prod-az-004, uscentral-prod-az-010 ]
+      approvers:
+        groups:
+          - "Supply-Chain-Managers"
+          - "Tridents-SE"
+    - name: gdc-prod-cell000
+      refs: [ main, "us-wm-gdc/release/.*", ".*-hotfix" ]
+      target:
+        - cluster_id: [ uscentral-prod-az-010, uswest-prod-az-067 ]
+      approvers:
+        groups:
+          - "Supply-Chain-Managers"
+          - "Tridents-SE"
+    - name: gdc-prod-cell002
+      refs: [ main, "us-wm-gdc/release/.*", ".*-hotfix" ]
+      target:
+        - cluster_id: [ uscentral-prod-az-010, uswest-prod-az-067 ]
+      approvers:
+        groups:
+          - "Supply-Chain-Managers"
+          - "Tridents-SE"
+    - name: gdc-prod-cell011
+      refs: [ main, "us-wm-gdc/release/.*", ".*-hotfix" ]
+      target:
+        - cluster_id: [ useast-prod-az-004, uscentral-prod-az-010 ]
+      approvers:
+        groups:
+          - "Supply-Chain-Managers"
+          - "Tridents-SE"

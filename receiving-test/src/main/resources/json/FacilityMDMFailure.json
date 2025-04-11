@@ -1,0 +1,7 @@
+{
+  "timestamp": "2020-12-03T10:08:14.331+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "No converter found capable of converting from type [java.lang.String] to type [com.walmart.move.nim.uwms.facility.models.facility.BusinessUnitDetail$CompositeKey]",
+  "path": "/facilities"
+}

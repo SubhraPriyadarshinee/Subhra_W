@@ -1,0 +1,91 @@
+[
+  {
+    "id": 69302,
+    "deliveryNumber": 24333103,
+    "lpns": "E06938000400400413",
+    "trackingId": "E06938000400400413",
+    "labelSequenceNbr": 1,
+    "createTs": "Feb 3, 2024 11:47:01 PM",
+    "lastChangeTs": "Feb 3, 2024 11:47:28 PM",
+    "allocation": {
+      "container": {
+        "trackingId": "E06938000400400413",
+        "sscc": "00000227002624669200",
+        "asnNumber": "8062558",
+        "ctrType": "CASE",
+        "distributions": [
+          {
+            "orderId": "72debb0e-4fce-4477-8f5b-4fa2aee9e80c",
+            "allocQty": 4,
+            "qtyUom": "EA",
+            "item": {
+              "aisle": "12",
+              "zone": "03",
+              "storeZone": "03",
+              "dcZone": "03",
+              "pickBatch": "281",
+              "printBatch": "281",
+              "storeAlignment": "MANUAL/SYM",
+              "shipLaneNumber": 12
+            }
+          }
+        ],
+        "finalDestination": {
+          "countryCode": "US",
+          "buNumber": "100"
+        },
+        "outboundChannelMethod": "DSDC",
+        "ctrReusable": false,
+        "fulfillmentMethod": "RECEIVING"
+      },
+      "childContainers": [
+        {
+          "trackingId": "5000000566381879",
+          "poNbr": "6180390353",
+          "poLineNbr": 240,
+          "distributions": [
+            {
+              "orderId": "dff8b9a0-7fb9-4799-bb16-bc3d5754acaa",
+              "allocQty": 2,
+              "qtyUom": "EA",
+              "item": {
+                "itemNbr": 553103033,
+                "itemUpc": "0238408293492",
+                "vnpk": 2,
+                "whpk": 2,
+                "itemdept": "",
+                "baseDivisionCode": "WM",
+                "financialReportingGroup": "US",
+                "reportingGroup": "US"
+              }
+            }
+          ],
+          "ctrType": "Warehouse Pack",
+          "inventoryTag": "READY_TO_PICK",
+          "ctrDestination": {
+            "aisle": "12",
+            "zone": "03",
+            "storeZone": "03",
+            "dcZone": "03",
+            "pickBatch": 281,
+            "printBatch": 281,
+            "eventCharacter": "",
+            "shipLaneNumber": 12,
+            "countryCode": "US",
+            "buNumber": "101"
+          }
+        }
+      ]
+    },
+    "quantityUOM": "EA",
+    "status": "AVAILABLE",
+    "version": 2,
+    "orderQuantity": 4,
+    "quantity": 4,
+    "destStrNbr": 100,
+    "sscc": "00000227002624669200",
+    "asnNbr": "8062558",
+    "facilityCountryCode": "US",
+    "facilityNum": 32679
+  }
+]

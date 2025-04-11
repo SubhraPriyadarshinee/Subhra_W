@@ -1,0 +1,90 @@
+{
+  "messages": [],
+  "trackingId": "B08852000020022719",
+  "dcNumber": 8852,
+  "countryCode": "US",
+  "containerTypeAbbr": "Chep Pallet",
+  "containerType": "Chep Pallet",
+  "containerStatus": "AVAILABLE",
+  "locationName": "211",
+  "orgUnitId": 0,
+  "destinationLocationId": 0,
+  "childContainers": [],
+  "childContainersList": [],
+  "netWeight": 652.8,
+  "netWeightUOM": "LB",
+  "netCube": 275.52,
+  "netCubeUOM": "CF",
+  "containerInventoryList": [
+    {
+      "itemNumber": 9421865,
+      "netItemWeight": 652.8,
+      "itemUnitCost": 0.0,
+      "purchaseCompanyId": 1,
+      "financialReportingGroup": "US",
+      "baseDivisionCode": "WM",
+      "itemDesc": "APPLE PINK 27 WA",
+      "netItemWeightUOM": "LB",
+      "totalQuantity": 4320,
+      "physicalQuantity": 4320,
+      "venPkQuantity": 160,
+      "warPkQuantity": 160,
+      "allocatedQty": 0,
+      "itemUPC": "00741839041306",
+      "poNumbers": [
+        "1018836634"
+      ],
+      "venPkRatio": 27,
+      "warPkRatio": 27,
+      "rotateDate": "2021-02-05T00:00:00.000+0000",
+      "availabletosellQty": 4320,
+      "purchaseCompDesc": "WM US",
+      "baseUri": "",
+      "baseItemUri": "",
+      "poType": "SSTKU",
+      "channelType": "SSTKU",
+      "inboundChannelType": "SSTKU",
+      "exceptions": [],
+      "orderDetails": [],
+      "itemQtyUOM": "EACHES",
+      "whsePackSell": {
+        "value": 22.55,
+        "uom": "USD"
+      },
+      "purchaseReferenceLineNumbers": [
+        1
+      ],
+      "itemLongDescription": "",
+      "promoBuyInd": "N",
+      "warehouseGroupCode": "P",
+      "warehouseAreaCode": "9",
+      "warehouseAreaCodeDesc": "Cold Produce",
+      "weightFormatType": "F",
+      "returnOrderLineNumber": 0,
+      "saleOrderLineNumber": 0,
+      "receivedDate": "2021-02-05",
+      "profiledWarehouseArea": "OPM",
+      "poTypeCode": 20,
+      "podetails": [
+        {
+          "poNum": "1018836634",
+          "purchaseReferenceLineNumber": 1,
+          "poQty": 4320
+        }
+      ]
+    }
+  ],
+  "containerCreatedUserId": "sysadmin",
+  "isShippable": false,
+  "isReusable": false,
+  "isEligibleForAdjustment": true,
+  "containerUpdatedDate": "2021-02-05T19:34:55.051+0000",
+  "containerCreatedDate": "2021-02-05T19:34:55.051+0000",
+  "deliveryNumber": "24345684",
+  "isAuditDone": false,
+  "channelType": "SSTKU",
+  "lastChangeUserId": "sysadmin",
+  "auditRequired": false,
+  "strictWeightCalculated": true,
+  "links": []
+}

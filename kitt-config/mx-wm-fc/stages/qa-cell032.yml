@@ -1,0 +1,104 @@
+deploy:
+  stages:
+    - name: qa-cell032
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "FLEXPLUS_RECEIVING"
+          - "Tridents-SE"
+          - "ATLAS_MX_FC"
+      helm:
+        values:
+          env:
+            JAVA_OPTS: >-
+              -Xms2048M
+              -Xmx2048M
+              -XX:+UseParNewGC
+              -XX:+UseConcMarkSweepGC
+              -XX:NewSize=512M
+              -XX:MaxMetaspaceSize=256M
+              -Djsse.enableSNIExtension=true
+              -Druntime.context.appName=receiving-api
+              -Druntime.context.system.property.override.enabled=true
+              -Dscm.snapshot.enabled=true
+              -Dscm.root.dir=/tmp/scm
+              -Dscm.print.summary.onchange=true
+              -Dscm.print.detailed.summary=true
+              -Dspring.config.use-legacy-processing=true
+              -Dspring.main.allow-bean-definition-overriding=true
+              -Dcom.ibm.mq.cfg.useIBMCipherMappings=false
+              -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+              -DDATACENTER={{$.kittExec.currentCluster.zone}}
+              -Dplatform=wcnp
+              -Dio.strati.RuntimeContext=io.strati.impl.runtime.context.RuntimeContextEnv
+              -Dcom.walmart.platform.metrics.impl.type=MICROMETER
+              -Dcom.walmart.platform.txnmarking.otel.type=LOGGING
+              -Dcom.walmart.platform.txnmarking.otel.port=80
+              -Dcom.walmart.platform.txnmarking.otel.host=walmotelcol-deployment.walmotelcol.scus-stage-atracestore1.cluster.k8s.us.walmart.net
+              -Dcom.walmart.platform.telemetry.otel.enabled=true
+              -Dcom.walmart.platform.logging.profile=OTEL
+              -Dspring.main.allow-circular-references=true
+              -Dfilter-redundant-properties=true
+              -Druntime.context.environment=stg
+              -Druntime.context.environmentName=qa
+              -Druntime.context.environmentType=qa
+              -Druntime.context.envProfile=qa
+              -Dscm.secrets.root.dir=/etc/secrets
+              -Dtunr.configs.dir=/etc/config
+              -Dtunr.enabled=true
+              -DdeploymentPrimaryRegion=scus
+              -DdeploymentSite={{$.kittExec.currentCluster.site}}
+              -Datlas-global-config-bootstrap=ccm
+              -Dccm.configs.dir=/etc/config
+              -Dspring.profiles.active=qa
+          metadata:
+            labels:
+              ccm.filter-redundant-properties: true
+              ccm.server-delivery-api-version: v3
+              ccm.serviceId: "receiving-api"
+              ccm.serviceConfigVersion: "INTL-FC-NON-PROD-1.0"
+              isCcmEnabled: "true"
+              ccm.deploymentContext: "${execCtx.currentStage.name.toLowerCase()}"
+              ccm.apiVersion: "2.0"
+              ccm.environmentType: qa
+              ccm.environmentName: qa
+              ccm.cellName: Cell032-USSouthCentral-USEast
+              ccm.site: random
+              ccm.node: "node"
+              ccm.region: "all"
+              ccm.zone: "{{$.kittExec.currentCluster.clusterId}}"
+              ccm.deploymentSite: "{{$.kittExec.currentCluster.site}}"
+              ccm.envProfile: qa
+              ccm.environment: qa
+              ccm.deploymentCountry: us
+              ccm.deploymentRegionPair: scus-eus
+              ccm.countryCode: mx
+              ccm.businessUnit: wm
+              ccm.marketType: fc
+              ccm.applicationName: receiving-api
+              strati.appkey: ATLASRECEIVINGMX
+              strati.env: qa-cell032
+              wm.app: ATLASRECEIVINGMX
+              wm.env: qa-cell032
+              mls-cluster: wcnp
+              mls-index: wcnp_atlas-receiving-intl
+            annotations:
+              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"},{"Path":"^/.*"}]'
+              sidecar.istio.io/inject: "true"
+              traffic.sidecar.istio.io/excludeOutboundPorts: 8080
+          volumeMounts:
+            config-vol:
+              mountPath: "/etc/config"
+              meta:
+                configMap:
+                  name: "tunrconfig-${execCtx.currentStage.helm.values.global.metadata.labels['ccm.serviceId'].replaceAll('_', '-').toLowerCase()}-${execCtx.currentStage.helm.values.global.metadata.labels['ccm.serviceConfigVersion'].replaceAll('_', '-').toLowerCase()}-${execCtx.currentStage.helm.values.global.metadata.labels['ccm.deploymentContext'].contains('currentStage')?execCtx.currentStage.name.replaceAll('_', '-').toLowerCase():execCtx.currentStage.helm.values.global.metadata.labels['ccm.deploymentContext'].replaceAll('_', '-').toLowerCase()}"
+          min:
+            cpu: 2000m
+            memory: 2048Mi
+          max:
+            cpu: 2000m
+            memory: 2048Mi
+          scaling:
+            enabled: false
+            min: 2
+            max: 2

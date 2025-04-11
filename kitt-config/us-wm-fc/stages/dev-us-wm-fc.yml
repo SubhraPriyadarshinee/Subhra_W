@@ -1,0 +1,105 @@
+deploy:
+  stages:
+    - name: dev-us-fc
+      helm:
+        values:
+          secrets:
+            config:
+              akeyless:
+                path:
+                  DPS: "/Non-Prod/DPS/homeoffice/Tridents-SE"
+            k8s:
+              - name: sam-secrets-{{$.kitt.build.artifact}}-{{$.kittExec.currentStage.name}}
+                type: Opaque
+                provider: DPS
+                secret_data:
+                  - key: azuresql-readwrite
+                    content: dev/dev/sam/SVC_AZURESQL_atlas-fc-dev_080824215727
+          env:
+            atlas_deploymentContext: "NON-PROD-US-WM-FC-MCC"
+            atlas_deploymentSite: "{{$.kittExec.currentCluster.site}}"
+            JAVA_OPTS: >-
+              -Xms2048M
+              -Xmx2048M
+              -XX:+UseParNewGC
+              -XX:+UseConcMarkSweepGC
+              -XX:NewSize=512M
+              -XX:MaxMetaspaceSize=256M
+              -Djsse.enableSNIExtension=true
+              -Druntime.context.environmentType=dev
+              -Druntime.context.environmentName=dev
+              -Druntime.context.facilityCountryCode=us
+              -Druntime.context.BusinessUnit=wm
+              -Druntime.context.marketType=fc
+              -Druntime.context.cellName=cell000
+              -Druntime.context.region={{$.kittExec.currentCluster.site}}
+              -Druntime.context.environment=dev
+              -Druntime.context.deploymentRegionPair=mcc-wus
+              -Druntime.context.applicationName=receiving-api
+              -Druntime.context.envProfile=dev
+              -Druntime.context.appVersion=US-WM-FC-1.0
+              -Druntime.context.appName=receiving-api
+              -Druntime.context.deploymentCountry=us
+              -Druntime.context.system.property.override.enabled=true
+              -Druntime.context.cloud={{$.kittExec.currentCluster.zone}}
+              -DdeploymentSite={{$.kittExec.currentCluster.site}}
+              -Dscm.print.detailed.summary=true
+              -Dscm.print.summary.onchange=true
+              -Dtunr.enabled=true
+              -Dspring.main.allow-circular-references=true
+              -Dspring.config.use-legacy-processing=true
+              -Djsse.enableSNIExtension=true
+              -Dspring.main.allow-bean-definition-overriding=true
+              -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+              -Datlas-global-config-bootstrap=ccm
+              -Dplatform=wcnp
+              -Dscm.root.dir=/tmp/scm
+              -Dccm.configs.dir=/etc/config
+              -Dtunr.configs.dir=/etc/config
+              -Dscm.secrets.root.dir=/etc/secrets
+          metadata:
+            labels:
+              ccm.filter-redundant-properties: true
+              ccm.server-delivery-api-version: v3
+              ccm.serviceId: "receiving-api"
+              ccm.serviceConfigVersion: "US-WM-FC-1.0"
+              isCcmEnabled: "true"
+              ccm.deploymentContext: "${execCtx.currentStage.name.toLowerCase()}"
+              ccm.apiVersion: "2.0"
+              ccm.environmentType: dev
+              ccm.environmentName: dev
+              ccm.cellName: cell000
+              ccm.site: random
+              ccm.node: "node"
+              ccm.region: "all"
+              ccm.zone: "{{$.kittExec.currentCluster.clusterId}}"
+              ccm.deploymentSite: "{{$.kittExec.currentCluster.site}}"
+              ccm.envProfile: dev
+              ccm.environment: dev
+              ccm.deploymentCountry: us
+              ccm.deploymentRegionPair: mcc-wus
+              ccm.facilityCountryCode: us
+              ccm.businessUnit: wm
+              ccm.BusinessUnit: wm
+              ccm.marketType: fc
+              ccm.applicationName: receiving-api
+              wm.app: US-WM-FC-ATLAS-RECEIVING
+              wm.env: dev-us-fc
+            annotations:
+              ccm.configVolumeMount: "/etc/config"
+          volumeMounts:
+            config-vol:
+              mountPath: "/etc/config"
+              meta:
+                configMap:
+                  name: "tunrconfig-${execCtx.currentStage.helm.values.global.metadata.labels['ccm.serviceId'].replaceAll('_', '-').toLowerCase()}-${execCtx.currentStage.helm.values.global.metadata.labels['ccm.serviceConfigVersion'].replaceAll('_', '-').toLowerCase()}-${execCtx.currentStage.helm.values.global.metadata.labels['ccm.deploymentContext'].contains('currentStage')?execCtx.currentStage.name.replaceAll('_', '-').toLowerCase():execCtx.currentStage.helm.values.global.metadata.labels['ccm.deploymentContext'].replaceAll('_', '-').toLowerCase()}"
+          min:
+            cpu: 500m
+            memory: 2048Mi
+          max:
+            cpu: 1000m
+            memory: 2048Mi
+          scaling:
+            enabled: false
+            min: 1
+            max: 1

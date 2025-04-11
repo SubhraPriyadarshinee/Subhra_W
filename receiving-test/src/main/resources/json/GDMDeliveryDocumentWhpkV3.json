@@ -1,0 +1,212 @@
+{
+  "deliveryNumber": 30008889,
+  "statusInformation": {
+    "status": "WRK",
+    "statusReasonCode": [
+      "WORKING"
+    ],
+    "operationalStatus": "WRK"
+  },
+  "type": "DROP",
+  "appointmentTime": "2019-03-11T05:00:00Z",
+  "doorNumber": "502",
+  "hazmat": false,
+  "loadInformation": {
+    "type": "FLR",
+    "number": "63149288",
+    "sourceDCNumber": "6094",
+    "sourceType": "DC",
+    "trailerInformation": {
+      "sealNumber": "6005281",
+      "trailerId": "104681",
+      "scacCode": "WM"
+    }
+  },
+  "lifeCycleInformation": [
+    {
+      "type": "DOOR_OPEN",
+      "userId": "DITsys",
+      "time": "2020-01-03T17:22:03.332Z"
+    },
+    {
+      "type": "RECEIVING_STARTED",
+      "userId": "DITsys",
+      "time": "2020-01-03T17:23:18.172Z"
+    }
+  ],
+  "additionalInformation": {
+    "lastUpdatedSealNumber": "6005281"
+  },
+  "purchaseOrders": [
+    {
+      "poNumber": "5764031011",
+      "omsPONumber": "121212122",
+      "poDcNumber": "32612",
+      "bpoNumber": "111",
+      "baseDivisionCode": "WM",
+      "legacyType": 33,
+      "freightBillQty": 106,
+      "purchaseCompanyId": 1,
+      "poStatus": "ACTV",
+      "weight": {
+        "quantity": 0.0,
+        "uom": "KG"
+      },
+      "freightTermCode": "COLL",
+      "financialGroupCode": "US",
+      "dates": {
+        "ordered": "2019-02-19",
+        "cancel": "2019-02-20",
+        "ship": "2019-02-21",
+        "mabd": "2019-02-22"
+      },
+      "vendor": {
+        "name": "V11",
+        "number": 12344,
+        "department": 14
+      },
+      "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+      "sellerType": "Walmart",
+      "sellerName": "Test Name",
+      "lines": [
+        {
+          "poLineNumber": 1,
+          "channel": "SSTKU",
+          "poLineStatus": "ACTIVE",
+          "ordered": {
+            "quantity": 81,
+            "uom": "PH"
+          },
+          "ovgThresholdLimit": {
+            "quantity": 10,
+            "uom": "PH"
+          },
+          "whpk": {
+            "quantity": 3,
+            "sell": 8.22
+          },
+          "vnpk": {
+            "quantity": 3,
+            "cost": 6.6,
+            "weight": {
+              "quantity": 14.84,
+              "uom": "LB"
+            },
+            "cube": {
+              "quantity": 0.432,
+              "uom": "CF"
+            }
+          },
+          "vendor": {
+            "name": "V11",
+            "number": 12344,
+            "department": 14
+          },
+          "event": "POS REPLEN",
+          "itemDetails": {
+            "number": 9213971,
+            "consumableGTIN": "00028000113002",
+            "orderableGTIN": "00028000113002",
+            "supplierStockId": "2222",
+            "palletTi": 2,
+            "palletHi": 2,
+            "hazmat": false,
+            "conveyable": true,
+            "color": "",
+            "size": "",
+            "vendorDepartment": "8",
+            "descriptions": [
+              "FEEDER QUICK SET 30G",
+              "MOD FALL 2017"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poNumber": "9888888843",
+      "omsPONumber": "3499933911",
+      "poDcNumber": "32612",
+      "bpoNumber": "111",
+      "baseDivisionCode": "WM",
+      "legacyType": 33,
+      "freightBillQty": 106,
+      "purchaseCompanyId": 1,
+      "poStatus": "ACTV",
+      "weight": {
+        "quantity": 0.0,
+        "uom": "KG"
+      },
+      "freightTermCode": "COLL",
+      "financialGroupCode": "US",
+      "dates": {
+        "ordered": "2019-02-19",
+        "cancel": "2019-02-20",
+        "ship": "2019-02-21",
+        "mabd": "2019-02-22"
+      },
+      "vendor": {
+        "name": "V11",
+        "number": 12344,
+        "department": 14
+      },
+      "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+      "sellerType": "Walmart",
+      "sellerName": "Test Name",
+      "lines": [
+        {
+          "poLineNumber": 1,
+          "channel": "SSTKU",
+          "poLineStatus": "ACTIVE",
+          "ordered": {
+            "quantity": 81,
+            "uom": "PH"
+          },
+          "ovgThresholdLimit": {
+            "quantity": 10,
+            "uom": "PH"
+          },
+          "whpk": {
+            "quantity": 3,
+            "sell": 8.22
+          },
+          "vnpk": {
+            "quantity": 3,
+            "cost": 6.6,
+            "weight": {
+              "quantity": 14.84,
+              "uom": "LB"
+            },
+            "cube": {
+              "quantity": 0.432,
+              "uom": "CF"
+            }
+          },
+          "event": "POS REPLEN",
+          "vendor": {
+            "name": "V11",
+            "number": 12344,
+            "department": 14
+          },
+          "itemDetails": {
+            "number": 9213971,
+            "consumableGTIN": "00028000113002",
+            "orderableGTIN": "00028000113002",
+            "supplierStockId": "2222",
+            "palletTi": 2,
+            "palletHi": 2,
+            "hazmat": false,
+            "conveyable": true,
+            "color": "",
+            "size": "",
+            "vendorDepartment": "8",
+            "descriptions": [
+              "FEEDER QUICK SET 30G",
+              "MOD FALL 2017"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

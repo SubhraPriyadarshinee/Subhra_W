@@ -1,0 +1,97 @@
+{
+  "messageId": "DIT_WFS_PALLET_2",
+  "instructionCode": "Build Container",
+  "instructionMsg": "Build Container",
+  "activityName": "WFSPallet",
+  "shrinkWrap": true,
+  "container": {
+    "trackingId": "A04093123456789012",
+    "distributions": [
+      {
+        "orderId": "TEST_0018_ORDER_1",
+        "allocQty": 25,
+        "item": {
+          "itemNbr": 510008,
+          "baseDivisionCode": "WM",
+          "financialReportingGroup": "US",
+          "reportingGroup": "US"
+        }
+      }
+    ],
+    "ctrType": "PALLET",
+    "inventoryStatus": "PICKED",
+    "ctrDestination": {
+      "buNumber": 6036,
+      "countryCode": "US"
+    },
+    "finalDestination": {
+      "buNumber": 6036,
+      "countryCode": "US"
+    },
+    "outboundChannelMethod": "WFS",
+    "ctrReusable": false,
+    "ctrShippable": true,
+    "ctrLabel": {
+      "headers": {
+        "WMT-CorrelationId": "1ae7108b-a4f5-4229-9664-11f8d7184575",
+        "facilityCountryCode": "US",
+        "facilityNum": "4093"
+      },
+      "clientId": "AllocPlanner",
+      "printRequests": [
+        {
+          "labelIdentifier": "A04093123456789012",
+          "formatName": "pallet_lpn_format",
+          "data": [
+            {
+              "key": "LPN",
+              "value": "A04093123456789012"
+            },
+            {
+              "key": "TYPE",
+              "value": "WFS"
+            },
+            {
+              "key": "DESTINATION",
+              "value": "06036 US"
+            },
+            {
+              "key": "ITEM",
+              "value": "510008"
+            },
+            {
+              "key": "UPCBAR",
+              "value": "00032247267848"
+            },
+            {
+              "key": "DESC1",
+              "value": "Item Desc1"
+            },
+            {
+              "key": "FULLUSERID",
+              "value": "rcvUser"
+            },
+            {
+              "key": "ORIGIN",
+              "value": "04093"
+            },
+            {
+              "key": "DELIVERY",
+              "value": "500008"
+            },
+            {
+              "key": "DOOR",
+              "value": "9"
+            }
+          ],
+          "ttlInHours": 72
+        }
+      ]
+    }
+  },
+  "providerId": "AllocPlanner",
+  "projectedQty": 16,
+  "projectedQtyUom": "EA",
+  "printChildContainerLabels": false,
+  "receivingUnit": "PALLET"
+}

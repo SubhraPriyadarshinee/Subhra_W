@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "status": "200"
+  },
+  "body": {
+    "poNumber": "068858303",
+    "deliveryNumber": "51598110",
+    "poClosureStatus": "COMPLETED"
+  }
+}

@@ -1,0 +1,95 @@
+[
+		{
+			"deliveryNumber": 9870000,
+			"purchaseReferenceNumber": "8458708162",
+			"omsPurchaseReferenceNumber": "121212122",
+			"poDCNumber": "32679",
+			"purchaseReferenceLegacyType": "33",
+			"totalPurchaseReferenceQty": 106,
+			"palletQty": 0,
+			"purchaseCompanyId": 1,
+			"receiverNumber": 0,
+			"purchaseReferenceOrderDate": "2019-02-19",
+			"purchaseReferenceCancelDate": "2019-02-20",
+			"purchaseReferenceShipDate": "2019-02-21",
+			"purchaseReferenceMustArriveByDate": "2019-02-22",
+			"deliveryDocumentLines": [
+				{
+					"purchaseRefType": "SSTKU",
+					"originalChannel": "STAPLESTOCK",
+					"purchaseReferenceNumber": "8458708162",
+					"purchaseReferenceLineNumber": 1,
+					"purchaseReferenceLineStatus": "RECEIVED",
+					"itemNbr": 3804890,
+					"itemUPC": "00028000114701",
+					"caseUPC": "00028000114701",
+					"expectedQty": 10,
+					"expectedQtyUOM": "ZA",
+					"vnpkQty": 6,
+					"whpkQty": 6,
+					"vendorStockNumber": "00028000114701",
+					"vendorPackCost": 6.6,
+					"whpkSell": 8.22,
+					"vnpkWgtQty": 14.84,
+					"vnpkWgtUom": "LB",
+					"vnpkcbqty": 0.432,
+					"vnpkcbuomcd": "CF",
+					"event": "POS REPLEN",
+					"palletTi": 11,
+					"palletHi": 22,
+					"department": "21",
+					"isHazmat": true,
+					"isConveyable": true,
+					"overageQtyLimit": 1,
+					"overageThresholdQty": 1,
+					"color": "NA",
+					"size": "NA",
+					"itemDescription1": "THE WARS BETWEEN ENG",
+					"itemDescription2": "ONLINE ONLY",
+					"additionalInfo": {
+						"atlasConvertedItem": true
+					},
+					"operationalInfo": {
+						"state": "ACTIVE"
+					},
+					"orderableQuantity": 1,
+					"warehousePackQuantity": 1,
+					"dotIdNbr": "string",
+					"hazmatVerifiedOn": "2021-05-30T00:00:00.000+0000",
+					"lithiumIonVerifiedOn": "2021-05-30T00:00:00.000+0000",
+					"limitedQtyVerifiedOn": "2021-05-30T00:00:00.000+0000",
+					"transportationModes": [
+						{
+							"mode": {
+								"code": 1,
+								"description": "GROUND"
+							},
+							"dotIdNbr": "string",
+							"limitedQty": 12.2,
+							"dotHazardousClass": {
+								"code": "string",
+								"description": "NOT APPLICABLE"
+							},
+							"dotRegionCode": "UN",
+							"pkgInstruction": []
+						}
+					],
+					"handlingCode": "C",
+					"packType": "C"
+				}
+			],
+			"deptNumber": "2222",
+			"vendorNumber": "12344",
+			"vendorName": "V11",
+			"vendorNbrDeptSeq": "1234422221",
+			"lastChangedByDate": "2019-02-22",
+			"freightTermCode": "COLL",
+			"financialGroupCode": "US",
+			"lastChangedBy": "user",
+			"poConIndicator": false,
+			"importInd": false,
+			"poTypeCode": "33",
+			"purchaseReferenceStatus": "ACTV",
+			"totalBolFbq": 0
+		}
+]

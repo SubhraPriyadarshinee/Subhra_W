@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.walmart.move.nim</groupId>
+		<artifactId>uwms-receiving</artifactId>
+		<version>3.0.275</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	<artifactId>receiving-automated</artifactId>
+	<packaging>pom</packaging>
+	<modules>
+		<module>receiving-endgame</module>
+		<module>receiving-asn</module>
+		<module>receiving-acc</module>
+		<module>receiving-witron</module>
+		<module>receiving-rx</module>
+		<module>receiving-rdc</module>
+		<module>receiving-mfc</module>
+   </modules>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.coveo</groupId>
+				<artifactId>fmt-maven-plugin</artifactId>
+				<configuration>
+					<displayLimit>10</displayLimit>
+					<verbose>true</verbose>
+					<filesNamePattern>.*\.java</filesNamePattern>
+					<style>google</style>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,28 @@
+{
+  "status": "OK",
+  "header": {
+    "headerAttributes": {}
+  },
+  "errors": [],
+  "payload": {
+    "deliveryNumber": "290620204",
+    "pos": [
+      {
+        "poNumber": "290620204001",
+        "polines": [
+          {
+            "poLineNumber": 1,
+            "receivedQty": 5,
+            "receivedQtyUOM": "ZA"
+          },
+          {
+            "poLineNumber": 2,
+            "receivedQty": 20,
+            "receivedQtyUOM": "ZA"
+          }
+        ]
+      }
+    ]
+  }
+}
+

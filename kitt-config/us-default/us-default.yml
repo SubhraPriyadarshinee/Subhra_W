@@ -1,0 +1,171 @@
+profiles:
+  - git://Logistics:uwms-receiving:main:kitt-common-deploy
+  - git://Logistics:uwms-receiving:main:kitt-config/us-default/stages/dev-cell000
+  - git://Logistics:uwms-receiving:main:kitt-config/us-default/stages/qa-cell000
+  - git://Logistics:uwms-receiving:main:kitt-config/us-default/stages/stg-int-cell000
+  - git://Logistics:uwms-receiving:main:kitt-config/us-default/stages/perf-cell000
+  - git://Logistics:uwms-receiving:main:kitt-config/us-default/stages/prod-cell010
+  - git://Logistics:uwms-receiving:main:kitt-config/us-default/stages/prod-cell000
+  - git://Logistics:uwms-receiving:main:kitt-config/us-default/stages/prod-cell004
+
+build:
+  artifact: uwms-receiving-default
+
+notify:
+  slack:
+    channelName: atlas-rcv-build
+alerts:
+  slackChannel:
+    - atlas-rcv-build
+
+setup:
+  releaseRefs: ["main", "us-default/development", "us-default/release/.*", "intl-fc/release/.*" ]
+
+deploy:
+  preDeploy:
+    - task:
+        name: messageSlack
+        text: Beginning liquibase execution on {{$.kittExec.currentStage.name}}
+    - concord:
+        name: Liquibase-Execution
+        action: start
+        org: Logistics
+        project: wcnp_liquibase
+        repo: wcnp_liquibase
+        entryPoint: default
+        enabled: true
+        sync: true
+        executionScope: stage
+        arguments:
+          version: "{{$.kitt.build.version}}"
+          artifactId: "{{$.kitt.build.artifact}}"
+          targetEnv: "{{$.kittExec.currentStage.name}}"
+          gitBranch: "{{$.kitt.build.commitEvent.commitId}}"
+          repoName: "uwms-receiving"
+    - task:
+        name: messageSlack
+        text: Liquibase execution successful
+  namespace: atlas-receiving
+  changeRecord:
+    create: true
+    affectedGEOs: ["US"]
+    group: "LOG - GLS NextGen"
+    notifyChannels: ["atlas-rcv-build"]
+    managerGroup: "Change Managers - GEC"
+  gslb:
+    lbRoutings:
+      dev-cell000:
+        cnames:
+          - gls-atlas-uwms-receiving-dev-cell000.walmart.com
+          - receiving-api.prod.us.walmart.net
+        matchStages: [ dev-cell000 ]
+      qa-cell000:
+        cnames:
+          - gls-atlas-uwms-receiving-qa-cell000.walmart.com
+          - receiving-api-qa.prod.us.walmart.net
+        matchStages: [ qa-cell000 ]
+      stg-int-cell000:
+        cnames:
+          - gls-atlas-uwms-receiving-stg-int-cell000.walmart.com
+          - receiving-api-stg-int.prod.us.walmart.net
+        matchStages: [ stg-int-cell000 ]
+      perf-cell000:
+        cnames:
+          - gls-atlas-uwms-receiving-perf-cell000.walmart.com
+          - receiving-stg-api.prod.us.walmart.net
+        matchStages: [ perf-cell000 ]
+      prod-cell010:
+        cnames:
+          - gls-atlas-uwms-receiving-prod-cell010.walmart.com
+          - gls-atlas-uwms-receiving-prod-cell010.multi-market.walmart.com
+        matchStages: [ prod-cell010 ]
+      prod-cell000:
+        cnames:
+          - gls-atlas-uwms-receiving-prod-cell000.walmart.com
+          - receiving-api-prod.prod.us.walmart.net
+          - gls-atlas-uwms-receiving-prod-cell000.multi-market.walmart.com
+        matchStages: [ prod-cell000 ]
+      prod-cell004:
+        cnames:
+          - gls-atlas-uwms-receiving-prod-cell004.walmart.com
+          - receiving-api-prod-cell004.us.walmart.net
+        matchStages: [ prod-cell004 ]
+
+  stages:
+    - name: dev-cell000
+      refEventFilters:
+        - refs: [ "main", "us-default/development" ]
+          events: [ onPush ]
+      target:
+        - cluster_id: [ uscentral-stage-wmt-001 ]
+
+    - name: qa-cell000
+      # Next market to perform the merge activity should replace the below branch with theirs
+      refs: [ "main" ]
+      target:
+        - cluster_id: [uscentral-stage-wmt-001]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+
+      postDeploy:
+        - task:
+            name: messageSlack
+            enabled: true
+            executionScope: stage
+            text: Starting E2E tests on {{$.kittExec.currentStage.name}} env for ARC Receiving
+        - concord:
+            name: ARC_Receiving
+            action: start
+            org: SCT
+            project: In-Memory
+            repo: ARC_Receiving
+
+    - name: stg-int-cell000
+      refs: [ "main", "us-default/development", "us-default/release/.*" ]
+      target:
+        - cluster_id: [uswest-stage-wmt-001]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+
+    - name: perf-cell000
+      refs: [ "main" , "us-default/development" ]
+      target:
+        - cluster_id: [scus-stage-a4, wus-stage-a4]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+
+    - name: prod-cell010
+      refs: [ "main" ]
+      target:
+        - cluster_id: [ useast-prod-az-021, scus-prod-a20 ]
+      approvers:
+        groups:
+          - "Supply-Chain-Managers"
+          - "Tridents-SE"
+
+    - name: prod-cell000
+      refs: [ "main", "us-default/release/.*"  ]
+      target:
+        - cluster_id: [ scus-prod-a20, wus-prod-a79 ]
+      approvers:
+        groups:
+          - "Supply-Chain-Managers"
+          - "Tridents-SE"
+
+    - name: prod-cell004
+      refs: [ "main", "us-default/release/.*" ]
+      target:
+        - cluster_id: [ scus-prod-a20, wus-prod-a79 ]
+      approvers:
+        groups:
+          - "Supply-Chain-Managers"
+          - "Tridents-SE"

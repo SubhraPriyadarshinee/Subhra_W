@@ -1,0 +1,15 @@
+{
+  "eventType": "DELIVERY_SCHEDULED",
+  "shipmentNumber": "NI-TEST0960355504",
+  "url": "https://gls-atlas-gdm-core-wm-cell002-qa.us.walmart.com/document/v2/deliveries/550478600027358",
+  "deliveryNumber": "550478600027358",
+  "countryCode": "US",
+  "siteNumber": "5504",
+  "shipmentCountry": "US",
+  "shipmentSourceNumber": "6035",
+  "shipmentUrl": "https://gls-atlas-gdm-core-wm-cell002-qa.us.walmart.com/api/shipments/NI-TEST0960355504",
+  "shipmentDocumentId": "NI-TEST0960355504_20230615_6035_DC_US",
+  "shipmentDocumentIdUrl": "https://gls-atlas-gdm-core-wm-cell002-qa.us.walmart.com/api/shipments/NI-TEST0960355504_20230615_6035_DC_US",
+  "shipmentDocumentType": "CHARGE_ASN"
+
+}

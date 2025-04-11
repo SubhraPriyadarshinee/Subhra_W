@@ -1,0 +1,504 @@
+{
+  "delivery": {
+    "deliveryNumber": 60117906,
+    "statusInformation": {
+      "operationalStatus": "WRK",
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "status": "WRK"
+    }
+  },
+  "shipments": [
+    {
+      "documentId": "OASN107173_20210118_79288842_SHIPPER_US",
+      "shipmentNumber": "OASN107173",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2021-01-20T22:39:50.124Z",
+      "shipmentDate": "2021-01-18",
+      "source": {
+        "number": "79288842",
+        "numberType": "ZZ",
+        "type": "SHIPPER",
+        "countryCode": "US",
+        "shipperName": "ALEMBIC PHARMACEUTICALS, INC"
+      },
+      "destination": {
+        "globalLocationNumber": "0078742030180",
+        "type": "DC",
+        "number": 6028,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "shippingDate": "2021-01-18",
+        "carrierId": "ODFL"
+      }
+    },
+    {
+      "documentId": "OASN109612_20210125_79288842_SHIPPER_US",
+      "shipmentNumber": "OASN109612",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2021-01-25T23:33:17.345Z",
+      "shipmentDate": "2021-01-25",
+      "source": {
+        "number": "79288842",
+        "numberType": "ZZ",
+        "type": "SHIPPER",
+        "countryCode": "US",
+        "shipperName": "ALEMBIC PHARMACEUTICALS, INC"
+      },
+      "destination": {
+        "globalLocationNumber": "0078742030180",
+        "type": "DC",
+        "number": 6028,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "shippingDate": "2021-01-25",
+        "carrierId": "ODFL"
+      }
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poNumber": "9371790114",
+      "freightBillQty": 24,
+      "cubeQty": 14,
+      "poDcCountry": "US",
+      "baseDivisionCode": "WM",
+      "poType": "20",
+      "purchaseCompanyId": 1,
+      "poStatus": "CLOSED",
+      "financialGroupCode": "US",
+      "poDates": {
+        "cancel": "2021-01-04",
+        "ordered": "2020-12-31",
+        "mabd": "2021-01-08",
+        "ship": "2021-01-02"
+      },
+      "vendorInformation": {
+        "name": "ALEMBIC PHARMACEUTIC",
+        "number": 233981,
+        "department": 38
+      },
+      "poDcNumber": 6028,
+      "lines": [
+        {
+          "poLineNumber": 3,
+          "channel": "SSTKU",
+          "whpkQty": 100,
+          "whpkSell": 5.99,
+          "vnpkQty": 9600,
+          "vnpkCost": 575.04,
+          "vnpkWeightQty": 1.68,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.101,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "poLineStatus": "APPROVED",
+          "orderedQty": 3,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00362332246311",
+            "orderableGTIN": "10405654250844",
+            "warehousePackGTIN": "20405654250841",
+            "supplierStockId": "62332-0246-31",
+            "conveyable": true,
+            "itemTypeCode": "20",
+            "vendorDepartment": "38",
+            "color": "CAPSUL",
+            "size": "100",
+            "warehousePackQuantity": 100,
+            "orderableQuantity": 9600,
+            "catalogGTIN": "10362332246318",
+            "itemAdditonalInformation": {
+              "isDscsaExemptionInd": false,
+              "weight": 0.0014,
+              "cubeUOM": "CF",
+              "cube": 0.1,
+              "weightUOM": "LB"
+            },
+            "descriptions": [
+              "AMANTADINE 100MG",
+              "AMANTADINE 100MG"
+            ],
+            "number": 565425084
+          }
+        }
+      ],
+      "weightQty": 51,
+      "weightQtyUom": "LB",
+      "cubeQtyUom": "CF"
+    },
+    {
+      "poNumber": "9371790295",
+      "freightBillQty": 192,
+      "cubeQty": 10,
+      "poDcCountry": "US",
+      "baseDivisionCode": "WM",
+      "poType": "20",
+      "purchaseCompanyId": 1,
+      "poStatus": "ACTV",
+      "financialGroupCode": "US",
+      "poDates": {
+        "cancel": "2021-01-18",
+        "ordered": "2021-01-14",
+        "mabd": "2021-01-22",
+        "ship": "2021-01-16"
+      },
+      "vendorInformation": {
+        "name": "ALEMBIC PHARMACEUTIC",
+        "number": 233981,
+        "department": 38
+      },
+      "poDcNumber": 6028,
+      "lines": [
+        {
+          "poLineNumber": 3,
+          "channel": "SSTKU",
+          "whpkQty": 100,
+          "whpkSell": 5.99,
+          "vnpkQty": 9600,
+          "vnpkCost": 575.04,
+          "vnpkWeightQty": 1.68,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.101,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "poLineStatus": "RECEIVED",
+          "orderedQty": 2,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00362332246311",
+            "orderableGTIN": "10405654250844",
+            "warehousePackGTIN": "20405654250841",
+            "supplierStockId": "62332-0246-31",
+            "conveyable": true,
+            "itemTypeCode": "20",
+            "vendorDepartment": "38",
+            "color": "CAPSUL",
+            "size": "100",
+            "warehousePackQuantity": 100,
+            "orderableQuantity": 9600,
+            "catalogGTIN": "10362332246318",
+            "itemAdditonalInformation": {
+              "isDscsaExemptionInd": false,
+              "weight": 0.0014,
+              "cubeUOM": "CF",
+              "cube": 0.1,
+              "weightUOM": "LB"
+            },
+            "descriptions": [
+              "AMANTADINE 100MG",
+              "AMANTADINE 100MG"
+            ],
+            "number": 565425084
+          }
+        }
+      ],
+      "weightQty": 591,
+      "weightQtyUom": "LB",
+      "cubeQtyUom": "CF"
+    }
+  ],
+  "packs": [
+    {
+      "packNumber": "00000527721624536592",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6028,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "62332024631",
+          "reportedProductIdType": "N4",
+          "itemNumber": 565425084,
+          "gtin": "00362332246311",
+          "warehouseCaseGtin": "10405654250844",
+          "vendorCaseGtin": "10405654250844",
+          "vendorId": "233981",
+          "itemDescription": "Amantadine HCL caps,USP 100mg 100ct",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20405654250841",
+          "purchaseOrder": {
+            "poDate": "2020-12-31",
+            "poLineNumber": 3,
+            "poNumber": "9371790114",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 3
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 96,
+            "reportedUom": "EA",
+            "derivedQuantity": 96,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "62332024631",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 3,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "2005011436",
+              "expirationDate": "2023-07-31",
+              "reportedQuantity": 96,
+              "reportedUom": "EA"
+            }
+          ],
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "565425084",
+              "reportedProductIdType": "IN"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "20405654250841",
+              "uom": "PK"
+            },
+            {
+              "gtin": "00362332246311",
+              "uom": "EA"
+            },
+            {
+              "gtin": "10405654250844",
+              "uom": "CA"
+            }
+          ],
+          "nationalDrugCode": "62332024631",
+          "nationalDrugCodeType": "N4"
+        }
+      ],
+      "shipmentNumber": "OASN109612"
+    },
+    {
+      "packNumber": "00000527721303175753",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6028,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "62332024631",
+          "reportedProductIdType": "N4",
+          "itemNumber": 565425084,
+          "gtin": "00362332246311",
+          "warehouseCaseGtin": "10405654250844",
+          "vendorCaseGtin": "10405654250844",
+          "vendorId": "233981",
+          "itemDescription": "Amantadine HCL caps,USP 100mg 100ct",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20405654250841",
+          "purchaseOrder": {
+            "poDate": "2021-01-14",
+            "poLineNumber": 3,
+            "poNumber": "9371790295",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 1
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 192,
+            "reportedUom": "EA",
+            "derivedQuantity": 192,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "62332024631",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 2,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "2005011436",
+              "expirationDate": "2023-07-31",
+              "reportedQuantity": 192,
+              "reportedUom": "EA"
+            }
+          ],
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "565425084",
+              "reportedProductIdType": "IN"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "20405654250841",
+              "uom": "PK"
+            },
+            {
+              "gtin": "00362332246311",
+              "uom": "EA"
+            },
+            {
+              "gtin": "10405654250844",
+              "uom": "CA"
+            }
+          ],
+          "nationalDrugCode": "62332024631",
+          "nationalDrugCodeType": "N4"
+        }
+      ],
+      "shipmentNumber": "OASN107173"
+    },
+    {
+      "packNumber": "00000527721624536578",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6028,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "62332024631",
+          "reportedProductIdType": "N4",
+          "itemNumber": 565425084,
+          "gtin": "00362332246311",
+          "warehouseCaseGtin": "10405654250844",
+          "vendorCaseGtin": "10405654250844",
+          "vendorId": "233981",
+          "itemDescription": "Amantadine HCL caps,USP 100mg 100ct",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20405654250841",
+          "purchaseOrder": {
+            "poDate": "2020-12-31",
+            "poLineNumber": 3,
+            "poNumber": "9371790114",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 3
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 96,
+            "reportedUom": "EA",
+            "derivedQuantity": 96,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "62332024631",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 3,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "2005011436",
+              "expirationDate": "2023-07-31",
+              "reportedQuantity": 96,
+              "reportedUom": "EA"
+            }
+          ],
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "565425084",
+              "reportedProductIdType": "IN"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "20405654250841",
+              "uom": "PK"
+            },
+            {
+              "gtin": "00362332246311",
+              "uom": "EA"
+            },
+            {
+              "gtin": "10405654250844",
+              "uom": "CA"
+            }
+          ],
+          "nationalDrugCode": "62332024631",
+          "nationalDrugCodeType": "N4"
+        }
+      ],
+      "shipmentNumber": "OASN109612"
+    },
+    {
+      "packNumber": "00000527721624536585",
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "DC",
+        "number": 6028,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "62332024631",
+          "reportedProductIdType": "N4",
+          "itemNumber": 565425084,
+          "gtin": "00362332246311",
+          "warehouseCaseGtin": "10405654250844",
+          "vendorCaseGtin": "10405654250844",
+          "vendorId": "233981",
+          "itemDescription": "Amantadine HCL caps,USP 100mg 100ct",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "innerCaseGtin": "20405654250841",
+          "purchaseOrder": {
+            "poDate": "2020-12-31",
+            "poLineNumber": 3,
+            "poNumber": "9371790114",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+            "poPoLineCount": 3
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 96,
+            "reportedUom": "EA",
+            "derivedQuantity": 96,
+            "derivedUom": "PH"
+          },
+          "nationalDrugCodeN4": "62332024631",
+          "isDSCSAExempt": "NO",
+          "aggregatedItemQty": 3,
+          "aggregatedItemQtyUom": "ZA",
+          "manufactureDetails": [
+            {
+              "lotNumber": "2005011436",
+              "expirationDate": "2023-07-31",
+              "reportedQuantity": 96,
+              "reportedUom": "EA"
+            }
+          ],
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "565425084",
+              "reportedProductIdType": "IN"
+            }
+          ],
+          "gtinHierarchy": [
+            {
+              "gtin": "20405654250841",
+              "uom": "PK"
+            },
+            {
+              "gtin": "00362332246311",
+              "uom": "EA"
+            },
+            {
+              "gtin": "10405654250844",
+              "uom": "CA"
+            }
+          ],
+          "nationalDrugCode": "62332024631",
+          "nationalDrugCodeType": "N4"
+        }
+      ],
+      "shipmentNumber": "OASN109612"
+    }
+  ]
+}

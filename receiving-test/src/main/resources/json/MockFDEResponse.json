@@ -1,0 +1,19 @@
+{
+  "printChildContainerLabels": false,
+  "activityName": "SSTK",
+  "providerId": "DA-SSTK",
+  "instructionMsg": "Build Container",
+  "instructionCode": "Build Container",
+  "messageId": "0eb0a8b6-36e1-4792-b4a1-9da242d8199e",
+  "projectedReceiveQty": 81,
+  "projectedReceiveQtyUOM": "ZA",
+  "containers": null,
+  "childContainers": null,
+  "move": {
+    "toLocation": "Ind-1",
+    "correlationID": "c0ffadc3-5777-4b5a-b1cc-a5856f0a2ff1",
+    "containerTag": "F67387000020022200",
+    "lastChangedOn": 1589322996248,
+    "lastChangedBy": "sysadmin"
+  }
+}

@@ -1,0 +1,63 @@
+package com.walmart.move.nim.receiving.core.client.inventory.model;
+
+import java.util.ArrayList;
+import lombok.Data;
+
+@Data
+public class ContainerInventory {
+  public int itemNumber;
+  public String itemUPC;
+  public int purchaseCompanyId;
+  public String purchaseCompDesc;
+  public String financialReportingGroup;
+  public String baseDivisionCode;
+  public double netItemWeight;
+  public String netItemWeightUOM;
+  public double netItemCube;
+  public String netItemCubeUOM;
+  public String itemDesc;
+  public int venPkRatio;
+  public int warPkRatio;
+  public String itemLongDescription;
+  public String promoBuyInd;
+  public String warehouseGroupCode;
+  public String warehouseAreaCode;
+  public String warehouseAreaCodeDesc;
+  public String warehouseRotationTypeCode;
+  public String weightFormatType;
+  public String profiledWarehouseArea;
+  public double itemUnitCost;
+  public WhsePackSell whsePackSell;
+  public int totalQuantity;
+  public int physicalQuantity;
+  public int venPkQuantity;
+  public int warPkQuantity;
+  public int availabletosellQty;
+  public String itemQtyUOM;
+  public ArrayList<String> poNumbers;
+  public String rotateDate;
+  public long rotateDateLong;
+  public String receivedDate;
+  public String poType;
+  public String channelType;
+  public String inboundChannelType;
+  public ArrayList<Integer> purchaseReferenceLineNumbers;
+  public ArrayList<PoDetail> poDetails;
+  public int returnOrderLineNumber;
+  public int saleOrderLineNumber;
+  public int poTypeCode;
+  public String poDcNumber;
+  public ArrayList<Object> orderDetails;
+  public String createUserId;
+  public long createDateLong;
+  public String baseUri;
+  public String baseItemUri;
+  public ArrayList<Object> exceptions;
+  public boolean isConveyable;
+  public int itemDeptNo;
+  public String sellerId;
+  public boolean isSummaryRow;
+  public boolean isExemptInd;
+  public String itemExpiryDate;
+  public Integer allocatedQty;
+}

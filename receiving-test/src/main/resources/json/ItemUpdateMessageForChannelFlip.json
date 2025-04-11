@@ -1,0 +1,13 @@
+{
+  "itemNumber": 566051127,
+  "activeDeliveries": [
+    {
+      "url": "https://test.com",
+      "deliveryStatus": "ARV",
+      "deliveryNumber": 94769060
+    }
+  ],
+  "eventType": "CHANNEL_FLIP",
+  "from": "SSTKU",
+  "to": "CROSSU"
+}

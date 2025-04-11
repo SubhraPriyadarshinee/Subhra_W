@@ -1,0 +1,78 @@
+{
+  "totalCount": 1,
+  "successCount": 1,
+  "hasMoreEntries": false,
+  "successTuples": [
+    {
+      "response": {
+        "locations": [
+          {
+            "xCoord": 1,
+            "yCoord": 1,
+            "zCoord": 1,
+            "id": 6050,
+            "sequenceNo": 0,
+            "name": "EFLCP09",
+            "orgUnitId": 251,
+            "type": {
+              "key": 35,
+              "value": "Slot"
+            },
+            "subType": {
+              "key": 36,
+              "value": "Induct Slot"
+            },
+            "status": {
+              "key": 1,
+              "value": "Active"
+            },
+            "checkNbr": "11111",
+            "primeSlot": false,
+            "widthQty": 1.0,
+            "depthQty": 1.0,
+            "heightQty": 1.0,
+            "maxWgtQty": 1.0,
+            "links": [
+              {
+                "rel": "DELETE",
+                "href": "https://gls-location-witron-stg-uat.prod.us.walmart.net/us-32818/locations/6050",
+                "hreflang": null,
+                "media": null,
+                "title": null,
+                "type": null,
+                "deprecation": null
+              }
+            ],
+            "tags": [
+              {
+                "domain": "multi_manifest_location",
+                "tagNames": [
+                  "Y"
+                ]
+              },
+              {
+                "domain": "mapped_pbyl_area",
+                "tagNames": [
+                  "PTR001"
+                ]
+              },
+              {
+                "domain": "mapped_decant_station",
+                "tagNames": [
+                  "PTR002"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "limit": 500,
+        "offset": 0,
+        "names": [
+          "1005"
+        ]
+      }
+    }
+  ]
+}

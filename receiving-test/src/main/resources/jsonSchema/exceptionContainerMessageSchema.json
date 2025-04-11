@@ -1,0 +1,200 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "trackingId": {
+      "type": "string"
+    },
+    "messageId": {
+      "type": "string"
+    },
+    "containerException": {
+      "type": "string",
+      "enum": ["OV","NA","CF"]
+    },
+    "location": {
+      "type": "string"
+    },
+    "deliveryNumber": {
+      "type": "integer"
+    },
+    "containerType": {
+      "type": "string",
+      "enum": ["PALLET"]
+    },
+    "ctrReusable": {
+      "type": "boolean",
+      "enum": [false]
+    },
+    "ctrShippable": {
+      "type": "boolean",
+      "enum": [false]
+    },
+    "isConveyable": {
+      "type": "boolean"
+    },
+    "onConveyor": {
+      "type": "boolean",
+      "enum": [true]
+    },
+    "inventoryStatus": {
+      "type": "string",
+      "enum": ["WORK_IN_PROGRESS"]
+    },
+    "facility": {
+      "type": "object",
+      "properties": {
+        "buNumber": {
+          "type": "string"
+        },
+        "countryCode": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "buNumber",
+        "countryCode"
+      ]
+    },
+    "publishTs": {
+      "type": "string"
+    },
+    "createTs": {
+      "type": "string"
+    },
+    "createUser": {
+      "type": "string"
+    },
+    "lastChangedTs": {
+      "type": "string"
+    },
+    "lastChangedUser": {
+      "type": "string"
+    },
+    "contents": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "purchaseReferenceNumber": {
+              "type": "string",
+              "pattern": "^[0-9]*$"
+            },
+            "purchaseReferenceLineNumber": {
+              "type": "integer"
+            },
+            "inboundChannelMethod": {
+              "type": "string"
+            },
+            "totalPurchaseReferenceQty": {
+              "type": "integer"
+            },
+            "purchaseCompanyId": {
+              "type": "integer"
+            },
+            "deptNumber": {
+              "type": "integer"
+            },
+            "itemNumber": {
+              "type": "integer"
+            },
+            "gtin": {
+              "type": "string",
+              "pattern": "^[0-9]*$"
+            },
+            "quantity": {
+              "type": "integer"
+            },
+            "quantityUOM": {
+              "type": "string",
+              "enum": ["EA"]
+            },
+            "vnpkQty": {
+              "type": "integer"
+            },
+            "whpkQty": {
+              "type": "integer"
+            },
+            "vendorPackCost": {
+              "type": "number"
+            },
+            "whpkSell": {
+              "type": "number"
+            },
+            "baseDivisionCode": {
+              "type": "string"
+            },
+            "financialReportingGroupCode": {
+              "type": "string"
+            },
+            "vnpkWgtQty": {
+              "type": "number"
+            },
+            "vnpkWgtUom": {
+              "type": "string"
+            },
+            "vnpkcbqty": {
+              "type": "number"
+            },
+            "vnpkcbuomcd": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "secondaryDescription": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "purchaseReferenceNumber",
+            "purchaseReferenceLineNumber",
+            "inboundChannelMethod",
+            "totalPurchaseReferenceQty",
+            "purchaseCompanyId",
+            "deptNumber",
+            "itemNumber",
+            "gtin",
+            "quantity",
+            "quantityUOM",
+            "vnpkQty",
+            "whpkQty",
+            "vendorPackCost",
+            "whpkSell",
+            "baseDivisionCode",
+            "financialReportingGroupCode",
+            "vnpkWgtQty",
+            "vnpkWgtUom",
+            "vnpkcbqty",
+            "vnpkcbuomcd",
+            "description",
+            "secondaryDescription"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "trackingId",
+    "messageId",
+    "containerException",
+    "location",
+    "deliveryNumber",
+    "containerType",
+    "ctrReusable",
+    "ctrShippable",
+    "isConveyable",
+    "onConveyor",
+    "inventoryStatus",
+    "facility",
+    "publishTs",
+    "createTs",
+    "createUser",
+    "lastChangedTs",
+    "lastChangedUser",
+    "contents"
+  ]
+}

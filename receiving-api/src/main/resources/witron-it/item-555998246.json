@@ -1,0 +1,16 @@
+{
+    "itemNumber" : "555998246",
+    "description" : "STEW MEAT LG             ",
+    "deptNumber" : "93",
+    "vendorNbr" : 318340,
+    "gtin" : "25994400000",
+    "whpkQty" : 1,
+    "vnpkQty" : 1,
+    "ti" : 4,
+    "hi" : 16,
+    "vendorPackCost" : 4.87,
+    "whpkSell" : 19.471,
+    "vendorPackWeight" : 13.806,
+    "vendorPackCubeQty" : 1.335,
+    "poLine" : 15
+}

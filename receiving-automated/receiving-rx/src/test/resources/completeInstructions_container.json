@@ -1,0 +1,125 @@
+{
+  "ctrLabel": {
+    "headers": {
+      "WMT-CorrelationId": "5980e1b1-f505-4260-a7ac-27fc84309cc4",
+      "facilityCountryCode": "US",
+      "facilityNum": "6001"
+    },
+    "clientId": "receiving",
+    "printRequests": [
+      {
+        "formatName": "pallet_lpn_rx",
+        "labelIdentifier": "9700993973",
+        "ttlInHours": 72,
+        "data": [
+          {
+            "key": "ITEM",
+            "value": "565943137"
+          },
+          {
+            "key": "TI",
+            "value": ""
+          },
+          {
+            "key": "HI",
+            "value": ""
+          },
+          {
+            "key": "VNPK",
+            "value": "720"
+          },
+          {
+            "key": "WHPK",
+            "value": "6"
+          },
+          {
+            "key": "LPN",
+            "value": "9700993973"
+          },
+          {
+            "key": "SLOT",
+            "value": "W7548"
+          },
+          {
+            "key": "UPC",
+            "value": "40350111787511"
+          },
+          {
+            "key": "VDR SK",
+            "value": "50111078751"
+          },
+          {
+            "key": "PTAG",
+            "value": "9700993973"
+          },
+          {
+            "key": "RCVR",
+            "value": "112104"
+          },
+          {
+            "key": "LN",
+            "value": ""
+          },
+          {
+            "key": "DATE",
+            "value": "Wed May 12 14:08:50 UTC 2021"
+          },
+          {
+            "key": "LABEL_QTY",
+            "value": ""
+          },
+          {
+            "key": "TOTAL_QTY",
+            "value": ""
+          },
+          {
+            "key": "LABELTIMESTAMP",
+            "value": ""
+          },
+          {
+            "key": "FULLUSERID",
+            "value": "j0laeke"
+          },
+          {
+            "key": "QTY",
+            "value": "21"
+          },
+          {
+            "key": "UOM",
+            "value": "ZA"
+          }
+        ]
+      }
+    ]
+  },
+  "trackingId": "9700993973",
+  "contents": [
+    {
+      "gtin": "00350111787513",
+      "itemNbr": 565943137,
+      "baseDivisionCode": "WM",
+      "financialReportingGroup": "US",
+      "purchaseCompanyId": "1",
+      "purchaseReferenceNumber": "8769953025",
+      "purchaseReferenceLineNumber": 94,
+      "poDcNumber": "6001",
+      "purchaseRefType": "20",
+      "qtyUom": "EA",
+      "vendorPack": 720,
+      "warehousePack": 6,
+      "openQty": 21,
+      "totalOrderQty": 87,
+      "maxReceiveQty": 87,
+      "warehousePackSell": 1.22,
+      "vendorPackCost": 146.4,
+      "deptNumber": 38,
+      "color": "TABLET",
+      "size": "6",
+      "description": "AZITHROMYCIN TABLETS 250MG 6 IP",
+      "purchaseReferenceLegacyType": "20",
+      "vendorNumber": "629345",
+      "event": "POS REPLEN",
+      "rotateDate": "2022-06-30"
+    }
+  ]
+}

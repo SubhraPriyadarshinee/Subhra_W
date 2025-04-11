@@ -1,0 +1,85 @@
+{
+    "messageId": "7386C27C-106D-456E-A8F1-0C68CA8972B9",
+    "instructionCode": "Build Container",
+    "instructionMsg": "Build Container",
+    "activityName": "SSTK",
+    "shrinkWrap": true,
+    "container": {
+        "trackingId": "b670120000200000000070248",
+        "distributions": [
+            {
+                "orderId": "4B2FE9B0-6DA0-4332-B04D-F24A48C03842",
+                "allocQty": 64,
+                "item": {
+                    "itemNbr": 100000002,
+                    "baseDivisionCode": "WM",
+                    "reportingGroup": "US"
+                }
+            }
+        ],
+        "ctrType": "PALLET",
+        "inventoryStatus": "PICKED",
+        "ctrDestination": {
+            "buNumber": 7026,
+            "countryCode": "US"
+        },
+        "outboundChannelMethod": "STAPLESTOCK",
+        "ctrReusable": false,
+        "ctrShippable": true,
+        "ctrLabel": {
+            "clientId": "OF",
+            "headers": {
+                "facilityCountryCode": "US",
+                "facilityNum": "32987",
+                "WMT-CorrelationId": "f45773b8-a6db-4bf7-b301-e57b7f82c909"
+            },
+            "printRequests": [
+                {
+                    "labelIdentifier": "b670120000200000000070248",
+                    "formatName": "pallet_lpn_format",
+                    "data": [
+                        {
+                            "key": "ITEM",
+                            "value": "100000002"
+                        },
+                        {
+                            "key": "DESTINATION",
+                            "value": "07026 US"
+                        },
+                        {
+                            "key": "UPCBAR",
+                            "value": "10000000000002"
+                        },
+                        {
+                            "key": "LPN",
+                            "value": "b670120000200000000070248"
+                        },
+                        {
+                            "key": "FULLUSERID",
+                            "value": "sysadmin"
+                        },
+                        {
+                            "key": "TYPE",
+                            "value": "SSTK"
+                        },
+                        {
+                            "key": "DESC1",
+                            "value": "IP 1"
+                        }
+                    ],
+                    "ttlInHours": 72
+                }
+            ]
+        }
+    },
+    "move": {
+        "toLocation": "S101",
+        "containerTag": "b670120000200000000070248",
+        "lastChangedOn": 1578132286976,
+        "lastChangedBy": "sysadmin"
+    },
+    "providerId": "DA-SSTK",
+    "projectedQty": 64,
+    "projectedQtyUom": "EA",
+    "printChildContainerLabels": false
+}

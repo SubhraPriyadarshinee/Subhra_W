@@ -1,0 +1,639 @@
+{
+  "eventType": "rcv_osdr",
+  "deliveryNumber": 25877857,
+  "userId": "RCV_Default",
+  "ts": "2024-03-29T14:37:29.746Z",
+  "auditPending": false,
+  "summary": [
+    {
+      "purchaseReferenceNumber": "9110431858",
+      "rcvdPackCount": 0,
+      "rcvdQty": 148,
+      "orderFilledQty": 148,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 148,
+          "orderFilledQty": 148,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "9205493059",
+      "rcvdPackCount": 0,
+      "rcvdQty": 787,
+      "orderFilledQty": 787,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 128,
+          "orderFilledQty": 128,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 2,
+          "rcvdQty": 134,
+          "orderFilledQty": 134,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 3,
+          "rcvdQty": 131,
+          "orderFilledQty": 131,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 4,
+          "rcvdQty": 62,
+          "orderFilledQty": 62,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 5,
+          "rcvdQty": 65,
+          "orderFilledQty": 65,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 6,
+          "rcvdQty": 134,
+          "orderFilledQty": 134,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 7,
+          "rcvdQty": 133,
+          "orderFilledQty": 133,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "9180152612",
+      "rcvdQty": 42,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 7,
+          "rcvdQty": 1,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 6,
+          "rcvdQty": 3,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 2,
+          "rcvdQty": 10,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 5,
+          "rcvdQty": 10,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 3,
+          "rcvdQty": 3,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 4,
+          "rcvdQty": 15,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "3129944281",
+      "rcvdQty": 34,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 9,
+          "rcvdQty": 5,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 7,
+          "rcvdQty": 11,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 6,
+          "rcvdQty": 18,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "2158738162",
+      "rcvdQty": 14,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 14,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "3129944255",
+      "rcvdQty": 810,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 6,
+          "rcvdQty": 24,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 9,
+          "rcvdQty": 42,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 4,
+          "rcvdQty": 75,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 8,
+          "rcvdQty": 150,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 5,
+          "rcvdQty": 117,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 7,
+          "rcvdQty": 51,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 1,
+          "rcvdQty": 192,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 2,
+          "rcvdQty": 80,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 3,
+          "rcvdQty": 79,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "2158738427",
+      "rcvdQty": 12,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 12,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "8180267456",
+      "rcvdQty": 204,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 102,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 2,
+          "rcvdQty": 102,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "3129944249",
+      "rcvdQty": 448,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 3,
+          "rcvdQty": 64,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 2,
+          "rcvdQty": 192,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 1,
+          "rcvdQty": 192,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "2158738119",
+      "rcvdQty": 14,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 14,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "3129944280",
+      "rcvdQty": 2906,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 37,
+          "rcvdQty": 384,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 40,
+          "rcvdQty": 384,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 39,
+          "rcvdQty": 536,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 32,
+          "rcvdQty": 804,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 35,
+          "rcvdQty": 798,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "8180269048",
+      "rcvdQty": 252,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 2,
+          "rcvdQty": 252,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "2278679131",
+      "rcvdQty": 648,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 2,
+          "rcvdQty": 324,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 1,
+          "rcvdQty": 324,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "8579816475",
+      "rcvdQty": 224,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 224,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "8579817456",
+      "rcvdQty": 814,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 4,
+          "rcvdQty": 120,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 3,
+          "rcvdQty": 128,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 5,
+          "rcvdQty": 120,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 2,
+          "rcvdQty": 198,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 1,
+          "rcvdQty": 248,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "2479627677",
+      "rcvdQty": 96,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 4,
+          "rcvdQty": 96,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "3129944250",
+      "rcvdQty": 704,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 11,
+          "rcvdQty": 344,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 8,
+          "rcvdQty": 360,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "8579816480",
+      "rcvdQty": 492,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 164,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 3,
+          "rcvdQty": 164,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 2,
+          "rcvdQty": 164,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "9780015297",
+      "rcvdQty": 732,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 732,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "3129944282",
+      "rcvdQty": 2640,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 2,
+          "rcvdQty": 948,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 3,
+          "rcvdQty": 772,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 4,
+          "rcvdQty": 920,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "8180268970",
+      "rcvdQty": 180,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 180,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "9780015170",
+      "rcvdQty": 84,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 84,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "8579816474",
+      "rcvdQty": 288,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 288,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "8579816481",
+      "rcvdQty": 543,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 476,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 2,
+          "rcvdQty": 67,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "8579816463",
+      "rcvdQty": 720,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 720,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "8579816462",
+      "rcvdQty": 102,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 102,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "3129944254",
+      "rcvdQty": 416,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 88,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 2,
+          "rcvdQty": 160,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 3,
+          "rcvdQty": 168,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "3129944272",
+      "rcvdQty": 1228,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 2,
+          "rcvdQty": 548,
+          "rcvdQtyUom": "ZA"
+        },
+        {
+          "lineNumber": 1,
+          "rcvdQty": 680,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "9999999999",
+      "rcvdQty": 16,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 16,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "8180269983",
+      "rcvdQty": 44,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 44,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "2377039270",
+      "rcvdQty": 120,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 120,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "3129944244",
+      "rcvdQty": 50,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 50,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "9780015328",
+      "rcvdQty": 330,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 330,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    },
+    {
+      "purchaseReferenceNumber": "1079701343",
+      "rcvdQty": 180,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 180,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    }
+  ]
+}

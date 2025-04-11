@@ -1,0 +1,135 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "txnId": {
+      "type": "string"
+    },
+    "purchase": {
+      "type": "array",
+      "maxItems": 1,
+      "minItems": 1,
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "documentNum": {
+              "type": "string"
+            },
+            "deliveryNum": {
+              "type": "string"
+            },
+            "lines": {
+              "type": "array",
+              "maxItems": 1,
+              "minItems": 1,
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "documentLineNo": {
+                      "type": "integer"
+                    },
+                    "itemNumber": {
+                      "type": "integer"
+                    },
+                    "baseDivCode": {
+                      "type": "string"
+                    },
+                    "financialReportGrpCode": {
+                      "type": "string"
+                    },
+                    "inboundChannelMethod": {
+                      "enum": [
+                        "SSTKU"
+                      ]
+                    },
+                    "containerId": {
+                      "type": "string"
+                    },
+                    "parentContainerId": {
+                      "type": "null"
+                    },
+                    "lineQtyUOM": {
+                      "type": "string"
+                    },
+                    "primaryQty": {
+                      "type": "integer"
+                    },
+                    "warehousePackEachQty": {
+                      "type": "integer"
+                    },
+                    "vendorPackEachQty": {
+                      "type": "integer"
+                    },
+                    "dateReceived": {
+                      "type": "string",
+                      "pattern":"[0-9]+-[0-9]+-[0-9]+T[0-9]+:[0-9]+:[0-9]{2}.[0-9]+\\+0000"
+                    },
+                    "distributions": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "destinationNumber": {
+                              "type": "string"
+                            },
+                            "receivedQty": {
+                              "type": "integer"
+                            }
+                          },
+                          "required": [
+                            "destinationNumber",
+                            "receivedQty"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "documentLineNo",
+                    "itemNumber",
+                    "baseDivCode",
+                    "financialReportGrpCode",
+                    "inboundChannelMethod",
+                    "containerId",
+                    "parentContainerId",
+                    "lineQtyUOM",
+                    "primaryQty",
+                    "warehousePackEachQty",
+                    "vendorPackEachQty",
+                    "dateReceived",
+                    "distributions"
+                  ]
+                }
+              ]
+            },
+            "importInd": {
+              "type": "boolean"
+            },
+            "poDCNumber": {
+              "type": "string"
+            },
+            "poDcCountry": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "documentNum",
+            "deliveryNum",
+            "lines",
+            "importInd",
+            "poDCNumber",
+            "poDcCountry"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "txnId",
+    "purchase"
+  ]
+}

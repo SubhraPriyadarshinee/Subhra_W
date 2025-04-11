@@ -1,0 +1,1423 @@
+# Generated at: Thu Jan 05 17:13:40 UTC 2023
+schemaVersion: 1.0.0
+notify:
+  slack:
+    channelName: atlas-rcv-build
+applications:
+  - key: ATLASRECEIVING
+    name: Atlas-Receiving
+    description: Atlas Receiving application
+    organization: GLS_Logistics
+    customerJourney:
+      - ATLAS
+    companyCatalog: true
+    businessCriticality: MINOR
+    tags:
+      - ATLAS-RECEIVING
+    members:
+      - homeoffice\a0b02ft
+      - homeoffice\b0s06hg
+      - homeoffice\g0k0072
+      - homeoffice\k0g0313
+      - homeoffice\s0d05gy
+      - homeoffice\s0g015w
+      - homeoffice\r0m0hnm
+      - homeoffice\a0m03c6
+      - homeoffice\a0g01m2
+      - homeoffice\s0solis
+      - homeoffice\k0c0e5k
+      - homeoffice\lkotthi
+      - homeoffice\m0a0ggb
+      - homeoffice\r0c03af
+    environments:
+      - name: dev
+        description: receiving dev
+        type: DEVELOPMENT
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+        consumerIdInfos:
+          - consumerId: 5e17f2df-cc5e-40e1-a5b2-c4899d6c190b
+            publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4dWH4i7mXhOtzO/lnkigDBJOOVqwpf3Fh+3/iXpOEugXFhtY0TSz/BnVnWCE4+cLhJmEurj7cqFcHX1oZAf250+++VXGw8BF/hvs+PWqa4rtsgeh1S1Sq+oECk96a8nSzcS9xVymssb9tBS6O0ZhnLHh1saRLAo5ESoA48vXdxIWB4feU3hV04mThb7XcgjT6RuNLBky9bVNlvIJuF82qdM2R4+uuZrutQNqJt8Q7IIZxU3B6v+vLsilHskkChf4fq+5PcUi+CrfJoohWFJKIN9dbpgWrH7S49ogIDQ1vaBnDGT64QxqWbesau6lm/NZqGGXdBaBB0e6APcl4x2eMQIDAQAB
+        serviceMeshConfig:
+          deploymentType: WCNP
+          egressRoutes:
+            - protocol: HTTP
+              provider:
+                appKey: 00080BF3-A56C-40B7-AE5F-61A08309530D
+                environment: stg
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: F1F53D69-24D7-41B3-9824-4CEA8C69F328
+                environment: stg:1.0.0
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: F1F53D69-24D7-41B3-9824-4CEA8C69F328
+                environment: stg:3.0.0
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: FIXIT-PLATFORM
+                environment: FIXIT-DEV
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: ITEM-SETUP-QUERY-SERVICE-APP
+                environment: stg:0.0.1
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: PHARMA-SERIALIZATION-PS
+                environment: qa
+              routingMode: FQDN
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: PS-SYNC-SVC
+                environment: qa
+              routingMode: FQDN
+              validateProviderCert: false
+          defaultEgressConfig:
+            egressPortForHeaderRouting: 4140
+      - name: qa
+        description: receiving qa
+        type: QA
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+        consumerIdInfos:
+          - consumerId: 5e17f2df-cc5e-40e1-a5b2-c4899d6c190b
+            publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4dWH4i7mXhOtzO/lnkigDBJOOVqwpf3Fh+3/iXpOEugXFhtY0TSz/BnVnWCE4+cLhJmEurj7cqFcHX1oZAf250+++VXGw8BF/hvs+PWqa4rtsgeh1S1Sq+oECk96a8nSzcS9xVymssb9tBS6O0ZhnLHh1saRLAo5ESoA48vXdxIWB4feU3hV04mThb7XcgjT6RuNLBky9bVNlvIJuF82qdM2R4+uuZrutQNqJt8Q7IIZxU3B6v+vLsilHskkChf4fq+5PcUi+CrfJoohWFJKIN9dbpgWrH7S49ogIDQ1vaBnDGT64QxqWbesau6lm/NZqGGXdBaBB0e6APcl4x2eMQIDAQAB
+        serviceMeshConfig:
+          deploymentType: WCNP
+          egressRoutes:
+            - protocol: HTTP
+              provider:
+                appKey: F1F53D69-24D7-41B3-9824-4CEA8C69F328
+                environment: stg:1.0.0
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: F1F53D69-24D7-41B3-9824-4CEA8C69F328
+                environment: stg:3.0.0
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: FIXIT-PLATFORM
+                environment: FIXIT-QA
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: ITEM-SETUP-QUERY-SERVICE-APP
+                environment: stg:0.0.1
+              routingMode: HEADER
+              validateProviderCert: false
+          defaultEgressConfig:
+            egressPortForHeaderRouting: 4140
+      - name: stg-int
+        description: receiving stg-int
+        type: QA_INT
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+        consumerIdInfos:
+          - consumerId: 5e17f2df-cc5e-40e1-a5b2-c4899d6c190b
+            publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4dWH4i7mXhOtzO/lnkigDBJOOVqwpf3Fh+3/iXpOEugXFhtY0TSz/BnVnWCE4+cLhJmEurj7cqFcHX1oZAf250+++VXGw8BF/hvs+PWqa4rtsgeh1S1Sq+oECk96a8nSzcS9xVymssb9tBS6O0ZhnLHh1saRLAo5ESoA48vXdxIWB4feU3hV04mThb7XcgjT6RuNLBky9bVNlvIJuF82qdM2R4+uuZrutQNqJt8Q7IIZxU3B6v+vLsilHskkChf4fq+5PcUi+CrfJoohWFJKIN9dbpgWrH7S49ogIDQ1vaBnDGT64QxqWbesau6lm/NZqGGXdBaBB0e6APcl4x2eMQIDAQAB
+        serviceMeshConfig:
+          deploymentType: WCNP
+          egressRoutes:
+            - protocol: HTTP
+              provider:
+                appKey: F1F53D69-24D7-41B3-9824-4CEA8C69F328
+                environment: stg:1.0.0
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: F1F53D69-24D7-41B3-9824-4CEA8C69F328
+                environment: stg:3.0.0
+              routingMode: FQDN
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: FIXIT-PLATFORM
+                environment: FIXIT-Stage
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: ITEM-SETUP-QUERY-SERVICE-APP
+                environment: stg:0.0.1
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: PHARMA-SERIALIZATION-PS
+                environment: stg
+              routingMode: FQDN
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: PS-SYNC-SVC
+                environment: stg
+              routingMode: FQDN
+              validateProviderCert: false
+          defaultEgressConfig:
+            egressPortForHeaderRouting: 4140
+      - name: stg
+        description: receiving stg
+        type: STAGING
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+        consumerIdInfos:
+          - consumerId: 5e17f2df-cc5e-40e1-a5b2-c4899d6c190b
+            publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4dWH4i7mXhOtzO/lnkigDBJOOVqwpf3Fh+3/iXpOEugXFhtY0TSz/BnVnWCE4+cLhJmEurj7cqFcHX1oZAf250+++VXGw8BF/hvs+PWqa4rtsgeh1S1Sq+oECk96a8nSzcS9xVymssb9tBS6O0ZhnLHh1saRLAo5ESoA48vXdxIWB4feU3hV04mThb7XcgjT6RuNLBky9bVNlvIJuF82qdM2R4+uuZrutQNqJt8Q7IIZxU3B6v+vLsilHskkChf4fq+5PcUi+CrfJoohWFJKIN9dbpgWrH7S49ogIDQ1vaBnDGT64QxqWbesau6lm/NZqGGXdBaBB0e6APcl4x2eMQIDAQAB
+        serviceMeshConfig:
+          deploymentType: WCNP
+          egressRoutes:
+            - protocol: HTTP
+              provider:
+                appKey: F1F53D69-24D7-41B3-9824-4CEA8C69F328
+                environment: stg:1.0.0
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: F1F53D69-24D7-41B3-9824-4CEA8C69F328
+                environment: stg:3.0.0
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: FIXIT-PLATFORM
+                environment: FIXIT-Stage
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: ITEM-SETUP-QUERY-SERVICE-APP
+                environment: stg:0.0.1
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: PHARMA-SERIALIZATION-PS
+                environment: stg
+              routingMode: FQDN
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: PS-SYNC-SVC
+                environment: stg
+              routingMode: FQDN
+              validateProviderCert: false
+          defaultEgressConfig:
+            egressPortForHeaderRouting: 4140
+      - name: prod
+        description: receiving prod
+        type: PRODUCTION
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+        consumerIdInfos:
+          - consumerId: 49b1f8dd-de95-4c41-8781-a051f5c633eb
+            publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4dWH4i7mXhOtzO/lnkigDBJOOVqwpf3Fh+3/iXpOEugXFhtY0TSz/BnVnWCE4+cLhJmEurj7cqFcHX1oZAf250+++VXGw8BF/hvs+PWqa4rtsgeh1S1Sq+oECk96a8nSzcS9xVymssb9tBS6O0ZhnLHh1saRLAo5ESoA48vXdxIWB4feU3hV04mThb7XcgjT6RuNLBky9bVNlvIJuF82qdM2R4+uuZrutQNqJt8Q7IIZxU3B6v+vLsilHskkChf4fq+5PcUi+CrfJoohWFJKIN9dbpgWrH7S49ogIDQ1vaBnDGT64QxqWbesau6lm/NZqGGXdBaBB0e6APcl4x2eMQIDAQAB
+          - consumerId: a1aea097-3053-423b-9f1c-5dccf6b3b2d4
+            publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4dWH4i7mXhOtzO/lnkigDBJOOVqwpf3Fh+3/iXpOEugXFhtY0TSz/BnVnWCE4+cLhJmEurj7cqFcHX1oZAf250+++VXGw8BF/hvs+PWqa4rtsgeh1S1Sq+oECk96a8nSzcS9xVymssb9tBS6O0ZhnLHh1saRLAo5ESoA48vXdxIWB4feU3hV04mThb7XcgjT6RuNLBky9bVNlvIJuF82qdM2R4+uuZrutQNqJt8Q7IIZxU3B6v+vLsilHskkChf4fq+5PcUi+CrfJoohWFJKIN9dbpgWrH7S49ogIDQ1vaBnDGT64QxqWbesau6lm/NZqGGXdBaBB0e6APcl4x2eMQIDAQAB
+        serviceMeshConfig:
+          deploymentType: WCNP
+          egressRoutes:
+            - protocol: HTTP
+              provider:
+                appKey: 00080BF3-A56C-40B7-AE5F-61A08309530D
+                environment: prod
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: F1F53D69-24D7-41B3-9824-4CEA8C69F328
+                environment: prod:3.0.0
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: FIXIT-PLATFORM
+                environment: FIXIT-PROD
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: ITEM-SETUP-QUERY-SERVICE-APP
+                environment: prod:0.0.1
+              routingMode: HEADER
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: PHARMA-SERIALIZATION-PS
+                environment: prod
+              routingMode: FQDN
+              validateProviderCert: false
+            - protocol: HTTP
+              provider:
+                appKey: PS-SYNC-SVC
+                environment: prod
+              routingMode: FQDN
+              validateProviderCert: false
+          defaultEgressConfig:
+            egressPortForHeaderRouting: 4140
+  - key: SAMS-FC-ATLAS-RECEIVING
+    name: Sams-Fc-Atlas-Receiving
+    description: Sams Fc Atlas Receiving application
+    organization: GLS_Logistics
+    customerJourney:
+      - ATLAS
+    companyCatalog: true
+    businessCriticality: MINOR
+    tags:
+      - SAMS-FC-ATLAS-RECEIVING
+    environments:
+      - name: DEV
+        description: sams atlas fc receiving dev
+        type: DEVELOPMENT
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: false
+        wcnpProximity: false
+      - name: QA
+        description: sams atlas fc receiving qa
+        type: QA
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: false
+        wcnpProximity: false
+      - name: STG
+        description: sams atlas fc receiving stg
+        type: STAGING
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: false
+        wcnpProximity: false
+      - name: PROD
+        description: sams atlas fc receiving production
+        type: PRODUCTION
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: false
+        wcnpProximity: false
+  #Application for MX Market
+  - key: ATLASRECEIVINGMX
+    name: ATLASRECEIVINGMX
+    description: Atlas Receiving application
+    organization: GLS_Logistics
+    teamRostersProductId: 1541
+    customerJourney:
+      - ATLAS
+    companyCatalog: true
+    businessCriticality: MINOR
+    tags:
+      - ATLAS-RECEIVING-MX
+    members:
+      - homeoffice\s0p03ue
+      - homeoffice\r0c06zp
+      - homeoffice\s0e02l3
+      - homeoffice\r0s07y9
+      - homeoffice\g0g05gt
+      - homeoffice\p0m05z0
+      - homeoffice\j0m0i8r
+      - homeoffice\j0p0cu8
+      - homeoffice\s0v03tg
+      - homeoffice\s0a09pd
+    environments:
+      - name: dev-cell031
+        description: RECV MX Non Prod
+        serviceType: REST
+        type: DEVELOPMENT
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          defaultIngressConfig:
+            requestTimeout: 120000
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+      - name: stage-cell031
+        description: RECV MX STG
+        serviceType: REST
+        type: STAGING
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          defaultIngressConfig:
+            requestTimeout: 120000
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+      - name: prod-cell031
+        description: RECV MX Prod
+        serviceType: REST
+        type: PRODUCTION
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          defaultIngressConfig:
+            requestTimeout: 120000
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+      - name: dev-cell032
+        description: RECV MX Non Prod
+        serviceType: REST
+        type: DEVELOPMENT
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+      - name: stg-cell032
+        description: RECV MX STG
+        serviceType: REST
+        type: STAGING
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+      - name: prod-cell032
+        description: RECV MX Prod
+        serviceType: REST
+        type: PRODUCTION
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+      - name: dev-cell033
+        description: RECV MX Non Prod
+        serviceType: REST
+        type: DEVELOPMENT
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          defaultIngressConfig:
+            requestTimeout: 120000
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+      - name: stage-cell033
+        description: RECV MX STG
+        serviceType: REST
+        type: STAGING
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          defaultIngressConfig:
+            requestTimeout: 120000
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+      - name: prod-cell033
+        description: RECV MX Prod
+        serviceType: REST
+        type: PRODUCTION
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+    communication: { }
+    association: { }
+  - key: ATLASRECEIVINGCA
+    name: ATLASRECEIVINGCA
+    description: Atlas Receiving application
+    organization: GLS_Logistics
+    teamRostersProductId: 1541
+    customerJourney:
+      - ATLAS
+    companyCatalog: true
+    businessCriticality: MINOR
+    tags:
+      - ATLAS-RECEIVING-CA
+    members:
+      - homeoffice\r0c06zp
+      - homeoffice\s0e02l3
+      - homeoffice\r0s07y9
+      - homeoffice\g0g05gt
+      - homeoffice\p0m05z0
+      - homeoffice\s0g0bhy
+      - homeoffice\k0a07k8
+      - homeoffice\s0k07s2
+      - homeoffice\s0p05za
+      - homeoffice\t0v00yw
+    environments:
+      - name: dev-cell230
+        description: RECV CA Non Prod
+        serviceType: REST
+        type: DEVELOPMENT
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+      - name: qa-cell230
+        description: RECV CA Non Prod
+        serviceType: REST
+        type: DEVELOPMENT
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+      - name: stg-cell230
+        description: RECV CA STG
+        serviceType: REST
+        type: STAGING
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+      - name: prod-cell230
+        description: RECV CA Prod
+        serviceType: REST
+        type: PRODUCTION
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+    communication: { }
+    association: { }
+  #Application for SDC market
+  - key: SAMS-SDC-ATLAS-RECEIVING
+    name: Sams-Sdc-Atlas-Receiving
+    description: Sams Sdc Atlas Receiving application
+    organization: GLS_Logistics
+    teamRostersProductId: 3817
+    customerJourney:
+      - ATLAS
+    companyCatalog: true
+    businessCriticality: MINOR
+    tags:
+      - SAMS-SDC-ATLAS-RECEIVING
+    members:
+      - homeoffice\b0r009b
+      - homeoffice\d0p015n
+      - homeoffice\l0s02bv
+      - homeoffice\p0p04jh
+      - homeoffice\vn550kg
+      - homeoffice\s0t0c5t
+      - homeoffice\vn557jj
+    environments:
+      - name: dev
+        description: sams atlas sdc receiving dev
+        type: DEVELOPMENT
+        consumerIdInfos:
+          - consumerId: 78262772-0faf-4b1f-a2c2-3737900f5d44
+            publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2oPdYZlOJH3rOJDS5TyS7vxCFObrGjoUTivLIX1+i6AWp7sNexODWABtCzviNCrdwS+Ma96dN0IXVLi65WVLLQ2r1vs4VRVtPXf1qz9cvoo9QM/dYnT2rofhTwk7pexYbVkndAWyT7l0w8+kX4MjDhczLt2UyJgIlidX/22LomEtb6mCTNMV8Mnwcj+xqMF34Z4GGAcGL3wW6Bxyy2I9NJKdgNA0AOsBfWa9SWZZudSF2XPuHaNiyA3Ys5+1lMiU9hYs50M5dNJhYAkpkmHqIosTMyAiFec7V07gLOghmlBh9tYPdwWD4cDEHS9CjPOSo6dqZYwPufi7/P99Ss5D2QIDAQAB
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: false
+        wcnpProximity: false
+      - name: qa
+        description: sams atlas sdc receiving qa
+        type: QA
+        consumerIdInfos:
+          - consumerId: 78262772-0faf-4b1f-a2c2-3737900f5d44
+            publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2oPdYZlOJH3rOJDS5TyS7vxCFObrGjoUTivLIX1+i6AWp7sNexODWABtCzviNCrdwS+Ma96dN0IXVLi65WVLLQ2r1vs4VRVtPXf1qz9cvoo9QM/dYnT2rofhTwk7pexYbVkndAWyT7l0w8+kX4MjDhczLt2UyJgIlidX/22LomEtb6mCTNMV8Mnwcj+xqMF34Z4GGAcGL3wW6Bxyy2I9NJKdgNA0AOsBfWa9SWZZudSF2XPuHaNiyA3Ys5+1lMiU9hYs50M5dNJhYAkpkmHqIosTMyAiFec7V07gLOghmlBh9tYPdwWD4cDEHS9CjPOSo6dqZYwPufi7/P99Ss5D2QIDAQAB
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: false
+        wcnpProximity: false
+      - name: stg
+        description: sams atlas sdc receiving stg
+        type: STAGING
+        consumerIdInfos:
+          - consumerId: 78262772-0faf-4b1f-a2c2-3737900f5d44
+            publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2oPdYZlOJH3rOJDS5TyS7vxCFObrGjoUTivLIX1+i6AWp7sNexODWABtCzviNCrdwS+Ma96dN0IXVLi65WVLLQ2r1vs4VRVtPXf1qz9cvoo9QM/dYnT2rofhTwk7pexYbVkndAWyT7l0w8+kX4MjDhczLt2UyJgIlidX/22LomEtb6mCTNMV8Mnwcj+xqMF34Z4GGAcGL3wW6Bxyy2I9NJKdgNA0AOsBfWa9SWZZudSF2XPuHaNiyA3Ys5+1lMiU9hYs50M5dNJhYAkpkmHqIosTMyAiFec7V07gLOghmlBh9tYPdwWD4cDEHS9CjPOSo6dqZYwPufi7/P99Ss5D2QIDAQAB
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: false
+        wcnpProximity: false
+      - name: prod
+        description: sams atlas sdc receiving production
+        type: PRODUCTION
+        consumerIdInfos:
+          - consumerId: 36c929c4-8d76-4ec9-bb8e-d4a078ad4a2d
+            publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAywYyLrxrRsmcQfsrKe16UXXy5d4OFph5nQNEgSfbbEan3dyN/tE1vm3l7OGxwaxoNeBhCrDt2C8YNFNbpwuTXe40f2cMGxhJ+Y557WM+ijwdk2ctaBx/ODeGyhOc2cd/DGdv22v3gxjkwZD8STE0VqELhi9XVRoacQ8g59p6b3FmTpYWVmvZVtjGbi8nJIHnU5vbquTW6f9ELqsWz8pggi1DcI00xV4HfKLYhCarOzyVsp0O3KaYYwWlK/eKkNECqvxxmNmWgOKg9muUx7KkKrPedSfMGqAsfwp54bgns8NORJjtvSay6B+GXXqx6LxKZaavK78el1WwQFYTlKM+PwIDAQAB
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: false
+        wcnpProximity: false
+  #Application for CAM AMB market
+  - key: ATLASRECEIVINGCAM
+    name: ATLASRECEIVINGCAM
+    description: Atlas Receiving application
+    organization: GLS_Logistics
+    teamRostersProductId: 1541
+    customerJourney:
+      - ATLAS
+    companyCatalog: true
+    businessCriticality: MINOR
+    tags:
+      - ATLAS-RECEIVING-CAM
+    members:
+      - homeoffice\a0b0s8m
+      - homeoffice\a0n05ba
+      - homeoffice\j0s0zmv
+      - homeoffice\r0s09ft
+      - homeoffice\h0v00md
+    environments:
+      - name: dev-cell630
+        description: RECV CAM Non Prod
+        serviceType: REST
+        type: DEVELOPMENT
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+      - name: stage-cell630
+        description: RECV CAM STG
+        serviceType: REST
+        type: STAGING
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+      - name: prod-cell034
+        description: RECV CAM Prod
+        serviceType: REST
+        type: PRODUCTION
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+  - key: US-STORES-ATLAS-RECEIVING
+    name: US-STORES-ATLAS-RECEIVING
+    description: Atlas Receiving application for US stores
+    organization: GLS_Logistics
+    teamRostersProductId: 460
+    customerJourney:
+      - ATLAS
+    companyCatalog: true
+    businessCriticality: MINOR
+    tags:
+      - US-STORES-ATLAS-RECEIVING
+    members:
+      - homeoffice\s0c034w
+      - homeoffice\n0n02dt
+      - homeoffice\g0k0072
+      - homeoffice\m0s0mqs
+      - homeoffice\r0r00g0
+      - homeoffice\j0m14t1
+      - homeoffice\j0p00t1
+      - homeoffice\j0p00pb
+    environments:
+      - name: dev-cell002
+        description: DEV testing environment
+        type: DEVELOPMENT
+        serviceType: REST
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        consumerIdInfos:
+          - consumerId: a84cc933-23dc-4555-b533-f527b4ca84b2
+            publicKey: "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0PYW/k9Zvx/ZKJ4xTLzucOvnoeuzpjrZKKA9ZUiChTPO2wgZRzYkKDnqY4gBBbqmhc5sqdciFpvuZTk2ruE5f0gU+KbVDHSwwd4DXv9GQc4lZR/+csddEvZZAyWU6FLK9LBqGq4uDxFTu++sfvm/ZOJ39WwDLLmXrrwTVtIky8Y7a4pRhZ38MhEc3UrTFGNHf+phjS+td0GjPdqgfT6Zk8HYP2psCjuTBNi3OLkL4ie+kjuuZL/aI2BcFUxNC3Od3FsodWGyQp0JgFyBH8mglF1iVcHuojLLStnx0WbPIz3vPtQMfuw4aOMePz2CeEPqat6HF4UsdEXNf1m2U0OxQQIDAQAB"
+      - name: qa-cell002
+        description: QA testing environment
+        type: QA
+        serviceType: REST
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        consumerIdInfos:
+          - consumerId: a84cc933-23dc-4555-b533-f527b4ca84b2
+            publicKey: "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0PYW/k9Zvx/ZKJ4xTLzucOvnoeuzpjrZKKA9ZUiChTPO2wgZRzYkKDnqY4gBBbqmhc5sqdciFpvuZTk2ruE5f0gU+KbVDHSwwd4DXv9GQc4lZR/+csddEvZZAyWU6FLK9LBqGq4uDxFTu++sfvm/ZOJ39WwDLLmXrrwTVtIky8Y7a4pRhZ38MhEc3UrTFGNHf+phjS+td0GjPdqgfT6Zk8HYP2psCjuTBNi3OLkL4ie+kjuuZL/aI2BcFUxNC3Od3FsodWGyQp0JgFyBH8mglF1iVcHuojLLStnx0WbPIz3vPtQMfuw4aOMePz2CeEPqat6HF4UsdEXNf1m2U0OxQQIDAQAB"
+        policies:
+          - name: ApplicationAuthentication
+            documentOverride:
+              type: SECURITY
+              order: 1
+              flow: REQUEST
+              context: SERVICE
+              policyRules:
+                - conditions:
+                    - leftTerm: REQUEST_CONSUMER_ID
+                      op: "=="
+                      rightTerm: "'92420121-3b8f-4b4d-8bb6-3f2703efa4ca'"
+                  actions:
+                    - type: VALIDATE_SIGNATURE
+                      value: true
+                - conditions:
+                    - leftTerm: REQUEST_CONSUMER_ID
+                      op: "!="
+                      rightTerm: "'92420121-3b8f-4b4d-8bb6-3f2703efa4ca'"
+                  actions:
+                    - type: ALLOW
+        serviceMeshConfig:
+          deploymentType: WCNP
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  enforcePolicies: true
+                - uri: "/swagger-ui[.]html"
+                  methods:
+                    - GET
+                - uri: "/webjars/.*"
+                  methods:
+                    - GET
+                - uri: "/swagger-resources"
+                  methods:
+                    - GET
+                - uri: "/swagger-resources/.*"
+                  methods:
+                    - GET
+                - uri: "/v3/api[.]docs(/.*)?"
+                  methods:
+                    - GET
+                - uri: "/heartbeat"
+                  methods:
+                    - GET
+        consumers:
+          - applicationKey: ATLAS-UNIFIED-BFF
+            consumerId: 92420121-3b8f-4b4d-8bb6-3f2703efa4ca
+            soaEnabled: true
+        soaIntegration:
+          artifactId: uwms-receiving
+          groupId: com.walmart.move.nim
+          serviceVersion: 1.0.0
+          environmentName: qa-cell002
+          owner: GLSReceiving@email.wal-mart.com
+          endPoint: https://receiving-api-qa-store-cell002.prod.us.walmart.net
+          contract: https://receiving-api-qa-store-cell002.prod.us.walmart.net/v3/api-docs
+      - name: perf-cell002
+        description: Perf stg environment
+        type: STAGING
+        serviceType: REST
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        consumerIdInfos:
+          - consumerId: a84cc933-23dc-4555-b533-f527b4ca84b2
+            publicKey: "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0PYW/k9Zvx/ZKJ4xTLzucOvnoeuzpjrZKKA9ZUiChTPO2wgZRzYkKDnqY4gBBbqmhc5sqdciFpvuZTk2ruE5f0gU+KbVDHSwwd4DXv9GQc4lZR/+csddEvZZAyWU6FLK9LBqGq4uDxFTu++sfvm/ZOJ39WwDLLmXrrwTVtIky8Y7a4pRhZ38MhEc3UrTFGNHf+phjS+td0GjPdqgfT6Zk8HYP2psCjuTBNi3OLkL4ie+kjuuZL/aI2BcFUxNC3Od3FsodWGyQp0JgFyBH8mglF1iVcHuojLLStnx0WbPIz3vPtQMfuw4aOMePz2CeEPqat6HF4UsdEXNf1m2U0OxQQIDAQAB"
+        policies:
+          - name: ApplicationAuthentication
+            documentOverride:
+              type: SECURITY
+              order: 1
+              flow: REQUEST
+              context: SERVICE
+              policyRules:
+                - conditions:
+                    - leftTerm: REQUEST_CONSUMER_ID
+                      op: "=="
+                      rightTerm: "'92420121-3b8f-4b4d-8bb6-3f2703efa4ca'"
+                  actions:
+                    - type: VALIDATE_SIGNATURE
+                      value: true
+                - conditions:
+                    - leftTerm: REQUEST_CONSUMER_ID
+                      op: "!="
+                      rightTerm: "'92420121-3b8f-4b4d-8bb6-3f2703efa4ca'"
+                  actions:
+                    - type: ALLOW
+        serviceMeshConfig:
+          deploymentType: WCNP
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  enforcePolicies: true
+                - uri: "/swagger-ui[.]html"
+                  methods:
+                    - GET
+                - uri: "/webjars/.*"
+                  methods:
+                    - GET
+                - uri: "/swagger-resources"
+                  methods:
+                    - GET
+                - uri: "/swagger-resources/.*"
+                  methods:
+                    - GET
+                - uri: "/v3/api[.]docs(/.*)?"
+                  methods:
+                    - GET
+                - uri: "/heartbeat"
+                  methods:
+                    - GET
+        consumers:
+          - applicationKey: ATLAS-UNIFIED-BFF
+            consumerId: 92420121-3b8f-4b4d-8bb6-3f2703efa4ca
+            soaEnabled: true
+        soaIntegration:
+          artifactId: uwms-receiving
+          groupId: com.walmart.move.nim
+          serviceVersion: 1.0.0
+          environmentName: perf-cell002
+          owner: GLSReceiving@email.wal-mart.com
+          endPoint: https://receiving-api-perf-store.prod.us.walmart.net
+          contract: https://receiving-api-perf-store.prod.us.walmart.net/v3/api-docs
+      - name: prod-cell002
+        description: RECV US PROD
+        type: PRODUCTION
+        serviceType: REST
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        consumerIdInfos:
+          - consumerId: 733a801f-887a-4087-8832-1aef5a3e6560
+            publicKey: "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAps/z0F0FHBxu5Z7RHETkaLcUrYiTQdO1ZHO7n0xvsSPAMA1+aNNdCBX5bSvaB6OkUt3p4jDzPJwBHuvPb6MBQgO7fwH2GYtp3ABMkje+Lxj3aQtJ5wbNtOynUjT0DgkTywhEOxQIW9bko19JEFtv8ar2aHTf9J78AH58uGmiG0mAGScjZObxxfhgpKUTx8APKAmUUVE4K+zCEOd7cGoHKB9T/+mQDQO8TWnUhM9Sbf5gDpem8KkVG425j3IPybn9JMKpcfXDvYNxT1nihUnoQqtuYzXvC6CX2B7Kziucz5P6HqQxrUCwfdG9XME99QVtC0ANQhqrMmrumyFntJ2eXQIDAQAB"
+      - name: store-prod-cell000
+        description: RECV US PROD
+        type: PRODUCTION
+        serviceType: REST
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        consumerIdInfos:
+          - consumerId: 733a801f-887a-4087-8832-1aef5a3e6560
+            publicKey: "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAps/z0F0FHBxu5Z7RHETkaLcUrYiTQdO1ZHO7n0xvsSPAMA1+aNNdCBX5bSvaB6OkUt3p4jDzPJwBHuvPb6MBQgO7fwH2GYtp3ABMkje+Lxj3aQtJ5wbNtOynUjT0DgkTywhEOxQIW9bko19JEFtv8ar2aHTf9J78AH58uGmiG0mAGScjZObxxfhgpKUTx8APKAmUUVE4K+zCEOd7cGoHKB9T/+mQDQO8TWnUhM9Sbf5gDpem8KkVG425j3IPybn9JMKpcfXDvYNxT1nihUnoQqtuYzXvC6CX2B7Kziucz5P6HqQxrUCwfdG9XME99QVtC0ANQhqrMmrumyFntJ2eXQIDAQAB"
+      - name: store-prod-cell001
+        description: RECV US PROD
+        type: PRODUCTION
+        serviceType: REST
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        consumerIdInfos:
+          - consumerId: 733a801f-887a-4087-8832-1aef5a3e6560
+            publicKey: "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAps/z0F0FHBxu5Z7RHETkaLcUrYiTQdO1ZHO7n0xvsSPAMA1+aNNdCBX5bSvaB6OkUt3p4jDzPJwBHuvPb6MBQgO7fwH2GYtp3ABMkje+Lxj3aQtJ5wbNtOynUjT0DgkTywhEOxQIW9bko19JEFtv8ar2aHTf9J78AH58uGmiG0mAGScjZObxxfhgpKUTx8APKAmUUVE4K+zCEOd7cGoHKB9T/+mQDQO8TWnUhM9Sbf5gDpem8KkVG425j3IPybn9JMKpcfXDvYNxT1nihUnoQqtuYzXvC6CX2B7Kziucz5P6HqQxrUCwfdG9XME99QVtC0ANQhqrMmrumyFntJ2eXQIDAQAB"
+      - name: store-prod-cell003
+        description: RECV US PROD
+        type: PRODUCTION
+        serviceType: REST
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        consumerIdInfos:
+          - consumerId: 733a801f-887a-4087-8832-1aef5a3e6560
+            publicKey: "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAps/z0F0FHBxu5Z7RHETkaLcUrYiTQdO1ZHO7n0xvsSPAMA1+aNNdCBX5bSvaB6OkUt3p4jDzPJwBHuvPb6MBQgO7fwH2GYtp3ABMkje+Lxj3aQtJ5wbNtOynUjT0DgkTywhEOxQIW9bko19JEFtv8ar2aHTf9J78AH58uGmiG0mAGScjZObxxfhgpKUTx8APKAmUUVE4K+zCEOd7cGoHKB9T/+mQDQO8TWnUhM9Sbf5gDpem8KkVG425j3IPybn9JMKpcfXDvYNxT1nihUnoQqtuYzXvC6CX2B7Kziucz5P6HqQxrUCwfdG9XME99QVtC0ANQhqrMmrumyFntJ2eXQIDAQAB"
+      - name: store-prod-cell010
+        description: RECV US PROD
+        type: PRODUCTION
+        serviceType: REST
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        consumerIdInfos:
+          - consumerId: 733a801f-887a-4087-8832-1aef5a3e6560
+            publicKey: "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAps/z0F0FHBxu5Z7RHETkaLcUrYiTQdO1ZHO7n0xvsSPAMA1+aNNdCBX5bSvaB6OkUt3p4jDzPJwBHuvPb6MBQgO7fwH2GYtp3ABMkje+Lxj3aQtJ5wbNtOynUjT0DgkTywhEOxQIW9bko19JEFtv8ar2aHTf9J78AH58uGmiG0mAGScjZObxxfhgpKUTx8APKAmUUVE4K+zCEOd7cGoHKB9T/+mQDQO8TWnUhM9Sbf5gDpem8KkVG425j3IPybn9JMKpcfXDvYNxT1nihUnoQqtuYzXvC6CX2B7Kziucz5P6HqQxrUCwfdG9XME99QVtC0ANQhqrMmrumyFntJ2eXQIDAQAB"
+      - name: store-prod-cell011
+        description: RECV US PROD
+        type: PRODUCTION
+        serviceType: REST
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        consumerIdInfos:
+          - consumerId: 733a801f-887a-4087-8832-1aef5a3e6560
+            publicKey: "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAps/z0F0FHBxu5Z7RHETkaLcUrYiTQdO1ZHO7n0xvsSPAMA1+aNNdCBX5bSvaB6OkUt3p4jDzPJwBHuvPb6MBQgO7fwH2GYtp3ABMkje+Lxj3aQtJ5wbNtOynUjT0DgkTywhEOxQIW9bko19JEFtv8ar2aHTf9J78AH58uGmiG0mAGScjZObxxfhgpKUTx8APKAmUUVE4K+zCEOd7cGoHKB9T/+mQDQO8TWnUhM9Sbf5gDpem8KkVG425j3IPybn9JMKpcfXDvYNxT1nihUnoQqtuYzXvC6CX2B7Kziucz5P6HqQxrUCwfdG9XME99QVtC0ANQhqrMmrumyFntJ2eXQIDAQAB"
+      - name: store-prod-cell020
+        description: RECV US PROD
+        type: PRODUCTION
+        serviceType: REST
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        consumerIdInfos:
+          - consumerId: 733a801f-887a-4087-8832-1aef5a3e6560
+            publicKey: "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAps/z0F0FHBxu5Z7RHETkaLcUrYiTQdO1ZHO7n0xvsSPAMA1+aNNdCBX5bSvaB6OkUt3p4jDzPJwBHuvPb6MBQgO7fwH2GYtp3ABMkje+Lxj3aQtJ5wbNtOynUjT0DgkTywhEOxQIW9bko19JEFtv8ar2aHTf9J78AH58uGmiG0mAGScjZObxxfhgpKUTx8APKAmUUVE4K+zCEOd7cGoHKB9T/+mQDQO8TWnUhM9Sbf5gDpem8KkVG425j3IPybn9JMKpcfXDvYNxT1nihUnoQqtuYzXvC6CX2B7Kziucz5P6HqQxrUCwfdG9XME99QVtC0ANQhqrMmrumyFntJ2eXQIDAQAB"
+
+    communication: { }
+    association: { }
+
+  #Application for CL AMB market
+  - key: ATLASRECEIVINGCL
+    name: ATLASRECEIVINGCL
+    description: Atlas Receiving application
+    organization: GLS_Logistics
+    teamRostersProductId: 1541
+    customerJourney:
+      - ATLAS
+    companyCatalog: true
+    businessCriticality: MINOR
+    tags:
+      - ATLAS-RECEIVING-CL
+    members:
+      - homeoffice\a0b0s8m
+      - homeoffice\a0n05ba
+      - homeoffice\j0s0zmv
+      - homeoffice\r0s09ft
+      - homeoffice\h0v00md
+    environments:
+      - name: dev-cell036
+        description: RECV CL Non Prod
+        serviceType: REST
+        type: DEVELOPMENT
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+      - name: stg-cell036
+        description: RECV CL STG
+        serviceType: REST
+        type: STAGING
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+      - name: prod-cell036
+        description: RECV CL Prod
+        serviceType: REST
+        type: PRODUCTION
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: true
+        wcnpProximity: false
+        policies:
+          - name: DenyUnsubscribedConsumerRequest
+        serviceMeshConfig:
+          deploymentType: WCNP
+          ingressListeners:
+            - protocol: HTTP
+              applicationHost: 127.0.0.1
+              applicationPort: 8080
+              enablePolicyEngine: true
+              passthroughURIs:
+                - uri: "/.*"
+                  methods:
+                    - OPTIONS
+
+  #Application for Imports market
+  - key: SAMS-ATLAS-IMPORTS-RECEIVING
+    name: SAMS-ATLAS-IMPORTS-RECEIVING
+    description: Sams IMPORTS Atlas Receiving application
+    organization: GLS_Logistics
+    teamRostersProductId: 4155
+    customerJourney:
+      - ATLAS
+    companyCatalog: true
+    businessCriticality: MINOR
+    tags:
+      - SAMS-IMPORTS-ATLAS-RECEIVING
+    members:
+        - homeoffice\a0e007s
+        - homeoffice\s0g0128
+        - homeoffice\s1b0ods
+        - homeoffice\k0m0ltl
+        - homeoffice\a0h07tj
+        - homeoffice\s0a0hff
+    environments:
+      - name: dev
+        description: sams atlas imports receiving dev
+        type: DEVELOPMENT
+        consumerIdInfos:
+          - consumerId: 7cc90ceb-a874-40fc-8372-a07925e8f890
+            publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApsATdSiCQzfjkvtGn7Ik6rWTBSleqpQ5ofIObe85oaAekiyVqAG5z8MKnpbv3YAXGOr8NZsqX9sEU+7DAHKxGXlIgRPIYRsTqNiMnijVAWAenxo36mubu6IyIRrbJcEKV+Oda0LqQMF9rRSPFX4YysryoM7kwBELmVUxTvQQBVdWAdnm5m0VMGOfGagYcVXS4+vYXLQ21MM2xT6EHa8x86gmxQXp7AEM+b9bEOE3UbgNvrghrU1ePBiG28btdWYfpDaxJft7NECBib9UsA6wraJlJNOKZapu//l/J6NkNjvHa5uo2fMsQVjvQR5gdI106CRLhHbYpOiGRUmfnNwTpwIDAQAB
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: false
+        wcnpProximity: false
+      - name: stg
+        description: sams atlas imports receiving stg
+        type: STAGING
+        consumerIdInfos:
+          - consumerId: 7cc90ceb-a874-40fc-8372-a07925e8f890
+            publicKey:  MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApsATdSiCQzfjkvtGn7Ik6rWTBSleqpQ5ofIObe85oaAekiyVqAG5z8MKnpbv3YAXGOr8NZsqX9sEU+7DAHKxGXlIgRPIYRsTqNiMnijVAWAenxo36mubu6IyIRrbJcEKV+Oda0LqQMF9rRSPFX4YysryoM7kwBELmVUxTvQQBVdWAdnm5m0VMGOfGagYcVXS4+vYXLQ21MM2xT6EHa8x86gmxQXp7AEM+b9bEOE3UbgNvrghrU1ePBiG28btdWYfpDaxJft7NECBib9UsA6wraJlJNOKZapu//l/J6NkNjvHa5uo2fMsQVjvQR5gdI106CRLhHbYpOiGRUmfnNwTpwIDAQAB
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: false
+        wcnpProximity: false
+      - name: prod
+        description: sams atlas imports receiving production
+        type: PRODUCTION
+        consumerIdInfos:
+          - consumerId: 0422a018-6ea4-44b4-b096-c114ba40f69c
+            publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnI+kMHSMHnlJc+kjJ1dv3SlakwlCDUKbuGnr60oJHsx2RhpXEnsR1aWlktcJB9dTd/d0QWNooi5sKoly3aTiYZGB1KGCbwIgSAd5UE2MCmO34ozPR/vlC+fXmt1e4SvBii5WkeO2ZLjfeypnlTDHM7trynfD3Uy9Z6StSIFgY0Fl9a4dfXkzn5MXOBnBv2TcOtwhM4GjTz1JY/nIokD5TIToLYofA+Fwi8m1eTTfxB/3LcGdigCg3RJScoL1Q+Isud7k1Vq5pK0lnJ5P7TEGGMsNoNLX258jG031czNPiGYHtRshuBatgc7YiXwzKxekgbPlpzob+NzBs5D/9eZ2yQIDAQAB
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: false
+        wcnpProximity: false
+
+  #Application for RC market
+  - key: US-RC-ATLAS-RECEIVING
+    name: US-RC-ATLAS-RECEIVING
+    description: RC Market Atlas Receiving application
+    organization: GLS_Logistics
+    teamRostersProductId: 460
+    customerJourney:
+      - ATLAS
+    companyCatalog: true
+    businessCriticality: MINOR
+    tags:
+      - US-RC-ATLAS-RECEIVING
+    members:
+      - homeoffice\k0b03ad
+      - homeoffice\a0r12bt
+      - homeoffice\k0s0avj
+      - homeoffice\a0b0re9
+      - homeoffice\p0s06j3
+
+    environments:
+      - name: dev
+        description: RC Atlas Receiving Dev
+        type: DEVELOPMENT
+        consumerIdInfos:
+          - consumerId: 6ba9bbd0-2880-4a42-8702-0dcf0294e0c9
+            publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApsATdSiCQzfjkvtGn7Ik6rWTBSleqpQ5ofIObe85oaAekiyVqAG5z8MKnpbv3YAXGOr8NZsqX9sEU+7DAHKxGXlIgRPIYRsTqNiMnijVAWAenxo36mubu6IyIRrbJcEKV+Oda0LqQMF9rRSPFX4YysryoM7kwBELmVUxTvQQBVdWAdnm5m0VMGOfGagYcVXS4+vYXLQ21MM2xT6EHa8x86gmxQXp7AEM+b9bEOE3UbgNvrghrU1ePBiG28btdWYfpDaxJft7NECBib9UsA6wraJlJNOKZapu//l/J6NkNjvHa5uo2fMsQVjvQR5gdI106CRLhHbYpOiGRUmfnNwTpwIDAQAB
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: false
+        wcnpProximity: false
+      - name: stg
+        description: RC Atlas Receiving Stg
+        type: STAGING
+        consumerIdInfos:
+          - consumerId: 8649fecf-f3a9-4fe5-b19d-2c8cf4989f0e
+            publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApsATdSiCQzfjkvtGn7Ik6rWTBSleqpQ5ofIObe85oaAekiyVqAG5z8MKnpbv3YAXGOr8NZsqX9sEU+7DAHKxGXlIgRPIYRsTqNiMnijVAWAenxo36mubu6IyIRrbJcEKV+Oda0LqQMF9rRSPFX4YysryoM7kwBELmVUxTvQQBVdWAdnm5m0VMGOfGagYcVXS4+vYXLQ21MM2xT6EHa8x86gmxQXp7AEM+b9bEOE3UbgNvrghrU1ePBiG28btdWYfpDaxJft7NECBib9UsA6wraJlJNOKZapu//l/J6NkNjvHa5uo2fMsQVjvQR5gdI106CRLhHbYpOiGRUmfnNwTpwIDAQAB
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: false
+        wcnpProximity: false
+      - name: prod-rc-000
+        description: RC Atlas Receiving Production
+        type: PRODUCTION
+        consumerIdInfos:
+          - consumerId: 870f085c-8f5b-4cee-9f76-1db4521a1412
+            publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnI+kMHSMHnlJc+kjJ1dv3SlakwlCDUKbuGnr60oJHsx2RhpXEnsR1aWlktcJB9dTd/d0QWNooi5sKoly3aTiYZGB1KGCbwIgSAd5UE2MCmO34ozPR/vlC+fXmt1e4SvBii5WkeO2ZLjfeypnlTDHM7trynfD3Uy9Z6StSIFgY0Fl9a4dfXkzn5MXOBnBv2TcOtwhM4GjTz1JY/nIokD5TIToLYofA+Fwi8m1eTTfxB/3LcGdigCg3RJScoL1Q+Isud7k1Vq5pK0lnJ5P7TEGGMsNoNLX258jG031czNPiGYHtRshuBatgc7YiXwzKxekgbPlpzob+NzBs5D/9eZ2yQIDAQAB
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        useNodes: false
+        wcnpProximity: false
+
+  - key: US-WM-FC-ATLAS-RECEIVING
+    name: US-WM-FC-ATLAS-RECEIVING
+    description: Atlas FC RECEIVING Application
+    organization: GLS_Logistics
+    teamRostersProductId: 3544
+    customerJourney:
+      - ATLAS
+    companyCatalog: true
+    businessCriticality: CRITICAL
+    members:
+      - homeoffice\a0b02ft
+      - homeoffice\c0m0pip
+      - homeoffice\j0m09v6
+      - homeoffice\m0v0bbg
+    environments:
+      - name: dev-us-fc
+        description: FC Development Environment
+        serviceType: REST
+        type: DEVELOPMENT
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+      - name: qa-us-fc
+        description: FC qa environment
+        type: QA
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+      - name: stg-us-fc
+        description: FC STG environment
+        type: STAGING
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+      - name: perf-us-fc
+        description: FC PERF environment
+        type: STAGING
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+      - name: prod-cell028
+        description: FC PROD environment
+        type: PRODUCTION
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+      - name: prod-cell003
+        description: FC PROD environment
+        type: PRODUCTION
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+      - name: prod-cell005
+        description: FC PROD environment
+        type: PRODUCTION
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+      - name: prod-cell006
+        description: FC PROD environment
+        type: PRODUCTION
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+      - name: prod-cell010
+        description: FC PROD environment
+        type: PRODUCTION
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+    communication: {}
+    association: {}
+  - key: US-WM-CC-IMPORTS-ATLAS-RECEIVING
+    name: US-WM-CC-IMPORTS-ATLAS-RECEIVING
+    description: Atlas US-WM CC-IMPORTS RECEIVING Application
+    organization: GLS_Logistics
+    teamRostersProductId: 3541
+    customerJourney:
+      - ATLAS
+    companyCatalog: true
+    businessCriticality: CRITICAL
+    members:
+      - homeoffice\k0a00bu
+      - homeoffice\s0t0bde
+      - homeoffice\sks0013
+      - homeoffice\i0a02l3
+      - homeoffice\a0s0xp4
+      - homeoffice\t0j09jl
+      - homeoffice\v0s00g0
+      - homeoffice\k0g0313
+      - homeoffice\j0m0qga
+      - homeoffice\s0g0cl7
+      - homeoffice\r0k0684
+      - homeoffice\tpandey
+      - homeoffice\g0s011p
+      - homeoffice\s0p0g3s
+      - homeoffice\c0k00bm
+      - homeoffice\r0s0g6x
+    environments:
+      - name: dev
+        description: Development Environment
+        serviceType: REST
+        type: DEVELOPMENT
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+      - name: qa
+        description: qa environment
+        type: QA
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+      - name: stg003
+        description: STG environment
+        type: STAGING
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+      - name: prod-cell011
+        description: PROD environment
+        type: PRODUCTION
+        externalCatalog: false
+        externalSubscriptionLessAccess: false
+        expoEnabled: false
+        wcnpProximity: false
+    communication: {}
+    association: {}

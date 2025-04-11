@@ -1,0 +1,71 @@
+profiles:
+  - rel://../../kitt-common-deploy
+  - rel://stages/stg-config
+  - git://Logistics:atlas-kitt-assets:main:deploy/us/wm/fc/fc-deploy-v1
+
+notify:
+  slack:
+    channelName: atlas-rcv-us-fc-build
+alerts:
+  email:
+    - end-game-dev@wal-mart.com
+  slackChannel:
+    - atlas-rcv-us-fc-build
+
+setup:
+  releaseRefs: ["main"]
+
+build:
+  artifact: uwms-receiving-fc
+
+deploy:
+  preDeploy:
+    - task:
+        name: messageSlack
+        text: Beginning liquibase execution on {{$.kittExec.currentStage.name}}
+    - concord:
+        name: Liquibase-Execution
+        action: start
+        org: Logistics
+        project: wcnp_liquibase
+        repo: wcnp_liquibase
+        entryPoint: default
+        enabled: true
+        sync: true
+        executionScope: stage
+        arguments:
+          version: "{{$.kitt.build.version}}"
+          artifactId: "{{$.kitt.build.artifact}}"
+          targetEnv: "{{$.kittExec.currentStage.name}}"
+          gitBranch: "{{$.kitt.build.commitEvent.commitId}}"
+          repoName: "uwms-receiving"
+    - task:
+        name: messageSlack
+        text: Liquibase execution successful
+  namespace: fc-atlas-receiving-api
+  skip: false
+  changeRecord:
+    create: true
+    affectedGEOs: ["US"]
+    group: "LOG - GLS NextGen"
+    notifyChannels: ["atlas-rcv-us-fc-build"]
+    managerGroup: "Change Managers - GEC"
+  gslb:
+    lbRoutings:
+      default-fc-stg:
+        cnames:
+          - gls-atlas-uwms-receiving-default-fc-stg-cell000.walmart.com
+        matchStages: [ default-fc-stg ]
+  stages:
+    - name: default-fc-stg
+      flows: [ release ]
+      refs: ["main"]
+      target:
+        - cluster_id: [ uscentral-stage-wmt-003 ]
+      rollbackOnError: true
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+          - "AD-GLS-NG-Order-Fulfillment"

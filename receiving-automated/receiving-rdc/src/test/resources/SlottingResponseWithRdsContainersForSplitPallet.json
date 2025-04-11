@@ -1,0 +1,136 @@
+{
+  "messageId": "4362b190-16e0-40b5-8684-1eddefc85b46",
+  "locations": [
+    {
+      "type": "success",
+      "location": "K7298",
+      "primeLocation": "K7298",
+      "locationSize": 40
+    }
+  ],
+  "rds": {
+    "sneEnabled": true,
+    "received": [
+      {
+        "poNumber": "4166030001",
+        "poLine": 1,
+        "returnCode": 0,
+        "message": "SUCCESS",
+        "labelTrackingId": "9785690481",
+        "carton": "",
+        "batch": 0,
+        "shippingLane": 0,
+        "receiver": 97382,
+        "pack": 0,
+        "department": 0,
+        "division": 0,
+        "pocode": 0,
+        "aisle": "",
+        "poevent": "",
+        "storezone": null,
+        "eventchar": null,
+        "pri_loc": "",
+        "sec_loc": "",
+        "ter_loc": "",
+        "hazmat": " ",
+        "sscc": "",
+        "tag": "",
+        "destinations": [
+          {
+            "store": null,
+            "slot": "K7298",
+            "slot_size": 40,
+            "zone": null,
+            "division": null,
+            "carton": null
+          }
+        ],
+        "productivity": {
+
+        },
+        "_id": "7bd0ab79-79de-4bf0-8e4a-137ac5f25d8a"
+      },
+      {
+        "poNumber": "4166030001",
+        "poLine": 2,
+        "returnCode": 0,
+        "message": "SUCCESS",
+        "labelTrackingId": "9785690482",
+        "carton": "",
+        "batch": 0,
+        "shippingLane": 0,
+        "receiver": 97382,
+        "pack": 0,
+        "department": 0,
+        "division": 0,
+        "pocode": 0,
+        "aisle": "",
+        "poevent": "",
+        "storezone": null,
+        "eventchar": null,
+        "pri_loc": "",
+        "sec_loc": "",
+        "ter_loc": "",
+        "hazmat": " ",
+        "sscc": "",
+        "tag": "",
+        "destinations": [
+          {
+            "store": null,
+            "slot": "K7298",
+            "slot_size": 40,
+            "zone": null,
+            "division": null,
+            "carton": null
+          }
+        ],
+        "productivity": {
+
+        },
+        "_id": "7bd0ab79-79de-4bf0-8e4a-137ac5f25d8a"
+      },
+      {
+        "poNumber": "4166030001",
+        "poLine": 3,
+        "returnCode": 0,
+        "message": "SUCCESS",
+        "labelTrackingId": "9785690483",
+        "carton": "",
+        "batch": 0,
+        "shippingLane": 0,
+        "receiver": 97382,
+        "pack": 0,
+        "department": 0,
+        "division": 0,
+        "pocode": 0,
+        "aisle": "",
+        "poevent": "",
+        "storezone": null,
+        "eventchar": null,
+        "pri_loc": "",
+        "sec_loc": "",
+        "ter_loc": "",
+        "hazmat": " ",
+        "sscc": "",
+        "tag": "",
+        "destinations": [
+          {
+            "store": null,
+            "slot": "K7298",
+            "slot_size": 40,
+            "zone": null,
+            "division": null,
+            "carton": null
+          }
+        ],
+        "productivity": {
+
+        },
+        "_id": "7bd0ab79-79de-4bf0-8e4a-137ac5f25d8a"
+      }
+    ],
+    "errors": [
+
+    ]
+  }
+}

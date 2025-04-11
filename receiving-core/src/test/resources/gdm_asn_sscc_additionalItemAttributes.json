@@ -1,0 +1,166 @@
+{
+  "delivery": {
+    "deliveryNumber": 33630424,
+    "statusInformation": {
+      "operationalStatus": "WRK",
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "status": "WRK"
+    }
+  },
+  "shipments": [
+    {
+      "documentId": "513035026_20220412_332767G7_SHIPPER_US",
+      "shipmentNumber": "513035026",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2022-04-12T15:05:46.077Z",
+      "shipmentDate": "2022-04-12",
+      "source": {
+        "number": "332767G7",
+        "numberType": "ZZ",
+        "type": "SHIPPER",
+        "countryCode": "US",
+        "shipperName": "SFI TYLER PROCESSING"
+      },
+      "destination": {
+        "globalLocationNumber": "0078742108636",
+        "type": "DC",
+        "number": 8852,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "billOfLadingNumber": "513035026",
+        "loadNumber": "20780027",
+        "reportedDeliveryNumber": 33630424,
+        "shippingDate": "2022-04-12"
+      },
+      "totalPacks": 24
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poNumber": "0657531161",
+      "freightBillQty": 822,
+      "cubeQty": 1253.0,
+      "poDcCountry": "US",
+      "baseDivisionCode": "WM",
+      "poType": "20",
+      "purchaseCompanyId": 1,
+      "poStatus": "ACTV",
+      "financialGroupCode": "US",
+      "vendorInformation": {
+        "name": "SANDERSON FARMS INC",
+        "number": 332767,
+        "department": 93
+      },
+      "poDates": {
+        "cancel": "2022-04-05",
+        "ordered": "2022-04-02",
+        "mabd": "2022-04-09",
+        "ship": "2022-04-05"
+      },
+      "poDcNumber": 8852,
+      "lines": [
+        {
+          "poLineNumber": 2,
+          "freightBillQty": 3,
+          "channel": "SSTKU",
+          "ovgThresholdQuantityLimit": 14,
+          "whpkQty": 4,
+          "whpkSell": 18.0,
+          "vnpkQty": 4,
+          "vnpkCost": 18.4,
+          "vnpkWeightQty": 40.0,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 1.001,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "polAdditionalFields": {
+            "promoBuyInd": "N",
+            "Channel_Method_Code": 0
+          },
+          "poLineStatus": "APPROVED",
+          "orderedQty": 147.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00074941098228",
+            "orderableGTIN": "10074941431923",
+            "supplierStockId": "43192",
+            "palletTi": 7,
+            "palletHi": 8,
+            "hazmat": false,
+            "conveyable": true,
+            "vendorDepartment": "93",
+            "size": "10 LB",
+            "warehousePackQuantity": 4,
+            "orderableQuantity": 4,
+            "descriptions": [
+              "LEG QTR 10LB",
+              "LEG QTR 10LB"
+            ],
+            "isNewItem": false,
+            "itemAdditonalInformation": {
+              "warehouseRotationTypeCode": "3",
+              "weight": 42.0,
+              "cubeUOM": "CF",
+              "cube": 1.17,
+              "weightUOM": "LB",
+              "weightFormatTypeCode": "F",
+              "profiledWarehouseArea": "OPM",
+              "warehouseAreaCode": "2",
+              "warehouseMinLifeRemainingToReceive": 1,
+              "warehouseAreaDesc": "Frozen"
+            },
+            "number": 551636997
+          },
+          "bolWeightQty": 1.0,
+          "bolWeightQtyUom": "LB"
+        }
+      ],
+      "weightQty": 32960.0,
+      "weightQtyUom": "LB",
+      "cubeQtyUom": "CF"
+    }
+  ],
+  "packs": [
+    {
+      "packNumber": "AUTO_513035026_13",
+      "palletNumber": "00006641941209544694",
+      "shipmentNumber": "513035026",
+      "items": [
+        {
+          "reportedProductId": "90074941431929",
+          "reportedProductIdType": "UK",
+          "itemNumber": 551636997,
+          "gtin": "90074941431929",
+          "vendorId": "332767",
+          "itemDivision": "WM",
+          "purchaseOrder": {
+            "poLineNumber": 2,
+            "poNumber": "0657531161",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63"
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 49.0,
+            "reportedUom": "CA",
+            "derivedQuantity": 49.0,
+            "derivedUom": "CA"
+          },
+          "manufactureDetails": [
+            {
+              "lotNumber": "1220954469"
+            }
+          ],
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "0074941098228",
+              "reportedProductIdType": "EN"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

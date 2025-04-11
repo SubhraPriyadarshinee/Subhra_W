@@ -1,0 +1,23 @@
+{
+	"trackingId": "TC00000001",
+	"sscc" : "12345",
+	"messageId": "507ce873-bebb-499a-a1c5-57e592a49e2a",
+	"location": "DECANT",
+	"deliveryNumber": 12333333,
+	"containerType": "Vendor Pack",
+	"containerStatus": "AVAILABLE",
+	"weight": 11.75,
+	"weightUOM": "LB",
+	"cube": 1.312,
+	"cubeUOM": "CF",
+	"ctrShippable": false,
+	"ctrReusable": false,
+	"inventoryStatus": "AVAILABLE",
+	"completeTs": "Jan 9, 2020 9:44:05 PM",
+	"publishTs": "Jan 9, 2020 9:44:05 PM",
+	"createTs": "Jan 9, 2020 9:44:05 PM",
+	"createUser": "RCV_Default",
+	"lastChangedUser": "RCV_Default",
+	"facilityCountryCode": "US",
+	"facilityNum": 54321
+}

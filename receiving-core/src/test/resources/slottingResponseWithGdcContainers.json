@@ -1,0 +1,13 @@
+{
+  "messageId": "d034fc9c-849b-11ea-bc55-0242ac130003",
+  "locations": [
+    {
+      "type": "success",
+      "location": "K7298",
+      "primeLocation": "K7298",
+      "locationSize": 40,
+      "slotType": "prime",
+      "asrsAlignment": "SYM1"
+    }
+  ]
+}

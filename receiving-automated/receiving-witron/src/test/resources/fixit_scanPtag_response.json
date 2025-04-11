@@ -1,0 +1,34 @@
+{
+    "id": "f40ad8db-8161-483b-89cd-34eecd7a58a7",
+    "label": "06071704725305",
+    "slot": "PA02",
+    "status": "OPEN",
+    "remainingQty": 10,
+    "reportedQty": 10,
+    "issue": {
+        "id": "8c6b88f0-7e1c-48e0-a351-a09c8a3411e3",
+        "identifier": "220511-44537-0210-0000",
+        "type": "NOP",
+        "deliveryNumber": "34304059",
+        "upc": "045255148435",
+        "itemNumber": 555291630,
+        "quantity": 10,
+        "status": "ANSWERED",
+        "businessStatus": "READY_TO_RECEIVE",
+        "resolutionStatus": "COMPLETE_RESOLUTON"
+    },
+    "resolutions": [
+        {
+            "id": "c15ee165-b729-409e-810d-45e5ea0a9cb1",
+            "provider": "Manual",
+            "quantity": 10,
+            "acceptedQuantity": 0,
+            "rejectedQuantity": 0,
+            "remainingQty": 10,
+            "type": "RECEIVE_AGAINST_ORIGINAL_LINE",
+            "resolutionPoNbr": "3773250394",
+            "resolutionPoLineNbr": 4,
+            "state": "OPEN"
+        }
+    ]
+}

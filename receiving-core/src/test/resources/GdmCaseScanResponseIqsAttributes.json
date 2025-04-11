@@ -1,0 +1,168 @@
+{
+  "delivery": {
+    "deliveryNumber": 38913152,
+    "statusInformation": {
+      "status": "WRK",
+      "operationalStatus": "WRK",
+      "statusReasonCode": [
+        "WORKING"
+      ]
+    },
+    "scheduled": "2023-01-23T05:00:00Z",
+    "arrivalTimeStamp": "2023-04-10T20:45:11.663Z",
+    "doorOpenTime": "2023-04-11T21:26:23.438Z",
+    "receivingStartedTimeStamp": "2023-04-11T21:30:23.454Z"
+  },
+  "shipments": [
+    {
+      "documentId": "6000648613_20230121_4090032Z_SHIPPER_US",
+      "shipmentNumber": "6000648613",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2023-01-22T04:20:10.900Z",
+      "source": {
+        "number": "4090032Z",
+        "numberType": "ZZ",
+        "type": "SHIPPER",
+        "countryCode": "US",
+        "shipperName": "SOUTH EAST MC"
+      },
+      "destination": {
+        "globalLocationNumber": "0078742029467",
+        "type": "DC",
+        "number": 32679,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "shippingDate": "2023-01-21",
+        "carrierId": "2044557658"
+      }
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poNumber": "5326699089",
+      "freightBillQty": 88,
+      "cubeQty": 44.792,
+      "poDcCountry": "US",
+      "baseDivisionCode": "WM",
+      "poType": "20",
+      "purchaseCompanyId": 1,
+      "poStatus": "CLOSED",
+      "financialGroupCode": "US",
+      "poDates": {
+        "cancel": "2023-01-23",
+        "ordered": "2023-01-19",
+        "mabd": "2023-01-24",
+        "ship": "2023-01-23"
+      },
+      "vendorInformation": {
+        "name": "PROCTER & GAMBLE",
+        "number": 409003,
+        "department": 13,
+        "serialInfoEnabled": false
+      },
+      "poDcNumber": 6020,
+      "lines": [
+        {
+          "poLineNumber": 1,
+          "channel": "SSTKU",
+          "ovgThresholdQuantityLimit": 20,
+          "whpkQty": 6,
+          "whpkSell": 23.0,
+          "vnpkQty": 6,
+          "vnpkCost": 23.82,
+          "vnpkWeightQty": 9.329,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.509,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "polAdditionalFields": {
+            "promoBuyInd": "N",
+            "Channel_Method_Code": 0
+          },
+          "poLineStatus": "RECEIVED",
+          "orderedQty": 88.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00037000698531",
+            "orderableGTIN": "10037000698538",
+            "supplierStockId": "10037000698538",
+            "palletTi": 22,
+            "palletHi": 4,
+            "hazmat": true,
+            "conveyable": true,
+            "vendorDepartment": "13",
+            "color": "NA",
+            "size": "NA",
+            "warehousePackQuantity": 6,
+            "orderableQuantity": 6,
+            "limitedQtyVerifiedOn": "2023-02-16T13:02:05.105Z",
+            "transportationModes": [
+              {
+                "mode": {
+                  "code": 1,
+                  "description": "GROUND"
+                },
+                "dotHazardousClass": {
+                  "code": "ORM-D",
+                  "description": "OTHER REGULATED MATERIAL"
+                },
+                "properShipping": "CONSUMER COMMODITY",
+                "pkgInstruction": []
+              }
+            ],
+            "handlingCode": "B",
+            "packType": "C",
+            "isNewItem": true,
+            "limitedIonVerifiedOn": "2023-02-16T13:02:05.105+0000",
+            "descriptions": [
+              "FBZ AIR WTMELON 2CT"
+            ],
+            "itemAdditonalInformation": {
+              "weight": 9.329,
+              "cubeUOM": "CF",
+              "cube": 0.509,
+              "weightUOM": "LB"
+            },
+            "number": 597398054
+          }
+        }
+      ],
+      "weightQty": 820.952,
+      "weightQtyUom": "LB",
+      "cubeQtyUom": "CF"
+    }
+  ],
+  "packs": [
+    {
+      "documentPackId": "78528800328996094_20200608_32679_MCC_US_AUTO_6000648613_4",
+      "documentId": "6000648613_20230121_4090032Z_SHIPPER_US",
+      "packNumber": "AUTO_6000648613_4",
+      "palletNumber": "00100370001432506927",
+      "shipmentNumber": "6000648613",
+      "items": [
+        {
+          "reportedProductId": "037000698531",
+          "reportedProductIdType": "UP",
+          "itemNumber": 597398054,
+          "vendorId": "409003",
+          "itemDescription": "FBRZ AIR Watermelon 6/2x8.8oz US",
+          "purchaseOrder": {
+            "poDate": "2023-01-19",
+            "poLineNumber": 1,
+            "poNumber": "5326699089",
+            "sellerId": "F55CDC31AB754BB68FE0B39041159D63"
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 88.0,
+            "reportedUom": "CA",
+            "derivedQuantity": 88.0,
+            "derivedUom": "CA"
+          },
+          "gtinHierarchy": []
+        }
+      ]
+    }
+  ]
+}

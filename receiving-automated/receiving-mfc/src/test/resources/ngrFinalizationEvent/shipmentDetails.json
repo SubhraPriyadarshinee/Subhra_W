@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "delivery": [
+        {
+          "deliveryNumber": 10000000001758,
+          "scheduled": "2024-04-21T19:00:00.000Z",
+          "statusInformation": {
+            "status": "SCH"
+          }
+        }
+      ],
+      "shipments": [
+        {
+          "documentId": "716284986030100_20240606_6030_DC_US",
+          "shipmentNumber": "44285360-TMS6036266",
+          "documentType": "ASN",
+          "documentRevision": 0,
+          "documentIngestTime": "2024-04-19T13:42:25.172Z",
+          "shipmentDate": "2024-04-19",
+          "isDocumentDSCSA": "NONE",
+          "createdDate": "2024-04-19T13:45:08.415Z",
+          "source": {
+            "number": "183020",
+            "numberType": "WALMART",
+            "type": "VENDOR",
+            "countryCode": "US",
+            "shipperName": "FRITO-LAY INC"
+          },
+          "shipmentDetail": {
+            "trailerSealNumber": "0098566179",
+            "reportedDeliveryNumber": 10000000001758,
+            "shippingDate": "2024-04-18",
+            "carrierId": "WM"
+          },
+          "destination": {
+            "type": "STORE",
+            "number": 100,
+            "countryCode": "US"
+          }
+        }
+      ]
+    }
+  ],
+  "page": {
+    "number": 0,
+    "size": 15,
+    "numberOfElements": 1,
+    "totalElements": 1,
+    "totalPages": 1
+  }
+}

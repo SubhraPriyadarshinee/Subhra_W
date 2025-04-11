@@ -1,0 +1,116 @@
+[
+    {
+        "labelIdentifier": "D32612000020115184",
+        "userId": "sysadmin",
+        "labelId": "eb87d0c4-47b4-4899-bb84-bc88fab3d2ee",
+        "createdTimeStamp": "2020-05-20T11:25:38.703Z",
+        "formatName": "pallet_lpn_witron",
+        "clientId": "receiving",
+        "ttlInHours": 72,
+        "data": [
+            {
+                "key": "warehouseArea",
+                "value": "Meat"
+            },
+            {
+                "key": "profiledWarehouseArea",
+                "value": "OPM"
+            },
+            {
+                "key": "itemNum",
+                "value": "572678208"
+            },
+            {
+                "key": "itemDesc",
+                "value": "GROUND LAMB"
+            },
+            {
+                "key": "PO",
+                "value": "069122704"
+            },
+            {
+                "key": "LPN",
+                "value": "D32612000020115184"
+            },
+            {
+                "key": "rotateDate",
+                "value": "09/26/20"
+            },
+            {
+                "key": "printDate",
+                "value": "Wed May 20 11:25:39 UTC 2020"
+            },
+            {
+                "key": "userId",
+                "value": "sysadmin"
+            },
+            {
+                "key": "printerId",
+                "value": "1901"
+            },
+            {
+                "key": "LABELDATE",
+                "value": "05/20/20"
+            },
+            {
+                "key": "LABELTIMESTAMP",
+                "value": "05/20/20 16:55:38"
+            }
+        ],
+        "formattedData": null,
+        "clientID": "receiving",
+        "formatId": "pallet_lpn_witron",
+        "printableData": null,
+        "formatID": "pallet_lpn_witron",
+        "labelData": [
+            {
+                "key": "warehouseArea",
+                "value": "Meat"
+            },
+            {
+                "key": "profiledWarehouseArea",
+                "value": "OPM"
+            },
+            {
+                "key": "itemNum",
+                "value": "572678208"
+            },
+            {
+                "key": "itemDesc",
+                "value": "GROUND LAMB"
+            },
+            {
+                "key": "PO",
+                "value": "069122704"
+            },
+            {
+                "key": "LPN",
+                "value": "D32612000020115184"
+            },
+            {
+                "key": "rotateDate",
+                "value": "09/26/20"
+            },
+            {
+                "key": "printDate",
+                "value": "Wed May 20 11:25:39 UTC 2020"
+            },
+            {
+                "key": "userId",
+                "value": "sysadmin"
+            },
+            {
+                "key": "printerId",
+                "value": "1901"
+            },
+            {
+                "key": "LABELDATE",
+                "value": "05/20/20"
+            },
+            {
+                "key": "LABELTIMESTAMP",
+                "value": "05/20/20 16:55:38"
+            }
+        ]
+    }
+]

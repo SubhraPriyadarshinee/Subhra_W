@@ -1,0 +1,336 @@
+{
+  "6561": {
+    "featureFlags": {
+      "isAtlas": false,
+      "instructionOwnershipEnabled": false,
+      "sumoEnabled": true,
+      "isFITEnabled": false,
+      "atlas": {
+        "getDelivery": false,
+        "completeDelivery": false,
+        "requestInstruction": false,
+        "getExistingInstructions": false,
+        "updateInstruction": false,
+        "completeInstruction": false,
+        "cancelInstruction": false,
+        "viewAllPOs": false,
+        "useFourDigitSiteIDs": false,
+        "getProblemInfoByPTag": false,
+        "completeProblemTag": false,
+        "reportingOverage": false,
+        "searchDelivery": false
+      },
+      "prime": {
+        "useJavaBaseUrl": {
+          "createInstruction": false,
+          "getAvailablePos": true,
+          "getDelivery": false,
+          "createDelivery": true,
+          "completeDelivery": false
+        },
+        "conveyableInstructions": false
+      },
+      "common": {
+        "printingAndroidComponent": false,
+        "printAndroidCompKeepAliveTime": 5000,
+        "printAndroidCompShouldMockService": false,
+        "logNetworkCalls": false,
+        "logNetworkError": false
+      }
+    },
+    "envUrls": {
+      "REACT_APP_BASEURL_GDM_DELIVERY_SEARCH": "https://gdm.prod.us.walmart.net/document/v2/deliveries/{deliveryIdentifier}/deliverydocuments/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DOOR": "https://gdm.prod.us.walmart.net/document/v2/deliveries/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DELIVERY_NUMBER": "https://gdm.prod.us.walmart.net/document/v2/deliveries",
+      "REACT_APP_BASEURL_FIT": "https://api.fit.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_FIT_VOLTA": "https://api.fit.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_UWMS_RECEIVING": "https://receiving-api-prod.prod.us.walmart.net"
+    }
+  },
+  "6938": {
+    "featureFlags": {
+      "isAtlas": false,
+      "instructionOwnershipEnabled": false,
+      "sumoEnabled": false,
+      "isFITEnabled": true,
+      "atlas": {
+        "getDelivery": false,
+        "completeDelivery": false,
+        "requestInstruction": false,
+        "getExistingInstructions": false,
+        "updateInstruction": false,
+        "completeInstruction": false,
+        "cancelInstruction": false,
+        "viewAllPOs": false,
+        "useFourDigitSiteIDs": false,
+        "getProblemInfoByPTag": false,
+        "completeProblemTag": false,
+        "reportingOverage": false,
+        "searchDelivery": false
+      },
+      "prime": {
+        "useJavaBaseUrl": {
+          "createInstruction": false,
+          "getAvailablePos": true,
+          "getDelivery": false,
+          "createDelivery": true,
+          "completeDelivery": false
+        }
+      },
+      "common": {
+        "printingAndroidComponent": false,
+        "printAndroidCompKeepAliveTime": 5000,
+        "printAndroidCompShouldMockService": false,
+        "logNetworkCalls": false,
+        "logNetworkError": true
+      }
+    },
+    "envUrls": {
+      "REACT_APP_BASEURL_GDM_DELIVERY_SEARCH": "https://gdm.prod.us.walmart.net/document/v2/deliveries/{deliveryIdentifier}/deliverydocuments/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DOOR": "https://gdm.prod.us.walmart.net/document/v2/deliveries/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DELIVERY_NUMBER": "https://gdm.prod.us.walmart.net/document/v2/deliveries",
+      "REACT_APP_BASEURL_FIT": "https://api.fit.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_FIT_VOLTA": "https://api.fit.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_UWMS_RECEIVING": "https://receiving-api-prod.prod.us.walmart.net"
+    }
+  },
+  "32898": {
+    "featureFlags": {
+      "isAtlas": false,
+      "instructionOwnershipEnabled": false,
+      "sumoEnabled": true,
+      "isFITEnabled": false,
+      "atlas": {
+        "getDelivery": false,
+        "completeDelivery": false,
+        "requestInstruction": false,
+        "getExistingInstructions": false,
+        "updateInstruction": false,
+        "completeInstruction": false,
+        "cancelInstruction": false,
+        "viewAllPOs": false,
+        "useFourDigitSiteIDs": false,
+        "getProblemInfoByPTag": false,
+        "completeProblemTag": false,
+        "reportingOverage": false,
+        "searchDelivery": false
+      },
+      "prime": {
+        "useJavaBaseUrl": {
+          "createInstruction": false,
+          "getAvailablePos": true,
+          "getDelivery": false,
+          "createDelivery": true,
+          "completeDelivery": false
+        }
+      },
+      "common": {
+        "printingAndroidComponent": false,
+        "printAndroidCompKeepAliveTime": 5000,
+        "printAndroidCompShouldMockService": false,
+        "logNetworkCalls": false,
+        "logNetworkError": false
+      }
+    },
+    "envUrls": {
+      "REACT_APP_BASEURL_GDM_DELIVERY_SEARCH": "https://qa.gdm.prod.us.walmart.net/document/v2/deliveries/{deliveryIdentifier}/deliverydocuments/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DOOR": "https://qa.gdm.prod.us.walmart.net/document/v2/deliveries/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DELIVERY_NUMBER": "https://qa.gdm.prod.us.walmart.net/document/v2/deliveries",
+      "REACT_APP_BASEURL_FIT": "https://fit-qa1.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_FIT_VOLTA": "https://fit-qa1.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_UWMS_RECEIVING": "https://receiving-api-qa.prod.us.walmart.net"
+    }
+  },
+  "32899": {
+    "featureFlags": {
+      "isAtlas": false,
+      "instructionOwnershipEnabled": false,
+      "sumoEnabled": true,
+      "isFITEnabled": true,
+      "atlas": {
+        "getDelivery": false,
+        "completeDelivery": false,
+        "requestInstruction": false,
+        "getExistingInstructions": false,
+        "updateInstruction": false,
+        "completeInstruction": false,
+        "cancelInstruction": false,
+        "viewAllPOs": false,
+        "useFourDigitSiteIDs": false,
+        "getProblemInfoByPTag": false,
+        "completeProblemTag": false,
+        "reportingOverage": false,
+        "searchDelivery": false
+      },
+      "prime": {
+        "useJavaBaseUrl": {
+          "createInstruction": false,
+          "getAvailablePos": true,
+          "getDelivery": false,
+          "createDelivery": true,
+          "completeDelivery": false
+        },
+        "conveyableInstructions": false
+      },
+      "common": {
+        "printingAndroidComponent": false,
+        "printAndroidCompKeepAliveTime": 5000,
+        "printAndroidCompShouldMockService": false,
+        "logNetworkCalls": false,
+        "logNetworkError": false
+      }
+    },
+    "envUrls": {
+      "REACT_APP_BASEURL_GDM_DELIVERY_SEARCH": "https://stg.gdm.prod.us.walmart.net/document/v2/deliveries/{deliveryIdentifier}/deliverydocuments/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DOOR": "https://stg.gdm.prod.us.walmart.net/document/v2/deliveries/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DELIVERY_NUMBER": "https://stg.gdm.prod.us.walmart.net/document/v2/deliveries",
+      "REACT_APP_BASEURL_FIT": "https://fit-stg1.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_FIT_VOLTA": "https://fit-qa1.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_UWMS_RECEIVING": "https://receiving-stg-api.prod.us.walmart.net"
+    }
+  },
+  "32928": {
+    "featureFlags": {
+      "isAtlas": false,
+      "instructionOwnershipEnabled": false,
+      "sumoEnabled": true,
+      "isFITEnabled": false,
+      "atlas": {
+        "getDelivery": false,
+        "completeDelivery": false,
+        "requestInstruction": false,
+        "getExistingInstructions": false,
+        "updateInstruction": false,
+        "completeInstruction": false,
+        "cancelInstruction": false,
+        "viewAllPOs": false,
+        "useFourDigitSiteIDs": false,
+        "getProblemInfoByPTag": false,
+        "completeProblemTag": false,
+        "reportingOverage": false,
+        "searchDelivery": false
+      },
+      "prime": {
+        "useJavaBaseUrl": {
+          "createInstruction": false,
+          "getAvailablePos": true,
+          "getDelivery": false,
+          "createDelivery": true,
+          "completeDelivery": false
+        },
+        "conveyableInstructions": false
+      },
+      "common": {
+        "printingAndroidComponent": false,
+        "printAndroidCompKeepAliveTime": 5000,
+        "printAndroidCompShouldMockService": false,
+        "logNetworkCalls": false,
+        "logNetworkError": false
+      }
+    },
+    "envUrls": {
+      "REACT_APP_BASEURL_GDM_DELIVERY_SEARCH": "https://dev.gdm.prod.us.walmart.net/document/v2/deliveries/{deliveryIdentifier}/deliverydocuments/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DOOR": "https://dev.gdm.prod.us.walmart.net/document/v2/deliveries/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DELIVERY_NUMBER": "https://dev.gdm.prod.us.walmart.net/document/v2/deliveries",
+      "REACT_APP_BASEURL_FIT": "https://fit-dev2.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_FIT_VOLTA": "https://fit-stg-int.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_UWMS_RECEIVING": "https://receiving-api.prod.us.walmart.net"
+    }
+  },
+  "32987": {
+    "featureFlags": {
+      "isAtlas": false,
+      "instructionOwnershipEnabled": false,
+      "sumoEnabled": true,
+      "isFITEnabled": false,
+      "atlas": {
+        "getDelivery": false,
+        "completeDelivery": false,
+        "requestInstruction": false,
+        "getExistingInstructions": false,
+        "updateInstruction": false,
+        "completeInstruction": false,
+        "cancelInstruction": false,
+        "viewAllPOs": false,
+        "useFourDigitSiteIDs": false,
+        "getProblemInfoByPTag": false,
+        "completeProblemTag": false,
+        "reportingOverage": false,
+        "searchDelivery": false
+      },
+      "prime": {
+        "useJavaBaseUrl": {
+          "createInstruction": false,
+          "getAvailablePos": true,
+          "getDelivery": false,
+          "createDelivery": true,
+          "completeDelivery": false
+        },
+        "conveyableInstructions": false
+      },
+      "common": {
+        "printingAndroidComponent": false,
+        "printAndroidCompKeepAliveTime": 5000,
+        "printAndroidCompShouldMockService": false,
+        "logNetworkCalls": false,
+        "logNetworkError": false
+      }
+    },
+    "envUrls": {
+      "REACT_APP_BASEURL_GDM_DELIVERY_SEARCH": "https://dev.gdm.prod.us.walmart.net/document/v2/deliveries/{deliveryIdentifier}/deliverydocuments/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DOOR": "https://dev.gdm.prod.us.walmart.net/document/v2/deliveries/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DELIVERY_NUMBER": "https://dev.gdm.prod.us.walmart.net/document/v2/deliveries",
+      "REACT_APP_BASEURL_FIT": "https://fit-dev2.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_FIT_VOLTA": "https://fit-dev2.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_UWMS_RECEIVING": "https://receiving-api.prod.us.walmart.net"
+    }
+  },
+  "default": {
+    "featureFlags": {
+      "isAtlas": false,
+      "instructionOwnershipEnabled": false,
+      "sumoEnabled": false,
+      "isFITEnabled": false,
+      "atlas": {
+        "getDelivery": false,
+        "completeDelivery": false,
+        "requestInstruction": false,
+        "getExistingInstructions": false,
+        "updateInstruction": false,
+        "completeInstruction": false,
+        "cancelInstruction": false,
+        "viewAllPOs": false,
+        "useFourDigitSiteIDs": false,
+        "getProblemInfoByPTag": false,
+        "completeProblemTag": false,
+        "reportingOverage": false,
+        "searchDelivery": false
+      },
+      "prime": {
+        "useJavaBaseUrl": {
+          "createInstruction": false,
+          "getAvailablePos": true,
+          "getDelivery": false,
+          "createDelivery": true,
+          "completeDelivery": false
+        },
+        "conveyableInstructions": false
+      },
+      "common": {
+        "printingAndroidComponent": false,
+        "printAndroidCompKeepAliveTime": 5000,
+        "printAndroidCompShouldMockService": false,
+        "logNetworkCalls": false,
+        "logNetworkError": false
+      }
+    },
+    "envUrls": {
+      "REACT_APP_BASEURL_GDM_DELIVERY_SEARCH": "https://dev.gdm.prod.us.walmart.net/document/v2/deliveries/{deliveryIdentifier}/deliverydocuments/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DOOR": "https://dev.gdm.prod.us.walmart.net/document/v2/deliveries/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DELIVERY_NUMBER": "https://dev.gdm.prod.us.walmart.net/document/v2/deliveries",
+      "REACT_APP_BASEURL_FIT": "https://fit-dev2.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_FIT_VOLTA": "https://fit-dev2.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_UWMS_RECEIVING": "https://receiving-api.prod.us.walmart.net"
+    }
+  }
+}

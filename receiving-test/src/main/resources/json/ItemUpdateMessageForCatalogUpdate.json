@@ -1,0 +1,13 @@
+{
+  "itemNumber": 566051127,
+  "activeDeliveries": [
+    {
+      "url": "https://test.com",
+      "deliveryStatus": "ARV",
+      "deliveryNumber": 94769060
+    }
+  ],
+  "eventType": "CATALOG_GTIN_UPDATE",
+  "from": "12345678901234",
+  "to": "11111111111111"
+}

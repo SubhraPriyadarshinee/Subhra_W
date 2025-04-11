@@ -1,0 +1,13 @@
+{
+  "messageId": "45055ce1-7eea-46fc-8171-d0f43e961af1",
+  "locations": [
+    {
+      "type": "success",
+      "itemNbr": 555139516,
+      "location": "L4007",
+      "locationSize": 45,
+      "slotType": "Reserve",
+      "markInventoryStatus": "AVAILABLE_NON_PICKABLE"
+    }
+  ]
+}

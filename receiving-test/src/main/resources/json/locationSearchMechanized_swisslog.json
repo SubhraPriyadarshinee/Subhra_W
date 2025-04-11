@@ -1,0 +1,84 @@
+{
+  "totalCount": 1,
+  "successCount": 1,
+  "hasMoreEntries": false,
+  "totalLocationCount": 1,
+  "successTuples": [
+    {
+      "locationCount": 1,
+      "response": {
+        "locations": [
+          {
+            "xCoord": 0,
+            "yCoord": 0,
+            "zCoord": 0,
+            "id": 1808738,
+            "sequenceNo": 0,
+            "name": "GLBLSTOR",
+            "orgUnitId": null,
+            "type": {
+              "key": 1,
+              "value": "Slot"
+            },
+            "status": {
+              "key": 1,
+              "value": "Active"
+            },
+            "checkNbr": "00000",
+            "primeSlot": false,
+            "widthQty": 0.0,
+            "depthQty": 0.0,
+            "heightQty": 68.0,
+            "maxWgtQty": 0.0,
+            "properties": {
+              "automationType": "swisslog"
+            },
+            "links": [
+              {
+                "rel": "DELETE",
+                "href": "https://gls-location-witron-stg-uat.prod.us.walmart.net/us-07030/locations/1808738"
+              }
+            ],
+            "contigSeqNbr": 0,
+            "sizeInches": null,
+            "mdsTypeCode": "SSTK",
+            "stockHandleCode": null,
+            "palletQty": 565,
+            "symEligibleInd": "",
+            "slotAlignment": null,
+            "slotFaceQty": 99,
+            "slotStackQty": 99,
+            "slotClearanceQty": 0,
+            "primaryWastage": 0.0,
+            "secondaryWastage": 0.0,
+            "aisleDirection": "X",
+            "pickingAisle": null,
+            "replenAisle": "MECH",
+            "selSectionId": 500,
+            "whseAreaCode": 4,
+            "whseAreaDesc": null,
+            "fillToMaxInd": null,
+            "lastChangeUserId": null,
+            "dockId": null,
+            "doorDesc": null,
+            "doorTypeCode": null,
+            "laneNbr": null,
+            "locationSubType": "",
+            "moduleId": "?",
+            "sideId": "?",
+            "levelId": "0",
+            "zoneId": "0"
+          }
+        ]
+      },
+      "request": {
+        "limit": 50,
+        "offset": 0,
+        "names": [
+          "glblstor"
+        ],
+        "orgUnitId": 348
+      }
+    }
+  ]
+}

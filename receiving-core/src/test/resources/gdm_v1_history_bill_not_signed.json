@@ -1,0 +1,454 @@
+{
+  "deliveryNumber": 20796734,
+  "facilityCountryCode": "US",
+  "facilityNumber": 6062,
+  "deliveryEvents": [
+    {
+      "user": "cmorga8",
+      "additionalInfo": [
+        {
+          "key": "Door Number",
+          "value": "403",
+          "dataType": "String"
+        },
+        {
+          "key": "Trailer Id",
+          "value": "550597",
+          "dataType": "String"
+        },
+        {
+          "key": "Receiving Completed Time",
+          "value": "2023-05-25T11:56:33.680Z",
+          "dataType": "Instant"
+        },
+        {
+          "key": "First Receiving Completed Time",
+          "value": "2023-05-25T11:56:33.680Z",
+          "dataType": "Instant"
+        }
+      ],
+      "event": "Receiving Completed",
+      "status": "WRK",
+      "timestamp": "2023-05-25T11:56:33.866Z"
+    },
+    {
+      "user": "cmorga8",
+      "additionalInfo": [
+        {
+          "key": "",
+          "value": [
+            {
+              "key": "PO Number",
+              "value": "0757652572",
+              "dataType": "String"
+            },
+            {
+              "key": "Seller Id",
+              "value": "F55CDC31AB754BB68FE0B39041159D63",
+              "dataType": "String"
+            },
+            {
+              "key": "poFinalizeData",
+              "value": [
+                {
+                  "key": "Reason code",
+                  "value": "PURCHASE_ORDER_FINALIZE",
+                  "dataType": "PoFinalizeReasonCode"
+                },
+                {
+                  "key": "Received Quantity",
+                  "value": 50,
+                  "dataType": "Integer"
+                },
+                {
+                  "key": "Received Quantity UOM",
+                  "value": "ZA",
+                  "dataType": "QuantityUOM"
+                },
+                {
+                  "key": "damage",
+                  "value": [
+                    {
+                      "key": "damage Quantity",
+                      "value": 0,
+                      "dataType": "Integer"
+                    },
+                    {
+                      "key": "damage Quantity UOM",
+                      "value": "ZA",
+                      "dataType": "QuantityUOM"
+                    }
+                  ]
+                },
+                {
+                  "key": "reject",
+                  "value": [
+                    {
+                      "key": "reject Quantity",
+                      "value": 0,
+                      "dataType": "Integer"
+                    },
+                    {
+                      "key": "reject Quantity UOM",
+                      "value": "ZA",
+                      "dataType": "QuantityUOM"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "event": "PO Finalized",
+      "status": "WRK",
+      "timestamp": "2023-05-25T11:56:29.668Z"
+    },
+    {
+      "user": "cmorga8",
+      "additionalInfo": [],
+      "event": "Receiving Started",
+      "status": "WRK",
+      "timestamp": "2023-05-25T11:49:54.424Z"
+    },
+    {
+      "user": "cmorga8",
+      "additionalInfo": [
+        {
+          "key": "zones",
+          "value": [
+            {
+              "key": "zone id",
+              "value": "2",
+              "dataType": "String"
+            },
+            {
+              "key": "temperature",
+              "value": [
+                {
+                  "key": "value",
+                  "value": 69.0,
+                  "dataType": "Double"
+                },
+                {
+                  "key": "uom",
+                  "value": "F",
+                  "dataType": "TemperatureUOM"
+                }
+              ]
+            },
+            {
+              "key": "po Number",
+              "value": [
+                "0757652572"
+              ],
+              "dataType": "ArrayList"
+            }
+          ]
+        },
+        {
+          "key": "zones",
+          "value": [
+            {
+              "key": "zone id",
+              "value": "1",
+              "dataType": "String"
+            },
+            {
+              "key": "temperature",
+              "value": [
+                {
+                  "key": "value",
+                  "value": 69.0,
+                  "dataType": "Double"
+                },
+                {
+                  "key": "uom",
+                  "value": "F",
+                  "dataType": "TemperatureUOM"
+                }
+              ]
+            },
+            {
+              "key": "po Number",
+              "value": [
+                "0757652572"
+              ],
+              "dataType": "ArrayList"
+            }
+          ]
+        },
+        {
+          "key": "zones",
+          "value": [
+            {
+              "key": "zone id",
+              "value": "3",
+              "dataType": "String"
+            },
+            {
+              "key": "temperature",
+              "value": [
+                {
+                  "key": "value",
+                  "value": 69.0,
+                  "dataType": "Double"
+                },
+                {
+                  "key": "uom",
+                  "value": "F",
+                  "dataType": "TemperatureUOM"
+                }
+              ]
+            },
+            {
+              "key": "po Number",
+              "value": [
+                "0757652572"
+              ],
+              "dataType": "ArrayList"
+            }
+          ]
+        },
+        {
+          "key": "Single Zone",
+          "value": false,
+          "dataType": "Boolean"
+        }
+      ],
+      "event": "Trailer Temperature Updated",
+      "status": "OPN",
+      "timestamp": "2023-05-25T11:49:47.887Z"
+    },
+    {
+      "user": "cmorga8",
+      "additionalInfo": [
+        {
+          "key": "Door Number",
+          "value": "403",
+          "dataType": "String"
+        },
+        {
+          "key": "Door Open Time",
+          "value": "2023-05-25T11:49:18.627Z",
+          "dataType": "Instant"
+        }
+      ],
+      "event": "Door Open",
+      "status": "OPN",
+      "timestamp": "2023-05-25T11:49:18.633Z"
+    },
+    {
+      "user": "bdgarci",
+      "additionalInfo": [
+        {
+          "key": "purchaseOrder",
+          "value": [
+            {
+              "key": "PO Number",
+              "value": "0757652572",
+              "dataType": "String"
+            },
+            {
+              "key": "lines",
+              "value": [
+                {
+                  "key": "PO Line Number",
+                  "value": 2,
+                  "dataType": "Integer"
+                },
+                {
+                  "key": "Freight Bill Quantity",
+                  "value": 50,
+                  "dataType": "Integer"
+                }
+              ]
+            },
+            {
+              "key": "lines",
+              "value": [
+                {
+                  "key": "PO Line Number",
+                  "value": 1,
+                  "dataType": "Integer"
+                },
+                {
+                  "key": "Freight Bill Quantity",
+                  "value": 0,
+                  "dataType": "Integer"
+                },
+                {
+                  "key": "Variable Weight",
+                  "value": 0.0,
+                  "dataType": "Double"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "Cro Updated",
+          "value": true,
+          "dataType": "Boolean"
+        }
+      ],
+      "event": "PO Updated (CRO)",
+      "status": "ARV",
+      "timestamp": "2023-05-25T10:33:44.252Z"
+    },
+    {
+      "user": "SYSTEM",
+      "additionalInfo": [
+        {
+          "key": "Door Number",
+          "value": "403",
+          "dataType": "String"
+        }
+      ],
+      "event": "Door Assigned",
+      "status": "ARV",
+      "timestamp": "2023-05-25T09:59:36.773Z"
+    },
+    {
+      "user": "SYSTEM",
+      "additionalInfo": [
+        {
+          "key": "Trailer Number",
+          "value": "550597",
+          "dataType": "String"
+        },
+        {
+          "key": "Arrival Time",
+          "value": "2023-05-25T09:59:06.000Z",
+          "dataType": "Instant"
+        }
+      ],
+      "event": "Arrived",
+      "status": "ARV",
+      "timestamp": "2023-05-25T09:59:07.958Z"
+    },
+    {
+      "user": "SYSTEM",
+      "additionalInfo": [
+        {
+          "key": "PO Number",
+          "value": "0757652572",
+          "dataType": "String"
+        },
+        {
+          "key": "Seller Id",
+          "value": "F55CDC31AB754BB68FE0B39041159D63",
+          "dataType": "String"
+        },
+        {
+          "key": "Weight",
+          "value": 37800.0,
+          "dataType": "Double"
+        },
+        {
+          "key": "Cube",
+          "value": 26.0,
+          "dataType": "Double"
+        },
+        {
+          "key": "Freight bill quantity",
+          "value": 50,
+          "dataType": "Integer"
+        }
+      ],
+      "event": "PO Updated (SCH)",
+      "status": "SCH",
+      "timestamp": "2023-05-24T22:51:31.796Z"
+    },
+    {
+      "additionalInfo": [],
+      "event": "PO Line Item Updated",
+      "status": "SCH",
+      "timestamp": "2023-05-24T05:18:22.076Z"
+    },
+    {
+      "user": "SYSTEM",
+      "additionalInfo": [],
+      "event": "PO Line Added",
+      "status": "SCH",
+      "timestamp": "2023-05-22T18:54:18.461Z"
+    },
+    {
+      "user": "SYSTEM",
+      "additionalInfo": [
+        {
+          "key": "PO Number",
+          "value": "0757652572",
+          "dataType": "String"
+        },
+        {
+          "key": "Seller Id",
+          "value": "F55CDC31AB754BB68FE0B39041159D63",
+          "dataType": "String"
+        },
+        {
+          "key": "Freight Bill Quantity",
+          "value": 54,
+          "dataType": "Integer"
+        },
+        {
+          "key": "Weight",
+          "value": 37800.0,
+          "dataType": "Double"
+        },
+        {
+          "key": "Cube",
+          "value": 26.0,
+          "dataType": "Double"
+        }
+      ],
+      "event": "Delivery Purchase Order Added",
+      "status": "SCH",
+      "timestamp": "2023-05-18T20:38:33.559Z"
+    },
+    {
+      "user": "SYSTEM",
+      "additionalInfo": [
+        {
+          "key": "delivery",
+          "value": [
+            {
+              "key": "Delivery Number",
+              "value": 20796734,
+              "dataType": "Long"
+            },
+            {
+              "key": "Load number",
+              "value": "0",
+              "dataType": "String"
+            },
+            {
+              "key": "Trailer number",
+              "value": "",
+              "dataType": "String"
+            },
+            {
+              "key": "Appointment Time",
+              "value": "2023-05-25T10:30:00.000Z",
+              "dataType": "Instant"
+            },
+            {
+              "key": "Seal number",
+              "value": "",
+              "dataType": "String"
+            },
+            {
+              "key": "Appointment End Date Time",
+              "value": "2023-05-25T10:33:00.000Z",
+              "dataType": "Instant"
+            }
+          ]
+        }
+      ],
+      "event": "Scheduled",
+      "status": "SCH",
+      "timestamp": "2023-05-18T20:38:27.247Z"
+    }
+  ],
+  "purchaseOrderEvents": []
+}

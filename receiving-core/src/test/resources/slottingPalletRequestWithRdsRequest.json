@@ -1,0 +1,49 @@
+{
+  "rds": {
+    "containerOrders": [
+      {
+        "ignoreLabelCase": false,
+        "expectedTi": 16,
+        "manifest": "34816782",
+        "containerGroupId": "0aa6c498-ba1e-4cf7-b483-2c00fbbac85d1",
+        "poLine": 1,
+        "userId": "sysadmin",
+        "receivedUomTxt": "ZA",
+        "breakpackRatio": 1,
+        "expectedHi": 26,
+        "doorNum": "536",
+        "qty": 2,
+        "sstkSlotSize": 999,
+        "slotToPrime": false,
+        "_id": "0aa6c498-ba1e-4cf7-b483-2c00fbbac85d1",
+        "poNumber": "7908747448"
+      }
+    ]
+  },
+  "atlasOnboardedItem": false,
+  "messageId": "d034fc9c-849b-11ea-bc55-0242ac130003",
+  "containerDetails": [
+    {
+      "locationSize": 32,
+      "containerItemsDetails": [
+        {
+          "qtyUom": "EA",
+          "packTypeCode": "C",
+          "whpkRatio": 63,
+          "vnpkRatio": 63,
+          "qty": 126,
+          "handlingMthdCode": "L",
+          "itemNbr": 554235877,
+          "stockType": "Non-Con"
+        }
+      ]
+    }
+  ],
+  "doorId": "536",
+  "receivingMethod": "DA",
+  "maxPalletPerSlot": 1,
+  "vnpkCount": 1,
+  "rotationNbr": 1,
+  "generateMove": null,
+  "deliveryNumber": "290620204"
+}

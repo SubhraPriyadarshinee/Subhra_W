@@ -1,0 +1,145 @@
+{
+  "delivery": {
+    "deliveryNumber": 89768800,
+    "statusInformation": {
+      "status": "SCH",
+      "operationalStatus": "SCH"
+    }
+  },
+  "shipments": [
+    {
+      "inboundDocumentId": "546191213_20191106_719468_VENDOR_US",
+      "shipmentNumber": "546191213",
+      "documentType": "ASN",
+      "inboundDocumentRevision": 0,
+      "inboundDocumentIngestTime": "2019-11-06T19:02:43.774Z",
+      "shipmentDate": "2019-11-06",
+      "bolNumber": "6938-88528711",
+      "loadNumber": "88528711",
+      "source": {
+        "sourceNumber": 6938,
+        "sourceNumberType": "WALMART",
+        "sourceType": "MCC",
+        "sourceCountryCode": "US",
+        "sourceGlobalLocationNumber": "0069382035222",
+        "shipperId": "492918",
+        "shipperName": "Walmart"
+      },
+      "destination": {
+        "destinationGlobalLocationNumber": "0078742035222",
+        "destinationType": "DC",
+        "destinationNumber": 6094,
+        "destinationCountryCode": "US"
+      }
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poNumber": "458956326589",
+      "poDcNumber": 32898,
+      "baseDivisionCode": "WM",
+      "poType": "33",
+      "freightBillQty": 106,
+      "purchaseCompanyId": 1,
+      "poStatus": "ACTV",
+      "financialGroupCode": "US",
+      "vendor": {
+        "name": "V11",
+        "number": 12344,
+        "department": 2222
+      },
+      "lines": [
+        {
+          "poLineNumber": 1,
+          "channel": "CROSSU",
+          "poLineStatus": "RECEIVED",
+          "orderedQty": 12,
+          "orderedQtyUom": "ZA",
+          "whpkQty": 6,
+          "whpkSell": 8.22,
+          "vnpkQty": 6,
+          "vnpkCost": 6.6,
+          "vnpkWeightQty": 14.84,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.432,
+          "vnpkCubeQtyUom": "CF",
+          "bolWeightQtyUom": "LB",
+          "event": "POS REPLEN",
+          "deptNumber": "D38",
+          "itemDetails": {
+            "number": 561298341,
+            "consumableGTIN": "20029695410987",
+            "orderableGTIN": "10029695410987",
+            "supplierStockId": "2222",
+            "palletTi": 0,
+            "palletHi": 0,
+            "hazmat": false,
+            "conveyable": true,
+            "color": "",
+            "size": "",
+            "descriptions": [
+              "AK RAISINETS",
+              "AK RAISINETS"
+            ],
+            "vendorDepartment": "1"
+          }
+        }
+      ]
+    }
+  ],
+  "packs": [
+    {
+      "packNumber": "00452356895623547895",
+      "shipmentNumber": "546191213",
+      "invoice": {
+        "invoiceNumber": "32899000132"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "destinationType": "DC",
+        "destinationNumber": 6094,
+        "destinationCountryCode": "US"
+      },
+      "channelMethod": "UN",
+      "legacyDetail": {
+        "packType": "UNKNOWN",
+        "labelType": "UNKNOWN"
+      },
+      "items": [
+        {
+          "reportedProductId": "561298341",
+          "reportedProductIdType": "IN",
+          "itemNumber": 561298341,
+          "gtin": "00029695410987",
+          "warehouseCaseGtin": "10029695410987",
+          "vendorCaseGtin": "20029695410987",
+          "vendorId": "492918",
+          "itemDescription": "Ibuprofen",
+          "itemDepartment": "8",
+          "itemDivision": "108",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "documentSequenceNumber": 1,
+          "purchaseOrder": {
+            "orderNumber": "f843847e-b083-4f1e-9c51-261bc3053b2b",
+            "poDate": "2019-01-08",
+            "poLineNumber": 1,
+            "poNumber": "458956326589",
+            "poType": "IMPORT_ASSEMBLY",
+            "poPoLineCount": 1
+          },
+          "inventoryDetail": {
+            "reportedQuantity": 36,
+            "reportedUom": "EA",
+            "derivedQuantity": 36,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 6,
+            "vendorCaseQuantity": 6
+          }
+        }
+      ]
+    }
+  ]
+}

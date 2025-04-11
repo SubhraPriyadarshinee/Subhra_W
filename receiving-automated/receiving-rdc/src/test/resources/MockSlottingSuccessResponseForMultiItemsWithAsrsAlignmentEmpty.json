@@ -1,0 +1,23 @@
+{
+  "messageId": "e5f8c7f4-cdf7-5583-82f8-b5b9ecf9f994",
+  "locations": [
+    {
+      "type": "success",
+      "itemNbr": 553857311,
+      "location": "D0863",
+      "locationSize": 40,
+      "slotType": "RESERVE",
+      "asrsAlignment": "",
+      "markInventoryStatus": "AVAILABLE_NON_PICKABLE"
+    },
+    {
+      "type": "success",
+      "itemNbr": 553857312,
+      "location": "D0869",
+      "locationSize": 40,
+      "slotType": "RESERVE",
+      "asrsAlignment": "",
+      "markInventoryStatus": "AVAILABLE_NON_PICKABLE"
+    }
+  ]
+}

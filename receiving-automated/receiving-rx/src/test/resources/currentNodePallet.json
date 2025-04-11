@@ -1,0 +1,237 @@
+{
+  "delivery": {
+    "deliveryNumber": 61226158,
+    "statusInformation": {
+      "status": "OPN"
+    },
+    "scheduled": "2024-09-05T14:30:00.000Z",
+    "trailerId": ""
+  },
+  "shipments": [
+    {
+      "documentId": "61226158_90797153522_240909102857_6032_US",
+      "shipmentNumber": "61226158_90797153522_240909102857",
+      "documentType": "EPCIS",
+      "documentRevision": 0,
+      "source": {
+        "globalLocationNumber": "0078742030548",
+        "shipperId": "49452",
+        "shipperName": "CAMBER PHARMACEUTICALS INC"
+      },
+      "shipmentDetail": {
+        "reportedDeliveryNumber": 61226158
+      },
+      "totalPacks": 249
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "poNumber": "9079715352",
+      "freightBillQty": 2226,
+      "cubeQty": 16.0,
+      "poDcCountry": "US",
+      "baseDivisionCode": "WM",
+      "poType": "20",
+      "purchaseCompanyId": 1,
+      "poStatus": "ACTV",
+      "financialGroupCode": "US",
+      "vendorInformation": {
+        "name": "CAMBER PHARMACEUTICALS INC",
+        "number": 49452,
+        "department": 38,
+        "serialInfoEnabled": true
+      },
+      "poDates": {
+        "cancel": "2024-09-01",
+        "ordered": "2024-08-28",
+        "mabd": "2024-09-09",
+        "ship": "2024-08-30"
+      },
+      "poDcNumber": 6032,
+      "lines": [
+        {
+          "poLineNumber": 13,
+          "channel": "SSTKU",
+          "whpkQty": 90,
+          "whpkSell": 1.56,
+          "vnpkQty": 2160,
+          "vnpkCost": 37.2,
+          "vnpkWeightQty": 3.2,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.25,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "polAdditionalFields": {
+            "promoBuyInd": "N",
+            "Sample_Po_Ind": "N",
+            "Manual_Po_Ind": "N"
+          },
+          "poLineStatus": "APPROVED",
+          "orderedQty": 30.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00331722002905",
+            "orderableGTIN": "30331722002906",
+            "warehousePackGTIN": "10331722002902",
+            "supplierStockId": "31722-0002-90",
+            "conveyable": false,
+            "itemTypeCode": "20",
+            "vendorDepartment": "38",
+            "color": "CAPSUL",
+            "size": "90",
+            "warehousePackQuantity": 90,
+            "orderableQuantity": 2160,
+            "handlingCode": "C",
+            "packType": "B",
+            "complianceItem": false,
+            "isControlledSubstance": false,
+            "isTemperatureSensitive": false,
+            "descriptions": [
+              "VENLAFAXINE ER 37.5M",
+              "VENLAFAXINE ER 37.5M"
+            ],
+            "itemAdditonalInformation": {
+              "isDscsaExemptionInd": false,
+              "weight": 0.1,
+              "cubeUOM": "CF",
+              "cube": 0.005,
+              "weightUOM": "LB",
+              "weightFormatTypeCode": "F",
+              "supplierCasePackType": "B"
+            },
+            "number": 594466549
+          }
+        },
+        {
+          "poLineNumber": 1,
+          "channel": "SSTKU",
+          "whpkQty": 100,
+          "whpkSell": 7.78,
+          "vnpkQty": 200,
+          "vnpkCost": 93.36,
+          "vnpkWeightQty": 18.15,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 1.107,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "polAdditionalFields": {
+            "promoBuyInd": "N",
+            "Sample_Po_Ind": "N",
+            "Manual_Po_Ind": "N"
+          },
+          "poLineStatus": "APPROVED",
+          "orderedQty": 12.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00331722778015",
+            "orderableGTIN": "20331722778019",
+            "warehousePackGTIN": "00033172277802",
+            "supplierStockId": "31722-0778-01",
+            "conveyable": false,
+            "itemTypeCode": "20",
+            "vendorDepartment": "38",
+            "color": "TAB",
+            "size": "100",
+            "warehousePackQuantity": 100,
+            "orderableQuantity": 1200,
+            "handlingCode": "C",
+            "packType": "B",
+            "complianceItem": false,
+            "isControlledSubstance": false,
+            "isTemperatureSensitive": false,
+            "descriptions": [
+              "ACYCLOVIR 800MG",
+              "ACYCLOVIR 800MG"
+            ],
+            "itemAdditonalInformation": {
+              "isDscsaExemptionInd": false,
+              "weight": 0.0038,
+              "cubeUOM": "CF",
+              "cube": 0.024,
+              "weightUOM": "LB",
+              "weightFormatTypeCode": "F",
+              "supplierCasePackType": "B"
+            },
+            "number": 568056275
+          }
+        },
+        {
+          "poLineNumber": 8,
+          "channel": "SSTKU",
+          "whpkQty": 90,
+          "whpkSell": 0.83,
+          "vnpkQty": 2160,
+          "vnpkCost": 19.68,
+          "vnpkWeightQty": 9.45,
+          "vnpkWeightQtyUom": "LB",
+          "vnpkCubeQty": 0.789,
+          "vnpkCubeQtyUom": "CF",
+          "event": "POS REPLEN",
+          "polAdditionalFields": {
+            "promoBuyInd": "N",
+            "Sample_Po_Ind": "N",
+            "Manual_Po_Ind": "N"
+          },
+          "poLineStatus": "APPROVED",
+          "orderedQty": 207.0,
+          "orderedQtyUom": "ZA",
+          "itemDetails": {
+            "consumableGTIN": "00331722700900",
+            "orderableGTIN": "20331722700904",
+            "warehousePackGTIN": "10331722700907",
+            "supplierStockId": "31722-0700-90",
+            "conveyable": true,
+            "itemTypeCode": "20",
+            "vendorDepartment": "38",
+            "color": "TABLET",
+            "size": "90.0",
+            "warehousePackQuantity": 90,
+            "orderableQuantity": 2160,
+            "handlingCode": "C",
+            "packType": "B",
+            "complianceItem": false,
+            "isControlledSubstance": false,
+            "isTemperatureSensitive": false,
+            "descriptions": [
+              "LOSARTAN 25MG",
+              "LOSARTAN 25MG"
+            ],
+            "itemAdditonalInformation": {
+              "isDscsaExemptionInd": false,
+              "weight": 0.009,
+              "cubeUOM": "CF",
+              "cube": 0.001,
+              "weightUOM": "LB",
+              "weightFormatTypeCode": "F",
+              "supplierCasePackType": "B"
+            },
+            "number": 576022039
+          }
+        }
+      ],
+      "weightQty": 19759.41,
+      "weightQtyUom": "LB",
+      "cubeQtyUom": "CF"
+    }
+  ],
+  "containers": [
+    {
+      "id": "19899833_123456ABCDEF",
+      "shipmentDocumentId": "61226158_90797153522_240909102857_6032_US",
+      "shipmentNumber": "61226158_90797153522_240909102857",
+      "sscc": "00106002950150750008",
+      "unitCount": 8,
+      "childCount": 4,
+      "receivingStatus": "Open",
+      "trackingStatus": "ValidationSuccessful",
+      "postingStatus": "Open",
+      "isQueried": false,
+      "hints": [
+        "CASE-PACK-ITEM",
+        "SINGLE-SKU-PACKAGE"
+      ]
+    }
+  ],
+  "additionalInfo": {
+  }
+}

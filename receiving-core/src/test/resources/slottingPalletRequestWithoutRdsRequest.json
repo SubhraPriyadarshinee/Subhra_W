@@ -1,0 +1,27 @@
+{
+  "messageId": "45055ce1-7eea-46fc-8171-d0f43e961af1",
+  "containerDetails": [
+    {
+      "locationSize": 32,
+      "containerItemsDetails": [
+        {
+          "qtyUom": "EA",
+          "packTypeCode": "C",
+          "whpkRatio": 63,
+          "vnpkRatio": 63,
+          "qty": 126,
+          "handlingMthdCode": "L",
+          "itemNbr": 554235877,
+          "stockType": "Non-Con"
+        }
+      ]
+    }
+  ],
+  "doorId": "536",
+  "receivingMethod": "DA",
+  "maxPalletPerSlot": 1,
+  "vnpkCount": 1,
+  "rotationNbr": 1,
+  "generateMove": null,
+  "deliveryNumber": "290620204"
+}

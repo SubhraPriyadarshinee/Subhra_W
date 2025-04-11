@@ -1,0 +1,25 @@
+{
+  "zones": [
+    {
+      "id": "1",
+      "temperature": {
+        "value": "12.0",
+        "uom": "F"
+      },
+      "purchaseOrders": [
+        "5865480895"
+      ]
+    },
+    {
+      "id": "2",
+      "temperature": {
+        "value": "12.4",
+        "uom": "F"
+      },
+      "purchaseOrders": [
+        "5865480895"
+      ]
+    }
+  ],
+  "hasOneZone": false
+}

@@ -1,0 +1,14 @@
+{
+	"messageId": "4362b190-16e0-40b5-8684-1eddefc85b46",
+	"locations": [
+		{
+			"type": "success",
+			"location": "H0005",
+			"primeLocation": "H0005",
+			"locationSize": 72,
+			"slotType" : "prime",
+
+			"containerTrackingId" :"TEST-CONTAINER"
+		}
+	]
+}

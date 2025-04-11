@@ -1,0 +1,71 @@
+profiles:
+  - git://Logistics:metrics-profiles:main:dt-saas-atlas/us-walmart/dt-saas-common
+
+deploy:
+  stages:
+    - name: amb-stg7
+      helm:
+        values:
+          secrets:
+            akeyless: true
+            engine: eso
+            config:
+              akeyless:
+                path:
+                  WCNP: /Prod/WCNP/homeoffice/GLS-Receiving-Atlas/receiving-api/{{$.kittExec.currentStage.name}}
+                  DPS: "/Non-Prod/DPS/homeoffice/Tridents-SE"
+            k8s:
+              - name: sam-secrets-{{$.kitt.build.artifact}}-{{$.kittExec.currentStage.name}}
+                type: Opaque
+                provider: DPS
+                secret_data:
+                  - key: azuresql-readwrite
+                    content: stage/stage/sam/SVC_AZURESQL_atlas-pharmacy-perf_013025044139
+          env:
+            DYNATRACE_ENABLED: false
+            JAVA_OPTS: >-
+              -Xms2048M
+              -Xmx2048M
+              -XX:+UseParNewGC
+              -XX:+UseConcMarkSweepGC
+              -XX:NewSize=512M
+              -XX:MaxMetaspaceSize=256M
+              -Djsse.enableSNIExtension=true
+              -Druntime.context.environmentType=stg
+              -Druntime.context.environment=amb-stg7
+              -Dscm.scope.template=/stg/amb-stg7/{{$.kittExec.currentCluster.site}}
+              -Druntime.context.appName=receiving-api
+              -Druntime.context.system.property.override.enabled=true
+              -Druntime.context.cloud={{$.kittExec.currentCluster.zone}}
+              -Dscm.snapshot.enabled=true
+              -Dscm.root.dir=/tmp/scm
+              -Dscm.print.summary.onchange=true
+              -Dscm.print.detailed.summary=true
+              -Dspring.config.use-legacy-processing=true
+              -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+              -DDATACENTER={{$.kittExec.currentCluster.zone}}
+              -Dplatform=wcnp
+              -Dspring.main.allow-circular-references=true
+              -DbusinessUnit=wm
+              -DmarketType=amb
+              -DcellName=stage7
+              -DdeploymentCountry=us
+              -Denable_jms=true
+              -Datlas-global-config-bootstrap=ccm
+              -Dspring.main.allow-bean-definition-overriding=true
+          metadata:
+            labels:
+              strati.appkey: ATLASRECEIVING
+              strati.env: stg-int
+            annotations:
+              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"},{"Path":"^/.*"}]'
+          min:
+            cpu: 2000m
+            memory: 2048Mi
+          max:
+            cpu: 2000m
+            memory: 2048Mi
+          scaling:
+            enabled: false
+            min: 1
+            max: 1

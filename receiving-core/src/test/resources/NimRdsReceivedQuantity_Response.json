@@ -1,0 +1,63 @@
+{
+  "found": [
+    {
+      "poNumber": "2908689776",
+      "poLine": 1,
+      "results": [
+        {
+          "manifest": 90976485,
+          "quantity": 4,
+          "storeDistrib": [
+            {
+              "storeNbr": 2,
+              "whpk_order_qty": 0,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 47,
+              "whpk_order_qty": 0,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 144,
+              "whpk_order_qty": 1,
+              "whpk_distrib_qty": 1
+            },
+            {
+              "storeNbr": 151,
+              "whpk_order_qty": 0,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 472,
+              "whpk_order_qty": 0,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 564,
+              "whpk_order_qty": 0,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 838,
+              "whpk_order_qty": 0,
+              "whpk_distrib_qty": 0
+            },
+            {
+              "storeNbr": 2803,
+              "whpk_order_qty": 1,
+              "whpk_distrib_qty": 1
+            },
+            {
+              "storeNbr": 2804,
+              "whpk_order_qty": 2,
+              "whpk_distrib_qty": 2
+            }
+          ]
+        }
+      ],
+      "total": 4
+    }
+  ],
+  "errors": []
+}

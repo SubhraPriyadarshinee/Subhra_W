@@ -1,0 +1,51 @@
+{
+  "6561": {
+    "reasons": {
+      "rejectReasonCode": []
+    }
+  },
+  "6938": {
+    "reasons": {
+      "rejectReasonCode": []
+    }
+  },
+  "32612": {
+    "reasons": {
+      "rejectReasonCode": [
+        {
+          "code": "R10",
+          "description": "Supplier Claim"
+        },
+        {
+          "code": "R11",
+          "description": "Carrier Claim"
+        }
+      ]
+    }
+  },
+  "32898": {
+    "reasons": {
+      "rejectReasonCode": []
+    }
+  },
+  "32899": {
+    "reasons": {
+      "rejectReasonCode": []
+    }
+  },
+  "32928": {
+    "reasons": {
+      "rejectReasonCode": []
+    }
+  },
+  "32987": {
+    "reasons": {
+      "rejectReasonCode": []
+    }
+  },
+  "default": {
+    "reasons": {
+      "rejectReasonCode": []
+    }
+  }
+}

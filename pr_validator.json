@@ -1,0 +1,20 @@
+{
+    "Min_Reviewers": {
+        "status": "Active",
+        "block": true,
+        "branches":["main"],
+        "options":{
+            "reviewers": 1
+        }
+    },
+    "Jira":{
+        "status":"Active",
+        "block": true,
+        "branches":["main","patch"]
+    },
+    "Sonar_PR_Decorator":{
+        "status":"Active",
+        "block": true,
+        "branches":["main"]
+    }   
+}

@@ -1,0 +1,358 @@
+{
+  "delivery": {
+    "deliveryNumber": 550478600045777,
+    "scheduled": "2023-08-24T15:10:01.701Z",
+    "arrivalTimeStamp": "2023-08-24T15:10:46.272Z",
+    "doorOpenTime": "2023-08-24T15:10:46.355Z",
+    "receivingStartedTimeStamp": "2023-08-24T15:10:46.483Z",
+    "statusInformation": {
+      "status": "WRK"
+    }
+  },
+  "shipment": {
+    "documentId": "v_weight_6860715504_20230824_6071_DC_US",
+    "shipmentNumber": "v_weight_6860715504",
+    "documentType": "ASN",
+    "documentRevision": 0,
+    "documentIngestTime": "2023-08-24T15:09:57.857Z",
+    "shipmentDate": "2023-08-24",
+    "isDocumentDSCSA": "NONE",
+    "source": {
+      "number": "6071",
+      "numberType": "WALMART",
+      "type": "DC",
+      "countryCode": "US",
+      "shipperName": "WM"
+    },
+    "destination": {
+      "type": "STORE",
+      "number": 5504,
+      "countryCode": "US"
+    },
+    "shipmentDetail": {
+      "trailerNumber": "v_weight_68",
+      "trailerSealNumber": "0000000906",
+      "loadNumber": "v_weight_68",
+      "reportedDeliveryNumber": 550478600045777,
+      "shippingDate": "2023-08-24",
+      "carrierId": "WM"
+    },
+    "additionalInfo": {
+      "storeInvoices": [
+        "06071001320"
+      ],
+      "regionCode": "05",
+      "bannerCode": "A1",
+      "mfcWarehouseAreaDescription": [
+        "Fresh Dairy",
+        "Dry Grocery"
+      ],
+      "timeZoneCode": "EST",
+      "totalPallets": 3,
+      "marketCode": "056",
+      "mfcInvoiceNumbers": [
+        "06071001320"
+      ],
+      "bannerDescription": "WM Supercenter",
+      "floorLoadedCases": 0,
+      "totalExpected": [
+        {
+          "quantity": 14.0,
+          "uom": "LB"
+        },
+        {
+          "quantity": 3.0,
+          "uom": "EA"
+        }
+      ]
+    }
+  },
+  "packs": [
+    {
+      "packNumber": "1607070516754",
+      "palletNumber": "160707051676767",
+      "invoice": {
+        "invoiceNumber": "06071001320"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "legacyDetail": {
+        "packType": "STORE"
+      },
+      "items": [
+        {
+          "reportedProductId": "583068489",
+          "reportedProductIdType": "IN",
+          "itemNumber": 583068489,
+          "gtin": "00014113912549",
+          "itemDescription": "WNDFL 12Z KERNL PIST",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "documentSequenceNumber": 1,
+          "inventoryDetail": {
+            "reportedQuantity": 6.6,
+            "reportedUom": "LB",
+            "derivedQuantity": 6.6,
+            "derivedUom": "LB",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00014113912549",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "06071001320",
+            "invoiceLineNumber": 3
+          },
+          "replenishmentCode": "MARKET_FULFILLMENT_CENTER",
+          "replenishedByUnit": false,
+          "itemPackType": "VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 10.38,
+            "derivedCost": 7.148,
+            "financialReportingCountry": "US"
+          },
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          }
+        }
+      ],
+      "shipmentNumber": "v_weight_6860715504",
+      "labelType": "CASE_PACK",
+      "physicalDetail": {
+        "weight": 4.1,
+        "weightUom": "LB"
+      },
+      "packType": "STORE",
+      "additionalInfo": {
+        "packDSCSA": "NONE"
+      }
+    },
+    {
+      "packNumber": "607116070705212300",
+      "palletNumber": "6071160707052123003",
+      "invoice": {
+        "invoiceNumber": "06071001320"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "legacyDetail": {
+        "packType": "STORE"
+      },
+      "items": [
+        {
+          "reportedProductId": "567234238",
+          "reportedProductIdType": "IN",
+          "itemNumber": 567234238,
+          "gtin": "00025000044908",
+          "itemDescription": "SCNTVA TGS 32OZ",
+          "itemDepartment": "13",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "documentSequenceNumber": 1,
+          "inventoryDetail": {
+            "reportedQuantity": 3.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 3.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00025000044908",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "06071001320",
+            "invoiceLineNumber": 2
+          },
+          "replenishmentCode": "UNKNOWN",
+          "replenishedByUnit": false,
+          "itemPackType": "VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 2.58,
+            "derivedCost": 1.83,
+            "financialReportingCountry": "US"
+          },
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          }
+        },
+        {
+          "reportedProductId": "583068489",
+          "reportedProductIdType": "IN",
+          "itemNumber": 583068489,
+          "gtin": "00014113912549",
+          "itemDescription": "WNDFL 12Z KERNL PIST",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "documentSequenceNumber": 1,
+          "inventoryDetail": {
+            "reportedQuantity": 7.4,
+            "reportedUom": "LB",
+            "derivedQuantity": 7.4,
+            "derivedUom": "LB",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00014113912549",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "06071001320",
+            "invoiceLineNumber": 1
+          },
+          "replenishmentCode": "UNKNOWN",
+          "replenishedByUnit": false,
+          "itemPackType": "VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 10.38,
+            "derivedCost": 7.148,
+            "financialReportingCountry": "US"
+          },
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          }
+        }
+      ],
+      "shipmentNumber": "v_weight_6860715504",
+      "labelType": "CASE_PACK",
+      "physicalDetail": {
+        "weight": 4.1,
+        "weightUom": "LB"
+      },
+      "packType": "STORE",
+      "additionalInfo": {
+        "packDSCSA": "NONE"
+      }
+    }
+  ],
+  "items": [
+    {
+      "consumableGTIN": "00014113912549",
+      "orderableGTIN": "10014113700297",
+      "warehousePackGTIN": "10014113700297",
+      "supplierStockId": "070146A29Z",
+      "palletTi": 24,
+      "palletHi": 5,
+      "conveyable": true,
+      "itemTypeCode": "20",
+      "vendorDepartment": "95",
+      "size": "12.0OZ",
+      "warehousePackQuantity": 5,
+      "orderableQuantity": 5,
+      "warehouseArea": "Dry Grocery",
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "images": {
+          "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/3548d1d2-7cc5-4689-b873-4583d1a12b4e.e5ab6542e8ab2a55c44da745f91238db.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/3548d1d2-7cc5-4689-b873-4583d1a12b4e.e5ab6542e8ab2a55c44da745f91238db.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+          "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/3548d1d2-7cc5-4689-b873-4583d1a12b4e.e5ab6542e8ab2a55c44da745f91238db.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+          "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/3548d1d2-7cc5-4689-b873-4583d1a12b4e.e5ab6542e8ab2a55c44da745f91238db.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+          "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/3548d1d2-7cc5-4689-b873-4583d1a12b4e.e5ab6542e8ab2a55c44da745f91238db.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+        },
+        "variableWeightIndicator": false,
+        "warehouseAreaCode": 6,
+        "vnpkWeightUomCode": "LB",
+        "warehousePackSellAmt": 34.45,
+        "warehouseRotationTypeCode": 2,
+        "baseDivisionCode": "WM",
+        "vnpkCubeQty": 0.361,
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "vnpkCubeUom": "CF",
+        "temperatureZone": "ambient",
+        "mfcEnabled": true,
+        "replenishmentGroupNbr": 30883940,
+        "unitCostAmt": 6.89,
+        "chemicalIndicator": "N",
+        "vnpkWeightQty": 4.13,
+        "warehouseAreaDesc": "Dry Grocery",
+        "aerosolIndicator": "N"
+      },
+      "descriptions": [
+        "WNDFL 12Z KERNL PIST"
+      ],
+      "number": 583068489
+    },
+    {
+      "consumableGTIN": "00025000044908",
+      "orderableGTIN": "00025000044915",
+      "warehousePackGTIN": "00025000044915",
+      "supplierStockId": "369591",
+      "palletTi": 18,
+      "palletHi": 5,
+      "conveyable": true,
+      "itemTypeCode": "20",
+      "vendorDepartment": "95",
+      "size": "52.0FO",
+      "warehousePackQuantity": 6,
+      "orderableQuantity": 6,
+      "warehouseArea": "Fresh Dairy",
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "images": {
+          "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/3502e224-7499-451f-9bc1-c1eb7a6e81a1.fcf3c86fd953b290017d11f56f1fe440.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/3502e224-7499-451f-9bc1-c1eb7a6e81a1.fcf3c86fd953b290017d11f56f1fe440.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+          "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/3502e224-7499-451f-9bc1-c1eb7a6e81a1.fcf3c86fd953b290017d11f56f1fe440.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+          "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/3502e224-7499-451f-9bc1-c1eb7a6e81a1.fcf3c86fd953b290017d11f56f1fe440.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+          "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/3502e224-7499-451f-9bc1-c1eb7a6e81a1.fcf3c86fd953b290017d11f56f1fe440.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+        },
+        "variableWeightIndicator": false,
+        "warehouseAreaCode": 3,
+        "vnpkWeightUomCode": "LB",
+        "warehousePackSellAmt": 11.1,
+        "warehouseRotationTypeCode": 2,
+        "baseDivisionCode": "WM",
+        "vnpkCubeQty": 0.62,
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "vnpkCubeUom": "CF",
+        "temperatureZone": "chilled",
+        "mfcEnabled": true,
+        "replenishmentGroupNbr": 173410,
+        "unitCostAmt": 1.86,
+        "chemicalIndicator": "N",
+        "vnpkWeightQty": 22.02,
+        "warehouseAreaDesc": "Fresh Dairy",
+        "aerosolIndicator": "N"
+      },
+      "descriptions": [
+        "SMPLY LMND WRASP 52",
+        "SMPLY LMND WRASP 52"
+      ],
+      "number": 567234238
+    }
+  ],
+  "pallets": [
+    {
+      "palletNumber": "6071160707052123003",
+      "documentId": "v_weight_6860715504_20230824_6071_DC_US"
+    },
+    {
+      "palletNumber": "160707051676767",
+      "documentId": "v_weight_6860715504_20230824_6071_DC_US"
+    }
+  ]
+}

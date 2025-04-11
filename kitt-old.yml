@@ -1,0 +1,709 @@
+owner:
+  group: "GLS-Receiving-Atlas"
+  roles:
+    namespaceUsers: ["GLS-Receiving-Atlas", "Tridents-SE", "glsperf"]
+notify:
+  slack:
+    channelName: atlas-rcv-build
+alerts:
+  slackChannel:
+    - atlas-rcv-build
+
+profiles:
+  - springboot-jdk8-web
+  - tomcat9-jdk8-alpine
+  - cns-java
+
+looper:
+  enableDockerNoCache: false
+  enableDockerClean: true
+
+setup:
+  releaseRefs: ["main"]
+  featureFlagMap:
+    logInfoKittModel: true
+    enableIstioSidecar: true
+
+build:
+  buildType: maven
+  docker:
+    app:
+      runtime: tomcat
+      buildArgs:
+        artifactPath: 'receiving-api/target'
+        scannerVersion: 0.0.18
+        mvnGoals: 'clean deploy'
+        sonarProjKey: com.walmart.move.nim:uwms-receiving
+        sonar.projectName: receiving-api-parent
+        sonarOpts: "-Dsonar.projectVersion={{ $.kitt.build.version }}
+          -Dsonar.sources=src/main
+          -Dsonar.tests=src/test
+          -Dsonar.java.binaries=target/classes
+          -Dsonar.modules=receiving-api,receiving-core,receiving-manual/receiving-rc,receiving-test,receiving-utils,receiving-automated/receiving-acc,receiving-automated/receiving-asn,receiving-automated/receiving-endgame,receiving-automated/receiving-rx,receiving-automated/receiving-witron, receiving-reporting,receiving-manual/receiving-fixture,receiving-automated/receiving-rdc
+          -Dsonar.language=java
+          -Dsonar.java.source=1.8
+          -Dsonar.sourceEncoding=UTF-8
+          -Dsonar.junit.reportPaths=../target/coverageReport
+          -Dsonar.core.codeCoveragePlugin=jacoco
+          -Dsonar.jacoco.reportPath=../target/jacoco-ut.exec
+          -Djacoco.reports.unit.dir=../target/coverageReport/
+          -Dcoverage.reports.dir=../target/coverageReport"
+
+services:
+  - path: instances/kitt.yml
+deploy:
+  namespace: atlas-receiving
+  preDeploy:
+    - task:
+        name: messageSlack
+        text: Beginning liquibase execution on {{$.kittExec.currentStage.name}}
+    - concord:
+        name: Liquibase-Execution
+        action: start
+        org: Logistics
+        project: wcnp_liquibase
+        repo: wcnp_liquibase
+        entryPoint: default
+        sync: true
+        executionScope: stage
+        arguments:
+          version: "{{$.kitt.build.version}}"
+          artifactId: "{{$.kitt.build.artifact}}"
+          targetEnv: "{{$.kittExec.currentStage.name}}"
+          gitBranch: "{{$.kitt.build.commitEvent.commitId}}"
+    - task:
+        name: messageSlack
+        text: Liquibase execution successful
+  releaseType:
+    strategy: normal
+    deployTimeout: 1200
+    waitForReady: true
+    rollbackOnError: true
+  changeRecord:
+    create: true
+    affectedGEOs: ["US"]
+    group: "LOG - GLS NextGen"
+    notifyChannels: ["rcv-dev"]
+    managerGroup: "Change Managers - GEC"
+  helm:
+    values:
+      secrets:
+        files:
+          - destination: /receiving-secrets.properties
+            content: receiving-api/{{$.kittExec.currentStage.name}}#secrets.key
+          - destination: /gls-atlas-receiving.jks
+            content: receiving-api/{{$.kittExec.currentStage.name}}#truststore.key
+            base64decode: true
+          - destination: /signature.properties
+            content: receiving-api/{{$.kittExec.currentStage.name}}#servicemesh.config
+            base64decode: true
+          - destination: /receiving-sumo.properties
+            content: receiving-api/{{$.kittExec.currentStage.name}}#sumo.config
+            base64decode: true
+      env:
+        JAVA_OPTS: "-Xms1024M -Xmx1496M -Djsse.enableSNIExtension=true -Dstrati.ccm.configs=app,logging -Dspring.main.allow-bean-definition-overriding=true -Druntime.context.environmentType={{$.kittExec.currentStage.name}} -Druntime.context.environment={{$.kittExec.currentStage.name}} -Druntime.context.appName=receiving-api -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties -Druntime.context.system.property.override.enabled=true -Dscm.snapshot.enabled=true -DDATACENTER={{$.kittExec.currentCluster.zone}} -Dplatform=wcnp"
+      min:
+        cpu: 50m
+        memory: 1496Mi
+      max:
+        cpu: 1000m
+        memory: 1496Mi
+      livenessProbe:
+        path: "/heartbeat"
+        wait: 300
+        periodSeconds: 10
+        successThreshold: 1
+        failureThreshold: 10
+      readinessProbe:
+        path: "/heartbeat"
+        wait: 240
+        periodSeconds: 10
+        successThreshold: 1
+        failureThreshold: 10
+      scaling:
+        enabled: false
+        cpuPercent: 80
+        min: 1
+        max: 1
+      global:
+        metrics:
+          endpoints:
+            - targetPort: 8080
+              path: "/prometheus"
+            - targetPort: 7766
+              path: "/metrics"
+          remoteWriteSampleLimit: 250
+          whitelist:
+            - dcFinExceptionCount_total
+            - receiveContainersTimed_seconds
+            - quantityChangeTimed_seconds
+            - publishReceiveEventTimed_seconds
+            - Endgame_PrintAck_seconds
+            - Endgame_PrintAck_Exception_total
+            - Endgame_ScanAck_seconds
+            - Endgame_ScanAck_Exception_total
+            - Endgame_PreGen_seconds
+            - Endgame_PreGen_total
+            - SLT_Get_Divert_seconds
+            - SLT_Get_Divert_Exception_total
+            - GDM_Get_Delivery_seconds
+            - GDM_Get_Delivery_Exception_total
+            - Endgame_Channel_Flip_seconds
+            - Endgame_Channel_Flip_Exception_total
+            - Endgame_ScanUPC_seconds
+            - Endgame_ScanUPC_Exception_total
+            - HKW_TCL_Upload_seconds
+            - HKW_TCL_Upload_Exception_total
+            - Manual_TCL_Gen_seconds
+            - Manual_TCL_Gen_Exception_total
+            - Endgame_AuditFlip_seconds
+            - Endgame_AuditFlip_Exception_total
+            - kafkaListenerExceptionCount_total
+            - HKW_Divert_Upload_seconds
+            - heartBeatHitCount_total
+            - instructionRequestHitCount_total
+            - instructionRequestTimed_seconds
+            - OFrequestTimed_seconds
+            - idmCallTimed_seconds
+            - OFrequestCount_total
+            - completeInstructionTimed_seconds
+            - updateInstructionTimed_seconds
+            - completeDeliveryTimed_seconds
+            - instructionResponseSummaryTimed_seconds
+            - OFrequestExceptionCount_total
+            - noAllocationException_total
+            - completeInstructionExceptionCount_total
+            - instructionResponseSummaryExceptionCount_total
+            - backoutReceiptsExceptionCount_total
+            - instructionRequestExceptionCount_total
+            - instructionFromDBTimed_seconds
+            - updateInstructionExceptionCount_total
+            - receivedQtySummaryByPOForDeliveryTimed_seconds
+            - idmCallExceptionCount_total
+            - jmsPublishTimed_seconds
+            - completeDeliveryExceptionCount_total
+            - heartBeatTimed_seconds
+            - jmsPublishExceptionCount_total
+            - receivedQtySummaryByPOForDeliveryExceptionCount_total
+            - completeProblemTagExceptionCount_total
+            - uwms_Exception_alert_Reqs_total
+            - cancelInstructionTimed_seconds
+            - heartBeatExceptionCount_total
+            - completeProblemTagTimed_seconds
+            - receivedQtySummaryByPOForDeliveryHitCount_total
+            - cancelContainersTimed_seconds
+            - cancelInstructionExceptionCount_total
+            - cancelContainersExceptionCount_total
+            - getProblemTagDetailsTimed_seconds
+            - transferInstructionHitCount_total
+            - getProblemTagDetailsExceptionCount_total
+            - reOpenDeliveryExceptionCount_total
+            - jmsListenerExceptionCount_total
+            - reOpenDeliveryTimed_seconds
+            - transferInstructionExceptionCount_total
+            - idmCallByAsnTimed_seconds
+            - transferInstructionTimed_seconds
+            - idmCallByAsnExceptionCount_total
+            - preLabelGenTimed_seconds
+            - ReceiveByLpnTimed_seconds
+            - preLabelGenExceptionCount_total
+            - ReceiveByLpnExceptionCount_total
+            - plgSchedulerExceptionCount_total
+            - plgSchedulerTimed_seconds
+            - userLocAPIExceptionCount_total
+            - userLocAPITimed_seconds
+            - aclNotificationExceptionCount_total
+            - receiveDockTagExceptionCount_total
+            - completeDockTagExceptionCount_total
+            - floorLineSummaryExceptionCount_total
+            - exceptionLabelAPIExceptionCount_total
+            - aclNotificationHistoryExceptionCount_total
+            - aclNotificationHistoryHitCount_total
+            - fetchLabelsFromACLExceptionCount_total
+            - updateVendorUpcExceptionCount_total
+            - OFRetryRequestTimed_seconds
+            - OFRetryRequestExceptionCount_total
+            - getDeliveryDetailsExceptionCount_total
+            - getDoorInfoExceptionCount_total
+            - retrieveLPNExceptionCount_total
+            - retrieveLPNTimed_seconds
+            - findDeliveryDocumentExceptionCount_total
+            - findDeliveryDocumentTimed_seconds
+            - sendSumoNotificationExceptionCount_total
+            - rcTrackItemTimed_seconds
+            - rcTrackItemExceptionCount_total
+            - rcTrackPackageTimed_seconds
+            - rcTrackPackageExceptionCount_total
+            - rcReceiveContainerTimed_seconds
+            - rcReceiveContainerExceptionCount_total
+            - rcGetContainerByGtinTimed_seconds
+            - rcGetContainerByGtinExceptionCount_total
+            - processShipmentTimed_seconds
+            - processShipmentExceptionCount_total
+            - receivePalletTimed_seconds
+            - receivePalletCount_total
+            - putAwayTimed_seconds
+            - receivePalletExceptionCount_total
+            - putAwayExceptionCount_total
+            - mapLPNTimed_seconds
+            - putAwayCTTimed_seconds
+            - mapLPNExceptionCount_total
+            - putAwayCTExceptionCount_total
+            - getCTStatusTimed_seconds
+            - getCTStatusExceptionCount_total
+            - getAllItemsTimed_seconds
+            - getAllItemsExceptionCount_total
+            - acquireSlotTimes_seconds
+            - updateVendorUPCTimed_seconds
+            - linkDeliveryAndShipmentByGtinAndLotNumberTimed_seconds
+            - findDeliveryDocumentByGtinAndLotNumberWithShipmentLinkingTimed_seconds
+            - findDeliveryDocumentBySSCCWithShipmentLinkingTimed_seconds
+            - findDeliveryDocumentBySSCCWithShipmentLinkinExceptionCount_total
+            - findDeliveryDocumentByGtinAndLotNumberWithShipmentLinkingExceptionCount_total
+            - getDeliveryTimed_seconds
+            - updateQuantityByTrackingIdTimed_seconds
+            - receiveContainersExceptionCount_total
+            - quantityChangeExceptionCount_total
+            - publishReceiveEventExceptionCounted_total
+            - palletsOffHoldTimed_seconds
+            - verifySerializedDataTimed_seconds
+            - verifySerializedDataExceptionCounted_total
+            - acquireSlotExceptionCount_total
+            - searchShipmentTimed_seconds
+            - searchShipmentExceptionCount_total
+            - searchShipmentsByDeliveryAndGtinAndLotNumberFromGdmTimed_seconds
+            - searchShipmentsByDeliveryAndGtinAndLotNumberFromGdmExceptionCount_total
+            - linkDeliveryAndShipmentByGtinAndLotNumberExceptionCount_total
+            - getShipmentsByGtinAndLotNumberFromGdmTimed_seconds
+            - getShipmentsByGtinAndLotNumberFromGdmExceptionCount_total
+            - findDeliveryDocumentsByGtinAndLotNumberTimed_seconds
+            - findDeliveryDocumentsByGtinAndLotNumberExceptionCount_total
+            - linkDeliveryWithShipmentTimed_seconds
+            - linkDeliveryWithShipmentExceptionCount_total
+            - getContainerSsccDetailsTimed_seconds
+            - getContainerSsccDetailsExceptionCount_total
+            - findDeliveryDocumentBySSCCWithLatestShipmentLinking_seconds
+            - findDeliveryDocumentBySSCCWithLatestShipmentLinkingExceptionCount_total
+            - RdcItemCatalogAPIExceptionCount_total
+            - createRdcDockTagTimed_seconds
+            - createRdcDockTagExceptionCount_total
+            - receiveRdcDockTagTimed_seconds
+            - receiveRdcDockTagExceptionCount_total
+            - rdcCompleteDockTagTimed_seconds
+            - rdcCompleteDockTagExceptionCount_total
+            - RdcItemCatalogAPITimed_seconds
+            - RdcPublishAPITimed_seconds
+            - RdcPublishAPIExceptionCount_total
+            - quantityReceivedTimed_seconds
+            - quantityReceivedExceptionCount_total
+            - getReceivedQtySummaryByPoTimed_seconds
+            - getReceivedQtySummaryByPoExceptionCount_total
+            - getReceivedQtySummaryByPoLineTimed_seconds
+            - getReceivedQtySummaryByPoLineExceptionCount_total
+            - itemDetailsTimed_seconds
+            - itemDetailsExceptionCount_total
+            - voidLPNTimed_seconds
+            - voidLPNExceptionCount_total
+            - notifyBackoutAdjustmentTimed_seconds
+            - notifyBackoutAdjustmentCount_total
+            - notifyReceivingCorrectionAdjustmentTimed_seconds
+            - notifyReceivingCorrectionAdjustmentCount_total
+            - getDeliveryByURITimed_seconds
+            - getDeliveryByURIExceptionCount_total
+            - updateVendorUpcInNGRTimed_seconds
+            - updateVendorUpcInNGRCount_total
+            - rdcRetrieveLPNTimed_seconds
+            - rdcRetrieveLPNExceptionCount_total
+            - receivePalletSlottingHitCount_total
+            - receivePalletSlottingTimed_seconds
+            - receivePalletSlottingExceptionCount_total
+            - getPrimeSlotForSplitPalletTimed_seconds
+            - getPrimeSlotForSplitPalletCount_total
+            - getPrimeSlotForSplitPalletExceptionCount_total
+            - getPrimeSlotByDocumentLineHitCount_total
+            - getPrimeSlotByDocumentLineTimed_seconds
+            - getPrimeSlotByDocumentLineExceptionCount_total
+            - getPrimeSlotByItemNumbersHitCount_total
+            - getPrimeSlotByItemNumbersTimed_seconds
+            - getPrimeSlotByItemNumbersExceptionCount_total
+            - getSlotTimed_seconds
+            - getSlotExceptionCount_total
+            - deliveryNGRReceiptsTimed_seconds
+            - deliveryNGRReceiptsExceptionCount_total
+            - scanProblemTagAPITimed_seconds
+            - scanProblemTagAPIExceptionCount_total
+            - getProblemTagAPITimed_seconds
+            - getProblemTagAPIExceptionCount_total
+            - getProblemTagHitCount_total
+            - updateProblemReceivedQtyAPITimed_seconds
+            - updateProblemReceivedQtyAPIExceptionCount_total
+            - updateProblemReceivedQtyHitCount_total
+            - createProblemTagAPITimed_seconds
+            - createProblemTagAPIExceptionCount_total
+            - createProblemTagHitCount_total
+            - reportProblemErrorAPITimed_seconds
+            - reportProblemErrorAPIExceptionCount_total
+            - reportProblemErrorHitCount_total
+            - getPOLineInfoFromGdmAPITimed_seconds
+            - getPOLineInfoFromGdmAPIExceptionCount_total
+            - getPOLineInfoFromGdmHitCount_total
+            - searchAtlasConvertedItemsAPITimed_seconds
+            - searchAtlasConvertedItemsExceptionCount_total
+            - searchAtlasConvertedItemsHitCount_total
+            - getDoorInfoTimed_seconds
+            - manualMFCDeliveryProcessingTimed_seconds
+            - manualMFCDeliveryProcessingExceptionCount_total
+            - manualMFCContainerPublishingTimed_seconds
+            - manualMFCContainerPublishingExceptionCount_total
+            - autoMFCDeliveryProcessingTimed_seconds
+            - autoMFCDeliveryProcessingExceptionCount_total
+            - autoMFCDecantTimed_seconds
+            - autoMFCDecantExceptionCount_total
+            - autoMFCExceptionReceiptCreationTimed_seconds
+            - autoMFCExceptionReceiptCreationExceptionCount_total
+            - mfcContainerCreationTimed_seconds
+            - mfcASNDownloadTimed_seconds
+            - mfcASNDownloadExceptionCount_total
+            - mfcReceiptCreationTimed_seconds
+            - mfcReceiptCreationExceptionCount_total
+            - mfcInventoryProcessingTimed_seconds
+            - mfcInventoryProcessingExceptionCount_total
+            - damageInventoryReportTimed_seconds
+            - damageInventoryReportExceptionCount_total
+            - getAllContainersByDeliveryTimed_seconds
+            - getAllContainersByDeliveryExceptionCount_total
+            - dcFinV2ExceptionCount_total
+            - dcFinReconReceiptsRetryExceptionCount_total
+            - dcFinReceiptsForDeliveryExceptionCount_total
+            - JMS_MESSAGE_PUBLISHING_EXCEPTION_COUNT_total
+            - DCFIN_PURCHASE_POSTING_EXCEPTION_COUNT_total
+            - DCFIN_PO_CLOSE_EXCEPTION_COUNT_total
+            - GDM_PO_FINALIZE_EXCEPTION_COUNT_total
+            - INVENTORY_RECEIPT_RECEIVE_CORRECTION_EXCEPTION_COUNT_total
+            - INVENTORY_UPDATE_PO_DETAILS_EXCEPTION_COUNT_total
+            - INVENTORY_UPDATE_LOCATION_EXCEPTION_COUNT_total
+            - wrongUOM_detected_total
+            - storeInboundFailedPackCreation_total
+            - manualMfcFailedPackCreation_total
+            - autoMfcFailedPackCreation_total
+            - duplicate_container_item_total
+            - storeInboundMixedPalletProcessingTimed_seconds
+            - storeInboundMixedPalletProcessingExceptionCount_total
+            - retry_exhausted_total
+            - mixed_pallet_not_found_total
+      releaseType:
+        strategy:
+          rollingUpdate:
+            maxSurge: "33%"
+            maxUnavailable: "33%"
+  stages:
+    - name: dev-cell000
+      refEventFilters:
+        - refs: ["main"]
+          events: [onPush]
+      target:
+        - cluster_id: [uscentral-stage-wmt-001]
+      helm:
+        values:
+          metadata:
+            labels:
+              strati.appkey: ATLASRECEIVING
+              strati.env: dev
+            annotations:
+              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"}, {"Path":"^/.*"}]'
+          min:
+            cpu: 2000m
+            memory: 2048Mi
+          max:
+            cpu: 2000m
+            memory: 2048Mi
+          scaling:
+            enabled: false
+            min: 1
+            max: 1
+      postDeploy:
+        - concord:
+            name: executeDITs
+            action: start
+            org: Logistics
+            project: managedservlet-atlas-receiving
+            repo: uwms-receiving-dit
+            entryPoint: default
+            sync: true
+
+    - name: qa-cell000
+      refs: [main]
+      target:
+        - cluster_id: [uscentral-stage-wmt-001]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+      helm:
+        values:
+          metadata:
+            labels:
+              strati.appkey: ATLASRECEIVING
+              strati.env: qa
+            annotations:
+              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"},{"Path":"^/.*"}]'
+          min:
+            cpu: 2000m
+            memory: 2048Mi
+          max:
+            cpu: 2000m
+            memory: 2048Mi
+          scaling:
+            enabled: false
+            min: 1
+            max: 1
+
+    - name: stg-int-cell000
+      refs: [main]
+      target:
+        - cluster_id: [uswest-stage-wmt-001]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+      helm:
+        values:
+          metadata:
+            labels:
+              strati.appkey: ATLASRECEIVING
+              strati.env: stg-int
+            annotations:
+              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"},{"Path":"^/.*"}]'
+          min:
+            cpu: 2000m
+            memory: 2048Mi
+          max:
+            cpu: 2000m
+            memory: 2048Mi
+          scaling:
+            enabled: false
+            min: 1
+            max: 1
+
+    - name: amb-stg-int-cell001
+      refs: [main]
+      target:
+        - cluster_id: [uswest-stage-wmt-001]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+      helm:
+        values:
+          metadata:
+            labels:
+              strati.appkey: ATLASRECEIVING
+              strati.env: amb-stg-int
+            annotations:
+              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"},{"Path":"^/.*"}]'
+          min:
+            cpu: 2000m
+            memory: 2048Mi
+          max:
+            cpu: 2000m
+            memory: 2048Mi
+          scaling:
+            enabled: false
+            min: 1
+            max: 1
+
+    - name: stg-uat-cell000
+      refs: [main]
+      target:
+        - cluster_id: [wus-stage-a4]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+      helm:
+        values:
+          metadata:
+            labels:
+              strati.appkey: ATLASRECEIVING
+              strati.env: stg-uat
+            annotations:
+              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"},{"Path":"^/.*"}]'
+          min:
+            cpu: 2000m
+            memory: 2048Mi
+          max:
+            cpu: 2000m
+            memory: 2048Mi
+          scaling:
+            enabled: false
+            min: 1
+            max: 1
+
+    - name: perf-cell000
+      refs: [main]
+      target:
+        - cluster_id: [scus-stage-a4, wus-stage-a4]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "glsperf"
+          - "Tridents-SE"
+      helm:
+        values:
+          metadata:
+            labels:
+              strati.appkey: ATLASRECEIVING
+              strati.env: STG
+            annotations:
+              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"},{"Path":"^/.*"}]'
+          min:
+            cpu: 500m
+            memory: 8192Mi
+          max:
+            cpu: 4000m
+            memory: 8192Mi
+          scaling:
+            enabled: true
+            min: 3
+            max: 4
+            cpuPercent: 80
+
+    - name: prod-cell002
+      refs: [main]
+      target:
+        - cluster_id: [ scus-prod-a35, wus-prod-a33 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "Tridents-SE"
+      helm:
+        values:
+          metadata:
+            labels:
+              strati.appkey: ATLASRECEIVING
+              strati.env: prod
+            annotations:
+              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"},{"Path":"^/.*"}]'
+          min:
+            cpu: 4000m
+            memory: 8192Mi
+          max:
+            cpu: 4000m
+            memory: 8192Mi
+          scaling:
+            enabled: false
+            min: 3
+            max: 3
+
+    - name: prod-cell010
+      refs: [main]
+      target:
+        - cluster_id: [ eus2-prod-a22, scus-prod-a35 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "Tridents-SE"
+      helm:
+        values:
+          metadata:
+            labels:
+              strati.appkey: ATLASRECEIVING
+              strati.env: prod
+            annotations:
+              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"},{"Path":"^/.*"}]'
+          min:
+            cpu: 4000m
+            memory: 8192Mi
+          max:
+            cpu: 4000m
+            memory: 8192Mi
+          scaling:
+            enabled: false
+            min: 3
+            max: 3
+
+    - name: prod-cell000
+      refs: [main]
+      target:
+        - cluster_id: [ scus-prod-a35, wus-prod-a33 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "Tridents-SE"
+      helm:
+        values:
+          metadata:
+            labels:
+              strati.appkey: ATLASRECEIVING
+              strati.env: prod
+            annotations:
+              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"},{"Path":"^/.*"}]'
+          min:
+            cpu: 4000m
+            memory: 8192Mi
+          max:
+            cpu: 4000m
+            memory: 8192Mi
+          scaling:
+            enabled: false
+            min: 3
+            max: 3
+
+    - name: prod-cell003
+      refs: [ main ]
+      target:
+        - cluster_id: [ scus-prod-a35, wus-prod-a33 ]
+      approvers:
+        groups:
+          - "GLS-Receiving-Atlas"
+          - "Tridents-SE"
+      helm:
+        values:
+          metadata:
+            labels:
+              strati.appkey: ATLASRECEIVING
+              strati.env: prod
+            annotations:
+              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"},{"Path":"^/.*"}]'
+          min:
+            cpu: 4000m
+            memory: 8192Mi
+          max:
+            cpu: 4000m
+            memory: 8192Mi
+          scaling:
+            enabled: false
+            min: 3
+            max: 3
+
+#    - name: gdc-prod-cell010
+#      refs: [main]
+#      target:
+#        - cluster_id: [ eus2-prod-a22, scus-prod-a35 ]
+#      approvers:
+#        groups:
+#          - "GLS-Receiving-Atlas"
+#          - "Tridents-SE"
+#      helm:
+#        values:
+#          metadata:
+#            labels:
+#              strati.appkey: ATLASRECEIVING
+#              strati.env: prod
+#            annotations:
+#              strati.passthroughUris: '[{"Path":"^/swagger-ui.html$"},{"Path":"^/.*"}]'
+#          min:
+#            cpu: 4000m
+#            memory: 8192Mi
+#          max:
+#            cpu: 4000m
+#            memory: 8192Mi
+#          scaling:
+#            enabled: false
+#            min: 3
+##            max: 3
+

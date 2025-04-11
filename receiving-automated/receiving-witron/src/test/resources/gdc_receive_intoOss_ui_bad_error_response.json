@@ -1,0 +1,22 @@
+{
+  "error": {
+    "errPos": {
+      "1688567328007": {
+        "errorCode": "PoLevelError",
+        "errorMessage": "No Po found for Po Number: [1688567328007]"
+      },
+      "1688567328": {
+        "errLines": {
+          "1": {
+            "errorCode": "PoLineLevelError",
+            "errorMessage": "Negative quantity (-1) cannot be received"
+          },
+          "2": {
+            "errorCode": "PoLineLevelError",
+            "errorMessage": "No Po Lines found for Po Number: [1688567328 ln#2]"
+          }
+        }
+      }
+    }
+  }
+}

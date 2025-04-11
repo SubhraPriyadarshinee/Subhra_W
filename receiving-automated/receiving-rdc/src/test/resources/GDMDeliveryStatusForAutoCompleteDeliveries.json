@@ -1,0 +1,528 @@
+{
+  "data": [
+    {
+      "deliveryNumber": 7867004,
+      "status": "WRK",
+      "type": "LIVE",
+      "arrivalTime": "2020-08-11T11:09:33.192Z",
+      "scheduledTime": "2019-05-02T06:00:00Z",
+      "trailerId": "140981",
+      "receivedQty": 15,
+      "doorNumber": "",
+      "totalPos": 2,
+      "totalPoLines": 2,
+      "totalFbq": 16,
+      "vendor": [
+        {
+          "number": 645184
+        },
+        {
+          "number": 645184,
+          "name": "BRADSHAW INTERNATIONAL INC"
+        }
+      ],
+      "daConPercentage": 100,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "sysadmin",
+          "time": "2020-08-05T14:39:37.090Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "sysadmin",
+          "time": "2020-08-05T16:59:45.224Z"
+        },
+        {
+          "type": "RECEIVING_COMPLETED",
+          "userId": "sysadmin",
+          "time": "2020-08-05T15:54:02.337Z"
+        },
+        {
+          "type": "UNLOADING_COMPLETED",
+          "userId": "sysadmin",
+          "time": "2020-08-05T14:44:01.085Z"
+        }
+      ],
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "125"
+    },
+    {
+      "deliveryNumber": 7867007,
+      "status": "WRK",
+      "type": "LIVE",
+      "arrivalTime": "2020-08-05T15:16:19.730Z",
+      "scheduledTime": "2019-05-02T06:00:00Z",
+      "trailerId": "140981",
+      "receivedQty": 0,
+      "doorNumber": "5209",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 16,
+      "vendor": [
+        {
+          "number": 645184,
+          "name": "BRADSHAW INTERNATIONAL INC"
+        }
+      ],
+      "daConPercentage": 100,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "sysadmin",
+          "time": "2020-08-05T15:24:16.901Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "sysadmin",
+          "time": "2020-08-05T15:24:38.521Z"
+        }
+      ],
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "125"
+    },
+    {
+      "deliveryNumber": 7867008,
+      "status": "WRK",
+      "type": "LIVE",
+      "arrivalTime": "2020-08-05T15:26:09.790Z",
+      "scheduledTime": "2019-05-02T06:00:00Z",
+      "trailerId": "140981",
+      "receivedQty": 0,
+      "doorNumber": "895",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 16,
+      "vendor": [
+        {
+          "number": 645184,
+          "name": "BRADSHAW INTERNATIONAL INC"
+        }
+      ],
+      "daConPercentage": 100,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "sysadmin",
+          "time": "2020-08-05T15:26:36.363Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "sysadmin",
+          "time": "2020-08-05T15:26:51.055Z"
+        }
+      ],
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "125"
+    },
+    {
+      "deliveryNumber": 30123456,
+      "status": "WRK",
+      "type": "DROP",
+      "arrivalTime": "2020-07-12T17:39:44.633Z",
+      "scheduledTime": "2020-03-11T05:00:00Z",
+      "trailerId": "87361",
+      "receivedQty": 0,
+      "doorNumber": "000",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 4,
+      "vendor": [
+        {
+          "number": 12344,
+          "name": "V11"
+        }
+      ],
+      "daConPercentage": 100,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "sysadmin",
+          "time": "2020-07-22T11:01:53.974Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "sysadmin",
+          "time": "2020-07-22T16:36:24.546Z"
+        }
+      ],
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "63149288"
+    },
+    {
+      "deliveryNumber": 42329479,
+      "status": "WRK",
+      "type": "DROP",
+      "arrivalTime": "2020-01-07T16:37:37.419Z",
+      "scheduledTime": "2019-03-11T05:00:00Z",
+      "trailerId": "104681",
+      "receivedQty": 0,
+      "doorNumber": "5643",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 1000,
+      "vendor": [
+        {
+          "number": 12344,
+          "name": "V11"
+        }
+      ],
+      "daConPercentage": 100,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "sysadmin",
+          "time": "2020-07-22T16:04:53.888Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "sysadmin",
+          "time": "2020-07-22T16:05:33.086Z"
+        }
+      ],
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "63149288"
+    },
+    {
+      "deliveryNumber": 42329481,
+      "status": "WRK",
+      "type": "DROP",
+      "arrivalTime": "2020-01-07T16:37:37.419Z",
+      "scheduledTime": "2020-03-12T05:00:00Z",
+      "trailerId": "104681",
+      "receivedQty": 0,
+      "doorNumber": "11",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 1000,
+      "vendor": [
+        {
+          "number": 12344,
+          "name": "V11"
+        }
+      ],
+      "daConPercentage": 100,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "sysadmin",
+          "time": "2020-07-22T17:00:05.254Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "sysadmin",
+          "time": "2020-07-22T17:00:23.690Z"
+        }
+      ],
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "63149288"
+    },
+    {
+      "deliveryNumber": 42329819,
+      "status": "WRK",
+      "type": "DROP",
+      "arrivalTime": "2020-01-07T16:37:37.419Z",
+      "scheduledTime": "2019-03-11T05:00:00Z",
+      "trailerId": "104681",
+      "receivedQty": 0,
+      "doorNumber": "5779",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 1000,
+      "vendor": [
+        {
+          "number": 12344,
+          "name": "V11"
+        }
+      ],
+      "daConPercentage": 100,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "sumeet",
+          "time": "2020-08-03T16:28:56.109Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "sumeet",
+          "time": "2020-08-03T16:29:41.743Z"
+        }
+      ],
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "63149288"
+    },
+    {
+      "deliveryNumber": 61119003,
+      "status": "WRK",
+      "type": "DROP",
+      "arrivalTime": "2021-02-10T23:18:27.259Z",
+      "scheduledTime": "2019-03-11T05:00:00Z",
+      "trailerId": "104681",
+      "receivedQty": 0,
+      "doorNumber": "8700",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 106,
+      "vendor": [
+        {
+          "number": 12344,
+          "name": "V11"
+        }
+      ],
+      "daConPercentage": 0,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "userA",
+          "time": "2021-02-10T23:18:29.663Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "userA",
+          "time": "2021-02-10T23:18:45.436Z"
+        }
+      ],
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "63149288"
+    },
+    {
+      "deliveryNumber": 62112546,
+      "status": "WRK",
+      "type": "DROP",
+      "arrivalTime": "2020-01-07T16:37:37.419Z",
+      "scheduledTime": "2019-03-11T05:00:00Z",
+      "trailerId": "104681",
+      "receivedQty": 0,
+      "doorNumber": "9886",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 1000,
+      "vendor": [
+        {
+          "number": 12344,
+          "name": "V11"
+        }
+      ],
+      "daConPercentage": 100,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "sysadmin",
+          "time": "2020-09-03T14:39:48.189Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "sysadmin",
+          "time": "2020-09-03T14:40:00.414Z"
+        }
+      ],
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "63149288"
+    },
+    {
+      "deliveryNumber": 72020218,
+      "status": "WRK",
+      "type": "DROP",
+      "arrivalTime": "2019-03-11T06:09:33.192Z",
+      "scheduledTime": "2019-03-11T05:00:00Z",
+      "trailerId": "140981",
+      "receivedQty": 10,
+      "doorNumber": "O108",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 25,
+      "vendor": [
+        {
+          "number": 472412,
+          "name": "BABY TREND INC"
+        }
+      ],
+      "daConPercentage": 100,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "sysadmin",
+          "time": "2020-07-22T09:05:24.478Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "sysadmin",
+          "time": "2020-07-22T16:39:09.192Z"
+        }
+      ],
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "63149288"
+    },
+    {
+      "deliveryNumber": 77001050,
+      "status": "WRK",
+      "type": "DROP",
+      "arrivalTime": "2020-07-22T16:39:36.331Z",
+      "scheduledTime": "2019-03-11T05:00:00Z",
+      "trailerId": "104681",
+      "receivedQty": 0,
+      "doorNumber": "2010",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 106,
+      "vendor": [
+        {
+          "number": 12344,
+          "name": "V11"
+        }
+      ],
+      "daConPercentage": 100,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "sysadmin",
+          "time": "2020-07-22T16:40:10.976Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "sysadmin",
+          "time": "2020-07-22T16:40:25.423Z"
+        }
+      ],
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "63149288"
+    },
+    {
+      "deliveryNumber": 82112707,
+      "status": "WRK",
+      "type": "DROP",
+      "arrivalTime": "2019-03-11T06:09:33.192Z",
+      "scheduledTime": "2019-03-11T05:00:00Z",
+      "trailerId": "104682",
+      "receivedQty": 0,
+      "doorNumber": "707",
+      "totalPos": 3,
+      "totalPoLines": 3,
+      "totalFbq": 600,
+      "vendor": [
+        {
+          "number": 12344,
+          "name": "V11"
+        }
+      ],
+      "daConPercentage": 100,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "sysadmin",
+          "time": "2020-07-24T11:09:07.973Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "sysadmin",
+          "time": "2020-07-24T11:09:14.269Z"
+        }
+      ],
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "63149288"
+    },
+    {
+      "deliveryNumber": 95350002,
+      "status": "WRK",
+      "type": "LIVE",
+      "arrivalTime": "2020-12-02T07:12:29.135Z",
+      "scheduledTime": "2019-12-10T17:45:00Z",
+      "trailerId": "104681",
+      "receivedQty": 0,
+      "doorNumber": "99",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 1300,
+      "vendor": [
+        {
+          "number": 480889,
+          "name": "BAMA COMPANIES INC"
+        }
+      ],
+      "daConPercentage": 100,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "sysadmin",
+          "time": "2020-12-02T07:15:35.292Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "sysadmin",
+          "time": "2020-12-02T07:16:08.098Z"
+        }
+      ],
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "110606556"
+    },
+    {
+      "deliveryNumber": 95350003,
+      "status": "WRK",
+      "type": "LIVE",
+      "arrivalTime": "2020-12-11T06:15:28.193Z",
+      "scheduledTime": "2019-12-10T17:45:00Z",
+      "trailerId": "104681",
+      "receivedQty": 0,
+      "doorNumber": "104",
+      "totalPos": 1,
+      "totalPoLines": 1,
+      "totalFbq": 1300,
+      "vendor": [
+        {
+          "number": 480889,
+          "name": "BAMA COMPANIES INC"
+        }
+      ],
+      "daConPercentage": 100,
+      "lifeCycleInformation": [
+        {
+          "type": "DOOR_OPEN",
+          "userId": "sysadmin",
+          "time": "2020-12-11T06:18:07.352Z"
+        },
+        {
+          "type": "RECEIVING_STARTED",
+          "userId": "sysadmin",
+          "time": "2020-12-11T06:18:20.070Z"
+        }
+      ],
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "loadNumber": "110606556"
+    }
+  ],
+  "page": {
+    "size": 50,
+    "number": 0,
+    "numberOfElements": 14,
+    "totalElements": 14,
+    "totalPages": 1
+  }
+}

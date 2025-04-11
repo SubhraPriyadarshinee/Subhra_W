@@ -1,0 +1,25 @@
+{
+  "deliveryNumber": "9967271326",
+  "issueQtyUom": "ZA",
+  "issueQtyWithOutPo": 0,
+  "issueQtyWithPo": 36,
+  "purchaseOrders": [
+    {
+      "poNumber": "9164390046",
+      "issueQtyWithPoLines": 36,
+      "issueQtyUom": "ZA",
+      "poLines": [
+        {
+          "poLineNumber": "1",
+          "issueQtyUom": "ZA",
+          "issueQty": 28
+        },
+        {
+          "poLineNumber": "3",
+          "issueQtyUom": "ZA",
+          "issueQty": 8
+        }
+      ]
+    }
+  ]
+}

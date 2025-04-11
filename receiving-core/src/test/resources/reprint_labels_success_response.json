@@ -1,0 +1,107 @@
+{
+  "headers": {
+    "WMT-CorrelationId": "7c735b65-16f4-4a95-acdf-c90210915436",
+    "facilityCountryCode": "US",
+    "facilityNum": "32679"
+  },
+  "clientId": "AtlasRCV",
+  "printRequests": [
+    {
+      "formatName": "atlas_rdc_sstk_label_format",
+      "labelIdentifier": "001000132679203193",
+      "ttlInHours": 100,
+      "data": [
+        {
+          "key": "LABELBAR",
+          "value": "001000132679203193"
+        },
+        {
+          "key": "SLOT",
+          "value": "999"
+        },
+        {
+          "key": "LBLPICK",
+          "value": "12"
+        },
+        {
+          "key": "LABELDATE",
+          "value": "01/25/24 04:55:06"
+        },
+        {
+          "key": "LBLVNPK",
+          "value": "12"
+        },
+        {
+          "key": "ITEM",
+          "value": "580407869"
+        },
+        {
+          "key": "POLINE",
+          "value": "1"
+        },
+        {
+          "key": "RCVR",
+          "value": ""
+        },
+        {
+          "key": "LBLWHPK",
+          "value": "3"
+        },
+        {
+          "key": "UPCBAR",
+          "value": ""
+        },
+        {
+          "key": "USERID",
+          "value": "sysadmin"
+        },
+        {
+          "key": "TI",
+          "value": "25"
+        },
+        {
+          "key": "HI",
+          "value": "8"
+        },
+        {
+          "key": "VENDORID",
+          "value": "GEN52989"
+        },
+        {
+          "key": "LABELNUM",
+          "value": "1"
+        },
+        {
+          "key": "LABELCNT",
+          "value": "1"
+        },
+        {
+          "key": "CONTAINER_ID",
+          "value": "001000132679203193"
+        },
+        {
+          "key": "CONTAINER_CREATION_TIME",
+          "value": "01/25/24 04:55:06"
+        },
+        {
+          "key": "PARTIALTAG",
+          "value": ""
+        },
+        {
+          "key": "REPRINT",
+          "value": ""
+        },
+        {
+          "key": "SLOTSIZE",
+          "value": ""
+        }
+      ],
+      "printJobId": "1036258117464577213"
+    }
+  ],
+  "missingLpns": [
+    "A32679005167405686",
+    "D06020000020247575",
+    "A32679005195578136"
+  ]
+}

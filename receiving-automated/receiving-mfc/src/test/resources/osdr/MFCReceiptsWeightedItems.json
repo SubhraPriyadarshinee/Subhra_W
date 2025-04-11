@@ -1,0 +1,38 @@
+[
+  {
+    "id": 2158426,
+    "deliveryNumber": 550478600045777,
+    "purchaseReferenceNumber": "-1",
+    "quantity": 7,
+    "quantityUom" : "EA",
+    "vnpkQty": 1,
+    "whpkQty": 1,
+    "createUserId": "sysadmin",
+    "createTs": "2023-08-05T03:26:12.082Z",
+    "fbOverQty": 0,
+    "version": 0,
+    "inboundShipmentDocId": "v_weight_6860715504_20230824_6071_DC_US",
+    "invoiceNumber": "06071001320",
+    "invoiceLineNumber": 1,
+    "facilityCountryCode": "us",
+    "facilityNum": 5504
+  },
+  {
+    "id": 2158427,
+    "deliveryNumber": 550478600045777,
+    "purchaseReferenceNumber": "-1",
+    "quantity": 1,
+    "quantityUom" : "EA",
+    "vnpkQty": 1,
+    "whpkQty": 1,
+    "createUserId": "sysadmin",
+    "createTs": "2023-08-05T03:26:12.082Z",
+    "fbOverQty": 0,
+    "version": 0,
+    "inboundShipmentDocId": "v_weight_6860715504_20230824_6071_DC_US",
+    "invoiceNumber": "06071001320",
+    "invoiceLineNumber": 2,
+    "facilityCountryCode": "us",
+    "facilityNum": 5504
+  }
+]

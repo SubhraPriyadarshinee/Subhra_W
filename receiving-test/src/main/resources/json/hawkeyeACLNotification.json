@@ -1,0 +1,16 @@
+{
+  "equipmentName": "W1001",
+  "equipmentType": "DOOR_LINE",
+  "locationId": "501",
+  "equipmentStatus": [
+    {
+      "statusTimestamp": "2020-12-18T17:35:50.324Z",
+      "status": "LABEL_LOW",
+      "severity": "WARNING",
+      "componentId": "1",
+      "cleared": false,
+      "displayMessage": "Label low",
+      "zone": 4
+    }
+  ]
+}

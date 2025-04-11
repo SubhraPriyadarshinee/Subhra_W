@@ -1,0 +1,175 @@
+{
+  "trackingId": "d065510000000000200234832",
+  "distributions": [
+    {
+      "orderId": "83ad334c-18db-4e21-a1f6-452099a98255",
+      "allocQty": 6,
+      "item": {
+        "itemNbr": 579086387,
+        "baseDivisionCode": "WM",
+        "financialReportingGroup": "US",
+        "reportingGroup": "US"
+      }
+    },
+    {
+      "orderId": "23add34c-g8db-6e21-a1f6-452099a9e42",
+      "allocQty": 6,
+      "item": {
+        "itemNbr": 579086387,
+        "baseDivisionCode": "WM",
+        "financialReportingGroup": "US",
+        "reportingGroup": "US"
+      }
+    }
+  ],
+  "ctrType": "Vendor Pack",
+  "inventoryStatus": "PICKED",
+  "ctrDestination": {
+    "buNumber": 6094,
+    "countryCode": "US"
+  },
+  "finalDestination": {
+    "buNumber": 6094,
+    "countryCode": "US"
+  },
+  "outboundChannelMethod": "WFS",
+  "ctrReusable": false,
+  "ctrShippable": true,
+  "ctrLabel": {
+    "headers": {
+      "WMT-CorrelationId": "c193e31a-ac33-413c-a420-9f6cbdd02e82",
+      "facilityCountryCode": "US",
+      "facilityNum": "6561"
+    },
+    "clientId": "AllocPlanner",
+    "printRequests": [
+      {
+        "labelIdentifier": "d065510000000000200234832",
+        "formatName": "wfs_receiving_format",
+        "data": [
+          {
+            "key": "LPN",
+            "value": "d065510000000000200234832"
+          },
+          {
+            "key": "DESTINATION",
+            "value": "06094 US"
+          },
+          {
+            "key": "ITEM",
+            "value": "579086387"
+          },
+          {
+            "key": "QTY",
+            "value": ""
+          },
+          {
+            "key": "UPCBAR",
+            "value": "00032247267847"
+          },
+          {
+            "key": "DESC1",
+            "value": "Item Desc1"
+          },
+          {
+            "key": "DESC2",
+            "value": "Item Desc2"
+          },
+          {
+            "key": "FULLUSERID",
+            "value": "rcvUser"
+          },
+          {
+            "key": "PACK",
+            "value": "12"
+          },
+          {
+            "key": "SIZE",
+            "value": "1.0EA"
+          },
+          {
+            "key": "COLOR",
+            "value": "CLR"
+          },
+          {
+            "key": "POCODE",
+            "value": "GO"
+          },
+          {
+            "key": "PO",
+            "value": "ICC120026"
+          },
+          {
+            "key": "VENDORID",
+            "value": "123"
+          },
+          {
+            "key": "POLINE",
+            "value": "1"
+          },
+          {
+            "key": "POEVENT",
+            "value": ""
+          },
+          {
+            "key": "REPRINT",
+            "value": ""
+          },
+          {
+            "key": "HAZMAT",
+            "value": "H"
+          },
+          {
+            "key": "STOREZONE",
+            "value": ""
+          },
+          {
+            "key": "EVENTCHAR",
+            "value": " "
+          },
+          {
+            "key": "PRINTER",
+            "value": ""
+          },
+          {
+            "key": "CPQTY",
+            "value": "12"
+          },
+          {
+            "key": "DEPT",
+            "value": ""
+          },
+          {
+            "key": "CHANNEL",
+            "value": "WFS"
+          },
+          {
+            "key": "PACKTYPE",
+            "value": "CP"
+          },
+          {
+            "key": "DSDC",
+            "value": ""
+          },
+          {
+            "key": "ORIGIN",
+            "value": "6561"
+          },
+          {
+            "key": "DELIVERY",
+            "value": "100026"
+          },
+          {
+            "key": "DOOR",
+            "value": "109"
+          },
+          {
+            "key": "TRANSFERPO",
+            "value": "TICC120026"
+          }
+        ],
+        "ttlInHours": 72
+      }
+    ]
+  }
+}

@@ -1,0 +1,371 @@
+instances:
+  "cell000":
+    build:
+      artifact: uwms-receiving
+      skip: true
+    deploy:
+      skip: false
+      gslb:
+        httpPortEnabled: true
+        httpsPortEnabled: true
+        healthCheckDefaults:
+          expectedStatus: 200
+          timeout: 5
+          retryDelay: 5
+          probeInterval: 20
+          failureThreshold: 2
+        strategy: stage
+        enabled: true
+        lbRoutings:
+          dev-cell000:
+            cnames:
+              - gls-atlas-uwms-receiving-dev-cell000.walmart.com
+              - receiving-api.prod.us.walmart.net
+            matchStages: [ dev-cell000 ]
+          qa-cell000:
+            cnames:
+              - gls-atlas-uwms-receiving-qa-cell000.walmart.com
+              - receiving-api-qa.prod.us.walmart.net
+            matchStages: [ qa-cell000 ]
+          stg-int-cell000:
+            cnames:
+              - gls-atlas-uwms-receiving-stg-int-cell000.walmart.com
+              - receiving-api-stg-int.prod.us.walmart.net
+            matchStages: [ stg-int-cell000 ]
+          amb-stg-int-cell001:
+            cnames:
+              - gls-atlas-uwms-receiving-amb-stg-int-cell001.walmart.com
+              - receiving-api-amb-stg-int.prod.us.walmart.net
+            matchStages: [ amb-stg-int-cell001 ]
+          stg-uat-cell000:
+            cnames:
+              - gls-atlas-uwms-receiving-stg-uat-cell000.walmart.com
+              - receiving-stg-witron.prod.us.walmart.net
+            matchStages: [ stg-uat-cell000 ]
+          perf-cell000:
+            cnames:
+              - gls-atlas-uwms-receiving-perf-cell000.walmart.com
+              - receiving-stg-api.prod.us.walmart.net
+            matchStages: [ perf-cell000 ]
+          prod-cell010:
+            cnames:
+              - gls-atlas-uwms-receiving-prod-cell010.walmart.com
+            matchStages: [ prod-cell010 ]
+          prod-cell000:
+            cnames:
+              - gls-atlas-uwms-receiving-prod-cell000.walmart.com
+              - receiving-api-prod.prod.us.walmart.net
+            matchStages: [ prod-cell000 ]
+          prod-cell002:
+            cnames:
+              - gls-atlas-uwms-receiving-prod-cell002.walmart.com
+              - atlas-store-receiving.prod.us.walmart.net
+            matchStages: [ prod-cell002 ]
+          prod-cell003:
+            cnames:
+              - gls-atlas-uwms-receiving-prod-cell003.walmart.com
+            matchStages: [ prod-cell003 ]
+          gdc-prod-cell010:
+            cnames:
+              - gls-atlas-uwms-receiving-wm-gdc-cell010.prod.walmart.com
+              - atlas-gdc-receiving.prod.us.walmart.net
+            matchStages: [ gdc-prod-cell010 ]
+      stages:
+        - name: dev-cell000
+          helm:
+            values:
+              env:
+                JAVA_OPTS: >-
+                  -Xms2048M
+                  -Xmx2048M
+                  -XX:+UseParNewGC
+                  -XX:+UseConcMarkSweepGC
+                  -XX:NewSize=512M
+                  -XX:MaxMetaspaceSize=256M
+                  -Djsse.enableSNIExtension=true
+                  -Druntime.context.environmentType=dev
+                  -Druntime.context.environment=dev
+                  -Druntime.context.appName=receiving-api
+                  -Druntime.context.system.property.override.enabled=true
+                  -Dscm.snapshot.enabled=true
+                  -Dscm.root.dir=/tmp/scm
+                  -Dscm.print.summary.onchange=true
+                  -Dscm.print.detailed.summary=true
+                  -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+                  -Dspring.config.use-legacy-processing=true
+                  -DDATACENTER={{$.kittExec.currentCluster.zone}}
+                  -DstageName=dev
+                  -Dplatform=wcnp
+
+        - name: qa-cell000
+          helm:
+            values:
+              env:
+                JAVA_OPTS: >-
+                  -Xms2048M
+                  -Xmx2048M
+                  -XX:+UseParNewGC
+                  -XX:+UseConcMarkSweepGC
+                  -XX:NewSize=512M
+                  -XX:MaxMetaspaceSize=256M
+                  -Djsse.enableSNIExtension=true
+                  -Druntime.context.environmentType=qa
+                  -Druntime.context.environment=QA
+                  -Druntime.context.appName=receiving-api
+                  -Druntime.context.system.property.override.enabled=true
+                  -Dscm.snapshot.enabled=true
+                  -Dscm.root.dir=/tmp/scm
+                  -Dscm.print.summary.onchange=true
+                  -Dscm.print.detailed.summary=true
+                  -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+                  -Dspring.config.use-legacy-processing=true
+                  -DDATACENTER={{$.kittExec.currentCluster.zone}}
+                  -Dplatform=wcnp
+
+        - name: stg-int-cell000
+          helm:
+            values:
+              env:
+                JAVA_OPTS: >-
+                  -Xms2048M
+                  -Xmx2048M
+                  -XX:+UseParNewGC
+                  -XX:+UseConcMarkSweepGC
+                  -XX:NewSize=512M
+                  -XX:MaxMetaspaceSize=256M
+                  -Djsse.enableSNIExtension=true
+                  -Druntime.context.environmentType=stg
+                  -Druntime.context.environment=stg-int
+                  -Druntime.context.appName=receiving-api
+                  -Druntime.context.system.property.override.enabled=true
+                  -Dscm.snapshot.enabled=true
+                  -Dscm.root.dir=/tmp/scm
+                  -Dscm.print.summary.onchange=true
+                  -Dscm.print.detailed.summary=true
+                  -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+                  -Dspring.config.use-legacy-processing=true
+                  -DDATACENTER={{$.kittExec.currentCluster.zone}}
+                  -Dplatform=wcnp
+
+        - name: amb-stg-int-cell001
+          helm:
+            values:
+              env:
+                JAVA_OPTS: >-
+                  -Xms2048M
+                  -Xmx2048M
+                  -XX:+UseParNewGC
+                  -XX:+UseConcMarkSweepGC
+                  -XX:NewSize=512M
+                  -XX:MaxMetaspaceSize=256M
+                  -Djsse.enableSNIExtension=true
+                  -Druntime.context.environmentType=stg
+                  -Druntime.context.environment=amb-stg-int
+                  -Druntime.context.appName=receiving-api
+                  -Druntime.context.system.property.override.enabled=true
+                  -Dscm.snapshot.enabled=true
+                  -Dscm.root.dir=/tmp/scm
+                  -Dscm.print.summary.onchange=true
+                  -Dscm.print.detailed.summary=true
+                  -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+                  -Dspring.config.use-legacy-processing=true
+                  -DDATACENTER={{$.kittExec.currentCluster.zone}}
+                  -Dplatform=wcnp
+
+        - name: stg-uat-cell000
+          helm:
+            values:
+              env:
+                JAVA_OPTS: >-
+                  -Xms2048M
+                  -Xmx2048M
+                  -XX:+UseParNewGC
+                  -XX:+UseConcMarkSweepGC
+                  -XX:NewSize=512M
+                  -XX:MaxMetaspaceSize=256M
+                  -Djsse.enableSNIExtension=true
+                  -Druntime.context.environmentType=stg
+                  -Druntime.context.environment=stg-uat
+                  -Druntime.context.appName=receiving-api
+                  -Druntime.context.system.property.override.enabled=true
+                  -Dscm.snapshot.enabled=true
+                  -Dscm.root.dir=/tmp/scm
+                  -Dscm.print.summary.onchange=true
+                  -Dscm.print.detailed.summary=true
+                  -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+                  -Dspring.config.use-legacy-processing=true
+                  -DDATACENTER={{$.kittExec.currentCluster.zone}}
+                  -Dplatform=wcnp
+
+        - name: perf-cell000
+          helm:
+            values:
+              env:
+                DYNATRACE_ENABLED: true
+                JAVA_OPTS: >-
+                  -Xms6144m
+                  -Xmx6144m
+                  -XX:+UseParNewGC
+                  -XX:+UseConcMarkSweepGC
+                  -XX:NewSize=3072M
+                  -XX:MaxMetaspaceSize=256M
+                  -Djsse.enableSNIExtension=true
+                  -Druntime.context.environmentType=stg
+                  -Druntime.context.environment=STG
+                  -Druntime.context.appName=receiving-api
+                  -Druntime.context.system.property.override.enabled=true
+                  -Dscm.snapshot.enabled=true
+                  -Dscm.root.dir=/tmp/scm
+                  -Dscm.print.summary.onchange=true
+                  -Dscm.print.detailed.summary=true
+                  -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+                  -Dspring.config.use-legacy-processing=true
+                  -DDATACENTER={{$.kittExec.currentCluster.zone}}
+                  -Dplatform=wcnp
+
+        - name: prod-cell002
+          helm:
+            values:
+              env:
+                DYNATRACE_ENABLED: true
+                JAVA_OPTS: >-
+                  -Xms6144m
+                  -Xmx6144m
+                  -XX:+UseParNewGC
+                  -XX:+UseConcMarkSweepGC
+                  -XX:NewSize=3072M
+                  -XX:MaxMetaspaceSize=256M
+                  -Djsse.enableSNIExtension=true
+                  -Druntime.context.environmentType=prod
+                  -Druntime.context.environment=PROD
+                  -Druntime.context.appName=receiving-api
+                  -Druntime.context.system.property.override.enabled=true
+                  -Dscm.snapshot.enabled=true
+                  -Dscm.root.dir=/tmp/scm
+                  -Dscm.print.summary.onchange=true
+                  -Dscm.print.detailed.summary=true
+                  -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+                  -Dspring.config.use-legacy-processing=true
+                  -DDATACENTER={{$.kittExec.currentCluster.zone}}
+                  -Dplatform=wcnp
+                  -DfacilityCountryCode=us
+                  -DcellName=Cell002-USSouthCentral-USWest
+
+        - name: prod-cell010
+          helm:
+            values:
+              env:
+                DYNATRACE_ENABLED: true
+                JAVA_OPTS: >-
+                  -Xms6144m
+                  -Xmx6144m
+                  -XX:+UseParNewGC
+                  -XX:+UseConcMarkSweepGC
+                  -XX:NewSize=3072M
+                  -XX:MaxMetaspaceSize=256M
+                  -Djsse.enableSNIExtension=true
+                  -Druntime.context.environmentType=prod
+                  -Druntime.context.environment=PROD
+                  -Druntime.context.appName=receiving-api
+                  -Druntime.context.system.property.override.enabled=true
+                  -Dscm.snapshot.enabled=true
+                  -Dscm.root.dir=/tmp/scm
+                  -Dscm.print.summary.onchange=true
+                  -Dscm.print.detailed.summary=true
+                  -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+                  -Dspring.config.use-legacy-processing=true
+                  -DDATACENTER={{$.kittExec.currentCluster.zone}}
+                  -Dplatform=wcnp
+                  -DfacilityCountryCode=us
+                  -DcellName=Cell010-USEast-USSouthCentral
+
+        - name: prod-cell000
+          helm:
+            values:
+              env:
+                DYNATRACE_ENABLED: true
+                JAVA_OPTS: >-
+                  -Xms6144m
+                  -Xmx6144m
+                  -XX:+UseParNewGC
+                  -XX:+UseConcMarkSweepGC
+                  -XX:NewSize=3072M
+                  -XX:MaxMetaspaceSize=256M
+                  -Djsse.enableSNIExtension=true
+                  -Druntime.context.environmentType=prod
+                  -Druntime.context.environment=PROD
+                  -Druntime.context.appName=receiving-api
+                  -Druntime.context.system.property.override.enabled=true
+                  -Dscm.snapshot.enabled=true
+                  -Dscm.root.dir=/tmp/scm
+                  -Dscm.print.summary.onchange=true
+                  -Dscm.print.detailed.summary=true
+                  -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+                  -Dspring.config.use-legacy-processing=true
+                  -DDATACENTER={{$.kittExec.currentCluster.zone}}
+                  -Dplatform=wcnp
+                  -DfacilityCountryCode=us
+                  -DcellName=Cell000-USSouthCentral-USWest
+
+        - name: prod-cell003
+          helm:
+            values:
+              env:
+                DYNATRACE_ENABLED: true
+                JAVA_OPTS: >-
+                  -Xms6144m
+                  -Xmx6144m
+                  -XX:+UseParNewGC
+                  -XX:+UseConcMarkSweepGC
+                  -XX:NewSize=3072M
+                  -XX:MaxMetaspaceSize=256M
+                  -Djsse.enableSNIExtension=true
+                  -Druntime.context.environmentType=prod
+                  -Druntime.context.environment=PROD
+                  -Druntime.context.appName=receiving-api
+                  -Druntime.context.system.property.override.enabled=true
+                  -Dscm.snapshot.enabled=true
+                  -Dscm.root.dir=/tmp/scm
+                  -Dscm.print.summary.onchange=true
+                  -Dscm.print.detailed.summary=true
+                  -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+                  -Dspring.config.use-legacy-processing=true
+                  -DDATACENTER={{$.kittExec.currentCluster.zone}}
+                  -Dplatform=wcnp
+                  -DfacilityCountryCode=us
+                  -DcellName=Cell003-USSouthCentral-USWest
+
+        - name: gdc-prod-cell010
+          helm:
+            values:
+              env:
+                DYNATRACE_ENABLED: true
+                JAVA_OPTS: >-
+                  -Xms6144m
+                  -Xmx6144m
+                  -XX:+UseParNewGC
+                  -XX:+UseConcMarkSweepGC
+                  -XX:NewSize=3072M
+                  -XX:MaxMetaspaceSize=256M
+                  -Djsse.enableSNIExtension=true
+                  -Druntime.context.environmentType=prod
+                  -Druntime.context.environment=PROD
+                  -Druntime.context.appName=receiving-api
+                  -Druntime.context.system.property.override.enabled=true
+                  -Dscm.snapshot.enabled=true
+                  -Dscm.root.dir=/tmp/scm
+                  -Dscm.print.summary.onchange=true
+                  -Dscm.print.detailed.summary=true
+                  -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+                  -Dspring.config.use-legacy-processing=true
+                  -DDATACENTER={{$.kittExec.currentCluster.zone}}
+                  -Dplatform=wcnp
+                  -DfacilityCountryCode=us
+                  -DcellName=gdc-Cell010-USEast-USSouthCentral
+
+build:
+  artifact: uwms-receiving
+deploy:
+  skip: true
+  gslb:
+    strategy: stage

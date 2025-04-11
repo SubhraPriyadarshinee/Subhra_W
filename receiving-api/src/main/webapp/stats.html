@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+
+    <title>Atlas Receiving Stats</title>
+
+    <link rel="stylesheet" th:href="@{/resources/css/bootstrap-4.4.1-dist/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/resources/css/style.css}">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+</head>
+<body class="container">
+<div class="dropdown d-flex justify-content-end mb-2">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" th:text="${userName}">
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" th:href="@{${logoutRedirectUri}}">Logout</a>
+    </div>
+</div>
+<div class="card-report">
+    <div class="card-body">
+        <p class="h1 text-center">Atlas Receiving Stats</p>
+        <p class="h2 text-center" th:hidden="${isDashboardReportEnabled}">Dashboard report is currently disabled</p>
+        <div id="error" class="alert alert-danger" role="alert"></div>
+        <div id="success" class="alert alert-success" role="alert"></div>
+        <input type="hidden" id="userId" th:value="${userId}"/>
+
+        <div>
+            <form id="facilityForm" name='f'>
+                <div class="form-row d-flex justify-content-center">
+                    <div class="form-group col-sm-2 m-1">
+                        <label for="facilityNumFormSelect" class="row-form-label">Facility Number</label>
+                        <select class="form-control form-control-lg" id="facilityNumFormSelect">
+                            <option th:each="facilityNum : ${allFacilityNumbers}"
+                                    th:value="${facilityNum}"
+                                    th:utext="${facilityNum}"/>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-2 m-1">
+                        <label for="facilityCountryCodeFormSelect" class="row-form-label">Country Code</label>
+                        <select class="form-control form-control-lg" id="facilityCountryCodeFormSelect">
+                            <option th:each="facilityCountryCode : ${allFacilityCountryCodes}"
+                                    th:value="${facilityCountryCode}"
+                                    th:utext="${facilityCountryCode}"/>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-3 m-1">
+                        <label for="timeFrameFormSelect" class="row-form-label">Select time frame</label>
+                        <select class="form-control form-control-lg" id="timeFrameFormSelect" onchange="getDateTimeInUtc()">
+                            <option value="s">----Select----</option>
+                            <option value=1>Last 1 hrs</option>
+                            <option value=3>Last 3 hrs</option>
+                            <option value=6>Last 6 hrs</option>
+                            <option value=12>Last 12 hrs</option>
+                            <option value=24>Last 24 hrs</option>
+                            <option value=48>Last 48 hrs</option>
+                            <option value=72>Last 3 days</option>
+                            <option value=168>Last 1 week</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-3 m-1" th:hidden="${!isCustomTimeRangeEnabled}">
+                        <label for="datetimes" class="row-form-label">Select custom time range</label>
+                        <input type="text" id="datetimes" autocomplete="off" class="form-control-lg" placeholder="Select custom range" />
+                    </div>  &nbsp; &nbsp;
+                    <div class="form-group col-sm-1 m-1">
+                        <label></label>
+                        <button type="submit" id="getData" class="btn btn-lg btn-primary" th:disabled="${!isDashboardReportEnabled}">
+                            Search
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <hr>
+        <div id='ajax_loader' class="spinner-center">
+        <div class="spinner-border text-primary"></div>
+    </div>
+        <div class="row table-data justify-content-center">
+            <div class="row justify-content-center">
+                <table id="reportData" class="table table-responsive-md table-striped col-lg-5">
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+                <table id="reportData2" class="table table-responsive-md table-striped col-lg-5 ml-3">
+                    <tbody id="tableBody2">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer>
+    <!--  Bootstrap library  -->
+    <script th:src="@{/resources/css/bootstrap-4.4.1-dist/js/popper.min.js}"></script>
+    <script th:src="@{/resources/css/bootstrap-4.4.1-dist/js/bootstrap.min.js}"></script>
+
+    <!-- js file -->
+    <script th:src="@{/resources/js/stats.js}"></script>
+</footer>
+</body>
+</html>

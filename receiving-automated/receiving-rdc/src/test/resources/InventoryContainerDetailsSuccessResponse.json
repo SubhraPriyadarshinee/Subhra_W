@@ -1,0 +1,90 @@
+
+{
+  "trackingId": "001000132679203193",
+  "parentTrackingId": "005340506061494070",
+  "parentContainerType": "Pallet",
+  "locationName": "999",
+  "orgUnitId": 0,
+  "containerStatus": "AVAILABLE",
+  "childContainerIds": [],
+  "childContainersTrackingIdStatusMap": {},
+  "childContainerDetails": [],
+  "items": [
+    {
+      "itemNumber": 580407869,
+      "netItemWeight": 0.0,
+      "itemUnitCost": 0.0,
+      "purchaseCompanyId": 1,
+      "financialReportingGroup": "US",
+      "baseDivisionCode": "WM",
+      "totalQuantity": 144,
+      "physicalQuantity": 144,
+      "venPkQuantity": 12,
+      "warPkQuantity": 48,
+      "poNumbers": [
+        "9999999999"
+      ],
+      "venPkRatio": 12,
+      "warPkRatio": 3,
+      "rotateDate": "2024-01-24T00:00:00.000+0000",
+      "createUserId": "rcvuser",
+      "createDateLong": 1706138706599,
+      "allocatedQty": 0,
+      "availabletosellQty": 144,
+      "availableToPickQty": 0,
+      "frozenQty": 0,
+      "intransitQty": 0,
+      "pickedQty": 0,
+      "channelType": "SSTKU",
+      "availableNonPickableQty": 0,
+      "onHoldQty": 0,
+      "replenishedQty": 0,
+      "rotateDateLong": 1706054400000,
+      "baseUri": "",
+      "baseItemUri": "",
+      "orderDetails": [
+        {
+          "orderId": "af68967c-5afb-4219-a9d3-37776ccde610",
+          "orderQty": 144,
+          "destNbr": "100"
+        }
+      ],
+      "itemQtyUOM": "EACHES",
+      "purchaseReferenceLineNumbers": [
+        1
+      ],
+      "returnOrderLineNumber": 0,
+      "saleOrderLineNumber": 0,
+      "packTypeCode": "BP",
+      "podetails": [
+        {
+          "poNum": "9999999999",
+          "purchaseReferenceLineNumber": 1,
+          "poQty": 144
+        }
+      ]
+    }
+  ],
+  "createUserId": "rcvuser",
+  "rotateDate": 1706054400000,
+  "containerCreateDate": 1706138706599,
+  "deliveryNumber": "12345065",
+  "destinationLocationId": 100,
+  "isShippable": true,
+  "isReusable": false,
+  "lastChangeUserId": "rcvuser",
+  "lastChangeDate": 1706138706599,
+  "doorNumber": "",
+  "containerType": "Pallet",
+  "containerTypeAbbr": "Pallet",
+  "netWeight": 0.0,
+  "netWeightUOM": "LB",
+  "netCube": 0.0,
+  "netCubeUOM": "CF",
+  "sourceSystem": "ATLAS",
+  "labelType": "XDK1",
+  "slottedTimestamp": 0,
+  "isVirtualContainer": false,
+  "subCenterId": 0,
+  "storeNumber": "100"
+}

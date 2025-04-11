@@ -1,0 +1,51 @@
+{
+    "rcvdQty": 210,
+    "rcvdQtyUom": "ZA",
+    "finalizedTime": "2020-02-10T05:00:00.000Z",
+    "userId": "a0r02b1",
+    "lines": [
+        {
+            "lineNumber": 1,
+            "rcvdQty": 50,
+            "rcvdQtyUom": "ZA",
+            "shortage": {
+                "quantity": 15,
+                "uom": "ZA",
+                "code": "S10"
+            },
+            "damage": {
+                "quantity": 5,
+                "uom": "ZA",
+                "code": "D10",
+                "claimType": "CARRIER"
+            },
+            "reject": {
+                "quantity": 10,
+                "uom": "ZA",
+                "code": "R10",
+                "comment": "Rejected because variable weight is above threshold percentage"
+            }
+        },
+        {
+            "lineNumber": 2,
+            "rcvdQty": 150,
+            "rcvdQtyUom": "ZA",
+            "overage": {
+                "quantity": 15,
+                "uom": "ZA",
+                "code": "O10"
+            }
+        },
+        {
+            "lineNumber": 3,
+            "rcvdQty": 10,
+            "rcvdQtyUom": "ZA",
+            "damage": {
+                "quantity": 5,
+                "uom": "ZA",
+                "code": "D11",
+                "claimType": "CARRIER"
+            }
+        }
+    ]
+}

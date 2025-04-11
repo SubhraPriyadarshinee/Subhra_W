@@ -1,0 +1,53 @@
+{
+  "trackingId": "c32987000000000000000001",
+  "messageId": "c32987000000000000000001",
+  "location": "CP03FL_C-1",
+  "deliveryNumber": 42935742,
+  "facility": {
+    "countryCode": "US",
+    "buNumber": "32897"
+  },
+  "containerType": "PALLET",
+  "ctrShippable": false,
+  "ctrReusable": false,
+  "inventoryStatus": "WORK_IN_PROGRESS",
+  "publishTs": "2024-07-29T19:08:58.040Z",
+  "createTs": "2024-07-29T19:08:58.040Z",
+  "createUser": "rcvuser",
+  "lastChangedTs": "2024-07-29T19:08:58.040Z",
+  "lastChangedUser": "rcvuser",
+  "isAudited": false,
+  "hasChildContainers": false,
+  "onConveyor": true,
+  "isConveyable": true,
+  "containerException": "NA",
+  "contents": [
+    {
+      "purchaseReferenceNumber": "3931400987",
+      "purchaseReferenceLineNumber": 1,
+      "inboundChannelMethod": "CROSSU",
+      "totalPurchaseReferenceQty": 1400,
+      "purchaseCompanyId": 1,
+      "deptNumber": 10,
+      "itemNumber": 1090110,
+      "gtin": "10074451115207",
+      "quantity": 1,
+      "quantityUOM": "EA",
+      "vnpkQty": 1,
+      "whpkQty": 1,
+      "vendorPackCost": "20.440000534057617",
+      "whpkSell": "20.65999984741211",
+      "baseDivisionCode": "WM",
+      "financialReportingGroupCode": "US",
+      "vnpkWgtQty": 4,
+      "vnpkWgtUom": "LB",
+      "vnpkcbqty": 0.322,
+      "vnpkcbuomcd": "CF",
+      "description": "BM INSTACLING 5%",
+      "actualTi": 14,
+      "actualHi": 20,
+      "lastChangedTs": "2024-07-29T19:08:58.041Z",
+      "isAudited": false
+    }
+  ]
+}

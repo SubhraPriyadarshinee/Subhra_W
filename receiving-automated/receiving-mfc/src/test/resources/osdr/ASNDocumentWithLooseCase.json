@@ -1,0 +1,1138 @@
+{
+  "delivery": {
+    "deliveryNumber": 55040505,
+    "scheduled": "2022-09-05T10:14:40.466Z",
+    "statusInformation": {
+      "status": "WRK"
+    }
+  },
+  "shipment": {
+    "documentId": "test3-090560355504_20220905_6035_DC_US",
+    "shipmentNumber": "test3-090560355504",
+    "documentType": "ASN",
+    "documentRevision": 0,
+    "documentIngestTime": "2022-09-05T10:14:38.283Z",
+    "shipmentDate": "2022-09-05",
+    "source": {
+      "number": "6035",
+      "numberType": "WALMART",
+      "type": "DC",
+      "countryCode": "US",
+      "shipperName": "WM"
+    },
+    "destination": {
+      "type": "STORE",
+      "number": 5504,
+      "countryCode": "US"
+    },
+    "shipmentDetail": {
+      "trailerNumber": "57473734",
+      "trailerSealNumber": "9300000905",
+      "loadNumber": "test3-0905",
+      "reportedDeliveryNumber": 55040505,
+      "shippingDate": "2022-09-05",
+      "carrierId": "WM"
+    }
+  },
+  "packs": [
+    {
+      "packNumber": "205504010606400979002",
+      "palletNumber": "205504010606400979002",
+      "invoice": {
+        "invoiceNumber": "6064013196"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "STORE",
+        "number": 5504,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "9417492",
+          "reportedProductIdType": "IN",
+          "itemNumber": 9417492,
+          "gtin": "00098304100106",
+          "itemDescription": "CV BUTR GAR CRTN 5Z",
+          "itemDepartment": "94",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "inventoryDetail": {
+            "reportedQuantity": 5.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 5.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00098304100106",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "6064013196",
+            "invoiceLineNumber": 6
+          },
+          "replenishmentCode": "MARKET_FULFILLMENT_CENTER",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 2.18,
+            "derivedCost": 1.0942,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        }
+      ],
+      "shipmentNumber": "test3-090560355504"
+    },
+    {
+      "packNumber": "015504010606400978998",
+      "palletNumber": "015504010606400978998",
+      "invoice": {
+        "invoiceNumber": "6064013196"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "STORE",
+        "number": 5504,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "584262600",
+          "reportedProductIdType": "IN",
+          "itemNumber": 584262600,
+          "gtin": "00072392327232",
+          "itemDescription": "STARBURST STRAWBERRY",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "inventoryDetail": {
+            "reportedQuantity": 4.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 4.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00072392327232",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "6064013196",
+            "invoiceLineNumber": 5
+          },
+          "replenishmentCode": "MARKET_FULFILLMENT_CENTER",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 1.08,
+            "derivedCost": 0.67,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        }
+      ],
+      "shipmentNumber": "test3-090560355504"
+    },
+    {
+      "packNumber": "015504010606400978999",
+      "palletNumber": "015504010606400978999",
+      "invoice": {
+        "invoiceNumber": "6064013286"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "STORE",
+        "number": 5504,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "550513102",
+          "reportedProductIdType": "IN",
+          "itemNumber": 550513102,
+          "gtin": "00076150232202",
+          "itemDescription": "ACTII 94 FATFREE 12",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "inventoryDetail": {
+            "reportedQuantity": 8.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 8.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00076150232202",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "6064013286",
+            "invoiceLineNumber": 5
+          },
+          "replenishmentCode": "UNKNOWN",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 5.16,
+            "derivedCost": 3.14,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        }
+      ],
+      "shipmentNumber": "test3-090560355504"
+    },
+    {
+      "packNumber": "015504010606400979005",
+      "palletNumber": "015504010606400979005",
+      "invoice": {
+        "invoiceNumber": "6064013196"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "STORE",
+        "number": 5504,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "9595633",
+          "reportedProductIdType": "IN",
+          "itemNumber": 9595633,
+          "gtin": "00049000050103",
+          "itemDescription": "COKE 2LTR",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "inventoryDetail": {
+            "reportedQuantity": 4.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 4.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00049000050103",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "6064013196",
+            "invoiceLineNumber": 7
+          },
+          "replenishmentCode": "MARKET_FULFILLMENT_CENTER",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 25.0,
+            "derivedCost": 6.25,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        }
+      ],
+      "shipmentNumber": "test3-090560355504"
+    },
+    {
+      "packNumber": "015504010606400979003",
+      "palletNumber": "015504010606400979003",
+      "invoice": {
+        "invoiceNumber": "6064013286"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "STORE",
+        "number": 5504,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "550483278",
+          "reportedProductIdType": "IN",
+          "itemNumber": 550483278,
+          "gtin": "00078742154640",
+          "itemDescription": "GV CHOC SYRUP 48OZ",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "inventoryDetail": {
+            "reportedQuantity": 5.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 5.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00078742154640",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "6064013286",
+            "invoiceLineNumber": 1
+          },
+          "replenishmentCode": "UNKNOWN",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 3.78,
+            "derivedCost": 2.5817,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        }
+      ],
+      "shipmentNumber": "test3-090560355504"
+    },
+    {
+      "packNumber": "015504010606400978994",
+      "palletNumber": "015504010606400978994",
+      "invoice": {
+        "invoiceNumber": "6064013196"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "STORE",
+        "number": 5504,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "550512978",
+          "reportedProductIdType": "IN",
+          "itemNumber": 550512978,
+          "gtin": "00027000523803",
+          "itemDescription": "OR BUTTER 12CT",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "inventoryDetail": {
+            "reportedQuantity": 5.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 5.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00027000523803",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "6064013196",
+            "invoiceLineNumber": 1
+          },
+          "replenishmentCode": "MARKET_FULFILLMENT_CENTER",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 6.36,
+            "derivedCost": 4.22,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        }
+      ],
+      "shipmentNumber": "test3-090560355504"
+    },
+    {
+      "packNumber": "015504010606400978995",
+      "palletNumber": "015504010606400978995",
+      "invoice": {
+        "invoiceNumber": "6064013196"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "STORE",
+        "number": 5504,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "550386849",
+          "reportedProductIdType": "IN",
+          "itemNumber": 550386849,
+          "gtin": "00083900006488",
+          "itemDescription": "GOLD PEAK UNSWT 89OZ",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00083900006488",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "6064013196",
+            "invoiceLineNumber": 2
+          },
+          "replenishmentCode": "MARKET_FULFILLMENT_CENTER",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 3.48,
+            "derivedCost": 2.265,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        },
+        {
+          "reportedProductId": "552592432",
+          "reportedProductIdType": "IN",
+          "itemNumber": 552592432,
+          "gtin": "00070200556027",
+          "itemDescription": "DIP LT CRML 16.5Z MZ",
+          "itemDepartment": "94",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "inventoryDetail": {
+            "reportedQuantity": 4.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 4.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00070200556027",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "6064013196",
+            "invoiceLineNumber": 3
+          },
+          "replenishmentCode": "MARKET_FULFILLMENT_CENTER",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 4.18,
+            "derivedCost": 2.17,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        }
+      ],
+      "shipmentNumber": "test3-090560355504"
+    },
+    {
+      "packNumber": "015504010606400979001",
+      "palletNumber": "015504010606400979001",
+      "invoice": {
+        "invoiceNumber": "6064013196"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "STORE",
+        "number": 5504,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "9298790",
+          "reportedProductIdType": "IN",
+          "itemNumber": 9298790,
+          "gtin": "00078742434070",
+          "itemDescription": "GV 100% PRUNE 64OZ",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "inventoryDetail": {
+            "reportedQuantity": 6.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 6.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00078742434070",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "6064013196",
+            "invoiceLineNumber": 4
+          },
+          "replenishmentCode": "MARKET_FULFILLMENT_CENTER",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 5.42,
+            "derivedCost": 3.4975,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        }
+      ],
+      "shipmentNumber": "test3-090560355504"
+    },
+    {
+      "packNumber": "015504010606400978997",
+      "palletNumber": "015504010606400978997",
+      "invoice": {
+        "invoiceNumber": "6064013286"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "STORE",
+        "number": 5504,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "9595604",
+          "reportedProductIdType": "IN",
+          "itemNumber": 9595604,
+          "gtin": "00049000050165",
+          "itemDescription": "CH COKE 2LTR",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "inventoryDetail": {
+            "reportedQuantity": 6.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 6.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00049000050165",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "6064013286",
+            "invoiceLineNumber": 3
+          },
+          "replenishmentCode": "UNKNOWN",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 25.0,
+            "derivedCost": 6.25,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        }
+      ],
+      "shipmentNumber": "test3-090560355504"
+    },
+    {
+      "packNumber": "015504010606400979000",
+      "palletNumber": "015504010606400979000",
+      "invoice": {
+        "invoiceNumber": "6064013286"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "STORE",
+        "number": 5504,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "550338364",
+          "reportedProductIdType": "IN",
+          "itemNumber": 550338364,
+          "gtin": "00043000028261",
+          "itemDescription": "KA JAMMERS CHERRY",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "inventoryDetail": {
+            "reportedQuantity": 6.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 6.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00043000028261",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "6064013286",
+            "invoiceLineNumber": 7
+          },
+          "replenishmentCode": "UNKNOWN",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 2.5,
+            "derivedCost": 1.8625,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        }
+      ],
+      "shipmentNumber": "test3-090560355504"
+    },
+    {
+      "packNumber": "015504010606400979004",
+      "palletNumber": "015504010606400979004",
+      "invoice": {
+        "invoiceNumber": "6064013286"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "STORE",
+        "number": 5504,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "579482709",
+          "reportedProductIdType": "IN",
+          "itemNumber": 579482709,
+          "gtin": "00681131354806",
+          "itemDescription": "DIP CHUNKY GUAC 8Z",
+          "itemDepartment": "94",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "inventoryDetail": {
+            "reportedQuantity": 12.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 12.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00681131354806",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "6064013286",
+            "invoiceLineNumber": 4
+          },
+          "replenishmentCode": "UNKNOWN",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 3.14,
+            "derivedCost": 1.53,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        }
+      ],
+      "shipmentNumber": "test3-090560355504"
+    },
+    {
+      "packNumber": "015504010606400979002",
+      "invoice": {
+        "invoiceNumber": "6064013286"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "STORE",
+        "number": 5504,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "557282701",
+          "reportedProductIdType": "IN",
+          "itemNumber": 557282701,
+          "gtin": "00078742159867",
+          "itemDescription": "GV OATMEAL 18OZ",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "inventoryDetail": {
+            "reportedQuantity": 5.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 5.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00078742159867",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "6064013286",
+            "invoiceLineNumber": 6
+          },
+          "replenishmentCode": "UNKNOWN",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 1.62,
+            "derivedCost": 1.1567,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        }
+      ],
+      "shipmentNumber": "test3-090560355504"
+    },
+    {
+      "packNumber": "200000000000000658",
+      "invoice": {
+        "invoiceNumber": "6064013286"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "handledOnBehalfOf": {
+        "type": "STORE",
+        "number": 5504,
+        "countryCode": "US"
+      },
+      "items": [
+        {
+          "reportedProductId": "587892141",
+          "reportedProductIdType": "IN",
+          "itemNumber": 587892141,
+          "gtin": "00722430199986",
+          "itemDescription": "GTS TROP VARIETY 6PK",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "inventoryDetail": {
+            "reportedQuantity": 5.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 5.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00722430199986",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "6064013286",
+            "invoiceLineNumber": 2
+          },
+          "replenishmentCode": "UNKNOWN",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 17.48,
+            "derivedCost": 12.21,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        }
+      ],
+      "shipmentNumber": "test3-090560355504"
+    }
+  ],
+  "items": [
+    {
+      "consumableGTIN": "00072392327232",
+      "orderableGTIN": "10072392327239",
+      "warehousePackGTIN": "10072392327239",
+      "supplierStockId": "32723",
+      "palletTi": 35,
+      "palletHi": 8,
+      "conveyable": true,
+      "itemTypeCode": "20",
+      "vendorDepartment": "95",
+      "size": "0.43OZ",
+      "warehousePackQuantity": 12,
+      "orderableQuantity": 12,
+      "warehouseArea": "Dry Grocery",
+      "descriptions": [
+        "STARBURST STRAWBERRY",
+        "STARBURST STRAWBERRY"
+      ],
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "images": {
+          "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/c77da897-9da8-49ab-89e1-db8ae7fd99ef.6dcbd116e604d9f3c153c6eedd5e3896.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/c77da897-9da8-49ab-89e1-db8ae7fd99ef.6dcbd116e604d9f3c153c6eedd5e3896.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+          "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/c77da897-9da8-49ab-89e1-db8ae7fd99ef.6dcbd116e604d9f3c153c6eedd5e3896.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+          "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/c77da897-9da8-49ab-89e1-db8ae7fd99ef.6dcbd116e604d9f3c153c6eedd5e3896.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+          "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/c77da897-9da8-49ab-89e1-db8ae7fd99ef.6dcbd116e604d9f3c153c6eedd5e3896.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+        },
+        "variableWeightIndicator": false,
+        "warehouseAreaCode": 6,
+        "vnpkWeightUomCode": "LB",
+        "warehousePackSellAmt": 8.4,
+        "warehouseRotationTypeCode": 3,
+        "baseDivisionCode": "WM",
+        "vnpkCubeQty": 0.136,
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "vnpkCubeUom": "CF",
+        "mfcEnabled": true,
+        "replenishmentGroupNbr": 174153215,
+        "unitCostAmt": 0.63,
+        "chemicalIndicator": "N",
+        "vnpkWeightQty": 0.87,
+        "aerosolIndicator": "N",
+        "warehouseAreaDesc": "Dry Grocery",
+        "temperatureZone": "ambient"
+      },
+      "number": 584262600
+    },
+    {
+      "consumableGTIN": "00070200556027",
+      "orderableGTIN": "10070200556024",
+      "warehousePackGTIN": "10070200556024",
+      "supplierStockId": "55602",
+      "itemTypeCode": "20",
+      "vendorDepartment": "94",
+      "size": "16.5OZ",
+      "warehousePackQuantity": 12,
+      "orderableQuantity": 12,
+      "warehouseArea": "Fresh Deli",
+      "descriptions": [
+        "DIP LT CRML 16.5Z MZ",
+        "DIP LT CRML 16.5Z MZ"
+      ],
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "images": {
+          "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/3fae8603-3e07-42cb-b5a7-318a87155798.063ba1c60b5c0523d6d4a06525feda4e.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/3fae8603-3e07-42cb-b5a7-318a87155798.063ba1c60b5c0523d6d4a06525feda4e.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+          "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/3fae8603-3e07-42cb-b5a7-318a87155798.063ba1c60b5c0523d6d4a06525feda4e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+          "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/3fae8603-3e07-42cb-b5a7-318a87155798.063ba1c60b5c0523d6d4a06525feda4e.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+          "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/3fae8603-3e07-42cb-b5a7-318a87155798.063ba1c60b5c0523d6d4a06525feda4e.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+        },
+        "variableWeightIndicator": false,
+        "warehouseAreaCode": 2,
+        "warehousePackSellAmt": 26.04,
+        "warehouseRotationTypeCode": 2,
+        "baseDivisionCode": "WM",
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "mfcEnabled": true,
+        "replenishmentGroupNbr": 7531357,
+        "unitCostAmt": 2.17,
+        "chemicalIndicator": "N",
+        "aerosolIndicator": "N",
+        "warehouseAreaDesc": "Fresh Deli",
+        "temperatureZone": "ambient"
+      },
+      "number": 552592432
+    },
+    {
+      "consumableGTIN": "00078742434070",
+      "orderableGTIN": "10078742434077",
+      "warehousePackGTIN": "10078742434077",
+      "supplierStockId": "43407",
+      "palletTi": 12,
+      "palletHi": 5,
+      "conveyable": false,
+      "itemTypeCode": "20",
+      "vendorDepartment": "95",
+      "color": "NONE",
+      "size": "64.0 O",
+      "warehousePackQuantity": 8,
+      "orderableQuantity": 8,
+      "warehouseArea": "Dry Grocery",
+      "descriptions": [
+        "GV 100% PRUNE 64OZ",
+        "GV 100% PRUNE 64OZ"
+      ],
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "images": {
+          "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/20ea5810-6565-4486-b148-b2dfc061927e.b2b74dcb11e1935d92fbad9d2699c703.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/20ea5810-6565-4486-b148-b2dfc061927e.b2b74dcb11e1935d92fbad9d2699c703.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+          "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/20ea5810-6565-4486-b148-b2dfc061927e.b2b74dcb11e1935d92fbad9d2699c703.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+          "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/20ea5810-6565-4486-b148-b2dfc061927e.b2b74dcb11e1935d92fbad9d2699c703.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+          "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/20ea5810-6565-4486-b148-b2dfc061927e.b2b74dcb11e1935d92fbad9d2699c703.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+        },
+        "variableWeightIndicator": false,
+        "warehouseAreaCode": 6,
+        "vnpkWeightUomCode": "LB",
+        "warehousePackSellAmt": 25.46,
+        "warehouseRotationTypeCode": 3,
+        "baseDivisionCode": "WM",
+        "vnpkCubeQty": 1.228,
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "vnpkCubeUom": "CF",
+        "mfcEnabled": true,
+        "replenishmentGroupNbr": 498706,
+        "unitCostAmt": 3.045,
+        "chemicalIndicator": "N",
+        "vnpkWeightQty": 39.17,
+        "aerosolIndicator": "N",
+        "warehouseAreaDesc": "Dry Grocery",
+        "temperatureZone": "ambient"
+      },
+      "number": 9298790
+    },
+    {
+      "consumableGTIN": "00098304100106",
+      "orderableGTIN": "10098304100103",
+      "warehousePackGTIN": "10098304100103",
+      "supplierStockId": "10010",
+      "palletTi": 12,
+      "palletHi": 10,
+      "conveyable": false,
+      "itemTypeCode": "20",
+      "vendorDepartment": "94",
+      "size": "5OZ",
+      "warehousePackQuantity": 12,
+      "orderableQuantity": 12,
+      "warehouseArea": "Dry Produce",
+      "descriptions": [
+        "CV BUTR GAR CRTN 5Z"
+      ],
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "images": {
+          "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/b5399388-715c-4d7a-b4bf-4348ff04fef4.0a0799aa1a6a6447af58837970e95f5b.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/b5399388-715c-4d7a-b4bf-4348ff04fef4.0a0799aa1a6a6447af58837970e95f5b.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+          "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/b5399388-715c-4d7a-b4bf-4348ff04fef4.0a0799aa1a6a6447af58837970e95f5b.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+          "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/b5399388-715c-4d7a-b4bf-4348ff04fef4.0a0799aa1a6a6447af58837970e95f5b.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+          "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/b5399388-715c-4d7a-b4bf-4348ff04fef4.0a0799aa1a6a6447af58837970e95f5b.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+        },
+        "variableWeightIndicator": false,
+        "warehouseAreaCode": 8,
+        "vnpkWeightUomCode": "LB",
+        "warehousePackSellAmt": 10.79,
+        "warehouseRotationTypeCode": 2,
+        "baseDivisionCode": "WM",
+        "vnpkCubeQty": 0.782,
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "vnpkCubeUom": "CF",
+        "temperatureZone": "ambient",
+        "mfcEnabled": true,
+        "replenishmentGroupNbr": 408065,
+        "unitCostAmt": 0.78,
+        "chemicalIndicator": "N",
+        "vnpkWeightQty": 4.785,
+        "warehouseAreaDesc": "Dry Produce",
+        "aerosolIndicator": "N"
+      },
+      "number": 9417492
+    },
+    {
+      "consumableGTIN": "00049000050103",
+      "orderableGTIN": "10049000050100",
+      "warehousePackGTIN": "10049000050100",
+      "supplierStockId": "COKESC200080108",
+      "palletTi": 8,
+      "palletHi": 5,
+      "conveyable": true,
+      "itemTypeCode": "37",
+      "vendorDepartment": "95",
+      "color": "NONE",
+      "size": "2LTR",
+      "warehousePackQuantity": 8,
+      "orderableQuantity": 8,
+      "descriptions": [
+        "COKE 2LTR"
+      ],
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "images": {
+          "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/d0ecaefd-f399-480e-82bf-8eeaac76f9b0.0f38e31d646d9f62e02a649ed6ae4e57.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/d0ecaefd-f399-480e-82bf-8eeaac76f9b0.0f38e31d646d9f62e02a649ed6ae4e57.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+          "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/d0ecaefd-f399-480e-82bf-8eeaac76f9b0.0f38e31d646d9f62e02a649ed6ae4e57.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+          "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/d0ecaefd-f399-480e-82bf-8eeaac76f9b0.0f38e31d646d9f62e02a649ed6ae4e57.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+          "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/d0ecaefd-f399-480e-82bf-8eeaac76f9b0.0f38e31d646d9f62e02a649ed6ae4e57.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+        },
+        "variableWeightIndicator": false,
+        "vnpkWeightUomCode": "LB",
+        "warehousePackSellAmt": 50.0,
+        "warehouseRotationTypeCode": 2,
+        "baseDivisionCode": "WM",
+        "vnpkCubeQty": 1.586,
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "vnpkCubeUom": "CF",
+        "mfcEnabled": true,
+        "replenishmentGroupNbr": 335264,
+        "unitCostAmt": 6.25,
+        "chemicalIndicator": "N",
+        "vnpkWeightQty": 38.08,
+        "aerosolIndicator": "N",
+        "temperatureZone": "ambient"
+      },
+      "number": 9595633
+    },
+    {
+      "consumableGTIN": "00083900006488",
+      "orderableGTIN": "00083900106485",
+      "warehousePackGTIN": "00083900106485",
+      "supplierStockId": "242079",
+      "palletTi": 10,
+      "palletHi": 5,
+      "conveyable": true,
+      "itemTypeCode": "20",
+      "vendorDepartment": "95",
+      "size": "89 FO",
+      "warehousePackQuantity": 6,
+      "orderableQuantity": 6,
+      "warehouseArea": "Fresh Dairy",
+      "descriptions": [
+        "GOLD PEAK UNSWT 89OZ"
+      ],
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "variableWeightIndicator": false,
+        "warehouseAreaCode": 3,
+        "vnpkWeightUomCode": "LB",
+        "warehousePackSellAmt": 13.59,
+        "warehouseRotationTypeCode": 2,
+        "baseDivisionCode": "WM",
+        "vnpkCubeQty": 1.031,
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "vnpkCubeUom": "CF",
+        "temperatureZone": "frozen",
+        "mfcEnabled": true,
+        "replenishmentGroupNbr": 9652388,
+        "unitCostAmt": 2.28,
+        "chemicalIndicator": "N",
+        "vnpkWeightQty": 38.5,
+        "warehouseAreaDesc": "Fresh Dairy",
+        "aerosolIndicator": "N"
+      },
+      "number": 550386849
+    },
+    {
+      "consumableGTIN": "00027000523803",
+      "orderableGTIN": "20027000524064",
+      "warehousePackGTIN": "20027000524064",
+      "supplierStockId": "20027000523807",
+      "palletTi": 14,
+      "palletHi": 5,
+      "conveyable": true,
+      "itemTypeCode": "20",
+      "vendorDepartment": "95",
+      "color": "NONE",
+      "size": "12PK",
+      "warehousePackQuantity": 4,
+      "orderableQuantity": 4,
+      "warehouseArea": "Dry Grocery",
+      "descriptions": [
+        "OR BUTTER 12CT",
+        "OR BUTTER 12CT"
+      ],
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "images": {
+          "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/c5ef9dfa-f827-43b2-ac64-d1b5422ca659.eb41b0aadcf8a4e5aba962b31d2177cb.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/c5ef9dfa-f827-43b2-ac64-d1b5422ca659.eb41b0aadcf8a4e5aba962b31d2177cb.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+          "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/c5ef9dfa-f827-43b2-ac64-d1b5422ca659.eb41b0aadcf8a4e5aba962b31d2177cb.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+          "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/c5ef9dfa-f827-43b2-ac64-d1b5422ca659.eb41b0aadcf8a4e5aba962b31d2177cb.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+          "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/c5ef9dfa-f827-43b2-ac64-d1b5422ca659.eb41b0aadcf8a4e5aba962b31d2177cb.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+        },
+        "variableWeightIndicator": false,
+        "warehouseAreaCode": 6,
+        "vnpkWeightUomCode": "LB",
+        "warehousePackSellAmt": 14.04,
+        "warehouseRotationTypeCode": 3,
+        "baseDivisionCode": "WM",
+        "vnpkCubeQty": 0.647,
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "vnpkCubeUom": "CF",
+        "mfcEnabled": true,
+        "replenishmentGroupNbr": 190768,
+        "unitCostAmt": 3.44,
+        "chemicalIndicator": "N",
+        "vnpkWeightQty": 11.985,
+        "aerosolIndicator": "N",
+        "warehouseAreaDesc": "Dry Grocery",
+        "temperatureZone": "ambient"
+      },
+      "number": 550512978
+    }
+  ]
+}

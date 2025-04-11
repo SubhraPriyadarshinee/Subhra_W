@@ -1,0 +1,105 @@
+{
+  "sneEnabled": true,
+  "received": [
+    {
+      "carton": "00072746746",
+      "poNumber": "8873699508",
+      "poLine": 8,
+      "returnCode": 0,
+      "message": "SUCCESS",
+      "labelTrackingId": "328189800072746746",
+      "batch": 606,
+      "shippingLane": 38,
+      "receiver": 512401,
+      "pack": 8,
+      "department": 72,
+      "division": "01",
+      "pocode": 33,
+      "aisle": "",
+      "poevent": "POS REPLEN",
+      "storezone": "D",
+      "eventchar": " ",
+      "pri_loc": "",
+      "sec_loc": "",
+      "ter_loc": "",
+      "hazmat": " ",
+      "sscc": "00428182059650001283",
+      "tag": "965124010015",
+      "labelTimestamp": "Sun Jul 24 23:06:06 2022",
+      "destinations": [
+        {
+          "slot": "P1001",
+          "slot_size": 1,
+          "store": "00090",
+          "zone": "02",
+          "division": "01",
+          "carton": 35861
+        },
+        {
+          "slot": "P1001",
+          "slot_size": 1,
+          "store": "00130",
+          "zone": "02",
+          "division": "01",
+          "carton": 28816
+        },
+        {
+          "slot": "P1001",
+          "slot_size": 1,
+          "store": "00358",
+          "zone": "02",
+          "division": "01",
+          "carton": 20401
+        },
+        {
+          "slot": "P1001",
+          "slot_size": 1,
+          "store": "00054",
+          "zone": "02",
+          "division": "01",
+          "carton": 24583
+        },
+        {
+          "slot": "P1001",
+          "slot_size": 1,
+          "store": "00054",
+          "zone": "02",
+          "division": "01",
+          "carton": 24584
+        },
+        {
+          "slot": "P1001",
+          "slot_size": 1,
+          "store": "00168",
+          "zone": "08",
+          "division": "01",
+          "carton": 34819
+        },
+        {
+          "slot": "P1001",
+          "slot_size": 1,
+          "store": "01009",
+          "zone": "08",
+          "division": "01",
+          "carton": 12026
+        },
+        {
+          "slot": "P1001",
+          "slot_size": 1,
+          "store": "00017",
+          "zone": "08",
+          "division": "01",
+          "carton": 17735
+        }
+      ],
+      "productivity": {
+        "productivity_code": 2,
+        "productivity_qty": 1,
+        "productivity_uom": "CA",
+        "label_tracking_id": "00428182059650001283"
+      },
+      "_id": "62de16ae2ec440ad16299f8c"
+    }
+  ],
+  "errors": []
+}

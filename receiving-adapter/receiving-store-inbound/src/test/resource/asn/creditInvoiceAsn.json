@@ -1,0 +1,397 @@
+{
+  "delivery": {
+    "deliveryNumber": 550478600027357,
+    "scheduled": "2023-06-15T07:48:12.147Z",
+    "statusInformation": {
+      "status": "SCH"
+    }
+  },
+  "shipment": {
+    "documentId": "NI-TEST0860355504_20230615_6035_DC_US",
+    "shipmentNumber": "NI-TEST0860355504",
+    "documentType": "CREDIT_ASN",
+    "documentRevision": 0,
+    "documentIngestTime": "2023-06-15T07:48:09.687Z",
+    "shipmentDate": "2023-06-15",
+    "isDocumentDSCSA": "NONE",
+    "source": {
+      "number": "6035",
+      "numberType": "WALMART",
+      "type": "DC",
+      "countryCode": "US",
+      "shipperName": "WM"
+    },
+    "destination": {
+      "type": "STORE",
+      "number": 5504,
+      "countryCode": "US"
+    },
+    "shipmentDetail": {
+      "trailerNumber": "57473735",
+      "trailerSealNumber": "0000005043",
+      "loadNumber": "NI-TEST08",
+      "reportedDeliveryNumber": 550478600027357,
+      "shippingDate": "2023-06-15",
+      "carrierId": "WM"
+    },
+    "additionalInfo": {
+      "totalMfcPacks": 1,
+      "totalMfcPallets": 1,
+      "storeInvoices": [
+        "613001009"
+      ],
+      "bannerCode": "A1",
+      "mfcInvoiceNumbers": [
+        "613001009"
+      ],
+      "totalMfcQty": 10.0,
+      "floorLoadedCases": 0,
+      "totalExpected": [
+        {
+          "quantity": 20.0,
+          "uom": "EA"
+        }
+      ],
+      "regionCode": "05",
+      "mfcWarehouseAreaDescription": [
+        "Cold Produce"
+      ],
+      "timeZoneCode": "EST",
+      "totalPallets": 2,
+      "mfcInvoices": [
+        "613001009"
+      ],
+      "marketCode": "056",
+      "bannerDescription": "WM Supercenter"
+    }
+  },
+  "packs": [
+    {
+      "packNumber": "623400000000000005",
+      "palletNumber": "623400000000000005",
+      "invoice": {
+        "invoiceNumber": "613001009"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "legacyDetail": {
+        "packType": "MFC"
+      },
+      "items": [
+        {
+          "reportedProductId": "587491383",
+          "reportedProductIdType": "IN",
+          "itemNumber": 587491383,
+          "gtin": "00078742351926",
+          "itemDescription": "WNDFL 12Z KERNL PIST",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "documentSequenceNumber": 2,
+          "inventoryDetail": {
+            "reportedQuantity": 5.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 5.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00078742351926",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "613001009",
+            "invoiceLineNumber": 2
+          },
+          "replenishmentCode": "MARKET_FULFILLMENT_CENTER",
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          },
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        },
+        {
+          "reportedProductId": "587491382",
+          "reportedProductIdType": "IN",
+          "itemNumber": 587491382,
+          "gtin": "00078742351926",
+          "itemDescription": "WNDFL 12Z KERNL PIST",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "documentSequenceNumber": 1,
+          "inventoryDetail": {
+            "reportedQuantity": 5.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 5.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00078742351926",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "613001009",
+            "invoiceLineNumber": 1
+          },
+          "replenishmentCode": "MARKET_FULFILLMENT_CENTER",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          },
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 8.98,
+            "derivedCost": 5.9533,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        }
+      ],
+      "shipmentNumber": "NI-TEST0860355504",
+      "labelType": "CASE_PACK",
+      "physicalDetail": {
+        "weight": 4.1,
+        "weightUom": "LB"
+      },
+      "packType": "MFC",
+      "additionalInfo": {
+        "packDSCSA": "NONE"
+      }
+    },
+    {
+      "packNumber": "623400000000000004",
+      "palletNumber": "623400000000000004",
+      "invoice": {
+        "invoiceNumber": "613001009"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "legacyDetail": {
+        "packType": "STORE"
+      },
+      "items": [
+        {
+          "reportedProductId": "587491382",
+          "reportedProductIdType": "IN",
+          "itemNumber": 587491382,
+          "gtin": "00078742351926",
+          "itemDescription": "WNDFL 12Z KERNL PIST",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "documentSequenceNumber": 1,
+          "inventoryDetail": {
+            "reportedQuantity": 5.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 5.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00078742351926",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "613001009",
+            "invoiceLineNumber": 3
+          },
+          "replenishmentCode": "UNKNOWN",
+          "replenishedByUnit": false,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          },
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 8.98,
+            "derivedCost": 5.9533,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        },
+        {
+          "reportedProductId": "587491383",
+          "reportedProductIdType": "IN",
+          "itemNumber": 587491383,
+          "gtin": "00078742351926",
+          "itemDescription": "WNDFL 12Z KERNL PIST",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "UNKNOWN",
+          "documentSequenceNumber": 2,
+          "inventoryDetail": {
+            "reportedQuantity": 5.0,
+            "reportedUom": "EA",
+            "derivedQuantity": 5.0,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00078742351926",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "613001009",
+            "invoiceLineNumber": 4
+          },
+          "replenishmentCode": "UNKNOWN",
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          },
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "financialReportingCountry": "UNKNOWN"
+          }
+        }
+      ],
+      "shipmentNumber": "NI-TEST0860355504",
+      "labelType": "CASE_PACK",
+      "physicalDetail": {
+        "weight": 4.1,
+        "weightUom": "LB"
+      },
+      "packType": "STORE",
+      "additionalInfo": {
+        "packDSCSA": "NONE"
+      }
+    }
+  ],
+  "items": [
+    {
+      "consumableGTIN": "00669316406106",
+      "orderableGTIN": "00669316406106",
+      "warehousePackGTIN": "00669316406106",
+      "conveyable": false,
+      "itemTypeCode": "7",
+      "vendorDepartment": "0",
+      "color": "NA",
+      "size": "NA",
+      "warehousePackQuantity": 1,
+      "orderableQuantity": 1,
+      "transportationModes": [
+        {
+          "mode": {
+            "code": 1,
+            "description": "GROUND"
+          },
+          "dotHazardousClass": {
+            "code": "N/A",
+            "description": "NOT APPLICABLE"
+          },
+          "properShipping": "NON-REGULATED"
+        }
+      ],
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "images": {
+          "IMAGE_SIZE_450": "https://i5.walmartimages.com/asr/64576960-98de-479c-8245-703c37978132_1.5e66ff171d018143312acab30ceeff44.png?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "IMAGE_SIZE_100": "https://i5.walmartimages.com/asr/64576960-98de-479c-8245-703c37978132_1.5e66ff171d018143312acab30ceeff44.png?odnHeight=100&odnWidth=100&odnBg=ffffff",
+          "IMAGE_SIZE_2000": "https://i5.walmartimages.com/asr/64576960-98de-479c-8245-703c37978132_1.5e66ff171d018143312acab30ceeff44.png?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+          "IMAGE_SIZE_180": "https://i5.walmartimages.com/asr/64576960-98de-479c-8245-703c37978132_1.5e66ff171d018143312acab30ceeff44.png?odnHeight=180&odnWidth=180&odnBg=ffffff",
+          "IMAGE_SIZE_60": "https://i5.walmartimages.com/asr/64576960-98de-479c-8245-703c37978132_1.5e66ff171d018143312acab30ceeff44.png?odnHeight=60&odnWidth=60&odnBg=ffffff"
+        },
+        "hasExpiration": "N",
+        "vnpkWeightUomCode": "LB",
+        "warehousePackSellAmt": 1.0,
+        "warehouseRotationTypeCode": 1,
+        "baseDivisionCode": "WM",
+        "vnpkCubeQty": 0.1,
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "vnpkCubeUom": "CF",
+        "mfcEnabled": true,
+        "unitCostAmt": 1.0,
+        "chemicalIndicator": "Y",
+        "vnpkWeightQty": 0.3,
+        "aerosolIndicator": "N"
+      },
+      "number": 587491383
+    },
+    {
+      "consumableGTIN": "00859078002627",
+      "orderableGTIN": "00859078002511",
+      "warehousePackGTIN": "00859078002511",
+      "supplierStockId": "00262",
+      "palletTi": 30,
+      "palletHi": 4,
+      "conveyable": true,
+      "itemTypeCode": "20",
+      "vendorDepartment": "95",
+      "color": "NA",
+      "size": "WATER",
+      "warehousePackQuantity": 6,
+      "orderableQuantity": 6,
+      "warehouseArea": "Cold Produce",
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "images": {
+          "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/d8ef203f-a866-488f-a57a-311d515d0f34.c0396f25ae434aef148ba21b728b4eff.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/d8ef203f-a866-488f-a57a-311d515d0f34.c0396f25ae434aef148ba21b728b4eff.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+          "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/d8ef203f-a866-488f-a57a-311d515d0f34.c0396f25ae434aef148ba21b728b4eff.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+          "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/d8ef203f-a866-488f-a57a-311d515d0f34.c0396f25ae434aef148ba21b728b4eff.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+          "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/d8ef203f-a866-488f-a57a-311d515d0f34.c0396f25ae434aef148ba21b728b4eff.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+        },
+        "hasExpiration": "N",
+        "variableWeightIndicator": false,
+        "warehouseAreaCode": 9,
+        "vnpkWeightUomCode": "LB",
+        "warehousePackSellAmt": 36.5,
+        "warehouseRotationTypeCode": 2,
+        "baseDivisionCode": "WM",
+        "vnpkCubeQty": 0.414,
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "vnpkCubeUom": "CF",
+        "temperatureZone": "chilled",
+        "mfcEnabled": false,
+        "replenishmentGroupNbr": 196333641,
+        "unitCostAmt": 5.8167,
+        "chemicalIndicator": "N",
+        "vnpkWeightQty": 14.4,
+        "warehouseAreaDesc": "Cold Produce",
+        "aerosolIndicator": "N"
+      },
+      "descriptions": [
+        "ORG HH COCO WAT 32FO"
+      ],
+      "number": 587491382
+    }
+  ],
+  "pallets": [
+    {
+      "palletNumber": "623400000000000004",
+      "documentId": "NI-TEST0860355504_20230615_6035_DC_US"
+    },
+    {
+      "palletNumber": "623400000000000005",
+      "documentId": "NI-TEST0860355504_20230615_6035_DC_US"
+    }
+  ]
+}

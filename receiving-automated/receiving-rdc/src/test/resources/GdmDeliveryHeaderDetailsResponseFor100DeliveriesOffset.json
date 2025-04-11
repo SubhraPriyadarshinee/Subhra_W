@@ -1,0 +1,328 @@
+{
+    "data": [
+        {
+            "deliveryNumber": 24285776,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "DOOR_OPEN"
+            ]
+        },
+        {
+            "deliveryNumber": 25967290,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 26613238,
+            "status": "FINALIZED"
+        },
+        {
+            "deliveryNumber": 26659226,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "UNFINALIZED",
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 26763477,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "UNFINALIZED",
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 26768212,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "UNFINALIZED"
+            ]
+        },
+        {
+            "deliveryNumber": 26855603,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "UNFINALIZED",
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 26917961,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 26920685,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 26944725,
+            "status": "FINALIZED"
+        },
+        {
+            "deliveryNumber": 26979367,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27006189,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27008214,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "UNFINALIZED",
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27009808,
+            "status": "FINALIZED"
+        },
+        {
+            "deliveryNumber": 27013664,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27086528,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27092297,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "UNFINALIZED",
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27095273,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27102576,
+            "status": "FINALIZED"
+        },
+        {
+            "deliveryNumber": 27106148,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "UNFINALIZED",
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27111297,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27125580,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27128663,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27130752,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "READY_TO_RECEIVE"
+            ]
+        },
+        {
+            "deliveryNumber": 27139637,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27159178,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27163211,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27164203,
+            "status": "FINALIZED"
+        },
+        {
+            "deliveryNumber": 27190045,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27197586,
+            "status": "FINALIZED"
+        },
+        {
+            "deliveryNumber": 27202357,
+            "status": "FINALIZED"
+        },
+        {
+            "deliveryNumber": 27203495,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27222800,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27223796,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27224381,
+            "status": "FINALIZED"
+        },
+        {
+            "deliveryNumber": 27224396,
+            "status": "FINALIZED"
+        },
+        {
+            "deliveryNumber": 27224413,
+            "status": "FINALIZED"
+        },
+        {
+            "deliveryNumber": 27224958,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27228158,
+            "status": "FINALIZED"
+        },
+        {
+            "deliveryNumber": 27231970,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27234383,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27239351,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27242733,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27244132,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27245014,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27245145,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27252884,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27252964,
+            "status": "OPEN",
+            "stateReasonCodes": [
+                "PENDING_DOCK_TAG"
+            ]
+        },
+        {
+            "deliveryNumber": 27253201,
+            "status": "FINALIZED"
+        },
+        {
+            "deliveryNumber": 27253272,
+            "status": "FINALIZED"
+        }
+    ],
+    "page": {
+        "size": 50,
+        "number": 0,
+        "numberOfElements": 50,
+        "totalElements": 99,
+        "totalPages": 2
+    }
+}

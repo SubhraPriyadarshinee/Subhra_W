@@ -1,0 +1,48 @@
+[
+  {
+    "documentNbr": "0664420451",
+    "purchaseReferenceNumber": "0664420451",
+    "poDCNumber": "32899",
+    "baseDivCode": "WM",
+    "purchaseReferenceLegacyType": "33",
+    "purchaseCompanyId": 1,
+    "deliveryDocumentLines": [
+      {
+        "purchaseRefType": "CROSSU",
+        "purchaseReferenceNumber": "0664420451",
+        "purchaseReferenceLineNumber": 4,
+        "purchaseReferenceLineStatus": "RECEIVED",
+        "itemNbr": 561298341,
+        "itemUPC": "00029695410987",
+        "caseUPC": "50029695414485",
+        "expectedQty": 1,
+        "expectedQtyUOM": "ZA",
+        "vnpkQty": 2,
+        "whpkQty": 2,
+        "vendorStockNumber": "41448",
+        "vendorPackCost": 63.44,
+        "whpkSell": 34.69,
+        "vnpkWgtQty": 11.75,
+        "vnpkWgtUom": "LB",
+        "vnpkcbqty": 1.312,
+        "vnpkcbuomcd": "CF",
+        "event": "POS REPLEN",
+        "palletTi": 2,
+        "palletHi": 9,
+        "department": "8",
+        "isHazmat": false,
+        "isConveyable": false,
+        "overageQtyLimit": 1,
+        "color": "NONE",
+        "size": "1.0EA",
+        "itemDescription1": "DSK 28\" PET TAXI",
+        "itemDescription2": "REPLACE 553797631"
+      }
+    ],
+    "deptNumber": "16",
+    "vendorNumber": "728583",
+    "weight": 202.0,
+    "freightTermCode": "COLL",
+    "financialGroupCode": "US"
+  }
+]

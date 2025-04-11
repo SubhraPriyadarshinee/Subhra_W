@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "header": {
+    "headerAttributes": {}
+  },
+  "errors": [],
+  "payload": {
+    "deliveryNumber": "999999999",
+    "pos": [
+      {
+        "poNumber": "1003033571",
+        "polines": [
+          {
+            "poLineNumber": 1,
+            "receivedQty": 5,
+            "receivedQtyUOM": "ZA"
+          },
+          {
+            "poLineNumber": 2,
+            "receivedQty": 20,
+            "receivedQtyUOM": "ZA"
+          }
+        ]
+      },
+      {
+        "poNumber": "1003033572",
+        "polines": [
+          {
+            "poLineNumber": 1,
+            "receivedQty": 35,
+            "receivedQtyUOM": "ZA"
+          },
+          {
+            "poLineNumber": 2,
+            "receivedQty": 15,
+            "receivedQtyUOM": "ZA"
+          }
+        ]
+      }
+    ]
+  }
+}

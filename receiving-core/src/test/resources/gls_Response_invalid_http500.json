@@ -1,0 +1,16 @@
+{
+	"status": "INTERNAL_SERVER_ERROR",
+	"payload": null,
+	"errors": [
+		{
+			"code": "500",
+			"field": null,
+			"description": "System Encountered an Issue. Please contact support.",
+			"info": "PreparedStatementCallback; bad SQL grammar [SELECT dr.appointment_nbr, po.po_nbr, CAST (drl.po_line_nbr as int) as po_line_nbr, drl.units_received_qty, case when drl.unit_uom_code = 'CS' then cast('ZA'as varchar(2)) else cast (drl.unit_uom_code as varchar(2)) end unit_uom_code, dr.receiver_nbr FROM dc_sys_receiving::dc_receiver dr, dc_sys_receiving::dc_receiver_line drl, dc_sys_receiving::purchase_order po WHERE dr.receiver_nbr = drl.receiver_nbr AND dr.pur_ord_id = po.pur_ord_id AND dr.dc_receiver_stat_code IN (1,3,7,400) and dr.appointment_nbr = ?]; nested exception is java.sql.SQLSyntaxErrorException: A syntax error has occurred.",
+			"severity": "High",
+			"category": "Exception",
+			"causes": null,
+			"errorIdentifiers": null
+		}
+	]
+}

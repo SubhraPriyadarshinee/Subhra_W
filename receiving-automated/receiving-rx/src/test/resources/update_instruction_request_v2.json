@@ -1,0 +1,161 @@
+{
+  "containerType": "Wooden Pallet",
+  "deliveryDocumentLines": [
+    {
+      "additionalInfo": {
+        "handlingCode": "",
+        "packTypeCode": "",
+        "itemHandlingMethod": "",
+        "isWholesaler": false,
+        "atlasConvertedItem": false,
+        "weightFormatTypeCode": "F",
+        "isHACCP": false,
+        "weight": 14.76,
+        "weightUOM": "LB",
+        "warehouseAreaDesc": "",
+        "isDefaultTiHiUsed": false,
+        "imageUrl": "",
+        "weightQty": "",
+        "weightQtyUom": "",
+        "cubeQty": "",
+        "cubeUomCode": "",
+        "qtyValidationDone": true,
+        "auditQty": 1,
+        "auditCompletedQty": 0,
+        "lotList": [],
+        "gtinList": [],
+        "unitLotList": [],
+        "unitGtinList": [],
+        "isEpcisEnabledVendor": true,
+        "sgtinScannedSerial": "",
+        "packCountInEaches": 0,
+        "autoSwitchEpcisToAsn": false,
+        "isTemperatureSensitive": false,
+        "isControlledSubstance": false,
+        "isEpcisSmartReceivingEnabled": true
+      },
+      "activeChannelMethods": [],
+      "caseUpc": "30305912886010",
+      "color": "CAPSUL",
+      "cube": "0.02",
+      "cubeUom": "CF",
+      "currency": "",
+      "description": "VERAPAM SR 360MG",
+      "dotIdNbr": "",
+      "event": "POS REPLEN",
+      "deptNumber": "38",
+      "gtin": "30305912886010",
+      "itemNbr": 552197152,
+      "itemType": "",
+      "itemUpc": "30305912886010",
+      "itemUPC": "30305912886010",
+      "ndc": "00591-2886-01",
+      "openQty": 9600,
+      "orderableQuantity": 4800,
+      "overageQtyLimit": 0,
+      "packSSCC": "",
+      "palletSSCC": "00200109395464720439",
+      "profiledWarehouseArea": "",
+      "promoBuyInd": "",
+      "purchaseRefType": "SSTKU",
+      "purchaseReferenceLineNumber": 1,
+      "purchaseReferenceLineStatus": "ACTIVE",
+      "purchaseReferenceNumber": "8400070017",
+      "qtyUOM": "EA",
+      "manufactureDetails": [],
+      "gtinHierarchy": [
+        {
+          "gtin": "00305912886019",
+          "type": "consumableGTIN"
+        },
+        {
+          "gtin": "30305912886010",
+          "type": "orderableGTIN"
+        },
+        {
+          "gtin": "10305912886016",
+          "type": "warehousePackGtin"
+        },
+        {
+          "gtin": "",
+          "type": "catalogGTIN"
+        },
+        {
+          "gtin": "30305912886010",
+          "type": "gtin"
+        }
+      ],
+      "secondaryDescription": "",
+      "shipmentDetailsList": [
+        {
+          "loadNumber": "",
+          "shipmentNumber": "16090257_8400070017_241112122340_v2",
+          "destinationGlobalLocationNumber": "",
+          "shippedQty": 9600,
+          "shippedQtyUom": "EA",
+          "inboundShipmentDocId": "16090257_8400070017_241112122340_v2_6032_US"
+        }
+      ],
+      "size": "100",
+      "totalOrderQty": 9600,
+      "vendorPack": 4800,
+      "vendorStockNumber": "00591-2886-01",
+      "vendorPackCost": 1.84,
+      "warehousePack": 100,
+      "warehousePackQuantity": 100,
+      "warehousePackSell": 12.17,
+      "weight": 0.005,
+      "weightUom": "LB",
+      "expectedQtyUOM": "EA",
+      "quantityUOM": "ZA",
+      "vnpkQty": 4800,
+      "whpkQty": 100,
+      "quantity": 1,
+      "expectedQty": 9600,
+      "vendorNbrDeptSeq": 988246,
+      "shippedQty": 9600,
+      "shippedQtyUom": "EA",
+      "aggregatedTotalOrderedQty": 0,
+      "aggregatedShippedQty": 0,
+      "itemDescription1": "VERAPAM SR 360MG",
+      "maxAllowedOverageQtyIncluded": false,
+      "isLithiumIonVerificationRequired": false,
+      "isLimitedQtyVerificationRequired": false,
+      "labelTypeCode": "",
+      "autoPopulateReceivingQty": false,
+      "enteredQtyUOM": "",
+      "isTemperatureSensitive": false,
+      "isControlledSubstance": false
+    }
+  ],
+  "deliveryNumber": 16090257,
+  "doorNumber": "893",
+  "scannedDataList": [
+    {
+      "key": "serial",
+      "applicationIdentifier": "21",
+      "value": "16179128CV101AUT59"
+    },
+    {
+      "key": "gtin",
+      "applicationIdentifier": "01",
+      "value": "30305912886010"
+    },
+    {
+      "key": "expiryDate",
+      "applicationIdentifier": "17",
+      "value": "261202"
+    },
+    {
+      "key": "lot",
+      "applicationIdentifier": "10",
+      "value": "AUT505"
+    },
+    {
+      "key": "qtyEach",
+      "applicationIdentifier": "30",
+      "value": "0001"
+    }
+  ],
+  "problemTagId": ""
+}

@@ -1,0 +1,42 @@
+{
+	"deliveryNumber": 36054076,
+	"scanItems": [
+		{
+			"item": 553559093,
+			"itemDesc": "Sample Description",
+			"groupType": "RCV_DA",
+			"sscc": "sscc",
+			"consumableGTIN": "00037000273318",
+			"orderableGTIN": "10037000273315",
+			"catalogGTIN": "10037000273315",
+			"parsedUPC": "3700027331",
+			"reject": "reject",
+			"exceptionLabelURL": null,
+			"exceptionLabels": null,
+			"labels": [
+				{
+					"seqNo": "1",
+					"purchaseReferenceNumber": "2677793516",
+					"purchaseReferenceLineNumber": 1,
+					"lpn": "b328180000100000001284020",
+					"labelDataProperties": [
+						{
+							"key": "value"
+						}
+					],
+					"labelType": "STORE",
+					"destination": {
+						"buNumber": 101,
+						"countryCode": "US",
+						"aisle": "12",
+						"zone": "03",
+						"pickBatch": "281",
+						"printBatch": "281"
+					}
+				}
+			]
+		}
+	],
+	"facilityNum": 32679,
+	"facilityCountryCode": "US"
+}

@@ -1,0 +1,146 @@
+{
+  "32987": {
+    "featureFlags": {
+      "isAtlas": true,
+      "overrideToACC": true,
+      "instructionOwnershipEnabled": false,
+      "sumoEnabled": true,
+      "isFITEnabled": false,
+      "isUPCCatalogEnabled": true,
+      "isPalletHoldEnabled": false,
+      "isSelectPalletTypeEnabled": false,
+      "overrideToManuallyReceive": true,
+      "isPOConfirmationEnabled": false,
+      "isPOConsolidationReceivingEnabled": true,
+      "isUpdateTiHiEnabled": false,
+      "isCameraScannerEnabled": false,
+      "isCaptureTrailerZoneTempEnabled": false,
+      "isPalletCorrectionEnabled": false,
+      "isCancelLabelFeatureEnabled": false,
+      "isDSDCReceivingFeatureEnabled": true,
+      "isBluetoothScannerEnabled": false,
+      "isTCLTPLReceivingEnabled": false,
+      "isLithiumIonReceivingEnabled": false,
+      "useOlderPrintingFormat": false,
+      "isScanningEnabled": false,
+      "isPalletCorrectionPrintingEnabled": false,
+      "convertScannedUPCToFourteenDigit": false,
+      "convertEAN8UPCToFourteenDigit": false,
+      "receiveNonNationalPO": false,
+      "prime": {
+        "useJavaBaseUrl": {
+          "reopenDelivery": true,
+          "createInstruction": false,
+          "getAvailablePos": true,
+          "getDelivery": true,
+          "createDelivery": true,
+          "completeDelivery": true
+        },
+        "conveyableInstructions": false
+      },
+      "common": {
+        "printingAndroidComponent": false,
+        "printAndroidCompKeepAliveTime": 5000,
+        "printAndroidCompShouldMockService": false,
+        "logNetworkCalls": false,
+        "logNetworkError": false,
+        "useGDM": true,
+        "logLevel": "NONE"
+      }
+    },
+    "envUrls": {
+      "REACT_APP_BASEURL_GDM_DELIVERY_SEARCH": "https://dev.gdm.prod.us.walmart.net/document/v2/deliveries/{deliveryIdentifier}/deliverydocuments/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DOOR": "https://dev.gdm.prod.us.walmart.net/document/v2/deliveries/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DELIVERY_NUMBER": "https://dev.gdm.prod.us.walmart.net/document/v2/deliveries",
+      "REACT_APP_BASEURL_FIT": "https://fit-dev2.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_FIT_VOLTA": "https://fit-dev2.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_UWMS_RECEIVING": "https://receiving-api.prod.us.walmart.net",
+      "REACT_APP_BASEURL_LOCATIONS": "https://gls-location-witron-stg-uat.prod.us.walmart.net",
+      "REACT_APP_BASEURL_RECEIVING": "http://receive.{countryCode}-{siteId}.lb-node.cluster2.cloud.s06000.{countryCode}.wal-mart.com",
+      "REACT_APP_BASEURL_WMS_RECEIVING": "http://wms-receiving.{countryCode}-{siteId}.lb-node.cluster2.cloud.s06000.{countryCode}.wal-mart.com",
+      "REACT_APP_BASEURL_PROBLEMS": "http://lb-node.cluster1.cloud.s32800.{countryCode}.wal-mart.com/{countryCode}-{siteId}/dc-problem-manager-service/v2/problems",
+      "REACT_APP_PRINTINGURL_RECEIVING": "http://nimservices.s{siteId}.{countryCode}.wal-mart.com:7099/printing/{countryCode}/{siteId}",
+      "REACT_APP_LABELINGURL_RECEIVING": "http://lb-node.cluster1.cloud.s32800.{countryCode}.wal-mart.com/{countryCode}-{siteId}/gls-printing"
+    }
+  },
+  "default": {
+    "featureFlags": {
+      "overrideToACC": false,
+      "instructionOwnershipEnabled": false,
+      "sumoEnabled": false,
+      "isFITEnabled": false,
+      "isUPCCatalogEnabled": false,
+      "isPalletHoldEnabled": false,
+      "isSelectPalletTypeEnabled": false,
+      "overrideToManuallyReceive": false,
+      "isPOConfirmationEnabled": false,
+      "isPOConsolidationReceivingEnabled": false,
+      "isUpdateTiHiEnabled": false,
+      "isCameraScannerEnabled": false,
+      "isCaptureTrailerZoneTempEnabled": false,
+      "isPalletCorrectionEnabled": false,
+      "isCancelLabelFeatureEnabled": false,
+      "isDSDCReceivingFeatureEnabled": false,
+      "isBluetoothScannerEnabled": false,
+      "isTCLTPLReceivingEnabled": false,
+      "isLithiumIonReceivingEnabled": false,
+      "useOlderPrintingFormat": false,
+      "isScanningEnabled": false,
+      "isPalletCorrectionPrintingEnabled": false,
+      "convertScannedUPCToFourteenDigit": false,
+      "convertEAN8UPCToFourteenDigit": false,
+      "receiveNonNationalPO": false,
+      "atlas": {
+        "getDelivery": false,
+        "completeDelivery": false,
+        "requestInstruction": false,
+        "getExistingInstructions": false,
+        "updateInstruction": false,
+        "completeInstruction": false,
+        "cancelInstruction": false,
+        "viewAllPOs": false,
+        "useFourDigitSiteIDs": false,
+        "getProblemInfoByPTag": false,
+        "completeProblemTag": false,
+        "reportingOverage": false,
+        "searchDelivery": false
+      },
+      "prime": {
+        "useJavaBaseUrl": {
+          "reopenDelivery": false,
+          "createInstruction": false,
+          "getAvailablePos": true,
+          "getDelivery": false,
+          "createDelivery": true,
+          "completeDelivery": false
+        },
+        "conveyableInstructions": false
+      },
+      "common": {
+        "printingAndroidComponent": false,
+        "printAndroidCompKeepAliveTime": 5000,
+        "printAndroidCompShouldMockService": false,
+        "logNetworkCalls": false,
+        "logNetworkError": false,
+        "useGDM": false,
+        "test": "mccprod",
+        "logLevel": "NONE"
+      }
+    },
+    "envUrls": {
+      "REACT_APP_BASEURL_GDM_DELIVERY_SEARCH": "https://dev.gdm.prod.us.walmart.net/document/v2/deliveries/{deliveryIdentifier}/deliverydocuments/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DOOR": "https://dev.gdm.prod.us.walmart.net/document/v2/deliveries/search",
+      "REACT_APP_BASEURL_IDM_DELIVERY_BY_DELIVERY_NUMBER": "https://dev.gdm.prod.us.walmart.net/document/v2/deliveries",
+      "REACT_APP_BASEURL_FIT": "https://fit-dev2.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_FIT_VOLTA": "https://fit-dev2.prod.us.walmart.net/v2/problems",
+      "REACT_APP_BASEURL_UWMS_RECEIVING": "https://receiving-api.prod.us.walmart.net",
+      "REACT_APP_GDM_V3_BASEURL": "https://dev.gdm.prod.us.walmart.net",
+      "REACT_APP_BASEURL_LOCATIONS": "https://location.prod.us.walmart.net",
+      "REACT_APP_BASEURL_RECEIVING": "http://lb-node.cluster1.cloud.s32800.{countryCode}.wal-mart.com/{countryCode}-{siteId}/receive",
+      "REACT_APP_BASEURL_WMS_RECEIVING": "http://lb-node.cluster1.cloud.s32800.{countryCode}.wal-mart.com/{countryCode}-{siteId}/wms-receiving",
+      "REACT_APP_BASEURL_PROBLEMS": "http://lb-node.cluster1.cloud.s32800.{countryCode}.wal-mart.com/{countryCode}-{siteId}/dc-problem-manager-service/v2/problems",
+      "REACT_APP_PRINTINGURL_RECEIVING": "http://nimservices.s{siteId}.{countryCode}.wal-mart.com:7099/printing/{countryCode}/{siteId}",
+      "REACT_APP_LABELINGURL_RECEIVING": "http://lb-node.cluster1.cloud.s32800.{countryCode}.wal-mart.com/{countryCode}-{siteId}/gls-printing"
+    }
+  }
+}

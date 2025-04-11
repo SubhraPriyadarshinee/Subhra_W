@@ -1,0 +1,40 @@
+{
+  "status": "OK",
+  "errors": [],
+  "payload": [
+    {
+      "consumableGtin": "00079400262806",
+      "itemNbr": 200184,
+      "orderablePackGtin": "70079400262805",
+      "orderablePackQty": 6,
+      "supplierStockId": "26280",
+      "warehousePackGtin": "70079400262805",
+      "warehousePackQty": 6,
+      "gtins": [
+        {
+          "palletTiQty": 34,
+          "palletHiQty": 7,
+          "tradeItemGtin": "70079400262805"
+        },
+        {
+          "palletTiQty": 34,
+          "palletHiQty": 7,
+          "tradeItemGtin": "70079400262805"
+        },
+        {
+          "palletTiQty": 34,
+          "palletHiQty": 7,
+          "tradeItemGtin": "00079400262806"
+        }
+      ],
+      "itemNode": {
+        "itemNbr": 200184,
+        "gtinAttributes": [
+          {
+            "gtin": "00079400262806"
+          }
+        ]
+      }
+    }
+  ]
+}

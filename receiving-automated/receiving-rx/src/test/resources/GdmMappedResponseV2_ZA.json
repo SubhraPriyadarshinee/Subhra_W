@@ -1,0 +1,76 @@
+[
+	{
+		"purchaseReferenceNumber": "2791747859",
+		"financialGroupCode": "US",
+		"baseDivCode": "WM",
+		"purchaseCompanyId": "1",
+		"purchaseReferenceLegacyType": "33",
+		"poDCNumber": "32898",
+		"purchaseReferenceStatus": "ACTV",
+
+		"deliveryDocumentLines": [
+			{
+				"shippedQty": 12,
+				"shippedQtyUom": "ZA",
+				"gtin": "00029695410987",
+				"itemUPC": "00029695410987",
+				"caseUPC": "20029695410987",
+				"purchaseReferenceNumber": "2791747859",
+				"purchaseReferenceLineNumber": 1,
+				"event": "POS REPLEN",
+				"purchaseReferenceLineStatus": "RECEIVED",
+				"whpkSell": 8.22,
+				"vendorPackCost": 6.6,
+				"vnpkQty": 6,
+				"whpkQty": 6,
+				"expectedQtyUOM": "ZA",
+				"openQty": 9,
+				"expectedQty": 12,
+				"overageQtyLimit": 0,
+				"itemNbr": 561298341,
+				"purchaseRefType": "33",
+				"palletTi": 0,
+				"palletHi": 0,
+				"vnpkWgtQty": 14.84,
+				"vnpkWgtUom": "LB",
+				"vnpkcbqty": 0.432,
+				"vnpkcbuomcd": "CF",
+				"color": "",
+				"size": "",
+				"isHazmat": false,
+				"itemDescription1": "Tylenol",
+				"palletSSCC": "00100700302232310224",
+				"packSSCC": "B32899000020014243",
+				"ndc": "123456",
+				"deptNumber": "38",
+				"additionalInfo": {
+					"isDscsaExemptionInd": false
+				},
+				"shipmentNumber": "546191213",
+				"shipmentDetailsList": [
+					{
+						"inboundShipmentDocId": "546191213_20191106_719468_VENDOR_US",
+						"shipmentNumber": "546191213",
+						"loadNumber": "88528711",
+						"sourceGlobalLocationNumber": "0069382035222",
+						"destinationGlobalLocationNumber": "0078742035222"
+					}
+				],
+				"manufactureDetails": [
+					{
+						"lot": "ABCDEF1234",
+						"expiryDate": "12/30/2020",
+						"qty": 6,
+						"reportedUom": "ZA"
+					}
+				]
+			}
+		],
+		"weight": 0,
+		"cubeQty": 0,
+		"deliveryStatus": "WRK",
+		"totalBolFbq": 106,
+		"stateReasonCodes":[
+			"DOOR_OPEN"]
+	}
+]

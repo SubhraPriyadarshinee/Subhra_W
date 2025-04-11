@@ -1,0 +1,48 @@
+{
+  "deliveryId": 21661338,
+  "problemFreightSolution": [
+    {
+      "problemTrackingId": "230721-80404-4149-0000",
+      "problemQty": 5,
+      "problemStatus": "ASSIGNED",
+      "resolutions": [],
+      "purchaseOrderLine": [],
+      "printDataRequest": {
+        "clientId": "problem-mgmt-app",
+        "headers": {
+          "facilityCountryCode": "US",
+          "facilityNum": "32679",
+          "WMT-CorrelationId": "78b9d78a-555b-4850-bad1-5eaa2c34da6b"
+        },
+        "printRequests": [
+          {
+            "formatName": "problemfreightmsde30x30",
+            "labelIdentifier": "32679373598761",
+            "data": [
+              { "key": "SUB", "value": "1" },
+              { "key": "CARR", "value": "SWFT" },
+              { "key": "TRAIL", "value": "82272" },
+              { "key": "PROBLEMID", "value": "230721-80404-4149-0000" },
+              { "key": "ITEMNO", "value": "654906151" },
+              { "key": "PRBMRE", "value": "OVG" },
+              { "key": "PALTAGNBR", "value": "32679373598761" },
+              { "key": "SEQNBR", "value": "1" },
+              { "key": "PRBMSLOT", "value": "PA02" },
+              { "key": "USER", "value": "sysadmin" },
+              { "key": "REPRINT", "value": "N" },
+              { "key": "PONBR", "value": "8579811701" },
+              { "key": "POLINE", "value": "5" },
+              { "key": "QTY", "value": "5" },
+              { "key": "ITEMUPCNO", "value": "30772071960" },
+              { "key": "VNSTKNBR", "value": "" },
+              { "key": "POTYPE", "value": "CROSSU" },
+              { "key": "LBLBARCODE", "value": "32679373598761" },
+              { "key": "LABELTIMESTAMP", "value": "" },
+              { "key": "DELIVERYNBR", "value": "21661338" }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

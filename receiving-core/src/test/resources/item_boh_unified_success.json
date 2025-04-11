@@ -1,0 +1,18 @@
+{
+  "baseDivisionCode": "WM",
+  "financialReportingGroup": "US",
+  "bohDistribution": {
+    "itemAggregatedList": [],
+    "containerAggregatedList": [],
+    "containerItemAggregatedList": [
+      {
+        "itemNumber": 9048440,
+        "boh": {
+          "qty": 2046,
+          "uom": "EA"
+        },
+        "individualGroupByAttrBohDistribution": []
+      }
+    ]
+  }
+}

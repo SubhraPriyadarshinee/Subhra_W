@@ -1,0 +1,220 @@
+[
+  {
+    "deliveryNumber": 56212116,
+    "documentNbr": "8888888886",
+    "purchaseReferenceNumber": "8888888886",
+    "poDCNumber": "32899",
+    "baseDivCode": "WM",
+    "purchaseReferenceLegacyType": "33",
+    "totalPurchaseReferenceQty": 10,
+    "purchaseCompanyId": 1,
+    "purchaseReferenceMustArriveByDate": "2019-03-26T00:00:00.000+0000",
+    "deliveryDocumentLines": [
+      {
+        "purchaseRefType": "CROSSU",
+        "originalChannel": "CROSSDOCK",
+        "purchaseReferenceNumber": "8888888886",
+        "purchaseReferenceLineNumber": 1,
+        "purchaseReferenceLineStatus": "ACTIVE",
+        "itemNbr": 566374662,
+        "itemUPC": "00833562002454",
+        "caseUPC": "40833562002452",
+        "expectedQty": 5,
+        "expectedQtyUOM": "ZA",
+        "vnpkQty": 1,
+        "whpkQty": 1,
+        "vendorStockNumber": "MS88-150-236-55",
+        "vendorPackCost": 1.84,
+        "whpkSell": 8.22,
+        "vnpkWgtQty": 7.23,
+        "vnpkWgtUom": "LB",
+        "vnpkcbqty": 0.496,
+        "vnpkcbuomcd": "CF",
+        "event": "POS REPLEN",
+        "freeTextDetail": "CLEAR MS 2X6 RUNNER PDQ ",
+        "palletTi": 0,
+        "palletHi": 0,
+        "department": "17",
+        "isHazmat": false,
+        "isConveyable": true,
+        "overageQtyLimit": 10,
+        "overageThresholdQty": 10,
+        "totalReceivedQty" : 5,
+        "itemType": "20",
+        "color": "CLEAR",
+        "size": "24X72",
+         "limitedQtyVerifiedOn": null,
+          "lithiumIonVerifiedOn": null,
+        "itemDescription1": "MS 2X6 RUNNER PDQ",
+        "itemDescription2": "",
+        "transportationModes": [
+            {
+              "mode": {
+                "code": 1,
+                "description": "GROUND"
+              },
+              "dotHazardousClass": {
+                "code": "N/A",
+                "description": "OTHER REGULATED MATERIAL"
+              },
+              "dotRegionCode": null,
+              "pkgInstruction": [
+                "965"
+              ],
+              "dotIdNbr": null,
+              "limitedQty": null,
+              "properShipping": "Lithium Ion Battery"
+            }
+          ],
+        "additionalInfo": {
+          "isNewItem": true,
+          "weight": 23.9,
+          "cubeUOM": "CF",
+          "cube": 1.642,
+          "weightUOM": "LB",
+          "weightFormatTypeCode": "F"
+        },
+        "handlingCode": "X",
+        "activeChannelMethods": [
+          "CROSSU"
+        ],
+        "operationalInfo": {
+          "state": "ACTIVE"
+        },
+        "orderableQuantity": 12,
+        "warehousePackQuantity": 4
+      }
+    ],
+    "deptNumber": "38",
+    "vendorNumber": "988246",
+    "vendorNbrDeptSeq": "988246381",
+    "weight": 100,
+    "weightUOM": "LB",
+    "cubeQty": 150,
+    "cubeUOM": "CF",
+    "freightTermCode": "COLL",
+    "financialGroupCode": "US",
+    "importInd": false,
+    "poTypeCode": "33",
+    "purchaseReferenceStatus": "ACTV",
+    "deliveryStatus": "OPN",
+    "carrierName": "Walmart WMT",
+    "stateReasonCodes": [
+      "DOOR_OPEN"
+    ],
+    "deliveryLegacyStatus": "OPN",
+    "poDcCountry": "US",
+    "totalBolFbq": 0,
+    "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+    "sellerType": "WM"
+  },
+  {
+    "deliveryNumber": 56212116,
+    "documentNbr": "8888888887",
+    "purchaseReferenceNumber": "8888888887",
+    "poDCNumber": "32899",
+    "baseDivCode": "WM",
+    "purchaseReferenceLegacyType": "33",
+    "totalPurchaseReferenceQty": 10,
+    "purchaseCompanyId": 1,
+    "purchaseReferenceMustArriveByDate": "2019-03-26T00:00:00.000+0000",
+    "deliveryDocumentLines": [
+      {
+        "purchaseRefType": "CROSSU",
+        "originalChannel": "CROSSDOCK",
+        "purchaseReferenceNumber": "8888888887",
+        "purchaseReferenceLineNumber": 1,
+        "purchaseReferenceLineStatus": "ACTIVE",
+        "itemNbr": 566374662,
+        "itemUPC": "00833562002454",
+        "caseUPC": "40833562002452",
+        "expectedQty": 5,
+        "expectedQtyUOM": "ZA",
+        "vnpkQty": 1,
+        "whpkQty": 1,
+        "vendorStockNumber": "MS88-150-236-55",
+        "vendorPackCost": 1.84,
+        "whpkSell": 8.22,
+        "vnpkWgtQty": 7.23,
+        "vnpkWgtUom": "LB",
+        "vnpkcbqty": 0.496,
+        "vnpkcbuomcd": "CF",
+        "event": "POS REPLEN",
+        "freeTextDetail": "CLEAR MS 2X6 RUNNER PDQ ",
+        "palletTi": 0,
+        "palletHi": 0,
+        "department": "17",
+        "isHazmat": false,
+        "isConveyable": true,
+        "overageQtyLimit": 10,
+        "overageThresholdQty": 10,
+        "totalReceivedQty" : 5,
+        "itemType": "20",
+        "color": "CLEAR",
+        "size": "24X72",
+        "limitedQtyVerifiedOn": null,
+        "lithiumIonVerifiedOn": null,
+        "itemDescription1": "MS 2X6 RUNNER PDQ",
+        "itemDescription2": "",
+        "transportationModes": [
+          {
+            "mode": {
+              "code": 1,
+              "description": "GROUND"
+            },
+            "dotHazardousClass": {
+              "code": "N/A",
+              "description": "OTHER REGULATED MATERIAL"
+            },
+            "dotRegionCode": null,
+            "pkgInstruction": [
+              "965"
+            ],
+            "dotIdNbr": null,
+            "limitedQty": null,
+            "properShipping": "Lithium Ion Battery"
+          }
+        ],
+        "additionalInfo": {
+          "isNewItem": true,
+          "weight": 23.9,
+          "cubeUOM": "CF",
+          "cube": 1.642,
+          "weightUOM": "LB",
+          "weightFormatTypeCode": "F",
+          "handlingCode": "R"
+        },
+        "activeChannelMethods": [
+          "CROSSU"
+        ],
+        "operationalInfo": {
+          "state": "ACTIVE"
+        },
+        "orderableQuantity": 12,
+        "warehousePackQuantity": 4
+      }
+    ],
+    "deptNumber": "38",
+    "vendorNumber": "988246",
+    "vendorNbrDeptSeq": "988246381",
+    "weight": 100,
+    "weightUOM": "LB",
+    "cubeQty": 150,
+    "cubeUOM": "CF",
+    "freightTermCode": "COLL",
+    "financialGroupCode": "US",
+    "importInd": false,
+    "poTypeCode": "33",
+    "purchaseReferenceStatus": "ACTV",
+    "deliveryStatus": "OPN",
+    "carrierName": "Walmart WMT",
+    "stateReasonCodes": [
+      "DOOR_OPEN"
+    ],
+    "deliveryLegacyStatus": "OPN",
+    "poDcCountry": "US",
+    "totalBolFbq": 0,
+    "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+    "sellerType": "WM"
+  }
+]

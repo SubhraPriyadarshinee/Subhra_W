@@ -1,0 +1,11 @@
+{
+  "messageId": "2304dc35-4963-43a4-a0ee-11cec9130d36",
+  "locations": [
+    {
+      "type": "error",
+      "code": "GLS-SMART-SLOTING-4000103",
+      "desc": "Manual split pallet slotting for atlas items is currently not operational",
+      "markInventoryStatus": "AVAILABLE_NON_PICKABLE"
+    }
+  ]
+}

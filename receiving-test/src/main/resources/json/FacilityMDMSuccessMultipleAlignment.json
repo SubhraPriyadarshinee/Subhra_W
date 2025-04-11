@@ -1,0 +1,60 @@
+{
+        "foundLocation": [
+                {
+                        "buNumberCC": "US10",
+                        "dcAlignment": [
+                                {
+                                        "number": 6069,
+                                        "category": {
+                                                "subCategory": [
+                                                        {
+                                                                "code": "WH",
+                                                                "description": "WAREHOUSE",
+                                                                "dateRange": {
+                                                                        "start": "2000-05-11T00:00:00.000+0000",
+                                                                        "end": "2099-12-01T00:00:00.000+0000"
+                                                                }
+                                                        }
+                                                ]
+                                        }
+                                },
+                                {
+                                        "number": 6094,
+                                        "category": {
+                                                "subCategory": [
+                                                        {
+                                                                "code": "WH",
+                                                                "description": "WAREHOUSE",
+                                                                "dateRange": {
+                                                                        "start": "2000-04-11T00:00:00.000+0000",
+                                                                        "end": "2099-12-01T00:00:00.000+0000"
+                                                                }
+                                                        }
+                                                ]
+                                        }
+                                }
+                        ]
+                },
+                {
+                        "buNumberCC": "US92",
+                        "dcAlignment": [
+                                {
+                                        "number": 6069,
+                                        "category": {
+                                                "subCategory": [
+                                                        {
+                                                                "code": "WH",
+                                                                "description": "WAREHOUSE",
+                                                                "dateRange": {
+                                                                        "start": "2015-09-07T00:00:00.000+0000",
+                                                                        "end": "2099-12-31T00:00:00.000+0000"
+                                                                }
+                                                        }
+                                                ]
+                                        }
+                                }
+                        ]
+                }
+        ],
+        "notFoundLocation": []
+}

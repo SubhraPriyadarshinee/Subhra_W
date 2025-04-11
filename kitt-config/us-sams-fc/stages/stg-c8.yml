@@ -1,0 +1,87 @@
+deploy:
+  stages:
+    - name: stg-c8
+      approvers:
+        groups:
+          - "Tridents-SE"
+          - "Sams-FC-GLS-Receiving-Atlas"
+      helm:
+        values:
+          secrets:
+            akeyless: true
+            config:
+              akeyless:
+                path: /Prod/WCNP/homeoffice/Sams-FC-GLS-Receiving-Atlas/receiving-api/{{$.kittExec.currentStage.name}}
+            files:
+              - destination: /receiving-secrets.properties
+                content: secrets.key
+              - destination: /gls-atlas-receiving.jks
+                content: truststore.key
+                base64decode: true
+              - destination: /signature.properties
+                content: servicemesh.config
+                base64decode: true
+            file_refresh: true
+          env:
+            DYNATRACE_ENABLED: false
+            JAVA_OPTS: >-
+              -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=7551
+              -Xms1024m
+              -Xmx2048m
+              -XX:+UseParNewGC
+              -XX:+UseConcMarkSweepGC
+              -XX:NewSize=512m
+              -DfacilityCountryCode=US
+              -DstageName={{$.kittExec.currentStage.name}}
+              -DregionName={{$.kittExec.currentCluster.site}}
+              -DhostRegion={{$.kittExec.currentCluster.zone}}
+              -DclusterProfile={{$.kittExec.currentCluster.profile}}
+              -DclusterId={{$.kittExec.currentCluster.clusterId}}
+              -Dversion={{$.kitt.build.version}}
+              -Djsse.enableSNIExtension=true
+              -Dorg.jboss.logging.provider=slf4j
+              -Druntime.context.system.property.override.enabled=true
+              -Dcom.walmart.platform.scm.slf4j.enabled=false
+              -Dcom.walmart.platform.scm.java.util.logger.default.log.level=INFO
+              -Dscm.print.summary.onchange=true
+              -Dscm.print.detailed.summary=true
+              -Dcom.walmart.platform.logging.escape.newline=false 
+              -Druntime.context.appName=receiving-api
+              -Dspring.profiles.active=stg
+              -Druntime.context.environmentType=stg
+              -Druntime.context.environment=sams-fc
+              -Dscm.snapshot.enabled=true
+              -Dscm.root.dir=/app/scm
+              -Dspring.config.additional-location=/etc/secrets/receiving-secrets.properties
+              -Dscm.scope.template=/environment/cloudEnvironment/c8-wus2-scus
+              -Dcom.walmart.platform.logging.kafka.brokerList={{$.kittExec.currentCluster.site}}.kafka.medusa.prod.walmart.com:9092
+              -Dcom.walmart.platform.config.runOnDataCenter={{$.kittExec.currentCluster.site}}
+              -Dcom.ibm.mq.cfg.useIBMCipherMappings=false
+              -Dspring.config.use-legacy-processing=true
+              -Dspring.main.allow-circular-references=true
+              -Dplatform=wcnp
+          min:
+            cpu: 100m
+            memory: 2048Mi
+          max:
+            cpu: 3000m
+            memory: 4608Mi
+          scaling:
+            enabled: false
+            min: 1
+            max: 1
+          metadata:
+            labels:
+              ccm.serverId: receiving-api
+              ccm.envName: "stg"
+              wm.app: SAMS-FC-ATLAS-RECEIVING
+              wm.env: STG
+      postDeploy:
+        - task:
+            name: messageSlack
+            executionScope: cluster
+            text: |
+              Deployment details* :
+              > Namespace: *{{ $.kitt.deploy.namespace }}*
+              > Cluster: *{{$.kittExec.currentCluster.clusterId}}* 
+              > Heartbeat URL: http://gls-atlas-receiving-stg-sams-fc-c8.us.walmart.com/heartbeat 

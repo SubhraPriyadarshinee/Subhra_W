@@ -1,0 +1,436 @@
+{
+  "delivery": {
+    "deliveryNumber": 550478600029193,
+    "statusInformation": {
+      "statusReasonCode": [
+        "WORKING"
+      ],
+      "operationalStatus": "WRK",
+      "status": "WRK"
+    }
+  },
+  "shipments": [
+    {
+      "documentId": "RELATIONS-1_20230721_6064_DC_US",
+      "shipmentNumber": "RELATIONS-1",
+      "documentType": "ASN",
+      "documentRevision": 0,
+      "documentIngestTime": "2023-06-14T11:01:17.564Z",
+      "shipmentDate": "2023-06-14",
+      "isDocumentDSCSA": "NONE",
+      "source": {
+        "number": "6071",
+        "numberType": "WALMART",
+        "type": "DC",
+        "countryCode": "US",
+        "shipperName": "WM"
+      },
+      "destination": {
+        "type": "STORE",
+        "number": 5504,
+        "countryCode": "US"
+      },
+      "shipmentDetail": {
+        "trailerNumber": "SIB_PH11375",
+        "trailerSealNumber": "0000000906",
+        "loadNumber": "SIB_PH11375",
+        "reportedDeliveryNumber": 550478600029193,
+        "shippingDate": "2022-03-09",
+        "carrierId": "WM"
+      },
+      "totalPacks": 3,
+      "additionalInfo": {
+        "totalMfcPacks": 1,
+        "totalMfcPallets": 1,
+        "storeInvoices": [
+          "06071000775"
+        ],
+        "bannerCode": "A1",
+        "mfcInvoiceNumbers": [
+          "06071000775",
+          "06071000776"
+        ],
+        "totalMfcQty": 17,
+        "floorLoadedCases": 0,
+        "totalExpected": [
+          {
+            "quantity": 47,
+            "uom": "EA"
+          }
+        ],
+        "regionCode": "05",
+        "mfcWarehouseAreaDescription": [
+          "Wet Produce",
+          "Fresh Meat",
+          "Cold Produce"
+        ],
+        "timeZoneCode": "EST",
+        "totalPallets": 3,
+        "mfcInvoices": [
+          "06071000776"
+        ],
+        "marketCode": "056",
+        "bannerDescription": "WM Supercenter"
+      }
+    }
+  ],
+  "packs": [
+    {
+      "documentPackId": "RELATIONS-1_20230721_6064_DC_US_6085811128901203852002",
+      "documentId": "RELATIONS-1_20230721_6064_DC_US",
+      "packNumber": "6085811128901203852002",
+      "palletNumber": "6085811128901203852001",
+      "invoice": {
+        "invoiceNumber": "MULTIPLE"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "legacyDetail": {
+        "packType": "STORE"
+      },
+      "shipmentNumber": "RELATIONS-1",
+      "physicalDetail": {
+        "weight": 4.1,
+        "weightUom": "LB"
+      },
+      "labelType": "CASE_PACK",
+      "items": [
+        {
+          "reportedProductId": "570563669",
+          "reportedProductIdType": "IN",
+          "itemNumber": 570563669,
+          "gtin": "00261643000004",
+          "itemDescription": "THIN SLICED BRST MED",
+          "itemDepartment": "93",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "documentSequenceNumber": 1,
+          "inventoryDetail": {
+            "reportedQuantity": 15,
+            "reportedUom": "EA",
+            "derivedQuantity": 15,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 14,
+            "vendorCaseQuantity": 14
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00261643000004",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "06071000775",
+            "invoiceLineNumber": 1
+          },
+          "replenishmentCode": "UNKNOWN",
+          "replenishedByUnit": true,
+          "itemPackType": "NON_VARIABLE_WEIGHT",
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          },
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 3.98,
+            "derivedCost": 2.93,
+            "financialReportingCountry": "US"
+          }
+        }
+      ],
+      "additionalInfo": {
+        "stackedContainers": [
+          "6085811128901203851002",
+          "608581112890120385001"
+        ],
+        "palletRelations": [
+          "6085811128901203851002",
+          "608581112890120385001"
+        ],
+        "packDSCSA": "NONE"
+      }
+    },
+    {
+      "documentPackId": "RELATIONS-1_20230721_6064_DC_US_608581112890120385002",
+      "documentId": "RELATIONS-1_20230721_6064_DC_US",
+      "packNumber": "608581112890120385002",
+      "palletNumber": "6085811128901203851002",
+      "invoice": {
+        "invoiceNumber": "06071000776"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "legacyDetail": {
+        "packType": "MFC"
+      },
+      "shipmentNumber": "RELATIONS-1",
+      "physicalDetail": {
+        "weight": 4.1,
+        "weightUom": "LB"
+      },
+      "labelType": "CASE_PACK",
+      "items": [
+        {
+          "reportedProductId": "566092822",
+          "reportedProductIdType": "IN",
+          "itemNumber": 566092822,
+          "gtin": "00681131016735",
+          "itemDescription": "WNDFL 12Z KERNL PIST",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "documentSequenceNumber": 1,
+          "inventoryDetail": {
+            "reportedQuantity": 17,
+            "reportedUom": "EA",
+            "derivedQuantity": 17,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00681131016735",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "06071000776",
+            "invoiceLineNumber": 1
+          },
+          "replenishmentCode": "MARKET_FULFILLMENT_CENTER",
+          "replenishedByUnit": false,
+          "itemPackType": "VARIABLE_WEIGHT",
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          },
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 9.97,
+            "derivedCost": 6.9,
+            "financialReportingCountry": "US"
+          }
+        }
+      ],
+      "additionalInfo": {
+        "stackedOnContainer": "6085811128901203852001",
+        "palletRelations": [
+          "6085811128901203852001",
+          "608581112890120385001"
+        ],
+        "packDSCSA": "NONE"
+      }
+    },
+    {
+      "documentPackId": "RELATIONS-1_20230721_6064_DC_US_608581112890120385002",
+      "documentId": "RELATIONS-1_20230721_6064_DC_US",
+      "packNumber": "608581112890120385002",
+      "palletNumber": "608581112890120385001",
+      "invoice": {
+        "invoiceNumber": "06071000775"
+      },
+      "auditDetail": {
+        "auditRequired": false
+      },
+      "legacyDetail": {
+        "packType": "STORE"
+      },
+      "shipmentNumber": "RELATIONS-1",
+      "physicalDetail": {
+        "weight": 4.1,
+        "weightUom": "LB"
+      },
+      "labelType": "CASE_PACK",
+      "items": [
+        {
+          "reportedProductId": "571014206",
+          "reportedProductIdType": "IN",
+          "itemNumber": 571014206,
+          "gtin": "00681131221818",
+          "itemDescription": "WNDFL 12Z KERNL PIST",
+          "itemDepartment": "95",
+          "itemDivision": "28",
+          "itemOnFileStatus": "ON_FILE",
+          "assortmentType": "NONE",
+          "documentSequenceNumber": 1,
+          "inventoryDetail": {
+            "reportedQuantity": 15,
+            "reportedUom": "EA",
+            "derivedQuantity": 15,
+            "derivedUom": "EA",
+            "warehouseCaseQuantity": 1,
+            "vendorCaseQuantity": 1
+          },
+          "isDSCSAExempt": "UNKNOWN",
+          "otherReportedProductIds": [
+            {
+              "reportedProductId": "00681131221818",
+              "reportedProductIdType": "UK"
+            }
+          ],
+          "invoice": {
+            "invoiceNumber": "06071000775",
+            "invoiceLineNumber": 2
+          },
+          "replenishmentCode": "UNKNOWN",
+          "replenishedByUnit": false,
+          "itemPackType": "VARIABLE_WEIGHT",
+          "additionalInfo": {
+            "eventType": "STAPLE"
+          },
+          "financialDetail": {
+            "reportedRetail": 9.94,
+            "derivedRetail": 2.98,
+            "derivedCost": 1.355,
+            "financialReportingCountry": "US"
+          }
+        }
+      ],
+      "additionalInfo": {
+        "stackedOnContainer": "6085811128901203852001",
+        "palletRelations": [
+          "6085811128901203852001",
+          "6085811128901203851002"
+        ],
+        "packDSCSA": "NONE"
+      }
+    }
+  ],
+  "items": [
+    {
+      "consumableGTIN": "00681131016735",
+      "orderableGTIN": "10681131016732",
+      "warehousePackGTIN": "10681131016732",
+      "supplierStockId": "DR BC",
+      "itemTypeCode": "20",
+      "vendorDepartment": "94",
+      "color": "RS",
+      "size": "EA",
+      "warehousePackQuantity": 5,
+      "orderableQuantity": 5,
+      "warehouseArea": "Wet Produce",
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "images": {
+          "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/819c4beb-d800-4be0-a6b5-9ab237dc7028.4b1d0459d5a8c287c0271fbb9866cec2.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/819c4beb-d800-4be0-a6b5-9ab237dc7028.4b1d0459d5a8c287c0271fbb9866cec2.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+          "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/819c4beb-d800-4be0-a6b5-9ab237dc7028.4b1d0459d5a8c287c0271fbb9866cec2.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+          "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/819c4beb-d800-4be0-a6b5-9ab237dc7028.4b1d0459d5a8c287c0271fbb9866cec2.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+          "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/819c4beb-d800-4be0-a6b5-9ab237dc7028.4b1d0459d5a8c287c0271fbb9866cec2.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+        },
+        "variableWeightIndicator": false,
+        "warehouseAreaCode": 7,
+        "warehousePackSellAmt": 29.4,
+        "warehouseRotationTypeCode": 2,
+        "baseDivisionCode": "WM",
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "temperatureZone": "ambient",
+        "mfcEnabled": false,
+        "replenishmentGroupNbr": 48923321,
+        "unitCostAmt": 6.9,
+        "chemicalIndicator": "N",
+        "warehouseAreaDesc": "Wet Produce",
+        "aerosolIndicator": "N"
+      },
+      "descriptions": [
+        "RS ROSE PLUS",
+        "RS ROSE PLUS"
+      ],
+      "number": 566092822
+    },
+    {
+      "consumableGTIN": "00681131221818",
+      "orderableGTIN": "10681131221815",
+      "warehousePackGTIN": "10681131221815",
+      "supplierStockId": "68113122181",
+      "itemTypeCode": "20",
+      "vendorDepartment": "94",
+      "size": "12OZ",
+      "warehousePackQuantity": 6,
+      "orderableQuantity": 6,
+      "warehouseArea": "Cold Produce",
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "images": {
+          "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/b09cdc22-1478-44e3-97f8-3f45eb705701.6ba3061da7f31981dc5f4e2fbeb0634d.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/b09cdc22-1478-44e3-97f8-3f45eb705701.6ba3061da7f31981dc5f4e2fbeb0634d.jpeg?odnHeight=100&odnWidth=100&odnBg=ffffff",
+          "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/b09cdc22-1478-44e3-97f8-3f45eb705701.6ba3061da7f31981dc5f4e2fbeb0634d.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+          "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/b09cdc22-1478-44e3-97f8-3f45eb705701.6ba3061da7f31981dc5f4e2fbeb0634d.jpeg?odnHeight=180&odnWidth=180&odnBg=ffffff",
+          "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/b09cdc22-1478-44e3-97f8-3f45eb705701.6ba3061da7f31981dc5f4e2fbeb0634d.jpeg?odnHeight=60&odnWidth=60&odnBg=ffffff"
+        },
+        "variableWeightIndicator": true,
+        "warehouseAreaCode": 9,
+        "warehousePackSellAmt": 8.13,
+        "warehouseRotationTypeCode": 3,
+        "baseDivisionCode": "WM",
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "temperatureZone": "ambient",
+        "mfcEnabled": false,
+        "replenishmentGroupNbr": 32503261,
+        "unitCostAmt": 1.23,
+        "chemicalIndicator": "N",
+        "warehouseAreaDesc": "Cold Produce",
+        "aerosolIndicator": "N"
+      },
+      "descriptions": [
+        "CAULIFLOWER CRMBL HM"
+      ],
+      "number": 571014206
+    },
+    {
+      "consumableGTIN": "00261643000004",
+      "orderableGTIN": "90030802259569",
+      "warehousePackGTIN": "90030802259569",
+      "supplierStockId": "582",
+      "palletTi": 5,
+      "palletHi": 8,
+      "conveyable": true,
+      "itemTypeCode": "20",
+      "vendorDepartment": "93",
+      "size": "LB",
+      "warehousePackQuantity": 14,
+      "orderableQuantity": 14,
+      "warehouseArea": "Fresh Meat",
+      "itemAdditonalInformation": {
+        "isNewItem": true,
+        "images": {
+          "IMAGE_SIZE_450": "https://i5-qa.walmartimages.com/asr/275721b6-3ee8-498a-8d0c-5fb69bbe7013_4.6f3bdaeb59d286dbcd24462e9cd33130.png?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "IMAGE_SIZE_100": "https://i5-qa.walmartimages.com/asr/275721b6-3ee8-498a-8d0c-5fb69bbe7013_4.6f3bdaeb59d286dbcd24462e9cd33130.png?odnHeight=100&odnWidth=100&odnBg=ffffff",
+          "IMAGE_SIZE_2000": "https://i5-qa.walmartimages.com/asr/275721b6-3ee8-498a-8d0c-5fb69bbe7013_4.6f3bdaeb59d286dbcd24462e9cd33130.png?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+          "IMAGE_SIZE_180": "https://i5-qa.walmartimages.com/asr/275721b6-3ee8-498a-8d0c-5fb69bbe7013_4.6f3bdaeb59d286dbcd24462e9cd33130.png?odnHeight=180&odnWidth=180&odnBg=ffffff",
+          "IMAGE_SIZE_60": "https://i5-qa.walmartimages.com/asr/275721b6-3ee8-498a-8d0c-5fb69bbe7013_4.6f3bdaeb59d286dbcd24462e9cd33130.png?odnHeight=60&odnWidth=60&odnBg=ffffff"
+        },
+        "variableWeightIndicator": false,
+        "warehouseAreaCode": 1,
+        "vnpkWeightUomCode": "LB",
+        "warehousePackSellAmt": 31.92,
+        "warehouseRotationTypeCode": 3,
+        "baseDivisionCode": "WM",
+        "vnpkCubeQty": 1.917,
+        "pesticideIndicator": "N",
+        "financialReportingGroupCode": "US",
+        "vnpkCubeUom": "CF",
+        "temperatureZone": "ambient",
+        "mfcEnabled": true,
+        "replenishmentGroupNbr": 7633819,
+        "unitCostAmt": 2.34,
+        "chemicalIndicator": "N",
+        "vnpkWeightQty": 37,
+        "warehouseAreaDesc": "Fresh Meat",
+        "aerosolIndicator": "N"
+      },
+      "descriptions": [
+        "THIN SLICED BRST MED",
+        "THIN SLICED BRST MED"
+      ],
+      "number": 570563669
+    }
+  ]
+}

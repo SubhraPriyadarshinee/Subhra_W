@@ -1,0 +1,148 @@
+{
+  "deliveryNumber": 31266428,
+  "deliveryStatus": "OPN",
+  "deliveryTypeCode": "LIVE",
+  "countryCode": "US",
+  "dcNumber": "6020",
+  "loadTypeCode": "CONV",
+  "loadNumber": "0",
+  "sealNumber": "6005281",
+  "hazmatInd": false,
+  "scacCode": "WM",
+  "trailerId": "104681",
+  "scheduledTimeStamp": "2021-12-01T13:30:00.000+0000",
+  "scheduledEndTimeStamp": "2021-12-01T15:29:00.000+0000",
+  "appointmentEndTime": "10:29",
+  "appointmentTime": "08:30",
+  "appointmentDate": "2021-12-01",
+  "commodity": "SSTK",
+  "createdTimeStamp": "2021-12-01T16:01:03.033+0000",
+  "arrivedTimeStamp": "2021-12-01T17:30:11.102+0000",
+  "doorOpenTimeStamp": "2021-12-01T17:30:14.848+0000",
+  "doorOpenUserId": "asdfasd",
+  "carrierPhone": "4048286206",
+  "carrierId": "UPSF",
+  "carrierName": "UPS SUPPLY CHAIN SOLUTIONS INC",
+  "numberOfPallets": 0,
+  "doorNumber": "999",
+  "lastUpdatedDoorNumber": "715",
+  "lastUpdatedSealNumber": "6005281",
+  "deliveryDocuments": [
+    {
+      "deliveryNumber": 31266428,
+      "purchaseReferenceNumber": "9872433292",
+      "omsPurchaseReferenceNumber": "0620587240",
+      "poDCNumber": "6020",
+      "bpoNumber": "0",
+      "baseDivCode": "WM",
+      "purchaseReferenceLegacyType": "20",
+      "totalPurchaseReferenceQty": 262,
+      "palletQty": 0,
+      "purchaseCompanyId": 1,
+      "receiverNumber": 0,
+      "purchaseReferenceOrderDate": "2021-11-11",
+      "purchaseReferenceCancelDate": "2021-12-16",
+      "purchaseReferenceShipDate": "2021-12-06",
+      "purchaseReferenceMustArriveByDate": "2021-12-17",
+      "deliveryDocumentLines": [
+        {
+          "purchaseRefType": "SSTKU",
+          "originalChannel": "STAPLESTOCK",
+          "purchaseReferenceNumber": "9872433292",
+          "purchaseReferenceLineNumber": 1,
+          "purchaseReferenceLineStatus": "APPROVED",
+          "itemNbr": 587436605,
+          "itemUPC": "00195697617102",
+          "caseUPC": "00195697617102",
+          "expectedQty": 262,
+          "expectedQtyUOM": "ZA",
+          "vnpkQty": 1,
+          "whpkQty": 1,
+          "vendorStockNumber": "33K46UA#ABA",
+          "vendorPackCost": 426.88,
+          "whpkSell": 426.88,
+          "vnpkCostUom": "CA",
+          "vnpkWgtQty": 4.87,
+          "vnpkWgtUom": "LB",
+          "vnpkcbqty": 0.386,
+          "vnpkcbuomcd": "CF",
+          "event": "WHSSTKWK45",
+          "freeTextDetail": "NA HP 15 FHD I3 SILVER NEW WK18 FYE22",
+          "palletTi": 29,
+          "palletHi": 3,
+          "department": "72",
+          "isHazmat": true,
+          "isConveyable": true,
+          "overageQtyLimit": 1,
+          "overageThresholdQty": 1,
+          "color": "NA",
+          "size": "L55",
+          "itemDescription1": "HP 15 FHD I3 SILVER",
+          "itemDescription2": "NEW WK18 FYE22",
+          "additionalInfo": {
+            "weight": 4.87,
+            "cubeUOM": "CF",
+            "cube": 0.386,
+            "weightUOM": "LB"
+          },
+          "promoBuyInd": "N",
+          "operationalInfo": {
+            "state": "ACTIVE"
+          },
+          "orderableQuantity": 1,
+          "warehousePackQuantity": 1,
+          "transportationModes": [
+            {
+              "mode": {
+                "code": 1,
+                "description": "GROUND"
+              },
+              "dotHazardousClass": {
+                "code": "N/A",
+                "description": "NOT APPLICABLE"
+              },
+              "properShipping": "LITHIUM ION BATTERIES CONTAINED IN EQUIPMENT",
+              "pkgInstruction": [
+                "967"
+              ]
+            }
+          ]
+        }
+      ],
+      "bolNumber": "0",
+      "proNumber": "5774447888",
+      "deptNumber": "72",
+      "vendorNumber": "952341",
+      "vendorName": "HP INC",
+      "vendorNbrDeptSeq": "952341722",
+      "lastChangedByDate": "2021-11-30",
+      "weight": 1275.94,
+      "weightUOM": "LB",
+      "cubeQty": 101.132,
+      "cubeUOM": "CF",
+      "freightTermCode": "PRP",
+      "financialGroupCode": "US",
+      "lastChangedBy": "svconova",
+      "bolNumbers": [
+        {
+          "bolNumber": "0",
+          "freightBillQuantity": 262
+        }
+      ],
+      "poConIndicator": false,
+      "importInd": false,
+      "poTypeCode": "20",
+      "purchaseReferenceStatus": "ACTV",
+      "poDcCountry": "US",
+      "totalBolFbq": 0
+    }
+  ],
+  "shipments": [
+  ],
+  "grsInd": true,
+  "deliveryLegacyStatus": "OPN",
+  "stateReasonCodes": [
+    "DOOR_OPEN"
+  ],
+  "billSign": false
+}

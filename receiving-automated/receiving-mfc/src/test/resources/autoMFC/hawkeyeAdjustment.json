@@ -1,0 +1,53 @@
+{
+  "sourceCreationTimestamp": "2021-07-  21T17:10:07.002Z",
+  "revision": 0,
+  "userId": "abc1234",
+  "items": [
+    {
+      "productId": "379VJ4AMO3EX",
+      "gtin": "00080153032837",
+      "quantityUom": "EA",
+      "previousState": "PENDING",
+      "replenishSubTypeCode": 0,
+      "itemTypeCode": 20,
+      "stockStateChange": [
+        {
+          "currentState": "REJECTED",
+          "quantity": 1.00,
+          "reasonCode": "DAMAGED",
+          "reasonDesc": "Broke"
+        },
+        {
+          "currentState": "REJECTED",
+          "quantity": 1.00,
+          "reasonCode": "EXPIRED",
+          "reasonDesc": "Item Expired"
+        },
+        {
+          "currentState": "REJECTED",
+          "quantity": 1.00,
+          "reasonCode": "NOTMFCASSORTMENT",
+          "reasonDesc": "Not MFC Assortment"
+        },
+        {
+          "currentState": "REJECTED",
+          "quantity": 1.00,
+          "reasonCode": "MFCOVERSIZE",
+          "reasonDesc": "Oversized item"
+        },
+        {
+          "currentState": "REJECTED",
+          "quantity": 1.00,
+          "reasonCode": "FRESHNESSEXPIRATION",
+          "reasonDesc": "Freshness Expirattion"
+        },
+        {
+          "currentState": "REJECTED",
+          "quantity": 1.00,
+          "reasonCode": "Other",
+          "reasonDesc": "Other"
+        }
+      ]
+    }
+  ]
+}

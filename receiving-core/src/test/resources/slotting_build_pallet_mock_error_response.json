@@ -1,0 +1,19 @@
+{
+  "messages": [
+    {
+      "type": "error",
+      "code": "GLS-SMRT-SLOTING-0001",
+      "desc": "Induct Slots/staging area not found for the given source area/door"
+    },
+    {
+      "type": "error",
+      "code": "GLS-SMRT-SLOTING-0002",
+      "desc": "Could not find an active induct slot/s in the given source area"
+    },
+    {
+      "type": "error",
+      "code": "GLS-SMRT-SLOTING-0003",
+      "desc": "Invalid Data!! ProfiledWarehouseArea not found in the request."
+    }
+  ]
+}

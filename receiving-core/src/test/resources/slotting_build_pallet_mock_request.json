@@ -1,0 +1,25 @@
+{
+  "messageId": "d034fc9c-849b-11ea-bc55-0242ac130003",
+  "deliveryNumber": "943287913",
+  "doorNumber": "D100",
+  "container": {
+    "contents": [
+      {
+        "itemNbr": 551187908,
+        "isConveyable": true,
+        "financialReportingGroup": "US",
+        "description": "Dummy Item Desc",
+        "baseDivisionCode": "WM",
+        "gtin": "00082686007092",
+        "qtyUom": "ZA",
+        "vendorPack": 12,
+        "warehousePack": 12,
+        "profiledWarehouseArea": "MAN/CPS/CPZ",
+        "groupCode": "F",
+        "warehouseAreaCode": 1
+      }
+    ],
+    "containerStatus": "WORK_IN_PROGRESS",
+    "containerTrackingId": "10852700300174"
+  }
+}

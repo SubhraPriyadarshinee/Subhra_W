@@ -1,0 +1,10 @@
+{
+    "meta": {
+        "status": "FAILURE",
+        "statusCode": "GLS-DCFIN-CLOUD-VE-0011",
+        "responseText": "Invalid request body"
+    },
+    "body": [
+        "message: puchaseClosureTransaction.deliveryNumber may not be empty"
+    ]
+}

@@ -1,0 +1,80 @@
+{
+  "totalCount": 1,
+  "successCount": 1,
+  "hasMoreEntries": false,
+  "totalLocationCount": 1,
+  "successTuples": [
+    {
+      "locationCount": 1,
+      "response": {
+        "locations": [
+          {
+            "xCoord": 0,
+            "yCoord": 0,
+            "zCoord": 0,
+            "id": 201602,
+            "sequenceNo": 0,
+            "name": "A0003",
+            "orgUnitId": 1,
+            "type": {
+              "key": 1,
+              "value": "Slot"
+            },
+            "status": {
+              "key": 1,
+              "value": "Active"
+            },
+            "primeSlot": true,
+            "widthQty": 0.0,
+            "depthQty": 0.0,
+            "heightQty": 0.0,
+            "maxWgtQty": 0.0,
+            "tags": [
+
+            ],
+            "properties": {
+              "Capacity": "",
+              "bulkSlotIndicator": ""
+            },
+            "links": [
+              {
+                "rel": "DELETE",
+                "href": "https://qa-gls-location.prod.us.walmart.net/us-32679/locations/201602"
+              }
+            ],
+            "contigSeqNbr": 2,
+            "sizeInches": 86,
+            "mdsTypeCode": "SSTK",
+            "stockHandleCode": "C",
+            "palletQty": 2,
+            "symEligibleInd": "A",
+            "slotAlignment": "SYM2_5",
+            "dockId": null,
+            "doorDesc": null,
+            "doorTypeCode": null,
+            "laneNbr": null,
+            "locationSubType": null,
+            "moduleId": "A0",
+            "sideId": "S",
+            "levelId": "1",
+            "zoneId": "2"
+          }
+        ]
+      },
+      "request": {
+        "limit": 15,
+        "offset": 0,
+        "order": "name",
+        "orderBy": "asc",
+        "names": [
+          "A0003"
+        ],
+        "orgUnitId": 1,
+        "types": [
+          1
+        ],
+        "status": 0
+      }
+    }
+  ]
+}

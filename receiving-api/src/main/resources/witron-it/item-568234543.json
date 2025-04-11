@@ -1,0 +1,16 @@
+{
+    "itemNumber" : "568234543",
+    "description" : "16  PEPPERONI PIZZA      ",
+    "deptNumber" : "80",
+    "vendorNbr" : 490103,
+    "gtin" : "68113127825",
+    "whpkQty" : 6,
+    "vnpkQty" : 6,
+    "ti" : 6,
+    "hi" : 7,
+    "vendorPackCost" : 28.07,
+    "whpkSell" : 29.62,
+    "vendorPackWeight" : 19.55,
+    "vendorPackCubeQty" : 1.995,
+    "poLine" : 19
+}

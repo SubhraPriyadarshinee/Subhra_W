@@ -1,0 +1,23 @@
+{
+  "eventType": "rcv_osdr",
+  "deliveryNumber": 26442922,
+  "userId": "RCV_Default",
+  "ts": "2021-03-30T14:37:05.895Z",
+  "auditPending": false,
+  "summary": [
+    {
+      "purchaseReferenceNumber": "1467778615",
+      "rcvdQty": 8,
+      "orderFilledQty": 10,
+      "rcvdQtyUom": "ZA",
+      "lines": [
+        {
+          "lineNumber": 1,
+          "rcvdQty": 8,
+          "orderFilledQty": 10,
+          "rcvdQtyUom": "ZA"
+        }
+      ]
+    }
+  ]
+}

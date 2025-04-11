@@ -1,0 +1,178 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "trackingId": {
+      "type": "string"
+    },
+    "messageId": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "deliveryNumber": {
+      "type": "integer"
+    },
+    "containerType": {
+      "type": "string",
+      "enum": ["PALLET"]
+    },
+    "inventoryStatus": {
+      "type": "string",
+      "enum": ["PICKED"]
+    },
+    "ctrShippable": {
+      "type": "boolean"
+    },
+    "ctrReusable": {
+      "type": "boolean"
+    },
+    "facility": {
+      "type": "object",
+      "properties": {
+        "buNumber": {
+          "type": "string"
+        },
+        "countryCode": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "buNumber",
+        "countryCode"
+      ]
+    },
+    "destination": {
+      "type": "object",
+      "properties": {
+        "buNumber": {
+          "type": "string"
+        },
+        "countryCode": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "buNumber",
+        "countryCode"
+      ]
+    },
+    "completeTs": {
+      "type": "string"
+    },
+    "publishTs": {
+      "type": "string"
+    },
+    "createTs": {
+      "type": "string"
+    },
+    "createUser": {
+      "type": "string"
+    },
+    "lastChangedTs": {
+      "type": "string"
+    },
+    "lastChangedUser": {
+      "type": "string"
+    },
+    "contents": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "purchaseReferenceNumber": {
+              "type": "string"
+            },
+            "inboundChannelMethod": {
+              "type": "string"
+            },
+            "outboundChannelMethod": {
+              "type": "string"
+            },
+            "totalPurchaseReferenceQty": {
+              "type": "integer"
+            },
+            "purchaseCompanyId": {
+              "type": "integer"
+            },
+            "itemNumber": {
+              "type": "integer",
+              "enum": [-1]
+            },
+            "quantity": {
+              "type": "integer"
+            },
+            "quantityUOM": {
+              "type": "string",
+              "enum": ["EA"]
+            },
+            "vnpkQty": {
+              "type": "integer"
+            },
+            "whpkQty": {
+              "type": "integer"
+            },
+            "baseDivisionCode": {
+              "type": "string"
+            },
+            "financialReportingGroupCode": {
+              "type": "string"
+            },
+            "poTypeCode": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "purchaseReferenceNumber",
+            "inboundChannelMethod",
+            "outboundChannelMethod",
+            "totalPurchaseReferenceQty",
+            "purchaseCompanyId",
+            "itemNumber",
+            "quantity",
+            "quantityUOM",
+            "vnpkQty",
+            "whpkQty",
+            "baseDivisionCode",
+            "financialReportingGroupCode",
+            "poTypeCode"
+          ]
+        }
+      ]
+    },
+    "weight": {
+      "type": "number"
+    },
+    "weightUOM": {
+      "type": "string"
+    },
+    "cube": {
+      "type": "number"
+    },
+    "cubeUOM": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "trackingId",
+    "messageId",
+    "location",
+    "deliveryNumber",
+    "containerType",
+    "inventoryStatus",
+    "ctrShippable",
+    "ctrReusable",
+    "facility",
+    "destination",
+    "completeTs",
+    "publishTs",
+    "createUser",
+    "contents",
+    "weight",
+    "weightUOM",
+    "cube",
+    "cubeUOM"
+  ]
+}
